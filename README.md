@@ -3,8 +3,9 @@ A basic Poptracker pack (Items Only & Map Tracker) for La-Mulana 2.
 
 Big thanks to the La-Mulana 2 community: Coookie93 for their original [La-Mulana 2 Randomizer](https://github.com/Coookie93/LaMulana2Randomizer) of which the Archipelago port is derived, and their bundled [Item Tracker](https://github.com/Coookie93/LM2ItemTracker) has also been a huge help in designing this pack. Thank you Trishlanga for the maps. 
 
-Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [this apworld](https://github.com/Crownmuri/Archipelago/releases)
-Note: In order to play La-Mulana 2 with AP tracking, you will require to patch the original randomizer with [this additional mod](https://github.com/Crownmuri/LaMulana2Archipelago).
+Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [this apworld](https://github.com/Crownmuri/Archipelago/releases).
+
+**Note**: In order to play La-Mulana 2 with AP tracking, you will require to patch the original randomizer with [this additional mod](https://github.com/Crownmuri/LaMulana2Archipelago).
 
 ## Features
 - Item Tracking
