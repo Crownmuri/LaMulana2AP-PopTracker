@@ -1,0 +1,253 @@
+[
+    {
+        "name": "Gate of the Dead",
+        "children": [
+            {
+                "name": "Map Chest GotD",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2546,
+                        "y": 650,
+                        "size": 50
+                    },
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotD) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Yagoo Map Street Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2653,
+                        "y": 627,
+                        "size": 50
+                    },
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotD) and (Has(Gloves))"
+                ]
+            },
+            {
+                "name": "Vajra Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2433,
+                        "y": 883,
+                        "size": 50
+                    },
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotD) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Sacred Orb Chest GotD",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2318,
+                        "y": 705,
+                        "size": 50
+                    },
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Anchor Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2330,
+                        "y": 851,
+                        "size": 50
+                    },
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotD) and (HorizontalAttack and CanReach(DF Main) and Has(Gloves) and CanReach(Annwfn Right) and IsDead(Ixtab) and Has(Hand Scanner))"
+                ]
+            },
+            {
+                "name": "Crystal Skull Chest GotD",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2836,
+                        "y": 662,
+                        "size": 50
+                    },
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotD) and (MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or (CanUse(Flare) and HorizontalAttack))"
+                ]
+            },
+            {
+                "name": "Katana Puzzle Reward",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2276,
+                        "y": 584,
+                        "size": 50
+                    },
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotD) and (Has(Life Sigil))"
+                ]
+            },
+            {
+                "name": "Aytum",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2276,
+                        "y": 627,
+                        "size": 50
+                    },
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(GotD)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(GotD)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(GotD)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "White Pedestals",
+                "sections": [
+                    {
+                        "name": "Puzzle",
+                        "item_count": 1,
+                        "hosted_item": "boss_white_pedestals"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotD) and (Has(Pepper) and Has(Birth Sigil) and CanChant(Sun) and IsDead(Unicorn))"
+                ]
+            },
+            {
+                "name": "Unicorn",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_unicorn"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotD) and (OrbCount(1) and ((Has(Katana) and Has(Vajra)) or Has(Leather Whip) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
+                ]
+            }
+        ],
+        "access_rules": [
+            "$lm2_logic|CanReach(GotD)"
+        ]
+    }
+]

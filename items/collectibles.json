@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Sacred Orb",
+    "type": "consumable",
+    "img": "images/OtherItems/SacredOrb.png",
+    "codes": "sacred_orb",
+    "max_quantity": 10,
+    "increment": 1
+  },
+  {
+    "name": "Ankh Jewel",
+    "type": "consumable",
+    "img": "images/Weapons/AnkhJewel.png",
+    "codes": "ankh_jewel",
+    "max_quantity": 9,
+    "increment": 1
+  },
+  {
+    "name": "Crystal Skull",
+    "type": "consumable",
+    "img": "images/UseItems/CrystalSkull.png",
+    "codes": "crystal_skull",
+    "max_quantity": 12,
+    "increment": 1
+  },
+  {
+    "name": "Kosugi Research",
+    "type": "consumable",
+    "img": "images/Software/KosugiResearch.png",
+    "codes": "research",
+    "max_quantity": 10,
+    "increment": 1
+  },
+  {
+    "name": "Map",
+    "type": "consumable",
+    "img": "images/Other/Map.png",
+    "codes": "map_item",
+    "max_quantity": 16,
+    "increment": 1
+  }
+]

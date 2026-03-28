@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Origin Sigil",
+    "type": "toggle",
+    "img": "images/OtherItems/OriginSigil.png",
+    "codes": "origin_sigil"
+  },
+  {
+    "name": "Birth Sigil",
+    "type": "toggle",
+    "img": "images/OtherItems/BirthSigil.png",
+    "codes": "birth_sigil"
+  },
+  {
+    "name": "Life Sigil",
+    "type": "toggle",
+    "img": "images/OtherItems/LifeSigil.png",
+    "codes": "life_sigil"
+  },
+  {
+    "name": "Death Sigil",
+    "type": "toggle",
+    "img": "images/OtherItems/DeathSigil.png",
+    "codes": "death_sigil"
+  }
+]

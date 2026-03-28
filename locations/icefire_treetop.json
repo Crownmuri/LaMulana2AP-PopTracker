@@ -1,0 +1,369 @@
+[
+  {
+    "name": "Icefire Treetop",
+    "children": [
+      {
+        "name": "Research IT",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1895,
+            "y": 1401,
+            "size": 50
+          },
+          {
+            "map": "Icefire Treetop",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITEntrance) and (CanWarp or Has(Feather) or Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2) or ((Has(Feather) or Has(Gale Fibula)) and CanReach(IT Right)))"
+        ]
+      },
+      {
+        "name": "Mino the Bomb Guy",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1733,
+            "y": 1444,
+            "size": 50
+          },
+          {
+            "map": "Icefire Treetop",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(ITBottom) and (Has(Feather))"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(ITBottom) and (Has(Feather))"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(ITBottom) and (Has(Feather))"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITBottom)"
+        ]
+      },
+      {
+        "name": "Grapple Claw Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1972,
+            "y": 1444,
+            "size": 50
+          },
+          {
+            "map": "Icefire Treetop",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITBottom)"
+        ]
+      },
+        {
+            "name": "Surtr",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1703,
+                    "y": 1334,
+                    "size": 50
+                },
+                {
+                    "map": "Icefire Treetop",
+                    "x": 0,
+                    "y": 0
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Guardian",
+                    "item_count": 1,
+                    "hosted_item": "boss_surtr",
+                    "access_rules": [
+                        "$lm2_logic|HasAnkhFor(Surtr)"
+                    ]
+                },
+                {
+                    "name": "Flame Torc Chest",
+                    "item_count": 1,
+                    "access_rules": [
+                        "$lm2_logic|CanReach(ITSinmara) and (IsDead(Surtr) and HorizontalAttack)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ITSinmara) and (Has(Light Scythe) and (Has(Feather) or Has(Ice Cloak)) and (((Has(Knife) or Has(Rapier)) and OrbCount(7)) or ((Has(Chain Whip) or (CanUse(Earth Spear) and Has(Ring))) and OrbCount(6)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana) or (CanUse(Bomb) and Has(Ring))) and OrbCount(5)) or (CanUse(Pistol) and OrbCount(4))))"
+            ]
+        },
+      {
+        "name": "Map Chest IT",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1611,
+            "y": 1286,
+            "size": 50
+          },
+          {
+            "map": "Icefire Treetop",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITLeft)"
+        ]
+      },
+      {
+        "name": "Ankh Chest IT",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1565,
+            "y": 1444,
+            "size": 50
+          },
+          {
+            "map": "Icefire Treetop",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITLeft) and ((Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(1)) and IsDead(Vedfolnir))"
+        ]
+      },
+      {
+        "name": "Life Sigil Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1432,
+            "y": 1286,
+            "size": 50
+          },
+          {
+            "map": "Icefire Treetop",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITLeft) and (Has(Birth Sigil) and CanWarp and ((Has(Leather Whip) or Has(Chain Whip) or Has(Rapier) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Caltrops) or CanUse(Pistol)) or (Has(Knife) and (Has(Feather) or Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (Has(Axe) and (Has(Bracelet) or (Has(Spaulder) and (Has(Feather) or Has(Gauntlet)))))))"
+        ]
+      },
+      {
+        "name": "BTK",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1403,
+            "y": 1219,
+            "size": 50
+          },
+          {
+            "map": "Icefire Treetop",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Shop Slot 1",
+            "item_count": 1,
+            "access_rules": [
+              "$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Pistol) or ((CanUse(Chakram) or CanUse(Flare)) and Has(Feather)))"
+            ]
+          },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Pistol) or ((CanUse(Chakram) or CanUse(Flare)) and Has(Feather)))"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Pistol) or ((CanUse(Chakram) or CanUse(Flare)) and Has(Feather)))"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITLeft)"
+        ]
+      },
+      {
+        "name": "Vedfolnir",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_vedfolnir"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITLeft) and (OrbCount(1))"
+        ]
+      },
+      {
+        "name": "Fairy Guild Pass Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1891,
+            "y": 1230,
+            "size": 50
+          },
+          {
+            "map": "Icefire Treetop",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITRight) and (Has(Life Sigil))"
+        ]
+      },
+      {
+        "name": "Crystal Skull Chest IT",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2183,
+            "y": 1310,
+            "size": 50
+          },
+          {
+            "map": "Icefire Treetop",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITRight) and (IsDead(Ratatoskr 3))"
+        ]
+      },
+      {
+        "name": "Sacred Orb Chest IT",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2030,
+            "y": 1468,
+            "size": 50
+          },
+          {
+            "map": "Icefire Treetop",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITRight) and ((Has(Claydoll Suit) or ((Has(Anchor) or Has(Fish Suit)) and (OrbCount(1) or Has(Scalesphere)))) and HorizontalAttack)"
+        ]
+      },
+      {
+        "name": "Ratatoskr 3",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_ratatoskr_3"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITRight) and (IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and CanReach(IT Left) and (((Has(Leather Whip) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(3)) or ((Has(Chain Whip) or Has(Knife) or Has(Rapier) or Has(Axe) or Has(Katana) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Bomb) or CanUse(Chakram)) and OrbCount(2)) or (CanUse(Psitol) and OrbCount(1))))"
+        ]
+      },
+      {
+        "name": "Vidofnir",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_vidofnir"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ITVidofnir) and (Has(Flame Torc) and Has(Ice Cloak) and Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(6)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(5))))"
+        ]
+      }
+    ],
+    "access_rules": [
+      "$lm2_logic|CanReach(ITBottom) or CanReach(ITEntrance) or CanReach(ITLeft) or CanReach(ITRight) or CanReach(ITSinmara) or CanReach(ITVidofnir)"
+    ]
+  }
+]

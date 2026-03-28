@@ -1,0 +1,224 @@
+[
+    {
+        "name": "Starting Location",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "codes": "setting_start",
+        "stages": [
+            { "img": "images/Settings/Start_VoD.png", "codes": "start_vod",
+              "inherit_codes": false },
+            { "img": "images/Settings/Start_RoY.png", "codes": "start_roy",
+              "inherit_codes": false },
+            { "img": "images/Settings/Start_Ann.png", "codes": "start_ann",
+              "inherit_codes": false },
+            { "img": "images/Settings/Start_IB.png", "codes": "start_ib",
+              "inherit_codes": false },
+            { "img": "images/Settings/Start_IT.png", "codes": "start_it",
+              "inherit_codes": false },
+            { "img": "images/Settings/Start_DF.png", "codes": "start_df",
+              "inherit_codes": false },
+            { "img": "images/Settings/Start_SFG.png", "codes": "start_sfg",
+              "inherit_codes": false },
+            { "img": "images/Settings/Start_TS.png", "codes": "start_ts",
+              "inherit_codes": false },
+            { "img": "images/Settings/Start_Val.png", "codes": "start_val",
+              "inherit_codes": false },
+            { "img": "images/Settings/Start_DSLM.png", "codes": "start_dslm",
+              "inherit_codes": false },
+            { "img": "images/Settings/Start_AC.png", "codes": "start_ac",
+              "inherit_codes": false },
+            { "img": "images/Settings/Start_HoM.png", "codes": "start_hom",
+              "inherit_codes": false }
+        ]
+    },
+    {
+        "name": "Logic: Normal",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "codes": "setting_logic",
+        "stages": [
+            { "img": "images/Settings/LogicNormal.png", "codes": "logic_normal",
+              "inherit_codes": false },
+            { "img": "images/Settings/LogicHard.png", "codes": "logic_hard",
+              "inherit_codes": false }
+        ]
+    },
+    {
+        "name": "DLC Item Logic",
+        "type": "toggle",
+        "img": "images/Settings/DLC.png",
+        "codes": "setting_dlc_logic"
+    },
+    {
+        "name": "Life Sigil for HoM",
+        "type": "toggle",
+        "img": "images/Settings/LifeSigilHoM.png",
+        "codes": "setting_not_life_for_hom",
+        "initial_active_state": true
+    },
+    {
+        "name": "Remove IT Statue",
+        "type": "toggle",
+        "img": "images/Settings/RemoveITStatue.png",
+        "codes": "setting_remove_it_statue",
+        "initial_active_state": true
+    },
+    {
+        "name": "Costume Clip Logic",
+        "type": "toggle",
+        "img": "images/Settings/CostumeClip.png",
+        "codes": "setting_costume_clip"
+    },
+    {
+        "name": "Guardian-Specific Ankhs",
+        "type": "toggle",
+        "img": "images/Settings/GuardianAnkhs.png",
+        "codes": "setting_guardian_ankhs",
+        "initial_active_state": true
+    },
+    {
+        "name": "Auto Scan",
+        "type": "toggle",
+        "img": "images/Settings/AutoScan.png",
+        "codes": "setting_autoscan",
+        "initial_active_state": true
+    },
+    {
+        "name": "Required Guardians",
+        "type": "progressive",
+        "loop": true,
+        "initial_stage_idx": 5,
+        "allow_disabled": false,
+        "codes": "setting_req_guardians",
+        "stages": [
+            {
+                "img": "images/Settings/Guard0.png",
+                "codes": "req_guardians_0",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Guard1.png",
+                "codes": "req_guardians_1",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Guard2.png",
+                "codes": "req_guardians_2",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Guard3.png",
+                "codes": "req_guardians_3",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Guard4.png",
+                "codes": "req_guardians_4",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Guard5.png",
+                "codes": "req_guardians_5",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Guard6.png",
+                "codes": "req_guardians_6",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Guard7.png",
+                "codes": "req_guardians_7",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Guard8.png",
+                "codes": "req_guardians_8",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Guard9.png",
+                "codes": "req_guardians_9",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Required Skulls",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "initial_stage_idx": 6,
+        "codes": "setting_req_skulls",
+        "stages": [
+            {
+                "img": "images/Settings/Skull0.png",
+                "codes": "req_skulls_0",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull1.png",
+                "codes": "req_skulls_1",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull2.png",
+                "codes": "req_skulls_2",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull3.png",
+                "codes": "req_skulls_3",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull4.png",
+                "codes": "req_skulls_4",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull5.png",
+                "codes": "req_skulls_5",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull6.png",
+                "codes": "req_skulls_6",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull7.png",
+                "codes": "req_skulls_7",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull8.png",
+                "codes": "req_skulls_8",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull9.png",
+                "codes": "req_skulls_9",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull10.png",
+                "codes": "req_skulls_10",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull11.png",
+                "codes": "req_skulls_11",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Skull12.png",
+                "codes": "req_skulls_12",
+                "inherit_codes": false
+            }
+        ]
+    }
+]

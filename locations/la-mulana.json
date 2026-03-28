@@ -1,0 +1,520 @@
+[
+  {
+    "name": "La-Mulana",
+    "children": [
+      {
+        "name": "Xelpud Item",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 453,
+            "y": 233,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 931,
+            "y": 498
+          }
+        ],
+        "sections": [
+          {
+            "name": "Dialogue",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(VoD)"
+        ]
+      },
+      {
+        "name": "Nebur Item",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 538,
+            "y": 233,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 1111,
+            "y": 498
+          }
+        ],
+        "sections": [
+          {
+            "name": "Dialogue",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(VoD)"
+        ]
+      },
+      {
+        "name": "Alsedana Item",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 229,
+            "y": 167,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 457,
+            "y": 317
+          }
+        ],
+        "sections": [
+          {
+            "name": "Dialogue",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(VoD) and (IsDead(Vritra) or GuardianKills(6))"
+        ]
+      },
+      {
+        "name": "Giltoriyo Item",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 33,
+            "y": 167,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 365,
+            "y": 364
+          }
+        ],
+        "sections": [
+          {
+            "name": "Dialogue",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(VoD) and (GuardianKills(6))"
+        ]
+      },
+      {
+        "name": "Nebur",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 365,
+            "y": 167,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 730,
+            "y": 451
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoD)"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(VoD)"
+        ]
+      },
+      {
+        "name": "Modro",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 453,
+            "y": 167,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 1022,
+            "y": 451
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoD)"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(VoD)"
+        ]
+      },
+      {
+        "name": "Sidro",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 538,
+            "y": 167,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 1075,
+            "y": 475
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoD)"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(VoD)"
+        ]
+      },
+      {
+        "name": "Sacred Orb VoD",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 843,
+            "y": 178,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 1697,
+            "y": 376
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(VoD) and (Has(Feather) and CanWarp)"
+        ]
+      },
+      {
+        "name": "Child Mantra Mural",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 681,
+            "y": 237,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 1353,
+            "y": 463
+          }
+        ],
+        "sections": [
+          {
+            "name": "Mural",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(InfernoCavern) and (Has(Snapshot) and CanChant(Mother) and CanChant(Wind) and CanWarp)"
+        ]
+      },
+      {
+        "name": "Shell Horn Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 898,
+            "y": 369,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 1795,
+            "y": 720
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(GateofGuidance)"
+        ]
+      },
+      {
+        "name": "Holy Grail Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 655,
+            "y": 494,
+            "size": 40
+          },
+          {
+            "map": "La-Mulana",
+            "x": 1309,
+            "y": 989
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(GateofGuidance)"
+        ]
+      },
+      {
+        "name": "Hiner",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 712,
+            "y": 494,
+            "size": 40
+          },
+          {
+            "map": "La-Mulana",
+            "x": 1405,
+            "y": 966
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion))"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion))"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion))"
+                ]
+            },
+            {
+                "name": "Shop Slot 4",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and GuardianKills(3))"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(GateofGuidance)"
+        ]
+      },
+      {
+        "name": "Bronze Mirror Spot",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 771,
+            "y": 493,
+            "size": 40
+          },
+          {
+            "map": "La-Mulana",
+            "x": 1488,
+            "y": 964
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(GateofGuidance) and (Has(Feather) or Has(Gale Fibula))"
+        ]
+      },
+      {
+        "name": "Dissonance MoG",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1088,
+            "y": 903,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 2178,
+            "y": 1781
+          }
+        ],
+        "sections": [
+          {
+            "name": "Dissonance",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(MausoleumofGiants) and (Has(Progressive Beherit) and CanChant(Sun) and PuzzleFinished(Sakit Puzzle))"
+        ]
+      },
+      {
+        "name": "Freyas Item",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 166,
+            "y": 969,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 301,
+            "y": 1929
+          }
+        ],
+        "sections": [
+          {
+            "name": "Dialogue",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(EndlessCorridor)"
+        ]
+      },
+      {
+        "name": "Fobos",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 420,
+            "y": 448,
+            "size": 50
+          },
+          {
+            "map": "La-Mulana",
+            "x": 838,
+            "y": 927
+          }
+        ],
+        "sections": [
+          {
+            "name": "Fobos Item",
+            "item_count": 1,
+            "access_rules": [
+              "$lm2_logic|CanReach(GateofIllusion)"
+            ]
+          },
+          {
+            "name": "Fobos Item 2",
+            "item_count": 1,
+            "access_rules": [
+              "$lm2_logic|CanReach(GateofIllusion) and (SkullCount(1))"
+            ]
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(GateofIllusion)"
+        ]
+      },
+      {
+        "name": "Starting Shop",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1808,
+            "y": 1277,
+            "size": 100
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1
+            }
+        ],
+        "visibility_rules": [
+          "$lm2_logic|NotVoDStart"
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,444 @@
+[
+    {
+        "name": "Ratatoskr 1",
+        "type": "toggle",
+        "img": "images/Other/Ratatoskr1.png",
+        "codes": "boss_ratatoskr_1"
+    },
+    {
+        "name": "Nidhogg",
+        "type": "toggle",
+        "img": "images/Other/Nidhogg.png",
+        "codes": "boss_nidhogg"
+    },
+    {
+        "name": "Fafnir",
+        "type": "progressive",
+        "allow_disabled": true,
+        "codes": "guardian_fafnir",
+        "stages": [
+            {
+                "img": "images/Guardians/FafnirA.png",
+                "codes": "ankh_fafnir"
+            },
+            {
+                "img": "images/Guardians/Fafnir.png",
+                "codes": "ankh_fafnir,boss_fafnir"
+            }
+        ]
+    },
+    {
+        "name": "Kaliya",
+        "type": "toggle",
+        "img": "images/Other/Kaliya.png",
+        "codes": "boss_kaliya"
+    },
+    {
+        "name": "Heimdall",
+        "type": "toggle",
+        "img": "images/Other/Heimdall.png",
+        "codes": "boss_heimdall"
+    },
+    {
+        "name": "Ixtab",
+        "type": "toggle",
+        "img": "images/Other/Ixtab.png",
+        "codes": "boss_ixtab"
+    },
+    {
+        "name": "Kujata",
+        "type": "progressive",
+        "allow_disabled": true,
+        "codes": "guardian_kujata",
+        "stages": [
+            {
+                "img": "images/Guardians/KujataA.png",
+                "codes": "ankh_kujata"
+            },
+            {
+                "img": "images/Guardians/Kujata.png",
+                "codes": "ankh_kujata,boss_kujata"
+            }
+        ]
+    },
+    {
+        "name": "Annwfn Right Shortcut",
+        "type": "toggle",
+        "img": "images/Other/AnnwfnRightShortcut.png",
+        "codes": "boss_annwfn_right_shortcut"
+    },
+    {
+        "name": "Cetus",
+        "type": "toggle",
+        "img": "images/Other/Cetus.png",
+        "codes": "boss_cetus"
+    },
+    {
+        "name": "Ratatoskr 2",
+        "type": "toggle",
+        "img": "images/Other/Ratatoskr2.png",
+        "codes": "boss_ratatoskr_2"
+    },
+    {
+        "name": "Jormungand",
+        "type": "progressive",
+        "allow_disabled": true,
+        "codes": "guardian_jormungand",
+        "stages": [
+            {
+                "img": "images/Guardians/JormungandA.png",
+                "codes": "ankh_jormungand"
+            },
+            {
+                "img": "images/Guardians/Jormungand.png",
+                "codes": "ankh_jormungand,boss_jormungand"
+            }
+        ]
+    },
+    {
+        "name": "Svipdagr",
+        "type": "toggle",
+        "img": "images/Other/Svipdagr.png",
+        "codes": "boss_svipdagr"
+    },
+    {
+        "name": "IB Left Shortcut",
+        "type": "toggle",
+        "img": "images/Other/IBLeftShortcut.png",
+        "codes": "boss_ib_left_shortcut"
+    },
+    {
+        "name": "Surtr",
+        "type": "progressive",
+        "allow_disabled": true,
+        "codes": "guardian_surtr",
+        "stages": [
+            {
+                "img": "images/Guardians/SurtrA.png",
+                "codes": "ankh_surtr"
+            },
+            {
+                "img": "images/Guardians/Surtr.png",
+                "codes": "ankh_surtr,boss_surtr"
+            }
+        ]
+    },
+    {
+        "name": "Vedfolnir",
+        "type": "toggle",
+        "img": "images/Other/Vedfolnir.png",
+        "codes": "boss_vedfolnir"
+    },
+    {
+        "name": "Ratatoskr 3",
+        "type": "toggle",
+        "img": "images/Other/Ratatoskr3.png",
+        "codes": "boss_ratatoskr_3"
+    },
+    {
+        "name": "Vidofnir",
+        "type": "toggle",
+        "img": "images/Other/Vidofnir.png",
+        "codes": "boss_vidofnir"
+    },
+    {
+        "name": "Hugin and Munin",
+        "type": "toggle",
+        "img": "images/Other/HuginandMunin.png",
+        "codes": "boss_hugin_and_munin"
+    },
+    {
+        "name": "Weapon Fairy",
+        "type": "toggle",
+        "img": "images/Other/WeaponFairy.png",
+        "codes": "boss_weapon_fairy"
+    },
+    {
+        "name": "Badhbh Cath",
+        "type": "toggle",
+        "img": "images/Other/BadhbhCath.png",
+        "codes": "boss_badhbh_cath"
+    },
+    {
+        "name": "Fenrir",
+        "type": "toggle",
+        "img": "images/Other/Fenrir.png",
+        "codes": "boss_fenrir"
+    },
+    {
+        "name": "Bergelmir",
+        "type": "toggle",
+        "img": "images/Other/Bergelmir.png",
+        "codes": "boss_bergelmir"
+    },
+    {
+        "name": "Balor",
+        "type": "toggle",
+        "img": "images/Other/Balor.png",
+        "codes": "boss_balor"
+    },
+    {
+        "name": "Tezcatlipoca",
+        "type": "toggle",
+        "img": "images/Other/Tezcatlipoca.png",
+        "codes": "boss_tezcatlipoca"
+    },
+    {
+        "name": "White Pedestals",
+        "type": "toggle",
+        "img": "images/Other/WhitePedestals.png",
+        "codes": "boss_white_pedestals"
+    },
+    {
+        "name": "Unicorn",
+        "type": "toggle",
+        "img": "images/Other/Unicorn.png",
+        "codes": "boss_unicorn"
+    },
+    {
+        "name": "Raijin and Fujin",
+        "type": "toggle",
+        "img": "images/Other/RaijinandFujin.png",
+        "codes": "boss_raijin_and_fujin"
+    },
+    {
+        "name": "Daji",
+        "type": "toggle",
+        "img": "images/Other/Daji.png",
+        "codes": "boss_daji"
+    },
+    {
+        "name": "Belial",
+        "type": "toggle",
+        "img": "images/Other/Belial.png",
+        "codes": "boss_belial"
+    },
+    {
+        "name": "Arachne",
+        "type": "toggle",
+        "img": "images/Other/Arachne.png",
+        "codes": "boss_arachne"
+    },
+    {
+        "name": "Scylla",
+        "type": "toggle",
+        "img": "images/Other/Scylla.png",
+        "codes": "boss_scylla"
+    },
+    {
+        "name": "Glasya Labolas",
+        "type": "toggle",
+        "img": "images/Other/GlasyaLabolas.png",
+        "codes": "boss_glasya_labolas"
+    },
+    {
+        "name": "Griffin",
+        "type": "toggle",
+        "img": "images/Other/Griffin.png",
+        "codes": "boss_griffin"
+    },
+    {
+        "name": "Vucub Caquiz",
+        "type": "toggle",
+        "img": "images/Other/VucubCaquiz.png",
+        "codes": "boss_vucub_caquiz"
+    },
+    {
+        "name": "Jalandhara",
+        "type": "toggle",
+        "img": "images/Other/Jalandhara.png",
+        "codes": "boss_jalandhara"
+    },
+    {
+        "name": "Vritra",
+        "type": "progressive",
+        "allow_disabled": true,
+        "codes": "guardian_vritra",
+        "stages": [
+            {
+                "img": "images/Guardians/VritraA.png",
+                "codes": "ankh_vritra"
+            },
+            {
+                "img": "images/Guardians/Vritra.png",
+                "codes": "ankh_vritra,boss_vritra"
+            }
+        ]
+    },
+    {
+        "name": "Money Fairy",
+        "type": "toggle",
+        "img": "images/Other/MoneyFairy.png",
+        "codes": "boss_money_fairy"
+    },
+    {
+        "name": "Sekhmet",
+        "type": "toggle",
+        "img": "images/Other/Sekhmet.png",
+        "codes": "boss_sekhmet"
+    },
+    {
+        "name": "Aten-Ra",
+        "type": "progressive",
+        "allow_disabled": true,
+        "codes": "guardian_aten_ra",
+        "stages": [
+            {
+                "img": "images/Guardians/Aten-RaA.png",
+                "codes": "ankh_aten_ra"
+            },
+            {
+                "img": "images/Guardians/Aten-Ra.png",
+                "codes": "ankh_aten_ra,boss_aten_ra"
+            }
+        ]
+    },
+    {
+        "name": "Angra Mainyu",
+        "type": "toggle",
+        "img": "images/Other/AngraMainyu.png",
+        "codes": "boss_angra_mainyu"
+    },
+    {
+        "name": "Ammit",
+        "type": "toggle",
+        "img": "images/Other/Ammit.png",
+        "codes": "boss_ammit"
+    },
+    {
+        "name": "Ki sikil lil la ke",
+        "type": "toggle",
+        "img": "images/Other/Kisikillillake.png",
+        "codes": "boss_ki_sikil_lil_la_ke"
+    },
+    {
+        "name": "Anzu",
+        "type": "toggle",
+        "img": "images/Other/Anzu.png",
+        "codes": "boss_anzu"
+    },
+    {
+        "name": "Anu",
+        "type": "progressive",
+        "allow_disabled": true,
+        "codes": "guardian_anu",
+        "stages": [
+            {
+                "img": "images/Guardians/AnuA.png",
+                "codes": "ankh_anu"
+            },
+            {
+                "img": "images/Guardians/Anu.png",
+                "codes": "ankh_anu,boss_anu"
+            }
+        ]
+    },
+    {
+        "name": "HoM Ladder",
+        "type": "toggle",
+        "img": "images/Other/HoMLadder.png",
+        "codes": "boss_hom_ladder"
+    },
+    {
+        "name": "HoM Left Path",
+        "type": "toggle",
+        "img": "images/Other/HoMLeftPath.png",
+        "codes": "boss_hom_left_path"
+    },
+    {
+        "name": "HoM Middle Path",
+        "type": "toggle",
+        "img": "images/Other/HoMMiddlePath.png",
+        "codes": "boss_hom_middle_path"
+    },
+    {
+        "name": "HoM Right Path",
+        "type": "toggle",
+        "img": "images/Other/HoMRightPath.png",
+        "codes": "boss_hom_right_path"
+    },
+    {
+        "name": "Echidna",
+        "type": "progressive",
+        "allow_disabled": true,
+        "codes": "guardian_echidna",
+        "stages": [
+            {
+                "img": "images/Guardians/EchidnaA.png",
+                "codes": "ankh_echidna"
+            },
+            {
+                "img": "images/Guardians/Echidna.png",
+                "codes": "ankh_echidna,boss_echidna"
+            }
+        ]
+    },
+    {
+        "name": "Hraesvelgr",
+        "type": "toggle",
+        "img": "images/Other/Hraesvelgr.png",
+        "codes": "boss_hraesvelgr"
+    },
+    {
+        "name": "Hel",
+        "type": "progressive",
+        "allow_disabled": true,
+        "codes": "guardian_hel",
+        "stages": [
+            {
+                "img": "images/Guardians/HelA.png",
+                "codes": "ankh_hel"
+            },
+            {
+                "img": "images/Guardians/Hel.png",
+                "codes": "ankh_hel,boss_hel"
+            }
+        ]
+    },
+    {
+        "name": "Key Fairy",
+        "type": "toggle",
+        "img": "images/Other/KeyFairy.png",
+        "codes": "boss_key_fairy"
+    },
+    {
+        "name": "Garm Statue Puzzle",
+        "type": "toggle",
+        "img": "images/Other/GarmStatuePuzzle.png",
+        "codes": "boss_garm_statue_puzzle"
+    },
+    {
+        "name": "Sakit Puzzle",
+        "type": "toggle",
+        "img": "images/Other/SakitPuzzle.png",
+        "codes": "boss_sakit_puzzle"
+    },
+    {
+        "name": "Ratatoskr 4",
+        "type": "toggle",
+        "img": "images/Other/Ratatoskr4.png",
+        "codes": "boss_ratatoskr_4"
+    },
+    {
+        "name": "Ninth Child",
+        "type": "toggle",
+        "img": "images/Other/NinthChild.png",
+        "codes": "boss_ninth_child"
+    },
+    {
+        "name": "Guardian Kills",
+        "type": "consumable",
+        "img": "images/Other/GuardianKills.png",
+        "codes": "guardian_kills",
+        "max_quantity": 9,
+        "increment": 1
+    },
+    {
+        "name": "Dissonance",
+        "type": "consumable",
+        "img": "images/Other/Dissonance.png",
+        "codes": "dissonance",
+        "max_quantity": 7,
+        "increment": 1
+    }
+]

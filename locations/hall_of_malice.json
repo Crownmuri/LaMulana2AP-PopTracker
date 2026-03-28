@@ -1,0 +1,240 @@
+[
+  {
+    "name": "Hall of Malice",
+    "children": [
+      {
+        "name": "Map Chest HoM",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2357,
+            "y": 2373,
+            "size": 50
+          },
+          {
+            "map": "Hall of Malice",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(HoMTop)"
+        ]
+      },
+      {
+        "name": "HoM Ladder",
+        "sections": [
+          {
+            "name": "Puzzle",
+            "item_count": 1,
+            "hosted_item": "boss_hom_ladder"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(HoMTop)"
+        ]
+      },
+      {
+        "name": "Fairylan",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2845,
+            "y": 2575,
+            "size": 50
+          },
+          {
+            "map": "Hall of Malice",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(HoM) and (Has(Claydoll Suit))"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(HoM) and (Has(Claydoll Suit))"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(HoM) and (Has(Claydoll Suit))"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(HoM)"
+        ]
+      },
+      {
+        "name": "Nemean Fur Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2021,
+            "y": 2575,
+            "size": 50
+          },
+          {
+            "map": "Hall of Malice",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and Has(Feather) and CanStopTime)"
+        ]
+      },
+      {
+        "name": "Crystal Skull Chest HoM",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2701,
+            "y": 2519,
+            "size": 50
+          },
+          {
+            "map": "Hall of Malice",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path) and Has(Death Sigil))"
+        ]
+      },
+      {
+        "name": "Echidna",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2307,
+            "y": 2657,
+            "size": 50
+          },
+          {
+            "map": "Hall of Malice",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Guardian",
+            "item_count": 1,
+            "hosted_item": "boss_echidna",
+            "access_rules": [
+              "$lm2_logic|HasAnkhFor(Echidna) and (IsDead(HoM Left Path) and IsDead(HoM Middle Path) and Has(Feather) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe))) or (OrbCount(6) and CanUse(Pistol))))"
+            ]
+          },
+          {
+            "name": "Giants Flute Chest",
+            "item_count": 1,
+            "access_rules": [
+              "$lm2_logic|CanReach(HoMAwoken) and (IsDead(Echidna))"
+            ]
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(HoMAwoken)"
+        ]
+      },
+      {
+        "name": "Miracle Witch Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2593,
+            "y": 2642,
+            "size": 50
+          },
+          {
+            "map": "Hall of Malice",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(HoMAwoken) and (Has(Flame Torc) and (Has(Leather Whip) or Has(Axe) or (Has(Katana) and Has(Vajra))) and IsDead(HoM Right Path))"
+        ]
+      },
+      {
+        "name": "HoM Left Path",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_hom_left_path"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(HoMAwoken) and (Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(7)) or ((Has(Axe) or Has(Katana)) and OrbCount(6)) or (Has(Flail Whip) and OrbCount(5))))"
+        ]
+      },
+      {
+        "name": "HoM Middle Path",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_hom_middle_path"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(HoMAwoken) and (((Has(Silver Shield) and Has(Feather)) or Has(Angel Shield)) and ((Has(Chain Whip) and OrbCount(7)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(6))))"
+        ]
+      },
+      {
+        "name": "HoM Right Path",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_hom_right_path"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(HoMAwoken) and (Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(7)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(6))))"
+        ]
+      }
+    ],
+    "access_rules": [
+      "$lm2_logic|CanReach(HoM) or CanReach(HoMAwoken) or CanReach(HoMTop)"
+    ]
+  }
+]

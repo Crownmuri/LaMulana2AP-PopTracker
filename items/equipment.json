@@ -1,0 +1,308 @@
+[
+  {
+    "name": "Hand Scanner",
+    "type": "toggle",
+    "img": "images/UseItems/Scanner.png",
+    "codes": "scanner"
+  },
+  {
+    "name": "Djed Pillar",
+    "type": "toggle",
+    "img": "images/UseItems/DjedPillar.png",
+    "codes": "djed"
+  },
+  {
+    "name": "Mjolnir",
+    "type": "toggle",
+    "img": "images/UseItems/Mjolnir.png",
+    "codes": "mjolnir"
+  },
+  {
+    "name": "Ancient Battery",
+    "type": "toggle",
+    "img": "images/UseItems/Battery.png",
+    "codes": "battery"
+  },
+  {
+    "name": "Lamp of Time",
+    "type": "toggle",
+    "img": "images/UseItems/LampofTime1.png",
+    "codes": "lamp_of_time"
+  },
+  {
+    "name": "Pochette Key",
+    "type": "toggle",
+    "img": "images/UseItems/Pochette.png",
+    "codes": "pochette_key"
+  },
+  {
+    "name": "Pyramid Crystal",
+    "type": "toggle",
+    "img": "images/UseItems/PyramidCrystal.png",
+    "codes": "pyramid_crystal"
+  },
+  {
+    "name": "Vessel",
+    "type": "toggle",
+    "img": "images/UseItems/Vessel1.png",
+    "codes": "vessel"
+  },
+  {
+    "name": "Pepper",
+    "type": "toggle",
+    "img": "images/UseItems/Pepper.png",
+    "codes": "pepper"
+  },
+  {
+    "name": "Egg of Creation",
+    "type": "toggle",
+    "img": "images/UseItems/EggofCreation.png",
+    "codes": "egg_of_creation"
+  },
+  {
+    "name": "Giants Flute",
+    "type": "toggle",
+    "img": "images/UseItems/GiantsFlute.png",
+    "codes": "giants_flute"
+  },
+  {
+    "name": "Cog of Antiquity",
+    "type": "toggle",
+    "img": "images/UseItems/CogofAntiquity.png",
+    "codes": "cog_of_antiquity"
+  },
+  {
+    "name": "Mulana Talisman",
+    "type": "toggle",
+    "img": "images/UseItems/MulanaTalisman.png",
+    "codes": "mulana_talisman"
+  },
+  {
+    "name": "Gloves",
+    "type": "toggle",
+    "img": "images/EquipItems/Gloves.png",
+    "codes": "gloves"
+  },
+  {
+    "name": "Grapple Claw",
+    "type": "toggle",
+    "img": "images/EquipItems/GrappleClaw.png",
+    "codes": "grapple_claw"
+  },
+  {
+    "name": "Ring",
+    "type": "toggle",
+    "img": "images/EquipItems/Ring.png",
+    "codes": "ring"
+  },
+  {
+    "name": "Snow Shoes",
+    "type": "toggle",
+    "img": "images/EquipItems/SnowShoes.png",
+    "codes": "snow_shoes"
+  },
+  {
+    "name": "Flame Torc",
+    "type": "toggle",
+    "img": "images/EquipItems/FlameTorc.png",
+    "codes": "flame_torc"
+  },
+  {
+    "name": "Gale Fibula",
+    "type": "toggle",
+    "img": "images/EquipItems/GaleFibula.png",
+    "codes": "gale_fibula"
+  },
+  {
+    "name": "Vajra",
+    "type": "toggle",
+    "img": "images/EquipItems/Vajra.png",
+    "codes": "vajra"
+  },
+  {
+    "name": "Feather",
+    "type": "toggle",
+    "img": "images/EquipItems/Feather.png",
+    "codes": "feather"
+  },
+  {
+    "name": "Ice Cloak",
+    "type": "toggle",
+    "img": "images/EquipItems/IceCloak.png",
+    "codes": "ice_cloak"
+  },
+  {
+    "name": "Scalesphere",
+    "type": "toggle",
+    "img": "images/EquipItems/Scalesphere.png",
+    "codes": "scalesphere"
+  },
+  {
+    "name": "Scriptures",
+    "type": "toggle",
+    "img": "images/EquipItems/Scriptures.png",
+    "codes": "scriptures"
+  },
+  {
+    "name": "Spaulder",
+    "type": "toggle",
+    "img": "images/EquipItems/Spaulder.png",
+    "codes": "spaulder"
+  },
+  {
+    "name": "Nemean Fur",
+    "type": "toggle",
+    "img": "images/EquipItems/NemeanFur.png",
+    "codes": "nemean_fur"
+  },
+  {
+    "name": "Power Band",
+    "type": "toggle",
+    "img": "images/EquipItems/PowerBand.png",
+    "codes": "power_band"
+  },
+  {
+    "name": "Gauntlet",
+    "type": "toggle",
+    "img": "images/EquipItems/Gauntlet.png",
+    "codes": "gauntlet"
+  },
+  {
+    "name": "Anchor",
+    "type": "toggle",
+    "img": "images/EquipItems/Anchor.png",
+    "codes": "anchor"
+  },
+  {
+    "name": "Bracelet",
+    "type": "toggle",
+    "img": "images/EquipItems/Bracelet.png",
+    "codes": "bracelet"
+  },
+  {
+    "name": "Book of the Dead",
+    "type": "toggle",
+    "img": "images/EquipItems/BookoftheDead.png",
+    "codes": "book_of_dead"
+  },
+  {
+    "name": "Shell Horn",
+    "type": "toggle",
+    "img": "images/OtherItems/ShellHorn.png",
+    "codes": "shell_horn"
+  },
+  {
+    "name": "Holy Grail",
+    "type": "toggle",
+    "img": "images/OtherItems/HolyGrail.png",
+    "codes": "holy_grail"
+  },
+  {
+    "name": "Fairy Pass",
+    "type": "toggle",
+    "img": "images/OtherItems/FairyPass.png",
+    "codes": "fairy_pass"
+  },
+  {
+    "name": "Freyas Pendant",
+    "type": "toggle",
+    "img": "images/OtherItems/FreyasPendant.png",
+    "codes": "freyas_pendant"
+  },
+  {
+    "name": "Totem Pole",
+    "type": "toggle",
+    "img": "images/OtherItems/TotemPole.png",
+    "codes": "totem_pole"
+  },
+  {
+    "name": "Bronze Mirror",
+    "type": "toggle",
+    "img": "images/OtherItems/BronzeMirror.png",
+    "codes": "bronze_mirror"
+  },
+  {
+    "name": "Crucifix",
+    "type": "toggle",
+    "img": "images/OtherItems/Crucifix.png",
+    "codes": "crucifix"
+  },
+  {
+    "name": "Perfume",
+    "type": "toggle",
+    "img": "images/OtherItems/Perfume.png",
+    "codes": "perfume"
+  },
+  {
+    "name": "Maats Feather",
+    "type": "toggle",
+    "img": "images/OtherItems/MaatsFeather.png",
+    "codes": "maats_feather"
+  },
+  {
+    "name": "Dinosaur Figure",
+    "type": "toggle",
+    "img": "images/OtherItems/DinosaurFigure.png",
+    "codes": "dinosaur_figure"
+  },
+  {
+    "name": "Freys Ship",
+    "type": "toggle",
+    "img": "images/OtherItems/FreysShip.png",
+    "codes": "freys_ship"
+  },
+  {
+    "name": "Codices",
+    "type": "toggle",
+    "img": "images/OtherItems/Codices.png",
+    "codes": "codices"
+  },
+  {
+    "name": "Ganesha Talisman",
+    "type": "toggle",
+    "img": "images/OtherItems/GaneshasTalisman.png",
+    "codes": "ganesha_talisman"
+  },
+  {
+    "name": "Harp",
+    "type": "toggle",
+    "img": "images/OtherItems/Harp.png",
+    "codes": "harp"
+  },
+  {
+    "name": "Destiny Tablet",
+    "type": "toggle",
+    "img": "images/OtherItems/DestinyTablet.png",
+    "codes": "destiny_tablet"
+  },
+  {
+    "name": "Light Scythe",
+    "type": "toggle",
+    "img": "images/OtherItems/LightScythe.png",
+    "codes": "light_scythe"
+  },
+  {
+    "name": "Secret Treasure of Life",
+    "type": "toggle",
+    "img": "images/OtherItems/SecretTreasure.png",
+    "codes": "secret_treasure"
+  },
+  {
+    "name": "Mobile Super x3+",
+    "type": "toggle",
+    "img": "images/OtherItems/MSX3.png",
+    "codes": "mobile_super"
+  },
+  {
+    "name": "Claydoll Suit",
+    "type": "toggle",
+    "img": "images/OtherItems/ClaydollSuit.png",
+    "codes": "claydoll_suit"
+  },
+  {
+    "name": "Future Development Company",
+    "type": "toggle",
+    "img": "images/Software/FutureDevCompany.png",
+    "codes": "fdc"
+  }
+]

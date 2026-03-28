@@ -1,0 +1,216 @@
+[
+  {
+    "name": "Eternal Prison Doom",
+    "children": [
+      {
+        "name": "Crystal Skull Chest EPD",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1531,
+            "y": 2788,
+            "size": 50
+          },
+          {
+            "map": "Eternal Prison Doom",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(EPDEntrance) and (Has(Feather) and HorizontalAttack)"
+        ]
+      },
+      {
+        "name": "Map Chest EPD",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1909,
+            "y": 2880,
+            "size": 50
+          },
+          {
+            "map": "Eternal Prison Doom",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(EPDMain) and (HorizontalAttack)"
+        ]
+      },
+      {
+        "name": "La Mulana 2 Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1885,
+            "y": 2799,
+            "size": 50
+          },
+          {
+            "map": "Eternal Prison Doom",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(EPDMain) and (Has(Mjolnir) and Has(Power Band) and (Has(Feather) or (Has(Gale Fibula) and Has(Snow Shoes))))"
+        ]
+      },
+      {
+        "name": "Osiris Item",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2059,
+            "y": 2867,
+            "size": 50
+          },
+          {
+            "map": "Eternal Prison Doom",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Dialogue",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(EPDMain) and (Has(Maats Feather) and Has(Djed Pillar) and (Has(Claydoll Suit) or Has(Ice Cloak)) and Has(Feather) and ((Has(Gale Fibula) or CanStopTime) or CanReach(EPG)))"
+        ]
+      },
+      {
+        "name": "Hraesvelgr",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_hraesvelgr"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(EPDMain) and (IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon) and Has(Feather))"
+        ]
+      },
+      {
+        "name": "Death Sigil Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1809,
+            "y": 2744,
+            "size": 50
+          },
+          {
+            "map": "Eternal Prison Doom",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|Has(Mjolnir) and Has(Life Sigil) and ((Has(Death Sigil) and Has(Feather)) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp))"
+        ]
+      },
+      {
+        "name": "Spaulder Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1768,
+            "y": 2642,
+            "size": 50
+          },
+          {
+            "map": "Eternal Prison Doom",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(EPDTop) and (Has(Key Fairy) and (Has(Feather) or (Has(Snow Shoes) and Has(Gale Fibula))))"
+        ]
+      },
+      {
+        "name": "Hel",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1559,
+            "y": 2727,
+            "size": 50
+          },
+          {
+            "map": "Eternal Prison Doom",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Guardian",
+            "item_count": 1,
+            "hosted_item": "boss_hel",
+            "access_rules": [
+              "$lm2_logic|HasAnkhFor(Hel) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe) or Has(Katana))) or (CanUse(Pistol) and (OrbCount(6))))"
+            ]
+          },
+          {
+            "name": "Book of the Dead Chest",
+            "item_count": 1,
+            "access_rules": [
+              "$lm2_logic|CanReach(EPDHel) and (IsDead(Hel))"
+            ]
+          },
+          {
+            "name": "Dissonance EPG",
+            "item_count": 1,
+            "access_rules": [
+              "$lm2_logic|CanReach(EPDHel) and (IsDead(Hel) and Has(Progressive Beherit))"
+            ]
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(EPDHel)"
+        ]
+      }
+    ],
+    "access_rules": [
+      "$lm2_logic|CanReach(EPDEntrance) or CanReach(EPDHel) or CanReach(EPDMain) or CanReach(EPDTop)"
+    ]
+  }
+]

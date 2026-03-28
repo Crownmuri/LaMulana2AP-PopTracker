@@ -1,0 +1,104 @@
+[
+    {
+        "name": "Full Map",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/full.png"
+    },
+    {
+        "name": "La-Mulana",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/lm.png"
+    },
+    {
+        "name": "Roots of Yggdrasil",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/roy.png"
+    },
+    {
+        "name": "Annwfn",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/annwfn.png"
+    },
+    {
+        "name": "Immortal Battlefield",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/ib.png"
+    },
+    {
+        "name": "Icefire Treetop",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/it.png"
+    },
+    {
+        "name": "Divine Fortress",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/df.png"
+    },
+    {
+        "name": "Shrine of the Frost Giants",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/sfg.png"
+    },
+    {
+        "name": "Gate of the Dead",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/gotd.png"
+    },
+    {
+        "name": "Takamagahara Shrine",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/ts.png"
+    },
+    {
+        "name": "Heavens Labyrinth",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/hl.png"
+    },
+    {
+        "name": "Valhalla",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/val.png"
+    },
+    {
+        "name": "Dark Star Lords Mausoleum",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/dslm.png"
+    },
+    {
+        "name": "Ancient Chaos",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/ac.png"
+    },
+    {
+        "name": "Hall of Malice",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/hom.png"
+    },
+    {
+        "name": "Eternal Prison - Doom",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/epd.png"
+    },
+    {
+        "name": "Eternal Prison - Gloom",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/epg.png"
+    }
+]

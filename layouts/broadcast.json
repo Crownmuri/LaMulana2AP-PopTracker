@@ -1,0 +1,26 @@
+{
+  "tracker_broadcast": {
+    "type": "container",
+    "background": "#000000",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "4, 4",
+        "margin": "10, 10",
+        "h_alignment": "stretch",
+        "item_size": 50,
+        "rows": [
+          [ "scanner", "djed", "mjolnir", "battery", "lamp_of_time", "pochette_key", "pyramid_crystal" ],
+          [ "vessel", "pepper", "egg_of_creation", "giants_flute", "cog_of_antiquity", "mulana_talisman", "fdc" ],
+          [ "holy_grail", "fairy_pass", "gloves", "dinosaur_figure", "gale_fibula", "flame_torc", "vajra" ],
+          [ "power_band", "ice_cloak", "gauntlet", "anchor", "freyas_pendant", "grapple_claw", "spaulder" ],
+          [ "scalesphere", "maats_feather", "ring", "feather", "freys_ship", "snow_shoes", "claydoll_suit" ],
+          [ "origin_sigil", "birth_sigil", "life_sigil", "death_sigil", "", "", "" ],
+          [ "whip1", "shield1", "knife", "rapier", "axe", "katana", "" ],
+          [ "shuriken", "rolling_shuriken", "earth_spear", "flare", "bomb", "chakram", "caltrops", "pistol" ],
+          [ "sacred_orb", "ankh_jewel", "crystal_skull", "beherit", "guardian_kills", "dissonance" ]
+        ]
+      }
+    ]
+  }
+}

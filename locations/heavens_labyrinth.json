@@ -1,0 +1,304 @@
+[
+    {
+        "name": "Heavens Labyrinth",
+        "children": [
+            {
+                "name": "Map Chest HL",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2602,
+                        "y": 1378,
+                        "size": 50
+                    },
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HL) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Crystal Skull Chest HL",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2265,
+                        "y": 1163,
+                        "size": 50
+                    },
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HL) and ((Has(Grapple Claw) or Glitch(Costume Clip)) and Has(Feather))"
+                ]
+            },
+            {
+                "name": "Megarock",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2546,
+                        "y": 650,
+                        "size": 50
+                    },
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(HL) and (Has(Grapple Claw) and Has(Feather))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(HL) and (Has(Grapple Claw) and Has(Feather))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(HL) and (Has(Grapple Claw) and Has(Feather))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HL)"
+                ]
+            },
+            {
+                "name": "Sacred Orb Chest HL",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2508,
+                        "y": 1152,
+                        "size": 50
+                    },
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Glasya Labolas))"
+                ]
+            },
+            {
+                "name": "Perfume Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2767,
+                        "y": 1165,
+                        "size": 50
+                    },
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HLSpun) and (IsDead(Griffin))"
+                ]
+            },
+            {
+                "name": "Axe Puzzle Reward",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2421,
+                        "y": 1097,
+                        "size": 50
+                    },
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and Has(Gloves) and IsDead(Glasya Labolas))"
+                ]
+            },
+            {
+                "name": "Mobile Super X3 Item",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2673,
+                        "y": 1097,
+                        "size": 50
+                    },
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla))"
+                ]
+            },
+            {
+                "name": "Dissonance HL",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2558,
+                        "y": 1302,
+                        "size": 50
+                    },
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Dissonance",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HLSpun) and (CanWarp and IsDead(Echidna) and Has(Progressive Beherit) and Has(Hand Scanner))"
+                ]
+            },
+            {
+                "name": "Arachne",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_arachne"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HLSpun) and (CanWarp)"
+                ]
+            },
+            {
+                "name": "Scylla",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_scylla"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HLSpun) and (CanWarp)"
+                ]
+            },
+            {
+                "name": "Glasya Labolas",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_glasya_labolas"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HLSpun) and (CanWarp and OrbCount(1) and ((Has(Rapier) and (Has(Spaulder) or Has(Gauntlet) or Has(Vajra))) or Has(Chain Whip) or Has(Knife) or Has(Axe) or Has(Katana) or CanUse(Pistol) or CanUse(Chakrams) or CanUse(Earth Spear) or CanUse(Bomb)))"
+                ]
+            },
+            {
+                "name": "Griffin",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_griffin"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HLSpun) and ((Has(Gale Fibula) or CanStopTime) and Has(Gloves) and Has(Life Sigil) and IsDead(Glasya Labolas) and OrbCount(2))"
+                ]
+            },
+            {
+                "name": "Cog of Antiquity Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2308,
+                        "y": 1382,
+                        "size": 50
+                    },
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HLCog) and (Has(Ancient Battery) and CanWarp and HorizontalAttack)"
+                ]
+            }
+        ],
+        "access_rules": [
+            "$lm2_logic|CanReach(HL) or CanReach(HLCog) or CanReach(HLSpun)"
+        ]
+    }
+]

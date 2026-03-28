@@ -1,0 +1,340 @@
+[
+  {
+    "name": "Annwfn",
+    "children": [
+      {
+        "name": "Map Chest Annwfn",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1896,
+            "y": 572,
+            "size": 50
+          },
+          {
+            "map": "Annwfn",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnMain)"
+        ]
+      },
+      {
+        "name": "Glove Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1718,
+            "y": 639,
+            "size": 50
+          },
+          {
+            "map": "Annwfn",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnMain)"
+        ]
+      },
+      {
+        "name": "Crystal Skull Chest Annwfn",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1524,
+            "y": 710,
+            "size": 50
+          },
+          {
+            "map": "Annwfn",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
+        ]
+      },
+      {
+        "name": "Rolling Shuriken Puzzle Reward",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1684,
+            "y": 428,
+            "size": 50
+          },
+          {
+            "map": "Annwfn",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnMain) and (Has(Gloves))"
+        ]
+      },
+      {
+        "name": "Research Annwfn",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1706,
+            "y": 504,
+            "size": 50
+          },
+          {
+            "map": "Annwfn",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnMain)"
+        ]
+      },
+      {
+        "name": "Pym",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1962,
+            "y": 430,
+            "size": 50
+          },
+          {
+            "map": "Annwfn",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Gloves))"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Gloves))"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Gloves))"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnMain)"
+        ]
+      },
+      {
+        "name": "Earth Mantra Mural",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1788,
+            "y": 646,
+            "size": 50
+          },
+          {
+            "map": "Annwfn",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Mural",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and Has(Snapshot))"
+        ]
+      },
+      {
+        "name": "Kaliya",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_kaliya"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnMain) and (CanUse(Rolling Shuriken))"
+        ]
+      },
+      {
+        "name": "Heimdall",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_heimdall"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnMain) and (CanSealCorridor and CanChant(Night) and OrbCount(7) and Has(Silver Shield) and (Has(Flail Whip) or Has(Katana) or Has(Axe)))"
+        ]
+      },
+      {
+        "name": "Sacred Orb Chest Annwfn",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1886,
+            "y": 717,
+            "size": 50
+          },
+          {
+            "map": "Annwfn",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Flare) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Pistol) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (CanUse(Caltrops) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or CanUse(Rolling Shuriken)))))"
+        ]
+      },
+      {
+        "name": "Silver Shield Puzzle Reward",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2042,
+            "y": 683,
+            "size": 50
+          },
+          {
+            "map": "Annwfn",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnRight) and (CanChant(Earth))"
+        ]
+      },
+      {
+        "name": "Ixtab",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_ixtab"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnRight) and (((Has(Leather Whip) or Has(Rapier) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb)) and OrbCount(1)) or CanUse(Flare) or CanUse(Pistol))"
+        ]
+      },
+        {
+            "name": "Kujata",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 2056,
+                    "y": 504,
+                    "size": 50
+                },
+                {
+                    "map": "Annwfn",
+                    "x": 0,
+                    "y": 0
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Guardian",
+                    "item_count": 1,
+                    "hosted_item": "boss_kujata",
+                    "access_rules": [
+                        "$lm2_logic|HasAnkhFor(Kujata)"
+                    ]
+                },
+                {
+                    "name": "Djed Pillar Chest",
+                    "item_count": 1,
+                    "access_rules": [
+                        "$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Kujata))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(AnnwfnRight) and (Has(Freys Ship) and IsDead(Ixtab) and ((CanUse(Pistol) and OrbCount(1)) or ((Has(Flail Whip) or Has(Axe) or CanUse(Bombs)) and OrbCount(2)) or ((Has(Chain Whip) or Has(Katana) or CanUse(Earth Spear) or CanUse(Chakram)) and OrbCount(3)) or ((Has(Knife) or Has(Rapier) or (CanUse(Shuriken) and Has(Ring))) and OrbCount(3) and Has(Feather)) or ((Has(Leather Whip) and CanUse(Rolling Shuriken)) and OrbCount(4))))"
+            ]
+        },
+      {
+        "name": "Annwfn Right Shortcut",
+        "sections": [
+          {
+            "name": "Puzzle",
+            "item_count": 1,
+            "hosted_item": "boss_annwfn_right_shortcut"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab))"
+        ]
+      }
+    ],
+    "access_rules": [
+      "$lm2_logic|CanReach(AnnwfnMain) or CanReach(AnnwfnRight)"
+    ]
+  }
+]

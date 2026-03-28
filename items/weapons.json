@@ -1,0 +1,226 @@
+[
+    {
+        "name": "Progressive Whip",
+        "type": "progressive",
+        "allow_disabled": true,
+        "loop": false,
+        "stages": [
+            {
+                "img": "images/Weapons/Whip1.png",
+                "codes": "whip1"
+            },
+            {
+                "img": "images/Weapons/Whip2.png",
+                "codes": "whip1,whip2"
+            },
+            {
+                "img": "images/Weapons/Whip3.png",
+                "codes": "whip1,whip2,whip3"
+            }
+        ]
+    },
+    {
+        "name": "Progressive Shield",
+        "type": "progressive",
+        "allow_disabled": true,
+        "loop": false,
+        "stages": [
+            {
+                "img": "images/Weapons/Shield1.png",
+                "codes": "shield1"
+            },
+            {
+                "img": "images/Weapons/Shield2.png",
+                "codes": "shield1,shield2"
+            },
+            {
+                "img": "images/Weapons/Shield3.png",
+                "codes": "shield1,shield2,shield3"
+            }
+        ]
+    },
+    {
+        "name": "Progressive Beherit",
+        "type": "consumable",
+        "img": "images/UseItems/Beherit1.png",
+        "codes": "beherit",
+        "max_quantity": 7,
+        "increment": 1
+    },
+    {
+        "name": "Knife",
+        "type": "toggle",
+        "img": "images/Weapons/Knife.png",
+        "codes": "knife"
+    },
+    {
+        "name": "Rapier",
+        "type": "toggle",
+        "img": "images/Weapons/Rapier.png",
+        "codes": "rapier"
+    },
+    {
+        "name": "Axe",
+        "type": "toggle",
+        "img": "images/Weapons/Axe.png",
+        "codes": "axe"
+    },
+    {
+        "name": "Katana",
+        "type": "toggle",
+        "img": "images/Weapons/Katana.png",
+        "codes": "katana"
+    },
+    {
+        "name": "Shuriken",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": false,
+        "codes": "shuriken",
+        "stages": [
+            {
+                "img": "images/Weapons/Shuriken.png",
+                "codes": "shuriken",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenA.png",
+                "codes": "shuriken_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Rolling Shuriken",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": false,
+        "codes": "rolling_shuriken",
+        "stages": [
+            {
+                "img": "images/Weapons/RollingShuriken.png",
+                "codes": "rolling_shuriken",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenA.png",
+                "codes": "rolling_shuriken_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Earth Spear",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": false,
+        "codes": "earth_spear",
+        "stages": [
+            {
+                "img": "images/Weapons/EarthSpear.png",
+                "codes": "earth_spear",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearA.png",
+                "codes": "earth_spear_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Flare Gun",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": false,
+        "codes": "flare",
+        "stages": [
+            {
+                "img": "images/Weapons/FlareGun.png",
+                "codes": "flare",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunA.png",
+                "codes": "flare_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Bomb",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": false,
+        "codes": "bomb",
+        "stages": [
+            {
+                "img": "images/Weapons/Bomb.png",
+                "codes": "bomb",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombA.png",
+                "codes": "bomb_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Chakram",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": false,
+        "codes": "chakram",
+        "stages": [
+            {
+                "img": "images/Weapons/Chakram.png",
+                "codes": "chakram",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramA.png",
+                "codes": "chakram_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Caltrops",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": false,
+        "codes": "caltrops",
+        "stages": [
+            {
+                "img": "images/Weapons/Caltrops.png",
+                "codes": "caltrops",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsA.png",
+                "codes": "caltrops_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Pistol",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": false,
+        "codes": "pistol",
+        "stages": [
+            {
+                "img": "images/Weapons/Pistol.png",
+                "codes": "pistol",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolA.png",
+                "codes": "pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,239 @@
+[
+  {
+    "name": "Ancient Chaos",
+    "children": [
+      {
+        "name": "Map Chest AC",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1209,
+            "y": 2519,
+            "size": 50
+          },
+          {
+            "map": "Ancient Chaos",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or CanUse(Earth Spear) or CanUse(Bomb) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare) and HorizontalAttack))"
+        ]
+      },
+      {
+        "name": "Venum",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1342,
+            "y": 2519,
+            "size": 50
+          },
+          {
+            "map": "Ancient Chaos",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ACBottom)"
+        ]
+      },
+      {
+        "name": "Ki sikil lil la ke",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_ki_sikil_lil_la_ke"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ACBottom) and (OrbCount(2) and (Has(Leather Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
+        ]
+      },
+      {
+        "name": "Wind Mantra Mural",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1434,
+            "y": 2445,
+            "size": 50
+          },
+          {
+            "map": "Ancient Chaos",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Mural",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ACWind) and (Has(Snapshot))"
+        ]
+      },
+      {
+        "name": "Ankh Chest AC",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1061,
+            "y": 2372,
+            "size": 50
+          },
+          {
+            "map": "Ancient Chaos",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ACTablet) and (IsDead(Ki sikil lil la ke))"
+        ]
+      },
+      {
+        "name": "Crystal Skull Chest AC",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1170,
+            "y": 2476,
+            "size": 50
+          },
+          {
+            "map": "Ancient Chaos",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ACTablet) and ((CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit)) or (Glitch(Costume Clip) and HorizontalAttack))"
+        ]
+      },
+      {
+        "name": "Destiny Tablet Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1435,
+            "y": 2255,
+            "size": 50
+          },
+          {
+            "map": "Ancient Chaos",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ACMain) and (IsDead(Anzu))"
+        ]
+      },
+      {
+        "name": "Anu",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1435,
+            "y": 2183,
+            "size": 50
+          },
+          {
+            "map": "Ancient Chaos",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Guardian",
+            "item_count": 1,
+            "hosted_item": "boss_anu",
+            "access_rules": [
+              "$lm2_logic|HasAnkhFor(Anu) and (Has(Gloves) and IsDead(Ki sikil lil la ke) and (((Has(Chain Whip) or Has(Rapier) or Has(Axe) or CanUse(Earth Spear) or (CanUse(Shuriken) and Has(Ring))) and OrbCount(5)) or ((Has(Flail Whip) or (CanUse(Flare) and (Has(Feather) or Has(Ring)))) and OrbCount(4)) or (CanUse(Pistol) and OrbCount(3))))"
+            ]
+          },
+          {
+            "name": "Scriptures Chest",
+            "item_count": 1,
+            "access_rules": [
+              "$lm2_logic|CanReach(ACMain) and (IsDead(Anu) and HorizontalAttack)"
+            ]
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ACMain)"
+        ]
+      },
+      {
+        "name": "Anzu",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_anzu"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ACMain) and (CanStopTime and Has(Claydoll Suit) and Has(Silver Shield) and OrbCount(6) and (Has(Chain Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
+        ]
+      }
+    ],
+    "access_rules": [
+      "$lm2_logic|CanReach(ACBottom) or CanReach(ACMain) or CanReach(ACTablet) or CanReach(ACWind)"
+    ]
+  }
+]

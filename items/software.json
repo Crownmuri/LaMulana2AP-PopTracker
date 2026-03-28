@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Xelputter",
+    "type": "toggle",
+    "img": "images/Software/Xelputter.png",
+    "codes": "xelputter"
+  },
+  {
+    "name": "Yagoo Map Reader",
+    "type": "toggle",
+    "img": "images/Software/YagooReader.png",
+    "codes": "map_reader"
+  },
+  {
+    "name": "Yagoo Map Street",
+    "type": "toggle",
+    "img": "images/Software/YagooStreet.png",
+    "codes": "map_street"
+  },
+  {
+    "name": "TextTrax 2",
+    "type": "toggle",
+    "img": "images/Software/TextTrax2.png",
+    "codes": "texttrax"
+  },
+  {
+    "name": "Ruins Encyclopedia",
+    "type": "toggle",
+    "img": "images/Software/RuinsEncyclopedia.png",
+    "codes": "encyclopedia"
+  },
+  {
+    "name": "Mantra",
+    "type": "toggle",
+    "img": "images/Software/Mantra.png",
+    "codes": "mantra_app"
+  },
+  {
+    "name": "Guild",
+    "type": "toggle",
+    "img": "images/Software/Guild.png",
+    "codes": "guild"
+  },
+  {
+    "name": "Enga Musica",
+    "type": "toggle",
+    "img": "images/Software/EngaMusica.png",
+    "codes": "enga_musica"
+  },
+  {
+    "name": "Beo Eg-Lana",
+    "type": "toggle",
+    "img": "images/Software/BeoEgLana.png",
+    "codes": "beo_eglana"
+  },
+  {
+    "name": "Alert",
+    "type": "toggle",
+    "img": "images/Software/Alert.png",
+    "codes": "alert"
+  },
+  {
+    "name": "Snapshot",
+    "type": "toggle",
+    "img": "images/Software/Snapshots.png",
+    "codes": "snapshot"
+  },
+  {
+    "name": "Skull Reader",
+    "type": "toggle",
+    "img": "images/Software/Skull.png",
+    "codes": "skull_reader"
+  },
+  {
+    "name": "Race Scanner",
+    "type": "toggle",
+    "img": "images/Software/RaceScanner.png",
+    "codes": "race_scanner"
+  },
+  {
+    "name": "Death Village",
+    "type": "toggle",
+    "img": "images/Software/DeathVillage.png",
+    "codes": "death_village"
+  },
+  {
+    "name": "Rose and Camelia",
+    "type": "toggle",
+    "img": "images/Software/RoseCamelia.png",
+    "codes": "rose_camelia"
+  },
+  {
+    "name": "Space Capstar II",
+    "type": "toggle",
+    "img": "images/Software/SpaceCapstarII.png",
+    "codes": "space_capstar"
+  },
+  {
+    "name": "Lonely House Moving",
+    "type": "toggle",
+    "img": "images/Software/LonelyHouseMoving.png",
+    "codes": "lonely_house"
+  },
+  {
+    "name": "Mekuri Master",
+    "type": "toggle",
+    "img": "images/Software/MekuriMaster.png",
+    "codes": "mekuri_master"
+  },
+  {
+    "name": "Bounce Shot",
+    "type": "toggle",
+    "img": "images/Software/BounceShot.png",
+    "codes": "bounce_shot"
+  },
+  {
+    "name": "Miracle Witch",
+    "type": "toggle",
+    "img": "images/Software/MiracleWitch.png",
+    "codes": "miracle_witch"
+  },
+  {
+    "name": "La-Mulana",
+    "type": "toggle",
+    "img": "images/Software/LaMulana.png",
+    "codes": "la_mulana"
+  },
+  {
+    "name": "La-Mulana 2",
+    "type": "toggle",
+    "img": "images/Software/LaMulana2.png",
+    "codes": "la_mulana_2"
+  }
+]

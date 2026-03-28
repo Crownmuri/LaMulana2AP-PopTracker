@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Heaven",
+    "type": "toggle",
+    "img": "images/Mantras/Heaven.png",
+    "codes": "mantra_heaven"
+  },
+  {
+    "name": "Earth",
+    "type": "toggle",
+    "img": "images/Mantras/Earth.png",
+    "codes": "mantra_earth"
+  },
+  {
+    "name": "Sun",
+    "type": "toggle",
+    "img": "images/Mantras/Sun.png",
+    "codes": "mantra_sun"
+  },
+  {
+    "name": "Moon",
+    "type": "toggle",
+    "img": "images/Mantras/Moon.png",
+    "codes": "mantra_moon"
+  },
+  {
+    "name": "Sea",
+    "type": "toggle",
+    "img": "images/Mantras/Sea.png",
+    "codes": "mantra_sea"
+  },
+  {
+    "name": "Fire",
+    "type": "toggle",
+    "img": "images/Mantras/Fire.png",
+    "codes": "mantra_fire"
+  },
+  {
+    "name": "Wind",
+    "type": "toggle",
+    "img": "images/Mantras/Wind.png",
+    "codes": "mantra_wind"
+  },
+  {
+    "name": "Mother",
+    "type": "toggle",
+    "img": "images/Mantras/Mother.png",
+    "codes": "mantra_mother"
+  },
+  {
+    "name": "Child",
+    "type": "toggle",
+    "img": "images/Mantras/Child.png",
+    "codes": "mantra_child"
+  },
+  {
+    "name": "Night",
+    "type": "toggle",
+    "img": "images/Mantras/Night.png",
+    "codes": "mantra_night"
+  }
+]

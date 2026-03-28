@@ -1,0 +1,246 @@
+[
+  {
+    "name": "Valhalla",
+    "children": [
+      {
+        "name": "Map Chest Valhalla",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1520,
+            "y": 1781,
+            "size": 50
+          },
+          {
+            "map": "Valhalla",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ValhallaMain) and (Has(Origin Sigil))"
+        ]
+      },
+      {
+        "name": "Vritra",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2101,
+            "y": 1780,
+            "size": 50
+          },
+          {
+            "map": "Valhalla",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Guardian",
+            "item_count": 1,
+            "hosted_item": "boss_vritra",
+            "access_rules": [
+              "$lm2_logic|HasAnkhFor(Vritra) and (CanReach(RoY) and (MeleeAttack or Glitch(Costume Clip)) and IsDead(Vucub Caquiz) and (((Has(Leather Whip) or Has(Knife) or Has(Rapier) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or CanUse(Bomb) or CanUse(Earth Spear) or CanUse(Shuriken)) and OrbCount(1)) or CanUse(Pistol)))"
+            ]
+          },
+          {
+            "name": "Scalesphere Chest",
+            "item_count": 1,
+            "access_rules": [
+              "$lm2_logic|IsDead(Vritra) and HorizontalAttack"
+            ]
+          },
+          {
+            "name": "Dissonance Valhalla",
+            "item_count": 1,
+            "access_rules": [
+              "$lm2_logic|CanReach(ValhallaMain) and (Has(Progressive Beherit) and IsDead(Vritra))"
+            ]
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ValhallaMain)"
+        ]
+      },
+      {
+        "name": "Crystal Skull Chest Valhalla",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1682,
+            "y": 1917,
+            "size": 50
+          },
+          {
+            "map": "Valhalla",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ValhallaMain) and ((Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and Has(Death Sigil) and CanChant(Fire) and CanChant(Earth) and IsDead(Jalandhara) and HorizontalAttack)"
+        ]
+      },
+      {
+        "name": "Caltrop Puzzle Reward",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1806,
+            "y": 1849,
+            "size": 50
+          },
+          {
+            "map": "Valhalla",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ValhallaMain)"
+        ]
+      },
+      {
+        "name": "Bargain Duck",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1986,
+            "y": 1849,
+            "size": 50
+          },
+          {
+            "map": "Valhalla",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ValhallaMain)"
+        ]
+      },
+      {
+        "name": "Vucub Caquiz",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_vucub_caquiz"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ValhallaMain) and (Has(Origin Sigil) and (((Has(Leather Whip) or CanUse(Rolling Shuriken)) and OrbCount(1)) or (Has(Chain Whip) or Has(Rapier) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Pistol) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb))))"
+        ]
+      },
+      {
+        "name": "Jalandhara",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_jalandhara"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ValhallaMain) and (Has(Life Sigil) and Has(Feather) and OrbCount(4) and (Has(Chain Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or (CanUse(Pistol) and Has(Mjolnir))))"
+        ]
+      },
+      {
+        "name": "Fire Mantra Mural",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1972,
+            "y": 1629,
+            "size": 50
+          },
+          {
+            "map": "Valhalla",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Mural",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ValhallaTop) and (Has(Birth Sigil) and Has(Snapshot))"
+        ]
+      },
+      {
+        "name": "Flail Whip Puzzle Reward",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1922,
+            "y": 1738,
+            "size": 50
+          },
+          {
+            "map": "Valhalla",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(ValhallaTop) and ((Has(Feather) or Has(Grapple Claw)) and Has(Origin Sigil) and Has(Birth Sigil) and Has(Life Sigil) and Has(Death Sigil) and Has(Claydoll Suit) and CanReach(Valhalla Top Right))"
+        ]
+      }
+    ],
+    "access_rules": [
+      "$lm2_logic|CanReach(ValhallaMain) or CanReach(ValhallaTop)"
+    ]
+  }
+]

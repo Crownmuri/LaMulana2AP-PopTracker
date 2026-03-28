@@ -1,0 +1,394 @@
+[
+  {
+    "name": "Dark Star Lords Mausoleum",
+    "children": [
+      {
+        "name": "Feather Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2183,
+            "y": 2104,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMMain) and (Has(Feather) or ((IsDead(Angra Mainyu) or (Glitch(Costume Clip) and CanReach(DSLMTop))) and HorizontalAttack))"
+        ]
+      },
+      {
+        "name": "Ankh Chest DLM",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2736,
+            "y": 2026,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMMain) and (Has(Grapple Claw))"
+        ]
+      },
+      {
+        "name": "Map Chest DLM",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2420,
+            "y": 2251,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMMain) and (Has(Birth Sigil))"
+        ]
+      },
+      {
+        "name": "Aten-Ra",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2433,
+            "y": 2385,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Guardian",
+            "item_count": 1,
+            "hosted_item": "boss_aten_ra",
+            "access_rules": [
+              "$lm2_logic|HasAnkhFor(Aten-Ra) and ((IsDead(Sekhmet) or Glitch(Costume Clip)) and PuzzleFinished(White Pedestals) and (((Has(Chain Whip) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Chakrams) or CanUse(Bomb)) and OrbCount(6)) or ((Has(Flail Whip) or Has(Katana) or Has(Axe)) and OrbCount(5)) or (CanUse(Pistol) and OrbCount(4))))"
+            ]
+          },
+          {
+            "name": "Dissonance DSLM",
+            "item_count": 1,
+            "access_rules": [
+              "$lm2_logic|CanReach(DSLMMain) and (Has(Progressive Beherit) and IsDead(Aten-Ra))"
+            ]
+          },
+          {
+            "name": "Crucifix Chest",
+            "item_count": 1,
+            "access_rules": [
+              "$lm2_logic|CanReach(DSLMMain) and (IsDead(Aten-Ra) and HorizontalAttack)"
+            ]
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMMain)"
+        ]
+      },
+      {
+        "name": "Maats Feather Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2353,
+            "y": 2314,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMMain) and (CanReach(AC Tablet) and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
+        ]
+      },
+      {
+        "name": "Research DSLM",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2231,
+            "y": 2141,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMMain)"
+        ]
+      },
+      {
+        "name": "Kero",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2465,
+            "y": 1994,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
+                ]
+            }
+        ]
+      },
+      {
+        "name": "Money Fairy",
+        "sections": [
+          {
+            "name": "Fairy",
+            "item_count": 1,
+            "hosted_item": "boss_money_fairy"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMMain) and (Has(Fairy Pass) and Has(Freyas Pendant) and CanReach(Annwfn Main) and (Has(Gale Fibula) or CanStopTime))"
+        ]
+      },
+      {
+        "name": "Sekhmet",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_sekhmet"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMMain) and (CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and OrbCount(3) and (Has(Chain Whip) or Has(Rapier) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
+        ]
+      },
+      {
+        "name": "Crystal Skull Chest DLM",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2325,
+            "y": 2049,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMTop) and (SkullCount(1) and (Has(Feather) or CanWarp or (CanReach(DSLM Main) and CanUse(Bomb))))"
+        ]
+      },
+      {
+        "name": "La Mulana Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2393,
+            "y": 2061,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMTop) and (CanUse(Bomb) and (Has(Feather) or CanWarp or CanReach(DSLM Main)))"
+        ]
+      },
+      {
+        "name": "Vessel Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2372,
+            "y": 1938,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMTop) and (IsDead(Ammit) and HorizontalAttack)"
+        ]
+      },
+      {
+        "name": "Angra Mainyu",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_angra_mainyu"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMTop) and (Has(Mjolnir) and OrbCount(1) and (CanWarp or Has(Feather) or CanReach(DSLM Main)))"
+        ]
+      },
+      {
+        "name": "Ammit",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_ammit"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(DSLMTop) and (Has(Feather) and Has(Pyramid Crystal) and Has(Silver Shield) and OrbCount(3) and (Has(Chain Whip) or Has(Knife) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
+        ]
+      },
+      {
+        "name": "Night Mantra Mural",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2558,
+            "y": 1708,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Mural",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(Nibiru) and (Has(Death Sigil) and Has(Snapshot) and Has(Claydoll Suit))"
+        ]
+      },
+      {
+        "name": "Dissonance Nibiru",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2558,
+            "y": 1643,
+            "size": 50
+          },
+          {
+            "map": "Dark Star Lords Mausoleum",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Dissonance",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+            "$lm2_logic|CanReach(Nibiru) and (Has(Progressive Beherit) and Has(Power Band) and Has(Mjolnir) and Has(Claydoll Suit) and NibiruSkullCheck())"
+        ]
+      }
+    ],
+    "access_rules": [
+      "$lm2_logic|CanReach(DSLMMain) or CanReach(DSLMTop) or CanReach(Nibiru)"
+    ]
+  }
+]

@@ -1,0 +1,42 @@
+{
+  "shared_item_grid_horizontal": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "3, 3",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "0, 1",
+        "margin": "0, 0",
+        "h_alignment": "left",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "item_height": 35,
+        "item_width": 35,
+        "rows": [
+            [ "whip1", "knife", "rapier", "axe", "katana", "sacred_orb" ],
+            [ "shuriken", "rolling_shuriken", "earth_spear", "flare", "caltrops", "claydoll_suit" ],
+            [ "chakram", "bomb", "pistol", "shield1", "ankh_jewel", "" ],
+            [ "scanner", "djed", "mjolnir", "beherit", "battery", "" ],
+            [ "lamp_of_time", "pochette_key", "pyramid_crystal", "crystal_skull", "vessel", "" ],
+            [ "pepper", "egg_of_creation", "giants_flute", "cog_of_antiquity", "mulana_talisman", "" ],
+            [ "origin_sigil", "birth_sigil", "life_sigil", "death_sigil", "boss_money_fairy", "boss_key_fairy" ],
+            [ "gloves", "grapple_claw", "ring", "snow_shoes", "flame_torc", "gale_fibula" ],
+            [ "vajra", "feather", "ice_cloak", "scalesphere", "scriptures", "spaulder" ],
+            [ "nemean_fur", "power_band", "gauntlet", "anchor", "bracelet", "book_of_dead" ],
+            [ "shell_horn", "holy_grail", "fairy_pass", "freyas_pendant", "totem_pole", "bronze_mirror" ],
+            [ "crucifix", "perfume", "maats_feather", "dinosaur_figure", "freys_ship", "codices" ],
+            [ "ganesha_talisman", "harp", "destiny_tablet", "light_scythe", "secret_treasure", "mobile_super" ],
+            [ "xelputter", "map_reader", "map_street", "texttrax", "encyclopedia", "mantra_app" ],
+            [ "guild", "research", "enga_musica", "beo_eglana", "alert", "snapshot" ],
+            [ "skull_reader", "race_scanner", "death_village", "rose_camelia", "space_capstar", "lonely_house" ],
+            [ "mekuri_master", "bounce_shot", "miracle_witch", "fdc", "la_mulana", "la_mulana_2" ],
+            [ "mantra_heaven", "mantra_earth", "mantra_sun", "mantra_moon", "mantra_sea" ],
+            [ "mantra_fire", "mantra_wind", "mantra_mother", "mantra_child", "mantra_night" ],
+            [ "boss_fafnir", "boss_vritra", "boss_kujata", "boss_jormungand", "boss_aten_ra", "" ],
+            [ "boss_anu", "boss_surtr", "boss_echidna", "boss_hel", "boss_ninth_child", "" ]
+        ]
+      }
+    ]
+  }
+}

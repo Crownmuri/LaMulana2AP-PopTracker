@@ -1,0 +1,240 @@
+[
+    {
+        "name": "Divine Fortress",
+        "children": [
+            {
+                "name": "Map Chest DF",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2409,
+                        "y": 344,
+                        "size": 50
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFRight)"
+                ]
+            },
+            {
+                "name": "Origin Sigil Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2558,
+                        "y": 299,
+                        "size": 50
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFRight) and (IsDead(Hugin and Munin))"
+                ]
+            },
+            {
+                "name": "Frey Ship",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2439,
+                        "y": 293,
+                        "size": 50
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFRight) and (Has(Hand Scanner) and CanReach(Annwfn Right) and IsDead(Ixtab) and (Has(Origin Sigil) or Has(Feather) or Has(Grapple Claw)))"
+                ]
+            },
+            {
+                "name": "Heaven Mantra Mural",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2399,
+                        "y": 419,
+                        "size": 50
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Mural",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFRight) and (Has(Snapshot))"
+                ]
+            },
+            {
+                "name": "Hugin and Munin",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_hugin_and_munin"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFRight) and (CanWarp or Has(Origin Sigil))"
+                ]
+            },
+            {
+                "name": "Ankh Chest DF",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2053,
+                        "y": 346,
+                        "size": 50
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFMain) and (Has(Origin Sigil))"
+                ]
+            },
+            {
+                "name": "Sacred Orb Chest DF",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2174,
+                        "y": 291,
+                        "size": 50
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFMain)"
+                ]
+            },
+            {
+                "name": "Shuhoka",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2157,
+                        "y": 449,
+                        "size": 50
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFMain)"
+                ]
+            },
+            {
+                "name": "Death Village Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2337,
+                        "y": 235,
+                        "size": 50
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFTop)"
+                ]
+            }
+        ],
+        "access_rules": [
+            "$lm2_logic|CanReach(DFMain) or CanReach(DFRight) or CanReach(DFTop)"
+        ]
+    }
+]

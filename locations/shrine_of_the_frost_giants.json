@@ -1,0 +1,355 @@
+[
+    {
+        "name": "Shrine of the Frost Giants",
+        "children": [
+            {
+                "name": "Map Chest SotFG",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1223,
+                        "y": 705,
+                        "size": 50
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGMain)"
+                ]
+            },
+            {
+                "name": "Pochette Key Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1361,
+                        "y": 548,
+                        "size": 50
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGMain) and (IsDead(Badhbh Cath) and Has(Life Sigil) and Has(Grapple Claw) and (HorizontalAttack or (CanUse(Flare) and (CanWarp or Has(Feather)))))"
+                ]
+            },
+            {
+                "name": "Weapon Fairy",
+                "sections": [
+                    {
+                        "name": "Fairy",
+                        "item_count": 1,
+                        "hosted_item": "boss_weapon_fairy"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGMain) and (Has(Fairy Pass) and Has(Freyas Pendant) and CanReach(Annwfn Right))"
+                ]
+            },
+            {
+                "name": "Badhbh Cath",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_badhbh_cath"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGMain) and (((Has(Leather Whip) or Has(Knife) or Has(Rapier) or CanUse(Earth Spear) or CanUse(Chakram)) and OrbCount(1)) or (Has(Chain Whip) or Has(Axe) or Has(Katana) or CanUse(Pistol) or CanUse(Bomb) or CanUse(Flare)))"
+                ]
+            },
+            {
+                "name": "Fenrir",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_fenrir"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGMain) and (PuzzleFinished(Bergelmir) and Has(Flame Torc) and Has(Silver Shield) and OrbCount(7) and (Has(Flail Whip) or Has(Axe) or Has(Katana)))"
+                ]
+            },
+            {
+                "name": "Birth Sigil Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1344,
+                        "y": 853,
+                        "size": 50
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGGrail) and (Has(Origin Sigil) and HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Ankh Chest SotFG",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 914,
+                        "y": 749,
+                        "size": 50
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGGrail)"
+                ]
+            },
+            {
+                "name": "Rapier Puzzle Reward",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 940,
+                        "y": 695,
+                        "size": 50
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGGrail)"
+                ]
+            },
+            {
+                "name": "Sacred Orb Chest SotFG",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1081,
+                        "y": 503,
+                        "size": 50
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGTop) and (CanUse(Earth Spear) or CanUse(Flare))"
+                ]
+            },
+            {
+                "name": "Sea Mantra Mural",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1081,
+                        "y": 553,
+                        "size": 50
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Mural",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGTop) and (Has(Snapshot) and Has(Birth Sigil))"
+                ]
+            },
+            {
+                "name": "Claydoll Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1132,
+                        "y": 437,
+                        "size": 50
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGBalor) and (Has(Life Sigil) and Has(Feather) and IsDead(Balor))"
+                ]
+            },
+            {
+                "name": "Balor",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_balor"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGBalor) and (((Has(Knife) or Has(Rapier) or Has(Katana)) and Has(Feather) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or CanUse(Flare) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Pistol)) and OrbCount(2)))"
+                ]
+            },
+            {
+                "name": "Tezcatlipoca",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_tezcatlipoca"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGBloodTez) and (Has(Gloves) and OrbCount(1))"
+                ]
+            },
+            {
+                "name": "Gauntlet Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 810,
+                        "y": 559,
+                        "size": 50
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGLeft) and (Has(Feather) and Has(Life Sigil) and ((HorizontalAttack and CanUse(Flare)) or Has(Leather Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb)))"
+                ]
+            },
+            {
+                "name": "Hydlit",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 802,
+                        "y": 681,
+                        "size": 50
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 0,
+                        "y": 0
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(SotFGLeft) and (((Has(Snow Shoes) and Has(Gale Fibula)) or CanStopTime) and PuzzleFinished(Bergelmir))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(SotFGLeft) and (((Has(Snow Shoes) and Has(Gale Fibula)) or CanStopTime) and PuzzleFinished(Bergelmir))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(SotFGLeft) and (((Has(Snow Shoes) and Has(Gale Fibula)) or CanStopTime) and PuzzleFinished(Bergelmir))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGLeft)"
+                ]
+            },
+            {
+                "name": "Bergelmir",
+                "sections": [
+                    {
+                        "name": "Puzzle",
+                        "item_count": 1,
+                        "hosted_item": "boss_bergelmir"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGLeft) and (CanChant(Earth) and CanChant(Moon) and CanChant(Heaven))"
+                ]
+            }
+        ],
+        "access_rules": [
+            "$lm2_logic|CanReach(SotFGBalor) or CanReach(SotFGBloodTez) or CanReach(SotFGGrail) or CanReach(SotFGLeft) or CanReach(SotFGMain) or CanReach(SotFGTop)"
+        ]
+    }
+]

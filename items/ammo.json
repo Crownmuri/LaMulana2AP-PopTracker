@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Shuriken Ammo",
+    "type": "toggle",
+    "img": "images/Other/ShurikenAmmo.png",
+    "codes": "shuriken_ammo"
+  },
+  {
+    "name": "Rolling Shuriken Ammo",
+    "type": "toggle",
+    "img": "images/Other/RollingShurikenAmmo.png",
+    "codes": "rolling_shuriken_ammo"
+  },
+  {
+    "name": "Earth Spear Ammo",
+    "type": "toggle",
+    "img": "images/Other/EarthSpearAmmo.png",
+    "codes": "earth_spear_ammo"
+  },
+  {
+    "name": "Flare Ammo",
+    "type": "toggle",
+    "img": "images/Other/FlareAmmo.png",
+    "codes": "flare_ammo"
+  },
+  {
+    "name": "Bomb Ammo",
+    "type": "toggle",
+    "img": "images/Other/BombAmmo.png",
+    "codes": "bomb_ammo"
+  },
+  {
+    "name": "Chakram Ammo",
+    "type": "toggle",
+    "img": "images/Other/ChakramAmmo.png",
+    "codes": "chakram_ammo"
+  },
+  {
+    "name": "Caltrops Ammo",
+    "type": "toggle",
+    "img": "images/Other/CaltropsAmmo.png",
+    "codes": "caltrops_ammo"
+  },
+  {
+    "name": "Pistol Ammo",
+    "type": "toggle",
+    "img": "images/Other/PistolAmmo.png",
+    "codes": "pistol_ammo"
+  }
+]

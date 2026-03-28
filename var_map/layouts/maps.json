@@ -1,0 +1,160 @@
+{
+    "tabbed_maps_horizontal": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Full Map",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Full Map"
+                    ]
+                }
+            },
+            {
+                "title": "La-Mulana",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "La-Mulana"
+                    ]
+                }
+            },
+            {
+                "title": "Roots of Yggdrasil",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Roots of Yggdrasil"
+                    ]
+                }
+            },
+            {
+                "title": "Annwfn",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Annwfn"
+                    ]
+                }
+            },
+            {
+                "title": "Immortal Battlefield",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Immortal Battlefield"
+                    ]
+                }
+            },
+            {
+                "title": "Icefire Treetop",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Icefire Treetop"
+                    ]
+                }
+            },
+            {
+                "title": "Divine Fortress",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Divine Fortress"
+                    ]
+                }
+            },
+            {
+                "title": "Shrine of the Frost Giants",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Shrine of the Frost Giants"
+                    ]
+                }
+            },
+            {
+                "title": "Gate of the Dead",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Gate of the Dead"
+                    ]
+                }
+            },
+            {
+                "title": "Takamagahara Shrine",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Takamagahara Shrine"
+                    ]
+                }
+            },
+            {
+                "title": "Heavens Labyrinth",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Heavens Labyrinth"
+                    ]
+                }
+            },
+            {
+                "title": "Valhalla",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Valhalla"
+                    ]
+                }
+            },
+            {
+                "title": "Dark Star Lords Mausoleum",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Dark Star Lords Mausoleum"
+                    ]
+                }
+            },
+            {
+                "title": "Ancient Chaos",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Ancient Chaos"
+                    ]
+                }
+            },
+            {
+                "title": "Hall of Malice",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Hall of Malice"
+                    ]
+                }
+            },
+            {
+                "title": "Eternal Prison - Gloom",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Eternal Prison - Gloom"
+                    ]
+                }
+            },
+            {
+                "title": "Eternal Prison - Doom",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Eternal Prison - Doom"
+                    ]
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,744 @@
+[
+  {
+    "name": "Immortal Battlefield",
+    "children": [
+      {
+        "name": "Peibalusa",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1774,
+            "y": 785,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBTop)"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBTop)"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBTop)"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBTop)"
+        ]
+      },
+      {
+        "name": "Cetus",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_cetus"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBTop) and (CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops) or Has(Claydoll Suit) or (CanUse(Flare) and (Has(Anchor) or Has(Fish Suit))) or ((CanUse(Shuriken) or CanUse(Chakram)) and Has(Scalesphere)) or (Has(Axe) and (Has(Scalesphere) or (OrbCount(1) and Has(Anchor)))) or (Has(Leather Whip) and Has(Anchor) and (Has(Scalesphere) or OrbCount(2))) or ((Has(Chain Whip) or Has(Katana)) and Has(Anchor) and (Has(Scalesphere) or OrbCount(1))))"
+        ]
+      },
+      {
+        "name": "Gale Fibula Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1403,
+            "y": 840,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBTopLeft) and ((CanUse(Earth Spear) or CanUse(Flare) or (CanUse(Bomb) and Has(Ring))) and Has(Gloves))"
+        ]
+      },
+      {
+        "name": "Earth Spear Puzzle Reward",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1524,
+            "y": 761,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBTopLeft) and (Has(Gloves) or Has(Feather))"
+        ]
+      },
+      {
+        "name": "Research IB Top Left",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1632,
+            "y": 786,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBTopLeft) and (Has(Feather) or (Has(Gloves) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops))))"
+        ]
+      },
+      {
+        "name": "Map Chest IB",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1933,
+            "y": 828,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain)"
+        ]
+      },
+      {
+        "name": "Ice Cloak Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2039,
+            "y": 1030,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Rolling Shuriken) or CanUse(Flare) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit) or CanUse(Caltrops) or CanUse(Pistol)))"
+        ]
+      },
+      {
+        "name": "Totem Pole Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1632,
+            "y": 841,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
+        ]
+      },
+      {
+        "name": "Sacred Orb Chest IB",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1951,
+            "y": 1085,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus)))"
+        ]
+      },
+      {
+        "name": "Lamp of Time Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1467,
+            "y": 986,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2) and Has(Cog of Antiquity) and Has(Life Sigil))"
+        ]
+      },
+      {
+        "name": "Crystal Skull IB",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1579,
+            "y": 907,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2))"
+        ]
+      },
+      {
+        "name": "Research IB Top Right",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2081,
+            "y": 773,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain)"
+        ]
+      },
+      {
+        "name": "Research IB Tent 1",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1750,
+            "y": 895,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)))"
+        ]
+      },
+      {
+        "name": "Research IB Tent 2",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1800,
+            "y": 895,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and GuardianKills(7))"
+        ]
+      },
+      {
+        "name": "Research IB Tent 3",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1850,
+            "y": 895,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and IsDead(Heimdall))"
+        ]
+      },
+      {
+        "name": "Mulbruk Item",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2083,
+            "y": 884,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Dialogue",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain) and (CanReach(Annwfn Main) and GuardianKills(4))"
+        ]
+      },
+      {
+        "name": "Ratatoskr 2",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_ratatoskr_2"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 1))"
+        ]
+      },
+        {
+            "name": "Jormungand",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1862,
+                    "y": 1053,
+                    "size": 50
+                },
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 0,
+                    "y": 0
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Guardian",
+                    "item_count": 1,
+                    "hosted_item": "boss_jormungand",
+                    "access_rules": [
+                        "$lm2_logic|HasAnkhFor(Jormungand)"
+                    ]
+                },
+                {
+                    "name": "Mjolnir Chest",
+                    "item_count": 1,
+                    "access_rules": [
+                        "$lm2_logic|CanReach(IBMain) and (IsDead(Jormungand))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBMain) and (IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight) and (((Has(Rapier) or CanUse(Rolling Shuriken)) and OrbCount(5)) or ((Has(Chain Whip) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Chakram)) and OrbCount(4)) or (CanUse(pistol) and OrbCount(2))))"
+            ]
+        },
+      {
+        "name": "Chakram Puzzle Reward",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2313,
+            "y": 1097,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBRight) and (CanUse(Rolling Shuriken) and ((IsDead(Svipdagr) and Has(Life Sigil) and CanUse(Earth Spear)) or Glitch(Costume Clip)))"
+        ]
+      },
+      {
+        "name": "Hiro Roderick",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2063,
+            "y": 1097,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+            {
+                "name": "Shop Slot 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
+                ]
+            },
+            {
+                "name": "Shop Slot 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
+                ]
+            },
+            {
+                "name": "Shop Slot 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
+                ]
+            }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBRight)"
+        ]
+      },
+      {
+        "name": "Svipdagr",
+        "sections": [
+          {
+            "name": "Miniboss",
+            "item_count": 1,
+            "hosted_item": "boss_svipdagr"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBRight) and (OrbCount(1))"
+        ]
+      },
+      {
+        "name": "Chain Whip Puzzle Reward",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1538,
+            "y": 1121,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBBottom) and (Has(Gloves) and (Has(Claydoll Suit) or OrbCount(1) or Has(Ice Cloak)))"
+        ]
+      },
+      {
+        "name": "Research IB Pit",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1510,
+            "y": 1047,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBBottom)"
+        ]
+      },
+      {
+        "name": "IB Left Shortcut",
+        "sections": [
+          {
+            "name": "Puzzle",
+            "item_count": 1,
+            "hosted_item": "boss_ib_left_shortcut"
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBLeft) and (Has(Birth Sigil))"
+        ]
+      },
+      {
+        "name": "Research IB Left",
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBLeft)"
+        ]
+      },
+      {
+        "name": "Battery Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2148,
+            "y": 1153,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
+        ]
+      },
+      {
+        "name": "Dinosaur Figure Chest",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1883,
+            "y": 1176,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Chest",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBDinosaur) and (CanUse(Flare) or CanUse(Earth Spear) or Has(Rapier))"
+        ]
+      },
+      {
+        "name": "Moon Mantra Mural",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 1809,
+            "y": 1164,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Mural",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(IBMoon) and (CanChant(Sun) and Has(Snapshot) and HorizontalAttack and Has(Life Sigil) and (CanWarp or CanReach(IBDinosaur) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and Setting(Non Random Ladders))))"
+        ]
+      },
+      {
+        "name": "Sun Mantra Mural",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2432,
+            "y": 967,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "Mural",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(Cavern) and (Has(Snapshot))"
+        ]
+      },
+      {
+        "name": "Secret Treasure of Life Item",
+        "map_locations": [
+          {
+            "map": "Full Map",
+            "x": 2432,
+            "y": 1044,
+            "size": 50
+          },
+          {
+            "map": "Immortal Battlefield",
+            "x": 0,
+            "y": 0
+          }
+        ],
+        "sections": [
+          {
+            "name": "FreeStanding",
+            "item_count": 1
+          }
+        ],
+        "access_rules": [
+          "$lm2_logic|CanReach(AltarLeft) and (IsDead(Heimdall) and Has(Feather))"
+        ]
+      }
+    ],
+    "access_rules": [
+      "$lm2_logic|CanReach(AltarLeft) or CanReach(Cavern) or CanReach(IBBattery) or CanReach(IBBottom) or CanReach(IBDinosaur) or CanReach(IBLeft) or CanReach(IBMain) or CanReach(IBMoon) or CanReach(IBRight) or CanReach(IBTop) or CanReach(IBTopLeft)"
+    ]
+  }
+]
