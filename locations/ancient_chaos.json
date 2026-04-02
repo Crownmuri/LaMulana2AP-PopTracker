@@ -13,8 +13,8 @@
           },
           {
             "map": "Ancient Chaos",
-            "x": 0,
-            "y": 0
+            "x": 422,
+            "y": 740
           }
         ],
         "sections": [
@@ -38,8 +38,8 @@
           },
           {
             "map": "Ancient Chaos",
-            "x": 0,
-            "y": 0
+            "x": 689,
+            "y": 740
           }
         ],
         "sections": [
@@ -69,19 +69,27 @@
           "$lm2_logic|CanReach(ACBottom)"
         ]
       },
-      {
-        "name": "Ki sikil lil la ke",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_ki_sikil_lil_la_ke"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ACBottom) and (OrbCount(2) and (Has(Leather Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
-        ]
-      },
+        {
+            "name": "Ki sikil lil la ke",
+            "map_locations": [
+                {
+                    "map": "Ancient Chaos",
+                    "x": 67,
+                    "y": 739,
+                    "shape": "diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_ki_sikil_lil_la_ke"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ACBottom) and (OrbCount(2) and (Has(Leather Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
+            ]
+        },
       {
         "name": "Wind Mantra Mural",
         "map_locations": [
@@ -93,8 +101,8 @@
           },
           {
             "map": "Ancient Chaos",
-            "x": 0,
-            "y": 0
+            "x": 873,
+            "y": 590
           }
         ],
         "sections": [
@@ -118,8 +126,8 @@
           },
           {
             "map": "Ancient Chaos",
-            "x": 0,
-            "y": 0
+            "x": 111,
+            "y": 424
           }
         ],
         "sections": [
@@ -137,14 +145,14 @@
         "map_locations": [
           {
             "map": "Full Map",
-            "x": 1170,
-            "y": 2476,
+            "x": 1150,
+            "y": 2456,
             "size": 50
           },
           {
             "map": "Ancient Chaos",
-            "x": 0,
-            "y": 0
+            "x": 345,
+            "y": 651
           }
         ],
         "sections": [
@@ -168,8 +176,8 @@
           },
           {
             "map": "Ancient Chaos",
-            "x": 0,
-            "y": 0
+            "x": 873,
+            "y": 176
           }
         ],
         "sections": [
@@ -191,11 +199,13 @@
             "y": 2183,
             "size": 50
           },
-          {
-            "map": "Ancient Chaos",
-            "x": 0,
-            "y": 0
-          }
+            {
+                "map": "Ancient Chaos",
+                "x": 875,
+                "y": 41,
+                "size": 50
+
+            }
         ],
         "sections": [
           {
@@ -218,19 +228,27 @@
           "$lm2_logic|CanReach(ACMain)"
         ]
       },
-      {
-        "name": "Anzu",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_anzu"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ACMain) and (CanStopTime and Has(Claydoll Suit) and Has(Silver Shield) and OrbCount(6) and (Has(Chain Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
-        ]
-      }
+        {
+            "name": "Anzu",
+            "map_locations": [
+                {
+                    "map": "Ancient Chaos",
+                    "x": 873,
+                    "y": 230,
+                    "shape": "diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_anzu"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ACMain) and (CanStopTime and Has(Claydoll Suit) and Has(Silver Shield) and OrbCount(6) and (Has(Chain Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
+            ]
+        }
     ],
     "access_rules": [
       "$lm2_logic|CanReach(ACBottom) or CanReach(ACMain) or CanReach(ACTablet) or CanReach(ACWind)"

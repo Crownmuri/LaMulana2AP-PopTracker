@@ -1,6 +1,6 @@
 [
     {
-        "name": "Eternal Prison Gloom",
+        "name": "Eternal Prison - Gloom",
         "children": [
             {
                 "name": "Map Chest EPG",
@@ -12,9 +12,9 @@
                         "size": 50
                     },
                     {
-                        "map": "Eternal Prison Gloom",
-                        "x": 0,
-                        "y": 0
+                        "map": "Eternal Prison - Gloom",
+                        "x": 1079,
+                        "y": 196
                     }
                 ],
                 "sections": [
@@ -37,9 +37,9 @@
                         "size": 50
                     },
                     {
-                        "map": "Eternal Prison Gloom",
-                        "x": 0,
-                        "y": 0
+                        "map": "Eternal Prison - Gloom",
+                        "x": 687,
+                        "y": 899
                     }
                 ],
                 "sections": [
@@ -62,9 +62,9 @@
                         "size": 50
                     },
                     {
-                        "map": "Eternal Prison Gloom",
-                        "x": 0,
-                        "y": 0
+                        "map": "Eternal Prison - Gloom",
+                        "x": 628,
+                        "y": 571
                     }
                 ],
                 "sections": [
@@ -87,9 +87,9 @@
                         "size": 50
                     },
                     {
-                        "map": "Eternal Prison Gloom",
-                        "x": 0,
-                        "y": 0
+                        "map": "Eternal Prison - Gloom",
+                        "x": 224,
+                        "y": 574
                     }
                 ],
                 "sections": [
@@ -104,6 +104,14 @@
             },
             {
                 "name": "Key Fairy",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 943,
+                        "y": 719,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Fairy",
@@ -138,9 +146,9 @@
                         "size": 50
                     },
                     {
-                        "map": "Eternal Prison Gloom",
-                        "x": 0,
-                        "y": 0
+                        "map": "Eternal Prison - Gloom",
+                        "x": 623,
+                        "y": 737
                     }
                 ],
                 "sections": [
@@ -168,6 +176,14 @@
             },
             {
                 "name": "Ratatoskr 4",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 121,
+                        "y": 605,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Miniboss",

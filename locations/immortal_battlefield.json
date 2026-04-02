@@ -13,8 +13,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 1055,
+            "y": 90
           }
         ],
         "sections": [
@@ -44,19 +44,27 @@
           "$lm2_logic|CanReach(IBTop)"
         ]
       },
-      {
-        "name": "Cetus",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_cetus"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBTop) and (CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops) or Has(Claydoll Suit) or (CanUse(Flare) and (Has(Anchor) or Has(Fish Suit))) or ((CanUse(Shuriken) or CanUse(Chakram)) and Has(Scalesphere)) or (Has(Axe) and (Has(Scalesphere) or (OrbCount(1) and Has(Anchor)))) or (Has(Leather Whip) and Has(Anchor) and (Has(Scalesphere) or OrbCount(2))) or ((Has(Chain Whip) or Has(Katana)) and Has(Anchor) and (Has(Scalesphere) or OrbCount(1))))"
-        ]
-      },
+        {
+            "name": "Cetus",
+            "map_locations": [
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 1267,
+                    "y": 93,
+                    "shape": "diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_cetus"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBTop) and (CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops) or Has(Claydoll Suit) or (CanUse(Flare) and (Has(Anchor) or Has(Fish Suit))) or ((CanUse(Shuriken) or CanUse(Chakram)) and Has(Scalesphere)) or (Has(Axe) and (Has(Scalesphere) or (OrbCount(1) and Has(Anchor)))) or (Has(Leather Whip) and Has(Anchor) and (Has(Scalesphere) or OrbCount(2))) or ((Has(Chain Whip) or Has(Katana)) and Has(Anchor) and (Has(Scalesphere) or OrbCount(1))))"
+            ]
+        },
       {
         "name": "Gale Fibula Chest",
         "map_locations": [
@@ -68,8 +76,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 268,
+            "y": 206
           }
         ],
         "sections": [
@@ -93,8 +101,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 533,
+            "y": 48
           }
         ],
         "sections": [
@@ -118,8 +126,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 781,
+            "y": 119
           }
         ],
         "sections": [
@@ -143,8 +151,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 1371,
+            "y": 182
           }
         ],
         "sections": [
@@ -168,8 +176,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 1585,
+            "y": 585
           }
         ],
         "sections": [
@@ -193,8 +201,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 768,
+            "y": 206
           }
         ],
         "sections": [
@@ -218,8 +226,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 1407,
+            "y": 696
           }
         ],
         "sections": [
@@ -243,8 +251,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 439,
+            "y": 496
           }
         ],
         "sections": [
@@ -268,8 +276,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 662,
+            "y": 340
           }
         ],
         "sections": [
@@ -293,8 +301,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 1671,
+            "y": 66
           }
         ],
         "sections": [
@@ -308,78 +316,42 @@
         ]
       },
       {
-        "name": "Research IB Tent 1",
+        "name": "Immortal Battlefield Tent",
         "map_locations": [
           {
             "map": "Full Map",
-            "x": 1750,
-            "y": 895,
+            "x": 1816,
+            "y": 908,
             "size": 50
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 1137,
+            "y": 340
           }
         ],
         "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)))"
-        ]
-      },
-      {
-        "name": "Research IB Tent 2",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1800,
-            "y": 895,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and GuardianKills(7))"
-        ]
-      },
-      {
-        "name": "Research IB Tent 3",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1850,
-            "y": 895,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and IsDead(Heimdall))"
+            {
+                "name": "Research IB Tent 1",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)))"
+                ]
+            },
+            {
+                "name": "Research IB Tent 2",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and GuardianKills(7))"
+                ]
+            },
+            {
+                "name": "Research IB Tent 3",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and IsDead(Heimdall))"
+                ]
+            }
         ]
       },
       {
@@ -387,14 +359,14 @@
         "map_locations": [
           {
             "map": "Full Map",
-            "x": 2083,
-            "y": 884,
+            "x": 2053,
+            "y": 854,
             "size": 50
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 1680,
+            "y": 286
           }
         ],
         "sections": [
@@ -407,19 +379,27 @@
           "$lm2_logic|CanReach(IBMain) and (CanReach(Annwfn Main) and GuardianKills(4))"
         ]
       },
-      {
-        "name": "Ratatoskr 2",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_ratatoskr_2"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 1))"
-        ]
-      },
+        {
+            "name": "Ratatoskr 2",
+            "map_locations": [
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 586,
+                    "y": 340,
+                    "shape": "diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_ratatoskr_2"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 1))"
+            ]
+        },
         {
             "name": "Jormungand",
             "map_locations": [
@@ -431,8 +411,10 @@
                 },
                 {
                     "map": "Immortal Battlefield",
-                    "x": 0,
-                    "y": 0
+                    "x": 1117,
+                    "y": 609,
+                    "size": 50
+
                 }
             ],
             "sections": [
@@ -467,8 +449,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 2131,
+            "y": 714
           }
         ],
         "sections": [
@@ -492,8 +474,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 1632,
+            "y": 720
           }
         ],
         "sections": [
@@ -523,19 +505,27 @@
           "$lm2_logic|CanReach(IBRight)"
         ]
       },
-      {
-        "name": "Svipdagr",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_svipdagr"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBRight) and (OrbCount(1))"
-        ]
-      },
+        {
+            "name": "Svipdagr",
+            "map_locations": [
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 1873,
+                    "y": 744,
+                    "shape": "diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_svipdagr"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBRight) and (OrbCount(1))"
+            ]
+        },
       {
         "name": "Chain Whip Puzzle Reward",
         "map_locations": [
@@ -547,8 +537,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 581,
+            "y": 762
           }
         ],
         "sections": [
@@ -572,8 +562,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 523,
+            "y": 627
           }
         ],
         "sections": [
@@ -599,18 +589,31 @@
           "$lm2_logic|CanReach(IBLeft) and (Has(Birth Sigil))"
         ]
       },
-      {
-        "name": "Research IB Left",
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBLeft)"
-        ]
-      },
+        {
+            "name": "Research IB Left",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1297,
+                    "y": 1110,
+                    "size": 50
+                },
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 101,
+                    "y": 740
+                }
+            ],
+            "sections": [
+                {
+                    "name": "FreeStanding",
+                    "item_count": 1
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBLeft)"
+            ]
+        },
       {
         "name": "Battery Chest",
         "map_locations": [
@@ -622,8 +625,8 @@
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 1800,
+            "y": 830
           }
         ],
         "sections": [
@@ -642,13 +645,13 @@
           {
             "map": "Full Map",
             "x": 1883,
-            "y": 1176,
+            "y": 1173,
             "size": 50
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 1272,
+            "y": 878
           }
         ],
         "sections": [
@@ -667,13 +670,13 @@
           {
             "map": "Full Map",
             "x": 1809,
-            "y": 1164,
+            "y": 1173,
             "size": 50
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 1123,
+            "y": 850
           }
         ],
         "sections": [
@@ -692,13 +695,13 @@
           {
             "map": "Full Map",
             "x": 2432,
-            "y": 967,
+            "y": 975,
             "size": 50
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 2371,
+            "y": 454
           }
         ],
         "sections": [
@@ -717,13 +720,13 @@
           {
             "map": "Full Map",
             "x": 2432,
-            "y": 1044,
+            "y": 1035,
             "size": 50
           },
           {
             "map": "Immortal Battlefield",
-            "x": 0,
-            "y": 0
+            "x": 2367,
+            "y": 582
           }
         ],
         "sections": [

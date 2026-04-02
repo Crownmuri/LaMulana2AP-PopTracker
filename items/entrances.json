@@ -1,0 +1,1484 @@
+[
+    {
+        "name": "Altar Left Door (A-1)",
+        "type": "toggle",
+        "codes": "er_altar_left_door__a_1",
+        "category": "entrance",
+        "img": "images/entrances/er_altar_left_door__a_1.png"
+    },
+    {
+        "name": "Immortal Battlefield Left Altar Door (D-3)",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_left_altar_door__d_3",
+        "category": "entrance",
+        "img": "images/entrances/er_immortal_battlefield_left_altar_door__d_3.png"
+    },
+    {
+        "name": "Altar Right Door (C-1)",
+        "type": "toggle",
+        "codes": "er_altar_right_door__c_1",
+        "category": "entrance",
+        "img": "images/entrances/er_altar_right_door__c_1.png"
+    },
+    {
+        "name": "Immortal Battlefield Right Altar Door (F-3)",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_right_altar_door__f_3",
+        "category": "entrance",
+        "img": "images/entrances/er_immortal_battlefield_right_altar_door__f_3.png"
+    },
+    {
+        "name": "Ancient Chaos Gate (D-6)",
+        "type": "toggle",
+        "codes": "er_ancient_chaos_gate__d_6",
+        "category": "entrance",
+        "img": "images/entrances/er_ancient_chaos_gate__d_6.png"
+    },
+    {
+        "name": "Takamagahara Shrine Bottom Gate (C-7)",
+        "type": "toggle",
+        "codes": "er_takamagahara_shrine_bottom_gate__c_7",
+        "category": "entrance",
+        "img": "images/entrances/er_takamagahara_shrine_bottom_gate__c_7.png"
+    },
+    {
+        "name": "Annwfn Bifrost",
+        "type": "toggle",
+        "codes": "er_annwfn_bifrost",
+        "category": "entrance",
+        "img": "images/entrances/er_annwfn_bifrost.png"
+    },
+    {
+        "name": "Immortal Battlefield Bifrost Fall",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_bifrost_fall",
+        "category": "entrance",
+        "img": "images/entrances/er_immortal_battlefield_bifrost_fall.png"
+    },
+    {
+        "name": "Annwfn Bottom One-way Ladder (E-5)",
+        "type": "toggle",
+        "codes": "er_annwfn_bottom_one_way_ladder__e_5",
+        "category": "entrance",
+        "img": "images/entrances/er_annwfn_bottom_one_way_ladder__e_5.png"
+    },
+    {
+        "name": "Immortal Battlefield Cetus Up Ladder (F-1)",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_cetus_up_ladder__f_1",
+        "category": "entrance",
+        "img": "images/entrances/er_immortal_battlefield_cetus_up_ladder__f_1.png"
+    },
+    {
+        "name": "Annwfn Ladder Up (C-1)",
+        "type": "toggle",
+        "codes": "er_annwfn_ladder_up__c_1",
+        "category": "entrance",
+        "img": "images/entrances/er_annwfn_ladder_up__c_1.png"
+    },
+    {
+        "name": "Roots of Yggdrasil Ladder Down (C-5)",
+        "type": "toggle",
+        "codes": "er_roots_of_yggdrasil_ladder_down__c_5",
+        "category": "entrance",
+        "img": "images/entrances/er_roots_of_yggdrasil_ladder_down__c_5.png"
+    },
+    {
+        "name": "Annwfn Right Gate (G-4)",
+        "type": "toggle",
+        "codes": "er_annwfn_right_gate__g_4",
+        "category": "entrance",
+        "img": "images/entrances/er_annwfn_right_gate__g_4.png"
+    },
+    {
+        "name": "Roots of Yggdrasil Top Left Switch Gate (A-1)",
+        "type": "toggle",
+        "codes": "er_roots_of_yggdrasil_top_left_switch_gate__a_1",
+        "category": "entrance",
+        "img": "images/entrances/er_roots_of_yggdrasil_top_left_switch_gate__a_1.png"
+    },
+    {
+        "name": "Cavern Left Door (A-1)",
+        "type": "toggle",
+        "codes": "er_cavern_left_door__a_1",
+        "category": "entrance",
+        "img": "images/entrances/er_cavern_left_door__a_1.png"
+    },
+    {
+        "name": "Immortal Battlefield Right Door (H-4)",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_right_door__h_4",
+        "category": "entrance",
+        "img": "images/entrances/er_immortal_battlefield_right_door__h_4.png"
+    },
+    {
+        "name": "Cavern Right Door (D-1)",
+        "type": "toggle",
+        "codes": "er_cavern_right_door__d_1",
+        "category": "entrance",
+        "img": "images/entrances/er_cavern_right_door__d_1.png"
+    },
+    {
+        "name": "Cliff (A-1)",
+        "type": "toggle",
+        "codes": "er_cliff__a_1",
+        "category": "entrance",
+        "img": "images/entrances/er_cliff__a_1.png"
+    },
+    {
+        "name": "Dark Star Lord's Mausoleum Gate (D-7)",
+        "type": "toggle",
+        "codes": "er_dark_star_lord_s_mausoleum_gate__d_7",
+        "category": "entrance",
+        "img": "images/entrances/er_dark_star_lord_s_mausoleum_gate__d_7.png"
+    },
+    {
+        "name": "Gate of the Dead Wedjat Gate (F-5)",
+        "type": "toggle",
+        "codes": "er_gate_of_the_dead_wedjat_gate__f_5",
+        "category": "entrance",
+        "img": "images/entrances/er_gate_of_the_dead_wedjat_gate__f_5.png"
+    },
+    {
+        "name": "Dark Star Lord's Mausoleum Pyramid",
+        "type": "toggle",
+        "codes": "er_dark_star_lord_s_mausoleum_pyramid",
+        "category": "entrance",
+        "img": "images/entrances/er_dark_star_lord_s_mausoleum_pyramid.png"
+    },
+    {
+        "name": "Nibiru Spaceship",
+        "type": "toggle",
+        "codes": "er_nibiru_spaceship",
+        "category": "entrance",
+        "img": "images/entrances/er_nibiru_spaceship.png"
+    },
+    {
+        "name": "Divine Fortress Left Gate (A-3)",
+        "type": "toggle",
+        "codes": "er_divine_fortress_left_gate__a_3",
+        "category": "entrance",
+        "img": "images/entrances/er_divine_fortress_left_gate__a_3.png"
+    },
+    {
+        "name": "Valhalla Gate (A-2)",
+        "type": "toggle",
+        "codes": "er_valhalla_gate__a_2",
+        "category": "entrance",
+        "img": "images/entrances/er_valhalla_gate__a_2.png"
+    },
+    {
+        "name": "Endless Corridor (C-1)",
+        "type": "toggle",
+        "codes": "er_endless_corridor__c_1",
+        "category": "entrance",
+        "img": "images/entrances/er_endless_corridor__c_1.png"
+    },
+    {
+        "name": "Mausoleum of Giants Left Door (A-5)",
+        "type": "toggle",
+        "codes": "er_mausoleum_of_giants_left_door__a_5",
+        "category": "entrance",
+        "img": "images/entrances/er_mausoleum_of_giants_left_door__a_5.png"
+    },
+    {
+        "name": "Gate of Guidance Ladder Down (A-6)",
+        "type": "toggle",
+        "codes": "er_gate_of_guidance_ladder_down__a_6",
+        "category": "entrance",
+        "img": "images/entrances/er_gate_of_guidance_ladder_down__a_6.png"
+    },
+    {
+        "name": "Mausoleum of Giants Ladder Up (A-1)",
+        "type": "toggle",
+        "codes": "er_mausoleum_of_giants_ladder_up__a_1",
+        "category": "entrance",
+        "img": "images/entrances/er_mausoleum_of_giants_ladder_up__a_1.png"
+    },
+    {
+        "name": "Gate of Guidance Left Gate (A-3)",
+        "type": "toggle",
+        "codes": "er_gate_of_guidance_left_gate__a_3",
+        "category": "entrance",
+        "img": "images/entrances/er_gate_of_guidance_left_gate__a_3.png"
+    },
+    {
+        "name": "Gate of Illusion Left Gate (A-1)",
+        "type": "toggle",
+        "codes": "er_gate_of_illusion_left_gate__a_1",
+        "category": "entrance",
+        "img": "images/entrances/er_gate_of_illusion_left_gate__a_1.png"
+    },
+    {
+        "name": "Gate of Guidance Main Entrance (C-1)",
+        "type": "toggle",
+        "codes": "er_gate_of_guidance_main_entrance__c_1",
+        "category": "entrance",
+        "img": "images/entrances/er_gate_of_guidance_main_entrance__c_1.png"
+    },
+    {
+        "name": "Village of Departure Main (F-5)",
+        "type": "toggle",
+        "codes": "er_village_of_departure_main__f_5",
+        "category": "entrance",
+        "img": "images/entrances/er_village_of_departure_main__f_5.png"
+    },
+    {
+        "name": "Gate of Illusion Right Gate (C-1)",
+        "type": "toggle",
+        "codes": "er_gate_of_illusion_right_gate__c_1",
+        "category": "entrance",
+        "img": "images/entrances/er_gate_of_illusion_right_gate__c_1.png"
+    },
+    {
+        "name": "Roots of Yggdrasil Main Gate (D-4)",
+        "type": "toggle",
+        "codes": "er_roots_of_yggdrasil_main_gate__d_4",
+        "category": "entrance",
+        "img": "images/entrances/er_roots_of_yggdrasil_main_gate__d_4.png"
+    },
+    {
+        "name": "Hall of Malice Gate (C-1)",
+        "type": "toggle",
+        "codes": "er_hall_of_malice_gate__c_1",
+        "category": "entrance",
+        "img": "images/entrances/er_hall_of_malice_gate__c_1.png"
+    },
+    {
+        "name": "Heavens Labyrinth Gate (D-1)",
+        "type": "toggle",
+        "codes": "er_heavens_labyrinth_gate__d_1",
+        "category": "entrance",
+        "img": "images/entrances/er_heavens_labyrinth_gate__d_1.png"
+    },
+    {
+        "name": "Heavens Labyrinth Monster's Jaw",
+        "type": "toggle",
+        "codes": "er_heavens_labyrinth_monster_s_jaw",
+        "category": "entrance",
+        "img": "images/entrances/er_heavens_labyrinth_monster_s_jaw.png"
+    },
+    {
+        "name": "Takamagahara Shrine Neck",
+        "type": "toggle",
+        "codes": "er_takamagahara_shrine_neck",
+        "category": "entrance",
+        "img": "images/entrances/er_takamagahara_shrine_neck.png"
+    },
+    {
+        "name": "Icefire Treetop Fire Side Up Ladder (C-1)",
+        "type": "toggle",
+        "codes": "er_icefire_treetop_fire_side_up_ladder__c_1",
+        "category": "entrance",
+        "img": "images/entrances/er_icefire_treetop_fire_side_up_ladder__c_1.png"
+    },
+    {
+        "name": "Immortal Battlefield Down Ladder near Spinning Wheel (D-7)",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_down_ladder_near_spinning_wheel__d_7",
+        "category": "entrance",
+        "img": "images/entrances/er_immortal_battlefield_down_ladder_near_spinning_wheel__d_7.png"
+    },
+    {
+        "name": "Icefire Treetop Ice Side Left Ladder (F-1)",
+        "type": "toggle",
+        "codes": "er_icefire_treetop_ice_side_left_ladder__f_1",
+        "category": "entrance",
+        "img": "images/entrances/er_icefire_treetop_ice_side_left_ladder__f_1.png"
+    },
+    {
+        "name": "Immortal Battlefield Moon Altar Hallway (G-7)",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_moon_altar_hallway__g_7",
+        "category": "entrance",
+        "img": "images/entrances/er_immortal_battlefield_moon_altar_hallway__g_7.png"
+    },
+    {
+        "name": "Icefire Treetop Ice Side Right Ladder (F-1)",
+        "type": "toggle",
+        "codes": "er_icefire_treetop_ice_side_right_ladder__f_1",
+        "category": "entrance",
+        "img": "images/entrances/er_icefire_treetop_ice_side_right_ladder__f_1.png"
+    },
+    {
+        "name": "Immortal Battlefield Alviss Down Ladder (G-7)",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_alviss_down_ladder__g_7",
+        "category": "entrance",
+        "img": "images/entrances/er_immortal_battlefield_alviss_down_ladder__g_7.png"
+    },
+    {
+        "name": "Icefire Treetop Middle Gate (D-3)",
+        "type": "toggle",
+        "codes": "er_icefire_treetop_middle_gate__d_3",
+        "category": "entrance",
+        "img": "images/entrances/er_icefire_treetop_middle_gate__d_3.png"
+    },
+    {
+        "name": "Roots of Yggdrasil Top Middle Nidhogg Gate (D-1)",
+        "type": "toggle",
+        "codes": "er_roots_of_yggdrasil_top_middle_nidhogg_gate__d_1",
+        "category": "entrance",
+        "img": "images/entrances/er_roots_of_yggdrasil_top_middle_nidhogg_gate__d_1.png"
+    },
+    {
+        "name": "Immortal Battlefield Left Gate (A-6)",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_left_gate__a_6",
+        "category": "entrance",
+        "img": "images/entrances/er_immortal_battlefield_left_gate__a_6.png"
+    },
+    {
+        "name": "Roots of Yggdrasil Top Right Birth Gate (G-1)",
+        "type": "toggle",
+        "codes": "er_roots_of_yggdrasil_top_right_birth_gate__g_1",
+        "category": "entrance",
+        "img": "images/entrances/er_roots_of_yggdrasil_top_right_birth_gate__g_1.png"
+    },
+    {
+        "name": "Inferno Cavern (B-1)",
+        "type": "toggle",
+        "codes": "er_inferno_cavern__b_1",
+        "category": "entrance",
+        "img": "images/entrances/er_inferno_cavern__b_1.png"
+    },
+    {
+        "name": "Village of Departure Ladder Down (F-3)",
+        "type": "toggle",
+        "codes": "er_village_of_departure_ladder_down__f_3",
+        "category": "entrance",
+        "img": "images/entrances/er_village_of_departure_ladder_down__f_3.png"
+    },
+    {
+        "name": "Shrine of the Frost Giants Backside Gate (B-2)",
+        "type": "toggle",
+        "codes": "er_shrine_of_the_frost_giants_backside_gate__b_2",
+        "category": "entrance",
+        "img": "images/entrances/er_shrine_of_the_frost_giants_backside_gate__b_2.png"
+    },
+    {
+        "name": "Shrine of the Frost Giants Bergelmir Gate (B-4)",
+        "type": "toggle",
+        "codes": "er_shrine_of_the_frost_giants_bergelmir_gate__b_4",
+        "category": "entrance",
+        "img": "images/entrances/er_shrine_of_the_frost_giants_bergelmir_gate__b_4.png"
+    },
+    {
+        "name": "Starting Area",
+        "type": "toggle",
+        "codes": "er_starting_area",
+        "category": "entrance",
+        "img": "images/entrances/er_starting_area.png"
+    },
+    {
+        "name": "Village of Departure Next to Xelpud",
+        "type": "toggle",
+        "codes": "er_village_of_departure_next_to_xelpud",
+        "category": "entrance",
+        "img": "images/entrances/er_village_of_departure_next_to_xelpud.png"
+    },
+    {
+        "name": "Immortal Battlefield Spiral Boat Soul Gate(D-4)",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_spiral_boat_soul_gate_d_4",
+        "category": "soul_gate",
+        "img": "images/entrances/er_immortal_battlefield_spiral_boat_soul_gate_d_4.png"
+    },
+    {
+        "name": "Cost: Immortal Battlefield Spiral Boat Soul Gate(D-4)",
+        "type": "progressive",
+        "codes": "cost_er_immortal_battlefield_spiral_boat_soul_gate_d_4",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Hall of Malice Soul Gate (D-3)",
+        "type": "toggle",
+        "codes": "er_hall_of_malice_soul_gate__d_3",
+        "category": "soul_gate",
+        "img": "images/entrances/er_hall_of_malice_soul_gate__d_3.png"
+    },
+    {
+        "name": "Cost: Hall of Malice Soul Gate (D-3)",
+        "type": "progressive",
+        "codes": "cost_er_hall_of_malice_soul_gate__d_3",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Heavens Labyrinth Soul Gate (E-5)",
+        "type": "toggle",
+        "codes": "er_heavens_labyrinth_soul_gate__e_5",
+        "category": "soul_gate",
+        "img": "images/entrances/er_heavens_labyrinth_soul_gate__e_5.png"
+    },
+    {
+        "name": "Cost: Heavens Labyrinth Soul Gate (E-5)",
+        "type": "progressive",
+        "codes": "cost_er_heavens_labyrinth_soul_gate__e_5",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Icefire Treetop Under Ratatoskr Soul Gate (G-3)",
+        "type": "toggle",
+        "codes": "er_icefire_treetop_under_ratatoskr_soul_gate__g_3",
+        "category": "soul_gate",
+        "img": "images/entrances/er_icefire_treetop_under_ratatoskr_soul_gate__g_3.png"
+    },
+    {
+        "name": "Cost: Icefire Treetop Under Ratatoskr Soul Gate (G-3)",
+        "type": "progressive",
+        "codes": "cost_er_icefire_treetop_under_ratatoskr_soul_gate__g_3",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Takamagahara Shrine Top Main Soul Gate (D-1)",
+        "type": "toggle",
+        "codes": "er_takamagahara_shrine_top_main_soul_gate__d_1",
+        "category": "soul_gate",
+        "img": "images/entrances/er_takamagahara_shrine_top_main_soul_gate__d_1.png"
+    },
+    {
+        "name": "Cost: Takamagahara Shrine Top Main Soul Gate (D-1)",
+        "type": "progressive",
+        "codes": "cost_er_takamagahara_shrine_top_main_soul_gate__d_1",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Immortal Battlefield Bottom Left Gate (B-7)",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_bottom_left_gate__b_7",
+        "category": "soul_gate",
+        "img": "images/entrances/er_immortal_battlefield_bottom_left_gate__b_7.png"
+    },
+    {
+        "name": "Cost: Immortal Battlefield Bottom Left Gate (B-7)",
+        "type": "progressive",
+        "codes": "cost_er_immortal_battlefield_bottom_left_gate__b_7",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Divine Fortress Soul Gate (C-5)",
+        "type": "toggle",
+        "codes": "er_divine_fortress_soul_gate__c_5",
+        "category": "soul_gate",
+        "img": "images/entrances/er_divine_fortress_soul_gate__c_5.png"
+    },
+    {
+        "name": "Cost: Divine Fortress Soul Gate (C-5)",
+        "type": "progressive",
+        "codes": "cost_er_divine_fortress_soul_gate__c_5",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Roots of Yggdrasil Bottom Soul Gate (D-6)",
+        "type": "toggle",
+        "codes": "er_roots_of_yggdrasil_bottom_soul_gate__d_6",
+        "category": "soul_gate",
+        "img": "images/entrances/er_roots_of_yggdrasil_bottom_soul_gate__d_6.png"
+    },
+    {
+        "name": "Cost: Roots of Yggdrasil Bottom Soul Gate (D-6)",
+        "type": "progressive",
+        "codes": "cost_er_roots_of_yggdrasil_bottom_soul_gate__d_6",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Ancient Chaos Soul Gate (C-1)",
+        "type": "toggle",
+        "codes": "er_ancient_chaos_soul_gate__c_1",
+        "category": "soul_gate",
+        "img": "images/entrances/er_ancient_chaos_soul_gate__c_1.png"
+    },
+    {
+        "name": "Cost: Ancient Chaos Soul Gate (C-1)",
+        "type": "progressive",
+        "codes": "cost_er_ancient_chaos_soul_gate__c_1",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Takamagahara Shrine Belial Soul Gate (B-1)",
+        "type": "toggle",
+        "codes": "er_takamagahara_shrine_belial_soul_gate__b_1",
+        "category": "soul_gate",
+        "img": "images/entrances/er_takamagahara_shrine_belial_soul_gate__b_1.png"
+    },
+    {
+        "name": "Cost: Takamagahara Shrine Belial Soul Gate (B-1)",
+        "type": "progressive",
+        "codes": "cost_er_takamagahara_shrine_belial_soul_gate__b_1",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Immortal Battlefield Top Right Gate (H-2)",
+        "type": "toggle",
+        "codes": "er_immortal_battlefield_top_right_gate__h_2",
+        "category": "soul_gate",
+        "img": "images/entrances/er_immortal_battlefield_top_right_gate__h_2.png"
+    },
+    {
+        "name": "Cost: Immortal Battlefield Top Right Gate (H-2)",
+        "type": "progressive",
+        "codes": "cost_er_immortal_battlefield_top_right_gate__h_2",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Gate of the Dead Soul Gate (C-4)",
+        "type": "toggle",
+        "codes": "er_gate_of_the_dead_soul_gate__c_4",
+        "category": "soul_gate",
+        "img": "images/entrances/er_gate_of_the_dead_soul_gate__c_4.png"
+    },
+    {
+        "name": "Cost: Gate of the Dead Soul Gate (C-4)",
+        "type": "progressive",
+        "codes": "cost_er_gate_of_the_dead_soul_gate__c_4",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Shrine of the Frost Giants Main Soul Gate (E-4)",
+        "type": "toggle",
+        "codes": "er_shrine_of_the_frost_giants_main_soul_gate__e_4",
+        "category": "soul_gate",
+        "img": "images/entrances/er_shrine_of_the_frost_giants_main_soul_gate__e_4.png"
+    },
+    {
+        "name": "Cost: Shrine of the Frost Giants Main Soul Gate (E-4)",
+        "type": "progressive",
+        "codes": "cost_er_shrine_of_the_frost_giants_main_soul_gate__e_4",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Annwfn Soul Gate (A-4)",
+        "type": "toggle",
+        "codes": "er_annwfn_soul_gate__a_4",
+        "category": "soul_gate",
+        "img": "images/entrances/er_annwfn_soul_gate__a_4.png"
+    },
+    {
+        "name": "Cost: Annwfn Soul Gate (A-4)",
+        "type": "progressive",
+        "codes": "cost_er_annwfn_soul_gate__a_4",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Shrine of the Frost Giants Balor Soul Gate (E-1)",
+        "type": "toggle",
+        "codes": "er_shrine_of_the_frost_giants_balor_soul_gate__e_1",
+        "category": "soul_gate",
+        "img": "images/entrances/er_shrine_of_the_frost_giants_balor_soul_gate__e_1.png"
+    },
+    {
+        "name": "Cost: Shrine of the Frost Giants Balor Soul Gate (E-1)",
+        "type": "progressive",
+        "codes": "cost_er_shrine_of_the_frost_giants_balor_soul_gate__e_1",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Valhalla Soul Gate (E-2)",
+        "type": "toggle",
+        "codes": "er_valhalla_soul_gate__e_2",
+        "category": "soul_gate",
+        "img": "images/entrances/er_valhalla_soul_gate__e_2.png"
+    },
+    {
+        "name": "Cost: Valhalla Soul Gate (E-2)",
+        "type": "progressive",
+        "codes": "cost_er_valhalla_soul_gate__e_2",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Icefire Treetop Vidofnir Soul Gate (D-6)",
+        "type": "toggle",
+        "codes": "er_icefire_treetop_vidofnir_soul_gate__d_6",
+        "category": "soul_gate",
+        "img": "images/entrances/er_icefire_treetop_vidofnir_soul_gate__d_6.png"
+    },
+    {
+        "name": "Cost: Icefire Treetop Vidofnir Soul Gate (D-6)",
+        "type": "progressive",
+        "codes": "cost_er_icefire_treetop_vidofnir_soul_gate__d_6",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Eternal Prison Gloom Soul Gate (D-2)",
+        "type": "toggle",
+        "codes": "er_eternal_prison_gloom_soul_gate__d_2",
+        "category": "soul_gate",
+        "img": "images/entrances/er_eternal_prison_gloom_soul_gate__d_2.png"
+    },
+    {
+        "name": "Cost: Eternal Prison Gloom Soul Gate (D-2)",
+        "type": "progressive",
+        "codes": "cost_er_eternal_prison_gloom_soul_gate__d_2",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "ER Arrow",
+        "type": "static",
+        "codes": "er_arrow",
+        "img": "images/arrow.png"
+    },
+    {
+        "name": "Target for Altar Left Door (A-1)",
+        "type": "static",
+        "codes": "target_er_altar_left_door__a_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Left Altar Door (D-3)",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_left_altar_door__d_3",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Altar Right Door (C-1)",
+        "type": "static",
+        "codes": "target_er_altar_right_door__c_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Right Altar Door (F-3)",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_right_altar_door__f_3",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Ancient Chaos Gate (D-6)",
+        "type": "static",
+        "codes": "target_er_ancient_chaos_gate__d_6",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Takamagahara Shrine Bottom Gate (C-7)",
+        "type": "static",
+        "codes": "target_er_takamagahara_shrine_bottom_gate__c_7",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Annwfn Bifrost",
+        "type": "static",
+        "codes": "target_er_annwfn_bifrost",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Bifrost Fall",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_bifrost_fall",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Annwfn Bottom One-way Ladder (E-5)",
+        "type": "static",
+        "codes": "target_er_annwfn_bottom_one_way_ladder__e_5",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Cetus Up Ladder (F-1)",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_cetus_up_ladder__f_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Annwfn Ladder Up (C-1)",
+        "type": "static",
+        "codes": "target_er_annwfn_ladder_up__c_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Roots of Yggdrasil Ladder Down (C-5)",
+        "type": "static",
+        "codes": "target_er_roots_of_yggdrasil_ladder_down__c_5",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Annwfn Right Gate (G-4)",
+        "type": "static",
+        "codes": "target_er_annwfn_right_gate__g_4",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Roots of Yggdrasil Top Left Switch Gate (A-1)",
+        "type": "static",
+        "codes": "target_er_roots_of_yggdrasil_top_left_switch_gate__a_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Cavern Left Door (A-1)",
+        "type": "static",
+        "codes": "target_er_cavern_left_door__a_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Right Door (H-4)",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_right_door__h_4",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Cavern Right Door (D-1)",
+        "type": "static",
+        "codes": "target_er_cavern_right_door__d_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Cliff (A-1)",
+        "type": "static",
+        "codes": "target_er_cliff__a_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Dark Star Lord's Mausoleum Gate (D-7)",
+        "type": "static",
+        "codes": "target_er_dark_star_lord_s_mausoleum_gate__d_7",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Gate of the Dead Wedjat Gate (F-5)",
+        "type": "static",
+        "codes": "target_er_gate_of_the_dead_wedjat_gate__f_5",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Dark Star Lord's Mausoleum Pyramid",
+        "type": "static",
+        "codes": "target_er_dark_star_lord_s_mausoleum_pyramid",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Nibiru Spaceship",
+        "type": "static",
+        "codes": "target_er_nibiru_spaceship",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Divine Fortress Left Gate (A-3)",
+        "type": "static",
+        "codes": "target_er_divine_fortress_left_gate__a_3",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Valhalla Gate (A-2)",
+        "type": "static",
+        "codes": "target_er_valhalla_gate__a_2",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Endless Corridor (C-1)",
+        "type": "static",
+        "codes": "target_er_endless_corridor__c_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Mausoleum of Giants Left Door (A-5)",
+        "type": "static",
+        "codes": "target_er_mausoleum_of_giants_left_door__a_5",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Gate of Guidance Ladder Down (A-6)",
+        "type": "static",
+        "codes": "target_er_gate_of_guidance_ladder_down__a_6",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Mausoleum of Giants Ladder Up (A-1)",
+        "type": "static",
+        "codes": "target_er_mausoleum_of_giants_ladder_up__a_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Gate of Guidance Left Gate (A-3)",
+        "type": "static",
+        "codes": "target_er_gate_of_guidance_left_gate__a_3",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Gate of Illusion Left Gate (A-1)",
+        "type": "static",
+        "codes": "target_er_gate_of_illusion_left_gate__a_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Gate of Guidance Main Entrance (C-1)",
+        "type": "static",
+        "codes": "target_er_gate_of_guidance_main_entrance__c_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Village of Departure Main (F-5)",
+        "type": "static",
+        "codes": "target_er_village_of_departure_main__f_5",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Gate of Illusion Right Gate (C-1)",
+        "type": "static",
+        "codes": "target_er_gate_of_illusion_right_gate__c_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Roots of Yggdrasil Main Gate (D-4)",
+        "type": "static",
+        "codes": "target_er_roots_of_yggdrasil_main_gate__d_4",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Hall of Malice Gate (C-1)",
+        "type": "static",
+        "codes": "target_er_hall_of_malice_gate__c_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Heavens Labyrinth Gate (D-1)",
+        "type": "static",
+        "codes": "target_er_heavens_labyrinth_gate__d_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Heavens Labyrinth Monster's Jaw",
+        "type": "static",
+        "codes": "target_er_heavens_labyrinth_monster_s_jaw",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Takamagahara Shrine Neck",
+        "type": "static",
+        "codes": "target_er_takamagahara_shrine_neck",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Icefire Treetop Fire Side Up Ladder (C-1)",
+        "type": "static",
+        "codes": "target_er_icefire_treetop_fire_side_up_ladder__c_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Down Ladder near Spinning Wheel (D-7)",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_down_ladder_near_spinning_wheel__d_7",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Icefire Treetop Ice Side Left Ladder (F-1)",
+        "type": "static",
+        "codes": "target_er_icefire_treetop_ice_side_left_ladder__f_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Moon Altar Hallway (G-7)",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_moon_altar_hallway__g_7",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Icefire Treetop Ice Side Right Ladder (F-1)",
+        "type": "static",
+        "codes": "target_er_icefire_treetop_ice_side_right_ladder__f_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Alviss Down Ladder (G-7)",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_alviss_down_ladder__g_7",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Icefire Treetop Middle Gate (D-3)",
+        "type": "static",
+        "codes": "target_er_icefire_treetop_middle_gate__d_3",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Roots of Yggdrasil Top Middle Nidhogg Gate (D-1)",
+        "type": "static",
+        "codes": "target_er_roots_of_yggdrasil_top_middle_nidhogg_gate__d_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Left Gate (A-6)",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_left_gate__a_6",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Roots of Yggdrasil Top Right Birth Gate (G-1)",
+        "type": "static",
+        "codes": "target_er_roots_of_yggdrasil_top_right_birth_gate__g_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Inferno Cavern (B-1)",
+        "type": "static",
+        "codes": "target_er_inferno_cavern__b_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Village of Departure Ladder Down (F-3)",
+        "type": "static",
+        "codes": "target_er_village_of_departure_ladder_down__f_3",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Shrine of the Frost Giants Backside Gate (B-2)",
+        "type": "static",
+        "codes": "target_er_shrine_of_the_frost_giants_backside_gate__b_2",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Shrine of the Frost Giants Bergelmir Gate (B-4)",
+        "type": "static",
+        "codes": "target_er_shrine_of_the_frost_giants_bergelmir_gate__b_4",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Starting Area",
+        "type": "static",
+        "codes": "target_er_starting_area",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Village of Departure Next to Xelpud",
+        "type": "static",
+        "codes": "target_er_village_of_departure_next_to_xelpud",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Spiral Boat Soul Gate(D-4)",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_spiral_boat_soul_gate_d_4",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Hall of Malice Soul Gate (D-3)",
+        "type": "static",
+        "codes": "target_er_hall_of_malice_soul_gate__d_3",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Heavens Labyrinth Soul Gate (E-5)",
+        "type": "static",
+        "codes": "target_er_heavens_labyrinth_soul_gate__e_5",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Icefire Treetop Under Ratatoskr Soul Gate (G-3)",
+        "type": "static",
+        "codes": "target_er_icefire_treetop_under_ratatoskr_soul_gate__g_3",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Takamagahara Shrine Top Main Soul Gate (D-1)",
+        "type": "static",
+        "codes": "target_er_takamagahara_shrine_top_main_soul_gate__d_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Bottom Left Gate (B-7)",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_bottom_left_gate__b_7",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Divine Fortress Soul Gate (C-5)",
+        "type": "static",
+        "codes": "target_er_divine_fortress_soul_gate__c_5",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Roots of Yggdrasil Bottom Soul Gate (D-6)",
+        "type": "static",
+        "codes": "target_er_roots_of_yggdrasil_bottom_soul_gate__d_6",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Ancient Chaos Soul Gate (C-1)",
+        "type": "static",
+        "codes": "target_er_ancient_chaos_soul_gate__c_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Takamagahara Shrine Belial Soul Gate (B-1)",
+        "type": "static",
+        "codes": "target_er_takamagahara_shrine_belial_soul_gate__b_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Immortal Battlefield Top Right Gate (H-2)",
+        "type": "static",
+        "codes": "target_er_immortal_battlefield_top_right_gate__h_2",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Gate of the Dead Soul Gate (C-4)",
+        "type": "static",
+        "codes": "target_er_gate_of_the_dead_soul_gate__c_4",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Shrine of the Frost Giants Main Soul Gate (E-4)",
+        "type": "static",
+        "codes": "target_er_shrine_of_the_frost_giants_main_soul_gate__e_4",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Annwfn Soul Gate (A-4)",
+        "type": "static",
+        "codes": "target_er_annwfn_soul_gate__a_4",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Shrine of the Frost Giants Balor Soul Gate (E-1)",
+        "type": "static",
+        "codes": "target_er_shrine_of_the_frost_giants_balor_soul_gate__e_1",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Valhalla Soul Gate (E-2)",
+        "type": "static",
+        "codes": "target_er_valhalla_soul_gate__e_2",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Icefire Treetop Vidofnir Soul Gate (D-6)",
+        "type": "static",
+        "codes": "target_er_icefire_treetop_vidofnir_soul_gate__d_6",
+        "img": "images/entrances/unmapped.png"
+    },
+    {
+        "name": "Target for Eternal Prison Gloom Soul Gate (D-2)",
+        "type": "static",
+        "codes": "target_er_eternal_prison_gloom_soul_gate__d_2",
+        "img": "images/entrances/unmapped.png"
+    }
+]

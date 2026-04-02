@@ -1,0 +1,245 @@
+{
+    "shared_shop_memo": {
+        "type": "group",
+        "header": "Shop Memo",
+        "content": {
+            "type": "array",
+            "orientation": "vertical",
+            "margin": "3, 1",
+            "content": [
+                {
+                    "type": "array",
+                    "orientation": "horizontal",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "Starting",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_startshop_1", "sm_startshop_2", "sm_startshop_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Nebur",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_nebur_1", "sm_nebur_2", "sm_nebur_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Modro",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_modro_1", "sm_modro_2", "sm_modro_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Sidro",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_sidro_1", "sm_sidro_2", "sm_sidro_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Hiner",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_hiner_1", "sm_hiner_2", "sm_hiner_3", "sm_hiner_4" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Korobock",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_korobock_1", "sm_korobock_2", "sm_korobock_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Pym",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_pym_1", "sm_pym_2", "sm_pym_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Peibalusa",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_peibalusa_1", "sm_peibalusa_2", "sm_peibalusa_3","" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Hiro",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_hiro_1", "sm_hiro_2", "sm_hiro_3"]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Mino",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_mino_1", "sm_mino_2", "sm_mino_3" ]]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "array",
+                    "orientation": "horizontal",
+                    "content": [
+                        {
+                            "type": "group",
+                            "header": "BTK",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_btk_1", "sm_btk_2", "sm_btk_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Shuhoka",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_shuhoka_1", "sm_shuhoka_2", "sm_shuhoka_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Hydlit",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_hydlit_1", "sm_hydlit_2", "sm_hydlit_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Aytum",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_aytum_1", "sm_aytum_2", "sm_aytum_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Ash Geen",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_ashgeen_1", "sm_ashgeen_2", "sm_ashgeen_3","" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Megarock",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_megarock_1", "sm_megarock_2", "sm_megarock_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "B. Duck",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_bargainduck_1", "sm_bargainduck_2", "sm_bargainduck_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Kero",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_kero_1", "sm_kero_2", "sm_kero_3","" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Venum",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_venum_1", "sm_venum_2", "sm_venum_3" ]]
+                            }
+                        },
+                        {
+                            "type": "group",
+                            "header": "Fairylan",
+                            "content": {
+                                "type": "itemgrid",
+                                "item_margin": "1, 1",
+                                "item_height": 20,
+                                "item_width": 20,
+                                "rows": [[ "sm_fairylan_1", "sm_fairylan_2", "sm_fairylan_3" ]]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

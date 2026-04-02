@@ -98,14 +98,19 @@ function Has(item_name)
         end
     end
 
+    -- DLC Item Logic: Fish Suit is owned from the start
+    if item_name == "Fish Suit" then
+        if has("setting_dlc_logic") then return true end
+    end
+
     local code = HAS_OVERRIDES[item_name] or item_name:lower():gsub("%s+", "_")
 
-    -- Only look for ammo if the item is an actual subweapon
+    -- For subweapons, check if the progressive_toggle is Active
+    -- (covers both weapon stage and ammo stage without being
+    -- fooled by shop marks that also provide ammo codes)
     if SUBWEAPONS[code] then
-        local ammo_code = code .. "_ammo"
-        if Tracker:FindObjectForCode(ammo_code) then
-            return has(code) or has(ammo_code)
-        end
+        local obj = Tracker:FindObjectForCode(code)
+        if obj then return obj.Active end
     end
 
     return has(code)
@@ -121,6 +126,9 @@ function CanUse(weapon)
     local code = HAS_OVERRIDES[weapon] or weapon:lower():gsub("%s+", "_")
 
     if SUBWEAPONS[code] then
+        -- Must have the weapon AND ammo to use it
+        local obj = Tracker:FindObjectForCode(code)
+        if not obj or not obj.Active then return false end
         local ammo_code = code .. "_ammo"
         if code == "pistol" then
             return has(ammo_code) and has("boss_money_fairy")
@@ -133,13 +141,19 @@ end
 
 function OrbCount(n) return count("sacred_orb") >= n end
 function SkullCount(n) return count("crystal_skull") >= n end
+local GUARDIAN_CODES = {
+    "boss_fafnir", "boss_vritra", "boss_kujata", "boss_aten_ra",
+    "boss_jormungand", "boss_anu", "boss_surtr", "boss_echidna", "boss_hel"
+}
 function GuardianKills(n)
     local total = 0
-    local guardians = {"fafnir", "vritra", "kujata", "aten_ra", "jormungand", "anu", "surtr", "echidna", "hel"}
-    for _, g in ipairs(guardians) do
-        if has("boss_" .. g) then total = total + 1 end
+    for _, code in ipairs(GUARDIAN_CODES) do
+        if has(code) then
+            total = total + 1
+            if total >= n then return true end
+        end
     end
-    return total >= n
+    return false
 end
 
 -- Read required guardian/skull counts from settings
@@ -161,8 +175,8 @@ function HorizontalAttack()
         or CanUse("Bomb") or CanUse("Pistol") or has("claydoll_suit")
 end
 function CanStopTime() return has("lamp_of_time") end
-function CanSpinCorridor() return has("beherit") and Dissonance(1) end
-function CanSealCorridor() return Dissonance(6) and has("beherit") end
+function CanSpinCorridor() return count("beherit") >= 1 and Dissonance(1) end
+function CanSealCorridor() return count("beherit") >= 1 and Dissonance(6) end
 function Setting(name)
     -- HardBosses maps to the progressive logic setting (stage 1 = hard)
     if name == "HardBosses" then
@@ -171,10 +185,9 @@ function Setting(name)
         return false
     end
     local m = {
-        ["AutoScan"]="setting_autoscan",["Random Gates"]="setting_random_gates",
-        ["Random Soul Gates"]="setting_random_soul_gates",
-        ["CostumeClip"]="setting_costume_clip",["Remove IT Statue"]="setting_remove_it_statue",
-        ["Non Random Ladders"]="setting_non_random_ladders",
+        ["AutoScan"]="setting_autoscan",
+        ["CostumeClip"]="setting_costume_clip",
+        ["Remove IT Statue"]="setting_remove_it_statue",
         ["Not Life for HoM"]="setting_not_life_for_hom",
     }
     return m[name] and has(m[name]) or false
@@ -310,12 +323,44 @@ local function parse_primary(tokens, pos)
     return false, pos + 1
 end
 
+-- Advance past a primary token without evaluating function calls.
+local function skip_primary(tokens, pos)
+    if pos > #tokens then return pos end
+    local tok = tokens[pos]
+    if tok.type == "BOOL" or tok.type == "CALL" then
+        return pos + 1
+    elseif tok.type == "LPAREN" then
+        local depth = 1
+        local p = pos + 1
+        while p <= #tokens and depth > 0 do
+            local t = tokens[p].type
+            if t == "LPAREN" then depth = depth + 1
+            elseif t == "RPAREN" then depth = depth - 1 end
+            p = p + 1
+        end
+        return p
+    end
+    return pos + 1
+end
+
+-- Advance past an entire AND sequence without evaluating.
+local function skip_and(tokens, pos)
+    pos = skip_primary(tokens, pos)
+    while pos <= #tokens and tokens[pos].type == "AND" do
+        pos = skip_primary(tokens, pos + 1)
+    end
+    return pos
+end
+
 local function parse_and(tokens, pos)
     local left, npos = parse_primary(tokens, pos)
     while npos <= #tokens and tokens[npos].type == "AND" do
-        local right
-        right, npos = parse_primary(tokens, npos + 1)
-        left = left and right
+        if not left then
+            -- Short-circuit: left is false, skip remaining AND operands
+            npos = skip_primary(tokens, npos + 1)
+        else
+            left, npos = parse_primary(tokens, npos + 1)
+        end
     end
     return left, npos
 end
@@ -323,9 +368,12 @@ end
 local function parse_or(tokens, pos)
     local left, npos = parse_and(tokens, pos)
     while npos <= #tokens and tokens[npos].type == "OR" do
-        local right
-        right, npos = parse_and(tokens, npos + 1)
-        left = left or right
+        if left then
+            -- Short-circuit: left is true, skip remaining OR operands
+            npos = skip_and(tokens, npos + 1)
+        else
+            left, npos = parse_and(tokens, npos + 1)
+        end
     end
     return left, npos
 end
@@ -361,7 +409,7 @@ local EVENT_LOGIC = {
 
     -- Roots of Yggdrasil
     ["ratatoskr_1"] = "CanReach(RoY) and MeleeAttack",
-    ["nidhogg"] = "CanReach(RoY) and MeleeAttack and (CanUse(Flare) or ((CanUse(Shuriken) or Has(Claydoll Suit)) and OrbCount(1)))",
+    ["nidhogg"] = "CanReach(RoY) and MeleeAttack and (CanUse(Shuriken) or CanUse(Flare) or CanUse(Pistol) or Has(Claydoll Suit) or (CanUse(Chakram) and Has(Ring)))",
 
     -- Annwfn
     ["kaliya"] = "CanReach(AnnwfnMain) and CanUse(Rolling Shuriken)",
@@ -479,7 +527,7 @@ GUARDIAN_ANKH_NAMES = {
     ["Fafnir"] = "Ankh Jewel (Fafnir)",
     ["Vritra"] = "Ankh Jewel (Vritra)",
     ["Kujata"] = "Ankh Jewel (Kujata)",
-    ["Aten-Ra"] = "Ankh Jewel (Aten-Ra)",
+    ["Aten Ra"] = "Ankh Jewel (Aten-Ra)",
     ["Jormungand"] = "Ankh Jewel (Jormungand)",
     ["Anu"] = "Ankh Jewel (Anu)",
     ["Surtr"] = "Ankh Jewel (Surtr)",
@@ -518,7 +566,7 @@ FORWARD_EXITS = {
     ["DFMain"] = {{"DFTop", "Has(Feather) or Has(Grapple Claw)"}, {"DFRight", "Has(Leather Whip) or Has(Rapier) or Has(Katana) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Caltrops) or CanUse(Pistol) or Has(Claydoll Suit)"}, {"ValhallaMain", "True"}},
     ["DFRight"] = {{"DFMain", "CanUse(Shuriken) or CanUse(Chakram) or Has(Claydoll Suit) or CanUse(Pistol) or (CanUse(Earth Spear) and Has(Ring))"}, {"DFEntrance", "True"}},
     ["DFTop"] = {{"DFMain", "True"}, {"DFRight", "True"}},
-    ["DSLMMain"] = {{"DSLMTop", "Has(Feather)"}, {"DSLMPyramid", "Has(Grapple Claw) and Has(Mjolnir)"}, {"GotDWedjet", "False or Setting(Random Gates)"}},
+    ["DSLMMain"] = {{"DSLMTop", "Has(Feather)"}, {"DSLMPyramid", "Has(Grapple Claw) and Has(Mjolnir)"}, {"GotDWedjet", "False"}},
     ["DSLMPyramid"] = {{"Nibiru", "Has(Pyramid Crystal) and Has(Destiny Tablet) and CanChant(Heaven) and CanChant(Moon) and CanChant(Fire) and CanChant(Sea) and CanChant(Sun)"}},
     ["DSLMTop"] = {{"DSLMMain", "Has(Feather) or CanWarp"}, {"ValhallaMain", "CanWarp or CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["EPDEntrance"] = {{"EPDMain", "True"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}},
@@ -536,7 +584,7 @@ FORWARD_EXITS = {
     ["HLGate"] = {{"HL", "CanWarp"}, {"HoMTop", "(Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla)"}},
     ["HLSpun"] = {{"HLGate", "True"}},
     ["HoM"] = {{"HoMTop", "Has(HoM Ladder)"}, {"ACBlood", "CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}, {"IBBoat", "Has(Death Sigil) and CanUse(Earth Spear) and (CanWarp or IsDead(HoM Middle Path)) and (GuardianKills(9) or Setting(Random Soul Gates))"}},
-    ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}, {"HL", "False or Setting(Random Gates)"}},
+    ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}, {"HL", "False"}},
     ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}, {"ITRight", "True"}},
     ["IBBifrost"] = {{"IBTop", "CanWarp or (CanKill(Cetus) and Setting(Non Random Ladders))"}, {"AnnwfnMain", "False"}},
     ["IBBoat"] = {{"HoM", "False"}, {"SpiralHell", "CanSealCorridor and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}},
@@ -552,32 +600,32 @@ FORWARD_EXITS = {
     ["IBTop"] = {{"IBTopLeft", "CanWarp or ((Has(Feather) or Has(Gloves)) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops)))"}, {"IBMain", "IsDead(Cetus)"}, {"IBCetusLadder", "IsDead(Cetus)"}},
     ["IBTopLeft"] = {{"IBTop", "(Has(Feather) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops))) or (Has(Gloves) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops)))"}, {"IBMain", "Glitch(Costume Clip)"}},
     ["ITBottom"] = {{"ITSinmara", "True"}, {"ITRight", "Has(Feather) or (Has(Gale Fibula) and (Has(Leather Whip) or Has(Axe) or CanUse(Shuriken) or CanUse(Bomb) or CanUse(Earth Spear) or CanUse(Flare) or (CanUse(Chakram) and Has(Ring))))"}, {"ITVidofnir", "CanChant(Moon) and CanChant(Sun) and CanWarp"}},
-    ["ITEntrance"] = {{"RoYTopMiddle", "False or Setting(Random Gates)"}, {"ITBottom", "CanWarp or Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2) or (Has(Feather) and Has(Grapple Claw))"}, {"ITSinmara", "Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2)"}, {"ITRight", "Has(Grapple Claw) and (CanWarp or Has(Feather) or CanReach(ITSinmara))"}},
+    ["ITEntrance"] = {{"RoYTopMiddle", "False"}, {"ITBottom", "CanWarp or Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2) or (Has(Feather) and Has(Grapple Claw))"}, {"ITSinmara", "Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2)"}, {"ITRight", "Has(Grapple Claw) and (CanWarp or Has(Feather) or CanReach(ITSinmara))"}},
     ["ITLeft"] = {{"ITSinmara", "HorizontalAttack"}, {"ITEntrance", "Glitch(Costume Clip) and (Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2) or CanWarp)"}, {"IBLadder", "True"}},
     ["ITRight"] = {{"ITBottom", "CanWarp or Has(Feather) or (Has(Gale Fibula) and (Has(Leather Whip) or Has(Axe) or CanUse(Shuriken) or CanUse(Bomb) or CanUse(Earth Spear) or CanUse(Flare) or (CanUse(Chakram) and Has(Ring))))"}, {"ITEntrance", "Has(Feather) and Has(Grapple Claw)"}, {"ITRightLeftLadder", "Has(Life Sigil)"}, {"IBBattery", "True"}, {"HL", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3) and (GuardianKills(3) or Setting(Random Soul Gates))"}},
     ["ITRightLeftLadder"] = {{"IBMoon", "True"}},
     ["ITSinmara"] = {{"ITEntrance", "Setting(Remove IT Statue) and (Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2))"}, {"ITBottom", "HorizontalAttack"}, {"ITLeft", "True"}},
-    ["ITVidofnir"] = {{"EPG", "IsDead(Vidofnir) and ((GuardianKills(5) and CanWarp) or Setting(Random Soul Gates))"}},
+    ["ITVidofnir"] = {{"EPG", "IsDead(Vidofnir) and (GuardianKills(5) and CanWarp)"}},
     ["InfernoCavern"] = {{"VoD", "False"}},
     ["MausoleumofGiants"] = {{"GateofGuidance", "True"}, {"GateofGuidanceLeft", "True"}, {"MausoleumofGiantsRubble", "True"}},
     ["MausoleumofGiantsRubble"] = {{"EndlessCorridor", "CanReach(Annwfn Main)"}, {"MausoleumofGiants", "CanWarp or CanReach(AnnwfnMain)"}},
     ["Nibiru"] = {{"DSLMPyramid", "False"}},
     ["RoY"] = {{"RoYTopLeft", "IsDead(Ratatoskr 1)"}, {"RoYTopMiddle", "IsDead(Nidhogg)"}, {"RoYTopRight", "Has(Feather) or Has(Grapple Claw)"}, {"RoYMiddle", "True"}, {"RoYBottom", "True"}},
-    ["RoYBottom"] = {{"DFEntrance", "GuardianKills(1) or Setting(Random Soul Gates)"}, {"RoYMiddle", "True"}, {"RoYBottomLeft", "Has(Origin Sigil)"}},
+    ["RoYBottom"] = {{"DFEntrance", "GuardianKills(1)"}, {"RoYMiddle", "True"}, {"RoYBottomLeft", "Has(Origin Sigil)"}},
     ["RoYBottomLeft"] = {{"AnnwfnMain", "True"}},
-    ["RoYMiddle"] = {{"GateofIllusion", "False or Setting(Random Gates)"}, {"RoY", "HorizontalAttack"}},
+    ["RoYMiddle"] = {{"GateofIllusion", "False"}, {"RoY", "HorizontalAttack"}},
     ["RoYTopLeft"] = {{"AnnwfnPoison", "CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb)"}},
     ["RoYTopMiddle"] = {{"ITEntrance", "True"}, {"RoY", "CanWarp or CanKill(Nidhogg)"}},
     ["RoYTopRight"] = {{"IBLeft", "Has(Birth Sigil)"}, {"RoY", "CanWarp or Has(Birth Sigil)"}},
-    ["SotFGBalor"] = {{"ValhallaTopRight", "Has(Claydoll Suit) and (GuardianKills(5) or Setting(Random Soul Gates)) and IsDead(Balor)"}},
+    ["SotFGBalor"] = {{"ValhallaTopRight", "Has(Claydoll Suit) and (GuardianKills(5)) and IsDead(Balor)"}},
     ["SotFGBlood"] = {{"SotFGBloodTez", "True"}, {"ACBlood", "CanWarp or CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"ValhallaMain", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["SotFGBloodTez"] = {{"SotFGLeft", "Has(Grapple Claw) and IsDead(Tezcatlipoca)"}, {"SotFGBlood", "CanKill(Tezcatlipoca) and (CanWarp or Has(Grapple Claw))"}},
     ["SotFGGrail"] = {{"SotFGMain", "HorizontalAttack or Start(SotFGGrail)"}},
-    ["SotFGLeft"] = {{"SotFGMain", "True"}, {"SotFGGrail", "CanWarp or HorizontalAttack"}, {"SotFGBloodTez", "False or Setting(Random Gates)"}},
-    ["SotFGMain"] = {{"AnnwfnSG", "GuardianKills(2)  or Setting(Random Soul Gates)"}, {"SotFGGrail", "CanWarp or HorizontalAttack"}, {"SotFGTop", "IsDead(Badhbh Cath) and Has(Grapple Claw) and HorizontalAttack"}, {"SotFGLeft", "Start(SotFGGrail)"}},
+    ["SotFGLeft"] = {{"SotFGMain", "True"}, {"SotFGGrail", "CanWarp or HorizontalAttack"}, {"SotFGBloodTez", "False"}},
+    ["SotFGMain"] = {{"AnnwfnSG", "GuardianKills(2)"}, {"SotFGGrail", "CanWarp or HorizontalAttack"}, {"SotFGTop", "IsDead(Badhbh Cath) and Has(Grapple Claw) and HorizontalAttack"}, {"SotFGLeft", "Start(SotFGGrail)"}},
     ["SotFGTop"] = {{"SotFGBalor", "Has(Feather) and PuzzleFinished(Bergelmir)"}},
     ["Start"] = {{"VoD", "True"}},
-    ["TSBlood"] = {{"ACBlood", "GuardianKills(5) or Setting(Random Soul Gates)"}},
+    ["TSBlood"] = {{"ACBlood", "GuardianKills(5)"}},
     ["TSBottom"] = {{"TSMain", "True"}, {"ACBottom", "True"}},
     ["TSEntrance"] = {{"TSLeft", "Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb)"}, {"TSMain", "Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and (Has(Spaulder) or Has(Vajra)))"}, {"IBLeftSG", "GuardianKills(3) or Setting(Random Soul Gates)"}},
     ["TSLeft"] = {{"TSMain", "True"}},

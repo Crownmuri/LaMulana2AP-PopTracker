@@ -13,8 +13,8 @@
                     },
                     {
                         "map": "Takamagahara Shrine",
-                        "x": 0,
-                        "y": 0
+                        "x": 874,
+                        "y": 179
                     }
                 ],
                 "sections": [
@@ -38,8 +38,8 @@
                     },
                     {
                         "map": "Takamagahara Shrine",
-                        "x": 0,
-                        "y": 0
+                        "x": 944,
+                        "y": 575
                     }
                 ],
                 "sections": [
@@ -63,8 +63,8 @@
                     },
                     {
                         "map": "Takamagahara Shrine",
-                        "x": 0,
-                        "y": 0
+                        "x": 619,
+                        "y": 470
                     }
                 ],
                 "sections": [
@@ -96,6 +96,14 @@
             },
             {
                 "name": "Raijin and Fujin",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 1114,
+                        "y": 320,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Miniboss",
@@ -118,8 +126,8 @@
                     },
                     {
                         "map": "Takamagahara Shrine",
-                        "x": 0,
-                        "y": 0
+                        "x": 452,
+                        "y": 446
                     }
                 ],
                 "sections": [
@@ -143,8 +151,8 @@
                     },
                     {
                         "map": "Takamagahara Shrine",
-                        "x": 0,
-                        "y": 0
+                        "x": 1397,
+                        "y": 311
                     }
                 ],
                 "sections": [
@@ -168,8 +176,8 @@
                     },
                     {
                         "map": "Takamagahara Shrine",
-                        "x": 0,
-                        "y": 0
+                        "x": 538,
+                        "y": 785
                     }
                 ],
                 "sections": [
@@ -193,8 +201,8 @@
                     },
                     {
                         "map": "Takamagahara Shrine",
-                        "x": 0,
-                        "y": 0
+                        "x": 1055,
+                        "y": 696
                     }
                 ],
                 "sections": [
@@ -209,6 +217,14 @@
             },
             {
                 "name": "Daji",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 1119,
+                        "y": 752,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Miniboss",
@@ -231,8 +247,8 @@
                     },
                     {
                         "map": "Takamagahara Shrine",
-                        "x": 0,
-                        "y": 0
+                        "x": 22,
+                        "y": 220
                     }
                 ],
                 "sections": [
@@ -247,6 +263,14 @@
             },
             {
                 "name": "Belial",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 126,
+                        "y": 187,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Miniboss",

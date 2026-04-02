@@ -13,8 +13,8 @@
           },
           {
             "map": "Icefire Treetop",
-            "x": 0,
-            "y": 0
+            "x": 1046,
+            "y": 379
           }
         ],
         "sections": [
@@ -38,8 +38,8 @@
           },
           {
             "map": "Icefire Treetop",
-            "x": 0,
-            "y": 0
+            "x": 723,
+            "y": 468
           }
         ],
         "sections": [
@@ -80,8 +80,8 @@
           },
           {
             "map": "Icefire Treetop",
-            "x": 0,
-            "y": 0
+            "x": 1200,
+            "y": 474
           }
         ],
         "sections": [
@@ -105,8 +105,9 @@
                 },
                 {
                     "map": "Icefire Treetop",
-                    "x": 0,
-                    "y": 0
+                    "x": 624,
+                    "y": 182,
+                    "size": 50
                 }
             ],
             "sections": [
@@ -141,8 +142,8 @@
           },
           {
             "map": "Icefire Treetop",
-            "x": 0,
-            "y": 0
+            "x": 479,
+            "y": 158
           }
         ],
         "sections": [
@@ -166,8 +167,8 @@
           },
           {
             "map": "Icefire Treetop",
-            "x": 0,
-            "y": 0
+            "x": 387,
+            "y": 471
           }
         ],
         "sections": [
@@ -191,8 +192,8 @@
           },
           {
             "map": "Icefire Treetop",
-            "x": 0,
-            "y": 0
+            "x": 120,
+            "y": 158
           }
         ],
         "sections": [
@@ -216,8 +217,8 @@
           },
           {
             "map": "Icefire Treetop",
-            "x": 0,
-            "y": 0
+            "x": 63,
+            "y": 23
           }
         ],
         "sections": [
@@ -247,19 +248,27 @@
           "$lm2_logic|CanReach(ITLeft)"
         ]
       },
-      {
-        "name": "Vedfolnir",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_vedfolnir"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ITLeft) and (OrbCount(1))"
-        ]
-      },
+        {
+            "name": "Vedfolnir",
+            "map_locations": [
+                {
+                    "map": "Icefire Treetop",
+                    "x": 374,
+                    "y": 433,
+                    "shape": "diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_vedfolnir"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ITLeft) and (OrbCount(1))"
+            ]
+        },
       {
         "name": "Fairy Guild Pass Chest",
         "map_locations": [
@@ -271,8 +280,8 @@
           },
           {
             "map": "Icefire Treetop",
-            "x": 0,
-            "y": 0
+            "x": 1020,
+            "y": 23
           }
         ],
         "sections": [
@@ -296,8 +305,8 @@
           },
           {
             "map": "Icefire Treetop",
-            "x": 0,
-            "y": 0
+            "x": 1622,
+            "y": 206
           }
         ],
         "sections": [
@@ -321,8 +330,8 @@
           },
           {
             "map": "Icefire Treetop",
-            "x": 0,
-            "y": 0
+            "x": 1316,
+            "y": 512
           }
         ],
         "sections": [
@@ -335,32 +344,48 @@
           "$lm2_logic|CanReach(ITRight) and ((Has(Claydoll Suit) or ((Has(Anchor) or Has(Fish Suit)) and (OrbCount(1) or Has(Scalesphere)))) and HorizontalAttack)"
         ]
       },
-      {
-        "name": "Ratatoskr 3",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_ratatoskr_3"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ITRight) and (IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and CanReach(IT Left) and (((Has(Leather Whip) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(3)) or ((Has(Chain Whip) or Has(Knife) or Has(Rapier) or Has(Axe) or Has(Katana) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Bomb) or CanUse(Chakram)) and OrbCount(2)) or (CanUse(Psitol) and OrbCount(1))))"
-        ]
-      },
-      {
-        "name": "Vidofnir",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_vidofnir"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ITVidofnir) and (Has(Flame Torc) and Has(Ice Cloak) and Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(6)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(5))))"
-        ]
-      }
+        {
+            "name": "Ratatoskr 3",
+            "map_locations": [
+                {
+                    "map": "Icefire Treetop",
+                    "x": 1622,
+                    "y": 169,
+                    "shape": "diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_ratatoskr_3"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ITRight) and (IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and CanReach(IT Left) and (((Has(Leather Whip) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(3)) or ((Has(Chain Whip) or Has(Knife) or Has(Rapier) or Has(Axe) or Has(Katana) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Bomb) or CanUse(Chakram)) and OrbCount(2)) or (CanUse(Psitol) and OrbCount(1))))"
+            ]
+        },
+        {
+            "name": "Vidofnir",
+            "map_locations": [
+                {
+                    "map": "Icefire Treetop",
+                    "x": 873,
+                    "y": 716,
+                    "shape": "diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_vidofnir"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ITVidofnir) and (Has(Flame Torc) and Has(Ice Cloak) and Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(6)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(5))))"
+            ]
+        }
     ],
     "access_rules": [
       "$lm2_logic|CanReach(ITBottom) or CanReach(ITEntrance) or CanReach(ITLeft) or CanReach(ITRight) or CanReach(ITSinmara) or CanReach(ITVidofnir)"

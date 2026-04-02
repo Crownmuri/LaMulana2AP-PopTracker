@@ -7,30 +7,66 @@
         "initial_stage_idx": 0,
         "codes": "setting_start",
         "stages": [
-            { "img": "images/Settings/Start_VoD.png", "codes": "start_vod",
-              "inherit_codes": false },
-            { "img": "images/Settings/Start_RoY.png", "codes": "start_roy",
-              "inherit_codes": false },
-            { "img": "images/Settings/Start_Ann.png", "codes": "start_ann",
-              "inherit_codes": false },
-            { "img": "images/Settings/Start_IB.png", "codes": "start_ib",
-              "inherit_codes": false },
-            { "img": "images/Settings/Start_IT.png", "codes": "start_it",
-              "inherit_codes": false },
-            { "img": "images/Settings/Start_DF.png", "codes": "start_df",
-              "inherit_codes": false },
-            { "img": "images/Settings/Start_SFG.png", "codes": "start_sfg",
-              "inherit_codes": false },
-            { "img": "images/Settings/Start_TS.png", "codes": "start_ts",
-              "inherit_codes": false },
-            { "img": "images/Settings/Start_Val.png", "codes": "start_val",
-              "inherit_codes": false },
-            { "img": "images/Settings/Start_DSLM.png", "codes": "start_dslm",
-              "inherit_codes": false },
-            { "img": "images/Settings/Start_AC.png", "codes": "start_ac",
-              "inherit_codes": false },
-            { "img": "images/Settings/Start_HoM.png", "codes": "start_hom",
-              "inherit_codes": false }
+            {
+                "img": "images/Settings/Start_VoD.png",
+                "codes": "start_vod",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Start_RoY.png",
+                "codes": "start_roy",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Start_Ann.png",
+                "codes": "start_ann",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Start_IB.png",
+                "codes": "start_ib",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Start_IT.png",
+                "codes": "start_it",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Start_DF.png",
+                "codes": "start_df",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Start_SFG.png",
+                "codes": "start_sfg",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Start_TS.png",
+                "codes": "start_ts",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Start_Val.png",
+                "codes": "start_val",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Start_DSLM.png",
+                "codes": "start_dslm",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Start_AC.png",
+                "codes": "start_ac",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Start_HoM.png",
+                "codes": "start_hom",
+                "inherit_codes": false
+            }
         ]
     },
     {

@@ -13,8 +13,8 @@
           },
           {
             "map": "Hall of Malice",
-            "x": 0,
-            "y": 0
+            "x": 721,
+            "y": 38
           }
         ],
         "sections": [
@@ -51,8 +51,8 @@
           },
           {
             "map": "Hall of Malice",
-            "x": 0,
-            "y": 0
+            "x": 1725,
+            "y": 442
           }
         ],
         "sections": [
@@ -93,8 +93,8 @@
           },
           {
             "map": "Hall of Malice",
-            "x": 0,
-            "y": 0
+            "x": 23,
+            "y": 424
           }
         ],
         "sections": [
@@ -118,8 +118,8 @@
           },
           {
             "map": "Hall of Malice",
-            "x": 0,
-            "y": 0
+            "x": 1406,
+            "y": 331
           }
         ],
         "sections": [
@@ -141,11 +141,13 @@
             "y": 2657,
             "size": 50
           },
-          {
-            "map": "Hall of Malice",
-            "x": 0,
-            "y": 0
-          }
+            {
+                "map": "Hall of Malice",
+                "x": 624,
+                "y": 608,
+                "size": 50
+
+            }
         ],
         "sections": [
           {
@@ -179,8 +181,8 @@
           },
           {
             "map": "Hall of Malice",
-            "x": 0,
-            "y": 0
+            "x": 1197,
+            "y": 581
           }
         ],
         "sections": [

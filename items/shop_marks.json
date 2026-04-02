@@ -1,0 +1,3601 @@
+[
+    {
+        "name": "Nebur Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_nebur_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Nebur Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_nebur_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Nebur Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_nebur_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Modro Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_modro_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Modro Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_modro_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Modro Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_modro_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Sidro Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_sidro_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Sidro Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_sidro_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Sidro Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_sidro_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Hiner Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_hiner_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Hiner Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_hiner_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Hiner Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_hiner_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Hiner Slot 4 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_hiner_4",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Korobock Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_korobock_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Korobock Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_korobock_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Korobock Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_korobock_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shuhoka Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_shuhoka_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shuhoka Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_shuhoka_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Shuhoka Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_shuhoka_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Pym Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_pym_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Pym Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_pym_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Pym Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_pym_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "BTK Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_btk_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "BTK Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_btk_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "BTK Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_btk_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Mino Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_mino_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Mino Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_mino_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Mino Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_mino_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Bargain Duck Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_bargainduck_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Bargain Duck Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_bargainduck_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Bargain Duck Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_bargainduck_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Venum Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_venum_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Venum Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_venum_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Venum Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_venum_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Peibalusa Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_peibalusa_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Peibalusa Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_peibalusa_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Peibalusa Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_peibalusa_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Hiro Roderick Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_hiro_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Hiro Roderick Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_hiro_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Hiro Roderick Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_hiro_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Hydlit Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_hydlit_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Hydlit Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_hydlit_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Hydlit Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_hydlit_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Aytum Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_aytum_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Aytum Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_aytum_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Aytum Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_aytum_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Kero Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_kero_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Kero Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_kero_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Kero Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_kero_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Ash Geen Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_ashgeen_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Ash Geen Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_ashgeen_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Ash Geen Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_ashgeen_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Fairylan Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_fairylan_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Fairylan Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_fairylan_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Fairylan Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_fairylan_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Megarock Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_megarock_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Megarock Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_megarock_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Megarock Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_megarock_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Starting Shop Slot 1 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_startshop_1",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Starting Shop Slot 2 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_startshop_2",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
+        "name": "Starting Shop Slot 3 Mark",
+        "type": "progressive_toggle",
+        "allow_disabled": true,
+        "loop": true,
+        "codes": "sm_startshop_3",
+        "stages": [
+            {
+                "img": "images/Weapons/Item.png",
+                "codes": "sm_item",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/Weight.png",
+                "codes": "sm_weight",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ShurikenB.png",
+                "codes": "sm_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/RollingShurikenB.png",
+                "codes": "sm_rolling_shuriken_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/EarthSpearB.png",
+                "codes": "sm_earth_spear_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/FlareGunB.png",
+                "codes": "sm_flare_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/BombB.png",
+                "codes": "sm_bomb_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/ChakramB.png",
+                "codes": "sm_chakram_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/CaltropsB.png",
+                "codes": "sm_caltrops_ammo",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Weapons/PistolB.png",
+                "codes": "sm_pistol_ammo",
+                "inherit_codes": false
+            }
+        ]
+    }
+]

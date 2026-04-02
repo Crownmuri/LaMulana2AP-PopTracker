@@ -29,7 +29,7 @@ LOCATION_MAPPING = {
     [430033] = {"@Icefire Treetop/Grapple Claw Chest/Chest"}, -- [IT E-4] Skull in Background Chest
     [430034] = {"@Eternal Prison Doom/Spaulder Chest/Chest"}, -- [EPD C-2] Spaulder Key Fairy Chest
     [430035] = {"@Valhalla/Vritra/Scalesphere Chest"}, -- [VAL E-2] Vritra Reward (S1)
-    [430036] = {"@Dark Star Lords Mausoleum/Aten-Ra/Crucifix Chest"}, -- [DSLM C-8] Aten-Ra Reward
+    [430036] = {"@Dark Star Lords Mausoleum/Aten Ra/Crucifix Chest"}, -- [DSLM C-8] Aten-Ra Reward
     [430038] = {"@Dark Star Lords Mausoleum/Maats Feather Chest/Chest"}, -- [DSLM B-7] Zero Weight Scale Chest
     [430039] = {"@Takamagahara Shrine/Ring Chest/Chest"}, -- [TS B-4] Key Fairy Chest (S3)
     [430041] = {"@Dark Star Lords Mausoleum/Feather Chest/Chest"}, -- [DSLM A-4] Destroy the False Tablet
@@ -124,12 +124,12 @@ LOCATION_MAPPING = {
     [430170] = {"@Immortal Battlefield/Research IB Top Right/FreeStanding"}, -- [IB G-1] IB Research - Top Right
     [430171] = {"@Immortal Battlefield/Research IB Left/FreeStanding"}, -- [IB A-6] IB Research - Left Chamber
     [430172] = {"@Immortal Battlefield/Research IB Pit/FreeStanding"}, -- [IB C-5] IB Research - Pit of Time
-    [430173] = {"@Immortal Battlefield/Research IB Tent 1/FreeStanding"}, -- [IB E-3] IB Research - Tent (First Time)
-    [430174] = {"@Immortal Battlefield/Research IB Tent 2/FreeStanding"}, -- [IB E-3] IB Research - Tent (7 Guardians)
-    [430175] = {"@Immortal Battlefield/Research IB Tent 3/FreeStanding"}, -- [IB E-3] IB Research - Tent (Post Heimdall)
+    [430173] = {"@Immortal Battlefield/Immortal Battlefield Tent/Research IB Tent 1"}, -- [IB E-3] IB Research - Tent (First Time)
+    [430174] = {"@Immortal Battlefield/Immortal Battlefield Tent/Research IB Tent 1"}, -- [IB E-3] IB Research - Tent (7 Guardians)
+    [430175] = {"@Immortal Battlefield/Immortal Battlefield Tent/Research IB Tent 1"}, -- [IB E-3] IB Research - Tent (Post Heimdall)
     [430176] = {"@Dark Star Lords Mausoleum/Research DSLM/FreeStanding"}, -- [DSLM A-4] DSLM Research Papers
     [430177] = {"@Valhalla/Vritra/Dissonance Valhalla"}, -- [VAL E-3] Vritra's Dissonance (S1)
-    [430178] = {"@Dark Star Lords Mausoleum/Aten-Ra/Dissonance DSLM"}, -- [DSLM C-8] Aten-Ra's Dissonance
+    [430178] = {"@Dark Star Lords Mausoleum/Aten Ra/Dissonance DSLM"}, -- [DSLM C-8] Aten-Ra's Dissonance
     [430179] = {"@Heavens Labyrinth/Dissonance HL/Dissonance"}, -- [HL C-4] Typhon's Dissonance
     [430180] = {"@Eternal Prison Doom/Hel/Dissonance EPG"}, -- [EPD A-3] Hel's Dissonance
     [430181] = {"@Dark Star Lords Mausoleum/Dissonance Nibiru/Dissonance"}, -- [NIBIRU] Nibiru's Dissonance
@@ -201,7 +201,28 @@ LOCATION_MAPPING = {
     [430247] = {"@Heavens Labyrinth/Megarock/Shop Slot 1"}, -- [HL A-3] Megarock Shop 1
     [430248] = {"@Heavens Labyrinth/Megarock/Shop Slot 2"}, -- [HL A-3] Megarock Shop 2
     [430249] = {"@Heavens Labyrinth/Megarock/Shop Slot 3"}, -- [HL A-3] Megarock Shop 3
-    [430250] = {"@La-Mulana/Starting Shop/Shop Slot 1"}, -- [RANDO] Starting Shop 1
-    [430251] = {"@La-Mulana/Starting Shop/Shop Slot 2"}, -- [RANDO] Starting Shop 2
-    [430252] = {"@La-Mulana/Starting Shop/Shop Slot 3"}, -- [RANDO] Starting Shop 3
+    [430250] = { -- [RANDO] Starting Shop 1
+        "@Starting Shop RoY/Shop Slot 1", "@Starting Shop Ann/Shop Slot 1",
+        "@Starting Shop IB/Shop Slot 1", "@Starting Shop IT/Shop Slot 1",
+        "@Starting Shop DF/Shop Slot 1", "@Starting Shop SFG/Shop Slot 1",
+        "@Starting Shop TS/Shop Slot 1", "@Starting Shop Val/Shop Slot 1",
+        "@Starting Shop DSLM/Shop Slot 1", "@Starting Shop AC/Shop Slot 1",
+        "@Starting Shop HoM/Shop Slot 1"
+    },
+    [430251] = { -- [RANDO] Starting Shop 2
+        "@Starting Shop RoY/Shop Slot 2", "@Starting Shop Ann/Shop Slot 2",
+        "@Starting Shop IB/Shop Slot 2", "@Starting Shop IT/Shop Slot 2",
+        "@Starting Shop DF/Shop Slot 2", "@Starting Shop SFG/Shop Slot 2",
+        "@Starting Shop TS/Shop Slot 2", "@Starting Shop Val/Shop Slot 2",
+        "@Starting Shop DSLM/Shop Slot 2", "@Starting Shop AC/Shop Slot 2",
+        "@Starting Shop HoM/Shop Slot 2"
+    },
+    [430252] = { -- [RANDO] Starting Shop 3
+        "@Starting Shop RoY/Shop Slot 3", "@Starting Shop Ann/Shop Slot 3",
+        "@Starting Shop IB/Shop Slot 3", "@Starting Shop IT/Shop Slot 3",
+        "@Starting Shop DF/Shop Slot 3", "@Starting Shop SFG/Shop Slot 3",
+        "@Starting Shop TS/Shop Slot 3", "@Starting Shop Val/Shop Slot 3",
+        "@Starting Shop DSLM/Shop Slot 3", "@Starting Shop AC/Shop Slot 3",
+        "@Starting Shop HoM/Shop Slot 3"
+    }
 }

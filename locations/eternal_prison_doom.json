@@ -1,6 +1,6 @@
 [
   {
-    "name": "Eternal Prison Doom",
+    "name": "Eternal Prison - Doom",
     "children": [
       {
         "name": "Crystal Skull Chest EPD",
@@ -12,9 +12,9 @@
             "size": 50
           },
           {
-            "map": "Eternal Prison Doom",
-            "x": 0,
-            "y": 0
+            "map": "Eternal Prison - Doom",
+            "x": 24,
+            "y": 468
           }
         ],
         "sections": [
@@ -37,9 +37,9 @@
             "size": 50
           },
           {
-            "map": "Eternal Prison Doom",
-            "x": 0,
-            "y": 0
+            "map": "Eternal Prison - Doom",
+            "x": 824,
+            "y": 651
           }
         ],
         "sections": [
@@ -62,9 +62,9 @@
             "size": 50
           },
           {
-            "map": "Eternal Prison Doom",
-            "x": 0,
-            "y": 0
+            "map": "Eternal Prison - Doom",
+            "x": 777,
+            "y": 474
           }
         ],
         "sections": [
@@ -87,9 +87,9 @@
             "size": 50
           },
           {
-            "map": "Eternal Prison Doom",
-            "x": 0,
-            "y": 0
+            "map": "Eternal Prison - Doom",
+            "x": 1124,
+            "y": 626
           }
         ],
         "sections": [
@@ -102,19 +102,27 @@
           "$lm2_logic|CanReach(EPDMain) and (Has(Maats Feather) and Has(Djed Pillar) and (Has(Claydoll Suit) or Has(Ice Cloak)) and Has(Feather) and ((Has(Gale Fibula) or CanStopTime) or CanReach(EPG)))"
         ]
       },
-      {
-        "name": "Hraesvelgr",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_hraesvelgr"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(EPDMain) and (IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon) and Has(Feather))"
-        ]
-      },
+        {
+            "name": "Hraesvelgr",
+            "map_locations": [
+                {
+                    "map": "Eternal Prison - Doom",
+                    "x": 624,
+                    "y": 603,
+                    "shape": "diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_hraesvelgr"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(EPDMain) and (IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon) and Has(Feather))"
+            ]
+        },
       {
         "name": "Death Sigil Chest",
         "map_locations": [
@@ -125,9 +133,9 @@
             "size": 50
           },
           {
-            "map": "Eternal Prison Doom",
-            "x": 0,
-            "y": 0
+            "map": "Eternal Prison - Doom",
+            "x": 624,
+            "y": 308
           }
         ],
         "sections": [
@@ -150,9 +158,9 @@
             "size": 50
           },
           {
-            "map": "Eternal Prison Doom",
-            "x": 0,
-            "y": 0
+            "map": "Eternal Prison - Doom",
+            "x": 547,
+            "y": 178
           }
         ],
         "sections": [
@@ -174,11 +182,13 @@
             "y": 2727,
             "size": 50
           },
-          {
-            "map": "Eternal Prison Doom",
-            "x": 0,
-            "y": 0
-          }
+            {
+                "map": "Eternal Prison - Doom",
+                "x": 125,
+                "y": 341,
+                "size": 50
+
+            }
         ],
         "sections": [
           {

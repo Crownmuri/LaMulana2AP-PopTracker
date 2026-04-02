@@ -13,8 +13,8 @@
                     },
                     {
                         "map": "Gate of the Dead",
-                        "x": 0,
-                        "y": 0
+                        "x": 850,
+                        "y": 362
                     }
                 ],
                 "sections": [
@@ -38,8 +38,8 @@
                     },
                     {
                         "map": "Gate of the Dead",
-                        "x": 0,
-                        "y": 0
+                        "x": 1063,
+                        "y": 313
                     }
                 ],
                 "sections": [
@@ -63,8 +63,8 @@
                     },
                     {
                         "map": "Gate of the Dead",
-                        "x": 0,
-                        "y": 0
+                        "x": 624,
+                        "y": 824
                     }
                 ],
                 "sections": [
@@ -88,8 +88,8 @@
                     },
                     {
                         "map": "Gate of the Dead",
-                        "x": 0,
-                        "y": 0
+                        "x": 394,
+                        "y": 469
                     }
                 ],
                 "sections": [
@@ -113,8 +113,8 @@
                     },
                     {
                         "map": "Gate of the Dead",
-                        "x": 0,
-                        "y": 0
+                        "x": 418,
+                        "y": 786
                     }
                 ],
                 "sections": [
@@ -138,8 +138,8 @@
                     },
                     {
                         "map": "Gate of the Dead",
-                        "x": 0,
-                        "y": 0
+                        "x": 1429,
+                        "y": 382
                     }
                 ],
                 "sections": [
@@ -158,13 +158,13 @@
                     {
                         "map": "Full Map",
                         "x": 2276,
-                        "y": 584,
+                        "y": 570,
                         "size": 50
                     },
                     {
                         "map": "Gate of the Dead",
-                        "x": 0,
-                        "y": 0
+                        "x": 283,
+                        "y": 248
                     }
                 ],
                 "sections": [
@@ -188,8 +188,8 @@
                     },
                     {
                         "map": "Gate of the Dead",
-                        "x": 0,
-                        "y": 0
+                        "x": 279,
+                        "y": 310
                     }
                 ],
                 "sections": [
@@ -234,6 +234,14 @@
             },
             {
                 "name": "Unicorn",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 668,
+                        "y": 64,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Miniboss",

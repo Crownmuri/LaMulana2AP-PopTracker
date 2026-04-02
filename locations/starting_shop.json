@@ -1,0 +1,145 @@
+[
+    {
+        "name": "Starting Shop RoY",
+        "map_locations": [
+            { "map": "Roots of Yggdrasil", "x": 889, "y": 335 },
+            { "map": "Full Map", "x": 1817, "y": 169, "size": 50 }
+        ],
+        "sections": [
+            { "name": "Shop Slot 1", "item_count": 1 },
+            { "name": "Shop Slot 2", "item_count": 1 },
+            { "name": "Shop Slot 3", "item_count": 1 }
+        ],
+        "visibility_rules": [ "$lm2_logic|Start(RoY)" ]
+    },
+    {
+        "name": "Starting Shop Ann",
+        "map_locations": [
+            { "map": "Annwfn", "x": 662, "y": 335 },
+            { "map": "Full Map", "x": 1702, "y": 572, "size": 50 }
+        ],
+        "sections": [
+            { "name": "Shop Slot 1", "item_count": 1 },
+            { "name": "Shop Slot 2", "item_count": 1 },
+            { "name": "Shop Slot 3", "item_count": 1 }
+        ],
+        "visibility_rules": [ "$lm2_logic|Start(AnnwfnMain)" ]
+    },
+    {
+        "name": "Starting Shop IB",
+        "map_locations": [
+            { "map": "Immortal Battlefield", "x": 1704, "y": 335 },
+            { "map": "Full Map", "x": 2101, "y": 908, "size": 50 }
+        ],
+        "sections": [
+            { "name": "Shop Slot 1", "item_count": 1 },
+            { "name": "Shop Slot 2", "item_count": 1 },
+            { "name": "Shop Slot 3", "item_count": 1 }
+        ],
+        "visibility_rules": [ "$lm2_logic|Start(IBMain)" ]
+    },
+    {
+        "name": "Starting Shop IT",
+        "map_locations": [
+            { "map": "Icefire Treetop", "x": 457, "y": 335 },
+            { "map": "Full Map", "x": 1600, "y": 1378, "size": 50 }
+        ],
+        "sections": [
+            { "name": "Shop Slot 1", "item_count": 1 },
+            { "name": "Shop Slot 2", "item_count": 1 },
+            { "name": "Shop Slot 3", "item_count": 1 }
+        ],
+        "visibility_rules": [ "$lm2_logic|Start(ITLeft)" ]
+    },
+    {
+        "name": "Starting Shop DF",
+        "map_locations": [
+            { "map": "Divine Fortress", "x": 639, "y": 446 },
+            { "map": "Full Map", "x": 2316, "y": 358, "size": 50 }
+        ],
+        "sections": [
+            { "name": "Shop Slot 1", "item_count": 1 },
+            { "name": "Shop Slot 2", "item_count": 1 },
+            { "name": "Shop Slot 3", "item_count": 1 }
+        ],
+        "visibility_rules": [ "$lm2_logic|Start(DFMain)" ]
+    },
+    {
+        "name": "Starting Shop SFG",
+        "map_locations": [
+            { "map": "Shrine of the Frost Giants", "x": 711, "y": 557 },
+            { "map": "Full Map", "x": 1109, "y": 683, "size": 50 }
+        ],
+        "sections": [
+            { "name": "Shop Slot 1", "item_count": 1 },
+            { "name": "Shop Slot 2", "item_count": 1 },
+            { "name": "Shop Slot 3", "item_count": 1 }
+        ],
+        "visibility_rules": [ "$lm2_logic|Start(SotFGGrail)" ]
+    },
+    {
+        "name": "Starting Shop TS",
+        "map_locations": [
+            { "map": "Takamagahara Shrine", "x": 539, "y": 201 },
+            { "map": "Full Map", "x": 894, "y": 1245, "size": 50 }
+        ],
+        "sections": [
+            { "name": "Shop Slot 1", "item_count": 1 },
+            { "name": "Shop Slot 2", "item_count": 1 },
+            { "name": "Shop Slot 3", "item_count": 1 }
+        ],
+        "visibility_rules": [ "$lm2_logic|Start(TSLeft)" ]
+    },
+    {
+        "name": "Starting Shop Val",
+        "map_locations": [
+            { "map": "Valhalla", "x": 350, "y": 359 },
+            { "map": "Full Map", "x": 1674, "y": 1793, "size": 50 }
+        ],
+        "sections": [
+            { "name": "Shop Slot 1", "item_count": 1 },
+            { "name": "Shop Slot 2", "item_count": 1 },
+            { "name": "Shop Slot 3", "item_count": 1 }
+        ],
+        "visibility_rules": [ "$lm2_logic|Start(ValhallaMain)" ]
+    },
+    {
+        "name": "Starting Shop DSLM",
+        "map_locations": [
+            { "map": "Dark Star Lords Mausoleum", "x": 284, "y": 494 },
+            { "map": "Full Map", "x": 2294, "y": 2129, "size": 50 }
+        ],
+        "sections": [
+            { "name": "Shop Slot 1", "item_count": 1 },
+            { "name": "Shop Slot 2", "item_count": 1 },
+            { "name": "Shop Slot 3", "item_count": 1 }
+        ],
+        "visibility_rules": [ "$lm2_logic|Start(DSLMMain)" ]
+    },
+    {
+        "name": "Starting Shop AC",
+        "map_locations": [
+            { "map": "Ancient Chaos", "x": 326, "y": 422 },
+            { "map": "Full Map", "x": 1161, "y": 2362, "size": 50 }
+        ],
+        "sections": [
+            { "name": "Shop Slot 1", "item_count": 1 },
+            { "name": "Shop Slot 2", "item_count": 1 },
+            { "name": "Shop Slot 3", "item_count": 1 }
+        ],
+        "visibility_rules": [ "$lm2_logic|Start(ACTablet)" ]
+    },
+    {
+        "name": "Starting Shop HoM",
+        "map_locations": [
+            { "map": "Hall of Malice", "x": 624, "y": 201 },
+            { "map": "Full Map", "x": 2307, "y": 2453, "size": 50 }
+        ],
+        "sections": [
+            { "name": "Shop Slot 1", "item_count": 1 },
+            { "name": "Shop Slot 2", "item_count": 1 },
+            { "name": "Shop Slot 3", "item_count": 1 }
+        ],
+        "visibility_rules": [ "$lm2_logic|Start(HoMTop)" ]
+    }
+]

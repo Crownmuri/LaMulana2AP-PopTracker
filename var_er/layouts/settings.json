@@ -1,0 +1,30 @@
+{
+    "settings_popup": {
+        "type": "container",
+        "background": "#000000",
+        "margin": "6, 6",
+        "content": {
+            "type": "array",
+            "orientation": "vertical",
+            "content": [
+                {
+                    "type": "group",
+                    "header": "Settings",
+                    "content": {
+                        "type": "itemgrid",
+                        "item_h_alignment": "center",
+                        "item_size": "24, 24",
+                        "item_margin": "2, 2",
+                        "rows": [
+                            [ "setting_start", "setting_guardian_ankhs", "setting_logic", "setting_autoscan", "setting_remove_it_statue", "setting_not_life_for_hom", "setting_costume_clip", "setting_dlc_logic", "setting_req_guardians", "setting_req_skulls" ]
+                        ]
+                    }
+                },
+                {
+                    "type": "layout",
+                    "key": "entrances_layout"
+                }
+            ]
+        }
+    }
+}

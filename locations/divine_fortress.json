@@ -8,13 +8,13 @@
                     {
                         "map": "Full Map",
                         "x": 2409,
-                        "y": 344,
+                        "y": 350,
                         "size": 50
                     },
                     {
                         "map": "Divine Fortress",
-                        "x": 0,
-                        "y": 0
+                        "x": 825,
+                        "y": 427
                     }
                 ],
                 "sections": [
@@ -38,8 +38,8 @@
                     },
                     {
                         "map": "Divine Fortress",
-                        "x": 0,
-                        "y": 0
+                        "x": 1123,
+                        "y": 292
                     }
                 ],
                 "sections": [
@@ -63,8 +63,8 @@
                     },
                     {
                         "map": "Divine Fortress",
-                        "x": 0,
-                        "y": 0
+                        "x": 888,
+                        "y": 332
                     }
                 ],
                 "sections": [
@@ -88,8 +88,8 @@
                     },
                     {
                         "map": "Divine Fortress",
-                        "x": 0,
-                        "y": 0
+                        "x": 807,
+                        "y": 569
                     }
                 ],
                 "sections": [
@@ -104,6 +104,14 @@
             },
             {
                 "name": "Hugin and Munin",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 1123,
+                        "y": 343,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Miniboss",
@@ -126,8 +134,8 @@
                     },
                     {
                         "map": "Divine Fortress",
-                        "x": 0,
-                        "y": 0
+                        "x": 113,
+                        "y": 427
                     }
                 ],
                 "sections": [
@@ -151,8 +159,8 @@
                     },
                     {
                         "map": "Divine Fortress",
-                        "x": 0,
-                        "y": 0
+                        "x": 357,
+                        "y": 316
                     }
                 ],
                 "sections": [
@@ -176,8 +184,8 @@
                     },
                     {
                         "map": "Divine Fortress",
-                        "x": 0,
-                        "y": 0
+                        "x": 322,
+                        "y": 630
                     }
                 ],
                 "sections": [
@@ -218,8 +226,8 @@
                     },
                     {
                         "map": "Divine Fortress",
-                        "x": 0,
-                        "y": 0
+                        "x": 682,
+                        "y": 205
                     }
                 ],
                 "sections": [

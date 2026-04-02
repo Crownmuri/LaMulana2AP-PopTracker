@@ -13,8 +13,8 @@
           },
           {
             "map": "Annwfn",
-            "x": 0,
-            "y": 0
+            "x": 1046,
+            "y": 358
           }
         ],
         "sections": [
@@ -38,8 +38,8 @@
           },
           {
             "map": "Annwfn",
-            "x": 0,
-            "y": 0
+            "x": 690,
+            "y": 468
           }
         ],
         "sections": [
@@ -63,8 +63,8 @@
           },
           {
             "map": "Annwfn",
-            "x": 0,
-            "y": 0
+            "x": 302,
+            "y": 647
           }
         ],
         "sections": [
@@ -88,8 +88,8 @@
           },
           {
             "map": "Annwfn",
-            "x": 0,
-            "y": 0
+            "x": 623,
+            "y": 24
           }
         ],
         "sections": [
@@ -113,8 +113,8 @@
           },
           {
             "map": "Annwfn",
-            "x": 0,
-            "y": 0
+            "x": 667,
+            "y": 183
           }
         ],
         "sections": [
@@ -133,13 +133,13 @@
           {
             "map": "Full Map",
             "x": 1962,
-            "y": 430,
+            "y": 435,
             "size": 50
           },
           {
             "map": "Annwfn",
-            "x": 0,
-            "y": 0
+            "x": 1224,
+            "y": 25
           }
         ],
         "sections": [
@@ -180,8 +180,8 @@
           },
           {
             "map": "Annwfn",
-            "x": 0,
-            "y": 0
+            "x": 830,
+            "y": 477
           }
         ],
         "sections": [
@@ -194,32 +194,48 @@
           "$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and Has(Snapshot))"
         ]
       },
-      {
-        "name": "Kaliya",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_kaliya"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnMain) and (CanUse(Rolling Shuriken))"
-        ]
-      },
-      {
-        "name": "Heimdall",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_heimdall"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnMain) and (CanSealCorridor and CanChant(Night) and OrbCount(7) and Has(Silver Shield) and (Has(Flail Whip) or Has(Katana) or Has(Axe)))"
-        ]
-      },
+        {
+            "name": "Kaliya",
+            "map_locations": [
+                {
+                    "map": "Annwfn",
+                    "x": 874,
+                    "y": 62,
+                    "shape":"diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_kaliya"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(AnnwfnMain) and (CanUse(Rolling Shuriken))"
+            ]
+        },
+        {
+            "name": "Heimdall",
+            "map_locations": [
+                {
+                    "map": "Annwfn",
+                    "x": 624,
+                    "y": 577,
+                    "shape": "diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_heimdall"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(AnnwfnMain) and (CanSealCorridor and CanChant(Night) and OrbCount(7) and Has(Silver Shield) and (Has(Flail Whip) or Has(Katana) or Has(Axe)))"
+            ]
+        },
       {
         "name": "Sacred Orb Chest Annwfn",
         "map_locations": [
@@ -231,8 +247,8 @@
           },
           {
             "map": "Annwfn",
-            "x": 0,
-            "y": 0
+            "x": 1028,
+            "y": 623
           }
         ],
         "sections": [
@@ -256,8 +272,8 @@
           },
           {
             "map": "Annwfn",
-            "x": 0,
-            "y": 0
+            "x": 1339,
+            "y": 561
           }
         ],
         "sections": [
@@ -270,19 +286,27 @@
           "$lm2_logic|CanReach(AnnwfnRight) and (CanChant(Earth))"
         ]
       },
-      {
-        "name": "Ixtab",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_ixtab"
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnRight) and (((Has(Leather Whip) or Has(Rapier) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb)) and OrbCount(1)) or CanUse(Flare) or CanUse(Pistol))"
-        ]
-      },
+        {
+            "name": "Ixtab",
+            "map_locations": [
+                {
+                    "map": "Annwfn",
+                    "x": 1129,
+                    "y": 467,
+                    "shape": "diamond"
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Miniboss",
+                    "item_count": 1,
+                    "hosted_item": "boss_ixtab"
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(AnnwfnRight) and (((Has(Leather Whip) or Has(Rapier) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb)) and OrbCount(1)) or CanUse(Flare) or CanUse(Pistol))"
+            ]
+        },
         {
             "name": "Kujata",
             "map_locations": [
@@ -294,8 +318,10 @@
                 },
                 {
                     "map": "Annwfn",
-                    "x": 0,
-                    "y": 0
+                    "x": 1368,
+                    "y": 207,
+                    "size": 50
+
                 }
             ],
             "sections": [

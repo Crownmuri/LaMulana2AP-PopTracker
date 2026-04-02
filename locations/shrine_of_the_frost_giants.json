@@ -13,8 +13,8 @@
                     },
                     {
                         "map": "Shrine of the Frost Giants",
-                        "x": 0,
-                        "y": 0
+                        "x": 951,
+                        "y": 603
                     }
                 ],
                 "sections": [
@@ -38,8 +38,8 @@
                     },
                     {
                         "map": "Shrine of the Frost Giants",
-                        "x": 0,
-                        "y": 0
+                        "x": 1226,
+                        "y": 292
                     }
                 ],
                 "sections": [
@@ -54,6 +54,14 @@
             },
             {
                 "name": "Weapon Fairy",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 720,
+                        "y": 447,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Fairy",
@@ -67,6 +75,14 @@
             },
             {
                 "name": "Badhbh Cath",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 874,
+                        "y": 338,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Miniboss",
@@ -80,6 +96,14 @@
             },
             {
                 "name": "Fenrir",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 558,
+                        "y": 874,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Miniboss",
@@ -102,8 +126,8 @@
                     },
                     {
                         "map": "Shrine of the Frost Giants",
-                        "x": 0,
-                        "y": 0
+                        "x": 1220,
+                        "y": 896
                     }
                 ],
                 "sections": [
@@ -122,13 +146,13 @@
                     {
                         "map": "Full Map",
                         "x": 914,
-                        "y": 749,
+                        "y": 770,
                         "size": 50
                     },
                     {
                         "map": "Shrine of the Frost Giants",
-                        "x": 0,
-                        "y": 0
+                        "x": 332,
+                        "y": 696
                     }
                 ],
                 "sections": [
@@ -152,8 +176,8 @@
                     },
                     {
                         "map": "Shrine of the Frost Giants",
-                        "x": 0,
-                        "y": 0
+                        "x": 385,
+                        "y": 585
                     }
                 ],
                 "sections": [
@@ -177,8 +201,8 @@
                     },
                     {
                         "map": "Shrine of the Frost Giants",
-                        "x": 0,
-                        "y": 0
+                        "x": 683,
+                        "y": 248
                     }
                 ],
                 "sections": [
@@ -202,8 +226,8 @@
                     },
                     {
                         "map": "Shrine of the Frost Giants",
-                        "x": 0,
-                        "y": 0
+                        "x": 668,
+                        "y": 298
                     }
                 ],
                 "sections": [
@@ -227,8 +251,8 @@
                     },
                     {
                         "map": "Shrine of the Frost Giants",
-                        "x": 0,
-                        "y": 0
+                        "x": 770,
+                        "y": 72
                     }
                 ],
                 "sections": [
@@ -243,6 +267,14 @@
             },
             {
                 "name": "Balor",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 913,
+                        "y": 86,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Miniboss",
@@ -256,6 +288,14 @@
             },
             {
                 "name": "Tezcatlipoca",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 375,
+                        "y": 62,
+                        "shape": "diamond"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Miniboss",
@@ -278,8 +318,8 @@
                     },
                     {
                         "map": "Shrine of the Frost Giants",
-                        "x": 0,
-                        "y": 0
+                        "x": 125,
+                        "y": 310
                     }
                 ],
                 "sections": [
@@ -303,8 +343,8 @@
                     },
                     {
                         "map": "Shrine of the Frost Giants",
-                        "x": 0,
-                        "y": 0
+                        "x": 106,
+                        "y": 555
                     }
                 ],
                 "sections": [

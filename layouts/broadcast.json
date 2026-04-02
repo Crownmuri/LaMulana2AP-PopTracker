@@ -10,15 +10,16 @@
         "h_alignment": "stretch",
         "item_size": 50,
         "rows": [
-          [ "scanner", "djed", "mjolnir", "battery", "lamp_of_time", "pochette_key", "pyramid_crystal" ],
-          [ "vessel", "pepper", "egg_of_creation", "giants_flute", "cog_of_antiquity", "mulana_talisman", "fdc" ],
-          [ "holy_grail", "fairy_pass", "gloves", "dinosaur_figure", "gale_fibula", "flame_torc", "vajra" ],
-          [ "power_band", "ice_cloak", "gauntlet", "anchor", "freyas_pendant", "grapple_claw", "spaulder" ],
-          [ "scalesphere", "maats_feather", "ring", "feather", "freys_ship", "snow_shoes", "claydoll_suit" ],
-          [ "origin_sigil", "birth_sigil", "life_sigil", "death_sigil", "", "", "" ],
-          [ "whip1", "shield1", "knife", "rapier", "axe", "katana", "" ],
-          [ "shuriken", "rolling_shuriken", "earth_spear", "flare", "bomb", "chakram", "caltrops", "pistol" ],
-          [ "sacred_orb", "ankh_jewel", "crystal_skull", "beherit", "guardian_kills", "dissonance" ]
+            [ "scanner", "freyas_pendant", "freys_ship", "cog_of_antiquity", "lamp_of_time", "dinosaur_figure", "pochette_key" ],
+            [ "djed", "pepper", "mjolnir", "power_band", "pyramid_crystal", "destiny_tablet", "battery" ],
+            [ "mulana_talisman","light_scythe", "flame_torc","egg_of_creation","vessel","giants_flute","fairy_pass" ],
+            [ "holy_grail", "grapple_claw", "gale_fibula", "claydoll_suit", "feather", "anchor", "gloves" ],
+            [ "fdc", "mantra_app", "enga_musica", "miracle_witch", "mekuri_master", "boss_money_fairy", "boss_key_fairy" ],
+            [ "origin_sigil", "birth_sigil", "life_sigil", "death_sigil", "secret_treasure", "crystal_skull", "beherit", "ankh_jewel" ],
+            [ "whip1", "shield1", "knife", "rapier", "axe", "katana", "shield1", "sacred_orb" ],
+            [ "shuriken", "rolling_shuriken", "earth_spear", "flare", "bomb", "chakram", "caltrops", "pistol" ],
+            [ "mantra_heaven", "mantra_earth", "mantra_sun", "mantra_moon", "mantra_sea", "mantra_fire", "mantra_wind", "mantra_mother", "mantra_child", "mantra_night" ],
+            [ "boss_fafnir", "boss_vritra", "boss_kujata", "boss_jormungand", "boss_aten_ra", "boss_anu", "boss_surtr", "boss_echidna", "boss_hel", "boss_ninth_child" ]
         ]
       }
     ]

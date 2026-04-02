@@ -13,6 +13,7 @@ Tracker:AddItems("items/ammo.json")
 Tracker:AddItems("items/options.json")
 Tracker:AddItems("items/bosses.json")
 Tracker:AddItems("items/settings.json")
+Tracker:AddItems("items/shop_marks.json")
 
 -- ============================================================
 -- Locations
@@ -34,6 +35,8 @@ Tracker:AddLocations("locations/hall_of_malice.json")
 Tracker:AddLocations("locations/eternal_prison_doom.json")
 Tracker:AddLocations("locations/eternal_prison_gloom.json")
 Tracker:AddLocations("locations/spiral_hell.json")
+Tracker:AddLocations("locations/starting_shop.json")
+Tracker:AddLocations("locations/entrances.json")
 
 -- ============================================================
 -- Maps
@@ -48,6 +51,7 @@ Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/maps.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/settings.json")
+Tracker:AddLayouts("layouts/shops.json")
 
 -- ============================================================
 -- Logic
