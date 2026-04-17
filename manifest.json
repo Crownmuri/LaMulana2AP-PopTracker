@@ -15,7 +15,7 @@
             "flags": [ "ap" ]
         },
         "var_er": {
-            "display_name": "Standard (Entrance Randomizer)",
+            "display_name": "Standard (Entrance Tracker)",
             "flags": [ "ap" ]
         }
     },
