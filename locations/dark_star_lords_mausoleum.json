@@ -422,7 +422,7 @@
       }
     ],
     "access_rules": [
-      "$lm2_logic|CanReach(DSLMMain) or CanReach(DSLMTop) or CanReach(Nibiru)"
+      "$lm2_logic|CanReach(DSLMMain) or CanReach(DSLMTop)"
     ]
   }
 ]

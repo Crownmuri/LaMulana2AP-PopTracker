@@ -741,7 +741,7 @@
       }
     ],
     "access_rules": [
-      "$lm2_logic|CanReach(AltarLeft) or CanReach(Cavern) or CanReach(IBBattery) or CanReach(IBBottom) or CanReach(IBDinosaur) or CanReach(IBLeft) or CanReach(IBMain) or CanReach(IBMoon) or CanReach(IBRight) or CanReach(IBTop) or CanReach(IBTopLeft)"
+      "$lm2_logic|CanReach(IBBattery) or CanReach(IBBottom) or CanReach(IBDinosaur) or CanReach(IBLeft) or CanReach(IBMain) or CanReach(IBMoon) or CanReach(IBRight) or CanReach(IBTop) or CanReach(IBTopLeft)"
     ]
   }
 ]

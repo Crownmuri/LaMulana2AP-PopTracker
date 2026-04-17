@@ -35,7 +35,6 @@ ER_ENTRANCE_NAMES = {
     ["er_icefire_treetop_fire_side_up_ladder__c_1"] = "Icefire Fire Ladder Up (C-1)",
     ["er_icefire_treetop_ice_side_left_ladder__f_1"] = "Icefire Ice Left Ladder (F-1)",
     ["er_icefire_treetop_ice_side_right_ladder__f_1"] = "Icefire Ice Right Ladder (F-1)",
-    -- Backside
     ["er_divine_fortress_left_gate__a_3"] = "DF Gate near Twins (A-3)",
     ["er_shrine_of_the_frost_giants_bergelmir_gate__b_4"] = "SFG Bergelmir Gate (B-4)",
     ["er_shrine_of_the_frost_giants_backside_gate__b_2"] = "SFG Backside Gate (B-2)",
@@ -44,6 +43,7 @@ ER_ENTRANCE_NAMES = {
     ["er_takamagahara_shrine_neck"] = "Takama Dragon's Neck",
     ["er_heavens_labyrinth_gate__d_1"] = "HL 4 Pillars Gate (D-1)",
     ["er_heavens_labyrinth_monster_s_jaw"] = "HL Monster's Jaw",
+    -- Backside
     ["er_valhalla_gate__a_2"] = "Valhalla Main Gate (A-2)",
     ["er_dark_star_lord_s_mausoleum_gate__d_7"] = "DSLM Main Gate (D-7)",
     ["er_dark_star_lord_s_mausoleum_pyramid"] = "DSLM Pyramid to Nibiru",
