@@ -393,6 +393,10 @@
         "initial_stage": 0,
         "stages": [
             {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
+            {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
             },
@@ -429,6 +433,10 @@
         "loop": true,
         "initial_stage": 0,
         "stages": [
+            {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -467,6 +475,10 @@
         "initial_stage": 0,
         "stages": [
             {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
+            {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
             },
@@ -503,6 +515,10 @@
         "loop": true,
         "initial_stage": 0,
         "stages": [
+            {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -541,6 +557,10 @@
         "initial_stage": 0,
         "stages": [
             {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
+            {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
             },
@@ -577,6 +597,10 @@
         "loop": true,
         "initial_stage": 0,
         "stages": [
+            {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -615,6 +639,10 @@
         "initial_stage": 0,
         "stages": [
             {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
+            {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
             },
@@ -651,6 +679,10 @@
         "loop": true,
         "initial_stage": 0,
         "stages": [
+            {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -689,6 +721,10 @@
         "initial_stage": 0,
         "stages": [
             {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
+            {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
             },
@@ -725,6 +761,10 @@
         "loop": true,
         "initial_stage": 0,
         "stages": [
+            {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -763,6 +803,10 @@
         "initial_stage": 0,
         "stages": [
             {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
+            {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
             },
@@ -799,6 +843,10 @@
         "loop": true,
         "initial_stage": 0,
         "stages": [
+            {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -837,6 +885,10 @@
         "initial_stage": 0,
         "stages": [
             {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
+            {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
             },
@@ -873,6 +925,10 @@
         "loop": true,
         "initial_stage": 0,
         "stages": [
+            {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -911,6 +967,10 @@
         "initial_stage": 0,
         "stages": [
             {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
+            {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
             },
@@ -947,6 +1007,10 @@
         "loop": true,
         "initial_stage": 0,
         "stages": [
+            {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -985,6 +1049,10 @@
         "initial_stage": 0,
         "stages": [
             {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
+            {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
             },
@@ -1021,6 +1089,10 @@
         "loop": true,
         "initial_stage": 0,
         "stages": [
+            {
+                "name": "Untracked",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"

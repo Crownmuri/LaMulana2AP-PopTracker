@@ -156,6 +156,47 @@ function GuardianKills(n)
     return false
 end
 
+-- Vanilla soul gate costs, used as a fallback when the ER cost_<code> items
+-- aren't loaded (i.e., in var_map / var_items, which don't load items/entrances.json).
+local VANILLA_SOUL_GATE_COSTS = {
+    ["er_immortal_battlefield_spiral_boat_soul_gate_d_4"] = 9,
+    ["er_hall_of_malice_soul_gate__d_3"] = 9,
+    ["er_heavens_labyrinth_soul_gate__e_5"] = 3,
+    ["er_icefire_treetop_under_ratatoskr_soul_gate__g_3"] = 3,
+    ["er_takamagahara_shrine_top_main_soul_gate__d_1"] = 3,
+    ["er_immortal_battlefield_bottom_left_gate__b_7"] = 3,
+    ["er_divine_fortress_soul_gate__c_5"] = 1,
+    ["er_roots_of_yggdrasil_bottom_soul_gate__d_6"] = 1,
+    ["er_ancient_chaos_soul_gate__c_1"] = 5,
+    ["er_takamagahara_shrine_belial_soul_gate__b_1"] = 5,
+    ["er_immortal_battlefield_top_right_gate__h_2"] = 2,
+    ["er_gate_of_the_dead_soul_gate__c_4"] = 2,
+    ["er_shrine_of_the_frost_giants_main_soul_gate__e_4"] = 2,
+    ["er_annwfn_soul_gate__a_4"] = 2,
+    ["er_shrine_of_the_frost_giants_balor_soul_gate__e_1"] = 5,
+    ["er_valhalla_soul_gate__e_2"] = 5,
+    ["er_icefire_treetop_vidofnir_soul_gate__d_6"] = 5,
+    ["er_eternal_prison_gloom_soul_gate__d_2"] = 5,
+}
+
+-- Soul gate cost check. In ER mode, reads the manually-toggled cost from the
+-- cost_<gate_code> progressive item; stage 0 (Untracked) means the gate is
+-- blocked until the player sets a real value. In non-ER variants the cost_*
+-- items don't exist, so it falls back to the vanilla cost.
+function SoulGateCost(gate_code)
+    local cost_obj = Tracker:FindObjectForCode("cost_" .. gate_code)
+    if cost_obj then
+        if cost_obj.CurrentStage <= 0 then return false end
+        local stages = {1, 2, 3, 5, 9}
+        local cost = stages[cost_obj.CurrentStage]
+        if not cost then return false end
+        return GuardianKills(cost)
+    end
+    local vanilla = VANILLA_SOUL_GATE_COSTS[gate_code]
+    if vanilla then return GuardianKills(vanilla) end
+    return false
+end
+
 -- Read required guardian/skull counts from settings
 function RequiredGuardians()
     local obj = Tracker:FindObjectForCode("setting_req_guardians")
@@ -240,7 +281,11 @@ end
 
 LOGIC_FUNCS = {}
 
+local TOKEN_CACHE = {}
+
 local function tokenize(expr)
+    local cached = TOKEN_CACHE[expr]
+    if cached then return cached end
     local tokens = {}
     local i = 1
     local len = #expr
@@ -289,6 +334,7 @@ local function tokenize(expr)
             i = i + 1
         end
     end
+    TOKEN_CACHE[expr] = tokens
     return tokens
 end
 
@@ -707,6 +753,7 @@ LOGIC_FUNCS = {
     CanSpinCorridor=CanSpinCorridor, CanSealCorridor=CanSealCorridor, CanKill=CanKill,
     MeleeAttack=MeleeAttack, HorizontalAttack=HorizontalAttack,
     OrbCount=OrbCount, SkullCount=SkullCount, GuardianKills=GuardianKills,
+    SoulGateCost=SoulGateCost,
     Setting=Setting, Glitch=Glitch, Dissonance=Dissonance, Start=Start,
     NotVoDStart=NotVoDStart, HasAnkhFor=HasAnkhFor,
     NibiruSkullCheck=NibiruSkullCheck,
@@ -716,9 +763,13 @@ LOGIC_FUNCS = {
 -- lm2_logic(expression) - entry point
 -- ============================================================
 
-function lm2_logic(expression)
-    -- Invalidate reachability cache for each fresh evaluation
+ScriptHost:AddWatchForCode("invalidate_reach_cache", "*", function(code)
     _reach_valid = false
+end)
+
+function lm2_logic(expression)
+    -- Reachability cache is invalidated by the "invalidate_reach_cache" watch
+    -- when items change, so it's safe to reuse across rule evals.
 
     local ok, result = pcall(function()
         local tokens = tokenize(expression)

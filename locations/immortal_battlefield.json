@@ -237,7 +237,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus)))"
+          "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil))"
         ]
       },
       {
@@ -688,7 +688,15 @@
         "access_rules": [
           "$lm2_logic|CanReach(IBMoon) and (CanChant(Sun) and Has(Snapshot) and HorizontalAttack and Has(Life Sigil) and (CanWarp or CanReach(IBDinosaur) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and Setting(Non Random Ladders))))"
         ]
-      },
+      }
+    ],
+    "access_rules": [
+      "$lm2_logic|CanReach(IBBattery) or CanReach(IBBottom) or CanReach(IBDinosaur) or CanReach(IBLeft) or CanReach(IBMain) or CanReach(IBMoon) or CanReach(IBRight) or CanReach(IBTop) or CanReach(IBTopLeft)"
+    ]
+  },
+  {
+    "name": "Cavern",
+    "children": [
       {
         "name": "Sun Mantra Mural",
         "map_locations": [
@@ -713,7 +721,15 @@
         "access_rules": [
           "$lm2_logic|CanReach(Cavern) and (Has(Snapshot))"
         ]
-      },
+      }
+    ],
+    "access_rules": [
+      "$lm2_logic|CanReach(Cavern)"
+    ]
+  },
+  {
+    "name": "Altar",
+    "children": [
       {
         "name": "Secret Treasure of Life Item",
         "map_locations": [
@@ -741,7 +757,7 @@
       }
     ],
     "access_rules": [
-      "$lm2_logic|CanReach(IBBattery) or CanReach(IBBottom) or CanReach(IBDinosaur) or CanReach(IBLeft) or CanReach(IBMain) or CanReach(IBMoon) or CanReach(IBRight) or CanReach(IBTop) or CanReach(IBTopLeft)"
+      "$lm2_logic|CanReach(AltarLeft) or CanReach(AltarRight)"
     ]
   }
 ]

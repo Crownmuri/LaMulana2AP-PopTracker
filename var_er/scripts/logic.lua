@@ -150,6 +150,20 @@ function GuardianKills(n)
     return total >= n
 end
 
+-- Soul gate cost check: reads the manually-toggled cost from the "cost_<gate_code>"
+-- progressive item. Stage 0 (Untracked) returns false so the gate stays blocked
+-- until the player sets a real value. Stages 1-5 map to 1/2/3/5/9 souls.
+function SoulGateCost(gate_code)
+    local cost_obj = Tracker:FindObjectForCode("cost_" .. gate_code)
+    if not cost_obj or cost_obj.CurrentStage <= 0 then
+        return false
+    end
+    local stages = {1, 2, 3, 5, 9}
+    local cost = stages[cost_obj.CurrentStage]
+    if not cost then return false end
+    return GuardianKills(cost)
+end
+
 -- Read required guardian/skull counts from settings
 function RequiredGuardians()
     local obj = Tracker:FindObjectForCode("setting_req_guardians")
@@ -237,7 +251,11 @@ end
 
 LOGIC_FUNCS = {}
 
+local TOKEN_CACHE = {}
+
 local function tokenize(expr)
+    local cached = TOKEN_CACHE[expr]
+    if cached then return cached end
     local tokens = {}
     local i = 1
     local len = #expr
@@ -286,6 +304,7 @@ local function tokenize(expr)
             i = i + 1
         end
     end
+    TOKEN_CACHE[expr] = tokens
     return tokens
 end
 
@@ -528,7 +547,7 @@ FORWARD_EXITS = {
     ["DSLMMain"] = {{"DSLMTop", "Has(Feather)"}, {"DSLMPyramid", "Has(Grapple Claw) and Has(Mjolnir)"}},
     ["DSLMTop"] = {{"DSLMMain", "Has(Feather) or CanWarp"}, {"ValhallaMain", "CanWarp or CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["EPDEntrance"] = {{"EPDMain", "True"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}},
-    ["EPDMain"] = {{"EPDEntrance", "IsDead(Hraesvelgr) and Has(Feather)"}, {"EPDTop", "Has(Feather) and Has(Gloves)"}, {"EPG", "Has(Grapple Claw) and (Has(Gale Fibula) or CanStopTime) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1) and Has(Anchor)))"}},
+    ["EPDMain"] = {{"EPDEntrance", "IsDead(Hraesvelgr) and Has(Feather)"}, {"EPDTop", "Has(Feather) and Has(Gloves)"}, {"EPG", "Has(Grapple Claw) and (Has(Gale Fibula) or CanStopTime) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1) and Has(Anchor)))"},{"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["EPDTop"] = {{"EPDHel", "((IsDead(Vidofnir) and GuardianKills(5)) or Setting(Random Soul Gates)) and IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and CanUse(Bomb) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Gloves) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"}},
     ["EPG"] = {{"EPDMain", "(Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1)) or Has(Grapple Claw)) and Has(Feather)"}, {"EPDTop", "Has(Death Sigil) and (Has(Feather) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp))"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["GateofGuidanceLeft"] = {{"GateofGuidance", "CanReach(Mausoleum of Giants)"}},
@@ -564,9 +583,9 @@ FORWARD_EXITS = {
     ["RoYTopMiddle"] = {{"RoY", "CanWarp or CanKill(Nidhogg)"}},
     ["RoYTopRight"] = {{"RoY", "CanWarp or Has(Birth Sigil)"}},
     ["SotFGBlood"] = {{"SotFGBloodTez", "True"}, {"ACBlood", "CanWarp or CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"ValhallaMain", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
-    ["SotFGBloodTez"] = {{"SotFGLeft", "Has(Grapple Claw) and IsDead(Tezcatlipoca)"}, {"SotFGBlood", "CanKill(Tezcatlipoca) and (CanWarp or Has(Grapple Claw))"}},
+    ["SotFGBloodTez"] = {{"SotFGBlood", "CanKill(Tezcatlipoca) and (CanWarp or Has(Grapple Claw))"}},
     ["SotFGGrail"] = {{"SotFGMain", "HorizontalAttack or Start(SotFGGrail)"}},
-    ["SotFGLeft"] = {{"SotFGMain", "True"}, {"SotFGGrail", "CanWarp or HorizontalAttack"}, {"SotFGBloodTez", "True"}},
+    ["SotFGLeft"] = {{"SotFGMain", "True"}, {"SotFGGrail", "CanWarp or HorizontalAttack"}},
     ["SotFGMain"] = {{"SotFGGrail", "CanWarp or HorizontalAttack"}, {"SotFGTop", "IsDead(Badhbh Cath) and Has(Grapple Claw) and HorizontalAttack"}, {"SotFGLeft", "Start(SotFGGrail)"}},
     ["SotFGTop"] = {{"SotFGBalor", "Has(Feather) and PuzzleFinished(Bergelmir)"}},
     ["TSBottom"] = {{"TSMain", "True"}},
@@ -755,7 +774,7 @@ ER_ENTRANCES_BY_AREA = {
     ["IBMain"] = {
         { code = "er_immortal_battlefield_left_altar_door__d_3", logic = "Has(Dinosaur Figure)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "AltarLeft" },
         { code = "er_immortal_battlefield_right_altar_door__f_3", logic = "Has(Dinosaur Figure)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "AltarRight" },
-        { code = "er_immortal_battlefield_top_right_gate__h_2", logic = "(GuardianKills(2) or Setting(Random Soul Gates)) and HorizontalAttack", is_soul_gate = true, vanilla_cost = 2, vanilla_target_area = "GotD" },
+        { code = "er_immortal_battlefield_top_right_gate__h_2", logic = "HorizontalAttack", is_soul_gate = true, vanilla_cost = 2, vanilla_target_area = "GotD" },
     },
     ["AltarRight"] = {
         { code = "er_altar_right_door__c_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "IBMain" },
@@ -869,7 +888,7 @@ ER_ENTRANCES_BY_AREA = {
     },
     ["ITRight"] = {
         { code = "er_icefire_treetop_ice_side_right_ladder__f_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "IBBattery" },
-        { code = "er_icefire_treetop_under_ratatoskr_soul_gate__g_3", logic = "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3) and (GuardianKills(3) or Setting(Random Soul Gates))", is_soul_gate = true, vanilla_cost = 3, vanilla_target_area = "HL" },
+        { code = "er_icefire_treetop_under_ratatoskr_soul_gate__g_3", logic = "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3)", is_soul_gate = true, vanilla_cost = 3, vanilla_target_area = "HL" },
     },
     ["IBBattery"] = {
         { code = "er_immortal_battlefield_alviss_down_ladder__g_7", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "ITRight" },
@@ -905,49 +924,49 @@ ER_ENTRANCES_BY_AREA = {
         { code = "er_immortal_battlefield_spiral_boat_soul_gate_d_4", logic = "False", is_soul_gate = true, vanilla_cost = 9, vanilla_target_area = "HoM" },
     },
     ["HoM"] = {
-        { code = "er_hall_of_malice_soul_gate__d_3", logic = "Has(Death Sigil) and CanUse(Earth Spear) and (CanWarp or IsDead(HoM Middle Path)) and (GuardianKills(9) or Setting(Random Soul Gates))", is_soul_gate = true, vanilla_cost = 9, vanilla_target_area = "IBBoat" },
+        { code = "er_hall_of_malice_soul_gate__d_3", logic = "Has(Death Sigil) and CanUse(Earth Spear) and (CanWarp or IsDead(HoM Middle Path))", is_soul_gate = true, vanilla_cost = 9, vanilla_target_area = "IBBoat" },
     },
     ["HL"] = {
-        { code = "er_heavens_labyrinth_soul_gate__e_5", logic = "GuardianKills(3) or Setting(Random Soul Gates)", is_soul_gate = true, vanilla_cost = 3, vanilla_target_area = "ITRight" },
+        { code = "er_heavens_labyrinth_soul_gate__e_5", logic = "True", is_soul_gate = true, vanilla_cost = 3, vanilla_target_area = "ITRight" },
     },
     ["TSEntrance"] = {
-        { code = "er_takamagahara_shrine_top_main_soul_gate__d_1", logic = "GuardianKills(3) or Setting(Random Soul Gates)", is_soul_gate = true, vanilla_cost = 3, vanilla_target_area = "IBLeftSG" },
+        { code = "er_takamagahara_shrine_top_main_soul_gate__d_1", logic = "True", is_soul_gate = true, vanilla_cost = 3, vanilla_target_area = "IBLeftSG" },
     },
     ["IBLeftSG"] = {
-        { code = "er_immortal_battlefield_bottom_left_gate__b_7", logic = "GuardianKills(3) or Setting(Random Soul Gates)", is_soul_gate = true, vanilla_cost = 3, vanilla_target_area = "TSEntrance" },
+        { code = "er_immortal_battlefield_bottom_left_gate__b_7", logic = "True", is_soul_gate = true, vanilla_cost = 3, vanilla_target_area = "TSEntrance" },
     },
     ["DFEntrance"] = {
-        { code = "er_divine_fortress_soul_gate__c_5", logic = "GuardianKills(1) or Setting(Random Soul Gates)", is_soul_gate = true, vanilla_cost = 1, vanilla_target_area = "RoYBottom" },
+        { code = "er_divine_fortress_soul_gate__c_5", logic = "True", is_soul_gate = true, vanilla_cost = 1, vanilla_target_area = "RoYBottom" },
     },
     ["RoYBottom"] = {
-        { code = "er_roots_of_yggdrasil_bottom_soul_gate__d_6", logic = "GuardianKills(1) or Setting(Random Soul Gates)", is_soul_gate = true, vanilla_cost = 1, vanilla_target_area = "DFEntrance" },
+        { code = "er_roots_of_yggdrasil_bottom_soul_gate__d_6", logic = "True", is_soul_gate = true, vanilla_cost = 1, vanilla_target_area = "DFEntrance" },
     },
     ["ACBlood"] = {
-        { code = "er_ancient_chaos_soul_gate__c_1", logic = "Has(Feather) and (GuardianKills(5) or Setting(Random Soul Gates))", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "TSBlood" },
+        { code = "er_ancient_chaos_soul_gate__c_1", logic = "Has(Feather)", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "TSBlood" },
     },
     ["TSBlood"] = {
-        { code = "er_takamagahara_shrine_belial_soul_gate__b_1", logic = "GuardianKills(5) or Setting(Random Soul Gates)", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "ACBlood" },
+        { code = "er_takamagahara_shrine_belial_soul_gate__b_1", logic = "True", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "ACBlood" },
     },
     ["GotD"] = {
-        { code = "er_gate_of_the_dead_soul_gate__c_4", logic = "GuardianKills(2) or Setting(Random Soul Gates)", is_soul_gate = true, vanilla_cost = 2, vanilla_target_area = "IBMain" },
+        { code = "er_gate_of_the_dead_soul_gate__c_4", logic = "True", is_soul_gate = true, vanilla_cost = 2, vanilla_target_area = "IBMain" },
     },
     ["SotFGMain"] = {
-        { code = "er_shrine_of_the_frost_giants_main_soul_gate__e_4", logic = "GuardianKills(2)  or Setting(Random Soul Gates)", is_soul_gate = true, vanilla_cost = 2, vanilla_target_area = "AnnwfnSG" },
+        { code = "er_shrine_of_the_frost_giants_main_soul_gate__e_4", logic = "True", is_soul_gate = true, vanilla_cost = 2, vanilla_target_area = "AnnwfnSG" },
     },
     ["AnnwfnSG"] = {
-        { code = "er_annwfn_soul_gate__a_4", logic = "(GuardianKills(2) or Setting(Random Soul Gates)) and Has(Origin Sigil)", is_soul_gate = true, vanilla_cost = 2, vanilla_target_area = "SotFGMain" },
+        { code = "er_annwfn_soul_gate__a_4", logic = "Has(Origin Sigil)", is_soul_gate = true, vanilla_cost = 2, vanilla_target_area = "SotFGMain" },
     },
     ["SotFGBalor"] = {
-        { code = "er_shrine_of_the_frost_giants_balor_soul_gate__e_1", logic = "Has(Claydoll Suit) and (GuardianKills(5) or Setting(Random Soul Gates)) and IsDead(Balor)", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "ValhallaTopRight" },
+        { code = "er_shrine_of_the_frost_giants_balor_soul_gate__e_1", logic = "Has(Claydoll Suit) and IsDead(Balor)", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "ValhallaTopRight" },
     },
     ["ValhallaTopRight"] = {
-        { code = "er_valhalla_soul_gate__e_2", logic = "Has(Claydoll Suit) and (GuardianKills(5) or Setting(Random Soul Gates))", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "SotFGBalor" },
+        { code = "er_valhalla_soul_gate__e_2", logic = "Has(Claydoll Suit)", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "SotFGBalor" },
     },
     ["ITVidofnir"] = {
-        { code = "er_icefire_treetop_vidofnir_soul_gate__d_6", logic = "IsDead(Vidofnir) and ((GuardianKills(5) and CanWarp) or Setting(Random Soul Gates))", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "EPG" },
+        { code = "er_icefire_treetop_vidofnir_soul_gate__d_6", logic = "IsDead(Vidofnir) and CanWarp", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "EPG" },
     },
     ["EPG"] = {
-        { code = "er_eternal_prison_gloom_soul_gate__d_2", logic = "GuardianKills(5) or Setting(Random Soul Gates)", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "ITVidofnir" },
+        { code = "er_eternal_prison_gloom_soul_gate__d_2", logic = "True", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "ITVidofnir" },
     },
 }
 
@@ -983,15 +1002,9 @@ local function get_dynamic_exits(area_id)
         for _, entrance in ipairs(ER_ENTRANCES_BY_AREA[area_id]) do
             local edge_logic = entrance.logic
             
-            -- Inject custom Soul Gate cost if applicable
+            -- Inject soul gate cost check using the manually-toggled cost item.
             if entrance.is_soul_gate then
-                local cost = entrance.vanilla_cost or 1
-                local cost_obj = Tracker:FindObjectForCode("cost_" .. entrance.code)
-                if cost_obj then
-                    local stages = {1, 2, 3, 5, 9}
-                    cost = stages[cost_obj.CurrentStage + 1] or cost
-                end
-                edge_logic = string.format("(%s) and GuardianKills(%d)", edge_logic, cost)
+                edge_logic = string.format("(%s) and SoulGateCost(%s)", edge_logic, entrance.code)
             end
             
             if er_enabled then
@@ -1072,6 +1085,7 @@ LOGIC_FUNCS = {
     CanSpinCorridor=CanSpinCorridor, CanSealCorridor=CanSealCorridor, CanKill=CanKill,
     MeleeAttack=MeleeAttack, HorizontalAttack=HorizontalAttack,
     OrbCount=OrbCount, SkullCount=SkullCount, GuardianKills=GuardianKills,
+    SoulGateCost=SoulGateCost,
     Setting=Setting, Glitch=Glitch, Dissonance=Dissonance, Start=Start,
     NotVoDStart=NotVoDStart, HasAnkhFor=HasAnkhFor,
     NibiruSkullCheck=NibiruSkullCheck,
@@ -1085,7 +1099,9 @@ ScriptHost:AddWatchForCode("invalidate_reach_cache", "*", function(code)
 end)
 
 function lm2_logic(expression)
-    -- Invalidate reachability cache for each fresh evaluation
+    -- Reachability cache is invalidated by the "invalidate_reach_cache" watch
+    -- when items/entrances change, so it's safe to reuse across rule evals.
+
     local ok, result = pcall(function()
         local tokens = tokenize(expression)
         if #tokens == 0 then return ACCESS_NONE end

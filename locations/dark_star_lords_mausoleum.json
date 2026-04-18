@@ -369,7 +369,15 @@
             "access_rules": [
                 "$lm2_logic|CanReach(DSLMTop) and (Has(Feather) and Has(Pyramid Crystal) and Has(Silver Shield) and OrbCount(3) and (Has(Chain Whip) or Has(Knife) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
             ]
-        },
+        }
+    ],
+    "access_rules": [
+      "$lm2_logic|CanReach(DSLMMain) or CanReach(DSLMTop)"
+    ]
+  },
+  {
+    "name": "Nibiru",
+    "children": [
       {
         "name": "Night Mantra Mural",
         "map_locations": [
@@ -422,7 +430,7 @@
       }
     ],
     "access_rules": [
-      "$lm2_logic|CanReach(DSLMMain) or CanReach(DSLMTop)"
+      "$lm2_logic|CanReach(Nibiru)"
     ]
   }
 ]

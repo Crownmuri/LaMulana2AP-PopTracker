@@ -7,7 +7,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_altar_left_door__a_1"
+                        "hosted_item": "er_altar_left_door__a_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -19,14 +20,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|False" ]
+                "access_rules": [
+                    "$lm2_logic|False"
+                ]
             },
             {
                 "name": "Immortal Battlefield Left Altar Door (D-3)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_left_altar_door__d_3"
+                        "hosted_item": "er_immortal_battlefield_left_altar_door__d_3",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -38,14 +42,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(IBMain) and Has(Dinosaur Figure)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBMain) and Has(Dinosaur Figure)"
+                ]
             },
             {
                 "name": "Altar Right Door (C-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_altar_right_door__c_1"
+                        "hosted_item": "er_altar_right_door__c_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -57,14 +64,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(AltarRight)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(AltarRight)"
+                ]
             },
             {
                 "name": "Immortal Battlefield Right Altar Door (F-3)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_right_altar_door__f_3"
+                        "hosted_item": "er_immortal_battlefield_right_altar_door__f_3",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -76,14 +86,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(IBMain) and Has(Dinosaur Figure)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBMain) and Has(Dinosaur Figure)"
+                ]
             },
             {
                 "name": "Ancient Chaos Gate (D-6)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_ancient_chaos_gate__d_6"
+                        "hosted_item": "er_ancient_chaos_gate__d_6",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -95,14 +108,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(ACBottom)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(ACBottom)"
+                ]
             },
             {
                 "name": "Takamagahara Shrine Bottom Gate (C-7)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_takamagahara_shrine_bottom_gate__c_7"
+                        "hosted_item": "er_takamagahara_shrine_bottom_gate__c_7",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -114,14 +130,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(TSBottom)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(TSBottom)"
+                ]
             },
             {
                 "name": "Annwfn Bifrost",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_annwfn_bifrost"
+                        "hosted_item": "er_annwfn_bifrost",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -133,14 +152,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(AnnwfnMain)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(AnnwfnMain)"
+                ]
             },
             {
                 "name": "Immortal Battlefield Bifrost Fall",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_bifrost_fall"
+                        "hosted_item": "er_immortal_battlefield_bifrost_fall",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -152,14 +174,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|False" ]
+                "access_rules": [
+                    "$lm2_logic|False"
+                ]
             },
             {
                 "name": "Annwfn Bottom One-way Ladder (E-5)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_annwfn_bottom_one_way_ladder__e_5"
+                        "hosted_item": "er_annwfn_bottom_one_way_ladder__e_5",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -171,14 +196,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|False" ]
+                "access_rules": [
+                    "$lm2_logic|False"
+                ]
             },
             {
                 "name": "Immortal Battlefield Cetus Up Ladder (F-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_cetus_up_ladder__f_1"
+                        "hosted_item": "er_immortal_battlefield_cetus_up_ladder__f_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -190,14 +218,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(IBCetusLadder)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBCetusLadder)"
+                ]
             },
             {
                 "name": "Annwfn Ladder Up (C-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_annwfn_ladder_up__c_1"
+                        "hosted_item": "er_annwfn_ladder_up__c_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -209,14 +240,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(AnnwfnMain)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(AnnwfnMain)"
+                ]
             },
             {
                 "name": "Roots of Yggdrasil Ladder Down (C-5)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_roots_of_yggdrasil_ladder_down__c_5"
+                        "hosted_item": "er_roots_of_yggdrasil_ladder_down__c_5",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -228,14 +262,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(RoYBottomLeft)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(RoYBottomLeft)"
+                ]
             },
             {
                 "name": "Annwfn Right Gate (G-4)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_annwfn_right_gate__g_4"
+                        "hosted_item": "er_annwfn_right_gate__g_4",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -247,14 +284,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|False" ]
+                "access_rules": [
+                    "$lm2_logic|False"
+                ]
             },
             {
                 "name": "Roots of Yggdrasil Top Left Switch Gate (A-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_roots_of_yggdrasil_top_left_switch_gate__a_1"
+                        "hosted_item": "er_roots_of_yggdrasil_top_left_switch_gate__a_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -266,14 +306,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(RoYTopLeft) and (CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb))" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(RoYTopLeft) and (CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb))"
+                ]
             },
             {
                 "name": "Cavern Left Door (A-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_cavern_left_door__a_1"
+                        "hosted_item": "er_cavern_left_door__a_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -285,14 +328,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(Cavern)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(Cavern)"
+                ]
             },
             {
                 "name": "Immortal Battlefield Right Door (H-4)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_right_door__h_4"
+                        "hosted_item": "er_immortal_battlefield_right_door__h_4",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -304,14 +350,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(IBRight)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBRight)"
+                ]
             },
             {
                 "name": "Cavern Right Door (D-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_cavern_right_door__d_1"
+                        "hosted_item": "er_cavern_right_door__d_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -323,14 +372,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(Cavern)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(Cavern)"
+                ]
             },
             {
                 "name": "Cliff (A-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_cliff__a_1"
+                        "hosted_item": "er_cliff__a_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -342,14 +394,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|False" ]
+                "access_rules": [
+                    "$lm2_logic|False"
+                ]
             },
             {
                 "name": "Dark Star Lord's Mausoleum Gate (D-7)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_dark_star_lord_s_mausoleum_gate__d_7"
+                        "hosted_item": "er_dark_star_lord_s_mausoleum_gate__d_7",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -361,14 +416,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(DSLMMain)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(DSLMMain)"
+                ]
             },
             {
                 "name": "Gate of the Dead Wedjat Gate (F-5)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_gate_of_the_dead_wedjat_gate__f_5"
+                        "hosted_item": "er_gate_of_the_dead_wedjat_gate__f_5",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -380,14 +438,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(GotDWedjet) and PuzzleFinished(White Pedestals)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotDWedjet) and PuzzleFinished(White Pedestals)"
+                ]
             },
             {
                 "name": "Dark Star Lord's Mausoleum Pyramid",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_dark_star_lord_s_mausoleum_pyramid"
+                        "hosted_item": "er_dark_star_lord_s_mausoleum_pyramid",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -399,14 +460,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(DSLMPyramid) and (Has(Pyramid Crystal) and Has(Destiny Tablet) and CanChant(Heaven) and CanChant(Moon) and CanChant(Fire) and CanChant(Sea) and CanChant(Sun))" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(DSLMPyramid) and (Has(Pyramid Crystal) and Has(Destiny Tablet) and CanChant(Heaven) and CanChant(Moon) and CanChant(Fire) and CanChant(Sea) and CanChant(Sun))"
+                ]
             },
             {
                 "name": "Nibiru Spaceship",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_nibiru_spaceship"
+                        "hosted_item": "er_nibiru_spaceship",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -418,14 +482,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|False" ]
+                "access_rules": [
+                    "$lm2_logic|False"
+                ]
             },
             {
                 "name": "Divine Fortress Left Gate (A-3)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_divine_fortress_left_gate__a_3"
+                        "hosted_item": "er_divine_fortress_left_gate__a_3",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -437,14 +504,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(DFMain)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFMain)"
+                ]
             },
             {
                 "name": "Valhalla Gate (A-2)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_valhalla_gate__a_2"
+                        "hosted_item": "er_valhalla_gate__a_2",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -456,14 +526,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(ValhallaMain)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(ValhallaMain)"
+                ]
             },
             {
                 "name": "Endless Corridor (C-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_endless_corridor__c_1"
+                        "hosted_item": "er_endless_corridor__c_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -475,14 +548,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(EndlessCorridor)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(EndlessCorridor)"
+                ]
             },
             {
                 "name": "Mausoleum of Giants Left Door (A-5)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_mausoleum_of_giants_left_door__a_5"
+                        "hosted_item": "er_mausoleum_of_giants_left_door__a_5",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -494,14 +570,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(MausoleumofGiantsRubble) and CanReach(Annwfn Main)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(MausoleumofGiantsRubble) and CanReach(Annwfn Main)"
+                ]
             },
             {
                 "name": "Gate of Guidance Ladder Down (A-6)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_gate_of_guidance_ladder_down__a_6"
+                        "hosted_item": "er_gate_of_guidance_ladder_down__a_6",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -513,14 +592,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(GateofGuidance)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(GateofGuidance)"
+                ]
             },
             {
                 "name": "Mausoleum of Giants Ladder Up (A-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_mausoleum_of_giants_ladder_up__a_1"
+                        "hosted_item": "er_mausoleum_of_giants_ladder_up__a_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -532,14 +614,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(MausoleumofGiants)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(MausoleumofGiants)"
+                ]
             },
             {
                 "name": "Gate of Guidance Left Gate (A-3)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_gate_of_guidance_left_gate__a_3"
+                        "hosted_item": "er_gate_of_guidance_left_gate__a_3",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -551,14 +636,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(GateofGuidanceLeft)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(GateofGuidanceLeft)"
+                ]
             },
             {
                 "name": "Gate of Illusion Left Gate (A-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_gate_of_illusion_left_gate__a_1"
+                        "hosted_item": "er_gate_of_illusion_left_gate__a_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -570,14 +658,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(GateofIllusion)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(GateofIllusion)"
+                ]
             },
             {
                 "name": "Gate of Guidance Main Entrance (C-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_gate_of_guidance_main_entrance__c_1"
+                        "hosted_item": "er_gate_of_guidance_main_entrance__c_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -589,14 +680,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(GateofGuidance)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(GateofGuidance)"
+                ]
             },
             {
                 "name": "Village of Departure Main (F-5)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_village_of_departure_main__f_5"
+                        "hosted_item": "er_village_of_departure_main__f_5",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -608,14 +702,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(VoD)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoD)"
+                ]
             },
             {
                 "name": "Gate of Illusion Right Gate (C-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_gate_of_illusion_right_gate__c_1"
+                        "hosted_item": "er_gate_of_illusion_right_gate__c_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -627,14 +724,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(GateofIllusion) and HorizontalAttack" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(GateofIllusion) and HorizontalAttack"
+                ]
             },
             {
                 "name": "Roots of Yggdrasil Main Gate (D-4)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_roots_of_yggdrasil_main_gate__d_4"
+                        "hosted_item": "er_roots_of_yggdrasil_main_gate__d_4",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -646,14 +746,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(RoYMiddle)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(RoYMiddle)"
+                ]
             },
             {
                 "name": "Hall of Malice Gate (C-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_hall_of_malice_gate__c_1"
+                        "hosted_item": "er_hall_of_malice_gate__c_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -665,14 +768,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(HoMTop)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(HoMTop)"
+                ]
             },
             {
                 "name": "Heavens Labyrinth Gate (D-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_heavens_labyrinth_gate__d_1"
+                        "hosted_item": "er_heavens_labyrinth_gate__d_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -684,14 +790,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(HLGate) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla))" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(HLGate) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla))"
+                ]
             },
             {
                 "name": "Heavens Labyrinth Monster's Jaw",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_heavens_labyrinth_monster_s_jaw"
+                        "hosted_item": "er_heavens_labyrinth_monster_s_jaw",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -703,14 +812,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|False" ]
+                "access_rules": [
+                    "$lm2_logic|False"
+                ]
             },
             {
                 "name": "Takamagahara Shrine Neck",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_takamagahara_shrine_neck"
+                        "hosted_item": "er_takamagahara_shrine_neck",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -722,14 +834,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(TSNeckEntrance) and (CanChant(Earth) and CanChant(Wind) and CanChant(Fire) and CanChant(Sea) and CanChant(Heaven) and CanWarp)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(TSNeckEntrance) and (CanChant(Earth) and CanChant(Wind) and CanChant(Fire) and CanChant(Sea) and CanChant(Heaven) and CanWarp)"
+                ]
             },
             {
                 "name": "Icefire Treetop Fire Side Up Ladder (C-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_icefire_treetop_fire_side_up_ladder__c_1"
+                        "hosted_item": "er_icefire_treetop_fire_side_up_ladder__c_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -741,14 +856,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(ITLeft)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(ITLeft)"
+                ]
             },
             {
                 "name": "Immortal Battlefield Down Ladder near Spinning Wheel (D-7)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_down_ladder_near_spinning_wheel__d_7"
+                        "hosted_item": "er_immortal_battlefield_down_ladder_near_spinning_wheel__d_7",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -760,14 +878,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(IBLadder)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBLadder)"
+                ]
             },
             {
                 "name": "Icefire Treetop Ice Side Left Ladder (F-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_icefire_treetop_ice_side_left_ladder__f_1"
+                        "hosted_item": "er_icefire_treetop_ice_side_left_ladder__f_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -779,14 +900,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(ITRightLeftLadder)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(ITRightLeftLadder)"
+                ]
             },
             {
                 "name": "Immortal Battlefield Moon Altar Hallway (G-7)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_moon_altar_hallway__g_7"
+                        "hosted_item": "er_immortal_battlefield_moon_altar_hallway__g_7",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -798,14 +922,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|False" ]
+                "access_rules": [
+                    "$lm2_logic|False"
+                ]
             },
             {
                 "name": "Icefire Treetop Ice Side Right Ladder (F-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_icefire_treetop_ice_side_right_ladder__f_1"
+                        "hosted_item": "er_icefire_treetop_ice_side_right_ladder__f_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -817,14 +944,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(ITRight)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(ITRight)"
+                ]
             },
             {
                 "name": "Immortal Battlefield Alviss Down Ladder (G-7)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_alviss_down_ladder__g_7"
+                        "hosted_item": "er_immortal_battlefield_alviss_down_ladder__g_7",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -836,14 +966,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(IBBattery)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBBattery)"
+                ]
             },
             {
                 "name": "Icefire Treetop Middle Gate (D-3)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_icefire_treetop_middle_gate__d_3"
+                        "hosted_item": "er_icefire_treetop_middle_gate__d_3",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -855,14 +988,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(ITEntrance)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(ITEntrance)"
+                ]
             },
             {
                 "name": "Roots of Yggdrasil Top Middle Nidhogg Gate (D-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_roots_of_yggdrasil_top_middle_nidhogg_gate__d_1"
+                        "hosted_item": "er_roots_of_yggdrasil_top_middle_nidhogg_gate__d_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -874,14 +1010,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(RoYTopMiddle)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(RoYTopMiddle)"
+                ]
             },
             {
                 "name": "Immortal Battlefield Left Gate (A-6)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_left_gate__a_6"
+                        "hosted_item": "er_immortal_battlefield_left_gate__a_6",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -893,14 +1032,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|False" ]
+                "access_rules": [
+                    "$lm2_logic|False"
+                ]
             },
             {
                 "name": "Roots of Yggdrasil Top Right Birth Gate (G-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_roots_of_yggdrasil_top_right_birth_gate__g_1"
+                        "hosted_item": "er_roots_of_yggdrasil_top_right_birth_gate__g_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -912,14 +1054,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(RoYTopRight) and Has(Birth Sigil)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(RoYTopRight) and Has(Birth Sigil)"
+                ]
             },
             {
                 "name": "Inferno Cavern (B-1)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_inferno_cavern__b_1"
+                        "hosted_item": "er_inferno_cavern__b_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -931,14 +1076,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|False" ]
+                "access_rules": [
+                    "$lm2_logic|False"
+                ]
             },
             {
                 "name": "Village of Departure Ladder Down (F-3)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_village_of_departure_ladder_down__f_3"
+                        "hosted_item": "er_village_of_departure_ladder_down__f_3",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -950,14 +1098,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(VoDLadder) and Has(Feather)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoDLadder) and Has(Feather)"
+                ]
             },
             {
                 "name": "Shrine of the Frost Giants Backside Gate (B-2)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_shrine_of_the_frost_giants_backside_gate__b_2"
+                        "hosted_item": "er_shrine_of_the_frost_giants_backside_gate__b_2",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -969,14 +1120,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(SotFGBloodTez) and (Has(Grapple Claw) and IsDead(Tezcatlipoca))" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGBloodTez) and (Has(Grapple Claw) and IsDead(Tezcatlipoca))"
+                ]
             },
             {
                 "name": "Shrine of the Frost Giants Bergelmir Gate (B-4)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_shrine_of_the_frost_giants_bergelmir_gate__b_4"
+                        "hosted_item": "er_shrine_of_the_frost_giants_bergelmir_gate__b_4",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -988,14 +1142,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(SotFGLeft)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGLeft)"
+                ]
             },
             {
                 "name": "Starting Area",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_starting_area"
+                        "hosted_item": "er_starting_area",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1007,14 +1164,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(Start)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(Start)"
+                ]
             },
             {
                 "name": "Village of Departure Next to Xelpud",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_village_of_departure_next_to_xelpud"
+                        "hosted_item": "er_village_of_departure_next_to_xelpud",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1026,14 +1186,17 @@
                         "shape": "diamond"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(VoD)" ]
+                "access_rules": [
+                    "$lm2_logic|CanReach(VoD)"
+                ]
             },
             {
                 "name": "Immortal Battlefield Spiral Boat Soul Gate(D-4)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_spiral_boat_soul_gate_d_4"
+                        "hosted_item": "er_immortal_battlefield_spiral_boat_soul_gate_d_4",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1045,7 +1208,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|False" ],
+                "access_rules": [
+                    "$lm2_logic|False"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1058,7 +1223,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_hall_of_malice_soul_gate__d_3"
+                        "hosted_item": "er_hall_of_malice_soul_gate__d_3",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1070,7 +1236,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(HoM) and (Has(Death Sigil) and CanUse(Earth Spear) and (CanWarp or IsDead(HoM Middle Path)) and (GuardianKills(9) or Setting(Random Soul Gates)))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HoM) and Has(Death Sigil) and CanUse(Earth Spear) and (CanWarp or IsDead(HoM Middle Path)) and SoulGateCost(er_hall_of_malice_soul_gate__d_3)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1083,7 +1251,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_heavens_labyrinth_soul_gate__e_5"
+                        "hosted_item": "er_heavens_labyrinth_soul_gate__e_5",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1095,7 +1264,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(HL) and (GuardianKills(3) or Setting(Random Soul Gates))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(HL) and SoulGateCost(er_heavens_labyrinth_soul_gate__e_5)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1108,7 +1279,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_icefire_treetop_under_ratatoskr_soul_gate__g_3"
+                        "hosted_item": "er_icefire_treetop_under_ratatoskr_soul_gate__g_3",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1120,7 +1292,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(ITRight) and ((Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3) and (GuardianKills(3) or Setting(Random Soul Gates)))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(ITRight) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3) and SoulGateCost(er_icefire_treetop_under_ratatoskr_soul_gate__g_3)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1133,7 +1307,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_takamagahara_shrine_top_main_soul_gate__d_1"
+                        "hosted_item": "er_takamagahara_shrine_top_main_soul_gate__d_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1145,7 +1320,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(TSEntrance) and (GuardianKills(3) or Setting(Random Soul Gates))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(TSEntrance) and SoulGateCost(er_takamagahara_shrine_top_main_soul_gate__d_1)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1158,7 +1335,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_bottom_left_gate__b_7"
+                        "hosted_item": "er_immortal_battlefield_bottom_left_gate__b_7",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1170,7 +1348,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(IBLeftSG) and (GuardianKills(3) or Setting(Random Soul Gates))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBLeftSG) and SoulGateCost(er_immortal_battlefield_bottom_left_gate__b_7)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1183,7 +1363,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_divine_fortress_soul_gate__c_5"
+                        "hosted_item": "er_divine_fortress_soul_gate__c_5",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1195,7 +1376,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(DFEntrance) and (GuardianKills(1) or Setting(Random Soul Gates))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFEntrance) and SoulGateCost(er_divine_fortress_soul_gate__c_5)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1208,7 +1391,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_roots_of_yggdrasil_bottom_soul_gate__d_6"
+                        "hosted_item": "er_roots_of_yggdrasil_bottom_soul_gate__d_6",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1220,7 +1404,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(RoYBottom) and (GuardianKills(1) or Setting(Random Soul Gates))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(RoYBottom) and SoulGateCost(er_roots_of_yggdrasil_bottom_soul_gate__d_6)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1233,7 +1419,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_ancient_chaos_soul_gate__c_1"
+                        "hosted_item": "er_ancient_chaos_soul_gate__c_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1245,7 +1432,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(ACBlood) and (Has(Feather) and (GuardianKills(3) or Setting(Random Soul Gates)))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(ACBlood) and Has(Feather) and SoulGateCost(er_ancient_chaos_soul_gate__c_1)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1258,7 +1447,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_takamagahara_shrine_belial_soul_gate__b_1"
+                        "hosted_item": "er_takamagahara_shrine_belial_soul_gate__b_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1270,7 +1460,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(TSBlood) and (GuardianKills(5) or Setting(Random Soul Gates))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(TSBlood) and SoulGateCost(er_takamagahara_shrine_belial_soul_gate__b_1)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1283,7 +1475,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_immortal_battlefield_top_right_gate__h_2"
+                        "hosted_item": "er_immortal_battlefield_top_right_gate__h_2",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1295,7 +1488,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(IBMain) and ((GuardianKills(2) or Setting(Random Soul Gates)) and HorizontalAttack)" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(IBMain) and HorizontalAttack and SoulGateCost(er_immortal_battlefield_top_right_gate__h_2)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1308,7 +1503,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_gate_of_the_dead_soul_gate__c_4"
+                        "hosted_item": "er_gate_of_the_dead_soul_gate__c_4",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1320,7 +1516,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(GotD) and (GuardianKills(2) or Setting(Random Soul Gates))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(GotD) and SoulGateCost(er_gate_of_the_dead_soul_gate__c_4)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1333,7 +1531,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_shrine_of_the_frost_giants_main_soul_gate__e_4"
+                        "hosted_item": "er_shrine_of_the_frost_giants_main_soul_gate__e_4",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1345,7 +1544,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(SotFGMain) and (GuardianKills(2)  or Setting(Random Soul Gates))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGMain) and SoulGateCost(er_shrine_of_the_frost_giants_main_soul_gate__e_4)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1358,7 +1559,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_annwfn_soul_gate__a_4"
+                        "hosted_item": "er_annwfn_soul_gate__a_4",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1370,7 +1572,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(AnnwfnSG) and ((GuardianKills(2) or Setting(Random Soul Gates)) and Has(Origin Sigil))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(AnnwfnSG) and Has(Origin Sigil) and SoulGateCost(er_annwfn_soul_gate__a_4)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1383,7 +1587,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_shrine_of_the_frost_giants_balor_soul_gate__e_1"
+                        "hosted_item": "er_shrine_of_the_frost_giants_balor_soul_gate__e_1",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1395,7 +1600,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(SotFGBalor) and (Has(Claydoll Suit) and (GuardianKills(5) or Setting(Random Soul Gates)) and IsDead(Balor))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGBalor) and Has(Claydoll Suit) and IsDead(Balor) and SoulGateCost(er_shrine_of_the_frost_giants_balor_soul_gate__e_1)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1408,7 +1615,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_valhalla_soul_gate__e_2"
+                        "hosted_item": "er_valhalla_soul_gate__e_2",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1420,7 +1628,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(ValhallaTopRight) and (Has(Claydoll Suit) and (GuardianKills(5) or Setting(Random Soul Gates)))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(ValhallaTopRight) and Has(Claydoll Suit) and SoulGateCost(er_valhalla_soul_gate__e_2)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1433,7 +1643,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_icefire_treetop_vidofnir_soul_gate__d_6"
+                        "hosted_item": "er_icefire_treetop_vidofnir_soul_gate__d_6",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1445,7 +1656,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(ITVidofnir) and (IsDead(Vidofnir) and ((GuardianKills(5) and CanWarp) or Setting(Random Soul Gates)))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(ITVidofnir) and IsDead(Vidofnir) and CanWarp and SoulGateCost(er_icefire_treetop_vidofnir_soul_gate__d_6)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",
@@ -1458,7 +1671,8 @@
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_eternal_prison_gloom_soul_gate__d_2"
+                        "hosted_item": "er_eternal_prison_gloom_soul_gate__d_2",
+                        "item_size": "200,16"
                     }
                 ],
                 "map_locations": [
@@ -1470,7 +1684,9 @@
                         "shape": "trapezoid"
                     }
                 ],
-                "access_rules": [ "$lm2_logic|CanReach(EPG) and (GuardianKills(5) or Setting(Random Soul Gates))" ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(EPG) and SoulGateCost(er_eternal_prison_gloom_soul_gate__d_2)"
+                ],
                 "children": [
                     {
                         "name": "Cost Toggle",

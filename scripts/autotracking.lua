@@ -18,7 +18,16 @@ function onItem(index, item_id, item_name, player)
 
     if item_type == "toggle" then
         local o = Tracker:FindObjectForCode(code)
-        if o then o.Active = true end
+        if o then
+            -- If this is an ammo item (code ends in _ammo), do NOT 
+            -- activate the weapon toggle. Ownership is only granted 
+            -- by the base weapon items (e.g., "bomb").
+            if o.Type == "progressive_toggle" and code:sub(-5) == "_ammo" then
+                -- Ignore ownership update for ammo filler
+            else
+                o.Active = true
+            end
+        end
 
     elseif item_type == "consumable" then
         local o = Tracker:FindObjectForCode(code)
@@ -69,6 +78,56 @@ end
 
 -- Reverse lookup: section path → shop mark code (populated after SHOP_MARK_TO_SECTIONS)
 local SECTION_TO_SHOP_MARK = {}
+-- Scouted item stage per shop location ID (populated by AddScoutHandler)
+local LOCATION_ID_TO_SHOP_STAGE = {}
+
+-- shop_marks.json stage indices. Stage 0 = sm_item (generic fallback).
+local ITEM_TO_SHOP_STAGE = {
+    [420190] = 1, -- Weights
+    [420182] = 2, -- Shuriken Ammo
+    [420183] = 3, -- Rolling Shuriken Ammo
+    [420184] = 4, -- Earth Spear Ammo
+    [420185] = 5, -- Flare Ammo
+    [420186] = 6, -- Bomb Ammo
+    [420187] = 7, -- Chakram Ammo
+    [420188] = 8, -- Caltrops Ammo
+    [420189] = 9, -- Pistol Ammo
+}
+
+-- Shop mark stage → subweapon item code. When a shop slot's icon
+-- becomes an ammo type, flip the matching weapon's progressive stage
+-- to 1 (the "has-ammo" icon). Active state (held/not-held) is
+-- managed separately by onItem.
+local SHOP_STAGE_TO_WEAPON_CODE = {
+    [2] = "shuriken",
+    [3] = "rolling_shuriken",
+    [4] = "earth_spear",
+    [5] = "flare",
+    [6] = "bomb",
+    [7] = "chakram",
+    [8] = "caltrops",
+    [9] = "pistol",
+}
+
+local function SetSubweaponAmmoStage(stage, sm_code)
+    local weapon_code = SHOP_STAGE_TO_WEAPON_CODE[stage]
+    if not weapon_code then return end
+    
+    local weapon = Tracker:FindObjectForCode(weapon_code)
+    if weapon then
+        -- Cache current ownership. Scouting a shop should change the 
+        -- icon (stage), but not grant the item (active).
+        local was_active = weapon.Active
+        weapon.CurrentStage = 1
+        weapon.Active = was_active
+    end
+    -- Pistol Ammo in a starter shop is free, so logic no longer needs
+    -- Money Fairy for CanUse(Pistol). Auto-mark it as found.
+    if weapon_code == "pistol" and sm_code and sm_code:sub(1, 13) == "sm_startshop_" then
+        local mf = Tracker:FindObjectForCode("boss_money_fairy")
+        if mf and not mf.Active then mf.Active = true end
+    end
+end
 
 function onLocation(location_id, location_name)
     local location_array = LOCATION_MAPPING[location_id]
@@ -86,6 +145,11 @@ function onLocation(location_id, location_name)
                 if sm_code then
                     local mark = Tracker:FindObjectForCode(sm_code)
                     if mark then
+                        local stage = LOCATION_ID_TO_SHOP_STAGE[location_id]
+                        if stage then
+                            mark.CurrentStage = stage
+                            SetSubweaponAmmoStage(stage, sm_code)
+                        end
                         mark.Active = true
                     end
                 end
@@ -407,6 +471,105 @@ for sm_code, section_paths in pairs(SHOP_MARK_TO_SECTIONS) do
         SECTION_TO_SHOP_MARK[path] = sm_code
     end
 end
+
+-- ============================================================
+-- Shop Scouting: ask AP what item sits in each shop slot so we
+-- can render the correct icon (Weights / ammo type) when the
+-- location is checked.
+-- ============================================================
+
+local SHOP_LOCATION_IDS = {}
+local LOCATION_ID_TO_SHOP_MARK = {}
+for loc_id, sections in pairs(LOCATION_MAPPING) do
+    local sm_code = sections[1] and SECTION_TO_SHOP_MARK[sections[1]]
+    if sm_code then
+        table.insert(SHOP_LOCATION_IDS, loc_id)
+        LOCATION_ID_TO_SHOP_MARK[loc_id] = sm_code
+    end
+end
+
+function onScout(location_id, location_name, item_id, item_name, item_player)
+    local stage = ITEM_TO_SHOP_STAGE[item_id]
+    if not stage then return end
+    LOCATION_ID_TO_SHOP_STAGE[location_id] = stage
+    -- Retroactively update if the location was checked before the scout reply
+    local sm_code = LOCATION_ID_TO_SHOP_MARK[location_id]
+    if sm_code then
+        local mark = Tracker:FindObjectForCode(sm_code)
+        if mark and mark.Active then
+            mark.CurrentStage = stage
+            SetSubweaponAmmoStage(stage, sm_code)
+        end
+    end
+end
+
+Archipelago:AddScoutHandler("lm2_shop_scout", onScout)
+
+-- Trigger scouts on (re)connect. Runs alongside the main onClear handler.
+Archipelago:AddClearHandler("lm2_shop_scout_clear", function(slot_data)
+    LOCATION_ID_TO_SHOP_STAGE = {}
+    Archipelago:LocationScouts(SHOP_LOCATION_IDS, 0)
+end)
+
+-- ============================================================
+-- Slot Data → Tracker Settings
+-- When the AP session (re)connects, apply options from the
+-- seed's slot_data to the corresponding PopTracker setting items.
+-- ============================================================
+
+-- AP AreaID (slot_data.starting_area) → setting_start stage index
+local STARTING_AREA_TO_STAGE = {
+    [1]  = 0,   -- VoD
+    [11] = 1,   -- RoY
+    [18] = 2,   -- AnnwfnMain
+    [27] = 3,   -- IBMain
+    [44] = 4,   -- ITLeft
+    [50] = 5,   -- DFMain
+    [53] = 6,   -- SotFGGrail
+    [63] = 7,   -- TSLeft
+    [72] = 8,   -- ValhallaMain
+    [75] = 9,   -- DSLMMain
+    [81] = 10,  -- ACTablet
+    [84] = 11,  -- HoMTop
+}
+
+local function set_stage(code, stage)
+    if stage == nil then return end
+    local obj = Tracker:FindObjectForCode(code)
+    if obj then obj.CurrentStage = stage end
+end
+
+local function set_toggle(code, value)
+    if value == nil then return end
+    local obj = Tracker:FindObjectForCode(code)
+    if obj then obj.Active = (tonumber(value) or 0) ~= 0 end
+end
+
+Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
+    if not slot_data then return end
+
+    local area = tonumber(slot_data.starting_area)
+    if area then set_stage("setting_start", STARTING_AREA_TO_STAGE[area]) end
+
+    set_toggle("setting_guardian_ankhs", slot_data.guardian_specific_ankhs)
+    set_toggle("setting_remove_it_statue", slot_data.remove_it_statue)
+    set_toggle("setting_autoscan",         slot_data.auto_scan_tablets)
+    set_stage ("setting_req_guardians",    tonumber(slot_data.required_guardians))
+    set_stage ("setting_req_skulls",       tonumber(slot_data.required_skulls))
+
+    -- Forwarded only if the seed carries these keys (not in fill_slot_data today):
+    set_stage ("setting_logic",         tonumber(slot_data.logic_difficulty))
+    set_toggle("setting_costume_clip",  slot_data.costume_clip)
+    set_toggle("setting_dlc_logic",     slot_data.dlc_item_logic)
+    -- `setting_not_life_for_hom` is the inverse of the AP option:
+    -- require life sigil = 1 → Not Life for HoM = false.
+    if slot_data.life_sigil_to_awaken_hom ~= nil then
+        local obj = Tracker:FindObjectForCode("setting_not_life_for_hom")
+        if obj then
+            obj.Active = (tonumber(slot_data.life_sigil_to_awaken_hom) or 0) == 0
+        end
+    end
+end)
 
 -- Shop mark watches disabled for performance.
 -- The onLocation handler (above) still sets shop marks to sm_item stage

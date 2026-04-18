@@ -287,27 +287,6 @@
                 ]
             },
             {
-                "name": "Tezcatlipoca",
-                "map_locations": [
-                    {
-                        "map": "Shrine of the Frost Giants",
-                        "x": 375,
-                        "y": 62,
-                        "shape": "diamond"
-                    }
-                ],
-                "sections": [
-                    {
-                        "name": "Miniboss",
-                        "item_count": 1,
-                        "hosted_item": "boss_tezcatlipoca"
-                    }
-                ],
-                "access_rules": [
-                    "$lm2_logic|CanReach(SotFGBloodTez) and (Has(Gloves) and OrbCount(1))"
-                ]
-            },
-            {
                 "name": "Gauntlet Chest",
                 "map_locations": [
                     {
@@ -389,7 +368,36 @@
             }
         ],
         "access_rules": [
-            "$lm2_logic|CanReach(SotFGBalor) or CanReach(SotFGBloodTez) or CanReach(SotFGGrail) or CanReach(SotFGLeft) or CanReach(SotFGMain) or CanReach(SotFGTop)"
+            "$lm2_logic|CanReach(SotFGBalor) or CanReach(SotFGGrail) or CanReach(SotFGLeft) or CanReach(SotFGMain) or CanReach(SotFGTop)"
+        ]
+    },
+    {
+        "name": "BloodTez",
+        "children": [
+            {
+                "name": "Tezcatlipoca",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 375,
+                        "y": 62,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_tezcatlipoca"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(SotFGBloodTez) and (Has(Gloves) and OrbCount(1))"
+                ]
+            }
+        ],
+        "access_rules": [
+            "$lm2_logic|CanReach(SotFGBloodTez)"
         ]
     }
 ]
