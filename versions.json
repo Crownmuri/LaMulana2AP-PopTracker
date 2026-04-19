@@ -1,10 +1,10 @@
 [
   {
-    "package_version": "0.1.0",
-    "download_url": "",
-    "sha256": "",
+    "package_version": "1.0.1",
+    "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.0.1/LaMulana2AP-PopTracker.v1.0.1.zip",
+    "sha256": "3ad0973301ae587cb3789ad4d12ab2fdccaf0acab32e7cc1ac92c3c814783811",
     "changelog": [
-      "Initial release"
+      "Safeguard against AP server crash when scouting Starting Shop locations on Vanilla (VoD) seeds"
     ]
   }
 ]
