@@ -488,6 +488,15 @@ for loc_id, sections in pairs(LOCATION_MAPPING) do
     end
 end
 
+-- Starting Shop slots only exist when the seed starts outside Vanilla (VoD).
+-- Scouting them against a VoD seed makes the AP server throw KeyError and
+-- closes the connection, so they must be filtered out in that case.
+local STARTING_SHOP_LOCATION_IDS = {
+    [430250] = true,
+    [430251] = true,
+    [430252] = true,
+}
+
 function onScout(location_id, location_name, item_id, item_name, item_player)
     local stage = ITEM_TO_SHOP_STAGE[item_id]
     if not stage then return end
@@ -508,7 +517,18 @@ Archipelago:AddScoutHandler("lm2_shop_scout", onScout)
 -- Trigger scouts on (re)connect. Runs alongside the main onClear handler.
 Archipelago:AddClearHandler("lm2_shop_scout_clear", function(slot_data)
     LOCATION_ID_TO_SHOP_STAGE = {}
-    Archipelago:LocationScouts(SHOP_LOCATION_IDS, 0)
+    local starting_area = slot_data and tonumber(slot_data.starting_area)
+    local ids = SHOP_LOCATION_IDS
+    -- VoD start has no Starting Shop — scouting those IDs crashes the server.
+    if starting_area == 1 then
+        ids = {}
+        for _, loc_id in ipairs(SHOP_LOCATION_IDS) do
+            if not STARTING_SHOP_LOCATION_IDS[loc_id] then
+                table.insert(ids, loc_id)
+            end
+        end
+    end
+    Archipelago:LocationScouts(ids, 0)
 end)
 
 -- ============================================================
