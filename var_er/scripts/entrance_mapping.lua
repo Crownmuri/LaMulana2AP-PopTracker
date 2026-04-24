@@ -179,3 +179,48 @@ function InitEntranceWatchers()
 end
 
 InitEntranceWatchers()
+
+-- ============================================================
+-- Persistence: save/restore ER_PAIRINGS across save/load cycles.
+-- PopTracker only persists standard item state (Active, stages, counts),
+-- so without this the custom entrance pairing table is lost on reload.
+-- ============================================================
+local function ApplyPairing(a, b)
+    ER_PAIRINGS[a] = b
+    ER_PAIRINGS[b] = a
+    SetTargetOverlay(a, b)
+    SetTargetOverlay(b, a)
+end
+
+local function SavePairingsFunc(self)
+    -- Store one direction per pair; the load side rebuilds the symmetric mapping.
+    local seen = {}
+    local pairs_list = {}
+    for a, b in pairs(ER_PAIRINGS) do
+        if not seen[a] and not seen[b] then
+            seen[a] = true
+            seen[b] = true
+            table.insert(pairs_list, { a, b })
+        end
+    end
+    return { Name = self.Name, Pairings = pairs_list }
+end
+
+local function LoadPairingsFunc(self, data)
+    ER_PAIRINGS = {}
+    if type(data) ~= "table" or data.Name ~= self.Name then return end
+    local pairs_list = data.Pairings
+    if type(pairs_list) ~= "table" then return end
+    for _, entry in ipairs(pairs_list) do
+        local a, b = entry[1], entry[2]
+        if type(a) == "string" and type(b) == "string" then
+            ApplyPairing(a, b)
+        end
+    end
+end
+
+local pairings_storage = ScriptHost:CreateLuaItem()
+pairings_storage.Name = "er_pairings_storage"
+pairings_storage.CanProvideCodeFunc = function(self, code) return code == self.Name end
+pairings_storage.SaveFunc = SavePairingsFunc
+pairings_storage.LoadFunc = LoadPairingsFunc

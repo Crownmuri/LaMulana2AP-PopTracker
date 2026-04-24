@@ -237,7 +237,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil))"
+          "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus)))"
         ]
       },
       {

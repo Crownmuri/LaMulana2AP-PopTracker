@@ -24,7 +24,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGMain)"
+                    "$lm2_logic|CanReach(SotFGMain) and (Has(Origin Sigil) or HorizontalAttack)"
                 ]
             },
             {
@@ -212,7 +212,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGTop) and (CanUse(Earth Spear) or CanUse(Flare))"
+                    "$lm2_logic|CanReach(SotFGTop) and (CanUse(Earth Spear) or (CanUse(Flare) and HorizontalAttack))"
                 ]
             },
             {

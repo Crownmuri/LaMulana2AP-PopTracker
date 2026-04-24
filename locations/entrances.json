@@ -505,7 +505,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFMain)"
+                    "$lm2_logic|CanReach(DFMain) and HorizontalAttack"
                 ]
             },
             {
