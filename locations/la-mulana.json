@@ -348,28 +348,28 @@
                     "name": "Shop Slot 1",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion))"
+                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
                     ]
                 },
                 {
                     "name": "Shop Slot 2",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion))"
+                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
                     ]
                 },
                 {
                     "name": "Shop Slot 3",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion))"
+                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
                     ]
                 },
                 {
                     "name": "Shop Slot 4",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and GuardianKills(3))"
+                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack and GuardianKills(3))"
                     ]
                 }
             ],
