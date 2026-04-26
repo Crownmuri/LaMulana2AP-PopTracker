@@ -203,7 +203,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(RoY) and (MeleeAttack and (CanUse(Flare) or ((CanUse(Shuriken) or Has(Claydoll Suit)) and OrbCount(1))))"
+          "$lm2_logic|CanReach(RoY) and (MeleeAttack and (CanUse(Flare) or CanUse(Pistol) or (OrbCount(1) and (CanUse(Shuriken) or Has(Claydoll Suit) or (CanUse(Chakram) and Has(Ring))))))"
         ]
       },
       {
