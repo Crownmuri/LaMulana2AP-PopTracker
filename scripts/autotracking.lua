@@ -4,7 +4,31 @@
 ScriptHost:LoadScript("scripts/item_mapping.lua")
 ScriptHost:LoadScript("scripts/location_mapping.lua")
 
-local prog = {whip=0, shield=0, beherit=0}
+-- Per-code reception counts. Reset by onClear, incremented by onItem.
+-- Lets onItem assign instead of accumulate, so an imported state followed
+-- by AP re-sync does not double-count progressives or consumables.
+local prog = {}
+
+-- AP replays its full location history on (re)connect; dedupe per session
+-- so AvailableChestCount only decrements once per location id.
+local seen_locations = {}
+
+-- JSON-default AvailableChestCount per section, captured at script load
+-- (before state restore touches counts). onClear restores from this so
+-- AP's replay starts from a clean slate.
+local default_chest_counts = {}
+do
+    local seen = {}
+    for _, paths in pairs(LOCATION_MAPPING) do
+        for _, code in ipairs(paths) do
+            if not seen[code] and code:sub(1, 1) == "@" then
+                seen[code] = true
+                local o = Tracker:FindObjectForCode(code)
+                if o then default_chest_counts[code] = o.AvailableChestCount end
+            end
+        end
+    end
+end
 
 function onItem(index, item_id, item_name, player)
     local item = ITEM_MAPPING[item_id]
@@ -15,12 +39,14 @@ function onItem(index, item_id, item_name, player)
 
     local code = item[1]
     local item_type = item[2]
+    prog[code] = (prog[code] or 0) + 1
+    local n = prog[code]
 
     if item_type == "toggle" then
         local o = Tracker:FindObjectForCode(code)
         if o then
-            -- If this is an ammo item (code ends in _ammo), do NOT 
-            -- activate the weapon toggle. Ownership is only granted 
+            -- If this is an ammo item (code ends in _ammo), do NOT
+            -- activate the weapon toggle. Ownership is only granted
             -- by the base weapon items (e.g., "bomb").
             if o.Type == "progressive_toggle" and code:sub(-5) == "_ammo" then
                 -- Ignore ownership update for ammo filler
@@ -31,16 +57,15 @@ function onItem(index, item_id, item_name, player)
 
     elseif item_type == "consumable" then
         local o = Tracker:FindObjectForCode(code)
-        if o then o.AcquiredCount = o.AcquiredCount + 1 end
+        if o then o.AcquiredCount = n end
 
     elseif item_type == "progressive" then
         local o = Tracker:FindObjectForCode(code)
-        if o then o.CurrentStage = o.CurrentStage + 1 end
+        if o then o.CurrentStage = n end
 
     elseif item_type == "progressive_beherit" then
-        prog.beherit = prog.beherit + 1
         local o = Tracker:FindObjectForCode(code)
-        if o then o.AcquiredCount = prog.beherit end
+        if o then o.AcquiredCount = n end
 
     elseif item_type == "boss" then
         local o = Tracker:FindObjectForCode(code)
@@ -56,9 +81,10 @@ function onItem(index, item_id, item_name, player)
         end
 
     elseif item_type == "ankh" then
-        -- Increment generic ankh jewel consumable count
+        -- Pickup count from AP. Killing a guardian no longer auto-deducts
+        -- (see watcher below); the user adjusts manually.
         local o = Tracker:FindObjectForCode(code)
-        if o then o.AcquiredCount = o.AcquiredCount + 1 end
+        if o then o.AcquiredCount = n end
         -- Show ankh on guardian icon if guardian-specific ankhs is ON
         -- bosses.json stages: [0]=FafnirA (ankh), [1]=Fafnir (dead)
         local guardian_code = item[3]
@@ -130,6 +156,9 @@ local function SetSubweaponAmmoStage(stage, sm_code)
 end
 
 function onLocation(location_id, location_name)
+    if seen_locations[location_id] then return end
+    seen_locations[location_id] = true
+
     local location_array = LOCATION_MAPPING[location_id]
     if not location_array or not location_array[1] then
         print(string.format("LM2: Unknown location ID %s (%s)", tostring(location_id), tostring(location_name)))
@@ -163,7 +192,14 @@ function onLocation(location_id, location_name)
 end
 
 function onClear(slot_data)
-    prog = {whip=0, shield=0, beherit=0}
+    prog = {}
+    seen_locations = {}
+    -- Restore JSON-default chest counts so AP's location replay decrements
+    -- from a clean baseline rather than on top of already-decremented sections.
+    for code, count in pairs(default_chest_counts) do
+        local o = Tracker:FindObjectForCode(code)
+        if o then o.AvailableChestCount = count end
+    end
     -- Reset guardian tracking state
     for _, g in ipairs(GUARDIANS) do
         _guardian_was_dead[g] = false
@@ -222,22 +258,10 @@ for _, g in ipairs(GUARDIANS) do
             end
         end
 
-        -- Determine if guardian is now dead by checking the boss code
-        local is_dead = has("boss_" .. g)
-        local was_dead = _guardian_was_dead[g]
-
-        -- Deduct or refund a generic ankh jewel on dead-state transitions
-        if is_dead ~= was_dead then
-            local ankh_jewel = Tracker:FindObjectForCode("ankh_jewel")
-            if ankh_jewel then
-                if is_dead and not was_dead and ankh_jewel.AcquiredCount > 0 then
-                    ankh_jewel.AcquiredCount = ankh_jewel.AcquiredCount - 1
-                elseif not is_dead and was_dead then
-                    ankh_jewel.AcquiredCount = ankh_jewel.AcquiredCount + 1
-                end
-            end
-            _guardian_was_dead[g] = is_dead
-        end
+        -- Update remembered dead state (used by the navigation skip above).
+        -- Ankh jewel count is no longer auto-deducted on guardian death; manual
+        -- tracker adjustments collided with the auto-deduct/refund logic.
+        _guardian_was_dead[g] = has("boss_" .. g)
 
         _guardian_processing = false
     end)
