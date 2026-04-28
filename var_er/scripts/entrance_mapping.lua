@@ -82,6 +82,13 @@ ER_PAIRINGS = {}
 
 ENTRANCE_SELECTED = nil
 
+-- Frames during which the click watcher should ignore state changes.
+-- AddWatchForCode fires for ANY provided-code change — including the programmatic
+-- Active toggles that happen during initial state restore, Import, or our own
+-- ApplyPairing. Without this guard, a restored Active=true triggers EntranceClick,
+-- which sees the (also-restored) pairing and treats it as an unpair click.
+ER_SUPPRESS_FRAMES = 0
+
 function ClearTargetOverlay(code)
     local target = Tracker:FindObjectForCode("target_" .. code)
     if target then
@@ -121,6 +128,8 @@ function UnlinkEntrance(code)
 end
 
 function EntranceClick(code)
+    if ER_SUPPRESS_FRAMES > 0 then return end
+
     local obj = Tracker:FindObjectForCode(code)
     if not obj then
         print("EntranceClick: could not find object for " .. code)
@@ -185,11 +194,38 @@ InitEntranceWatchers()
 -- PopTracker only persists standard item state (Active, stages, counts),
 -- so without this the custom entrance pairing table is lost on reload.
 -- ============================================================
+
+-- Frame budget that absorbs the state-restore phase. State restore (auto-load
+-- on launch and manual Import) doesn't expose a "restore complete" callback,
+-- so we hold the watcher off for a window of frames and decay one per frame.
+local SUPPRESS_RESTORE_FRAMES = 30
+
+local function SuppressClicks(frames)
+    if frames > ER_SUPPRESS_FRAMES then ER_SUPPRESS_FRAMES = frames end
+end
+
+-- Initial guard for the auto-restore that runs after script load completes.
+SuppressClicks(SUPPRESS_RESTORE_FRAMES)
+
+if ScriptHost.AddOnFrameHandler then
+    ScriptHost:AddOnFrameHandler("er_suppress_decay", function(_)
+        if ER_SUPPRESS_FRAMES > 0 then
+            ER_SUPPRESS_FRAMES = ER_SUPPRESS_FRAMES - 1
+        end
+    end)
+end
+
 local function ApplyPairing(a, b)
     ER_PAIRINGS[a] = b
     ER_PAIRINGS[b] = a
     SetTargetOverlay(a, b)
     SetTargetOverlay(b, a)
+    -- Restore the toggle state so the entrances show as checked, mirroring
+    -- the manual pairing flow (UnlinkEntrance flips these back to false).
+    local objA = Tracker:FindObjectForCode(a)
+    local objB = Tracker:FindObjectForCode(b)
+    if objA then objA.Active = true end
+    if objB then objB.Active = true end
 end
 
 local function SavePairingsFunc(self)
@@ -207,6 +243,9 @@ local function SavePairingsFunc(self)
 end
 
 local function LoadPairingsFunc(self, data)
+    -- Re-arm the suppression window: covers our own ApplyPairing calls below
+    -- AND any toggle-restore the engine fires on its side of this pass.
+    SuppressClicks(SUPPRESS_RESTORE_FRAMES)
     ER_PAIRINGS = {}
     if type(data) ~= "table" or data.Name ~= self.Name then return end
     local pairs_list = data.Pairings
