@@ -1,62 +1,224 @@
 [
-  {
-    "name": "Heaven",
-    "type": "toggle",
-    "img": "images/Mantras/Heaven.png",
-    "codes": "mantra_heaven"
-  },
-  {
-    "name": "Earth",
-    "type": "toggle",
-    "img": "images/Mantras/Earth.png",
-    "codes": "mantra_earth"
-  },
-  {
-    "name": "Sun",
-    "type": "toggle",
-    "img": "images/Mantras/Sun.png",
-    "codes": "mantra_sun"
-  },
-  {
-    "name": "Moon",
-    "type": "toggle",
-    "img": "images/Mantras/Moon.png",
-    "codes": "mantra_moon"
-  },
-  {
-    "name": "Sea",
-    "type": "toggle",
-    "img": "images/Mantras/Sea.png",
-    "codes": "mantra_sea"
-  },
-  {
-    "name": "Fire",
-    "type": "toggle",
-    "img": "images/Mantras/Fire.png",
-    "codes": "mantra_fire"
-  },
-  {
-    "name": "Wind",
-    "type": "toggle",
-    "img": "images/Mantras/Wind.png",
-    "codes": "mantra_wind"
-  },
-  {
-    "name": "Mother",
-    "type": "toggle",
-    "img": "images/Mantras/Mother.png",
-    "codes": "mantra_mother"
-  },
-  {
-    "name": "Child",
-    "type": "toggle",
-    "img": "images/Mantras/Child.png",
-    "codes": "mantra_child"
-  },
-  {
-    "name": "Night",
-    "type": "toggle",
-    "img": "images/Mantras/Night.png",
-    "codes": "mantra_night"
-  }
+    {
+        "name": "Blank",
+        "type": "toggle",
+        "img": "images/Mantras/Blank.png",
+        "codes": "mantra_blank"
+    },
+    {
+        "name": "Heaven",
+        "type": "toggle",
+        "img": "images/Mantras/Heaven.png",
+        "codes": "mantra_heaven"
+    },
+    {
+        "name": "Earth",
+        "type": "toggle",
+        "img": "images/Mantras/Earth.png",
+        "codes": "mantra_earth"
+    },
+    {
+        "name": "Sun",
+        "type": "toggle",
+        "img": "images/Mantras/Sun.png",
+        "codes": "mantra_sun"
+    },
+    {
+        "name": "Moon",
+        "type": "toggle",
+        "img": "images/Mantras/Moon.png",
+        "codes": "mantra_moon"
+    },
+    {
+        "name": "Sea",
+        "type": "toggle",
+        "img": "images/Mantras/Sea.png",
+        "codes": "mantra_sea"
+    },
+    {
+        "name": "Fire",
+        "type": "toggle",
+        "img": "images/Mantras/Fire.png",
+        "codes": "mantra_fire"
+    },
+    {
+        "name": "Wind",
+        "type": "toggle",
+        "img": "images/Mantras/Wind.png",
+        "codes": "mantra_wind"
+    },
+    {
+        "name": "Mother",
+        "type": "toggle",
+        "img": "images/Mantras/Mother.png",
+        "codes": "mantra_mother"
+    },
+    {
+        "name": "Child",
+        "type": "toggle",
+        "img": "images/Mantras/Child.png",
+        "codes": "mantra_child"
+    },
+    {
+        "name": "Night",
+        "type": "toggle",
+        "img": "images/Mantras/Night.png",
+        "codes": "mantra_night"
+    },
+    {
+        "name": "Heaven's Labyrinth (HEAVEN)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_heavens_labyrinth.png",
+        "codes": "mloc_heavens_labyrinth"
+    },
+    {
+        "name": "Valhalla Mimir Head (HEAVEN)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_val_mimir_head.png",
+        "codes": "mloc_val_mimir_head"
+    },
+    {
+        "name": "SFG Bergelmir (HEAVEN EARTH MOON)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_sfg_bergelmir.png",
+        "codes": "mloc_sfg_bergelmir"
+    },
+    {
+        "name": "TS Dragon's Neck (HEAVEN EARTH SEA FIRE WIND)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_ts_dragons_neck.png",
+        "codes": "mloc_ts_dragons_neck"
+    },
+    {
+        "name": "DSLM Pyramid (HEAVEN SUN MOON SEA FIRE)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_dslm_pyramid.png",
+        "codes": "mloc_dslm_pyramid"
+    },
+    {
+        "name": "DSLM Footprint Aten-Ra (HEAVEN SUN EARTH HEAVEN EARTH)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_dslm_footprint_aten_ra.png",
+        "codes": "mloc_dslm_footprint_aten_ra"
+    },
+    {
+        "name": "DSLM Footprint Ammit (HEAVEN SUN EARTH HEAVEN FIRE)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_dslm_footprint_ammit.png",
+        "codes": "mloc_dslm_footprint_ammit"
+    },
+    {
+        "name": "Annwfn Mimir Head (EARTH)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_ann_item_mimir_head.png",
+        "codes": "mloc_ann_item_mimir_head"
+    },
+    {
+        "name": "EPG Garm Mimir Head (EARTH SUN FIRE)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_epg_garm_mimir_head.png",
+        "codes": "mloc_epg_garm_mimir_head"
+    },
+    {
+        "name": "IB Buried Fortress (EARTH SEA FIRE WIND)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_ib_buried_fortress.png",
+        "codes": "mloc_ib_buried_fortress"
+    },
+    {
+        "name": "IB Moon Mantra Mural (SUN)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_ib_moon_mantra_mural.png",
+        "codes": "mloc_ib_moon_mantra_mural"
+    },
+    {
+        "name": "GOTD Pepper Switch (SUN)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_gotd_pepper_switch.png",
+        "codes": "mloc_gotd_pepper_switch"
+    },
+    {
+        "name": "Ledo's Dissonance (SUN)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_ledos_dissonance.png",
+        "codes": "mloc_ledos_dissonance"
+    },
+    {
+        "name": "Vidofnir (SUN MOON)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_vidofnir.png",
+        "codes": "mloc_vidofnir"
+    },
+    {
+        "name": "Eternal Prison Seal (SUN MOON SEA)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_eternal_prison_seal.png",
+        "codes": "mloc_eternal_prison_seal"
+    },
+    {
+        "name": "Ratatoskr Seal (MOON)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_ratatoskr_seal.png",
+        "codes": "mloc_ratatoskr_seal"
+    },
+    {
+        "name": "Sakit Prison (MOON)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_sakit_prison.png",
+        "codes": "mloc_sakit_prison"
+    },
+    {
+        "name": "Sacred Wine (MOON MOTHER CHILD)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_sacred_wine.png",
+        "codes": "mloc_sacred_wine"
+    },
+    {
+        "name": "Soma #1 (SUN WIND MOTHER NIGHT)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_soma_1.png",
+        "codes": "mloc_soma_1"
+    },
+    {
+        "name": "Soma #2 (EARTH SUN MOTHER CHILD NIGHT)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_soma_2.png",
+        "codes": "mloc_soma_2"
+    },
+    {
+        "name": "Valhalla Throne (EARTH FIRE)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_valhalla_throne.png",
+        "codes": "mloc_valhalla_throne"
+    },
+    {
+        "name": "Inferno Cavern Mural (WIND MOTHER)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_inferno_cavern_mural.png",
+        "codes": "mloc_inferno_cavern_mural"
+    },
+    {
+        "name": "Spiral Hell Entrance (MOTHER CHILD)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_spiral_hell_entrance.png",
+        "codes": "mloc_spiral_hell_entrance"
+    },
+    {
+        "name": "9th Child Start (ALL)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_9th_child_start.png",
+        "codes": "mloc_9th_child_start"
+    },
+    {
+        "name": "9th Child Phase 3 (SUN MOON)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_9th_child_phase_3.png",
+        "codes": "mloc_9th_child_phase_3"
+    },
+    {
+        "name": "Heimdall (NIGHT)",
+        "type": "toggle",
+        "img": "images/Mantras/labels/mloc_heimdall.png",
+        "codes": "mloc_heimdall"
+    }
 ]

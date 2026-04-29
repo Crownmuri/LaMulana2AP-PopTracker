@@ -90,10 +90,14 @@ function onItem(index, item_id, item_name, player)
         local guardian_code = item[3]
         if guardian_code then
             local setting = Tracker:FindObjectForCode("setting_guardian_ankhs")
-            if setting and setting.Active then
+            -- has() goes through ProviderCountForCode, which is the canonical
+            -- "is this stage-coded provider currently active". Reading
+            -- .Active/.CurrentStage off FindObjectForCode(stage_code) doesn't
+            -- reliably reflect the parent progressive's state, so a manual
+            -- "dead" mark could get reverted to the ankh stage on AP replay.
+            if setting and setting.Active and not has(guardian_code) then
                 local boss = Tracker:FindObjectForCode(guardian_code)
-                -- Only set ankh stage if guardian isn't already dead
-                if boss and not (boss.Active and boss.CurrentStage == 1) then
+                if boss then
                     boss.CurrentStage = 0  -- stage 0 = has ankh (FafnirA.png)
                     boss.Active = true     -- colored
                 end
@@ -264,6 +268,103 @@ for _, g in ipairs(GUARDIANS) do
         _guardian_was_dead[g] = has("boss_" .. g)
 
         _guardian_processing = false
+    end)
+end
+
+-- ============================================================
+-- Boss Item → Hosted Section Sync
+-- PopTracker's hosted_item only fires section→item; this watch
+-- closes the loop the other way: when a boss code becomes
+-- provided (toggle Active, or guardian progressive at the dead
+-- stage), auto-clear the corresponding map section. When the
+-- code goes unprovided again, restore the JSON-default count.
+-- Section paths are extracted from each location JSON's
+-- hosted_item entries.
+-- ============================================================
+
+local BOSS_HOSTED_SECTIONS = {
+    ["boss_ammit"]                = "@Dark Star Lords Mausoleum/Ammit/Miniboss",
+    ["boss_angra_mainyu"]         = "@Dark Star Lords Mausoleum/Angra Mainyu/Miniboss",
+    ["boss_annwfn_right_shortcut"]= "@Annwfn/Annwfn Right Shortcut/Puzzle",
+    ["boss_anu"]                  = "@Ancient Chaos/Anu/Guardian",
+    ["boss_anzu"]                 = "@Ancient Chaos/Anzu/Miniboss",
+    ["boss_arachne"]              = "@Heavens Labyrinth/Arachne/Miniboss",
+    ["boss_aten_ra"]              = "@Dark Star Lords Mausoleum/Aten Ra/Guardian",
+    ["boss_badhbh_cath"]          = "@Shrine of the Frost Giants/Badhbh Cath/Miniboss",
+    ["boss_balor"]                = "@Shrine of the Frost Giants/Balor/Miniboss",
+    ["boss_belial"]               = "@Takamagahara Shrine/Belial/Miniboss",
+    ["boss_bergelmir"]            = "@Shrine of the Frost Giants/Bergelmir/Puzzle",
+    ["boss_cetus"]                = "@Immortal Battlefield/Cetus/Miniboss",
+    ["boss_daji"]                 = "@Takamagahara Shrine/Daji/Miniboss",
+    ["boss_echidna"]              = "@Hall of Malice/Echidna/Guardian",
+    ["boss_fafnir"]               = "@Roots of Yggdrasil/Fafnir/Guardian",
+    ["boss_fenrir"]               = "@Shrine of the Frost Giants/Fenrir/Miniboss",
+    ["boss_garm_statue_puzzle"]   = "@Eternal Prison - Gloom/Garm Statue Puzzle/Puzzle",
+    ["boss_glasya_labolas"]       = "@Heavens Labyrinth/Glasya Labolas/Miniboss",
+    ["boss_griffin"]              = "@Heavens Labyrinth/Griffin/Miniboss",
+    ["boss_heimdall"]             = "@Annwfn/Heimdall/Miniboss",
+    ["boss_hel"]                  = "@Eternal Prison - Doom/Hel/Guardian",
+    ["boss_hom_ladder"]           = "@Hall of Malice/HoM Ladder/Puzzle",
+    ["boss_hom_left_path"]        = "@Hall of Malice/HoM Left Path/Miniboss",
+    ["boss_hom_middle_path"]      = "@Hall of Malice/HoM Middle Path/Miniboss",
+    ["boss_hom_right_path"]       = "@Hall of Malice/HoM Right Path/Miniboss",
+    ["boss_hraesvelgr"]           = "@Eternal Prison - Doom/Hraesvelgr/Miniboss",
+    ["boss_hugin_and_munin"]      = "@Divine Fortress/Hugin and Munin/Miniboss",
+    ["boss_ib_left_shortcut"]     = "@Immortal Battlefield/IB Left Shortcut/Puzzle",
+    ["boss_ixtab"]                = "@Annwfn/Ixtab/Miniboss",
+    ["boss_jalandhara"]           = "@Valhalla/Jalandhara/Miniboss",
+    ["boss_jormungand"]           = "@Immortal Battlefield/Jormungand/Guardian",
+    ["boss_kaliya"]               = "@Annwfn/Kaliya/Miniboss",
+    ["boss_key_fairy"]            = "@Eternal Prison - Gloom/Key Fairy/Fairy",
+    ["boss_ki_sikil_lil_la_ke"]   = "@Ancient Chaos/Ki sikil lil la ke/Miniboss",
+    ["boss_kujata"]               = "@Annwfn/Kujata/Guardian",
+    ["boss_money_fairy"]          = "@Dark Star Lords Mausoleum/Money Fairy/Fairy",
+    ["boss_nidhogg"]              = "@Roots of Yggdrasil/Nidhogg/Miniboss",
+    ["boss_ninth_child"]          = "@Spiral Hell/Ninth Child/FinalBoss",
+    ["boss_raijin_and_fujin"]     = "@Takamagahara Shrine/Raijin and Fujin/Miniboss",
+    ["boss_ratatoskr_1"]          = "@Roots of Yggdrasil/Ratatoskr 1/Miniboss",
+    ["boss_ratatoskr_2"]          = "@Immortal Battlefield/Ratatoskr 2/Miniboss",
+    ["boss_ratatoskr_3"]          = "@Icefire Treetop/Ratatoskr 3/Miniboss",
+    ["boss_ratatoskr_4"]          = "@Eternal Prison - Gloom/Ratatoskr 4/Miniboss",
+    ["boss_sakit_puzzle"]         = "@Eternal Prison - Gloom/Sakit Puzzle/Puzzle",
+    ["boss_scylla"]               = "@Heavens Labyrinth/Scylla/Miniboss",
+    ["boss_sekhmet"]              = "@Dark Star Lords Mausoleum/Sekhmet/Miniboss",
+    ["boss_surtr"]                = "@Icefire Treetop/Surtr/Guardian",
+    ["boss_svipdagr"]             = "@Immortal Battlefield/Svipdagr/Miniboss",
+    -- BloodTez is its own top-level location node (not a child of SotFG)
+    ["boss_tezcatlipoca"]         = "@BloodTez/Tezcatlipoca/Miniboss",
+    ["boss_unicorn"]              = "@Gate of the Dead/Unicorn/Miniboss",
+    ["boss_vedfolnir"]            = "@Icefire Treetop/Vedfolnir/Miniboss",
+    ["boss_vidofnir"]             = "@Icefire Treetop/Vidofnir/Miniboss",
+    ["boss_vritra"]               = "@Valhalla/Vritra/Guardian",
+    ["boss_vucub_caquiz"]         = "@Valhalla/Vucub Caquiz/Miniboss",
+    ["boss_weapon_fairy"]         = "@Shrine of the Frost Giants/Weapon Fairy/Fairy",
+    ["boss_white_pedestals"]      = "@Gate of the Dead/White Pedestals/Puzzle",
+}
+
+local _hosted_section_defaults = {}
+for _, section_path in pairs(BOSS_HOSTED_SECTIONS) do
+    local s = Tracker:FindObjectForCode(section_path)
+    if s then _hosted_section_defaults[section_path] = s.AvailableChestCount end
+end
+
+local function SyncHostedSection(boss_code)
+    local section_path = BOSS_HOSTED_SECTIONS[boss_code]
+    if not section_path then return end
+    local s = Tracker:FindObjectForCode(section_path)
+    if not s then return end
+    if has(boss_code) then
+        s.AvailableChestCount = 0
+    else
+        s.AvailableChestCount = _hosted_section_defaults[section_path] or 1
+    end
+end
+
+local _hosted_sync_idx = 0
+for boss_code, _ in pairs(BOSS_HOSTED_SECTIONS) do
+    _hosted_sync_idx = _hosted_sync_idx + 1
+    ScriptHost:AddWatchForCode("hosted_sync_" .. _hosted_sync_idx, boss_code, function()
+        SyncHostedSection(boss_code)
     end)
 end
 
@@ -639,5 +740,72 @@ end)
 -- for _, weapon_code in pairs(SHOP_STAGE_TO_WEAPON) do
 --     ScriptHost:AddWatchForCode("weapon_sync_" .. weapon_code, weapon_code, UpdateSubweaponsFromShops)
 -- end
+
+-- ============================================================
+-- Mantra Label Auto-Enable
+-- Labels in the Mantra Reference tab light up when the player
+-- has all required mantras for that chant location.
+-- Requirements are read from the mantra grid in maps.json.
+-- ============================================================
+
+local MANTRA_LABEL_REQUIREMENTS = {
+    ["mloc_heavens_labyrinth"]      = {"mantra_heaven"},
+    ["mloc_val_mimir_head"]         = {"mantra_heaven"},
+    ["mloc_sfg_bergelmir"]          = {"mantra_heaven", "mantra_earth", "mantra_moon"},
+    ["mloc_ts_dragons_neck"]        = {"mantra_heaven", "mantra_earth", "mantra_sea", "mantra_fire", "mantra_wind"},
+    ["mloc_dslm_pyramid"]           = {"mantra_heaven", "mantra_sun", "mantra_moon", "mantra_sea", "mantra_fire"},
+    ["mloc_dslm_footprint_aten_ra"] = {"mantra_heaven", "mantra_earth", "mantra_sun"},
+    ["mloc_dslm_footprint_ammit"]   = {"mantra_heaven", "mantra_earth", "mantra_sun", "mantra_fire"},
+    ["mloc_ann_item_mimir_head"]    = {"mantra_earth"},
+    ["mloc_epg_garm_mimir_head"]    = {"mantra_earth", "mantra_sun", "mantra_fire"},
+    ["mloc_ib_buried_fortress"]     = {"mantra_earth", "mantra_sea", "mantra_fire", "mantra_wind"},
+    ["mloc_ib_moon_mantra_mural"]   = {"mantra_sun"},
+    ["mloc_gotd_pepper_switch"]     = {"mantra_sun"},
+    ["mloc_ledos_dissonance"]       = {"mantra_sun"},
+    ["mloc_vidofnir"]               = {"mantra_sun", "mantra_moon"},
+    ["mloc_eternal_prison_seal"]    = {"mantra_sun", "mantra_moon", "mantra_sea"},
+    ["mloc_ratatoskr_seal"]         = {"mantra_moon"},
+    ["mloc_sakit_prison"]           = {"mantra_moon"},
+    ["mloc_sacred_wine"]            = {"mantra_moon", "mantra_mother", "mantra_child"},
+    ["mloc_soma_1"]                 = {"mantra_sun", "mantra_wind", "mantra_mother", "mantra_night"},
+    ["mloc_soma_2"]                 = {"mantra_earth", "mantra_sun", "mantra_mother", "mantra_child", "mantra_night"},
+    ["mloc_valhalla_throne"]        = {"mantra_earth", "mantra_fire"},
+    ["mloc_inferno_cavern_mural"]   = {"mantra_wind", "mantra_mother"},
+    ["mloc_spiral_hell_entrance"]   = {"mantra_mother", "mantra_child"},
+    ["mloc_9th_child_start"]        = {"mantra_heaven", "mantra_earth", "mantra_sun", "mantra_moon", "mantra_sea", "mantra_fire", "mantra_wind", "mantra_mother", "mantra_child", "mantra_night"},
+    ["mloc_9th_child_phase_3"]      = {"mantra_sun", "mantra_moon"},
+    ["mloc_heimdall"]               = {"mantra_night"},
+}
+
+function updateMantrasLabels()
+    for label_code, requirements in pairs(MANTRA_LABEL_REQUIREMENTS) do
+        local label = Tracker:FindObjectForCode(label_code)
+        if label then
+            local all_obtained = true
+            for _, mantra_code in ipairs(requirements) do
+                if not has(mantra_code) then
+                    all_obtained = false
+                    break
+                end
+            end
+            label.Active = all_obtained
+        end
+    end
+end
+
+local MANTRA_WATCH_CODES = {
+    "mantra_heaven", "mantra_earth", "mantra_sun", "mantra_moon", "mantra_sea",
+    "mantra_fire", "mantra_wind", "mantra_mother", "mantra_child", "mantra_night",
+}
+for i, mantra_code in ipairs(MANTRA_WATCH_CODES) do
+    ScriptHost:AddWatchForCode("mantra_label_watch_" .. i, mantra_code, updateMantrasLabels)
+end
+
+Archipelago:AddClearHandler("mantra_labels_clear", function()
+    for label_code in pairs(MANTRA_LABEL_REQUIREMENTS) do
+        local label = Tracker:FindObjectForCode(label_code)
+        if label then label.Active = false end
+    end
+end)
 
 print("LM2 AP Autotracking loaded!")
