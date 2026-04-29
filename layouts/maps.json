@@ -154,7 +154,95 @@
                         "Eternal Prison - Doom"
                     ]
                 }
+            },
+            {
+                "title": "Mantra Reference",
+                "content": {
+                    "type": "layout",
+                    "key": "mantra_reference"
+                }
             }
         ]
+    },
+    "mantra_reference": {
+        "type": "group",
+        "header": "Mantra Reference　　　　         　Heaven　　Earth　　Sun　　　Moon　　　Sea　　　Fire　　　Wind　　　Mother　　Child　　Night",
+        "content": {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "0,0",
+            "content": [
+                {
+                    "type": "itemgrid",
+                    "item_height": 18,
+                    "item_width": 200,
+                    "item_margin": "0, 1",
+                    "rows": [
+                        [ "mloc_heavens_labyrinth" ],
+                        [ "mloc_val_mimir_head" ],
+                        [ "mloc_sfg_bergelmir" ],
+                        [ "mloc_ts_dragons_neck" ],
+                        [ "mloc_dslm_pyramid" ],
+                        [ "mloc_dslm_footprint_aten_ra" ],
+                        [ "mloc_dslm_footprint_ammit" ],
+                        [ "mloc_ann_item_mimir_head" ],
+                        [ "mloc_epg_garm_mimir_head" ],
+                        [ "mloc_ib_buried_fortress" ],
+                        [ "mloc_ib_moon_mantra_mural" ],
+                        [ "mloc_gotd_pepper_switch" ],
+                        [ "mloc_ledos_dissonance" ],
+                        [ "mloc_vidofnir" ],
+                        [ "mloc_eternal_prison_seal" ],
+                        [ "mloc_ratatoskr_seal" ],
+                        [ "mloc_sakit_prison" ],
+                        [ "mloc_sacred_wine" ],
+                        [ "mloc_soma_1" ],
+                        [ "mloc_soma_2" ],
+                        [ "mloc_valhalla_throne" ],
+                        [ "mloc_inferno_cavern_mural" ],
+                        [ "mloc_spiral_hell_entrance" ],
+                        [ "mloc_9th_child_start"],
+                        [ "mloc_9th_child_phase_3" ],
+                        [ "mloc_heimdall" ]
+                    ]
+                },
+                {
+                    "type": "itemgrid",
+                    "item_height": 18,
+                    "item_width": 60,
+                    "item_margin": "0, 1",
+                    "item_h_alignment": "stretch",
+                    "item_v_alignment": "stretch",
+                    "rows": [
+                        [ "mantra_heaven", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_heaven", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_heaven", "mantra_earth", "mantra_blank", "mantra_moon", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_heaven", "mantra_earth", "mantra_blank", "mantra_blank", "mantra_sea", "mantra_fire", "mantra_wind", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_heaven", "mantra_blank", "mantra_sun", "mantra_moon", "mantra_sea", "mantra_fire", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_heaven", "mantra_earth", "mantra_sun", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_heaven", "mantra_earth", "mantra_sun", "mantra_blank", "mantra_blank", "mantra_fire", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_earth", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_earth", "mantra_sun", "mantra_blank", "mantra_blank", "mantra_fire", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_earth", "mantra_blank", "mantra_blank", "mantra_sea", "mantra_fire", "mantra_wind", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_sun", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_sun", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_sun", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_sun", "mantra_moon", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_sun", "mantra_moon", "mantra_sea", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_blank", "mantra_moon", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_blank", "mantra_moon", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_blank", "mantra_moon", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_mother", "mantra_child", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_sun", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_wind", "mantra_mother", "mantra_blank", "mantra_night" ],
+                        [ "mantra_blank", "mantra_earth", "mantra_sun", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_mother", "mantra_child", "mantra_night" ],
+                        [ "mantra_blank", "mantra_earth", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_fire", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_wind", "mantra_mother", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_mother", "mantra_child", "mantra_blank" ],
+                        [ "mantra_heaven", "mantra_earth", "mantra_sun", "mantra_moon", "mantra_sea", "mantra_fire", "mantra_wind", "mantra_mother", "mantra_child", "mantra_night" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_sun", "mantra_moon", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank" ],
+                        [ "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_blank", "mantra_night" ]
+                    ]
+                }
+            ]
+        }
     }
 }
