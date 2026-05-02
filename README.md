@@ -5,7 +5,7 @@ Big thanks to the La-Mulana 2 community: Coookie93 for their original [La-Mulana
 
 Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [this apworld](https://github.com/Crownmuri/Archipelago/releases).
 
-**Note**: In order to play La-Mulana 2 with AP tracking, you will require to patch the original randomizer with [this additional mod](https://github.com/Crownmuri/LaMulana2Archipelago).
+**Note**: In order to play La-Mulana 2 with AP tracking, you will require [this mod](https://github.com/Crownmuri/LaMulana2Archipelago).
 
 ## Features
 - Items Only, Map Tracker and Entrance Tracker
@@ -22,7 +22,6 @@ Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [thi
   - Required Crystal Skulls for Nibiru
 - When Guardian Specific Ankh Jewels is on, the item tracking for bosses is a progressive (0 - unobtained, 1 - ankh obtained, 2 - boss beaten)
   - When it's off, the tracking is only between state 0 and state 2
-  - Tracking a boss as beaten will automatically remove 1 Ankh Jewel from your tracked items
 - Go Mode icon is enabled once Ninth Child is considered reachable.
 - The Map Tracker and Entrance Tracker come with maps and a table of all the shops for tracking ammo or unbought items.
 - Entrance Tracker Features:
@@ -39,13 +38,12 @@ Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [thi
 - Placeholder images regarding minibosses and settings
 - Minibosses/puzzles/fairies are considered autocollected upon becoming reachable, so they are not mapped.
 - Subweapon Ammo/Fairies/Minibosses/Guardians are not tracked in AP so they don't auto-track.
-- The map tracker may take a few seconds to update the more items you have collected
 - Since Potsanity is WIP, this setting has not been added yet (also this is a lot of work)
 
 ## Installation / Launching guide:
 1. This will require the Poptracker software to run. The website for it can be found [here](https://poptracker.github.io/) with the most current release found [here](https://github.com/black-sliver/PopTracker/releases). <br>
 ***Note:*** Once PopTracker is downloaded, it will have a `packs` folder that PopTracker packs are placed within. <br> <br>
-2. Download the [master zip](https://github.com/Crownmuri/LaMulana2AP-PopTracker/archive/refs/heads/master.zip)
+2. Download the [latest release](https://github.com/Crownmuri/LaMulana2Archipelago/releases)
 3. Place the downloaded `.zip` file into the packs folder called in in step 1.
 4. Open your PopTracker application and click on the *Load Pack* button in the top left.
 5. Choose your preferred tracker mode.
