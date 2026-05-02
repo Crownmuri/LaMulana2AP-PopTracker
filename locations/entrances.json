@@ -87,7 +87,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBMain) and Has(Dinosaur Figure)"
+                    "$lm2_logic|CanReach(IBMain) and Has(Dinosaur Figure) and HorizontalAttack"
                 ]
             },
             {
