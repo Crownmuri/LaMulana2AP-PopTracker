@@ -42,9 +42,9 @@ Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [thi
 
 ## Installation / Launching guide:
 1. This will require the Poptracker software to run. The website for it can be found [here](https://poptracker.github.io/) with the most current release found [here](https://github.com/black-sliver/PopTracker/releases). <br>
-***Note:*** Once PopTracker is downloaded, it will have a `packs` folder that PopTracker packs are placed within. <br> <br>
+***Note:*** Once PopTracker is downloaded, it will have a `packs` folder that PopTracker packs are placed within. <br>
 2. Download the [latest release](https://github.com/Crownmuri/LaMulana2Archipelago/releases)
-3. Place the downloaded `.zip` file into the packs folder called in in step 1.
+3. Place the downloaded `.zip` file into the packs folder in step 1.
 4. Open your PopTracker application and click on the *Load Pack* button in the top left.
 5. Choose your preferred tracker mode.
 
