@@ -1,5 +1,13 @@
 [
     {
+        "package_version": "1.1.1",
+        "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.1.1/LaMulana2AP-PopTracker.v1.1.1.zip",
+        "sha256": "a7344baa166412f98c9d147b1600c8f5570cc4293341721be1c72a0a422fe7e5",
+        "changelog": [
+            "Fixed IB right dinosaur door logic and IB tent flags."
+        ]
+    },
+    {
         "package_version": "1.1.0",
         "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.1.0/LaMulana2AP-PopTracker.v1.1.0.zip",
         "sha256": "1b3e2b39d3eca9d8cc4efa03780050fa464b4f315686835e14ac50388c264899",
