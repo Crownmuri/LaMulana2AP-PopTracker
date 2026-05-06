@@ -41,7 +41,7 @@ HAS_OVERRIDES = {
     ["Ganesha Talisman"]="ganesha_talisman", ["Progressive Beherit"]="beherit",
     ["Ruins Encylopedia"]="encyclopedia", ["TextTrax 2"]="texttrax",
     ["Space Capstar II"]="space_capstar", ["Mobile Super x3+"]="mobile_super",
-    ["Rose and Camelia"]="rose_camelia", ["Lonely House Moving"]="lonely_house",
+    ["Rose and Camellia"]="rose_camellia", ["Lonely House Moving"]="lonely_house",
     ["Mekuri Master"]="mekuri_master", ["Bounce Shot"]="bounce_shot",
     ["Miracle Witch"]="miracle_witch", ["La-Mulana"]="la_mulana",
     ["La-Mulana 2"]="la_mulana_2", ["Book of the Dead"]="book_of_dead",

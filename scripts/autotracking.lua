@@ -272,6 +272,82 @@ for _, g in ipairs(GUARDIANS) do
 end
 
 -- ============================================================
+-- Guardian Kill Datastorage
+-- Boss locations in the AP world are event-only (loc.address = None),
+-- so the C# mod's LocationCheck never reaches the server's checked-
+-- locations broadcast. Instead the mod mirrors each kill to a
+-- slot-scoped datastorage key:
+--   lamulana2_kill_<LocationID>_<team>_<slot> = 1
+-- We subscribe to those keys and flip the corresponding guardian_<g>
+-- progressive item to stage 1 (dead). The hosted_sync_* watch below
+-- propagates the kill to its location section and the Go Mode watch.
+-- ============================================================
+
+-- LocationID enum name (as written by the C# mod) → guardian progressive code
+local GUARDIAN_KILL_DS_NAMES = {
+    {ds_name = "Fafnir",     code = "guardian_fafnir"},
+    {ds_name = "Vritra",     code = "guardian_vritra"},
+    {ds_name = "Kujata",     code = "guardian_kujata"},
+    {ds_name = "AtenRa",     code = "guardian_aten_ra"},
+    {ds_name = "Jormungand", code = "guardian_jormungand"},
+    {ds_name = "Anu",        code = "guardian_anu"},
+    {ds_name = "Surtr",      code = "guardian_surtr"},
+    {ds_name = "Echidna",    code = "guardian_echidna"},
+    {ds_name = "Hel",        code = "guardian_hel"},
+}
+
+local _guardian_kill_key_to_code = {}
+
+local function buildGuardianKillKey(ds_name)
+    local team = Archipelago.TeamNumber
+    local player = Archipelago.PlayerNumber
+    if team == nil or player == nil then return nil end
+    return string.format("lamulana2_kill_%s_%d_%d", ds_name, team, player)
+end
+
+local function onGuardianKillUpdate(key, value, old_value)
+    local code = _guardian_kill_key_to_code[key]
+    if not code or tonumber(value) ~= 1 then return end
+
+    local obj = Tracker:FindObjectForCode(code)
+    if not obj then return end
+
+    -- bosses.json declares two stages per guardian: [0]=ankh-held (FafnirA),
+    -- [1]=dead (Fafnir). With `allow_disabled: true`, PopTracker shifts the
+    -- effective CurrentStage range — JSON stages[1] is reachable at
+    -- CurrentStage=2 (verified empirically: stage=1 leaves has(boss_<g>)
+    -- false; stage=2 sets it true).
+    --
+    -- Also: setting properties to their current value is a no-op; saved-state
+    -- restore can leave the providers map stale even at the right stage. Bounce
+    -- through Active=false → stage=0 → Active=true → stage=2 to force the
+    -- watch chain to re-derive provided codes.
+    if obj.Active then obj.Active = false end
+    obj.CurrentStage = 0
+    obj.Active = true
+    obj.CurrentStage = 2
+end
+
+Archipelago:AddRetrievedHandler("lm2_guardian_kill_retrieved", onGuardianKillUpdate)
+Archipelago:AddSetReplyHandler("lm2_guardian_kill_setreply", onGuardianKillUpdate)
+
+Archipelago:AddClearHandler("lm2_guardian_kill_subscribe", function()
+    _guardian_kill_key_to_code = {}
+    local keys = {}
+    for _, g in ipairs(GUARDIAN_KILL_DS_NAMES) do
+        local k = buildGuardianKillKey(g.ds_name)
+        if k then
+            _guardian_kill_key_to_code[k] = g.code
+            table.insert(keys, k)
+        end
+    end
+    if #keys > 0 then
+        Archipelago:SetNotify(keys)
+        Archipelago:Get(keys)
+    end
+end)
+
+-- ============================================================
 -- Boss Item → Hosted Section Sync
 -- PopTracker's hosted_item only fires section→item; this watch
 -- closes the loop the other way: when a boss code becomes
@@ -807,5 +883,62 @@ Archipelago:AddClearHandler("mantra_labels_clear", function()
         if label then label.Active = false end
     end
 end)
+
+-- ============================================================
+-- Software Combo Auto-Enable
+-- Labels in the Software Reference tab light up when the player
+-- has all required software for the combo.
+-- Requirements are read from the software grid in maps.json.
+-- ============================================================
+
+local SOFTWARE_COMBOS = {
+    ["sloc_full_map"] = {"map_reader", "map_street"},
+    ["sloc_hidden_rooms"] = {"map_reader", "map_street", "la_mulana_2"},
+    ["sloc_full_bgm"] = {"enga_musica", "beo_eglana"},
+    ["sloc_dev_rooms"] = {"miracle_witch", "fdc"},
+    ["sloc_weapon_fairy"] = {"miracle_witch", "bounce_shot"},
+    ["sloc_treasure_fairy"] = {"miracle_witch", "space_capstar"},
+    ["sloc_key_fairy"] = {"miracle_witch", "mekuri_master"},
+    ["sloc_hot_spring"] = {"miracle_witch", "death_village"},
+    ["sloc_iframes"] = {"death_village", "lonely_house"},
+    ["sloc_halve_env"] = {"mekuri_master", "la_mulana_2"},
+    ["sloc_auto_revive"] = {"rose_camellia", "lonely_house"},
+    ["sloc_melee_nonwhip"] = {"rose_camellia", "mekuri_master"},
+    ["sloc_melee_whip"] = {"la_mulana", "lonely_house"},
+    ["sloc_more_drops"] = {"la_mulana", "la_mulana_2"},
+    ["sloc_aoe_reflect"] = {"la_mulana", "la_mulana_2", "rose_camellia"}
+}
+
+function updateSoftwareCombos()
+    for combo_code, reqs in pairs(SOFTWARE_COMBOS) do
+        local is_active = true
+        
+        -- Check if all required software for this combo is active
+        for _, req_code in ipairs(reqs) do
+            local req_item = Tracker:FindObjectForCode(req_code)
+            if not req_item or not req_item.Active then
+                is_active = false
+                break
+            end
+        end
+
+        -- Update the specific software reference label's active state
+        local combo_item = Tracker:FindObjectForCode(combo_code)
+        if combo_item then
+            combo_item.Active = is_active
+        end
+    end
+end
+
+-- Create watches for all the base software items to trigger the update
+local watched_software = {}
+for _, reqs in pairs(SOFTWARE_COMBOS) do
+    for _, req_code in ipairs(reqs) do
+        if not watched_software[req_code] then
+            ScriptHost:AddWatchForCode("software_combo_watch_" .. req_code, req_code, updateSoftwareCombos)
+            watched_software[req_code] = true
+        end
+    end
+end
 
 print("LM2 AP Autotracking loaded!")

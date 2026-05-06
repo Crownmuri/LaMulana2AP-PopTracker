@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Additional Details on Map (Yagoo Reader + Yagoo Street)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_full_map.png",
+        "codes": "sloc_full_map"
+    },
+    {
+        "name": "Hidden Rooms on Map (Yagoo Reader + Yagoo Street + La-Mulana 2)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_hidden_rooms.png",
+        "codes": "sloc_hidden_rooms"
+    },
+    {
+        "name": "Full Soundtrack (Enga Musica + Beo Eg-Lana)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_full_bgm.png",
+        "codes": "sloc_full_bgm"
+    },
+    {
+        "name": "Dev Rooms in Icefire (Miracle Witch + Future Development Company)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_dev_rooms.png",
+        "codes": "sloc_dev_rooms"
+    },
+    {
+        "name": "Guaranteed Weapon Fairy (Miracle Witch + Bounce Shot)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_weapon_fairy.png",
+        "codes": "sloc_weapon_fairy"
+    },
+    {
+        "name": "Guaranteed Treasure Fairy (Miracle Witch + Space Capstar II)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_treasure_fairy.png",
+        "codes": "sloc_treasure_fairy"
+    },
+    {
+        "name": "Guaranteed Key Fairy (Miracle Witch + Mekuri Master)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_key_fairy.png",
+        "codes": "sloc_key_fairy"
+    },
+    {
+        "name": "+50% Hot Spring Duration (Miracle Witch + Death Village)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_hot_spring.png",
+        "codes": "sloc_hot_spring"
+    },
+    {
+        "name": "+50% I-frames Duration (Death Village + Lonely House Moving)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_iframes.png",
+        "codes": "sloc_iframes"
+    },
+    {
+        "name": "-50% DoT, eg. Lava Damage (Mekuri Master + La-Mulana 2)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_halve_env.png",
+        "codes": "sloc_halve_env"
+    },
+    {
+        "name": "Single Auto-Revive 32 HP (Rose and Camellia + Lonely House Moving)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_auto_revive.png",
+        "codes": "sloc_auto_revive"
+    },
+    {
+        "name": "+1 Damage Dealt for Knife / Rapier / Axe / Katana (Rose and Camellia + Mekuri Master)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_melee_nonwhip.png",
+        "codes": "sloc_melee_nonwhip"
+    },
+    {
+        "name": "+1 Damage Dealt for Whips / Claydoll Suit (La-Mulana + Lonely House Moving)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_melee_whip.png",
+        "codes": "sloc_melee_whip"
+    },
+    {
+        "name": "+50% Increased Item Drops (La-Mulana + La-Mulana 2)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_more_drops.png",
+        "codes": "sloc_more_drops"
+    },
+    {
+        "name": "AOE Reflect Damage 3 DMG (La-Mulana + La-Mulana 2 + Rose and Camellia)",
+        "type": "toggle",
+        "img": "images/Software/labels/sloc_aoe_reflect.png",
+        "codes": "sloc_aoe_reflect"
+    }
+]

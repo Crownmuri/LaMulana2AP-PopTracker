@@ -37,13 +37,9 @@
                     ]
                 },
                 {
-                    "type": "tabbed",
-                    "content": [
-                        {
-                            "type": "layout",
-                            "key": "tabbed_maps_horizontal"
-                        }
-                    ]
+                    "type": "layout",
+                    "margin": "0,0",
+                    "key": "tabbed_maps_horizontal"
                 }
             ]
         }

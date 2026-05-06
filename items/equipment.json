@@ -298,11 +298,5 @@
     "type": "toggle",
     "img": "images/OtherItems/ClaydollSuit.png",
     "codes": "claydoll_suit"
-  },
-  {
-    "name": "Future Development Company",
-    "type": "toggle",
-    "img": "images/Software/FutureDevCompany.png",
-    "codes": "fdc"
   }
 ]

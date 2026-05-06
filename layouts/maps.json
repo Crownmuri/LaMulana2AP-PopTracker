@@ -12,6 +12,25 @@
                 }
             },
             {
+                "title": "Individual Maps",
+                "content": {
+                    "type": "layout",
+                    "key": "individual_maps_layout"
+                }
+            },
+            {
+                "title": "References",
+                "content": {
+                    "type": "layout",
+                    "key": "references"
+                }
+            }
+        ]
+    },
+    "individual_maps_layout": {
+        "type": "tabbed",
+        "tabs": [
+            {
                 "title": "La-Mulana",
                 "content": {
                     "type": "map",
@@ -154,19 +173,66 @@
                         "Eternal Prison - Doom"
                     ]
                 }
-            },
-            {
-                "title": "Mantra Reference",
-                "content": {
-                    "type": "layout",
-                    "key": "mantra_reference"
-                }
             }
         ]
     },
-    "mantra_reference": {
+    "references": {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+            {
+                "type": "layout",
+                "key": "mantra_reference"
+            },
+            {
+                "type": "array",
+                "orientation": "vertical",
+                "margin": "0,0",
+                "content": [
+                    {
+                        "type": "layout",
+                        "key": "software_reference"
+                    },
+                    {
+                        "type": "layout",
+                        "key": "eternal_prison_reference"
+                    }
+                ]
+            }
+        ]
+    },
+    "eternal_prison_reference": {
         "type": "group",
-        "header": "Mantra Reference　　　　         　Heaven　　Earth　　Sun　　　Moon　　　Sea　　　Fire　　　Wind　　　Mother　　Child　　Night",
+        "header": "Eternal Prison Reference",
+        "content": {
+            "type": "array",
+            "orientation": "vertical",
+            "margin": "0,0",
+            "content": [
+                { "type": "text", "text": "False Gates:" },
+                { "type": "text", "text": "    xx:01-xx:15 Takamagahara Shrine" },
+                { "type": "text", "text": "    xx:16-xx:30 Village of Departure" },
+                { "type": "text", "text": "    xx:31-xx:45 Icefire Treetop" },
+                { "type": "text", "text": "    xx:46-xx:60 Divine Fortress" },
+                { "type": "text", "text": "Gate with Glowing Eyes:" },
+                { "type": "text", "text": "    xx:01-xx:15 Ajisukitakahikone" },
+                { "type": "text", "text": "Seven Gates of Hell:" },
+                { "type": "text", "text": "  * Requires Hraesvelgr's gate" },
+                { "type": "text", "text": "  * Don't forget the dais at [EPD D-4]" },
+                { "type": "text", "text": "    -> [EPG D-2] Holy Grail (Soul Gate)" },
+                { "type": "text", "text": "    -> [EPG E-1] Grapple Claw" },
+                { "type": "text", "text": "    -> [EPD C-7] Gale Fibula" },
+                { "type": "text", "text": "    -> [EPG D-5] Claydoll Suit" },
+                { "type": "text", "text": "    -> [EPG C-6] Feather" },
+                { "type": "text", "text": "    -> [EPD E-4] Anchor" },
+                { "type": "text", "text": "    -> [EPD B-2] Glove" }
+            ]
+        }
+    },
+    "software_reference": {
+        "type": "group",
+        "header": "Software Reference",
         "content": {
             "type": "array",
             "orientation": "horizontal",
@@ -174,7 +240,66 @@
             "content": [
                 {
                     "type": "itemgrid",
-                    "item_height": 18,
+                    "item_height": 20,
+                    "item_width": 160,
+                    "item_margin": "0, 1",
+                    "rows": [
+                        [ "sloc_full_map" ],
+                        [ "sloc_hidden_rooms" ],
+                        [ "sloc_full_bgm" ],
+                        [ "sloc_dev_rooms" ],
+                        [ "sloc_weapon_fairy" ],
+                        [ "sloc_treasure_fairy" ],
+                        [ "sloc_key_fairy" ],
+                        [ "sloc_hot_spring" ],
+                        [ "sloc_iframes" ],
+                        [ "sloc_halve_env" ],
+                        [ "sloc_auto_revive" ],
+                        [ "sloc_melee_nonwhip" ],
+                        [ "sloc_melee_whip" ],
+                        [ "sloc_more_drops" ],
+                        [ "sloc_aoe_reflect" ]
+                    ]
+                },
+                {
+                    "type": "itemgrid",
+                    "item_height": 20,
+                    "item_width": 20,
+                    "item_margin": "0, 1",
+                    "item_h_alignment": "stretch",
+                    "item_v_alignment": "stretch",
+                    "rows": [
+                        [ "map_reader",    "map_street",     "mantra_blank"   ],
+                        [ "map_reader",    "map_street",     "la_mulana_2"    ],
+                        [ "enga_musica",   "beo_eglana",     "mantra_blank"   ],
+                        [ "miracle_witch", "fdc",            "mantra_blank"   ],
+                        [ "miracle_witch", "bounce_shot",    "mantra_blank"   ],
+                        [ "miracle_witch", "space_capstar",  "mantra_blank"   ],
+                        [ "miracle_witch", "mekuri_master",  "mantra_blank"   ],
+                        [ "miracle_witch", "death_village",  "mantra_blank"   ],
+                        [ "death_village", "lonely_house",   "mantra_blank"   ],
+                        [ "mekuri_master", "la_mulana_2",    "mantra_blank"   ],
+                        [ "rose_camellia", "lonely_house",   "mantra_blank"   ],
+                        [ "rose_camellia", "mekuri_master",  "mantra_blank"   ],
+                        [ "la_mulana",     "lonely_house",   "mantra_blank"   ],
+                        [ "la_mulana",     "la_mulana_2",    "mantra_blank"   ],
+                        [ "la_mulana",     "la_mulana_2",    "rose_camellia"  ]
+                    ]
+                }
+            ]
+        }
+    },
+    "mantra_reference": {
+        "type": "group",
+        "header": "Mantra Reference　　　　          Heaven Earth   Sun   Moon  Sea    Fire   Wind Mother Child  Night",
+        "content": {
+            "type": "array",
+            "orientation": "horizontal",
+            "margin": "0,0",
+            "content": [
+                {
+                    "type": "itemgrid",
+                    "item_height": 20,
                     "item_width": 200,
                     "item_margin": "0, 1",
                     "rows": [
@@ -208,8 +333,8 @@
                 },
                 {
                     "type": "itemgrid",
-                    "item_height": 18,
-                    "item_width": 60,
+                    "item_height": 20,
+                    "item_width": 40,
                     "item_margin": "0, 1",
                     "item_h_alignment": "stretch",
                     "item_v_alignment": "stretch",

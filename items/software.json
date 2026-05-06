@@ -84,10 +84,10 @@
     "codes": "death_village"
   },
   {
-    "name": "Rose and Camelia",
+    "name": "Rose and Camellia",
     "type": "toggle",
-    "img": "images/Software/RoseCamelia.png",
-    "codes": "rose_camelia"
+    "img": "images/Software/RoseCamellia.png",
+    "codes": "rose_camellia"
   },
   {
     "name": "Space Capstar II",
@@ -118,6 +118,12 @@
     "type": "toggle",
     "img": "images/Software/MiracleWitch.png",
     "codes": "miracle_witch"
+  },
+  {
+    "name": "Future Development Company",
+    "type": "toggle",
+    "img": "images/Software/FutureDevCompany.png",
+    "codes": "fdc"
   },
   {
     "name": "La-Mulana",
