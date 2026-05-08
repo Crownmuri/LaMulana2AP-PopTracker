@@ -16,7 +16,7 @@
                         "map": "Full Map",
                         "x": 2255,
                         "y": 1019,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -38,7 +38,7 @@
                         "map": "Full Map",
                         "x": 1646,
                         "y": 896,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -60,7 +60,7 @@
                         "map": "Full Map",
                         "x": 2610,
                         "y": 1066,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -82,7 +82,7 @@
                         "map": "Full Map",
                         "x": 1961,
                         "y": 933,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -104,7 +104,7 @@
                         "map": "Full Map",
                         "x": 1484,
                         "y": 2508,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -126,7 +126,7 @@
                         "map": "Full Map",
                         "x": 922,
                         "y": 1605,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -148,7 +148,7 @@
                         "map": "Full Map",
                         "x": 1684,
                         "y": 724,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -170,7 +170,7 @@
                         "map": "Full Map",
                         "x": 1684,
                         "y": 760,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -192,7 +192,7 @@
                         "map": "Full Map",
                         "x": 1955,
                         "y": 730,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -214,7 +214,7 @@
                         "map": "Full Map",
                         "x": 1955,
                         "y": 758,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -236,7 +236,7 @@
                         "map": "Full Map",
                         "x": 1631,
                         "y": 413,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -258,7 +258,7 @@
                         "map": "Full Map",
                         "x": 1631,
                         "y": 382,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -280,7 +280,7 @@
                         "map": "Full Map",
                         "x": 2226,
                         "y": 628,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -302,7 +302,7 @@
                         "map": "Full Map",
                         "x": 1390,
                         "y": 34,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -324,7 +324,7 @@
                         "map": "Full Map",
                         "x": 2265,
                         "y": 975,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -346,7 +346,7 @@
                         "map": "Full Map",
                         "x": 2233,
                         "y": 975,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -368,7 +368,7 @@
                         "map": "Full Map",
                         "x": 2610,
                         "y": 975,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -390,7 +390,7 @@
                         "map": "Full Map",
                         "x": 2629,
                         "y": 952,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -412,7 +412,7 @@
                         "map": "Full Map",
                         "x": 2608,
                         "y": 2331,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -434,7 +434,7 @@
                         "map": "Full Map",
                         "x": 2853,
                         "y": 761,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -456,7 +456,7 @@
                         "map": "Full Map",
                         "x": 2622,
                         "y": 2049,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -478,7 +478,7 @@
                         "map": "Full Map",
                         "x": 2560,
                         "y": 1792,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -500,7 +500,7 @@
                         "map": "Full Map",
                         "x": 2009,
                         "y": 327,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -522,7 +522,7 @@
                         "map": "Full Map",
                         "x": 1559,
                         "y": 1691,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -544,7 +544,7 @@
                         "map": "Full Map",
                         "x": 486,
                         "y": 987,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -566,7 +566,7 @@
                         "map": "Full Map",
                         "x": 515,
                         "y": 987,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -588,7 +588,7 @@
                         "map": "Full Map",
                         "x": 511,
                         "y": 660,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -610,7 +610,7 @@
                         "map": "Full Map",
                         "x": 511,
                         "y": 688,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -632,7 +632,7 @@
                         "map": "Full Map",
                         "x": 529,
                         "y": 426,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -654,7 +654,7 @@
                         "map": "Full Map",
                         "x": 169,
                         "y": 413,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -676,7 +676,7 @@
                         "map": "Full Map",
                         "x": 765,
                         "y": 314,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -698,7 +698,7 @@
                         "map": "Full Map",
                         "x": 734,
                         "y": 314,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -720,7 +720,7 @@
                         "map": "Full Map",
                         "x": 461,
                         "y": 462,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -742,7 +742,7 @@
                         "map": "Full Map",
                         "x": 1809,
                         "y": 236,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -764,7 +764,7 @@
                         "map": "Full Map",
                         "x": 2264,
                         "y": 2372,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -786,7 +786,7 @@
                         "map": "Full Map",
                         "x": 2723,
                         "y": 1110,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -807,8 +807,8 @@
                     {
                         "map": "Full Map",
                         "x": 2308,
-                        "y": 1356,
-                        "size": 27,
+                        "y": 1346,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -830,7 +830,7 @@
                         "map": "Full Map",
                         "x": 1313,
                         "y": 1336,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -852,7 +852,7 @@
                         "map": "Full Map",
                         "x": 1720,
                         "y": 1222,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -874,7 +874,7 @@
                         "map": "Full Map",
                         "x": 1720,
                         "y": 1188,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -896,7 +896,7 @@
                         "map": "Full Map",
                         "x": 2060,
                         "y": 1225,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -918,7 +918,7 @@
                         "map": "Full Map",
                         "x": 2060,
                         "y": 1200,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -940,7 +940,7 @@
                         "map": "Full Map",
                         "x": 2100,
                         "y": 1225,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -962,7 +962,7 @@
                         "map": "Full Map",
                         "x": 2100,
                         "y": 1200,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -984,7 +984,7 @@
                         "map": "Full Map",
                         "x": 1808,
                         "y": 1378,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -1006,7 +1006,7 @@
                         "map": "Full Map",
                         "x": 1808,
                         "y": 11,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -1028,7 +1028,7 @@
                         "map": "Full Map",
                         "x": 1360,
                         "y": 1099,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -1050,7 +1050,7 @@
                         "map": "Full Map",
                         "x": 2197,
                         "y": 46,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -1072,7 +1072,7 @@
                         "map": "Full Map",
                         "x": 787,
                         "y": 212,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -1094,7 +1094,7 @@
                         "map": "Full Map",
                         "x": 670,
                         "y": 194,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -1116,7 +1116,7 @@
                         "map": "Full Map",
                         "x": 1305,
                         "y": 2106,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -1138,7 +1138,7 @@
                         "map": "Full Map",
                         "x": 947,
                         "y": 640,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -1160,7 +1160,7 @@
                         "map": "Full Map",
                         "x": 245,
                         "y": 247,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -1182,7 +1182,7 @@
                         "map": "Full Map",
                         "x": 421,
                         "y": 247,
-                        "size": 27,
+                        "size": 30,
                         "shape": "diamond"
                     }
                 ],
@@ -1197,6 +1197,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_immortal_battlefield_spiral_boat_soul_gate_d_4",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_immortal_battlefield_spiral_boat_soul_gate_d_4"
                     }
                 ],
                 "map_locations": [
@@ -1204,7 +1208,7 @@
                         "map": "Full Map",
                         "x": 1733,
                         "y": 975,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1225,6 +1229,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_hall_of_malice_soul_gate__d_3",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_hall_of_malice_soul_gate__d_3"
                     }
                 ],
                 "map_locations": [
@@ -1232,12 +1240,12 @@
                         "map": "Full Map",
                         "x": 2437,
                         "y": 2510,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HoM) and Has(Death Sigil) and CanUse(Earth Spear) and (CanWarp or IsDead(HoM Middle Path)) and SoulGateCost(er_hall_of_malice_soul_gate__d_3)"
+                    "^$lm2_soulgate|er_hall_of_malice_soul_gate__d_3|CanReach(HoM) and Has(Death Sigil) and CanUse(Earth Spear) and (CanWarp or IsDead(HoM Middle Path))"
                 ],
                 "children": [
                     {
@@ -1253,6 +1261,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_heavens_labyrinth_soul_gate__e_5",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_heavens_labyrinth_soul_gate__e_5"
                     }
                 ],
                 "map_locations": [
@@ -1260,12 +1272,12 @@
                         "map": "Full Map",
                         "x": 2857,
                         "y": 1402,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HL) and SoulGateCost(er_heavens_labyrinth_soul_gate__e_5)"
+                    "^$lm2_soulgate|er_heavens_labyrinth_soul_gate__e_5|CanReach(HL)"
                 ],
                 "children": [
                     {
@@ -1281,6 +1293,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_icefire_treetop_under_ratatoskr_soul_gate__g_3",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_icefire_treetop_under_ratatoskr_soul_gate__g_3"
                     }
                 ],
                 "map_locations": [
@@ -1288,12 +1304,12 @@
                         "map": "Full Map",
                         "x": 2134,
                         "y": 1365,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(ITRight) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3) and SoulGateCost(er_icefire_treetop_under_ratatoskr_soul_gate__g_3)"
+                    "^$lm2_soulgate|er_icefire_treetop_under_ratatoskr_soul_gate__g_3|CanReach(ITRight) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3)"
                 ],
                 "children": [
                     {
@@ -1309,6 +1325,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_takamagahara_shrine_top_main_soul_gate__d_1",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_takamagahara_shrine_top_main_soul_gate__d_1"
                     }
                 ],
                 "map_locations": [
@@ -1316,12 +1336,12 @@
                         "map": "Full Map",
                         "x": 1060,
                         "y": 1154,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(TSEntrance) and SoulGateCost(er_takamagahara_shrine_top_main_soul_gate__d_1)"
+                    "^$lm2_soulgate|er_takamagahara_shrine_top_main_soul_gate__d_1|CanReach(TSEntrance)"
                 ],
                 "children": [
                     {
@@ -1337,6 +1357,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_immortal_battlefield_bottom_left_gate__b_7",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_immortal_battlefield_bottom_left_gate__b_7"
                     }
                 ],
                 "map_locations": [
@@ -1344,12 +1368,12 @@
                         "map": "Full Map",
                         "x": 1463,
                         "y": 1201,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBLeftSG) and SoulGateCost(er_immortal_battlefield_bottom_left_gate__b_7)"
+                    "^$lm2_soulgate|er_immortal_battlefield_bottom_left_gate__b_7|CanReach(IBLeftSG)"
                 ],
                 "children": [
                     {
@@ -1365,6 +1389,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_divine_fortress_soul_gate__c_5",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_divine_fortress_soul_gate__c_5"
                     }
                 ],
                 "map_locations": [
@@ -1372,12 +1400,12 @@
                         "map": "Full Map",
                         "x": 2347,
                         "y": 425,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFEntrance) and SoulGateCost(er_divine_fortress_soul_gate__c_5)"
+                    "^$lm2_soulgate|er_divine_fortress_soul_gate__c_5|CanReach(DFEntrance)"
                 ],
                 "children": [
                     {
@@ -1393,6 +1421,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_roots_of_yggdrasil_bottom_soul_gate__d_6",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_roots_of_yggdrasil_bottom_soul_gate__d_6"
                     }
                 ],
                 "map_locations": [
@@ -1400,12 +1432,12 @@
                         "map": "Full Map",
                         "x": 1809,
                         "y": 371,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(RoYBottom) and SoulGateCost(er_roots_of_yggdrasil_bottom_soul_gate__d_6)"
+                    "^$lm2_soulgate|er_roots_of_yggdrasil_bottom_soul_gate__d_6|CanReach(RoYBottom)"
                 ],
                 "children": [
                     {
@@ -1421,6 +1453,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_ancient_chaos_soul_gate__c_1",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_ancient_chaos_soul_gate__c_1"
                     }
                 ],
                 "map_locations": [
@@ -1428,12 +1464,12 @@
                         "map": "Full Map",
                         "x": 1310,
                         "y": 2172,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(ACBlood) and Has(Feather) and SoulGateCost(er_ancient_chaos_soul_gate__c_1)"
+                    "^$lm2_soulgate|er_ancient_chaos_soul_gate__c_1|CanReach(ACBlood) and Has(Feather)"
                 ],
                 "children": [
                     {
@@ -1449,6 +1485,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_takamagahara_shrine_belial_soul_gate__b_1",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_takamagahara_shrine_belial_soul_gate__b_1"
                     }
                 ],
                 "map_locations": [
@@ -1456,12 +1496,12 @@
                         "map": "Full Map",
                         "x": 861,
                         "y": 1189,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(TSBlood) and SoulGateCost(er_takamagahara_shrine_belial_soul_gate__b_1)"
+                    "^$lm2_soulgate|er_takamagahara_shrine_belial_soul_gate__b_1|CanReach(TSBlood)"
                 ],
                 "children": [
                     {
@@ -1477,6 +1517,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_immortal_battlefield_top_right_gate__h_2",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_immortal_battlefield_top_right_gate__h_2"
                     }
                 ],
                 "map_locations": [
@@ -1484,12 +1528,12 @@
                         "map": "Full Map",
                         "x": 2184,
                         "y": 853,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBMain) and HorizontalAttack and SoulGateCost(er_immortal_battlefield_top_right_gate__h_2)"
+                    "^$lm2_soulgate|er_immortal_battlefield_top_right_gate__h_2|CanReach(IBMain) and HorizontalAttack"
                 ],
                 "children": [
                     {
@@ -1505,6 +1549,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_gate_of_the_dead_soul_gate__c_4",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_gate_of_the_dead_soul_gate__c_4"
                     }
                 ],
                 "map_locations": [
@@ -1512,12 +1560,12 @@
                         "map": "Full Map",
                         "x": 2457,
                         "y": 719,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and SoulGateCost(er_gate_of_the_dead_soul_gate__c_4)"
+                    "^$lm2_soulgate|er_gate_of_the_dead_soul_gate__c_4|CanReach(GotD)"
                 ],
                 "children": [
                     {
@@ -1533,6 +1581,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_shrine_of_the_frost_giants_main_soul_gate__e_4",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_shrine_of_the_frost_giants_main_soul_gate__e_4"
                     }
                 ],
                 "map_locations": [
@@ -1540,12 +1592,12 @@
                         "map": "Full Map",
                         "x": 1263,
                         "y": 627,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGMain) and SoulGateCost(er_shrine_of_the_frost_giants_main_soul_gate__e_4)"
+                    "^$lm2_soulgate|er_shrine_of_the_frost_giants_main_soul_gate__e_4|CanReach(SotFGMain)"
                 ],
                 "children": [
                     {
@@ -1561,6 +1613,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_annwfn_soul_gate__a_4",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_annwfn_soul_gate__a_4"
                     }
                 ],
                 "map_locations": [
@@ -1568,12 +1624,12 @@
                         "map": "Full Map",
                         "x": 1485,
                         "y": 627,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(AnnwfnSG) and Has(Origin Sigil) and SoulGateCost(er_annwfn_soul_gate__a_4)"
+                    "^$lm2_soulgate|er_annwfn_soul_gate__a_4|CanReach(AnnwfnSG) and Has(Origin Sigil)"
                 ],
                 "children": [
                     {
@@ -1589,6 +1645,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_shrine_of_the_frost_giants_balor_soul_gate__e_1",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_shrine_of_the_frost_giants_balor_soul_gate__e_1"
                     }
                 ],
                 "map_locations": [
@@ -1596,12 +1656,12 @@
                         "map": "Full Map",
                         "x": 1291,
                         "y": 426,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGBalor) and Has(Claydoll Suit) and IsDead(Balor) and SoulGateCost(er_shrine_of_the_frost_giants_balor_soul_gate__e_1)"
+                    "^$lm2_soulgate|er_shrine_of_the_frost_giants_balor_soul_gate__e_1|CanReach(SotFGBalor) and Has(Claydoll Suit) and IsDead(Balor)"
                 ],
                 "children": [
                     {
@@ -1617,6 +1677,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_valhalla_soul_gate__e_2",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_valhalla_soul_gate__e_2"
                     }
                 ],
                 "map_locations": [
@@ -1624,12 +1688,12 @@
                         "map": "Full Map",
                         "x": 2088,
                         "y": 1702,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(ValhallaTopRight) and Has(Claydoll Suit) and SoulGateCost(er_valhalla_soul_gate__e_2)"
+                    "^$lm2_soulgate|er_valhalla_soul_gate__e_2|CanReach(ValhallaTopRight) and Has(Claydoll Suit)"
                 ],
                 "children": [
                     {
@@ -1645,6 +1709,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_icefire_treetop_vidofnir_soul_gate__d_6",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_icefire_treetop_vidofnir_soul_gate__d_6"
                     }
                 ],
                 "map_locations": [
@@ -1652,12 +1720,12 @@
                         "map": "Full Map",
                         "x": 1809,
                         "y": 1603,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(ITVidofnir) and IsDead(Vidofnir) and CanWarp and SoulGateCost(er_icefire_treetop_vidofnir_soul_gate__d_6)"
+                    "^$lm2_soulgate|er_icefire_treetop_vidofnir_soul_gate__d_6|CanReach(ITVidofnir) and IsDead(Vidofnir) and CanWarp"
                 ],
                 "children": [
                     {
@@ -1673,6 +1741,10 @@
                         "name": "Entrance",
                         "hosted_item": "er_eternal_prison_gloom_soul_gate__d_2",
                         "item_size": "200,16"
+                    },
+                    {
+                        "name": "Required Souls",
+                        "hosted_item": "cost_er_eternal_prison_gloom_soul_gate__d_2"
                     }
                 ],
                 "map_locations": [
@@ -1680,12 +1752,12 @@
                         "map": "Full Map",
                         "x": 2184,
                         "y": 2844,
-                        "size": 27,
+                        "size": 35,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EPG) and SoulGateCost(er_eternal_prison_gloom_soul_gate__d_2)"
+                    "$^lm2_soulgate|er_eternal_prison_gloom_soul_gate__d_2|CanReach(EPG)"
                 ],
                 "children": [
                     {

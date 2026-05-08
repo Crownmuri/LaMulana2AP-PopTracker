@@ -1152,5 +1152,22 @@ function lm2_cursed(id, reachability)
     return ACCESS_YELLOW
 end
 
+function lm2_soulgate(gate_code, reachability)
+    if not eval_logic_bool(reachability) then
+        return ACCESS_RED
+    end
+
+    local cost_obj = Tracker:FindObjectForCode("cost_" .. gate_code)
+    if cost_obj and cost_obj.CurrentStage == 0 then
+        return ACCESS_BLUE
+    end
+
+    if SoulGateCost(gate_code) then
+        return ACCESS_GREEN
+    end
+
+    return ACCESS_RED
+end
+
 print("LM2 Logic: loaded with flood-fill CanReach + starting area + auto-complete!")
 print("LM2 Logic: Starting area: " .. GetStartingAreaID())
