@@ -20,7 +20,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430118",
+                        "access_rules": [
+                            "^$lm2_cursed|430118|CanReach(TSEntrance) and (Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -45,7 +49,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430109",
+                        "access_rules": [
+                            "^$lm2_cursed|430109|CanReach(TSMain) and (MeleeAttack or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or CanUse(Rolling Shuriken) or (CanUse(Flare) and HorizontalAttack))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -133,7 +141,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430039",
+                        "access_rules": [
+                            "^$lm2_cursed|430039|CanReach(TSLeft) and ((Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb)) and Has(Feather) and Has(Life Sigil) and Has(Key Fairy))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -183,7 +195,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430146",
+                        "access_rules": [
+                            "^$lm2_cursed|430146|CanReach(TSBottom) and (Has(Life Sigil) and (Has(Feather) or CanWarp) and HorizontalAttack)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -208,7 +224,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430011",
+                        "access_rules": [
+                            "^$lm2_cursed|430011|CanReach(TSBottom) and (IsDead(Daji) and Has(Feather))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -254,7 +274,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430024",
+                        "access_rules": [
+                            "^$lm2_cursed|430024|CanReach(TSBlood) and (IsDead(Belial))"
+                        ]
                     }
                 ],
                 "access_rules": [

@@ -296,7 +296,11 @@
             "sections": [
                 {
                     "name": "Chest",
-                    "item_count": 1
+                    "item_count": 1,
+                    "hosted_item": "cursed_430016",
+                    "access_rules": [
+                        "^$lm2_cursed|430016|CanReach(GateofGuidance)"
+                    ]
                 }
             ],
             "access_rules": [
@@ -321,7 +325,11 @@
             "sections": [
                 {
                     "name": "Chest",
-                    "item_count": 1
+                    "item_count": 1,
+                    "hosted_item": "cursed_430017",
+                    "access_rules": [
+                        "^$lm2_cursed|430017|CanReach(GateofGuidance)"
+                    ]
                 }
             ],
             "access_rules": [

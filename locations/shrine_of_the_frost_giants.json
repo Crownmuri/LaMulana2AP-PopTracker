@@ -20,7 +20,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430116",
+                        "access_rules": [
+                            "^$lm2_cursed|430116|CanReach(SotFGMain) and (Has(Origin Sigil) or HorizontalAttack)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -45,7 +49,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430006",
+                        "access_rules": [
+                            "^$lm2_cursed|430006|CanReach(SotFGMain) and (IsDead(Badhbh Cath) and Has(Life Sigil) and Has(Grapple Claw) and (HorizontalAttack or (CanUse(Flare) and (CanWarp or Has(Feather)))))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -133,7 +141,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430052",
+                        "access_rules": [
+                            "^$lm2_cursed|430052|CanReach(SotFGGrail) and (Has(Origin Sigil) and HorizontalAttack)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -158,7 +170,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430135",
+                        "access_rules": [
+                            "^$lm2_cursed|430135|CanReach(SotFGGrail)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -208,7 +224,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430107",
+                        "access_rules": [
+                            "^$lm2_cursed|430107|CanReach(SotFGTop) and (CanUse(Earth Spear) or (CanUse(Flare) and HorizontalAttack))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -258,7 +278,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430056",
+                        "access_rules": [
+                            "^$lm2_cursed|430056|CanReach(SotFGBalor) and (Has(Life Sigil) and Has(Feather) and IsDead(Balor))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -304,7 +328,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430029",
+                        "access_rules": [
+                            "^$lm2_cursed|430029|CanReach(SotFGLeft) and (Has(Feather) and Has(Life Sigil) and ((HorizontalAttack and CanUse(Flare)) or Has(Leather Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb)))"
+                        ]
                     }
                 ],
                 "access_rules": [

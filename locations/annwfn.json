@@ -2,81 +2,93 @@
   {
     "name": "Annwfn",
     "children": [
-      {
-        "name": "Map Chest Annwfn",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1896,
-            "y": 572,
-            "size": 50
-          },
-          {
-            "map": "Annwfn",
-            "x": 1046,
-            "y": 358
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnMain)"
-        ]
-      },
-      {
-        "name": "Glove Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1718,
-            "y": 639,
-            "size": 50
-          },
-          {
-            "map": "Annwfn",
-            "x": 690,
-            "y": 468
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnMain)"
-        ]
-      },
-      {
-        "name": "Crystal Skull Chest Annwfn",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1524,
-            "y": 710,
-            "size": 50
-          },
-          {
-            "map": "Annwfn",
-            "x": 302,
-            "y": 647
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
-        ]
-      },
+        {
+            "name": "Map Chest Annwfn",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1896,
+                    "y": 572,
+                    "size": 50
+                },
+                {
+                    "map": "Annwfn",
+                    "x": 1046,
+                    "y": 358
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430112",
+                    "access_rules": [
+                        "^$lm2_cursed|430112|CanReach(AnnwfnMain)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(AnnwfnMain)"
+            ]
+        },
+        {
+            "name": "Glove Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1718,
+                    "y": 639,
+                    "size": 50
+                },
+                {
+                    "map": "Annwfn",
+                    "x": 690,
+                    "y": 468
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430019",
+                    "access_rules": [
+                        "^$lm2_cursed|430019|CanReach(AnnwfnMain)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(AnnwfnMain)"
+            ]
+        },
+        {
+            "name": "Crystal Skull Chest Annwfn",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1524,
+                    "y": 710,
+                    "size": 50
+                },
+                {
+                    "map": "Annwfn",
+                    "x": 302,
+                    "y": 647
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430141",
+                    "access_rules": [
+                        "^$lm2_cursed|430141|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
+            ]
+        },
       {
         "name": "Rolling Shuriken Puzzle Reward",
         "map_locations": [
@@ -236,31 +248,35 @@
                 "$lm2_logic|CanReach(AnnwfnMain) and (CanSealCorridor and CanChant(Night) and OrbCount(7) and Has(Silver Shield) and (Has(Flail Whip) or Has(Katana) or Has(Axe)))"
             ]
         },
-      {
-        "name": "Sacred Orb Chest Annwfn",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1886,
-            "y": 717,
-            "size": 50
-          },
-          {
-            "map": "Annwfn",
-            "x": 1028,
-            "y": 623
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Flare) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Pistol) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (CanUse(Caltrops) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or CanUse(Rolling Shuriken)))))"
-        ]
-      },
+        {
+            "name": "Sacred Orb Chest Annwfn",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1886,
+                    "y": 717,
+                    "size": 50
+                },
+                {
+                    "map": "Annwfn",
+                    "x": 1028,
+                    "y": 623
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430103",
+                    "access_rules": [
+                        "^$lm2_cursed|430103|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Flare) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Pistol) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (CanUse(Caltrops) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or CanUse(Rolling Shuriken)))))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Flare) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Pistol) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (CanUse(Caltrops) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or CanUse(Rolling Shuriken)))))"
+            ]
+        },
       {
         "name": "Silver Shield Puzzle Reward",
         "map_locations": [
@@ -336,8 +352,9 @@
                 {
                     "name": "Djed Pillar Chest",
                     "item_count": 1,
+                    "hosted_item": "cursed_430001",
                     "access_rules": [
-                        "$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Kujata))"
+                        "^$lm2_cursed|430001|CanReach(AnnwfnRight) and (IsDead(Kujata))"
                     ]
                 }
             ],

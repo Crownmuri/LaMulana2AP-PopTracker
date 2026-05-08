@@ -69,31 +69,35 @@
           "$lm2_logic|CanReach(ITBottom)"
         ]
       },
-      {
-        "name": "Grapple Claw Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1972,
-            "y": 1444,
-            "size": 50
-          },
-          {
-            "map": "Icefire Treetop",
-            "x": 1200,
-            "y": 474
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ITBottom)"
-        ]
-      },
+        {
+            "name": "Grapple Claw Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1972,
+                    "y": 1444,
+                    "size": 50
+                },
+                {
+                    "map": "Icefire Treetop",
+                    "x": 1200,
+                    "y": 474
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430033",
+                    "access_rules": [
+                        "^$lm2_cursed|430033|CanReach(ITBottom)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ITBottom)"
+            ]
+        },
         {
             "name": "Surtr",
             "map_locations": [
@@ -122,8 +126,9 @@
                 {
                     "name": "Flame Torc Chest",
                     "item_count": 1,
+                    "hosted_item": "cursed_430022",
                     "access_rules": [
-                        "$lm2_logic|CanReach(ITSinmara) and (IsDead(Surtr) and HorizontalAttack)"
+                        "^$lm2_cursed|430022|CanReach(ITSinmara) and (IsDead(Surtr) and HorizontalAttack)"
                     ]
                 }
             ],
@@ -131,81 +136,93 @@
                 "$lm2_logic|CanReach(ITSinmara) and (Has(Light Scythe) and (Has(Feather) or Has(Ice Cloak)) and (((Has(Knife) or Has(Rapier)) and OrbCount(7)) or ((Has(Chain Whip) or (CanUse(Earth Spear) and Has(Ring))) and OrbCount(6)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana) or (CanUse(Bomb) and Has(Ring))) and OrbCount(5)) or (CanUse(Pistol) and OrbCount(4))))"
             ]
         },
-      {
-        "name": "Map Chest IT",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1611,
-            "y": 1286,
-            "size": 50
-          },
-          {
-            "map": "Icefire Treetop",
-            "x": 479,
-            "y": 158
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ITLeft)"
-        ]
-      },
-      {
-        "name": "Ankh Chest IT",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1565,
-            "y": 1444,
-            "size": 50
-          },
-          {
-            "map": "Icefire Treetop",
-            "x": 387,
-            "y": 471
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ITLeft) and ((Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(1)) and IsDead(Vedfolnir))"
-        ]
-      },
-      {
-        "name": "Life Sigil Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1432,
-            "y": 1286,
-            "size": 50
-          },
-          {
-            "map": "Icefire Treetop",
-            "x": 120,
-            "y": 158
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ITLeft) and (Has(Birth Sigil) and CanWarp and ((Has(Leather Whip) or Has(Chain Whip) or Has(Rapier) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Caltrops) or CanUse(Pistol)) or (Has(Knife) and (Has(Feather) or Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (Has(Axe) and (Has(Bracelet) or (Has(Spaulder) and (Has(Feather) or Has(Gauntlet)))))))"
-        ]
-      },
+        {
+            "name": "Map Chest IT",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1611,
+                    "y": 1286,
+                    "size": 50
+                },
+                {
+                    "map": "Icefire Treetop",
+                    "x": 479,
+                    "y": 158
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430114",
+                    "access_rules": [
+                        "^$lm2_cursed|430114|CanReach(ITLeft)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ITLeft)"
+            ]
+        },
+        {
+            "name": "Ankh Chest IT",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1565,
+                    "y": 1444,
+                    "size": 50
+                },
+                {
+                    "map": "Icefire Treetop",
+                    "x": 387,
+                    "y": 471
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430134",
+                    "access_rules": [
+                        "^$lm2_cursed|430134|CanReach(ITLeft) and ((Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(1)) and IsDead(Vedfolnir))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ITLeft) and ((Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(1)) and IsDead(Vedfolnir))"
+            ]
+        },
+        {
+            "name": "Life Sigil Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1432,
+                    "y": 1286,
+                    "size": 50
+                },
+                {
+                    "map": "Icefire Treetop",
+                    "x": 120,
+                    "y": 158
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430053",
+                    "access_rules": [
+                        "^$lm2_cursed|430053|CanReach(ITLeft) and (Has(Birth Sigil) and CanWarp and ((Has(Leather Whip) or Has(Chain Whip) or Has(Rapier) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Caltrops) or CanUse(Pistol)) or (Has(Knife) and (Has(Feather) or Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (Has(Axe) and (Has(Bracelet) or (Has(Spaulder) and (Has(Feather) or Has(Gauntlet)))))))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ITLeft) and (Has(Birth Sigil) and CanWarp and ((Has(Leather Whip) or Has(Chain Whip) or Has(Rapier) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Caltrops) or CanUse(Pistol)) or (Has(Knife) and (Has(Feather) or Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (Has(Axe) and (Has(Bracelet) or (Has(Spaulder) and (Has(Feather) or Has(Gauntlet)))))))"
+            ]
+        },
       {
         "name": "BTK",
         "map_locations": [
@@ -269,81 +286,93 @@
                 "$lm2_logic|CanReach(ITLeft) and (OrbCount(1))"
             ]
         },
-      {
-        "name": "Fairy Guild Pass Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1891,
-            "y": 1230,
-            "size": 50
-          },
-          {
-            "map": "Icefire Treetop",
-            "x": 1020,
-            "y": 23
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ITRight) and (Has(Life Sigil))"
-        ]
-      },
-      {
-        "name": "Crystal Skull Chest IT",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2183,
-            "y": 1310,
-            "size": 50
-          },
-          {
-            "map": "Icefire Treetop",
-            "x": 1622,
-            "y": 206
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ITRight) and (IsDead(Ratatoskr 3))"
-        ]
-      },
-      {
-        "name": "Sacred Orb Chest IT",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2030,
-            "y": 1468,
-            "size": 50
-          },
-          {
-            "map": "Icefire Treetop",
-            "x": 1316,
-            "y": 512
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ITRight) and ((Has(Claydoll Suit) or ((Has(Anchor) or Has(Fish Suit)) and (OrbCount(1) or Has(Scalesphere)))) and HorizontalAttack)"
-        ]
-      },
+        {
+            "name": "Fairy Guild Pass Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1891,
+                    "y": 1230,
+                    "size": 50
+                },
+                {
+                    "map": "Icefire Treetop",
+                    "x": 1020,
+                    "y": 23
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430018",
+                    "access_rules": [
+                        "^$lm2_cursed|430018|CanReach(ITRight) and (Has(Life Sigil))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ITRight) and (Has(Life Sigil))"
+            ]
+        },
+        {
+            "name": "Crystal Skull Chest IT",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 2183,
+                    "y": 1310,
+                    "size": 50
+                },
+                {
+                    "map": "Icefire Treetop",
+                    "x": 1622,
+                    "y": 206
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430143",
+                    "access_rules": [
+                        "^$lm2_cursed|430143|CanReach(ITRight) and (IsDead(Ratatoskr 3))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ITRight) and (IsDead(Ratatoskr 3))"
+            ]
+        },
+        {
+            "name": "Sacred Orb Chest IT",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 2030,
+                    "y": 1468,
+                    "size": 50
+                },
+                {
+                    "map": "Icefire Treetop",
+                    "x": 1316,
+                    "y": 512
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430105",
+                    "access_rules": [
+                        "^$lm2_cursed|430105|CanReach(ITRight) and ((Has(Claydoll Suit) or ((Has(Anchor) or Has(Fish Suit)) and (OrbCount(1) or Has(Scalesphere)))) and HorizontalAttack)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ITRight) and ((Has(Claydoll Suit) or ((Has(Anchor) or Has(Fish Suit)) and (OrbCount(1) or Has(Scalesphere)))) and HorizontalAttack)"
+            ]
+        },
         {
             "name": "Ratatoskr 3",
             "map_locations": [

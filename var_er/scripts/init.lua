@@ -16,6 +16,7 @@ Tracker:AddItems("items/bosses.json")
 Tracker:AddItems("items/settings.json")
 Tracker:AddItems("items/entrances.json")
 Tracker:AddItems("items/shop_marks.json")
+Tracker:AddItems("items/cursed.json")
 
 -- ============================================================
 -- Locations

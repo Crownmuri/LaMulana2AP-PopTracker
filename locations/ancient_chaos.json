@@ -2,31 +2,35 @@
   {
     "name": "Ancient Chaos",
     "children": [
-      {
-        "name": "Map Chest AC",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1209,
-            "y": 2519,
-            "size": 50
-          },
-          {
-            "map": "Ancient Chaos",
-            "x": 422,
-            "y": 740
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or CanUse(Earth Spear) or CanUse(Bomb) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare) and HorizontalAttack))"
-        ]
-      },
+        {
+            "name": "Map Chest AC",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1209,
+                    "y": 2519,
+                    "size": 50
+                },
+                {
+                    "map": "Ancient Chaos",
+                    "x": 422,
+                    "y": 740
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430122",
+                    "access_rules": [
+                        "^$lm2_cursed|430122|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or CanUse(Earth Spear) or CanUse(Bomb) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare) and HorizontalAttack))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or CanUse(Earth Spear) or CanUse(Bomb) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare) and HorizontalAttack))"
+            ]
+        },
       {
         "name": "Venum",
         "map_locations": [
@@ -115,81 +119,93 @@
           "$lm2_logic|CanReach(ACWind) and (Has(Snapshot))"
         ]
       },
-      {
-        "name": "Ankh Chest AC",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1061,
-            "y": 2372,
-            "size": 50
-          },
-          {
-            "map": "Ancient Chaos",
-            "x": 111,
-            "y": 424
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ACTablet) and (IsDead(Ki sikil lil la ke))"
-        ]
-      },
-      {
-        "name": "Crystal Skull Chest AC",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1150,
-            "y": 2456,
-            "size": 50
-          },
-          {
-            "map": "Ancient Chaos",
-            "x": 345,
-            "y": 651
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ACTablet) and ((CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit)) or (Glitch(Costume Clip) and HorizontalAttack))"
-        ]
-      },
-      {
-        "name": "Destiny Tablet Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1435,
-            "y": 2255,
-            "size": 50
-          },
-          {
-            "map": "Ancient Chaos",
-            "x": 873,
-            "y": 176
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(ACMain) and (IsDead(Anzu))"
-        ]
-      },
+        {
+            "name": "Ankh Chest AC",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1061,
+                    "y": 2372,
+                    "size": 50
+                },
+                {
+                    "map": "Ancient Chaos",
+                    "x": 111,
+                    "y": 424
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430137",
+                    "access_rules": [
+                        "^$lm2_cursed|430137|CanReach(ACTablet) and (IsDead(Ki sikil lil la ke))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ACTablet) and (IsDead(Ki sikil lil la ke))"
+            ]
+        },
+        {
+            "name": "Crystal Skull Chest AC",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1150,
+                    "y": 2456,
+                    "size": 50
+                },
+                {
+                    "map": "Ancient Chaos",
+                    "x": 345,
+                    "y": 651
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430148",
+                    "access_rules": [
+                        "^$lm2_cursed|430148|CanReach(ACTablet) and ((CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit)) or (Glitch(Costume Clip) and HorizontalAttack))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ACTablet) and ((CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit)) or (Glitch(Costume Clip) and HorizontalAttack))"
+            ]
+        },
+        {
+            "name": "Destiny Tablet Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1435,
+                    "y": 2255,
+                    "size": 50
+                },
+                {
+                    "map": "Ancient Chaos",
+                    "x": 873,
+                    "y": 176
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430049",
+                    "access_rules": [
+                        "^$lm2_cursed|430049|CanReach(ACMain) and (IsDead(Anzu))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(ACMain) and (IsDead(Anzu))"
+            ]
+        },
       {
         "name": "Anu",
         "map_locations": [
@@ -216,13 +232,14 @@
               "$lm2_logic|HasAnkhFor(Anu) and (Has(Gloves) and IsDead(Ki sikil lil la ke) and (((Has(Chain Whip) or Has(Rapier) or Has(Axe) or CanUse(Earth Spear) or (CanUse(Shuriken) and Has(Ring))) and OrbCount(5)) or ((Has(Flail Whip) or (CanUse(Flare) and (Has(Feather) or Has(Ring)))) and OrbCount(4)) or (CanUse(Pistol) and OrbCount(3))))"
             ]
           },
-          {
-            "name": "Scriptures Chest",
-            "item_count": 1,
-            "access_rules": [
-              "$lm2_logic|CanReach(ACMain) and (IsDead(Anu) and HorizontalAttack)"
-            ]
-          }
+            {
+                "name": "Scriptures Chest",
+                "item_count": 1,
+                "hosted_item": "cursed_430042",
+                "access_rules": [
+                    "^$lm2_cursed|430042|CanReach(ACMain) and (IsDead(Anu) and HorizontalAttack)"
+                ]
+            }
         ],
         "access_rules": [
           "$lm2_logic|CanReach(ACMain)"

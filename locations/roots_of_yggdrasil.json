@@ -2,56 +2,64 @@
   {
     "name": "Roots of Yggdrasil",
     "children": [
-      {
-        "name": "Map Chest RoY",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1962,
-            "y": 171,
-            "size": 50
-          },
-          {
-            "map": "Roots of Yggdrasil",
-            "x": 1223,
-            "y": 357
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
-        ]
-      },
-      {
-        "name": "Ankh Chest RoY",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1535,
-            "y": 171,
-            "size": 50
-          },
-          {
-            "map": "Roots of Yggdrasil",
-            "x": 277,
-            "y": 381
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(RoY) and (Has(Feather) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Earth Spear) or CanUse(Pistol) or (CanUse(Flare) and HorizontalAttack) or Has(Claydoll Suit) or CanStopTime or (Has(Gale Fibula) and Has(Grapple Claw) and HorizontalAttack))"
-        ]
-      },
+        {
+            "name": "Map Chest RoY",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1962,
+                    "y": 171,
+                    "size": 50
+                },
+                {
+                    "map": "Roots of Yggdrasil",
+                    "x": 1223,
+                    "y": 357
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430111",
+                    "access_rules": [
+                        "^$lm2_cursed|430111|CanReach(RoY) and (HorizontalAttack)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Ankh Chest RoY",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1535,
+                    "y": 171,
+                    "size": 50
+                },
+                {
+                    "map": "Roots of Yggdrasil",
+                    "x": 277,
+                    "y": 381
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430132",
+                    "access_rules": [
+                        "^$lm2_cursed|430132|CanReach(RoY) and (Has(Feather) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Earth Spear) or CanUse(Pistol) or (CanUse(Flare) and HorizontalAttack) or Has(Claydoll Suit) or CanStopTime or (Has(Gale Fibula) and Has(Grapple Claw) and HorizontalAttack))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(RoY) and (Has(Feather) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Earth Spear) or CanUse(Pistol) or (CanUse(Flare) and HorizontalAttack) or Has(Claydoll Suit) or CanStopTime or (Has(Gale Fibula) and Has(Grapple Claw) and HorizontalAttack))"
+            ]
+        },
       {
         "name": "Fafnir",
         "map_locations": [
@@ -69,21 +77,22 @@
           }
         ],
         "sections": [
-          {
-            "name": "Guardian",
-            "item_count": 1,
-            "hosted_item": "boss_fafnir",
-            "access_rules": [
-              "$lm2_logic|HasAnkhFor(Fafnir) and (MeleeAttack or Glitch(Costume Clip))"
-            ]
-          },
-          {
-            "name": "Crystal Skull Chest RoY",
-            "item_count": 1,
-            "access_rules": [
-              "$lm2_logic|CanReach(RoY) and (IsDead(Fafnir) and HorizontalAttack)"
-            ]
-          }
+            {
+                "name": "Guardian",
+                "item_count": 1,
+                "hosted_item": "boss_fafnir",
+                "access_rules": [
+                    "$lm2_logic|HasAnkhFor(Fafnir) and (MeleeAttack or Glitch(Costume Clip))"
+                ]
+            },
+            {
+                "name": "Crystal Skull Chest RoY",
+                "item_count": 1,
+                "hosted_item": "cursed_430140",
+                "access_rules": [
+                    "^$lm2_cursed|430140|CanReach(RoY) and (IsDead(Fafnir) and HorizontalAttack)"
+                ]
+            }
         ],
         "access_rules": [
           "$lm2_logic|CanReach(RoY)"
@@ -206,56 +215,64 @@
           "$lm2_logic|CanReach(RoY) and (MeleeAttack and (CanUse(Flare) or CanUse(Pistol) or (OrbCount(1) and (CanUse(Shuriken) or Has(Claydoll Suit) or (CanUse(Chakram) and Has(Ring))))))"
         ]
       },
-      {
-        "name": "Sacred Orb Chest RoY",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1962,
-            "y": 236,
-            "size": 50
-          },
-          {
-            "map": "Roots of Yggdrasil",
-            "x": 1179,
-            "y": 443
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(RoYMiddle)"
-        ]
-      },
-      {
-        "name": "Pyramid Crystal Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1962,
-            "y": 371,
-            "size": 50
-          },
-          {
-            "map": "Roots of Yggdrasil",
-            "x": 1227,
-            "y": 762
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(RoYBottom) and (Has(Life Sigil) and (Has(Knife) or (Has(Mjolnir) and MeleeAttack) or (CanUse(Earth Spear) and Has(Ring) and MeleeAttack) or (Has(Spaulder) and (Has(Leather Whip) or Has(Rapier) or Has(Katana))) or (Has(Gauntlet) and Has(Leather Whip))))"
-        ]
-      },
+        {
+            "name": "Sacred Orb Chest RoY",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1962,
+                    "y": 236,
+                    "size": 50
+                },
+                {
+                    "map": "Roots of Yggdrasil",
+                    "x": 1179,
+                    "y": 443
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430102",
+                    "access_rules": [
+                        "^$lm2_cursed|430102|CanReach(RoYMiddle)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(RoYMiddle)"
+            ]
+        },
+        {
+            "name": "Pyramid Crystal Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1962,
+                    "y": 371,
+                    "size": 50
+                },
+                {
+                    "map": "Roots of Yggdrasil",
+                    "x": 1227,
+                    "y": 762
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430007",
+                    "access_rules": [
+                        "^$lm2_cursed|430007|CanReach(RoYBottom) and (Has(Life Sigil) and (Has(Knife) or (Has(Mjolnir) and MeleeAttack) or (CanUse(Earth Spear) and Has(Ring) and MeleeAttack) or (Has(Spaulder) and (Has(Leather Whip) or Has(Rapier) or Has(Katana))) or (Has(Gauntlet) and Has(Leather Whip))))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(RoYBottom) and (Has(Life Sigil) and (Has(Knife) or (Has(Mjolnir) and MeleeAttack) or (CanUse(Earth Spear) and Has(Ring) and MeleeAttack) or (Has(Spaulder) and (Has(Leather Whip) or Has(Rapier) or Has(Katana))) or (Has(Gauntlet) and Has(Leather Whip))))"
+            ]
+        },
       {
         "name": "Korobock",
         "map_locations": [

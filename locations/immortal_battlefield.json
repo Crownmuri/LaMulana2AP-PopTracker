@@ -65,31 +65,35 @@
                 "$lm2_logic|CanReach(IBTop) and (CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops) or Has(Claydoll Suit) or (CanUse(Flare) and (Has(Anchor) or Has(Fish Suit))) or ((CanUse(Shuriken) or CanUse(Chakram)) and Has(Scalesphere)) or (Has(Axe) and (Has(Scalesphere) or (OrbCount(1) and Has(Anchor)))) or (Has(Leather Whip) and Has(Anchor) and (Has(Scalesphere) or OrbCount(2))) or ((Has(Chain Whip) or Has(Katana)) and Has(Anchor) and (Has(Scalesphere) or OrbCount(1))))"
             ]
         },
-      {
-        "name": "Gale Fibula Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1403,
-            "y": 840,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 268,
-            "y": 206
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBTopLeft) and ((CanUse(Earth Spear) or CanUse(Flare) or (CanUse(Bomb) and Has(Ring))) and Has(Gloves))"
-        ]
-      },
+        {
+            "name": "Gale Fibula Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1403,
+                    "y": 840,
+                    "size": 50
+                },
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 268,
+                    "y": 206
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430021",
+                    "access_rules": [
+                        "^$lm2_cursed|430021|CanReach(IBTopLeft) and ((CanUse(Earth Spear) or CanUse(Flare) or (CanUse(Bomb) and Has(Ring))) and Has(Gloves))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBTopLeft) and ((CanUse(Earth Spear) or CanUse(Flare) or (CanUse(Bomb) and Has(Ring))) and Has(Gloves))"
+            ]
+        },
       {
         "name": "Earth Spear Puzzle Reward",
         "map_locations": [
@@ -140,131 +144,151 @@
           "$lm2_logic|CanReach(IBTopLeft) and (Has(Feather) or (Has(Gloves) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops))))"
         ]
       },
-      {
-        "name": "Map Chest IB",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1933,
-            "y": 828,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 1371,
-            "y": 182
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBMain)"
-        ]
-      },
-      {
-        "name": "Ice Cloak Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2039,
-            "y": 1030,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 1585,
-            "y": 585
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Rolling Shuriken) or CanUse(Flare) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit) or CanUse(Caltrops) or CanUse(Pistol)))"
-        ]
-      },
-      {
-        "name": "Totem Pole Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1632,
-            "y": 841,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 768,
-            "y": 206
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
-        ]
-      },
-      {
-        "name": "Sacred Orb Chest IB",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1951,
-            "y": 1085,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 1407,
-            "y": 696
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus)))"
-        ]
-      },
-      {
-        "name": "Lamp of Time Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1467,
-            "y": 986,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 439,
-            "y": 496
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2) and Has(Cog of Antiquity) and Has(Life Sigil))"
-        ]
-      },
+        {
+            "name": "Map Chest IB",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1933,
+                    "y": 828,
+                    "size": 50
+                },
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 1371,
+                    "y": 182
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430113",
+                    "access_rules": [
+                        "^$lm2_cursed|430113|CanReach(IBMain)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBMain)"
+            ]
+        },
+        {
+            "name": "Ice Cloak Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 2039,
+                    "y": 1030,
+                    "size": 50
+                },
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 1585,
+                    "y": 585
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430027",
+                    "access_rules": [
+                        "^$lm2_cursed|430027|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Rolling Shuriken) or CanUse(Flare) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit) or CanUse(Caltrops) or CanUse(Pistol)))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Rolling Shuriken) or CanUse(Flare) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit) or CanUse(Caltrops) or CanUse(Pistol)))"
+            ]
+        },
+        {
+            "name": "Totem Pole Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1632,
+                    "y": 841,
+                    "size": 50
+                },
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 768,
+                    "y": 206
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430032",
+                    "access_rules": [
+                        "^$lm2_cursed|430032|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
+            ]
+        },
+        {
+            "name": "Sacred Orb Chest IB",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1951,
+                    "y": 1085,
+                    "size": 50
+                },
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 1407,
+                    "y": 696
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430104",
+                    "access_rules": [
+                        "^$lm2_cursed|430104|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus)))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus)))"
+            ]
+        },
+        {
+            "name": "Lamp of Time Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1467,
+                    "y": 986,
+                    "size": 50
+                },
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 439,
+                    "y": 496
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430005",
+                    "access_rules": [
+                        "^$lm2_cursed|430005|CanReach(IBMain) and (IsDead(Ratatoskr 2) and Has(Cog of Antiquity) and Has(Life Sigil))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2) and Has(Cog of Antiquity) and Has(Life Sigil))"
+            ]
+        },
       {
         "name": "Crystal Skull IB",
         "map_locations": [
@@ -429,13 +453,14 @@
                 {
                     "name": "Mjolnir Chest",
                     "item_count": 1,
+                    "hosted_item": "cursed_430002",
                     "access_rules": [
-                        "$lm2_logic|CanReach(IBMain) and (IsDead(Jormungand))"
+                        "^$lm2_cursed|430002|CanReach(IBMain) and (IsDead(Jormungand))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBMain) and (IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight) and (((Has(Rapier) or CanUse(Rolling Shuriken)) and OrbCount(5)) or ((Has(Chain Whip) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Chakram)) and OrbCount(4)) or (CanUse(pistol) and OrbCount(2))))"
+                "$lm2_logic|CanReach(IBMain) and (IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight) and (((Has(Rapier) or CanUse(Rolling Shuriken)) and OrbCount(5)) or ((Has(Chain Whip) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Chakram)) and OrbCount(4)) or (CanUse(Pistol) and OrbCount(2))))"
             ]
         },
       {
@@ -614,56 +639,64 @@
                 "$lm2_logic|CanReach(IBLeft)"
             ]
         },
-      {
-        "name": "Battery Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2148,
-            "y": 1153,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 1800,
-            "y": 830
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
-        ]
-      },
-      {
-        "name": "Dinosaur Figure Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1883,
-            "y": 1173,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 1272,
-            "y": 878
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(IBDinosaur) and (CanUse(Flare) or CanUse(Earth Spear) or Has(Rapier))"
-        ]
-      },
+        {
+            "name": "Battery Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 2148,
+                    "y": 1153,
+                    "size": 50
+                },
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 1800,
+                    "y": 830
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430004",
+                    "access_rules": [
+                        "^$lm2_cursed|430004|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
+            ]
+        },
+        {
+            "name": "Dinosaur Figure Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1883,
+                    "y": 1173,
+                    "size": 50
+                },
+                {
+                    "map": "Immortal Battlefield",
+                    "x": 1272,
+                    "y": 878
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430020",
+                    "access_rules": [
+                        "^$lm2_cursed|430020|CanReach(IBDinosaur) and (CanUse(Flare) or CanUse(Earth Spear) or Has(Rapier))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(IBDinosaur) and (CanUse(Flare) or CanUse(Earth Spear) or Has(Rapier))"
+            ]
+        },
       {
         "name": "Moon Mantra Mural",
         "map_locations": [

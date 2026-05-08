@@ -2,31 +2,35 @@
   {
     "name": "Hall of Malice",
     "children": [
-      {
-        "name": "Map Chest HoM",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2357,
-            "y": 2373,
-            "size": 50
-          },
-          {
-            "map": "Hall of Malice",
-            "x": 721,
-            "y": 38
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(HoMTop)"
-        ]
-      },
+        {
+            "name": "Map Chest HoM",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 2357,
+                    "y": 2373,
+                    "size": 50
+                },
+                {
+                    "map": "Hall of Malice",
+                    "x": 721,
+                    "y": 38
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430123",
+                    "access_rules": [
+                        "^$lm2_cursed|430123|CanReach(HoMTop)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(HoMTop)"
+            ]
+        },
       {
         "name": "HoM Ladder",
         "sections": [
@@ -82,56 +86,65 @@
           "$lm2_logic|CanReach(HoM)"
         ]
       },
-      {
-        "name": "Nemean Fur Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2021,
-            "y": 2575,
-            "size": 50
-          },
-          {
-            "map": "Hall of Malice",
-            "x": 23,
-            "y": 424
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and Has(Feather) and CanStopTime)"
-        ]
-      },
-      {
-        "name": "Crystal Skull Chest HoM",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2701,
-            "y": 2519,
-            "size": 50
-          },
-          {
-            "map": "Hall of Malice",
-            "x": 1406,
-            "y": 331
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path) and Has(Death Sigil))"
-        ]
-      },
+        {
+            "name": "Nemean Fur Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 2021,
+                    "y": 2575,
+                    "size": 50
+                },
+                {
+                    "map": "Hall of Malice",
+                    "x": 23,
+                    "y": 424
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430028",
+                    "access_rules": [
+                        "^$lm2_cursed|430028|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and Has(Feather) and CanStopTime)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and Has(Feather) and CanStopTime)"
+            ]
+        },
+        {
+            "name": "Crystal Skull Chest HoM",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 2701,
+                    "y": 2519,
+                    "size": 50
+                },
+                {
+                    "map": "Hall of Malice",
+                    "x": 1406,
+                    "y": 331
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430150",
+
+                    "access_rules": [
+                        "^$lm2_cursed|430150|CanReach(HoMAwoken) and (IsDead(HoM Right Path) and Has(Death Sigil))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path) and Has(Death Sigil))"
+            ]
+        },
       {
         "name": "Echidna",
         "map_locations": [
@@ -150,51 +163,56 @@
             }
         ],
         "sections": [
-          {
-            "name": "Guardian",
-            "item_count": 1,
-            "hosted_item": "boss_echidna",
-            "access_rules": [
-              "$lm2_logic|HasAnkhFor(Echidna) and (IsDead(HoM Left Path) and IsDead(HoM Middle Path) and Has(Feather) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe))) or (OrbCount(6) and CanUse(Pistol))))"
-            ]
-          },
-          {
-            "name": "Giants Flute Chest",
-            "item_count": 1,
-            "access_rules": [
-              "$lm2_logic|CanReach(HoMAwoken) and (IsDead(Echidna))"
-            ]
-          }
+            {
+                "name": "Guardian",
+                "item_count": 1,
+                "hosted_item": "boss_echidna",
+                "access_rules": [
+                    "$lm2_logic|HasAnkhFor(Echidna) and (IsDead(HoM Left Path) and IsDead(HoM Middle Path) and Has(Feather) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe))) or (OrbCount(6) and CanUse(Pistol))))"
+                ]
+            },
+            {
+                "name": "Giants Flute Chest",
+                "item_count": 1,
+                "hosted_item": "cursed_430012",
+                "access_rules": [
+                    "^$lm2_cursed|430012|CanReach(HoMAwoken) and (IsDead(Echidna))"
+                ]
+            }
         ],
         "access_rules": [
           "$lm2_logic|CanReach(HoMAwoken)"
         ]
       },
-      {
-        "name": "Miracle Witch Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2593,
-            "y": 2642,
-            "size": 50
-          },
-          {
-            "map": "Hall of Malice",
-            "x": 1197,
-            "y": 581
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(HoMAwoken) and (Has(Flame Torc) and (Has(Leather Whip) or Has(Axe) or (Has(Katana) and Has(Vajra))) and IsDead(HoM Right Path))"
-        ]
-      },
+        {
+            "name": "Miracle Witch Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 2593,
+                    "y": 2642,
+                    "size": 50
+                },
+                {
+                    "map": "Hall of Malice",
+                    "x": 1197,
+                    "y": 581
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430097",
+                    "access_rules": [
+                        "^$lm2_cursed|430097|CanReach(HoMAwoken) and (Has(Flame Torc) and (Has(Leather Whip) or Has(Axe) or (Has(Katana) and Has(Vajra))) and IsDead(HoM Right Path))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(HoMAwoken) and (Has(Flame Torc) and (Has(Leather Whip) or Has(Axe) or (Has(Katana) and Has(Vajra))) and IsDead(HoM Right Path))"
+            ]
+        },
       {
         "name": "HoM Left Path",
         "sections": [

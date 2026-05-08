@@ -2,81 +2,93 @@
   {
     "name": "Eternal Prison - Doom",
     "children": [
-      {
-        "name": "Crystal Skull Chest EPD",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1531,
-            "y": 2788,
-            "size": 50
-          },
-          {
-            "map": "Eternal Prison - Doom",
-            "x": 24,
-            "y": 468
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(EPDEntrance) and (Has(Feather) and HorizontalAttack)"
-        ]
-      },
-      {
-        "name": "Map Chest EPD",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1909,
-            "y": 2880,
-            "size": 50
-          },
-          {
-            "map": "Eternal Prison - Doom",
-            "x": 824,
-            "y": 651
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(EPDMain) and (HorizontalAttack)"
-        ]
-      },
-      {
-        "name": "La Mulana 2 Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1885,
-            "y": 2799,
-            "size": 50
-          },
-          {
-            "map": "Eternal Prison - Doom",
-            "x": 777,
-            "y": 474
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(EPDMain) and (Has(Mjolnir) and Has(Power Band) and (Has(Feather) or (Has(Gale Fibula) and Has(Snow Shoes))))"
-        ]
-      },
+        {
+            "name": "Crystal Skull Chest EPD",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1531,
+                    "y": 2788,
+                    "size": 50
+                },
+                {
+                    "map": "Eternal Prison - Doom",
+                    "x": 24,
+                    "y": 468
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430151",
+                    "access_rules": [
+                        "^$lm2_cursed|430151|CanReach(EPDEntrance) and (Has(Feather) and HorizontalAttack)"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(EPDEntrance) and (Has(Feather) and HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Map Chest EPD",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1909,
+                    "y": 2880,
+                    "size": 50
+                },
+                {
+                    "map": "Eternal Prison - Doom",
+                    "x": 824,
+                    "y": 651
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430125",
+                    "access_rules": [
+                        "^$lm2_cursed|430125|CanReach(EPDMain) and (HorizontalAttack)"
+                    ]
+                }                
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(EPDMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "La Mulana 2 Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1885,
+                    "y": 2799,
+                    "size": 50
+                },
+                {
+                    "map": "Eternal Prison - Doom",
+                    "x": 777,
+                    "y": 474
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430100",
+                    "access_rules": [
+                        "^$lm2_cursed|430100|CanReach(EPDMain) and (Has(Mjolnir) and Has(Power Band) and (Has(Feather) or (Has(Gale Fibula) and Has(Snow Shoes))))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(EPDMain) and (Has(Mjolnir) and Has(Power Band) and (Has(Feather) or (Has(Gale Fibula) and Has(Snow Shoes))))"
+            ]
+        },
       {
         "name": "Osiris Item",
         "map_locations": [
@@ -123,31 +135,35 @@
                 "$lm2_logic|CanReach(EPDMain) and (IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon) and Has(Feather))"
             ]
         },
-      {
-        "name": "Spaulder Chest",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1768,
-            "y": 2642,
-            "size": 50
-          },
-          {
-            "map": "Eternal Prison - Doom",
-            "x": 547,
-            "y": 178
-          }
-        ],
-        "sections": [
-          {
-            "name": "Chest",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "$lm2_logic|CanReach(EPDTop) and (Has(Key Fairy) and (Has(Feather) or (Has(Snow Shoes) and Has(Gale Fibula))))"
-        ]
-      },
+        {
+            "name": "Spaulder Chest",
+            "map_locations": [
+                {
+                    "map": "Full Map",
+                    "x": 1768,
+                    "y": 2642,
+                    "size": 50
+                },
+                {
+                    "map": "Eternal Prison - Doom",
+                    "x": 547,
+                    "y": 178
+                }
+            ],
+            "sections": [
+                {
+                    "name": "Chest",
+                    "item_count": 1,
+                    "hosted_item": "cursed_430034",
+                    "access_rules": [
+                        "^$lm2_cursed|430034|CanReach(EPDTop) and (Has(Key Fairy) and (Has(Feather) or (Has(Snow Shoes) and Has(Gale Fibula))))"
+                    ]
+                }
+            ],
+            "access_rules": [
+                "$lm2_logic|CanReach(EPDTop) and (Has(Key Fairy) and (Has(Feather) or (Has(Snow Shoes) and Has(Gale Fibula))))"
+            ]
+        },
       {
         "name": "Hel",
         "map_locations": [
@@ -166,28 +182,29 @@
             }
         ],
         "sections": [
-          {
-            "name": "Guardian",
-            "item_count": 1,
-            "hosted_item": "boss_hel",
-            "access_rules": [
-              "$lm2_logic|HasAnkhFor(Hel) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe) or Has(Katana))) or (CanUse(Pistol) and (OrbCount(6))))"
-            ]
-          },
-          {
-            "name": "Book of the Dead Chest",
-            "item_count": 1,
-            "access_rules": [
-              "$lm2_logic|CanReach(EPDHel) and (IsDead(Hel))"
-            ]
-          },
-          {
-            "name": "Dissonance EPG",
-            "item_count": 1,
-            "access_rules": [
-              "$lm2_logic|CanReach(EPDHel) and (IsDead(Hel) and Has(Progressive Beherit))"
-            ]
-          }
+            {
+                "name": "Guardian",
+                "item_count": 1,
+                "hosted_item": "boss_hel",
+                "access_rules": [
+                    "$lm2_logic|HasAnkhFor(Hel) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe) or Has(Katana))) or (CanUse(Pistol) and (OrbCount(6))))"
+                ]
+            },
+            {
+                "name": "Dissonance EPG",
+                "item_count": 1,
+                "access_rules": [
+                    "$lm2_logic|CanReach(EPDHel) and (IsDead(Hel) and Has(Progressive Beherit))"
+                ]
+            },
+            {
+                "name": "Book of the Dead Chest",
+                "item_count": 1,
+                "hosted_item": "cursed_430047",
+                "access_rules": [
+                    "^$lm2_cursed|430047|CanReach(EPDHel) and (IsDead(Hel))"
+                ]
+            }
         ],
         "access_rules": [
           "$lm2_logic|CanReach(EPDHel)"

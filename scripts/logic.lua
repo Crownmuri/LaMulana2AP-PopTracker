@@ -4,10 +4,12 @@
 print("LM2 Logic: script loading...")
 
 -- ============================================================
--- Accessibility constants (matching PopTracker/ALTTP)
+-- Accessibility constants
 -- ============================================================
-ACCESS_NONE = 0
-ACCESS_NORMAL = 6
+ACCESS_RED = AccessibilityLevel.None
+ACCESS_BLUE = AccessibilityLevel.Inspect
+ACCESS_YELLOW = AccessibilityLevel.SequenceBreak
+ACCESS_GREEN = AccessibilityLevel.Normal
 
 -- ============================================================
 -- Core helpers
@@ -239,6 +241,22 @@ function Glitch(name)
 end
 function Dissonance(n) return count("dissonance") >= n or count("beherit") >= (n+1) end
 function NibiruSkullCheck() return SkullCount(RequiredSkulls()) end
+local function IsCursed(code)
+    local obj = Tracker:FindObjectForCode(code)
+    if not obj then
+        return false
+    end
+
+    if obj.Type == "progressive" or obj.Type == "progressive_toggle" then
+        return obj.CurrentStage > 0
+    end
+
+    return obj.Active == true
+end
+
+function Cursed(id)
+    return IsCursed("cursed_" .. tostring(id))
+end
 
 -- ============================================================
 -- Starting Area Support
@@ -757,6 +775,7 @@ LOGIC_FUNCS = {
     Setting=Setting, Glitch=Glitch, Dissonance=Dissonance, Start=Start,
     NotVoDStart=NotVoDStart, HasAnkhFor=HasAnkhFor,
     NibiruSkullCheck=NibiruSkullCheck,
+    Cursed=Cursed,
 }
 
 -- ============================================================
@@ -769,20 +788,36 @@ end)
 
 function lm2_logic(expression)
     -- Reachability cache is invalidated by the "invalidate_reach_cache" watch
-    -- when items change, so it's safe to reuse across rule evals.
+    -- when items/entrances change, so it's safe to reuse across rule evals.
 
     local ok, result = pcall(function()
         local tokens = tokenize(expression)
-        if #tokens == 0 then return ACCESS_NONE end
+        if #tokens == 0 then return ACCESS_RED end
         local val = parse_expr(tokens, 1)
-        if val then return ACCESS_NORMAL else return ACCESS_NONE end
+        if val then return ACCESS_GREEN else return ACCESS_RED end
     end)
     if ok then
         return result
     else
         print("LM2 Logic error: " .. tostring(result) .. " in: " .. expression)
-        return ACCESS_NONE
+        return ACCESS_RED
     end
+end
+
+function lm2_cursed(id, reachability)
+    if not eval_logic_bool(reachability) then
+        return ACCESS_RED
+    end
+
+    if not Cursed(id) then
+        return ACCESS_GREEN
+    end
+
+    if Has("Mulana Talisman") then
+        return ACCESS_GREEN
+    end
+
+    return ACCESS_YELLOW
 end
 
 print("LM2 Logic: loaded with flood-fill CanReach + starting area + auto-complete!")

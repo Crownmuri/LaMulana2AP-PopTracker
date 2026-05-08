@@ -20,7 +20,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430117",
+                        "access_rules": [
+                            "^$lm2_cursed|430117|CanReach(GotD) and (HorizontalAttack)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -45,7 +49,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430079",
+                        "access_rules": [
+                            "^$lm2_cursed|430079|CanReach(GotD) and (Has(Gloves))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -70,7 +78,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430023",
+                        "access_rules": [
+                            "^$lm2_cursed|430023|CanReach(GotD) and (HorizontalAttack)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -95,7 +107,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430108",
+                        "access_rules": [
+                            "^$lm2_cursed|430108|CanReach(GotD)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -120,7 +136,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430030",
+                        "access_rules": [
+                            "^$lm2_cursed|430030|CanReach(GotD) and (HorizontalAttack and CanReach(DF Main) and Has(Gloves) and CanReach(Annwfn Right) and IsDead(Ixtab) and Has(Hand Scanner))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -145,7 +165,11 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430145",
+                        "access_rules": [
+                            "^$lm2_cursed|430145|CanReach(GotD) and (MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or (CanUse(Flare) and HorizontalAttack))"
+                        ]
                     }
                 ],
                 "access_rules": [
