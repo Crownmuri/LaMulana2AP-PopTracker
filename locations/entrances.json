@@ -1208,7 +1208,8 @@
                         "map": "Full Map",
                         "x": 1733,
                         "y": 975,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1240,7 +1241,8 @@
                         "map": "Full Map",
                         "x": 2437,
                         "y": 2510,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1272,7 +1274,8 @@
                         "map": "Full Map",
                         "x": 2857,
                         "y": 1402,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1304,7 +1307,8 @@
                         "map": "Full Map",
                         "x": 2134,
                         "y": 1365,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1336,7 +1340,8 @@
                         "map": "Full Map",
                         "x": 1060,
                         "y": 1154,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1368,7 +1373,8 @@
                         "map": "Full Map",
                         "x": 1463,
                         "y": 1201,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1400,7 +1406,8 @@
                         "map": "Full Map",
                         "x": 2347,
                         "y": 425,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1425,6 +1432,7 @@
                     {
                         "name": "Required Souls",
                         "hosted_item": "cost_er_roots_of_yggdrasil_bottom_soul_gate__d_6"
+
                     }
                 ],
                 "map_locations": [
@@ -1432,7 +1440,8 @@
                         "map": "Full Map",
                         "x": 1809,
                         "y": 371,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1464,7 +1473,8 @@
                         "map": "Full Map",
                         "x": 1310,
                         "y": 2172,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1496,7 +1506,8 @@
                         "map": "Full Map",
                         "x": 861,
                         "y": 1189,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1528,7 +1539,8 @@
                         "map": "Full Map",
                         "x": 2184,
                         "y": 853,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1560,7 +1572,8 @@
                         "map": "Full Map",
                         "x": 2457,
                         "y": 719,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1592,7 +1605,8 @@
                         "map": "Full Map",
                         "x": 1263,
                         "y": 627,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1624,7 +1638,8 @@
                         "map": "Full Map",
                         "x": 1485,
                         "y": 627,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1656,7 +1671,8 @@
                         "map": "Full Map",
                         "x": 1291,
                         "y": 426,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1688,7 +1704,8 @@
                         "map": "Full Map",
                         "x": 2088,
                         "y": 1702,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1720,7 +1737,8 @@
                         "map": "Full Map",
                         "x": 1809,
                         "y": 1603,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
@@ -1752,12 +1770,13 @@
                         "map": "Full Map",
                         "x": 2184,
                         "y": 2844,
-                        "size": 35,
+                        "size": 30,
+                        "border_thickness": 12,
                         "shape": "trapezoid"
                     }
                 ],
                 "access_rules": [
-                    "$^lm2_soulgate|er_eternal_prison_gloom_soul_gate__d_2|CanReach(EPG)"
+                    "^$lm2_soulgate|er_eternal_prison_gloom_soul_gate__d_2|CanReach(EPG)"
                 ],
                 "children": [
                     {

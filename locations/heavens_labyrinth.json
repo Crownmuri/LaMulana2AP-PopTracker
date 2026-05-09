@@ -22,6 +22,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430119",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430119|CanReach(HL) and (HorizontalAttack)"
                         ]
@@ -51,6 +52,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430149",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430149|CanReach(HL) and ((Has(Grapple Claw) or Glitch(Costume Clip)) and Has(Feather))"
                         ]
@@ -122,6 +124,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430110",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430110|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Glasya Labolas))"
                         ]
@@ -151,6 +154,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430026",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430026|CanReach(HLSpun) and (IsDead(Griffin))"
                         ]
@@ -339,6 +343,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430013",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430013|CanReach(HLCog) and (Has(Ancient Battery) and CanWarp and HorizontalAttack)"
                         ]

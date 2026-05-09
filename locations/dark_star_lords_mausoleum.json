@@ -22,6 +22,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430041",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430041|CanReach(DSLMMain) and (Has(Feather) or ((IsDead(Angra Mainyu) or (Glitch(Costume Clip) and CanReach(DSLMTop))) and HorizontalAttack))"
                     ]
@@ -51,6 +52,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430136",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430136|CanReach(DSLMMain) and (Has(Grapple Claw))"
                     ]
@@ -80,6 +82,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430121",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430121|CanReach(DSLMMain) and (Has(Birth Sigil))"
                     ]
@@ -126,6 +129,7 @@
                 "name": "Crucifix Chest",
                 "item_count": 1,
                 "hosted_item": "cursed_430036",
+                "clear_as_group": false,
                 "access_rules": [
                     "^$lm2_cursed|430036|CanReach(DSLMMain) and (IsDead(Aten Ra) and HorizontalAttack)"
                 ]
@@ -155,6 +159,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430038",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430038|CanReach(DSLMMain) and (CanReach(AC Tablet) and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
                     ]
@@ -290,6 +295,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430147",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430147|CanReach(DSLMTop) and (SkullCount(1) and (Has(Feather) or CanWarp or (CanReach(DSLM Main) and CanUse(Bomb))))"
                     ]
@@ -319,6 +325,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430099",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430099|CanReach(DSLMTop) and (CanUse(Bomb) and (Has(Feather) or CanWarp or CanReach(DSLM Main)))"
                     ]
@@ -348,6 +355,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430009",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430009|CanReach(DSLMTop) and (IsDead(Ammit) and HorizontalAttack)"
                     ]

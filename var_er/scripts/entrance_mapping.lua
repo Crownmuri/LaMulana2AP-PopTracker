@@ -89,6 +89,42 @@ ENTRANCE_SELECTED = nil
 -- which sees the (also-restored) pairing and treats it as an unpair click.
 ER_SUPPRESS_FRAMES = 0
 
+-- --- Helper: Sync Soul Gate Costs ---
+function SyncSoulGateCosts(codeA, codeB)
+    local costA = Tracker:FindObjectForCode("cost_" .. codeA)
+    local costB = Tracker:FindObjectForCode("cost_" .. codeB)
+
+    if costA and costB then
+        -- Match them. If one is set, the other adopts it.
+        if costA.CurrentStage > 0 then
+            costB.CurrentStage = costA.CurrentStage
+        elseif costB.CurrentStage > 0 then
+            costA.CurrentStage = costB.CurrentStage
+        end
+    end
+end
+
+-- --- Real-time Cost Sync ---
+function OnCostChanged(code)
+    -- Get the entrance code by stripping "cost_"
+    local gate_code = code:gsub("cost_", "")
+    
+    -- Find the partner in our pairing table
+    local partner_code = ER_PAIRINGS[gate_code]
+    
+    -- If no partner is paired, do nothing
+    if not partner_code then return end
+
+    local my_cost = Tracker:FindObjectForCode(code)
+    local partner_cost = Tracker:FindObjectForCode("cost_" .. partner_code)
+    
+    -- Only update if the partner actually exists and has a different value
+    -- (The check prevents an infinite loop between the two paired gates)
+    if my_cost and partner_cost and partner_cost.CurrentStage ~= my_cost.CurrentStage then
+        partner_cost.CurrentStage = my_cost.CurrentStage
+    end
+end
+
 function ClearTargetOverlay(code)
     local target = Tracker:FindObjectForCode("target_" .. code)
     if target then
@@ -123,23 +159,16 @@ function UnlinkEntrance(code)
 
     ER_PAIRINGS[code] = nil
     ER_PAIRINGS[paired] = nil
-
-    print("Unlinked: " .. (ER_ENTRANCE_NAMES[code] or code) .. " <-> " .. (ER_ENTRANCE_NAMES[paired] or paired))
 end
 
 function EntranceClick(code)
     if ER_SUPPRESS_FRAMES > 0 then return end
-
     local obj = Tracker:FindObjectForCode(code)
-    if not obj then
-        print("EntranceClick: could not find object for " .. code)
-        return
-    end
+    if not obj then return end
 
     -- 1. If clicking the same one again, deselect
     if ENTRANCE_SELECTED == code then
         ENTRANCE_SELECTED = nil
-        print("Selection Canceled")
         return
     end
 
@@ -152,7 +181,6 @@ function EntranceClick(code)
         end
         -- Otherwise select for pairing
         ENTRANCE_SELECTED = code
-        print("Source Selected: " .. (ER_ENTRANCE_NAMES[code] or code))
         return
     end
 
@@ -172,7 +200,8 @@ function EntranceClick(code)
     SetTargetOverlay(codeA, codeB)
     SetTargetOverlay(codeB, codeA)
 
-    print("Linked: " .. (ER_ENTRANCE_NAMES[codeA] or codeA) .. " <-> " .. (ER_ENTRANCE_NAMES[codeB] or codeB))
+    -- Sync the costs immediately on pairing
+    SyncSoulGateCosts(codeA, codeB)
 
     -- Reset selection
     ENTRANCE_SELECTED = nil
@@ -189,6 +218,21 @@ end
 
 InitEntranceWatchers()
 
+-- --- Automatic Watcher Registration ---
+-- This loop runs once when the script loads and sets up listeners for all Soul Gates
+function InitSoulGateWatchers()
+    for code, _ in pairs(ER_ENTRANCE_NAMES) do
+        local cost_code = "cost_" .. code
+        -- Only add a watch if the item actually exists in the tracker
+        if Tracker:FindObjectForCode(cost_code) then
+            ScriptHost:AddWatchForCode("sync_watch_" .. cost_code, cost_code, OnCostChanged)
+        end
+    end
+end
+
+-- Call the initialization
+InitSoulGateWatchers()
+
 -- ============================================================
 -- Persistence: save/restore ER_PAIRINGS across save/load cycles.
 -- PopTracker only persists standard item state (Active, stages, counts),
@@ -199,12 +243,10 @@ InitEntranceWatchers()
 -- on launch and manual Import) doesn't expose a "restore complete" callback,
 -- so we hold the watcher off for a window of frames and decay one per frame.
 local SUPPRESS_RESTORE_FRAMES = 30
-
 local function SuppressClicks(frames)
     if frames > ER_SUPPRESS_FRAMES then ER_SUPPRESS_FRAMES = frames end
 end
 
--- Initial guard for the auto-restore that runs after script load completes.
 SuppressClicks(SUPPRESS_RESTORE_FRAMES)
 
 if ScriptHost.AddOnFrameHandler then
@@ -226,6 +268,9 @@ local function ApplyPairing(a, b)
     local objB = Tracker:FindObjectForCode(b)
     if objA then objA.Active = true end
     if objB then objB.Active = true end
+
+    -- Sync costs during state restore
+    SyncSoulGateCosts(a, b)
 end
 
 local function SavePairingsFunc(self)

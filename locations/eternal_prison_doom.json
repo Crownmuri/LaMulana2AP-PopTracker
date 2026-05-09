@@ -22,6 +22,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430151",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430151|CanReach(EPDEntrance) and (Has(Feather) and HorizontalAttack)"
                     ]
@@ -51,6 +52,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430125",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430125|CanReach(EPDMain) and (HorizontalAttack)"
                     ]
@@ -80,6 +82,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430100",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430100|CanReach(EPDMain) and (Has(Mjolnir) and Has(Power Band) and (Has(Feather) or (Has(Gale Fibula) and Has(Snow Shoes))))"
                     ]
@@ -155,6 +158,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430034",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430034|CanReach(EPDTop) and (Has(Key Fairy) and (Has(Feather) or (Has(Snow Shoes) and Has(Gale Fibula))))"
                     ]
@@ -201,6 +205,7 @@
                 "name": "Book of the Dead Chest",
                 "item_count": 1,
                 "hosted_item": "cursed_430047",
+                "clear_as_group": false,
                 "access_rules": [
                     "^$lm2_cursed|430047|CanReach(EPDHel) and (IsDead(Hel))"
                 ]

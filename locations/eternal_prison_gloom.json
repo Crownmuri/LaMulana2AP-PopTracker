@@ -22,6 +22,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430124",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430124|CanReach(EPG) and (Has(Life Sigil))"
                         ]
@@ -76,6 +77,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430054",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430054|CanReach(EPG) and (Has(Mjolnir) and Has(Life Sigil) and ((Has(Death Sigil) and Has(Feather)) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp)))"
                         ]

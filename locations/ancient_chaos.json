@@ -22,6 +22,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430122",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430122|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or CanUse(Earth Spear) or CanUse(Bomb) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare) and HorizontalAttack))"
                     ]
@@ -139,6 +140,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430137",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430137|CanReach(ACTablet) and (IsDead(Ki sikil lil la ke))"
                     ]
@@ -168,6 +170,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430148",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430148|CanReach(ACTablet) and ((CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit)) or (Glitch(Costume Clip) and HorizontalAttack))"
                     ]
@@ -197,6 +200,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430049",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430049|CanReach(ACMain) and (IsDead(Anzu))"
                     ]
@@ -236,6 +240,7 @@
                 "name": "Scriptures Chest",
                 "item_count": 1,
                 "hosted_item": "cursed_430042",
+                "clear_as_group": false,
                 "access_rules": [
                     "^$lm2_cursed|430042|CanReach(ACMain) and (IsDead(Anu) and HorizontalAttack)"
                 ]

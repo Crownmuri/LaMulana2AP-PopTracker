@@ -85,6 +85,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430021",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430021|CanReach(IBTopLeft) and ((CanUse(Earth Spear) or CanUse(Flare) or (CanUse(Bomb) and Has(Ring))) and Has(Gloves))"
                     ]
@@ -164,6 +165,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430113",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430113|CanReach(IBMain)"
                     ]
@@ -193,6 +195,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430027",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430027|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Rolling Shuriken) or CanUse(Flare) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit) or CanUse(Caltrops) or CanUse(Pistol)))"
                     ]
@@ -222,6 +225,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430032",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430032|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
                     ]
@@ -251,6 +255,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430104",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430104|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus)))"
                     ]
@@ -280,6 +285,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430005",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430005|CanReach(IBMain) and (IsDead(Ratatoskr 2) and Has(Cog of Antiquity) and Has(Life Sigil))"
                     ]
@@ -454,6 +460,7 @@
                     "name": "Mjolnir Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430002",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430002|CanReach(IBMain) and (IsDead(Jormungand))"
                     ]
@@ -659,6 +666,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430004",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430004|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
                     ]
@@ -688,6 +696,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430020",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430020|CanReach(IBDinosaur) and (CanUse(Flare) or CanUse(Earth Spear) or Has(Rapier))"
                     ]

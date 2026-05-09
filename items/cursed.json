@@ -1,8 +1,9 @@
 [
     {
         "name": "Cursed: [AC A-4] There is Nothing Here",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -17,24 +18,30 @@
     },
     {
         "name": "Cursed: [AC B-5] Simultaneous Strike Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
                 "img": "images/uncursed.png",
+                "img_mods": "@disabled",
+                "disabled_img_mods": "images/uncursed.png",
                 "codes": "cursed_430148"
             },
             {
                 "img": "images/cursed.png",
+                "img_mods": "@disabled",
+                "disabled_img_mods": "images/cursed.png",
                 "codes": "cursed_430148"
             }
         ]
     },
     {
         "name": "Cursed: [AC B-6] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -49,8 +56,9 @@
     },
     {
         "name": "Cursed: [AC D-1] Anu Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -65,8 +73,9 @@
     },
     {
         "name": "Cursed: [AC D-2] Anzu Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -81,8 +90,9 @@
     },
     {
         "name": "Cursed: [ANN B-5] Submerged Chest (S2)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -97,8 +107,9 @@
     },
     {
         "name": "Cursed: [ANN C-4] Look Away Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -113,8 +124,9 @@
     },
     {
         "name": "Cursed: [ANN E-3] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -129,8 +141,9 @@
     },
     {
         "name": "Cursed: [ANN E-5] Hidden Chest & Sigil (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -145,8 +158,9 @@
     },
     {
         "name": "Cursed: [ANN F-2] Kujata Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -161,8 +175,9 @@
     },
     {
         "name": "Cursed: [DF A-4] 5 Weights Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -177,8 +192,9 @@
     },
     {
         "name": "Cursed: [DF A-4] Ankh Chest (S1)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -193,8 +209,9 @@
     },
     {
         "name": "Cursed: [DF C-2] Breakable Push Block Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -209,8 +226,9 @@
     },
     {
         "name": "Cursed: [DF D-4] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -225,8 +243,9 @@
     },
     {
         "name": "Cursed: [DF E-3] Hugin & Munin Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -241,8 +260,9 @@
     },
     {
         "name": "Cursed: [DSLM A-4] Destroy the False Tablet",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -257,8 +277,9 @@
     },
     {
         "name": "Cursed: [DSLM B-1] Ammit Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -273,8 +294,9 @@
     },
     {
         "name": "Cursed: [DSLM B-3] Use Crystal Skull Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -289,8 +311,9 @@
     },
     {
         "name": "Cursed: [DSLM B-7] Zero Weight Scale Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -305,8 +328,9 @@
     },
     {
         "name": "Cursed: [DSLM C-3] Bombable Wall Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -321,8 +345,9 @@
     },
     {
         "name": "Cursed: [DSLM C-6] Map Chest (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -337,8 +362,9 @@
     },
     {
         "name": "Cursed: [DSLM C-8] Aten-Ra Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -353,8 +379,9 @@
     },
     {
         "name": "Cursed: [DSLM E-3] Top-Right Grapple Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -369,8 +396,9 @@
     },
     {
         "name": "Cursed: [EPD A-3] Hel Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -385,8 +413,9 @@
     },
     {
         "name": "Cursed: [EPD A-4] Lava Maze Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -401,8 +430,9 @@
     },
     {
         "name": "Cursed: [EPD C-2] Spaulder Key Fairy Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -417,8 +447,9 @@
     },
     {
         "name": "Cursed: [EPD C-3] Ajisukitakahikone Reward (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -433,8 +464,9 @@
     },
     {
         "name": "Cursed: [EPD D-4] Top-Left Mjolnir Switch Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -449,8 +481,9 @@
     },
     {
         "name": "Cursed: [EPD D-5] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -465,8 +498,9 @@
     },
     {
         "name": "Cursed: [EPG E-2] Map Chest (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -481,8 +515,9 @@
     },
     {
         "name": "Cursed: [GOG B-4] Holy Grail Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -497,8 +532,9 @@
     },
     {
         "name": "Cursed: [GOG D-2] Shell Horn Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -513,8 +549,9 @@
     },
     {
         "name": "Cursed: [GOTD B-4] Mirrored Dais & Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -529,8 +566,9 @@
     },
     {
         "name": "Cursed: [GOTD B-6] Dwarves' Missing Block Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -545,8 +583,9 @@
     },
     {
         "name": "Cursed: [GOTD C-7] Laser Beams Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -561,8 +600,9 @@
     },
     {
         "name": "Cursed: [GOTD D-3] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -577,8 +617,9 @@
     },
     {
         "name": "Cursed: [GOTD E-3] Flipped Push Block Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -593,8 +634,9 @@
     },
     {
         "name": "Cursed: [GOTD F-3] Flipped Crusher Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -609,8 +651,9 @@
     },
     {
         "name": "Cursed: [HL A-2] Hidden Dais Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -625,8 +668,9 @@
     },
     {
         "name": "Cursed: [HL A-5] Battery Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -641,8 +685,9 @@
     },
     {
         "name": "Cursed: [HL C-2] Middle Top Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -657,8 +702,9 @@
     },
     {
         "name": "Cursed: [HL C-5] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -673,8 +719,9 @@
     },
     {
         "name": "Cursed: [HL E-2] Griffin Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -689,8 +736,9 @@
     },
     {
         "name": "Cursed: [HOM A-3] Time Puzzle Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -705,8 +753,9 @@
     },
     {
         "name": "Cursed: [HOM C-1] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -721,8 +770,9 @@
     },
     {
         "name": "Cursed: [HOM C-5] Echidna Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -737,8 +787,9 @@
     },
     {
         "name": "Cursed: [HOM E-5] Flame Torc Breakable Wall Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -753,8 +804,9 @@
     },
     {
         "name": "Cursed: [HOM F-3] Chest Behind Ladon (S4)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -769,8 +821,9 @@
     },
     {
         "name": "Cursed: [IB B-2] Fake Wall Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -785,8 +838,9 @@
     },
     {
         "name": "Cursed: [IB B-4] Time Altar Chest (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -801,8 +855,9 @@
     },
     {
         "name": "Cursed: [IB D-2] Top Dash Chest (S2)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -817,8 +872,9 @@
     },
     {
         "name": "Cursed: [IB E-5] Jormungand Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -833,8 +889,9 @@
     },
     {
         "name": "Cursed: [IB F-2] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -849,8 +906,9 @@
     },
     {
         "name": "Cursed: [IB F-6] Submerged Sigil Chest (S2)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -865,8 +923,9 @@
     },
     {
         "name": "Cursed: [IB G-5] Hidden Sigil Chest (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -881,8 +940,9 @@
     },
     {
         "name": "Cursed: [IB H-7] Buried Fortress Chest (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -897,8 +957,9 @@
     },
     {
         "name": "Cursed: [IB I-7] Dinosaur Figure Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -913,8 +974,9 @@
     },
     {
         "name": "Cursed: [IT A-2] Arrow Trap Chest (S2)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -929,8 +991,9 @@
     },
     {
         "name": "Cursed: [IT B-2] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -945,8 +1008,9 @@
     },
     {
         "name": "Cursed: [IT B-4] Vedfolnir Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -961,8 +1025,9 @@
     },
     {
         "name": "Cursed: [IT C-2] Surtr Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -977,8 +1042,9 @@
     },
     {
         "name": "Cursed: [IT E-1] Lower Statue Chest (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -993,8 +1059,9 @@
     },
     {
         "name": "Cursed: [IT E-4] Skull in Background Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1009,8 +1076,9 @@
     },
     {
         "name": "Cursed: [IT F-4] Sunken Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1025,8 +1093,9 @@
     },
     {
         "name": "Cursed: [IT G-2] Ratatoskr 3 Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1041,8 +1110,9 @@
     },
     {
         "name": "Cursed: [ROY B-3] Ankh Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1057,8 +1127,9 @@
     },
     {
         "name": "Cursed: [ROY E-3] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1073,8 +1144,9 @@
     },
     {
         "name": "Cursed: [ROY E-4] Sacred Orb Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1089,8 +1161,9 @@
     },
     {
         "name": "Cursed: [ROY E-6] Golden Rock Chest (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1105,8 +1178,9 @@
     },
     {
         "name": "Cursed: [ROY F-3] Fafnir Boss Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1121,8 +1195,9 @@
     },
     {
         "name": "Cursed: [SFG A-3] Top-Left Breakable Ceiling (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1137,8 +1212,9 @@
     },
     {
         "name": "Cursed: [SFG B-6] 3 Timed Weights Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1153,8 +1229,9 @@
     },
     {
         "name": "Cursed: [SFG C-2] Mimic Chest Mimic",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1169,8 +1246,9 @@
     },
     {
         "name": "Cursed: [SFG D-1] Balor Reward (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1185,8 +1263,9 @@
     },
     {
         "name": "Cursed: [SFG D-5] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1201,8 +1280,9 @@
     },
     {
         "name": "Cursed: [SFG E-3] Badhbh Cath Reward (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1217,8 +1297,9 @@
     },
     {
         "name": "Cursed: [SFG E-7] 7 Dais Chest (S1)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1233,8 +1314,9 @@
     },
     {
         "name": "Cursed: [TS A-2] Belial Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1249,8 +1331,9 @@
     },
     {
         "name": "Cursed: [TS B-4] Key Fairy Chest (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1265,8 +1348,9 @@
     },
     {
         "name": "Cursed: [TS C-6] 4 Moving Platforms Chest (S3)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1281,8 +1365,9 @@
     },
     {
         "name": "Cursed: [TS D-2] Map Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1297,8 +1382,9 @@
     },
     {
         "name": "Cursed: [TS D-5] Falling Platform Chest",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1313,8 +1399,9 @@
     },
     {
         "name": "Cursed: [TS E-6] Daji Reward",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1329,8 +1416,9 @@
     },
     {
         "name": "Cursed: [VAL A-3] Map Chest (S1)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1345,8 +1433,9 @@
     },
     {
         "name": "Cursed: [VAL B-5] Jalandhara's Treasure (S3&4)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {
@@ -1361,8 +1450,9 @@
     },
     {
         "name": "Cursed: [VAL E-2] Vritra Reward (S1)",
-        "type": "progressive_toggle",
-        "capturable": false,
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
         "initial_stage_idx": 0,
         "stages": [
             {

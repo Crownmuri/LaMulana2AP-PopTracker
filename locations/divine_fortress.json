@@ -22,6 +22,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430115",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430115|CanReach(DFRight)"
                         ]
@@ -51,6 +52,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430051",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430051|CanReach(DFRight) and (IsDead(Hugin and Munin))"
                         ]
@@ -151,6 +153,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430133",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430133|CanReach(DFMain) and (Has(Origin Sigil))"
                         ]
@@ -180,6 +183,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430106",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430106|CanReach(DFMain)"
                         ]
@@ -251,6 +255,7 @@
                         "name": "Chest",
                         "item_count": 1,
                         "hosted_item": "cursed_430091",
+                        "clear_as_group": false,
                         "access_rules": [
                             "^$lm2_cursed|430091|CanReach(DFTop)"
                         ]

@@ -22,6 +22,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430112",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430112|CanReach(AnnwfnMain)"
                     ]
@@ -51,6 +52,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430019",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430019|CanReach(AnnwfnMain)"
                     ]
@@ -80,6 +82,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430141",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430141|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
                     ]
@@ -268,6 +271,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430103",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430103|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Flare) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Pistol) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (CanUse(Caltrops) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or CanUse(Rolling Shuriken)))))"
                     ]
@@ -353,6 +357,7 @@
                     "name": "Djed Pillar Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430001",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430001|CanReach(AnnwfnRight) and (IsDead(Kujata))"
                     ]

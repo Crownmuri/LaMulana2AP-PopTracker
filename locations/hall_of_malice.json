@@ -22,6 +22,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430123",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430123|CanReach(HoMTop)"
                     ]
@@ -106,6 +107,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430028",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430028|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and Has(Feather) and CanStopTime)"
                     ]
@@ -135,6 +137,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430150",
+                    "clear_as_group": false,
 
                     "access_rules": [
                         "^$lm2_cursed|430150|CanReach(HoMAwoken) and (IsDead(HoM Right Path) and Has(Death Sigil))"
@@ -175,6 +178,7 @@
                 "name": "Giants Flute Chest",
                 "item_count": 1,
                 "hosted_item": "cursed_430012",
+                "clear_as_group": false,
                 "access_rules": [
                     "^$lm2_cursed|430012|CanReach(HoMAwoken) and (IsDead(Echidna))"
                 ]
@@ -204,6 +208,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430097",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430097|CanReach(HoMAwoken) and (Has(Flame Torc) and (Has(Leather Whip) or Has(Axe) or (Has(Katana) and Has(Vajra))) and IsDead(HoM Right Path))"
                     ]

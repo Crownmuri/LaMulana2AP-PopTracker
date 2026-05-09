@@ -10,6 +10,7 @@ ACCESS_RED = AccessibilityLevel.None
 ACCESS_BLUE = AccessibilityLevel.Inspect
 ACCESS_YELLOW = AccessibilityLevel.SequenceBreak
 ACCESS_GREEN = AccessibilityLevel.Normal
+ACCESS_CLEARED = AccessibilityLevel.Cleared
 
 -- ============================================================
 -- Core helpers
@@ -1012,7 +1013,30 @@ local function get_dynamic_exits(area_id)
     -- 1. Add static, non-shuffleable exits (intra-area movement)
     if FORWARD_EXITS[area_id] then
         for _, edge in ipairs(FORWARD_EXITS[area_id]) do
-            table.insert(exits, {edge[1], edge[2]})
+            local target_area = edge[1]
+            local edge_logic = edge[2]
+
+            -- Mirror _update_epg_logic from entrances.py
+            if target_area == "EPDHel" and ER_PAIRINGS then
+                local epg_code = "er_eternal_prison_gloom_soul_gate__d_2"
+                local vidofnir_code = "er_icefire_treetop_vidofnir_soul_gate__d_6"
+                
+                if ER_PAIRINGS[epg_code] then
+                    local is_paired_with_vidofnir = (ER_PAIRINGS[epg_code] == vidofnir_code)
+                    
+                    -- Dynamically pull the cost from the progressive toggle
+                    local sg_cost_logic = string.format("SoulGateCost(%s)", epg_code)
+                    local base_hel_logic = "IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and CanUse(Bomb) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Gloves) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"
+                    
+                    if is_paired_with_vidofnir then
+                        edge_logic = string.format("IsDead(Vidofnir) and %s and %s", sg_cost_logic, base_hel_logic)
+                    else
+                        edge_logic = string.format("%s and %s", sg_cost_logic, base_hel_logic)
+                    end
+                end
+            end
+
+            table.insert(exits, {target_area, edge_logic})
         end
     end
 
@@ -1030,6 +1054,27 @@ local function get_dynamic_exits(area_id)
                 -- ER is ON: Route to the mapped connection via ER_PAIRINGS table
                 local target_code = ER_PAIRINGS and ER_PAIRINGS[entrance.code]
                 if target_code then
+                    
+                    -- Mirror _fix_soul_gate_logic from entrances.py
+                    local extra_logic = ""
+                    if target_code == "er_eternal_prison_gloom_soul_gate__d_2" then 
+                        -- f14GateN6
+                        extra_logic = " and CanWarp"
+                    elseif target_code == "er_shrine_of_the_frost_giants_balor_soul_gate__e_1" then 
+                        -- f06GateN7
+                        extra_logic = " and Has(Feather) and Has(Claydoll Suit)"
+                    elseif target_code == "er_ancient_chaos_soul_gate__c_1" then 
+                        -- f12GateN8
+                        extra_logic = " and (CanWarp or Has(Feather))"
+                    elseif target_code == "er_hall_of_malice_soul_gate__d_3" then 
+                        -- f13GateN9
+                        extra_logic = " and False"
+                    end
+                    
+                    if extra_logic ~= "" then
+                        edge_logic = string.format("(%s)%s", edge_logic, extra_logic)
+                    end
+
                     local target_data = ER_ENTRANCE_DATA[target_code]
                     if target_data then
                         table.insert(exits, {target_data.area, edge_logic})
@@ -1043,6 +1088,7 @@ local function get_dynamic_exits(area_id)
             end
         end
     end
+    
     return exits
 end
 

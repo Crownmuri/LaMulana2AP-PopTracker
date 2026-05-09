@@ -22,6 +22,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430120",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430120|CanReach(ValhallaMain) and (Has(Origin Sigil))"
                     ]
@@ -67,6 +68,7 @@
                     "name": "Scalesphere Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430035",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430035|IsDead(Vritra) and HorizontalAttack"
                     ]
@@ -96,6 +98,7 @@
                     "name": "Chest",
                     "item_count": 1,
                     "hosted_item": "cursed_430144",
+                    "clear_as_group": false,
                     "access_rules": [
                         "^$lm2_cursed|430144|CanReach(ValhallaMain) and ((Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and Has(Death Sigil) and CanChant(Fire) and CanChant(Earth) and IsDead(Jalandhara) and HorizontalAttack)"
                     ]
