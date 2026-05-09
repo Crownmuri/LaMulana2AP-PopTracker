@@ -116,7 +116,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBTopLeft) and (Has(Gloves) or Has(Feather))"
+            "$lm2_logic|CanReach(IBTopLeft) and (Has(Gloves) or Has(Feather) or (CanReach(IBTop) and CanWarp and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops))))"
         ]
       },
       {
@@ -141,7 +141,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBTopLeft) and (Has(Feather) or (Has(Gloves) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops))))"
+          "$lm2_logic|(CanReach(IBTop) and CanWarp) or (CanReach(IBTopLeft) and (Has(Feather) or (Has(Gloves) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops)))))"
         ]
       },
         {
