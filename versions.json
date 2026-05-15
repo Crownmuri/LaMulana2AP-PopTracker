@@ -2,7 +2,7 @@
     {
         "package_version": "1.2.0",
         "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.2.0/LaMulana2AP-PopTracker.v1.2.0.zip",
-        "sha256": "33f02ac03b64372314c62b6076c5465d86bd6f9a8008f6fcbad7b0c55e9f40cc",
+        "sha256": "a6a9abc2c1d0edc463bb97a2ddb4e498952712d306eac1570789949ec59e8eea",
         "changelog": [
             "Boss and Dissonance autotracking, new reference sheets, new curse and soul gate toggles."
         ]
