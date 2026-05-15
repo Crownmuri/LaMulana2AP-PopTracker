@@ -55,7 +55,7 @@
         "name": "Starting Shop DF",
         "map_locations": [
             { "map": "Divine Fortress", "x": 639, "y": 446 },
-            { "map": "Full Map", "x": 2316, "y": 358, "size": 50 }
+            { "map": "Full Map", "x": 2441, "y": 288, "size": 50 }
         ],
         "sections": [
             { "name": "Shop Slot 1", "item_count": 1 },
@@ -81,7 +81,7 @@
         "name": "Starting Shop TS",
         "map_locations": [
             { "map": "Takamagahara Shrine", "x": 539, "y": 201 },
-            { "map": "Full Map", "x": 894, "y": 1245, "size": 50 }
+            { "map": "Full Map", "x": 396, "y": 1245, "size": 50 }
         ],
         "sections": [
             { "name": "Shop Slot 1", "item_count": 1 },
