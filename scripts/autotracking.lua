@@ -535,7 +535,7 @@ local GO_MODE_WATCH_CODES = {
     -- Key movement items
     "gloves", "claydoll_suit", "ice_cloak", "anchor",
     -- Settings
-    "setting_not_life_for_hom", "setting_start",
+    "setting_life_for_hom", "setting_start",
 }
 
 for i, watch_code in ipairs(GO_MODE_WATCH_CODES) do
@@ -834,14 +834,7 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     set_stage ("setting_logic",         tonumber(slot_data.logic_difficulty))
     set_toggle("setting_costume_clip",  slot_data.costume_clip)
     set_toggle("setting_dlc_logic",     slot_data.dlc_item_logic)
-    -- `setting_not_life_for_hom` is the inverse of the AP option:
-    -- require life sigil = 1 → Not Life for HoM = false.
-    if slot_data.life_sigil_to_awaken_hom ~= nil then
-        local obj = Tracker:FindObjectForCode("setting_not_life_for_hom")
-        if obj then
-            obj.Active = (tonumber(slot_data.life_sigil_to_awaken_hom) or 0) == 0
-        end
-    end
+    set_toggle("setting_life_for_hom", slot_data.life_sigil_to_awaken_hom)
 end)
 
 -- Shop mark watches disabled for performance.

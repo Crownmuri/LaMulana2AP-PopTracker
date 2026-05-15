@@ -227,11 +227,13 @@ function Setting(name)
         if obj then return obj.CurrentStage >= 1 end
         return false
     end
+    if name == "Not Life for HoM" then
+        return not has("setting_life_for_hom")
+    end
     local m = {
         ["AutoScan"]="setting_autoscan",
         ["CostumeClip"]="setting_costume_clip",
         ["Remove IT Statue"]="setting_remove_it_statue",
-        ["Not Life for HoM"]="setting_not_life_for_hom",
     }
     return m[name] and has(m[name]) or false
 end

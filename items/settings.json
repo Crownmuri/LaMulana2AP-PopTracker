@@ -92,7 +92,7 @@
         "name": "Life Sigil for HoM",
         "type": "toggle",
         "img": "images/Settings/LifeSigilHoM.png",
-        "codes": "setting_not_life_for_hom",
+        "codes": "setting_life_for_hom",
         "initial_active_state": true
     },
     {
