@@ -3,7 +3,7 @@
         "name": "Gate of the Dead",
         "children": [
             {
-                "name": "Map Chest GotD",
+                "name": "Map Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -33,7 +33,7 @@
                 ]
             },
             {
-                "name": "Yagoo Map Street Chest",
+                "name": "Flipped Push Block Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -63,7 +63,7 @@
                 ]
             },
             {
-                "name": "Vajra Chest",
+                "name": "Laser Beams Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -93,7 +93,7 @@
                 ]
             },
             {
-                "name": "Sacred Orb Chest GotD",
+                "name": "Mirrored Dais & Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -123,7 +123,7 @@
                 ]
             },
             {
-                "name": "Anchor Chest",
+                "name": "Dwarves' Missing Block Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -153,7 +153,7 @@
                 ]
             },
             {
-                "name": "Crystal Skull Chest GotD",
+                "name": "Flipped Crusher Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -183,7 +183,7 @@
                 ]
             },
             {
-                "name": "Katana Puzzle Reward",
+                "name": "GotD Weapon Vault",
                 "map_locations": [
                     {
                         "map": "Full Map",

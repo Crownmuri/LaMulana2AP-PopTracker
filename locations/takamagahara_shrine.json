@@ -3,11 +3,11 @@
         "name": "Takamagahara Shrine",
         "children": [
             {
-                "name": "Map Chest TS",
+                "name": "Map Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 1059,
+                        "x": 561,
                         "y": 1232,
                         "size": 50
                     },
@@ -33,11 +33,11 @@
                 ]
             },
             {
-                "name": "Sacred Orb Chest TS",
+                "name": "Falling Platform Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 1096,
+                        "x": 598,
                         "y": 1434,
                         "size": 50
                     },
@@ -67,7 +67,7 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 933,
+                        "x": 435,
                         "y": 1378,
                         "size": 50
                     },
@@ -126,11 +126,11 @@
                 ]
             },
             {
-                "name": "Ring Chest",
+                "name": "Key Fairy Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 849,
+                        "x": 351,
                         "y": 1366,
                         "size": 50
                     },
@@ -156,11 +156,11 @@
                 ]
             },
             {
-                "name": "Flare Puzzle Reward",
+                "name": "Flare Gun Weapon Vault",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 1321,
+                        "x": 845,
                         "y": 1299,
                         "size": 50
                     },
@@ -181,11 +181,11 @@
                 ]
             },
             {
-                "name": "Crystal Skull Chest TS",
+                "name": "4 Moving Platforms Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 892,
+                        "x": 394,
                         "y": 1536,
                         "size": 50
                     },
@@ -211,11 +211,11 @@
                 ]
             },
             {
-                "name": "Egg of Creation Chest",
+                "name": "Daji Reward",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 1150,
+                        "x": 652,
                         "y": 1490,
                         "size": 50
                     },
@@ -262,11 +262,11 @@
                 ]
             },
             {
-                "name": "Power Band Chest",
+                "name": "Belial Reward",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 684,
+                        "x": 186,
                         "y": 1237,
                         "size": 50
                     },

@@ -3,7 +3,7 @@
     "name": "Annwfn",
     "children": [
         {
-            "name": "Map Chest Annwfn",
+            "name": "Map Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "name": "Glove Chest",
+            "name": "Look Away Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -63,7 +63,7 @@
             ]
         },
         {
-            "name": "Crystal Skull Chest Annwfn",
+            "name": "Submerged Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -93,7 +93,7 @@
             ]
         },
       {
-        "name": "Rolling Shuriken Puzzle Reward",
+        "name": "Annwfn Weapon Vault",
         "map_locations": [
           {
             "map": "Full Map",
@@ -118,7 +118,7 @@
         ]
       },
       {
-        "name": "Research Annwfn",
+        "name": "Annwfn Research Papers",
         "map_locations": [
           {
             "map": "Full Map",
@@ -140,7 +140,8 @@
         ],
         "access_rules": [
           "$lm2_logic|CanReach(AnnwfnMain)"
-        ]
+        ],
+        "visibility_rules": [ "setting_random_research" ]
       },
       {
         "name": "Pym",
@@ -252,7 +253,7 @@
             ]
         },
         {
-            "name": "Sacred Orb Chest Annwfn",
+            "name": "Hidden Chest & Sigil",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -282,7 +283,7 @@
             ]
         },
       {
-        "name": "Silver Shield Puzzle Reward",
+        "name": "Mimir Weapon Vault",
         "map_locations": [
           {
             "map": "Full Map",
@@ -354,7 +355,7 @@
                     ]
                 },
                 {
-                    "name": "Djed Pillar Chest",
+                    "name": "Kujata Reward",
                     "item_count": 1,
                     "hosted_item": "cursed_430001",
                     "clear_as_group": false,

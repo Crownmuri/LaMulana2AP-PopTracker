@@ -3,7 +3,7 @@
     "name": "Eternal Prison - Doom",
     "children": [
         {
-            "name": "Crystal Skull Chest EPD",
+            "name": "Lava Maze Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "name": "Map Chest EPD",
+            "name": "Map Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -63,7 +63,7 @@
             ]
         },
         {
-            "name": "La Mulana 2 Chest",
+            "name": "Top-Left Mjolnir Switch Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -93,7 +93,7 @@
             ]
         },
       {
-        "name": "Osiris Item",
+        "name": "Anubis Trials",
         "map_locations": [
           {
             "map": "Full Map",
@@ -139,7 +139,7 @@
             ]
         },
         {
-            "name": "Spaulder Chest",
+            "name": "Spaulder Key Fairy Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -195,14 +195,15 @@
                 ]
             },
             {
-                "name": "Dissonance EPG",
+                "name": "Hel's Dissonance",
                 "item_count": 1,
                 "access_rules": [
                     "$lm2_logic|CanReach(EPDHel) and (IsDead(Hel) and Has(Progressive Beherit))"
-                ]
+                ],
+                "visibility_rules": [ "setting_random_dissonance" ]
             },
             {
-                "name": "Book of the Dead Chest",
+                "name": "Hel Reward",
                 "item_count": 1,
                 "hosted_item": "cursed_430047",
                 "clear_as_group": false,

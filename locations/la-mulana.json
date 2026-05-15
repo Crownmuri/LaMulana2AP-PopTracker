@@ -3,7 +3,7 @@
     "name": "La-Mulana",
     "children": [
         {
-            "name": "Xelpud Item",
+            "name": "Xelpud's Item",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -28,7 +28,7 @@
             ]
         },
         {
-            "name": "Nebur Item",
+            "name": "Nebur's Item",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -53,7 +53,7 @@
             ]
         },
         {
-            "name": "Alsedana Item",
+            "name": "Alsedana's Item (Vritra)",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -78,7 +78,7 @@
             ]
         },
         {
-            "name": "Giltoriyo Item",
+            "name": "Alsedana's Funeral (6 Guardians)",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -229,7 +229,7 @@
             ]
         },
         {
-            "name": "Sacred Orb VoD",
+            "name": "Waterfall Sacred Orb",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -388,7 +388,7 @@
             ]
         },
         {
-            "name": "Bronze Mirror Spot",
+            "name": "Hidden Item Spot",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -413,7 +413,7 @@
             ]
         },
         {
-            "name": "Dissonance MoG",
+            "name": "Sakit's Dissonance",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -435,10 +435,11 @@
             ],
             "access_rules": [
                 "$lm2_logic|CanReach(MausoleumofGiants) and (Has(Progressive Beherit) and CanChant(Sun) and PuzzleFinished(Sakit Puzzle))"
-            ]
+            ],
+            "visibility_rules": [ "setting_random_dissonance" ]
         },
         {
-            "name": "Freyas Item",
+            "name": "Freya's Item",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -479,14 +480,14 @@
             ],
             "sections": [
                 {
-                    "name": "Fobos Item",
+                    "name": "Fobos' Inspiration",
                     "item_count": 1,
                     "access_rules": [
                         "$lm2_logic|CanReach(GateofIllusion)"
                     ]
                 },
                 {
-                    "name": "Fobos Item 2",
+                    "name": "Fobos' Skull Check",
                     "item_count": 1,
                     "access_rules": [
                         "$lm2_logic|CanReach(GateofIllusion) and (SkullCount(1))"

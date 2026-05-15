@@ -3,7 +3,7 @@
     "name": "Hall of Malice",
     "children": [
         {
-            "name": "Map Chest HoM",
+            "name": "Map Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -88,7 +88,7 @@
         ]
       },
         {
-            "name": "Nemean Fur Chest",
+            "name": "Time Puzzle Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -118,7 +118,7 @@
             ]
         },
         {
-            "name": "Crystal Skull Chest HoM",
+            "name": "Chest Behind Ladon",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -175,7 +175,7 @@
                 ]
             },
             {
-                "name": "Giants Flute Chest",
+                "name": "Echidna Reward",
                 "item_count": 1,
                 "hosted_item": "cursed_430012",
                 "clear_as_group": false,
@@ -189,7 +189,7 @@
         ]
       },
         {
-            "name": "Miracle Witch Chest",
+            "name": "Flame Torc Breakable Wall Chest",
             "map_locations": [
                 {
                     "map": "Full Map",

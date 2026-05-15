@@ -3,7 +3,7 @@
     "name": "Icefire Treetop",
     "children": [
       {
-        "name": "Research IT",
+        "name": "IT Research Papers",
         "map_locations": [
           {
             "map": "Full Map",
@@ -25,7 +25,8 @@
         ],
         "access_rules": [
           "$lm2_logic|CanReach(ITEntrance) and (CanWarp or Has(Feather) or Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2) or ((Has(Feather) or Has(Gale Fibula)) and CanReach(IT Right)))"
-        ]
+        ],
+        "visibility_rules": [ "setting_random_research" ]
       },
       {
         "name": "Mino the Bomb Guy",
@@ -70,7 +71,7 @@
         ]
       },
         {
-            "name": "Grapple Claw Chest",
+            "name": "Skull in Background Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -125,7 +126,7 @@
                     ]
                 },
                 {
-                    "name": "Flame Torc Chest",
+                    "name": "Surtr Reward",
                     "item_count": 1,
                     "hosted_item": "cursed_430022",
                     "clear_as_group": false,
@@ -139,7 +140,7 @@
             ]
         },
         {
-            "name": "Map Chest IT",
+            "name": "Map Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -169,7 +170,7 @@
             ]
         },
         {
-            "name": "Ankh Chest IT",
+            "name": "Vedfolnir Reward",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -199,7 +200,7 @@
             ]
         },
         {
-            "name": "Life Sigil Chest",
+            "name": "Arrow Trap Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -292,7 +293,7 @@
             ]
         },
         {
-            "name": "Fairy Guild Pass Chest",
+            "name": "Lower Statue Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -322,7 +323,7 @@
             ]
         },
         {
-            "name": "Crystal Skull Chest IT",
+            "name": "Ratatoskr 3 Reward",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -352,7 +353,7 @@
             ]
         },
         {
-            "name": "Sacred Orb Chest IT",
+            "name": "Sunken Chest",
             "map_locations": [
                 {
                     "map": "Full Map",

@@ -3,11 +3,11 @@
         "name": "Heavens Labyrinth",
         "children": [
             {
-                "name": "Map Chest HL",
+                "name": "Map Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2602,
+                        "x": 1104,
                         "y": 1378,
                         "size": 50
                     },
@@ -33,11 +33,11 @@
                 ]
             },
             {
-                "name": "Crystal Skull Chest HL",
+                "name": "Hidden Dais Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2265,
+                        "x": 767,
                         "y": 1163,
                         "size": 50
                     },
@@ -67,7 +67,7 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2289,
+                        "x": 791,
                         "y": 1231,
                         "size": 50
                     },
@@ -105,11 +105,11 @@
                 ]
             },
             {
-                "name": "Sacred Orb Chest HL",
+                "name": "Middle Top Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2508,
+                        "x": 1010,
                         "y": 1152,
                         "size": 50
                     },
@@ -135,11 +135,11 @@
                 ]
             },
             {
-                "name": "Perfume Chest",
+                "name": "Griffin Reward",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2767,
+                        "x": 1269,
                         "y": 1165,
                         "size": 50
                     },
@@ -165,11 +165,11 @@
                 ]
             },
             {
-                "name": "Axe Puzzle Reward",
+                "name": "Heaven's Labyrinth Weapon Vault",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2421,
+                        "x": 923,
                         "y": 1097,
                         "size": 50
                     },
@@ -190,11 +190,11 @@
                 ]
             },
             {
-                "name": "Mobile Super X3 Item",
+                "name": "Heaven's Labyrinth Tent Item",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2673,
+                        "x": 1175,
                         "y": 1097,
                         "size": 50
                     },
@@ -215,11 +215,11 @@
                 ]
             },
             {
-                "name": "Dissonance HL",
+                "name": "Typhon's Dissonance",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2558,
+                        "x": 1060,
                         "y": 1302,
                         "size": 50
                     },
@@ -237,7 +237,8 @@
                 ],
                 "access_rules": [
                     "$lm2_logic|CanReach(HLSpun) and (CanWarp and IsDead(Echidna) and Has(Progressive Beherit) and Has(Hand Scanner))"
-                ]
+                ],
+                "visibility_rules": [ "setting_random_dissonance" ]
             },
             {
                 "name": "Arachne",
@@ -324,12 +325,12 @@
                 ]
             },
             {
-                "name": "Cog of Antiquity Chest",
+                "name": "Battery Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2308,
-                        "y": 1382,
+                        "x": 810,
+                        "y": 1400,
                         "size": 50
                     },
                     {

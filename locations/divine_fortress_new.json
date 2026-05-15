@@ -1,0 +1,281 @@
+[
+    {
+        "name": "Divine Fortress",
+        "children": [
+            {
+                "name": "Map Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2534,
+                        "y": 280,
+                        "size": 40,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 825,
+                        "y": 427
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430115",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430115|CanReach(DFRight)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFRight)"
+                ]
+            },
+            {
+                "name": "Hugin & Munin Reward",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2683,
+                        "y": 234,
+                        "size": 40,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 1123,
+                        "y": 292
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430051",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430051|CanReach(DFRight) and (IsDead(Hugin and Munin))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFRight) and (IsDead(Hugin and Munin))"
+                ]
+            },
+            {
+                "name": "Frey's Ship",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2564,
+                        "y": 229,
+                        "size": 40,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 888,
+                        "y": 332
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFRight) and (Has(Hand Scanner) and CanReach(Annwfn Right) and IsDead(Ixtab) and (Has(Origin Sigil) or Has(Feather) or Has(Grapple Claw)))"
+                ]
+            },
+            {
+                "name": "Heaven Mantra Mural",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2524,
+                        "y": 351,
+                        "size": 40,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 807,
+                        "y": 569
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Mural",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFRight) and (Has(Snapshot))"
+                ]
+            },
+            {
+                "name": "Hugin and Munin",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 1123,
+                        "y": 343,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_hugin_and_munin"
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFRight) and (CanWarp or Has(Origin Sigil))"
+                ]
+            },
+            {
+                "name": "Ankh Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2177,
+                        "y": 280,
+                        "size": 40,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 113,
+                        "y": 427
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430133",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430133|CanReach(DFMain) and (Has(Origin Sigil))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFMain) and (Has(Origin Sigil))"
+                ]
+            },
+            {
+                "name": "5 Weights Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2298,
+                        "y": 226,
+                        "size": 40,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 357,
+                        "y": 316
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430106",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430106|CanReach(DFMain)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFMain)"
+                ]
+            },
+            {
+                "name": "Shuhoka",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2283,
+                        "y": 378,
+                        "size": 40,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 322,
+                        "y": 630
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFMain)"
+                ]
+            },
+            {
+                "name": "Breakable Push Block Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2461,
+                        "y": 169,
+                        "size": 40,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 682,
+                        "y": 205
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430091",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430091|CanReach(DFTop)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "$lm2_logic|CanReach(DFTop)"
+                ]
+            }
+        ],
+        "access_rules": [
+            "$lm2_logic|CanReach(DFMain) or CanReach(DFRight) or CanReach(DFTop)"
+        ]
+    }
+]

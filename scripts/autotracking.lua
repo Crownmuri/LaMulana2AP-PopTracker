@@ -348,6 +348,50 @@ Archipelago:AddClearHandler("lm2_guardian_kill_subscribe", function()
 end)
 
 -- ============================================================
+-- Natural Dissonance Count (random_dissonance OFF only)
+-- When the seed leaves dissonance vanilla, the player's Beherit
+-- absorbs dissonances naturally and the in-game flag[2,3] is
+-- the cumulative count. The C# mod mirrors that value to a
+-- slot-scoped datastorage key so the Beherit consumable
+-- counter on the tracker stays in sync.
+--
+-- Key format: lamulana2_dissonance_<team>_<slot> = N
+-- ============================================================
+
+local _dissonance_random_mode = true  -- default-deny: only apply on random_dissonance==false seeds
+
+local function buildDissonanceKey()
+    local team = Archipelago.TeamNumber
+    local player = Archipelago.PlayerNumber
+    if team == nil or player == nil then return nil end
+    return string.format("lamulana2_dissonance_%d_%d", team, player)
+end
+
+local function onDissonanceCountUpdate(key, value, old_value)
+    if _dissonance_random_mode then return end
+    local n = tonumber(value)
+    if not n or n < 0 then return end
+    local obj = Tracker:FindObjectForCode("beherit")
+    if obj then obj.AcquiredCount = n end
+end
+
+Archipelago:AddRetrievedHandler("lm2_dissonance_retrieved", onDissonanceCountUpdate)
+Archipelago:AddSetReplyHandler("lm2_dissonance_setreply", onDissonanceCountUpdate)
+
+Archipelago:AddClearHandler("lm2_dissonance_subscribe", function(slot_data)
+    -- random_dissonance ON: AP Progressive Beherit items drive the count
+    -- through onItem already. Skip the datastorage path entirely.
+    _dissonance_random_mode = (slot_data and (tonumber(slot_data.random_dissonance) or 0) ~= 0)
+    if _dissonance_random_mode then return end
+
+    local key = buildDissonanceKey()
+    if key then
+        Archipelago:SetNotify({key})
+        Archipelago:Get({key})
+    end
+end)
+
+-- ============================================================
 -- Boss Item → Hosted Section Sync
 -- PopTracker's hosted_item only fires section→item; this watch
 -- closes the loop the other way: when a boss code becomes
@@ -760,6 +804,12 @@ local function set_stage(code, stage)
     if obj then obj.CurrentStage = stage end
 end
 
+local function set_count(code, n)
+    if n == nil then return end
+    local obj = Tracker:FindObjectForCode(code)
+    if obj then obj.AcquiredCount = n end
+end
+
 local function set_toggle(code, value)
     if value == nil then return end
     local obj = Tracker:FindObjectForCode(code)
@@ -775,8 +825,10 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     set_toggle("setting_guardian_ankhs", slot_data.guardian_specific_ankhs)
     set_toggle("setting_remove_it_statue", slot_data.remove_it_statue)
     set_toggle("setting_autoscan",         slot_data.auto_scan_tablets)
-    set_stage ("setting_req_guardians",    tonumber(slot_data.required_guardians))
-    set_stage ("setting_req_skulls",       tonumber(slot_data.required_skulls))
+    set_toggle("setting_random_dissonance", slot_data.random_dissonance)
+    set_toggle("setting_random_research",   slot_data.random_research)
+    set_count ("setting_req_guardians",    tonumber(slot_data.required_guardians))
+    set_count ("setting_req_skulls",       tonumber(slot_data.required_skulls))
 
     -- Forwarded only if the seed carries these keys (not in fill_slot_data today):
     set_stage ("setting_logic",         tonumber(slot_data.logic_difficulty))

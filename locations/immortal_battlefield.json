@@ -66,7 +66,7 @@
             ]
         },
         {
-            "name": "Gale Fibula Chest",
+            "name": "Fake Wall Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -96,7 +96,7 @@
             ]
         },
       {
-        "name": "Earth Spear Puzzle Reward",
+        "name": "Top-Left Weapon Vault",
         "map_locations": [
           {
             "map": "Full Map",
@@ -121,7 +121,7 @@
         ]
       },
       {
-        "name": "Research IB Top Left",
+        "name": "IB Research - Top Left",
         "map_locations": [
           {
             "map": "Full Map",
@@ -143,10 +143,11 @@
         ],
         "access_rules": [
           "$lm2_logic|(CanReach(IBTop) and CanWarp) or (CanReach(IBTopLeft) and (Has(Feather) or (Has(Gloves) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops)))))"
-        ]
+        ],
+        "visibility_rules": [ "setting_random_research" ]
       },
         {
-            "name": "Map Chest IB",
+            "name": "Map Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -176,7 +177,7 @@
             ]
         },
         {
-            "name": "Ice Cloak Chest",
+            "name": "Hidden Sigil Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -206,7 +207,7 @@
             ]
         },
         {
-            "name": "Totem Pole Chest",
+            "name": "Top Dash Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -236,7 +237,7 @@
             ]
         },
         {
-            "name": "Sacred Orb Chest IB",
+            "name": "Submerged Sigil Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -266,7 +267,7 @@
             ]
         },
         {
-            "name": "Lamp of Time Chest",
+            "name": "Time Altar Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -296,7 +297,7 @@
             ]
         },
       {
-        "name": "Crystal Skull IB",
+        "name": "Ratatoskr 2 Reward",
         "map_locations": [
           {
             "map": "Full Map",
@@ -321,7 +322,7 @@
         ]
       },
       {
-        "name": "Research IB Top Right",
+        "name": "IB Research - Top Right",
         "map_locations": [
           {
             "map": "Full Map",
@@ -343,7 +344,8 @@
         ],
         "access_rules": [
           "$lm2_logic|CanReach(IBMain)"
-        ]
+        ],
+        "visibility_rules": [ "setting_random_research" ]
       },
       {
         "name": "Immortal Battlefield Tent",
@@ -362,30 +364,31 @@
         ],
         "sections": [
             {
-                "name": "Research IB Tent 1",
+                "name": "IB Research - Tent (First Time)",
                 "item_count": 1,
                 "access_rules": [
                     "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)))"
                 ]
             },
             {
-                "name": "Research IB Tent 2",
+                "name": "IB Research - Tent (7 Guardians)",
                 "item_count": 1,
                 "access_rules": [
                     "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and GuardianKills(7))"
                 ]
             },
             {
-                "name": "Research IB Tent 3",
+                "name": "IB Research - Tent (Post Heimdall)",
                 "item_count": 1,
                 "access_rules": [
                     "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and IsDead(Heimdall))"
                 ]
             }
-        ]
+        ],
+        "visibility_rules": [ "setting_random_research" ]
       },
       {
-        "name": "Mulbruk Item",
+        "name": "Mulbruk's Item (4 Guardians)",
         "map_locations": [
           {
             "map": "Full Map",
@@ -457,7 +460,7 @@
                     ]
                 },
                 {
-                    "name": "Mjolnir Chest",
+                    "name": "Jormungand Reward",
                     "item_count": 1,
                     "hosted_item": "cursed_430002",
                     "clear_as_group": false,
@@ -471,7 +474,7 @@
             ]
         },
       {
-        "name": "Chakram Puzzle Reward",
+        "name": "Pressure Plate Weapon Vault",
         "map_locations": [
           {
             "map": "Full Map",
@@ -559,7 +562,7 @@
             ]
         },
       {
-        "name": "Chain Whip Puzzle Reward",
+        "name": "Lava Weapon Vault",
         "map_locations": [
           {
             "map": "Full Map",
@@ -584,7 +587,7 @@
         ]
       },
       {
-        "name": "Research IB Pit",
+        "name": "IB Research - Pit of Time",
         "map_locations": [
           {
             "map": "Full Map",
@@ -606,7 +609,8 @@
         ],
         "access_rules": [
           "$lm2_logic|CanReach(IBBottom)"
-        ]
+        ],
+        "visibility_rules": [ "setting_random_research" ]
       },
       {
         "name": "IB Left Shortcut",
@@ -622,7 +626,7 @@
         ]
       },
         {
-            "name": "Research IB Left",
+            "name": "IB Research - Left Chamber",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -644,10 +648,11 @@
             ],
             "access_rules": [
                 "$lm2_logic|CanReach(IBLeft)"
-            ]
+            ],
+            "visibility_rules": [ "setting_random_research" ]
         },
         {
-            "name": "Battery Chest",
+            "name": "Buried Fortress Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -773,7 +778,7 @@
     "name": "Altar",
     "children": [
       {
-        "name": "Secret Treasure of Life Item",
+        "name": "Secret Treasure of Life Location",
         "map_locations": [
           {
             "map": "Full Map",

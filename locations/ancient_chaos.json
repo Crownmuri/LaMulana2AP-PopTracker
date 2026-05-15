@@ -3,7 +3,7 @@
     "name": "Ancient Chaos",
     "children": [
         {
-            "name": "Map Chest AC",
+            "name": "Map Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -121,7 +121,7 @@
         ]
       },
         {
-            "name": "Ankh Chest AC",
+            "name": "There is Nothing Here",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -151,7 +151,7 @@
             ]
         },
         {
-            "name": "Crystal Skull Chest AC",
+            "name": "Simultaneous Strike Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -181,7 +181,7 @@
             ]
         },
         {
-            "name": "Destiny Tablet Chest",
+            "name": "Anzu Reward",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -237,7 +237,7 @@
             ]
           },
             {
-                "name": "Scriptures Chest",
+                "name": "Anu Reward",
                 "item_count": 1,
                 "hosted_item": "cursed_430042",
                 "clear_as_group": false,

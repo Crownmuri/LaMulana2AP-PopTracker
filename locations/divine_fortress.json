@@ -3,12 +3,12 @@
         "name": "Divine Fortress",
         "children": [
             {
-                "name": "Map Chest DF",
+                "name": "Map Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2409,
-                        "y": 350,
+                        "x": 2534,
+                        "y": 285,
                         "size": 50
                     },
                     {
@@ -33,12 +33,12 @@
                 ]
             },
             {
-                "name": "Origin Sigil Chest",
+                "name": "Hugin & Munin Reward",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2558,
-                        "y": 299,
+                        "x": 2683,
+                        "y": 229,
                         "size": 50
                     },
                     {
@@ -63,12 +63,12 @@
                 ]
             },
             {
-                "name": "Frey Ship",
+                "name": "Frey's Ship",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2439,
-                        "y": 293,
+                        "x": 2564,
+                        "y": 223,
                         "size": 50
                     },
                     {
@@ -92,8 +92,8 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2399,
-                        "y": 419,
+                        "x": 2524,
+                        "y": 349,
                         "size": 50
                     },
                     {
@@ -134,12 +134,12 @@
                 ]
             },
             {
-                "name": "Ankh Chest DF",
+                "name": "Ankh Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2053,
-                        "y": 346,
+                        "x": 2183,
+                        "y": 276,
                         "size": 50
                     },
                     {
@@ -164,12 +164,12 @@
                 ]
             },
             {
-                "name": "Sacred Orb Chest DF",
+                "name": "5 Weights Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2174,
-                        "y": 291,
+                        "x": 2299,
+                        "y": 221,
                         "size": 50
                     },
                     {
@@ -198,8 +198,8 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2157,
-                        "y": 449,
+                        "x": 2282,
+                        "y": 374,
                         "size": 50
                     },
                     {
@@ -236,12 +236,12 @@
                 ]
             },
             {
-                "name": "Death Village Chest",
+                "name": "Breakable Push Block Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 2337,
-                        "y": 235,
+                        "x": 2462,
+                        "y": 165,
                         "size": 50
                     },
                     {

@@ -3,7 +3,7 @@
         "name": "Eternal Prison - Gloom",
         "children": [
             {
-                "name": "Map Chest EPG",
+                "name": "Map Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -33,7 +33,7 @@
                 ]
             },
             {
-                "name": "Beo Eglana Mural",
+                "name": "Beo Eg-Lana Mural",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -58,7 +58,7 @@
                 ]
             },
             {
-                "name": "Death Sigil Chest",
+                "name": "Ajisukitakahikone Reward",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -113,7 +113,7 @@
                 ]
             },
             {
-                "name": "Ankh Jewel",
+                "name": "Ratatoskr 4 Reward",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -172,7 +172,7 @@
                 ]
             },
             {
-                "name": "Bomb Puzzle Reward",
+                "name": "Key-locked Weapon Vault",
                 "map_locations": [
                     {
                         "map": "Full Map",

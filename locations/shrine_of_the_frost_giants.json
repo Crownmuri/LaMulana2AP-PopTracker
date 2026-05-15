@@ -3,7 +3,7 @@
         "name": "Shrine of the Frost Giants",
         "children": [
             {
-                "name": "Map Chest SotFG",
+                "name": "Map Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -33,7 +33,7 @@
                 ]
             },
             {
-                "name": "Pochette Key Chest",
+                "name": "Badhbh Cath Reward",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -126,7 +126,7 @@
                 ]
             },
             {
-                "name": "Birth Sigil Chest",
+                "name": "7 Dais Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -156,7 +156,7 @@
                 ]
             },
             {
-                "name": "Ankh Chest SotFG",
+                "name": "3 Timed Weights Chest",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -186,7 +186,7 @@
                 ]
             },
             {
-                "name": "Rapier Puzzle Reward",
+                "name": "Rapier Weapon Vault",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -211,7 +211,7 @@
                 ]
             },
             {
-                "name": "Sacred Orb Chest SotFG",
+                "name": "Mimic Chest Mimic",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -266,7 +266,7 @@
                 ]
             },
             {
-                "name": "Claydoll Chest",
+                "name": "Balor Reward",
                 "map_locations": [
                     {
                         "map": "Full Map",
@@ -317,7 +317,7 @@
                 ]
             },
             {
-                "name": "Gauntlet Chest",
+                "name": "Top-Left Breakable Ceiling",
                 "map_locations": [
                     {
                         "map": "Full Map",

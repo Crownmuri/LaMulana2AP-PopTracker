@@ -170,12 +170,12 @@ end
 -- Read required guardian/skull counts from settings
 function RequiredGuardians()
     local obj = Tracker:FindObjectForCode("setting_req_guardians")
-    if obj then return obj.CurrentStage end
+    if obj then return obj.AcquiredCount end
     return 5
 end
 function RequiredSkulls()
     local obj = Tracker:FindObjectForCode("setting_req_skulls")
-    if obj then return obj.CurrentStage end
+    if obj then return obj.AcquiredCount end
     return 6
 end
 

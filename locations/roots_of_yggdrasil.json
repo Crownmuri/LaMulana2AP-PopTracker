@@ -3,7 +3,7 @@
     "name": "Roots of Yggdrasil",
     "children": [
         {
-            "name": "Map Chest RoY",
+            "name": "Map Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "name": "Ankh Chest RoY",
+            "name": "Ankh Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -88,7 +88,7 @@
                 ]
             },
             {
-                "name": "Crystal Skull Chest RoY",
+                "name": "Fafnir Reward",
                 "item_count": 1,
                 "hosted_item": "cursed_430140",
                 "clear_as_group": false,
@@ -102,7 +102,7 @@
         ]
       },
       {
-        "name": "Shuriken Puzzle Reward",
+        "name": "Shuriken Weapon Vault",
         "map_locations": [
           {
             "map": "Full Map",
@@ -127,7 +127,7 @@
         ]
       },
       {
-        "name": "Knife Puzzle Reward",
+        "name": "Knife Weapon Vault",
         "map_locations": [
           {
             "map": "Full Map",
@@ -152,7 +152,7 @@
         ]
       },
       {
-        "name": "Mantra Mural",
+        "name": "Mantra Software Mural",
         "map_locations": [
           {
             "map": "Full Map",
@@ -219,7 +219,7 @@
         ]
       },
         {
-            "name": "Sacred Orb Chest RoY",
+            "name": "Sacred Orb Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -249,7 +249,7 @@
             ]
         },
         {
-            "name": "Pyramid Crystal Chest",
+            "name": "Golden Rock Chest",
             "map_locations": [
                 {
                     "map": "Full Map",

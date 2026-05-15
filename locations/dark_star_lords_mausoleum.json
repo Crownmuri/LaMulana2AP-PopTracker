@@ -3,7 +3,7 @@
     "name": "Dark Star Lords Mausoleum",
     "children": [
         {
-            "name": "Feather Chest",
+            "name": "Destroy the False Tablet",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -33,7 +33,7 @@
             ]
         },
         {
-            "name": "Ankh Chest DLM",
+            "name": "Top-Right Grapple Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -63,7 +63,7 @@
             ]
         },
         {
-            "name": "Map Chest DLM",
+            "name": "Map Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -119,14 +119,15 @@
                 ]
             },
             {
-                "name": "Dissonance DSLM",
+                "name": "Aten-Ra's Dissonance",
                 "item_count": 1,
                 "access_rules": [
                     "$lm2_logic|CanReach(DSLMMain) and (Has(Progressive Beherit) and IsDead(Aten Ra))"
-                ]
+                ],
+                "visibility_rules": [ "setting_random_dissonance" ]
             },
             {
-                "name": "Crucifix Chest",
+                "name": "Aten-Ra Reward",
                 "item_count": 1,
                 "hosted_item": "cursed_430036",
                 "clear_as_group": false,
@@ -140,7 +141,7 @@
         ]
       },
         {
-            "name": "Maats Feather Chest",
+            "name": "Zero Weight Scale Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -170,7 +171,7 @@
             ]
         },
       {
-        "name": "Research DSLM",
+        "name": "DSLM Research Papers",
         "map_locations": [
           {
             "map": "Full Map",
@@ -192,7 +193,8 @@
         ],
         "access_rules": [
           "$lm2_logic|CanReach(DSLMMain)"
-        ]
+        ],
+        "visibility_rules": [ "setting_random_research" ]
       },
       {
         "name": "Kero",
@@ -276,7 +278,7 @@
             ]
         },
         {
-            "name": "Crystal Skull Chest DLM",
+            "name": "Use Crystal Skull Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -306,7 +308,7 @@
             ]
         },
         {
-            "name": "La Mulana Chest",
+            "name": "Bombable Wall Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -336,7 +338,7 @@
             ]
         },
         {
-            "name": "Vessel Chest",
+            "name": "Ammit Reward",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -420,7 +422,7 @@
         "map_locations": [
           {
             "map": "Full Map",
-            "x": 2558,
+            "x": 2624,
             "y": 1708,
             "size": 50
           },
@@ -441,11 +443,11 @@
         ]
       },
       {
-        "name": "Dissonance Nibiru",
+        "name": "Nibiru's Dissonance",
         "map_locations": [
           {
             "map": "Full Map",
-            "x": 2558,
+            "x": 2624,
             "y": 1643,
             "size": 50
           },
@@ -463,7 +465,8 @@
         ],
         "access_rules": [
             "$lm2_logic|CanReach(Nibiru) and (Has(Progressive Beherit) and Has(Power Band) and Has(Mjolnir) and Has(Claydoll Suit) and NibiruSkullCheck())"
-        ]
+        ],
+        "visibility_rules": [ "setting_random_dissonance" ]
       }
     ],
     "access_rules": [

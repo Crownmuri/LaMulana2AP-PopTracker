@@ -70,15 +70,15 @@
         ]
     },
     {
-        "name": "Logic: Normal",
+        "name": "Difficulty",
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
         "codes": "setting_logic",
         "stages": [
-            { "img": "images/Settings/LogicNormal.png", "codes": "logic_normal",
+            { "img": "images/Settings/Difficulty1.png", "codes": "logic_normal",
               "inherit_codes": false },
-            { "img": "images/Settings/LogicHard.png", "codes": "logic_hard",
+            { "img": "images/Settings/Difficulty2.png", "codes": "logic_hard",
               "inherit_codes": false }
         ]
     },
@@ -123,138 +123,35 @@
         "initial_active_state": true
     },
     {
+        "name": "Random Dissonance",
+        "type": "toggle",
+        "img": "images/UseItems/Beherit2.png",
+        "codes": "setting_random_dissonance",
+        "initial_active_state": true
+    },
+    {
+        "name": "Random Research",
+        "type": "toggle",
+        "img": "images/Software/KosugiResearch.png",
+        "codes": "setting_random_research",
+        "initial_active_state": true
+    },
+    {
         "name": "Required Guardians",
-        "type": "progressive",
-        "loop": true,
-        "initial_stage_idx": 5,
-        "allow_disabled": false,
+        "type": "consumable",
+        "img": "images/Weapons/AnkhJewel.png",
         "codes": "setting_req_guardians",
-        "stages": [
-            {
-                "img": "images/Settings/Guard0.png",
-                "codes": "req_guardians_0",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Guard1.png",
-                "codes": "req_guardians_1",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Guard2.png",
-                "codes": "req_guardians_2",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Guard3.png",
-                "codes": "req_guardians_3",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Guard4.png",
-                "codes": "req_guardians_4",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Guard5.png",
-                "codes": "req_guardians_5",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Guard6.png",
-                "codes": "req_guardians_6",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Guard7.png",
-                "codes": "req_guardians_7",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Guard8.png",
-                "codes": "req_guardians_8",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Guard9.png",
-                "codes": "req_guardians_9",
-                "inherit_codes": false
-            }
-        ]
+        "max_quantity": 9,
+        "initial_quantity": 5,
+        "increment": 1
     },
     {
         "name": "Required Skulls",
-        "type": "progressive",
-        "loop": true,
-        "allow_disabled": false,
-        "initial_stage_idx": 6,
+        "type": "consumable",
+        "img": "images/UseItems/CrystalSkull.png",
         "codes": "setting_req_skulls",
-        "stages": [
-            {
-                "img": "images/Settings/Skull0.png",
-                "codes": "req_skulls_0",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull1.png",
-                "codes": "req_skulls_1",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull2.png",
-                "codes": "req_skulls_2",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull3.png",
-                "codes": "req_skulls_3",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull4.png",
-                "codes": "req_skulls_4",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull5.png",
-                "codes": "req_skulls_5",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull6.png",
-                "codes": "req_skulls_6",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull7.png",
-                "codes": "req_skulls_7",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull8.png",
-                "codes": "req_skulls_8",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull9.png",
-                "codes": "req_skulls_9",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull10.png",
-                "codes": "req_skulls_10",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull11.png",
-                "codes": "req_skulls_11",
-                "inherit_codes": false
-            },
-            {
-                "img": "images/Settings/Skull12.png",
-                "codes": "req_skulls_12",
-                "inherit_codes": false
-            }
-        ]
+        "max_quantity": 12,
+        "initial_quantity": 6,
+        "increment": 1
     }
 ]

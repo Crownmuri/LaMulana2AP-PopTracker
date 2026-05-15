@@ -3,7 +3,7 @@
     "name": "Valhalla",
     "children": [
         {
-            "name": "Map Chest Valhalla",
+            "name": "Map Chest",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -58,14 +58,15 @@
                     ]
                 },
                 {
-                    "name": "Dissonance Valhalla",
+                    "name": "Vritra's Dissonance",
                     "item_count": 1,
                     "access_rules": [
                         "$lm2_logic|CanReach(ValhallaMain) and (Has(Progressive Beherit) and IsDead(Vritra))"
-                    ]
+                    ],
+                    "visibility_rules": [ "setting_random_dissonance" ]
                 },
                 {
-                    "name": "Scalesphere Chest",
+                    "name": "Vritra Reward",
                     "item_count": 1,
                     "hosted_item": "cursed_430035",
                     "clear_as_group": false,
@@ -79,7 +80,7 @@
             ]
         },
         {
-            "name": "Crystal Skull Chest Valhalla",
+            "name": "Jalandhara's Treasure",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -109,7 +110,7 @@
             ]
         },
         {
-            "name": "Caltrop Puzzle Reward",
+            "name": "Crawling Weapon Vault",
             "map_locations": [
                 {
                     "map": "Full Map",
@@ -243,7 +244,7 @@
             ]
         },
         {
-            "name": "Flail Whip Puzzle Reward",
+            "name": "4 Sigil Weapon Vault",
             "map_locations": [
                 {
                     "map": "Full Map",
