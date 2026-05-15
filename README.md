@@ -37,7 +37,7 @@ Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [thi
 ## Issues
 - Placeholder images regarding minibosses and settings
 - Minibosses/puzzles/fairies are considered autocollected upon becoming reachable, so they are not mapped.
-- Subweapon Ammo/Fairies/Minibosses/Guardians are not tracked in AP so they don't auto-track.
+- Fairies/Minibosses are not tracked in AP so they don't auto-track.
 - Since Potsanity is WIP, this setting has not been added yet (also this is a lot of work)
 
 ## Installation / Launching guide:
