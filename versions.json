@@ -2,7 +2,7 @@
     {
         "package_version": "1.2.1",
         "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.2.1/LaMulana2AP-PopTracker.v1.2.1.zip",
-        "sha256": "d89fe8076fe9ebd13531530bd9676b450beeb1c15376cbccc2e2372ab0e134fc",
+        "sha256": "0d139189b1e1507fd6d852941d42bdd4cdca16e5674cb5dd67dd6a2df42ca23e",
         "changelog": [
             "Fixed locations showing incorrectly in logic when blocked behind a miniboss."
         ]
