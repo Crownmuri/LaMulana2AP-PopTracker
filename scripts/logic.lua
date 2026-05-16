@@ -578,9 +578,13 @@ function PuzzleFinished(p)
 end
 
 function CanKill(boss)
-    local code = "boss_" .. string.lower(boss):gsub("%s+","_"):gsub("'","")
+    local boss_key = string.lower(boss):gsub("%s+","_"):gsub("'","")
+    local code = "boss_" .. boss_key
     if GUARDIAN_SET[code] then
         return IsDead(boss) or MeleeAttack() or HorizontalAttack()
+    end
+    if EVENT_LOGIC[boss_key] then
+        return eval_logic_bool(EVENT_LOGIC[boss_key])
     end
     return true
 end
