@@ -488,17 +488,22 @@ local EVENT_LOGIC = {
 function IsDead(boss)
     local boss_key = string.lower(boss):gsub("%s+","_"):gsub("'","")
     local code = "boss_" .. boss_key
-    
+
+    -- If the boss/miniboss location has been marked checked, the hosted boss_* toggle
+    -- is set: treat the boss as dead even if the logical kill requirements aren't met
+    -- (e.g. player killed it out-of-logic).
+    if has(code) then return true end
+
     -- 1. Check if it's a main Guardian (manual tracking)
     if GUARDIAN_SET[code] then
         return has(code)
     end
-    
+
     -- 2. If it's a Miniboss, evaluate its specific logic string automatically
     if EVENT_LOGIC[boss_key] then
         return eval_logic_bool(EVENT_LOGIC[boss_key])
     end
-    
+
     -- 3. Fallback (warn about missing entries, default to true)
     print("LM2 Logic WARNING: no EVENT_LOGIC for boss '" .. boss_key .. "' - defaulting to true")
     return true
@@ -517,6 +522,8 @@ end
 function CanKill(boss)
     local boss_key = string.lower(boss):gsub("%s+","_"):gsub("'","")
     local code = "boss_" .. boss_key
+    -- Location marked checked => boss is killable (the player already did it).
+    if has(code) then return true end
     if GUARDIAN_SET[code] then
         return IsDead(boss) or MeleeAttack() or HorizontalAttack()
     end
