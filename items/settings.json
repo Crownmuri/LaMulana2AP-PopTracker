@@ -153,5 +153,11 @@
         "max_quantity": 12,
         "initial_quantity": 6,
         "increment": 1
+    },
+    {
+        "name": "Reveal Entrances",
+        "type": "toggle",
+        "img": "images/door.png",
+        "codes": "setting_reveal_entrances"
     }
 ]

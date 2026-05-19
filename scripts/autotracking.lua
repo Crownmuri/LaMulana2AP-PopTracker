@@ -835,7 +835,12 @@ local function set_toggle(code, value)
     if obj then obj.Active = (tonumber(value) or 0) ~= 0 end
 end
 
+-- Cached slot_data for the "Reveal Spoiler" button (var_er only).
+-- onClear runs every (re)connect, so this stays current with the server.
+_cached_slot_data = nil
+
 Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
+    _cached_slot_data = slot_data
     if not slot_data then return end
 
     local area = tonumber(slot_data.starting_area)
@@ -1004,5 +1009,27 @@ for _, reqs in pairs(SOFTWARE_COMBOS) do
         end
     end
 end
+
+-- ============================================================
+-- Reveal Entrances button
+-- The setting_reveal_entrances toggle behaves like a momentary button:
+-- click it to apply slot_data entrance/soul-gate pairings, then it
+-- resets itself. ApplySpoiler only exists in the var_er variant; on
+-- the base pack the click is a no-op.
+-- ============================================================
+
+local _spoiler_processing = false
+ScriptHost:AddWatchForCode("reveal_spoiler_watch", "setting_reveal_entrances", function(code)
+    if _spoiler_processing then return end
+    local obj = Tracker:FindObjectForCode(code)
+    if not obj or not obj.Active then return end
+
+    _spoiler_processing = true
+    if ApplySpoiler and _cached_slot_data then
+        ApplySpoiler(_cached_slot_data.entrance_pairs, _cached_slot_data.soul_gate_pairs)
+    end
+    obj.Active = false
+    _spoiler_processing = false
+end)
 
 print("LM2 AP Autotracking loaded!")

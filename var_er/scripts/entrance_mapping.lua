@@ -308,3 +308,131 @@ pairings_storage.Name = "er_pairings_storage"
 pairings_storage.CanProvideCodeFunc = function(self, code) return code == self.Name end
 pairings_storage.SaveFunc = SavePairingsFunc
 pairings_storage.LoadFunc = LoadPairingsFunc
+
+-- ============================================================
+-- Reveal Spoiler: apply slot_data entrance/soul-gate pairings.
+-- ExitID integer (lamulana2/ids.py) → er_* code on the tracker.
+-- Used by the "Reveal Spoiler" toggle in the settings layout to
+-- replay the server's pairings + soul gate costs in one shot.
+-- ============================================================
+
+EXIT_ID_TO_ER_CODE = {
+    [1]  = "er_gate_of_guidance_main_entrance__c_1",
+    [2]  = "er_mausoleum_of_giants_left_door__a_5",
+    [3]  = "er_cavern_left_door__a_1",
+    [4]  = "er_cliff__a_1",
+    [5]  = "er_village_of_departure_main__f_5",
+    [6]  = "er_immortal_battlefield_right_door__h_4",
+    [7]  = "er_endless_corridor__c_1",
+    [8]  = "er_cavern_right_door__d_1",
+    [9]  = "er_roots_of_yggdrasil_ladder_down__c_5",
+    [10] = "er_village_of_departure_ladder_down__f_3",
+    [11] = "er_annwfn_bottom_one_way_ladder__e_5",
+    [12] = "er_immortal_battlefield_down_ladder_near_spinning_wheel__d_7",
+    [13] = "er_immortal_battlefield_moon_altar_hallway__g_7",
+    [14] = "er_immortal_battlefield_alviss_down_ladder__g_7",
+    [15] = "er_gate_of_guidance_ladder_down__a_6",
+    [16] = "er_annwfn_ladder_up__c_1",
+    [17] = "er_immortal_battlefield_cetus_up_ladder__f_1",
+    [18] = "er_icefire_treetop_fire_side_up_ladder__c_1",
+    [19] = "er_icefire_treetop_ice_side_right_ladder__f_1",
+    [20] = "er_icefire_treetop_ice_side_left_ladder__f_1",
+    [21] = "er_mausoleum_of_giants_ladder_up__a_1",
+    [22] = "er_inferno_cavern__b_1",
+    [23] = "er_roots_of_yggdrasil_main_gate__d_4",
+    [24] = "er_roots_of_yggdrasil_top_left_switch_gate__a_1",
+    [25] = "er_roots_of_yggdrasil_top_middle_nidhogg_gate__d_1",
+    [26] = "er_roots_of_yggdrasil_top_right_birth_gate__g_1",
+    [27] = "er_annwfn_right_gate__g_4",
+    [28] = "er_immortal_battlefield_left_gate__a_6",
+    [29] = "er_icefire_treetop_middle_gate__d_3",
+    [30] = "er_divine_fortress_left_gate__a_3",
+    [31] = "er_shrine_of_the_frost_giants_bergelmir_gate__b_4",
+    [32] = "er_shrine_of_the_frost_giants_backside_gate__b_2",
+    [33] = "er_gate_of_the_dead_wedjat_gate__f_5",
+    [34] = "er_takamagahara_shrine_bottom_gate__c_7",
+    [35] = "er_heavens_labyrinth_gate__d_1",
+    [36] = "er_valhalla_gate__a_2",
+    [37] = "er_dark_star_lord_s_mausoleum_gate__d_7",
+    [38] = "er_ancient_chaos_gate__d_6",
+    [39] = "er_hall_of_malice_gate__c_1",
+    [40] = "er_gate_of_guidance_left_gate__a_3",
+    [41] = "er_gate_of_illusion_right_gate__c_1",
+    [42] = "er_gate_of_illusion_left_gate__a_1",
+    [43] = "er_roots_of_yggdrasil_bottom_soul_gate__d_6",
+    [44] = "er_annwfn_soul_gate__a_4",
+    [45] = "er_immortal_battlefield_top_right_gate__h_2",
+    [46] = "er_immortal_battlefield_bottom_left_gate__b_7",
+    -- Single underscore here: World.json name is "Spiral Boat Soul Gate(D-4)"
+    -- with no space before the paren, so the existing er_ code is singular.
+    [47] = "er_immortal_battlefield_spiral_boat_soul_gate_d_4",
+    [48] = "er_icefire_treetop_under_ratatoskr_soul_gate__g_3",
+    [49] = "er_icefire_treetop_vidofnir_soul_gate__d_6",
+    [50] = "er_divine_fortress_soul_gate__c_5",
+    [51] = "er_shrine_of_the_frost_giants_main_soul_gate__e_4",
+    [52] = "er_shrine_of_the_frost_giants_balor_soul_gate__e_1",
+    [53] = "er_gate_of_the_dead_soul_gate__c_4",
+    [54] = "er_takamagahara_shrine_top_main_soul_gate__d_1",
+    [55] = "er_takamagahara_shrine_belial_soul_gate__b_1",
+    [56] = "er_heavens_labyrinth_soul_gate__e_5",
+    [57] = "er_valhalla_soul_gate__e_2",
+    [58] = "er_ancient_chaos_soul_gate__c_1",
+    [59] = "er_hall_of_malice_soul_gate__d_3",
+    [60] = "er_eternal_prison_gloom_soul_gate__d_2",
+    [61] = "er_starting_area",
+    [62] = "er_village_of_departure_next_to_xelpud",
+    [63] = "er_annwfn_bifrost",
+    [64] = "er_immortal_battlefield_bifrost_fall",
+    [65] = "er_immortal_battlefield_left_altar_door__d_3",
+    [66] = "er_immortal_battlefield_right_altar_door__f_3",
+    [67] = "er_takamagahara_shrine_neck",
+    [68] = "er_heavens_labyrinth_monster_s_jaw",
+    [69] = "er_dark_star_lord_s_mausoleum_pyramid",
+    [70] = "er_nibiru_spaceship",
+    [71] = "er_altar_left_door__a_1",
+    [72] = "er_altar_right_door__c_1",
+}
+
+-- cost item stage indices (items/entrances.json):
+--   0=Untracked, 1=1, 2=2, 3=3, 4=5, 5=9
+local SOUL_AMOUNT_TO_STAGE = { [1] = 1, [2] = 2, [3] = 3, [5] = 4, [9] = 5 }
+
+function ApplySpoiler(entrance_pairs, soul_gate_pairs)
+    -- Re-arm the click suppression window: ApplyPairing flips Active=true on
+    -- both endpoints, which would otherwise re-enter EntranceClick.
+    SuppressClicks(SUPPRESS_RESTORE_FRAMES)
+
+    -- Wipe any manually-set pairings so we don't end up with stale
+    -- half-links if a previously paired entrance isn't part of the spoiler.
+    for code, _ in pairs(ER_PAIRINGS) do
+        ClearTargetOverlay(code)
+        local o = Tracker:FindObjectForCode(code)
+        if o then o.Active = false end
+    end
+    ER_PAIRINGS = {}
+
+    if type(entrance_pairs) == "table" then
+        for _, p in ipairs(entrance_pairs) do
+            local a = EXIT_ID_TO_ER_CODE[tonumber(p[1])]
+            local b = EXIT_ID_TO_ER_CODE[tonumber(p[2])]
+            if a and b then ApplyPairing(a, b) end
+        end
+    end
+
+    if type(soul_gate_pairs) == "table" then
+        for _, p in ipairs(soul_gate_pairs) do
+            local a = EXIT_ID_TO_ER_CODE[tonumber(p[1])]
+            local b = EXIT_ID_TO_ER_CODE[tonumber(p[2])]
+            local stage = SOUL_AMOUNT_TO_STAGE[tonumber(p[3])]
+            if a and b then
+                ApplyPairing(a, b)
+                if stage then
+                    local ca = Tracker:FindObjectForCode("cost_" .. a)
+                    local cb = Tracker:FindObjectForCode("cost_" .. b)
+                    if ca then ca.CurrentStage = stage end
+                    if cb then cb.CurrentStage = stage end
+                end
+            end
+        end
+    end
+end
