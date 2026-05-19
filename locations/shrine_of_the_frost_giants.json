@@ -54,12 +54,12 @@
                         "hosted_item": "cursed_430006",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430006|CanReach(SotFGMain) and (IsDead(Badhbh Cath) and Has(Life Sigil) and Has(Grapple Claw) and (HorizontalAttack or (CanUse(Flare) and (CanWarp or Has(Feather)))))"
+                            "^$lm2_cursed|430006|CanReach(SotFGMain) and (IsDead(Badhbh Cath) and Has(Life Sigil) and Has(Grapple Claw) and (HorizontalAttack or (CanUse(Flare Gun) and (CanWarp or Has(Feather)))))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGMain) and (IsDead(Badhbh Cath) and Has(Life Sigil) and Has(Grapple Claw) and (HorizontalAttack or (CanUse(Flare) and (CanWarp or Has(Feather)))))"
+                    "$lm2_logic|CanReach(SotFGMain) and (IsDead(Badhbh Cath) and Has(Life Sigil) and Has(Grapple Claw) and (HorizontalAttack or (CanUse(Flare Gun) and (CanWarp or Has(Feather)))))"
                 ]
             },
             {
@@ -80,7 +80,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGMain) and (Has(Fairy Pass) and Has(Freyas Pendant) and CanReach(Annwfn Right))"
+                    "$lm2_logic|CanReach(SotFGMain) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Right))"
                 ]
             },
             {
@@ -101,7 +101,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGMain) and (((Has(Leather Whip) or Has(Knife) or Has(Rapier) or CanUse(Earth Spear) or CanUse(Chakram)) and OrbCount(1)) or (Has(Chain Whip) or Has(Axe) or Has(Katana) or CanUse(Pistol) or CanUse(Bomb) or CanUse(Flare)))"
+                    "$lm2_logic|CanReach(SotFGMain) and (((Has(Leather Whip) or Has(Knife) or Has(Rapier) or CanUse(Earth Spear) or CanUse(Chakram)) and OrbCount(1)) or (Has(Chain Whip) or Has(Axe) or Has(Katana) or CanUse(Pistol) or CanUse(Bomb) or CanUse(Flare Gun)))"
                 ]
             },
             {
@@ -232,12 +232,12 @@
                         "hosted_item": "cursed_430107",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430107|CanReach(SotFGTop) and (CanUse(Earth Spear) or (CanUse(Flare) and HorizontalAttack))"
+                            "^$lm2_cursed|430107|CanReach(SotFGTop) and (CanUse(Earth Spear) or (CanUse(Flare Gun) and HorizontalAttack))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGTop) and (CanUse(Earth Spear) or (CanUse(Flare) and HorizontalAttack))"
+                    "$lm2_logic|CanReach(SotFGTop) and (CanUse(Earth Spear) or (CanUse(Flare Gun) and HorizontalAttack))"
                 ]
             },
             {
@@ -313,7 +313,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGBalor) and (((Has(Knife) or Has(Rapier) or Has(Katana)) and Has(Feather) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or CanUse(Flare) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Pistol)) and OrbCount(2)))"
+                    "$lm2_logic|CanReach(SotFGBalor) and (((Has(Knife) or Has(Rapier) or Has(Katana)) and Has(Feather) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or CanUse(Flare Gun) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Pistol)) and OrbCount(2)))"
                 ]
             },
             {
@@ -338,12 +338,12 @@
                         "hosted_item": "cursed_430029",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430029|CanReach(SotFGLeft) and (Has(Feather) and Has(Life Sigil) and ((HorizontalAttack and CanUse(Flare)) or Has(Leather Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb)))"
+                            "^$lm2_cursed|430029|CanReach(SotFGLeft) and (Has(Feather) and Has(Life Sigil) and ((HorizontalAttack and CanUse(Flare Gun)) or Has(Leather Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb)))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGLeft) and (Has(Feather) and Has(Life Sigil) and ((HorizontalAttack and CanUse(Flare)) or Has(Leather Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb)))"
+                    "$lm2_logic|CanReach(SotFGLeft) and (Has(Feather) and Has(Life Sigil) and ((HorizontalAttack and CanUse(Flare Gun)) or Has(Leather Whip) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb)))"
                 ]
             },
             {
@@ -427,7 +427,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGBloodTez) and (Has(Gloves) and OrbCount(1))"
+                    "$lm2_logic|CanReach(SotFGBloodTez) and (Has(Glove) and OrbCount(1))"
                 ]
             }
         ],

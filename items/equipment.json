@@ -60,7 +60,7 @@
     "codes": "egg_of_creation"
   },
   {
-    "name": "Giants Flute",
+    "name": "Giant's Flute",
     "type": "toggle",
     "img": "images/UseItems/GiantsFlute.png",
     "codes": "giants_flute"
@@ -78,10 +78,10 @@
     "codes": "mulana_talisman"
   },
   {
-    "name": "Gloves",
+    "name": "Glove",
     "type": "toggle",
     "img": "images/EquipItems/Gloves.png",
-    "codes": "gloves"
+    "codes": "glove"
   },
   {
     "name": "Grapple Claw",
@@ -198,13 +198,13 @@
     "codes": "holy_grail"
   },
   {
-    "name": "Fairy Pass",
+    "name": "Fairy Guild Pass",
     "type": "toggle",
     "img": "images/OtherItems/FairyPass.png",
-    "codes": "fairy_pass"
+    "codes": "fairy_guild_pass"
   },
   {
-    "name": "Freyas Pendant",
+    "name": "Freya's Pendant",
     "type": "toggle",
     "img": "images/OtherItems/FreyasPendant.png",
     "codes": "freyas_pendant"
@@ -234,7 +234,7 @@
     "codes": "perfume"
   },
   {
-    "name": "Maats Feather",
+    "name": "Maat's Feather",
     "type": "toggle",
     "img": "images/OtherItems/MaatsFeather.png",
     "codes": "maats_feather"
@@ -246,7 +246,7 @@
     "codes": "dinosaur_figure"
   },
   {
-    "name": "Freys Ship",
+    "name": "Frey's Ship",
     "type": "toggle",
     "img": "images/OtherItems/FreysShip.png",
     "codes": "freys_ship"
@@ -258,10 +258,10 @@
     "codes": "codices"
   },
   {
-    "name": "Ganesha Talisman",
+    "name": "Ganesha's Talisman",
     "type": "toggle",
     "img": "images/OtherItems/GaneshasTalisman.png",
-    "codes": "ganesha_talisman"
+    "codes": "ganeshas_talisman"
   },
   {
     "name": "Harp",

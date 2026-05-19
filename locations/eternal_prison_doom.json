@@ -114,7 +114,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(EPDMain) and (Has(Maats Feather) and Has(Djed Pillar) and (Has(Claydoll Suit) or Has(Ice Cloak)) and Has(Feather) and ((Has(Gale Fibula) or CanStopTime) or CanReach(EPG)))"
+          "$lm2_logic|CanReach(EPDMain) and (Has(Maat's Feather) and Has(Djed Pillar) and (Has(Claydoll Suit) or Has(Ice Cloak)) and Has(Feather) and ((Has(Gale Fibula) or CanStopTime) or CanReach(EPG)))"
         ]
       },
         {

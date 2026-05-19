@@ -132,7 +132,7 @@ local SHOP_STAGE_TO_WEAPON_CODE = {
     [2] = "shuriken",
     [3] = "rolling_shuriken",
     [4] = "earth_spear",
-    [5] = "flare",
+    [5] = "flare_gun",
     [6] = "bomb",
     [7] = "chakram",
     [8] = "caltrops",
@@ -490,31 +490,46 @@ end
 
 -- ============================================================
 -- Go Mode: auto-toggle boss_ninth_child when Ninth Child is
--- logically reachable.  Uses lm2_logic() from logic.lua.
+-- logically reachable.  Built natively in Lua so we can swap
+-- in setting-driven boss-kill requirements (random dissonance
+-- relaxes 9 -> RequiredGuardians()).
 -- ============================================================
 
-local GO_MODE_EXPR =
-    "CanReach(SpiralHell) and "
-    .. "CanChant(Heaven) and CanChant(Earth) and CanChant(Sun) and "
-    .. "CanChant(Moon) and CanChant(Fire) and CanChant(Sea) and "
-    .. "CanChant(Wind) and CanChant(Mother) and CanChant(Child) and "
-    .. "CanChant(Night) and Dissonance(6) and Has(Grapple Claw) and "
-    .. "Has(Feather) and Has(Flame Torc) and OrbCount(8) and "
-    .. "(Has(Flail Whip) or Has(Axe))"
-
 function UpdateGoMode()
-    local result = lm2_logic(GO_MODE_EXPR)
     local obj = Tracker:FindObjectForCode("boss_ninth_child")
-    if obj then
-        obj.Active = (result == ACCESS_NORMAL)
+    if not obj then return end
+
+    -- Random Dissonance ON: bosses don't gate maximum beherit, so the only
+    -- boss requirement is the player's chosen guardian threshold.
+    -- OFF: Anu is the only guardian whose drop is strictly required for
+    -- maximum beherit; Dissonance(6) covers the rest of the dissonance math.
+    local boss_req_ok
+    if has("setting_random_dissonance") then
+        boss_req_ok = GuardianKills(RequiredGuardians())
+    else
+        boss_req_ok = has("boss_anu")
     end
+
+    local can_go =
+        CanReach("SpiralHell")
+        and CanChant("Heaven") and CanChant("Earth") and CanChant("Sun")
+        and CanChant("Moon") and CanChant("Fire") and CanChant("Sea")
+        and CanChant("Wind") and CanChant("Mother") and CanChant("Child")
+        and CanChant("Night")
+        and Dissonance(6)
+        and boss_req_ok
+        and has("grapple_claw") and has("feather") and has("flame_torc")
+        and OrbCount(8)
+        and (has("whip3") or has("axe"))
+
+    obj.Active = can_go and true or false
 end
 
 -- Codes whose changes can affect go mode reachability
 local GO_MODE_WATCH_CODES = {
     -- Direct Ninth Child requirements
     "grapple_claw", "feather", "flame_torc", "sacred_orb",
-    "whip1", "axe",
+    "whip3", "axe",
     -- Mantras + chanting
     "djed", "mantra_app",
     "mantra_heaven", "mantra_earth", "mantra_sun", "mantra_moon",
@@ -522,20 +537,24 @@ local GO_MODE_WATCH_CODES = {
     "mantra_mother", "mantra_child", "mantra_night",
     -- Corridor / dissonance
     "beherit", "dissonance",
-    -- Spiral Hell access path (IBBoat via HoM)
+    -- Spiral Hell access path (IBBoat via HoM in vanilla; flood-fill
+    -- handles var_er entrance pairings via CanReach.)
     "secret_treasure", "death_sigil", "earth_spear_ammo", "holy_grail",
     "boss_hom_ladder", "boss_hom_middle_path",
     "cog_of_antiquity", "life_sigil",
     -- Backside reachability
     "origin_sigil", "birth_sigil",
-    -- Guardian kills (soul gates + GuardianKills)
-    "guardian_fafnir", "guardian_vritra", "guardian_kujata",
-    "guardian_aten_ra", "guardian_jormungand", "guardian_anu",
-    "guardian_surtr", "guardian_echidna", "guardian_hel",
+    -- Guardian kills (soul gates + GuardianKills). Watch the boss_*
+    -- provider codes so we react both to AP-delivered guardian items
+    -- and to manual guardian_* progressive toggles.
+    "boss_fafnir", "boss_vritra", "boss_kujata",
+    "boss_aten_ra", "boss_jormungand", "boss_anu",
+    "boss_surtr", "boss_echidna", "boss_hel",
     -- Key movement items
-    "gloves", "claydoll_suit", "ice_cloak", "anchor",
+    "glove", "claydoll_suit", "ice_cloak", "anchor",
     -- Settings
     "setting_life_for_hom", "setting_start",
+    "setting_random_dissonance", "setting_req_guardians",
 }
 
 for i, watch_code in ipairs(GO_MODE_WATCH_CODES) do
@@ -586,7 +605,7 @@ end)
 -- -- Stage 0: question_mark, 1: Weight, 2-9: ammo, 10: Item
 -- local SHOP_STAGE_TO_WEAPON = {
 --     [2] = "shuriken", [3] = "rolling_shuriken", [4] = "earth_spear",
---     [5] = "flare", [6] = "bomb", [7] = "chakram",
+--     [5] = "flare_gun", [6] = "bomb", [7] = "chakram",
 --     [8] = "caltrops", [9] = "pistol"
 -- }
 --

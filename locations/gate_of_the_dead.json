@@ -54,12 +54,12 @@
                         "hosted_item": "cursed_430079",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430079|CanReach(GotD) and (Has(Gloves))"
+                            "^$lm2_cursed|430079|CanReach(GotD) and (Has(Glove))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (Has(Gloves))"
+                    "$lm2_logic|CanReach(GotD) and (Has(Glove))"
                 ]
             },
             {
@@ -144,12 +144,12 @@
                         "hosted_item": "cursed_430030",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430030|CanReach(GotD) and (HorizontalAttack and CanReach(DF Main) and Has(Gloves) and CanReach(Annwfn Right) and IsDead(Ixtab) and Has(Hand Scanner))"
+                            "^$lm2_cursed|430030|CanReach(GotD) and (HorizontalAttack and CanReach(DF Main) and Has(Glove) and CanReach(Annwfn Right) and IsDead(Ixtab) and Has(Hand Scanner))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (HorizontalAttack and CanReach(DF Main) and Has(Gloves) and CanReach(Annwfn Right) and IsDead(Ixtab) and Has(Hand Scanner))"
+                    "$lm2_logic|CanReach(GotD) and (HorizontalAttack and CanReach(DF Main) and Has(Glove) and CanReach(Annwfn Right) and IsDead(Ixtab) and Has(Hand Scanner))"
                 ]
             },
             {
@@ -174,12 +174,12 @@
                         "hosted_item": "cursed_430145",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430145|CanReach(GotD) and (MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or (CanUse(Flare) and HorizontalAttack))"
+                            "^$lm2_cursed|430145|CanReach(GotD) and (MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or (CanUse(Flare Gun) and HorizontalAttack))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or (CanUse(Flare) and HorizontalAttack))"
+                    "$lm2_logic|CanReach(GotD) and (MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or (CanUse(Flare Gun) and HorizontalAttack))"
                 ]
             },
             {
@@ -280,7 +280,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (OrbCount(1) and ((Has(Katana) and Has(Vajra)) or Has(Leather Whip) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
+                    "$lm2_logic|CanReach(GotD) and (OrbCount(1) and ((Has(Katana) and Has(Vajra)) or Has(Leather Whip) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Flare Gun) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
                 ]
             }
         ],

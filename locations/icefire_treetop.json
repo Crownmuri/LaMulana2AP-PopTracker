@@ -249,21 +249,21 @@
             "name": "Shop Slot 1",
             "item_count": 1,
             "access_rules": [
-              "$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Pistol) or ((CanUse(Chakram) or CanUse(Flare)) and Has(Feather)))"
+              "$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Pistol) or ((CanUse(Chakram) or CanUse(Flare Gun)) and Has(Feather)))"
             ]
           },
             {
                 "name": "Shop Slot 2",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Pistol) or ((CanUse(Chakram) or CanUse(Flare)) and Has(Feather)))"
+                    "$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Pistol) or ((CanUse(Chakram) or CanUse(Flare Gun)) and Has(Feather)))"
                 ]
             },
             {
                 "name": "Shop Slot 3",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Pistol) or ((CanUse(Chakram) or CanUse(Flare)) and Has(Feather)))"
+                    "$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Pistol) or ((CanUse(Chakram) or CanUse(Flare Gun)) and Has(Feather)))"
                 ]
             }
         ],
@@ -400,7 +400,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(ITRight) and (IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and CanReach(IT Left) and (((Has(Leather Whip) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(3)) or ((Has(Chain Whip) or Has(Knife) or Has(Rapier) or Has(Axe) or Has(Katana) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Bomb) or CanUse(Chakram)) and OrbCount(2)) or (CanUse(Psitol) and OrbCount(1))))"
+                "$lm2_logic|CanReach(ITRight) and (IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and CanReach(IT Left) and (((Has(Leather Whip) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(3)) or ((Has(Chain Whip) or Has(Knife) or Has(Rapier) or Has(Axe) or Has(Katana) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Flare Gun) or CanUse(Bomb) or CanUse(Chakram)) and OrbCount(2)) or (CanUse(Psitol) and OrbCount(1))))"
             ]
         },
         {

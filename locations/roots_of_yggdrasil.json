@@ -54,12 +54,12 @@
                     "hosted_item": "cursed_430132",
                     "clear_as_group": false,
                     "access_rules": [
-                        "^$lm2_cursed|430132|CanReach(RoY) and (Has(Feather) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Earth Spear) or CanUse(Pistol) or (CanUse(Flare) and HorizontalAttack) or Has(Claydoll Suit) or CanStopTime or (Has(Gale Fibula) and Has(Grapple Claw) and HorizontalAttack))"
+                        "^$lm2_cursed|430132|CanReach(RoY) and (Has(Feather) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Earth Spear) or CanUse(Pistol) or (CanUse(Flare Gun) and HorizontalAttack) or Has(Claydoll Suit) or CanStopTime or (Has(Gale Fibula) and Has(Grapple Claw) and HorizontalAttack))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(RoY) and (Has(Feather) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Earth Spear) or CanUse(Pistol) or (CanUse(Flare) and HorizontalAttack) or Has(Claydoll Suit) or CanStopTime or (Has(Gale Fibula) and Has(Grapple Claw) and HorizontalAttack))"
+                "$lm2_logic|CanReach(RoY) and (Has(Feather) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Earth Spear) or CanUse(Pistol) or (CanUse(Flare Gun) and HorizontalAttack) or Has(Claydoll Suit) or CanStopTime or (Has(Gale Fibula) and Has(Grapple Claw) and HorizontalAttack))"
             ]
         },
       {
@@ -215,7 +215,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(RoY) and (MeleeAttack and (CanUse(Flare) or CanUse(Pistol) or (OrbCount(1) and (CanUse(Shuriken) or Has(Claydoll Suit) or (CanUse(Chakram) and Has(Ring))))))"
+          "$lm2_logic|CanReach(RoY) and (MeleeAttack and (CanUse(Flare Gun) or CanUse(Pistol) or (OrbCount(1) and (CanUse(Shuriken) or Has(Claydoll Suit) or (CanUse(Chakram) and Has(Ring))))))"
         ]
       },
         {

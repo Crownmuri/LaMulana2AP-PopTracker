@@ -33,7 +33,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -92,7 +92,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -151,7 +151,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -210,7 +210,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -269,7 +269,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -328,7 +328,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -387,7 +387,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -446,7 +446,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -505,7 +505,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -564,7 +564,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -623,7 +623,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -682,7 +682,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -741,7 +741,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -800,7 +800,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -859,7 +859,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -918,7 +918,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -977,7 +977,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1036,7 +1036,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1095,7 +1095,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1154,7 +1154,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1213,7 +1213,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1272,7 +1272,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1331,7 +1331,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1390,7 +1390,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1449,7 +1449,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1508,7 +1508,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1567,7 +1567,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1626,7 +1626,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1685,7 +1685,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1744,7 +1744,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1803,7 +1803,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1862,7 +1862,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1921,7 +1921,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -1980,7 +1980,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2039,7 +2039,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2098,7 +2098,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2157,7 +2157,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2216,7 +2216,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2275,7 +2275,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2334,7 +2334,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2393,7 +2393,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2452,7 +2452,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2511,7 +2511,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2570,7 +2570,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2629,7 +2629,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2688,7 +2688,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2747,7 +2747,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2806,7 +2806,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2865,7 +2865,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2924,7 +2924,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -2983,7 +2983,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -3042,7 +3042,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -3101,7 +3101,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -3160,7 +3160,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -3219,7 +3219,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -3278,7 +3278,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -3337,7 +3337,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -3396,7 +3396,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -3455,7 +3455,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -3514,7 +3514,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {
@@ -3573,7 +3573,7 @@
             },
             {
                 "img": "images/Weapons/FlareGunB.png",
-                "codes": "sm_flare_ammo",
+                "codes": "sm_flare_gun_ammo",
                 "inherit_codes": false
             },
             {

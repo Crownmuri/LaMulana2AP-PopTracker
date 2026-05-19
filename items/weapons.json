@@ -133,16 +133,16 @@
         "type": "progressive_toggle",
         "allow_disabled": true,
         "loop": false,
-        "codes": "flare",
+        "codes": "flare_gun",
         "stages": [
             {
                 "img": "images/Weapons/FlareGun.png",
-                "codes": "flare",
+                "codes": "flare_gun",
                 "inherit_codes": false
             },
             {
                 "img": "images/Weapons/FlareGunA.png",
-                "codes": "flare_ammo",
+                "codes": "flare_gun_ammo",
                 "inherit_codes": false
             }
         ]

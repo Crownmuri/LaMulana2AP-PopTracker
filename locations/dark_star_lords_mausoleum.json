@@ -115,7 +115,7 @@
                 "item_count": 1,
                 "hosted_item": "boss_aten_ra",
                 "access_rules": [
-                    "$lm2_logic|HasAnkhFor(Aten Ra) and ((IsDead(Sekhmet) or Glitch(Costume Clip)) and PuzzleFinished(White Pedestals) and (((Has(Chain Whip) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Chakrams) or CanUse(Bomb)) and OrbCount(6)) or ((Has(Flail Whip) or Has(Katana) or Has(Axe)) and OrbCount(5)) or (CanUse(Pistol) and OrbCount(4))))"
+                    "$lm2_logic|HasAnkhFor(Aten Ra) and ((IsDead(Sekhmet) or Glitch(Costume Clip)) and PuzzleFinished(White Pedestals) and (((Has(Chain Whip) or CanUse(Earth Spear) or CanUse(Flare Gun) or CanUse(Chakrams) or CanUse(Bomb)) and OrbCount(6)) or ((Has(Flail Whip) or Has(Katana) or Has(Axe)) and OrbCount(5)) or (CanUse(Pistol) and OrbCount(4))))"
                 ]
             },
             {
@@ -253,7 +253,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMMain) and (Has(Fairy Pass) and Has(Freyas Pendant) and CanReach(Annwfn Main) and (Has(Gale Fibula) or CanStopTime))"
+                "$lm2_logic|CanReach(DSLMMain) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Main) and (Has(Gale Fibula) or CanStopTime))"
             ]
         },
         {

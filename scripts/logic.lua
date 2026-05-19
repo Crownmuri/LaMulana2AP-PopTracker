@@ -38,10 +38,10 @@ HAS_OVERRIDES = {
     ["Leather Whip"]="whip1", ["Chain Whip"]="whip2", ["Flail Whip"]="whip3",
     ["Silver Shield"]="shield2", ["Angel Shield"]="shield3",
     ["Hand Scanner"]="scanner", ["Future Development Company"]="fdc",
-    ["Fairy Pass"]="fairy_pass", ["Freyas Pendant"]="freyas_pendant",
-    ["Freys Ship"]="freys_ship", ["Maats Feather"]="maats_feather",
-    ["Ganesha Talisman"]="ganesha_talisman", ["Progressive Beherit"]="beherit",
-    ["Ruins Encylopedia"]="encyclopedia", ["TextTrax 2"]="texttrax",
+    ["Fairy Guild Pass"]="fairy_guild_pass", ["Freya's Pendant"]="freyas_pendant",
+    ["Frey's Ship"]="freys_ship", ["Maat's Feather"]="maats_feather",
+    ["Ganesha's Talisman"]="ganeshas_talisman", ["Progressive Beherit"]="beherit",
+    ["Ruins Encyclopedia"]="encyclopedia", ["TextTrax 2"]="texttrax_2",
     ["Space Capstar II"]="space_capstar", ["Mobile Super x3+"]="mobile_super",
     ["Rose and Camellia"]="rose_camellia", ["Lonely House Moving"]="lonely_house",
     ["Mekuri Master"]="mekuri_master", ["Bounce Shot"]="bounce_shot",
@@ -50,7 +50,7 @@ HAS_OVERRIDES = {
     ["Secret Treasure of Life"]="secret_treasure", ["Beo Eg-Lana"]="beo_eglana",
     ["Fish Suit"]="claydoll_suit", ["Enga Musica"]="enga_musica",
     ["Cog of Antiquity"]="cog_of_antiquity", ["Egg of Creation"]="egg_of_creation",
-    ["Giants Flute"]="giants_flute", ["Light Scythe"]="light_scythe",
+    ["Giant's Flute"]="giants_flute", ["Light Scythe"]="light_scythe",
     ["Mulana Talisman"]="mulana_talisman", ["Grapple Claw"]="grapple_claw",
     ["Pyramid Crystal"]="pyramid_crystal", ["Race Scanner"]="race_scanner",
     ["Death Village"]="death_village", ["Destiny Tablet"]="destiny_tablet",
@@ -86,7 +86,7 @@ ANKH_GUARDIAN_MAP = {
 
 local SUBWEAPONS = {
     ["shuriken"]=true, ["rolling_shuriken"]=true, ["earth_spear"]=true,
-    ["flare"]=true, ["bomb"]=true, ["chakram"]=true, ["caltrops"]=true, ["pistol"]=true
+    ["flare_gun"]=true, ["bomb"]=true, ["chakram"]=true, ["caltrops"]=true, ["pistol"]=true
 }
 
 function Has(item_name)
@@ -475,45 +475,45 @@ local EVENT_LOGIC = {
 
     -- Roots of Yggdrasil
     ["ratatoskr_1"] = "CanReach(RoY) and MeleeAttack",
-    ["nidhogg"] = "CanReach(RoY) and MeleeAttack and (CanUse(Shuriken) or CanUse(Flare) or CanUse(Pistol) or Has(Claydoll Suit) or (CanUse(Chakram) and Has(Ring)))",
+    ["nidhogg"] = "CanReach(RoY) and MeleeAttack and (CanUse(Shuriken) or CanUse(Flare Gun) or CanUse(Pistol) or Has(Claydoll Suit) or (CanUse(Chakram) and Has(Ring)))",
 
     -- Annwfn
     ["kaliya"] = "CanReach(AnnwfnMain) and CanUse(Rolling Shuriken)",
     ["heimdall"] = "CanReach(AnnwfnMain) and CanSealCorridor and CanChant(Night) and OrbCount(7) and Has(Silver Shield) and (Has(Flail Whip) or Has(Katana) or Has(Axe))",
-    ["ixtab"] = "CanReach(AnnwfnRight) and (((Has(Leather Whip) or Has(Rapier) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb)) and OrbCount(1)) or CanUse(Flare) or CanUse(Pistol))",
+    ["ixtab"] = "CanReach(AnnwfnRight) and (((Has(Leather Whip) or Has(Rapier) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb)) and OrbCount(1)) or CanUse(Flare Gun) or CanUse(Pistol))",
 
     -- Immortal Battlefield
-    ["cetus"] = "CanReach(IBTop) and (CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops) or Has(Claydoll Suit) or (CanUse(Flare) and (Has(Anchor) or Has(Fish Suit))) or ((CanUse(Shuriken) or CanUse(Chakram)) and Has(Scalesphere)) or (Has(Axe) and (Has(Scalesphere) or (OrbCount(1) and Has(Anchor)))) or (Has(Leather Whip) and Has(Anchor) and (Has(Scalesphere) or OrbCount(2))) or ((Has(Chain Whip) or Has(Katana)) and Has(Anchor) and (Has(Scalesphere) or OrbCount(1))))",
+    ["cetus"] = "CanReach(IBTop) and (CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops) or Has(Claydoll Suit) or (CanUse(Flare Gun) and (Has(Anchor) or Has(Fish Suit))) or ((CanUse(Shuriken) or CanUse(Chakram)) and Has(Scalesphere)) or (Has(Axe) and (Has(Scalesphere) or (OrbCount(1) and Has(Anchor)))) or (Has(Leather Whip) and Has(Anchor) and (Has(Scalesphere) or OrbCount(2))) or ((Has(Chain Whip) or Has(Katana)) and Has(Anchor) and (Has(Scalesphere) or OrbCount(1))))",
     ["ratatoskr_2"] = "CanReach(IBMain) and IsDead(Ratatoskr 1)",
     ["svipdagr"] = "CanReach(IBRight) and OrbCount(1)",
 
     -- Icefire Treetop
     ["vedfolnir"] = "CanReach(ITLeft) and OrbCount(1)",
-    ["ratatoskr_3"] = "CanReach(ITRight) and IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and CanReach(IT Left) and (((Has(Leather Whip) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(3)) or ((Has(Chain Whip) or Has(Knife) or Has(Rapier) or Has(Axe) or Has(Katana) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Bomb) or CanUse(Chakram)) and OrbCount(2)) or (CanUse(Pistol) and OrbCount(1)))",
+    ["ratatoskr_3"] = "CanReach(ITRight) and IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and CanReach(IT Left) and (((Has(Leather Whip) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(3)) or ((Has(Chain Whip) or Has(Knife) or Has(Rapier) or Has(Axe) or Has(Katana) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Flare Gun) or CanUse(Bomb) or CanUse(Chakram)) and OrbCount(2)) or (CanUse(Pistol) and OrbCount(1)))",
     ["vidofnir"] = "CanReach(ITVidofnir) and Has(Flame Torc) and Has(Ice Cloak) and Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(6)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(5)))",
 
     -- Divine Fortress
     ["hugin_and_munin"] = "CanReach(DFRight) and (CanWarp or Has(Origin Sigil))",
 
     -- Shrine of the Frost Giants
-    ["badhbh_cath"] = "CanReach(SotFGMain) and (((Has(Leather Whip) or Has(Knife) or Has(Rapier) or CanUse(Earth Spear) or CanUse(Chakram)) and OrbCount(1)) or (Has(Chain Whip) or Has(Axe) or Has(Katana) or CanUse(Pistol) or CanUse(Bomb) or CanUse(Flare)))",
+    ["badhbh_cath"] = "CanReach(SotFGMain) and (((Has(Leather Whip) or Has(Knife) or Has(Rapier) or CanUse(Earth Spear) or CanUse(Chakram)) and OrbCount(1)) or (Has(Chain Whip) or Has(Axe) or Has(Katana) or CanUse(Pistol) or CanUse(Bomb) or CanUse(Flare Gun)))",
     ["fenrir"] = "CanReach(SotFGMain) and PuzzleFinished(Bergelmir) and Has(Flame Torc) and Has(Silver Shield) and OrbCount(7) and (Has(Flail Whip) or Has(Axe) or Has(Katana))",
-    ["balor"] = "CanReach(SotFGBalor) and (((Has(Knife) or Has(Rapier) or Has(Katana)) and Has(Feather) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or CanUse(Flare) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Pistol)) and OrbCount(2)))",
-    ["tezcatlipoca"] = "CanReach(SotFGBloodTez) and Has(Gloves) and OrbCount(1)",
+    ["balor"] = "CanReach(SotFGBalor) and (((Has(Knife) or Has(Rapier) or Has(Katana)) and Has(Feather) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or CanUse(Flare Gun) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Pistol)) and OrbCount(2)))",
+    ["tezcatlipoca"] = "CanReach(SotFGBloodTez) and Has(Glove) and OrbCount(1)",
 
     -- Gate of the Dead
-    ["unicorn"] = "CanReach(GotD) and OrbCount(1) and ((Has(Katana) and Has(Vajra)) or Has(Leather Whip) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Flare) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol))",
+    ["unicorn"] = "CanReach(GotD) and OrbCount(1) and ((Has(Katana) and Has(Vajra)) or Has(Leather Whip) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Flare Gun) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol))",
 
     -- Takamagahara Shrine
     ["raijin_and_fujin"] = "CanReach(TSMain) and Has(Mjolnir) and OrbCount(1)",
-    ["daji"] = "CanReach(TSBottom) and OrbCount(2) and ((Has(Chain Whip) and (Has(Gauntlet) or Has(Spaulder))) or (Has(Knife) and Has(Spaulder) and Has(Feather)) or (Has(Rapier) and Has(Gauntlet) and Has(Spaulder) and Has(Feather)) or Has(Flail Whip) or Has(Axe) or Has(Katana) or (CanUse(Pistol) and Has(Feather)) or (CanUse(Rolling Shuriken) and Has(Ring) and Has(Feather)) or (CanUse(Chakram) and (Has(Ring) or Has(Feather))) or CanUse(Bomb) or CanUse(Flare) or ((CanUse(Earth Spear) or CanUse(Caltrops)) and Has(Ring)))",
+    ["daji"] = "CanReach(TSBottom) and OrbCount(2) and ((Has(Chain Whip) and (Has(Gauntlet) or Has(Spaulder))) or (Has(Knife) and Has(Spaulder) and Has(Feather)) or (Has(Rapier) and Has(Gauntlet) and Has(Spaulder) and Has(Feather)) or Has(Flail Whip) or Has(Axe) or Has(Katana) or (CanUse(Pistol) and Has(Feather)) or (CanUse(Rolling Shuriken) and Has(Ring) and Has(Feather)) or (CanUse(Chakram) and (Has(Ring) or Has(Feather))) or CanUse(Bomb) or CanUse(Flare Gun) or ((CanUse(Earth Spear) or CanUse(Caltrops)) and Has(Ring)))",
     ["belial"] = "CanReach(TSBlood) and Has(Life Sigil) and Has(Cog of Antiquity) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(6))) and ((Has(Egg of Creation) and OrbCount(6) and (Has(Claydoll Suit) or CanUse(Pistol) or CanUse(Earth Spear) or (CanUse(Rolling Shuriken) and Has(Ring)) or (Has(Katana) and Has(Feather)))) or (CanStopTime and OrbCount(3) and ((Has(Axe) and (Has(Gauntlet) or Has(Spaulder))) or (Has(Katana) and (Has(Vajra) or Has(Spaulder))) or (Has(Rapier) and Has(Vajra)) or (Has(Knife) and (Has(Vajra) or Has(Spaulder))) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))))",
 
     -- Heavens Labyrinth
     ["arachne"] = "CanReach(HLSpun) and CanWarp",
     ["scylla"] = "CanReach(HLSpun) and CanWarp",
     ["glasya_labolas"] = "CanReach(HLSpun) and CanWarp and OrbCount(1) and ((Has(Rapier) and (Has(Spaulder) or Has(Gauntlet) or Has(Vajra))) or Has(Chain Whip) or Has(Knife) or Has(Axe) or Has(Katana) or CanUse(Pistol) or CanUse(Chakram) or CanUse(Earth Spear) or CanUse(Bomb))",
-    ["griffin"] = "CanReach(HLSpun) and (Has(Gale Fibula) or CanStopTime) and Has(Gloves) and Has(Life Sigil) and IsDead(Glasya Labolas) and OrbCount(2)",
+    ["griffin"] = "CanReach(HLSpun) and (Has(Gale Fibula) or CanStopTime) and Has(Glove) and Has(Life Sigil) and IsDead(Glasya Labolas) and OrbCount(2)",
 
     -- Valhalla
     ["vucub_caquiz"] = "CanReach(ValhallaMain) and Has(Origin Sigil) and (((Has(Leather Whip) or CanUse(Rolling Shuriken)) and OrbCount(1)) or (Has(Chain Whip) or Has(Rapier) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Pistol) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb)))",
@@ -545,7 +545,7 @@ local EVENT_LOGIC = {
     ["white_pedestals"] = "CanReach(GotD) and Has(Pepper) and Has(Birth Sigil) and CanChant(Sun) and IsDead(Unicorn)",
     ["hom_ladder"] = "CanReach(HoMTop)",
     ["garm_statue_puzzle"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and CanChant(Fire) and CanChant(Earth) and CanChant(Sun)",
-    ["sakit_puzzle"] = "CanReach(EPG) and ((Has(Enga Musica) and IsDead(Vidofnir)) or Glitch(Costume Clip)) and Has(Feather) and Has(Giants Flute) and Has(Vessel) and Has(Hand Scanner) and CanChant(Moon) and CanChant(Mother) and CanChant(Child) and IsDead(Fenrir)",
+    ["sakit_puzzle"] = "CanReach(EPG) and ((Has(Enga Musica) and IsDead(Vidofnir)) or Glitch(Costume Clip)) and Has(Feather) and Has(Giant's Flute) and Has(Vessel) and Has(Hand Scanner) and CanChant(Moon) and CanChant(Mother) and CanChant(Child) and IsDead(Fenrir)",
 }
 
 function IsDead(boss)
@@ -632,11 +632,11 @@ FORWARD_EXITS = {
     ["ACWind"] = {{"ACMain", "Has(Feather)"}, {"ACBottom", "True"}},
     ["AltarLeft"] = {{"IBMain", "False"}, {"AltarRight", "CanWarp"}},
     ["AltarRight"] = {{"IBMain", "True"}},
-    ["AnnwfnMain"] = {{"RoYBottomLeft", "True"}, {"AnnwfnSG", "Has(Gloves) or Has(Feather)"}, {"AnnwfnRight", "Has(Annwfn Right Shortcut)"}, {"IBBifrost", "True"}},
+    ["AnnwfnMain"] = {{"RoYBottomLeft", "True"}, {"AnnwfnSG", "Has(Glove) or Has(Feather)"}, {"AnnwfnRight", "Has(Annwfn Right Shortcut)"}, {"IBBifrost", "True"}},
     ["AnnwfnOneWay"] = {{"AnnwfnMain", "CanWarp and HorizontalAttack"}, {"IBCetusLadder", "False"}},
     ["AnnwfnPoison"] = {{"RoYTopLeft", "False"}, {"AnnwfnRight", "CanUse(Rolling Shuriken) or Has(Claydoll Suit) or CanStopTime"}},
     ["AnnwfnRight"] = {{"AnnwfnMain", "IsDead(Ixtab)"}, {"AnnwfnPoison", "True"}},
-    ["AnnwfnSG"] = {{"AnnwfnMain", "Has(Gloves) or Has(Feather) or CanWarp"}, {"SotFGMain", "(GuardianKills(2) or Setting(Random Soul Gates)) and Has(Origin Sigil)"}},
+    ["AnnwfnSG"] = {{"AnnwfnMain", "Has(Glove) or Has(Feather) or CanWarp"}, {"SotFGMain", "(GuardianKills(2) or Setting(Random Soul Gates)) and Has(Origin Sigil)"}},
     ["Cavern"] = {{"IBRight", "True"}, {"Cliff", "True"}},
     ["Cliff"] = {{"Cavern", "False"}},
     ["DFEntrance"] = {{"DFRight", "CanUse(Shuriken) or CanUse(Chakram) or Has(Claydoll Suit) or CanUse(Pistol)"}, {"RoYMiddle", "GuardianKills(1) or Setting(Random Soul Gates)"}},
@@ -647,8 +647,8 @@ FORWARD_EXITS = {
     ["DSLMPyramid"] = {{"Nibiru", "Has(Pyramid Crystal) and Has(Destiny Tablet) and CanChant(Heaven) and CanChant(Moon) and CanChant(Fire) and CanChant(Sea) and CanChant(Sun)"}},
     ["DSLMTop"] = {{"DSLMMain", "Has(Feather) or CanWarp"}, {"ValhallaMain", "CanWarp or CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["EPDEntrance"] = {{"EPDMain", "True"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}},
-    ["EPDMain"] = {{"EPDEntrance", "IsDead(Hraesvelgr) and Has(Feather)"}, {"EPDTop", "Has(Feather) and Has(Gloves)"}, {"EPG", "Has(Grapple Claw) and (Has(Gale Fibula) or CanStopTime) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1) and Has(Anchor)))"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
-    ["EPDTop"] = {{"EPDHel", "((IsDead(Vidofnir) and GuardianKills(5)) or Setting(Random Soul Gates)) and IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and CanUse(Bomb) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Gloves) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"}},
+    ["EPDMain"] = {{"EPDEntrance", "IsDead(Hraesvelgr) and Has(Feather)"}, {"EPDTop", "Has(Feather) and Has(Glove)"}, {"EPG", "Has(Grapple Claw) and (Has(Gale Fibula) or CanStopTime) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1) and Has(Anchor)))"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
+    ["EPDTop"] = {{"EPDHel", "((IsDead(Vidofnir) and GuardianKills(5)) or Setting(Random Soul Gates)) and IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and CanUse(Bomb) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Glove) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"}},
     ["EPG"] = {{"EPDMain", "(Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1)) or Has(Grapple Claw)) and Has(Feather)"}, {"EPDTop", "Has(Death Sigil) and (Has(Feather) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp))"}, {"ITVidofnir", "GuardianKills(5) or Setting(Random Soul Gates)"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["EndlessCorridor"] = {{"MausoleumofGiantsRubble", "True"}},
     ["GateofGuidance"] = {{"VoD", "True"}, {"MausoleumofGiants", "True"}},
@@ -674,12 +674,12 @@ FORWARD_EXITS = {
     ["IBMain"] = {{"IBTopLeft", "True"}, {"IBRight", "True"}, {"IBDinosaur", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)"}, {"IBBottom", "True"}, {"GotD", "(GuardianKills(2) or Setting(Random Soul Gates)) and HorizontalAttack"}, {"AltarLeft", "Has(Dinosaur Figure)"}, {"AltarRight", "Has(Dinosaur Figure)"}},
     ["IBMoon"] = {{"IBDinosaur", "Has(Life Sigil) and (CanWarp or (Has(Grapple Claw) and Setting(Non Random Ladders)))"}, {"ITRightLeftLadder", "False"}},
     ["IBRight"] = {{"IBMain", "Has(Feather) or Has(Grapple Claw)"}, {"Cavern", "True"}},
-    ["IBTop"] = {{"IBTopLeft", "CanWarp or ((Has(Feather) or Has(Gloves)) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops)))"}, {"IBMain", "IsDead(Cetus)"}, {"IBCetusLadder", "IsDead(Cetus)"}},
-    ["IBTopLeft"] = {{"IBTop", "(Has(Feather) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops))) or (Has(Gloves) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops)))"}, {"IBMain", "Glitch(Costume Clip)"}},
-    ["ITBottom"] = {{"ITSinmara", "True"}, {"ITRight", "Has(Feather) or (Has(Gale Fibula) and (Has(Leather Whip) or Has(Axe) or CanUse(Shuriken) or CanUse(Bomb) or CanUse(Earth Spear) or CanUse(Flare) or (CanUse(Chakram) and Has(Ring))))"}, {"ITVidofnir", "CanChant(Moon) and CanChant(Sun) and CanWarp"}},
+    ["IBTop"] = {{"IBTopLeft", "CanWarp or ((Has(Feather) or Has(Glove)) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops)))"}, {"IBMain", "IsDead(Cetus)"}, {"IBCetusLadder", "IsDead(Cetus)"}},
+    ["IBTopLeft"] = {{"IBTop", "(Has(Feather) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops))) or (Has(Glove) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops)))"}, {"IBMain", "Glitch(Costume Clip)"}},
+    ["ITBottom"] = {{"ITSinmara", "True"}, {"ITRight", "Has(Feather) or (Has(Gale Fibula) and (Has(Leather Whip) or Has(Axe) or CanUse(Shuriken) or CanUse(Bomb) or CanUse(Earth Spear) or CanUse(Flare Gun) or (CanUse(Chakram) and Has(Ring))))"}, {"ITVidofnir", "CanChant(Moon) and CanChant(Sun) and CanWarp"}},
     ["ITEntrance"] = {{"RoYTopMiddle", "False"}, {"ITBottom", "CanWarp or Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2) or (Has(Feather) and Has(Grapple Claw))"}, {"ITSinmara", "Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2)"}, {"ITRight", "Has(Grapple Claw) and (CanWarp or Has(Feather) or CanReach(ITSinmara))"}},
     ["ITLeft"] = {{"ITSinmara", "HorizontalAttack"}, {"ITEntrance", "Glitch(Costume Clip) and (Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2) or CanWarp)"}, {"IBLadder", "True"}},
-    ["ITRight"] = {{"ITBottom", "CanWarp or Has(Feather) or (Has(Gale Fibula) and (Has(Leather Whip) or Has(Axe) or CanUse(Shuriken) or CanUse(Bomb) or CanUse(Earth Spear) or CanUse(Flare) or (CanUse(Chakram) and Has(Ring))))"}, {"ITEntrance", "Has(Feather) and Has(Grapple Claw)"}, {"ITRightLeftLadder", "Has(Life Sigil)"}, {"IBBattery", "True"}, {"HL", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3) and (GuardianKills(3) or Setting(Random Soul Gates))"}},
+    ["ITRight"] = {{"ITBottom", "CanWarp or Has(Feather) or (Has(Gale Fibula) and (Has(Leather Whip) or Has(Axe) or CanUse(Shuriken) or CanUse(Bomb) or CanUse(Earth Spear) or CanUse(Flare Gun) or (CanUse(Chakram) and Has(Ring))))"}, {"ITEntrance", "Has(Feather) and Has(Grapple Claw)"}, {"ITRightLeftLadder", "Has(Life Sigil)"}, {"IBBattery", "True"}, {"HL", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3) and (GuardianKills(3) or Setting(Random Soul Gates))"}},
     ["ITRightLeftLadder"] = {{"IBMoon", "True"}},
     ["ITSinmara"] = {{"ITEntrance", "Setting(Remove IT Statue) and (Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2))"}, {"ITBottom", "HorizontalAttack"}, {"ITLeft", "True"}},
     ["ITVidofnir"] = {{"EPG", "IsDead(Vidofnir) and (GuardianKills(5) and CanWarp)"}},
@@ -706,7 +706,7 @@ FORWARD_EXITS = {
     ["TSBottom"] = {{"TSMain", "True"}, {"ACBottom", "True"}},
     ["TSEntrance"] = {{"TSLeft", "Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb)"}, {"TSMain", "Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and (Has(Spaulder) or Has(Vajra)))"}, {"IBLeftSG", "GuardianKills(3) or Setting(Random Soul Gates)"}},
     ["TSLeft"] = {{"TSMain", "True"}},
-    ["TSMain"] = {{"TSBottom", "Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or Start(TSLeft)"}, {"TSNeck", "IsDead(Raijin and Fujin)"}, {"TSEntrance", "Has(Leather Whip) or Has(Axe) or CanUse(Earth Spear) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare) and HorizontalAttack)"}},
+    ["TSMain"] = {{"TSBottom", "Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or Start(TSLeft)"}, {"TSNeck", "IsDead(Raijin and Fujin)"}, {"TSEntrance", "Has(Leather Whip) or Has(Axe) or CanUse(Earth Spear) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) and HorizontalAttack)"}},
     ["TSNeck"] = {{"TSMain", "CanKill(Raijin and Fujin) or (CanStopTime and CanWarp)"}, {"TSNeckEntrance", "True"}},
     ["TSNeckEntrance"] = {{"TSNeck", "CanWarp or (CanChant(Heaven) and CanChant(Earth) and CanChant(Sea) and CanChant(Fire) and CanChant(Wind))"}, {"HLCog", "CanChant(Earth) and CanChant(Wind) and CanChant(Fire) and CanChant(Sea) and CanChant(Heaven) and CanWarp"}},
     ["ValhallaMain"] = {{"ValhallaTop", "Has(Feather) or CanChant(Heaven)"}, {"DFMain", "True"}, {"SotFGBlood", "CanWarp or CanSpinCorridor or (CanReach(SotFG Main) and CanKill(Tezcatlipoca) and Setting(Non Random Gates))"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},

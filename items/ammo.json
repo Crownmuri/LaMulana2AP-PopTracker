@@ -18,10 +18,10 @@
     "codes": "earth_spear_ammo"
   },
   {
-    "name": "Flare Ammo",
+    "name": "Flare Gun Ammo",
     "type": "toggle",
     "img": "images/Other/FlareAmmo.png",
-    "codes": "flare_ammo"
+    "codes": "flare_gun_ammo"
   },
   {
     "name": "Bomb Ammo",

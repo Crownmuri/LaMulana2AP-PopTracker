@@ -54,12 +54,12 @@
                         "hosted_item": "cursed_430109",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430109|CanReach(TSMain) and (MeleeAttack or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or CanUse(Rolling Shuriken) or (CanUse(Flare) and HorizontalAttack))"
+                            "^$lm2_cursed|430109|CanReach(TSMain) and (MeleeAttack or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or CanUse(Rolling Shuriken) or (CanUse(Flare Gun) and HorizontalAttack))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(TSMain) and (MeleeAttack or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or CanUse(Rolling Shuriken) or (CanUse(Flare) and HorizontalAttack))"
+                    "$lm2_logic|CanReach(TSMain) and (MeleeAttack or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or CanUse(Rolling Shuriken) or (CanUse(Flare Gun) and HorizontalAttack))"
                 ]
             },
             {
@@ -258,7 +258,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(TSBottom) and (OrbCount(2) and ((Has(Chain Whip) and (Has(Gauntlet) or Has(Spaulder))) or (Has(Knife) and Has(Spaulder) and Has(Feather)) or (Has(Rapier) and Has(Gauntlet) and Has(Spaulder) and Has(Feather)) or Has(Flail Whip) or Has(Axe) or Has(Katana) or (CanUse(Pistol) and Has(Feather)) or (CanUse(Rolling Shuriken) and Has(Ring) and Has(Feather)) or (CanUse(Chakram) and (Has(Ring) or Has(Feather))) or CanUse(Bomb) or CanUse(Flare) or ((CanUse(Earth Spear) or CanUse(Caltrops))and Has(Ring))))"
+                    "$lm2_logic|CanReach(TSBottom) and (OrbCount(2) and ((Has(Chain Whip) and (Has(Gauntlet) or Has(Spaulder))) or (Has(Knife) and Has(Spaulder) and Has(Feather)) or (Has(Rapier) and Has(Gauntlet) and Has(Spaulder) and Has(Feather)) or Has(Flail Whip) or Has(Axe) or Has(Katana) or (CanUse(Pistol) and Has(Feather)) or (CanUse(Rolling Shuriken) and Has(Ring) and Has(Feather)) or (CanUse(Chakram) and (Has(Ring) or Has(Feather))) or CanUse(Bomb) or CanUse(Flare Gun) or ((CanUse(Earth Spear) or CanUse(Caltrops))and Has(Ring))))"
                 ]
             },
             {

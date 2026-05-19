@@ -186,7 +186,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and Has(Gloves) and IsDead(Glasya Labolas))"
+                    "$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and Has(Glove) and IsDead(Glasya Labolas))"
                 ]
             },
             {
@@ -321,7 +321,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLSpun) and ((Has(Gale Fibula) or CanStopTime) and Has(Gloves) and Has(Life Sigil) and IsDead(Glasya Labolas) and OrbCount(2))"
+                    "$lm2_logic|CanReach(HLSpun) and ((Has(Gale Fibula) or CanStopTime) and Has(Glove) and Has(Life Sigil) and IsDead(Glasya Labolas) and OrbCount(2))"
                 ]
             },
             {
