@@ -35,8 +35,23 @@
                     }
                 },
                 {
-                    "type": "layout",
-                    "key": "entrances_layout"
+                    "type": "tabbed",
+                    "tabs": [
+                        {
+                            "title": "Entrances",
+                            "content": {
+                                "type": "layout",
+                                "key": "entrances_layout"
+                            }
+                        },
+                        {
+                            "title": "Escape Sequence",
+                            "content": {
+                                "type": "layout",
+                                "key": "escape_sequence_layout"
+                            }
+                        }
+                    ]
                 }
             ]
         }

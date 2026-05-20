@@ -15,6 +15,7 @@ Tracker:AddItems("items/options.json")
 Tracker:AddItems("items/bosses.json")
 Tracker:AddItems("items/settings.json")
 Tracker:AddItems("items/entrances.json")
+Tracker:AddItems("items/escape.json")
 Tracker:AddItems("items/shop_marks.json")
 Tracker:AddItems("items/cursed.json")
 
@@ -55,6 +56,7 @@ Tracker:AddLayouts("layouts/maps.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/settings.json")
 Tracker:AddLayouts("layouts/entrances.json")
+Tracker:AddLayouts("layouts/escape.json")
 Tracker:AddLayouts("layouts/shops.json")
 
 
@@ -63,6 +65,7 @@ Tracker:AddLayouts("layouts/shops.json")
 -- ============================================================
 ScriptHost:LoadScript("scripts/logic.lua")
 ScriptHost:LoadScript("scripts/entrance_mapping.lua")
+ScriptHost:LoadScript("scripts/escape_route.lua")
 
 -- ============================================================
 -- AP Autotracking

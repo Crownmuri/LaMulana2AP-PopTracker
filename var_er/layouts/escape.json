@@ -1,0 +1,34 @@
+{
+    "escape_sequence_layout": {
+        "type": "group",
+        "header": "Escape Route from Spiral Hell to Cliff",
+        "content": {
+            "type": "itemgrid",
+            "item_size": "360,18",
+            "item_margin": "0,1",
+            "item_h_alignment": "left",
+            "rows": [
+                [ "escape_step_1" ],
+                [ "escape_step_2" ],
+                [ "escape_step_3" ],
+                [ "escape_step_4" ],
+                [ "escape_step_5" ],
+                [ "escape_step_6" ],
+                [ "escape_step_7" ],
+                [ "escape_step_8" ],
+                [ "escape_step_9" ],
+                [ "escape_step_10" ],
+                [ "escape_step_11" ],
+                [ "escape_step_12" ],
+                [ "escape_step_13" ],
+                [ "escape_step_14" ],
+                [ "escape_step_15" ],
+                [ "escape_step_16" ],
+                [ "escape_step_17" ],
+                [ "escape_step_18" ],
+                [ "escape_step_19" ],
+                [ "escape_step_20" ]
+            ]
+        }
+    }
+}

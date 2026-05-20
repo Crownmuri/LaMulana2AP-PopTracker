@@ -159,6 +159,8 @@ function UnlinkEntrance(code)
 
     ER_PAIRINGS[code] = nil
     ER_PAIRINGS[paired] = nil
+
+    if UpdateEscapeRoute then UpdateEscapeRoute() end
 end
 
 function EntranceClick(code)
@@ -205,6 +207,8 @@ function EntranceClick(code)
 
     -- Reset selection
     ENTRANCE_SELECTED = nil
+
+    if UpdateEscapeRoute then UpdateEscapeRoute() end
 end
 
 function InitEntranceWatchers()
@@ -301,6 +305,8 @@ local function LoadPairingsFunc(self, data)
             ApplyPairing(a, b)
         end
     end
+
+    if UpdateEscapeRoute then UpdateEscapeRoute() end
 end
 
 local pairings_storage = ScriptHost:CreateLuaItem()
@@ -435,4 +441,6 @@ function ApplySpoiler(entrance_pairs, soul_gate_pairs)
             end
         end
     end
+
+    if UpdateEscapeRoute then UpdateEscapeRoute() end
 end

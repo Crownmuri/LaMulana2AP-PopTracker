@@ -1,0 +1,22 @@
+[
+    { "name": "Escape Step 1",  "type": "static", "codes": "escape_step_1",  "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 2",  "type": "static", "codes": "escape_step_2",  "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 3",  "type": "static", "codes": "escape_step_3",  "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 4",  "type": "static", "codes": "escape_step_4",  "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 5",  "type": "static", "codes": "escape_step_5",  "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 6",  "type": "static", "codes": "escape_step_6",  "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 7",  "type": "static", "codes": "escape_step_7",  "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 8",  "type": "static", "codes": "escape_step_8",  "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 9",  "type": "static", "codes": "escape_step_9",  "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 10", "type": "static", "codes": "escape_step_10", "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 11", "type": "static", "codes": "escape_step_11", "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 12", "type": "static", "codes": "escape_step_12", "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 13", "type": "static", "codes": "escape_step_13", "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 14", "type": "static", "codes": "escape_step_14", "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 15", "type": "static", "codes": "escape_step_15", "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 16", "type": "static", "codes": "escape_step_16", "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 17", "type": "static", "codes": "escape_step_17", "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 18", "type": "static", "codes": "escape_step_18", "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 19", "type": "static", "codes": "escape_step_19", "img": "images/Mantras/Blank.png" },
+    { "name": "Escape Step 20", "type": "static", "codes": "escape_step_20", "img": "images/Mantras/Blank.png" }
+]

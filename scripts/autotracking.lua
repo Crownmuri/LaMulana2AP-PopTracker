@@ -440,7 +440,9 @@ local BOSS_HOSTED_SECTIONS = {
     ["boss_kujata"]               = "@Annwfn/Kujata/Guardian",
     ["boss_money_fairy"]          = "@Dark Star Lords Mausoleum/Money Fairy/Fairy",
     ["boss_nidhogg"]              = "@Roots of Yggdrasil/Nidhogg/Miniboss",
-    ["boss_ninth_child"]          = "@Spiral Hell/Ninth Child/FinalBoss",
+    -- ["boss_ninth_child"]          = "@Spiral Hell/Ninth Child/FinalBoss",
+    -- Go Mode reachability indicator (UpdateGoMode flips it Active when the
+    -- Ninth Child is logically reachable)
     ["boss_raijin_and_fujin"]     = "@Takamagahara Shrine/Raijin and Fujin/Miniboss",
     ["boss_ratatoskr_1"]          = "@Roots of Yggdrasil/Ratatoskr 1/Miniboss",
     ["boss_ratatoskr_2"]          = "@Immortal Battlefield/Ratatoskr 2/Miniboss",
@@ -451,7 +453,6 @@ local BOSS_HOSTED_SECTIONS = {
     ["boss_sekhmet"]              = "@Dark Star Lords Mausoleum/Sekhmet/Miniboss",
     ["boss_surtr"]                = "@Icefire Treetop/Surtr/Guardian",
     ["boss_svipdagr"]             = "@Immortal Battlefield/Svipdagr/Miniboss",
-    -- BloodTez is its own top-level location node (not a child of SotFG)
     ["boss_tezcatlipoca"]         = "@BloodTez/Tezcatlipoca/Miniboss",
     ["boss_unicorn"]              = "@Gate of the Dead/Unicorn/Miniboss",
     ["boss_vedfolnir"]            = "@Icefire Treetop/Vedfolnir/Miniboss",

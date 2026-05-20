@@ -211,6 +211,25 @@ function RequiredSkulls()
     return 6
 end
 
+-- Spiral Boat soul gate (HoM -> IBBoat) guardian requirement for the
+-- non-ER graph. The AP world floors this N9 gate to the highest soul-gate
+-- value in {1,2,3,5,9} that is <= required_guardians whenever
+-- random_dissonance is ON (entrances.py _floor_to_available_gate_value),
+-- so the player never has to kill extra guardians just to reach the final
+-- area. With random_dissonance OFF it stays at vanilla 9. ER packs read the
+-- floored value from the per-gate cost_ item via SoulGateCost instead.
+function SpiralBoatGate()
+    if not has("setting_random_dissonance") then
+        return GuardianKills(9)
+    end
+    local req = RequiredGuardians()
+    local floored = 1
+    for _, v in ipairs({1, 2, 3, 5, 9}) do
+        if v <= req then floored = v end
+    end
+    return GuardianKills(floored)
+end
+
 function MeleeAttack() return has("whip1") or has("knife") or has("rapier") or has("axe") or has("katana") end
 function HorizontalAttack()
     return MeleeAttack() or CanUse("Shuriken") or CanUse("Rolling Shuriken")
@@ -219,7 +238,22 @@ function HorizontalAttack()
 end
 function CanStopTime() return has("lamp_of_time") end
 function CanSpinCorridor() return count("beherit") >= 1 and Dissonance(1) end
-function CanSealCorridor() return count("beherit") >= 1 and Dissonance(6) end
+-- Port of AP world player_state._can_seal_corridor. The boss gate
+-- (random_dissonance ? GuardianKills(RequiredGuardians) : Anu) is the
+-- endgame trigger that opens the Spiral Hell door; without it CanReach
+-- (SpiralHell) would light the Ninth Child location before the required
+-- guardians are down (notably with Random Soul Gates bypassing the boat gate).
+function CanSealCorridor()
+    if not (count("beherit") >= 1 and Dissonance(6)) then return false end
+    if not (CanReach("ValhallaMain") or CanReach("DSLMTop") or CanReach("SotFGBlood")
+        or CanReach("ACBlood") or CanReach("HoM") or CanReach("EPDEntrance")) then
+        return false
+    end
+    if has("setting_random_dissonance") then
+        return GuardianKills(RequiredGuardians())
+    end
+    return has("boss_anu")
+end
 function Setting(name)
     -- HardBosses maps to the progressive logic setting (stage 1 = hard)
     if name == "HardBosses" then
@@ -660,7 +694,7 @@ FORWARD_EXITS = {
     ["HLCog"] = {{"TSNeckEntrance", "False"}},
     ["HLGate"] = {{"HL", "CanWarp"}, {"HoMTop", "(Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla)"}},
     ["HLSpun"] = {{"HLGate", "True"}},
-    ["HoM"] = {{"HoMTop", "Has(HoM Ladder)"}, {"ACBlood", "CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}, {"IBBoat", "Has(Death Sigil) and CanUse(Earth Spear) and (CanWarp or IsDead(HoM Middle Path)) and (GuardianKills(9) or Setting(Random Soul Gates))"}},
+    ["HoM"] = {{"HoMTop", "Has(HoM Ladder)"}, {"ACBlood", "CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}, {"IBBoat", "Has(Death Sigil) and CanUse(Earth Spear) and (CanWarp or IsDead(HoM Middle Path)) and (SpiralBoatGate or Setting(Random Soul Gates))"}},
     ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}, {"HL", "False"}},
     ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}, {"ITRight", "True"}},
     ["IBBifrost"] = {{"IBTop", "CanWarp or (CanKill(Cetus) and Setting(Non Random Ladders))"}, {"AnnwfnMain", "False"}},
@@ -784,7 +818,7 @@ LOGIC_FUNCS = {
     CanSpinCorridor=CanSpinCorridor, CanSealCorridor=CanSealCorridor, CanKill=CanKill,
     MeleeAttack=MeleeAttack, HorizontalAttack=HorizontalAttack,
     OrbCount=OrbCount, SkullCount=SkullCount, GuardianKills=GuardianKills,
-    SoulGateCost=SoulGateCost,
+    SoulGateCost=SoulGateCost, SpiralBoatGate=SpiralBoatGate,
     Setting=Setting, Glitch=Glitch, Dissonance=Dissonance, Start=Start,
     NotVoDStart=NotVoDStart, HasAnkhFor=HasAnkhFor,
     NibiruSkullCheck=NibiruSkullCheck,

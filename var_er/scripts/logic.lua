@@ -187,7 +187,22 @@ function HorizontalAttack()
 end
 function CanStopTime() return has("lamp_of_time") end
 function CanSpinCorridor() return count("beherit") >= 1 and Dissonance(1) end
-function CanSealCorridor() return count("beherit") >= 1 and Dissonance(6) end
+-- Port of AP world player_state._can_seal_corridor. The boss gate
+-- (random_dissonance ? GuardianKills(RequiredGuardians) : Anu) is the
+-- endgame trigger that opens the Spiral Hell door; without it CanReach
+-- (SpiralHell) would light the Ninth Child location before the required
+-- guardians are down (notably with Random Soul Gates bypassing the boat gate).
+function CanSealCorridor()
+    if not (count("beherit") >= 1 and Dissonance(6)) then return false end
+    if not (CanReach("ValhallaMain") or CanReach("DSLMTop") or CanReach("SotFGBlood")
+        or CanReach("ACBlood") or CanReach("HoM") or CanReach("EPDEntrance")) then
+        return false
+    end
+    if has("setting_random_dissonance") then
+        return GuardianKills(RequiredGuardians())
+    end
+    return has("boss_anu")
+end
 function Setting(name)
     -- HardBosses maps to the progressive logic setting (stage 1 = hard)
     if name == "HardBosses" then
