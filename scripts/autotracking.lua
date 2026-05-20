@@ -1013,23 +1013,26 @@ end
 
 -- ============================================================
 -- Reveal Entrances button
--- The setting_reveal_entrances toggle behaves like a momentary button:
--- click it to apply slot_data entrance/soul-gate pairings, then it
--- resets itself. ApplySpoiler only exists in the var_er variant; on
--- the base pack the click is a no-op.
+-- The setting_reveal_entrances toggle stays lit while active: turning it
+-- on applies the slot_data entrance/soul-gate pairings, turning it off
+-- removes them. ApplySpoiler/ClearSpoiler only exist in the var_er
+-- variant; on the base pack the click is a no-op.
 -- ============================================================
 
 local _spoiler_processing = false
 ScriptHost:AddWatchForCode("reveal_spoiler_watch", "setting_reveal_entrances", function(code)
     if _spoiler_processing then return end
     local obj = Tracker:FindObjectForCode(code)
-    if not obj or not obj.Active then return end
+    if not obj then return end
 
     _spoiler_processing = true
-    if ApplySpoiler and _cached_slot_data then
-        ApplySpoiler(_cached_slot_data.entrance_pairs, _cached_slot_data.soul_gate_pairs)
+    if obj.Active then
+        if ApplySpoiler and _cached_slot_data then
+            ApplySpoiler(_cached_slot_data.entrance_pairs, _cached_slot_data.soul_gate_pairs)
+        end
+    else
+        if ClearSpoiler then ClearSpoiler() end
     end
-    obj.Active = false
     _spoiler_processing = false
 end)
 

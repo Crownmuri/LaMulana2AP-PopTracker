@@ -403,6 +403,21 @@ EXIT_ID_TO_ER_CODE = {
 --   0=Untracked, 1=1, 2=2, 3=3, 4=5, 5=9
 local SOUL_AMOUNT_TO_STAGE = { [1] = 1, [2] = 2, [3] = 3, [5] = 4, [9] = 5 }
 
+function ClearSpoiler()
+    -- Re-arm the click suppression window: clearing Active flips state on the
+    -- endpoints, which would otherwise re-enter EntranceClick.
+    SuppressClicks(SUPPRESS_RESTORE_FRAMES)
+
+    for code, _ in pairs(ER_PAIRINGS) do
+        ClearTargetOverlay(code)
+        local o = Tracker:FindObjectForCode(code)
+        if o then o.Active = false end
+    end
+    ER_PAIRINGS = {}
+
+    if UpdateEscapeRoute then UpdateEscapeRoute() end
+end
+
 function ApplySpoiler(entrance_pairs, soul_gate_pairs)
     -- Re-arm the click suppression window: ApplyPairing flips Active=true on
     -- both endpoints, which would otherwise re-enter EntranceClick.
