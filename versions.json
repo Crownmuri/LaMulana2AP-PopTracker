@@ -1,5 +1,13 @@
 [
     {
+        "package_version": "1.3.0",
+        "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.3.0/LaMulana2AP-PopTracker.v1.3.0.zip",
+        "sha256": "2101639c2425b5627465bd33ea76e09cf1962f718a39b2be565abe5a3433cd7d",
+        "changelog": [
+            "Added Reveal Entrances and Escape Sequence along with some small bug fixes."
+        ]
+    },
+    {
         "package_version": "1.2.1",
         "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.2.1/LaMulana2AP-PopTracker.v1.2.1.zip",
         "sha256": "0d139189b1e1507fd6d852941d42bdd4cdca16e5674cb5dd67dd6a2df42ca23e",
