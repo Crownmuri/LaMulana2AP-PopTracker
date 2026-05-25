@@ -860,6 +860,11 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     set_toggle("setting_costume_clip",  slot_data.costume_clip)
     set_toggle("setting_dlc_logic",     slot_data.dlc_item_logic)
     set_toggle("setting_life_for_hom", slot_data.life_sigil_to_awaken_hom)
+
+    -- var_er only: pre-fill + lock the entrances whose ER category is vanilla
+    -- (their slot_data.options.* toggle is OFF) so the player only tracks the
+    -- categories that are actually shuffled. No-op on the non-ER variants.
+    if RebuildVanillaEntrances then RebuildVanillaEntrances() end
 end)
 
 -- Shop mark watches disabled for performance.

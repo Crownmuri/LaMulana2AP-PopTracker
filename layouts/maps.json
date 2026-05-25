@@ -173,6 +173,15 @@
                         "Eternal Prison - Doom"
                     ]
                 }
+            },
+            {
+                "title": "Spiral Hell",
+                "content": {
+                    "type": "map",
+                    "maps": [
+                        "Spiral Hell"
+                    ]
+                }
             }
         ]
     },

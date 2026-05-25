@@ -80,6 +80,12 @@ ER_ENTRANCE_NAMES = {
 -- This is read by logic.lua for flood-fill routing
 ER_PAIRINGS = {}
 
+-- code -> true for entrances locked to their vanilla pairing because their
+-- ER category is NOT shuffled in this seed (e.g. Horizontal Entrances OFF).
+-- These are pre-filled from slot_data and must be left alone by manual
+-- clicks and by the Reveal Spoiler apply/clear passes.
+ER_VANILLA = {}
+
 ENTRANCE_SELECTED = nil
 
 -- Frames during which the click watcher should ignore state changes.
@@ -165,6 +171,8 @@ end
 
 function EntranceClick(code)
     if ER_SUPPRESS_FRAMES > 0 then return end
+    -- Vanilla-locked entrances (unshuffled category) are not manually editable.
+    if ER_VANILLA[code] then return end
     local obj = Tracker:FindObjectForCode(code)
     if not obj then return end
 
@@ -279,13 +287,14 @@ end
 
 local function SavePairingsFunc(self)
     -- Store one direction per pair; the load side rebuilds the symmetric mapping.
+    -- The third element flags vanilla-locked pairs so they restore as locked.
     local seen = {}
     local pairs_list = {}
     for a, b in pairs(ER_PAIRINGS) do
         if not seen[a] and not seen[b] then
             seen[a] = true
             seen[b] = true
-            table.insert(pairs_list, { a, b })
+            table.insert(pairs_list, { a, b, ER_VANILLA[a] and true or false })
         end
     end
     return { Name = self.Name, Pairings = pairs_list }
@@ -296,13 +305,18 @@ local function LoadPairingsFunc(self, data)
     -- AND any toggle-restore the engine fires on its side of this pass.
     SuppressClicks(SUPPRESS_RESTORE_FRAMES)
     ER_PAIRINGS = {}
+    ER_VANILLA = {}
     if type(data) ~= "table" or data.Name ~= self.Name then return end
     local pairs_list = data.Pairings
     if type(pairs_list) ~= "table" then return end
     for _, entry in ipairs(pairs_list) do
-        local a, b = entry[1], entry[2]
+        local a, b, v = entry[1], entry[2], entry[3]
         if type(a) == "string" and type(b) == "string" then
             ApplyPairing(a, b)
+            if v then
+                ER_VANILLA[a] = true
+                ER_VANILLA[b] = true
+            end
         end
     end
 
@@ -408,12 +422,19 @@ function ClearSpoiler()
     -- endpoints, which would otherwise re-enter EntranceClick.
     SuppressClicks(SUPPRESS_RESTORE_FRAMES)
 
-    for code, _ in pairs(ER_PAIRINGS) do
-        ClearTargetOverlay(code)
-        local o = Tracker:FindObjectForCode(code)
-        if o then o.Active = false end
+    -- Clear only the revealed/manual pairings; vanilla-locked pairs (unshuffled
+    -- categories pre-filled from slot_data) stay put.
+    local kept = {}
+    for code, dest in pairs(ER_PAIRINGS) do
+        if ER_VANILLA[code] then
+            kept[code] = dest
+        else
+            ClearTargetOverlay(code)
+            local o = Tracker:FindObjectForCode(code)
+            if o then o.Active = false end
+        end
     end
-    ER_PAIRINGS = {}
+    ER_PAIRINGS = kept
 
     if UpdateEscapeRoute then UpdateEscapeRoute() end
 end
@@ -425,18 +446,28 @@ function ApplySpoiler(entrance_pairs, soul_gate_pairs)
 
     -- Wipe any manually-set pairings so we don't end up with stale
     -- half-links if a previously paired entrance isn't part of the spoiler.
-    for code, _ in pairs(ER_PAIRINGS) do
-        ClearTargetOverlay(code)
-        local o = Tracker:FindObjectForCode(code)
-        if o then o.Active = false end
+    -- Vanilla-locked pairs (unshuffled categories) are preserved untouched.
+    local kept = {}
+    for code, dest in pairs(ER_PAIRINGS) do
+        if ER_VANILLA[code] then
+            kept[code] = dest
+        else
+            ClearTargetOverlay(code)
+            local o = Tracker:FindObjectForCode(code)
+            if o then o.Active = false end
+        end
     end
-    ER_PAIRINGS = {}
+    ER_PAIRINGS = kept
 
     if type(entrance_pairs) == "table" then
         for _, p in ipairs(entrance_pairs) do
             local a = EXIT_ID_TO_ER_CODE[tonumber(p[1])]
             local b = EXIT_ID_TO_ER_CODE[tonumber(p[2])]
-            if a and b then ApplyPairing(a, b) end
+            -- A vanilla-locked endpoint is never part of the shuffled pool, so
+            -- skip defensively rather than overwrite the locked pairing.
+            if a and b and not ER_VANILLA[a] and not ER_VANILLA[b] then
+                ApplyPairing(a, b)
+            end
         end
     end
 
@@ -445,7 +476,7 @@ function ApplySpoiler(entrance_pairs, soul_gate_pairs)
             local a = EXIT_ID_TO_ER_CODE[tonumber(p[1])]
             local b = EXIT_ID_TO_ER_CODE[tonumber(p[2])]
             local stage = SOUL_AMOUNT_TO_STAGE[tonumber(p[3])]
-            if a and b then
+            if a and b and not ER_VANILLA[a] and not ER_VANILLA[b] then
                 ApplyPairing(a, b)
                 if stage then
                     local ca = Tracker:FindObjectForCode("cost_" .. a)
@@ -453,6 +484,158 @@ function ApplySpoiler(entrance_pairs, soul_gate_pairs)
                     if ca then ca.CurrentStage = stage end
                     if cb then cb.CurrentStage = stage end
                 end
+            end
+        end
+    end
+
+    if UpdateEscapeRoute then UpdateEscapeRoute() end
+end
+
+-- ============================================================
+-- Vanilla entrance pre-fill (unshuffled ER categories)
+-- ------------------------------------------------------------
+-- When an ER category is NOT shuffled in this seed (its slot_data option
+-- is OFF), every entrance in that category is fixed to its vanilla partner.
+-- Rather than make the player track those manually, we pre-pair and lock
+-- them (ER_VANILLA) using a static, seed-independent vanilla pairing table
+-- derived from the AP world's World.json. Locked pairs are skipped by manual
+-- clicks and by the Reveal Spoiler apply/clear passes.
+--
+-- Categories (by exit type):
+--   horizontal -> LeftDoor / RightDoor       (options.horizontal_entrances)
+--   vertical   -> UpLadder / DownLadder       (options.vertical_entrances)
+--   gate       -> Gate                        (options.gate_entrances)
+--   unique     -> OneWay/Pyramid/Start/Altar  (options.unique_transitions)
+--   soulgate   -> SoulGate                    (options.soul_gate_entrances)
+-- full_random_entrances forces all structural types into the shuffled pool.
+-- ============================================================
+
+-- { codeA, codeB, category }
+local VANILLA_STRUCTURAL_PAIRS = {
+    { "er_divine_fortress_left_gate__a_3", "er_valhalla_gate__a_2", "gate" },
+    { "er_gate_of_guidance_left_gate__a_3", "er_gate_of_illusion_left_gate__a_1", "gate" },
+    { "er_gate_of_illusion_right_gate__c_1", "er_roots_of_yggdrasil_main_gate__d_4", "gate" },
+    { "er_gate_of_the_dead_wedjat_gate__f_5", "er_dark_star_lord_s_mausoleum_gate__d_7", "gate" },
+    { "er_heavens_labyrinth_gate__d_1", "er_hall_of_malice_gate__c_1", "gate" },
+    { "er_roots_of_yggdrasil_top_left_switch_gate__a_1", "er_annwfn_right_gate__g_4", "gate" },
+    { "er_roots_of_yggdrasil_top_middle_nidhogg_gate__d_1", "er_icefire_treetop_middle_gate__d_3", "gate" },
+    { "er_roots_of_yggdrasil_top_right_birth_gate__g_1", "er_immortal_battlefield_left_gate__a_6", "gate" },
+    { "er_shrine_of_the_frost_giants_bergelmir_gate__b_4", "er_shrine_of_the_frost_giants_backside_gate__b_2", "gate" },
+    { "er_takamagahara_shrine_bottom_gate__c_7", "er_ancient_chaos_gate__d_6", "gate" },
+    { "er_cavern_right_door__d_1", "er_cliff__a_1", "horizontal" },
+    { "er_immortal_battlefield_right_door__h_4", "er_cavern_left_door__a_1", "horizontal" },
+    { "er_mausoleum_of_giants_left_door__a_5", "er_endless_corridor__c_1", "horizontal" },
+    { "er_village_of_departure_main__f_5", "er_gate_of_guidance_main_entrance__c_1", "horizontal" },
+    { "er_annwfn_bifrost", "er_immortal_battlefield_bifrost_fall", "unique" },
+    { "er_dark_star_lord_s_mausoleum_pyramid", "er_nibiru_spaceship", "unique" },
+    { "er_immortal_battlefield_left_altar_door__d_3", "er_altar_left_door__a_1", "unique" },
+    { "er_immortal_battlefield_right_altar_door__f_3", "er_altar_right_door__c_1", "unique" },
+    { "er_starting_area", "er_village_of_departure_next_to_xelpud", "unique" },
+    { "er_takamagahara_shrine_neck", "er_heavens_labyrinth_monster_s_jaw", "unique" },
+    { "er_annwfn_bottom_one_way_ladder__e_5", "er_immortal_battlefield_cetus_up_ladder__f_1", "vertical" },
+    { "er_gate_of_guidance_ladder_down__a_6", "er_mausoleum_of_giants_ladder_up__a_1", "vertical" },
+    { "er_immortal_battlefield_alviss_down_ladder__g_7", "er_icefire_treetop_ice_side_right_ladder__f_1", "vertical" },
+    { "er_immortal_battlefield_down_ladder_near_spinning_wheel__d_7", "er_icefire_treetop_fire_side_up_ladder__c_1", "vertical" },
+    { "er_immortal_battlefield_moon_altar_hallway__g_7", "er_icefire_treetop_ice_side_left_ladder__f_1", "vertical" },
+    { "er_roots_of_yggdrasil_ladder_down__c_5", "er_annwfn_ladder_up__c_1", "vertical" },
+    { "er_village_of_departure_ladder_down__f_3", "er_inferno_cavern__b_1", "vertical" },
+}
+
+-- { codeA, codeB, soul_amount, is_nine }
+local VANILLA_SOUL_GATE_PAIRS = {
+    { "er_roots_of_yggdrasil_bottom_soul_gate__d_6", "er_divine_fortress_soul_gate__c_5", 1, false },
+    { "er_annwfn_soul_gate__a_4", "er_shrine_of_the_frost_giants_main_soul_gate__e_4", 2, false },
+    { "er_immortal_battlefield_top_right_gate__h_2", "er_gate_of_the_dead_soul_gate__c_4", 2, false },
+    { "er_immortal_battlefield_bottom_left_gate__b_7", "er_takamagahara_shrine_top_main_soul_gate__d_1", 3, false },
+    { "er_icefire_treetop_under_ratatoskr_soul_gate__g_3", "er_heavens_labyrinth_soul_gate__e_5", 3, false },
+    { "er_icefire_treetop_vidofnir_soul_gate__d_6", "er_eternal_prison_gloom_soul_gate__d_2", 5, false },
+    { "er_shrine_of_the_frost_giants_balor_soul_gate__e_1", "er_valhalla_soul_gate__e_2", 5, false },
+    { "er_takamagahara_shrine_belial_soul_gate__b_1", "er_ancient_chaos_soul_gate__c_1", 5, false },
+    { "er_immortal_battlefield_spiral_boat_soul_gate_d_4", "er_hall_of_malice_soul_gate__d_3", 9, true },
+}
+
+local function _opt_on(opts, key)
+    local v = opts[key]
+    if type(v) == "boolean" then return v end
+    return (tonumber(v) or 0) ~= 0
+end
+
+-- Lock a pair to its vanilla connection. Any conflicting manual pairing on
+-- either endpoint is cleared first so we never leave a half-link.
+local function _lock_vanilla_pair(a, b)
+    if ER_PAIRINGS[a] == b and ER_VANILLA[a] then return end
+    if ER_PAIRINGS[a] and not ER_VANILLA[a] then UnlinkEntrance(a) end
+    if ER_PAIRINGS[b] and not ER_VANILLA[b] then UnlinkEntrance(b) end
+    ApplyPairing(a, b)
+    ER_VANILLA[a] = true
+    ER_VANILLA[b] = true
+end
+
+-- Release a previously vanilla-locked pair (the category is now shuffled).
+local function _unlock_vanilla_pair(a, b)
+    if not (ER_VANILLA[a] or ER_VANILLA[b]) then return end
+    ER_VANILLA[a] = nil
+    ER_VANILLA[b] = nil
+    UnlinkEntrance(a)
+end
+
+local function _set_soul_cost(code, stage)
+    local c = Tracker:FindObjectForCode("cost_" .. code)
+    if c then c.CurrentStage = stage end
+end
+
+function RebuildVanillaEntrances()
+    -- Driven entirely by seed data; without slot_data we leave the layout
+    -- blank (player tracks manually / uses Reveal).
+    local slot = _cached_slot_data
+    local opts = slot and slot.options
+    if type(opts) ~= "table" then return end
+
+    -- Active toggles below would otherwise re-enter EntranceClick.
+    if SuppressClicks then SuppressClicks(SUPPRESS_RESTORE_FRAMES) end
+
+    local full_random = _opt_on(opts, "full_random_entrances")
+    local cat_vanilla = {
+        horizontal = (not full_random) and not _opt_on(opts, "horizontal_entrances"),
+        vertical   = (not full_random) and not _opt_on(opts, "vertical_entrances"),
+        gate       = (not full_random) and not _opt_on(opts, "gate_entrances"),
+        unique     = not _opt_on(opts, "unique_transitions"),
+    }
+
+    for _, p in ipairs(VANILLA_STRUCTURAL_PAIRS) do
+        local a, b, cat = p[1], p[2], p[3]
+        if cat_vanilla[cat] then
+            _lock_vanilla_pair(a, b)
+        else
+            _unlock_vanilla_pair(a, b)
+        end
+    end
+
+    -- Soul gates: pairings are vanilla whenever soul_gate_entrances is OFF.
+    -- The cost is only known when its value was not shuffled — the [1,2,3,5]
+    -- pool is shuffled by random_soul_gate_value, and the [9] gate only joins
+    -- that pool when include_nine_soul_gates is ON.
+    local sg_vanilla = not _opt_on(opts, "soul_gate_entrances")
+    local random_value = _opt_on(opts, "random_soul_gate_value")
+    local include_nine = _opt_on(opts, "include_nine_soul_gates")
+    for _, p in ipairs(VANILLA_SOUL_GATE_PAIRS) do
+        local a, b, amount, is_nine = p[1], p[2], p[3], p[4]
+        if sg_vanilla then
+            _lock_vanilla_pair(a, b)
+            -- Only stamp the cost when its value is actually known (not shuffled).
+            -- When random_soul_gate_value shuffles it, leave the cost untracked so
+            -- the player fills in the discovered value — and don't clobber that
+            -- value on later reconnects.
+            local value_known = (not random_value) or (is_nine and not include_nine)
+            if value_known then
+                _set_soul_cost(a, SOUL_AMOUNT_TO_STAGE[amount])
+                _set_soul_cost(b, SOUL_AMOUNT_TO_STAGE[amount])
+            end
+        else
+            if ER_VANILLA[a] or ER_VANILLA[b] then
+                _unlock_vanilla_pair(a, b)
+                _set_soul_cost(a, 0)
+                _set_soul_cost(b, 0)
             end
         end
     end

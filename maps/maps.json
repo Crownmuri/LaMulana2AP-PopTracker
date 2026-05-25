@@ -100,5 +100,11 @@
         "location_size": 24,
         "location_border_thickness": 2,
         "img": "images/maps/epg.png"
+    },
+    {
+        "name": "Spiral Hell",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/sh.png"
     }
 ]
