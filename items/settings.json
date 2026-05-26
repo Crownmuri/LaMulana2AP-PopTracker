@@ -159,5 +159,12 @@
         "type": "toggle",
         "img": "images/door.png",
         "codes": "setting_reveal_entrances"
+    },
+    {
+        "name": "Out-of-Logic Toggle",
+        "type": "toggle",
+        "img": "images/Other/Map.png",
+        "codes": "setting_show_sequence_break",
+        "initial_active_state": true
     }
 ]

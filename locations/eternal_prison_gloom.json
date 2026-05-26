@@ -29,7 +29,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EPG) and (Has(Life Sigil))"
+                    "^$lm2_logic|CanReach(EPG) and (Has(Life Sigil))"
                 ]
             },
             {
@@ -54,7 +54,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EPG) and (CanUse(Bomb) and Has(Snapshot))"
+                    "^$lm2_logic|CanReach(EPG) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Snapshot))"
                 ]
             },
             {
@@ -84,7 +84,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EPG) and (Has(Mjolnir) and Has(Life Sigil) and ((Has(Death Sigil) and Has(Feather)) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp)))"
+                    "^$lm2_logic|CanReach(EPG) and (Has(Mjolnir) and Has(Life Sigil) and ((Has(Death Sigil) and Has(Feather)) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp)))"
                 ]
             },
             {
@@ -109,7 +109,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EPG) and (CanUse(Bomb) and Has(Snapshot) and Has(Enga Musica))"
+                    "^$lm2_logic|CanReach(EPG) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Snapshot) and Has(Enga Musica))"
                 ]
             },
             {
@@ -134,7 +134,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EPG) and (IsDead(Ratatoskr 4))"
+                    "^$lm2_logic|CanReach(EPG) and (IsDead(Ratatoskr 4))"
                 ]
             },
             {
@@ -155,7 +155,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EPG) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Right))"
+                    "^$lm2_logic|CanReach(EPG) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Right))"
                 ]
             },
             {
@@ -168,7 +168,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EPG) and (Has(Enga Musica) and Has(Feather) and CanChant(Fire) and CanChant(Earth) and CanChant(Sun))"
+                    "^$lm2_logic|CanReach(EPG) and (Has(Enga Musica) and Has(Feather) and CanChant(Fire) and CanChant(Earth) and CanChant(Sun))"
                 ]
             },
             {
@@ -193,7 +193,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EPG) and (Has(Key Fairy) and Has(Life Sigil) and PuzzleFinished(Garm Statue Puzzle))"
+                    "^$lm2_logic|CanReach(EPG) and (Has(Key Fairy) and Has(Life Sigil) and PuzzleFinished(Garm Statue Puzzle))"
                 ]
             },
             {
@@ -206,7 +206,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EPG) and (((Has(Enga Musica) and IsDead(Vidofnir)) or Glitch(Costume Clip)) and Has(Feather) and Has(Giant's Flute) and Has(Vessel) and Has(Hand Scanner) and CanChant(Moon) and CanChant(Mother) and CanChant(Child) and IsDead(Fenrir))"
+                    "^$lm2_logic|CanReach(EPG) and (((Has(Enga Musica) and IsDead(Vidofnir)) or Glitch(Costume Clip)) and Has(Feather) and Has(Giant's Flute) and Has(Vessel) and Has(Hand Scanner) and CanChant(Moon) and CanChant(Mother) and CanChant(Child) and IsDead(Fenrir))"
                 ]
             },
             {
@@ -227,12 +227,12 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EPG) and (Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3) and (((Has(Chain Whip) or Has(Axe)) and OrbCount(7)) or ((Has(Flail Whip) or Has(Katana)) and OrbCount(6)) or (CanUse(Pistol) and OrbCount(5))))"
+                    "^$lm2_logic|CanReach(EPG) and (Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3) and (((Has(Chain Whip) or Has(Axe)) and OrbCount(7)) or ((Has(Flail Whip) or Has(Katana)) and OrbCount(6)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(5))))"
                 ]
             }
         ],
         "access_rules": [
-            "$lm2_logic|CanReach(EPG)"
+            "^$lm2_logic|CanReach(EPG)"
         ]
     }
 ]

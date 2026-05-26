@@ -29,7 +29,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMMain) and (Has(Feather) or ((IsDead(Angra Mainyu) or (Glitch(Costume Clip) and CanReach(DSLMTop))) and HorizontalAttack))"
+                "^$lm2_logic|CanReach(DSLMMain) and (Has(Feather) or ((IsDead(Angra Mainyu) or (Glitch(Costume Clip) and CanReach(DSLMTop))) and HorizontalAttack))"
             ]
         },
         {
@@ -59,7 +59,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMMain) and (Has(Grapple Claw))"
+                "^$lm2_logic|CanReach(DSLMMain) and (Has(Grapple Claw))"
             ]
         },
         {
@@ -89,7 +89,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMMain) and (Has(Birth Sigil))"
+                "^$lm2_logic|CanReach(DSLMMain) and (Has(Birth Sigil))"
             ]
         },
       {
@@ -115,14 +115,14 @@
                 "item_count": 1,
                 "hosted_item": "boss_aten_ra",
                 "access_rules": [
-                    "$lm2_logic|HasAnkhFor(Aten Ra) and ((IsDead(Sekhmet) or Glitch(Costume Clip)) and PuzzleFinished(White Pedestals) and (((Has(Chain Whip) or CanUse(Earth Spear) or CanUse(Flare Gun) or CanUse(Chakrams) or CanUse(Bomb)) and OrbCount(6)) or ((Has(Flail Whip) or Has(Katana) or Has(Axe)) and OrbCount(5)) or (CanUse(Pistol) and OrbCount(4))))"
+                    "^$lm2_logic|HasAnkhFor(Aten Ra) and ((IsDead(Sekhmet) or Glitch(Costume Clip)) and PuzzleFinished(White Pedestals) and (((Has(Chain Whip) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) and OrbCount(6)) or ((Has(Flail Whip) or Has(Katana) or Has(Axe)) and OrbCount(5)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(4))))"
                 ]
             },
             {
                 "name": "Aten-Ra's Dissonance",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(DSLMMain) and (Has(Progressive Beherit) and IsDead(Aten Ra))"
+                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Progressive Beherit) and IsDead(Aten Ra))"
                 ],
                 "visibility_rules": [ "setting_random_dissonance" ]
             },
@@ -137,7 +137,7 @@
             }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(DSLMMain)"
+          "^$lm2_logic|CanReach(DSLMMain)"
         ]
       },
         {
@@ -167,7 +167,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMMain) and (CanReach(AC Tablet) and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
+                "^$lm2_logic|CanReach(DSLMMain) and (CanReach(AC Tablet) and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
             ]
         },
       {
@@ -192,7 +192,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(DSLMMain)"
+          "^$lm2_logic|CanReach(DSLMMain)"
         ],
         "visibility_rules": [ "setting_random_research" ]
       },
@@ -216,21 +216,21 @@
                 "name": "Shop Slot 1",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
                 ]
             },
             {
                 "name": "Shop Slot 2",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
                 ]
             },
             {
                 "name": "Shop Slot 3",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
                 ]
             }
         ]
@@ -253,7 +253,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMMain) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Main) and (Has(Gale Fibula) or CanStopTime))"
+                "^$lm2_logic|CanReach(DSLMMain) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Main) and (Has(Gale Fibula) or CanStopTime))"
             ]
         },
         {
@@ -274,7 +274,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMMain) and (CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and OrbCount(3) and (Has(Chain Whip) or Has(Rapier) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
+                "^$lm2_logic|CanReach(DSLMMain) and (CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and OrbCount(3) and (Has(Chain Whip) or Has(Rapier) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
             ]
         },
         {
@@ -299,12 +299,12 @@
                     "hosted_item": "cursed_430147",
                     "clear_as_group": false,
                     "access_rules": [
-                        "^$lm2_cursed|430147|CanReach(DSLMTop) and (SkullCount(1) and (Has(Feather) or CanWarp or (CanReach(DSLM Main) and CanUse(Bomb))))"
+                        "^$lm2_cursed|430147|CanReach(DSLMTop) and (SkullCount(1) and HorizontalAttack and (Has(Feather) or CanWarp or (CanReach(DSLMMain) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMTop) and (SkullCount(1) and (Has(Feather) or CanWarp or (CanReach(DSLM Main) and CanUse(Bomb))))"
+                "^$lm2_logic|CanReach(DSLMTop) and (SkullCount(1) and (Has(Feather) or CanWarp or (CanReach(DSLMMain) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))))"
             ]
         },
         {
@@ -329,12 +329,12 @@
                     "hosted_item": "cursed_430099",
                     "clear_as_group": false,
                     "access_rules": [
-                        "^$lm2_cursed|430099|CanReach(DSLMTop) and (CanUse(Bomb) and (Has(Feather) or CanWarp or CanReach(DSLM Main)))"
+                        "^$lm2_cursed|430099|CanReach(DSLMTop) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (Has(Feather) or CanWarp or CanReach(DSLMMain)))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMTop) and (CanUse(Bomb) and (Has(Feather) or CanWarp or CanReach(DSLM Main)))"
+                "^$lm2_logic|CanReach(DSLMTop) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (Has(Feather) or CanWarp or CanReach(DSLMMain)))"
             ]
         },
         {
@@ -364,7 +364,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMTop) and (IsDead(Ammit) and HorizontalAttack)"
+                "^$lm2_logic|CanReach(DSLMTop) and (IsDead(Ammit) and HorizontalAttack)"
             ]
         },
         {
@@ -385,7 +385,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMTop) and (Has(Mjolnir) and OrbCount(1) and (CanWarp or Has(Feather) or CanReach(DSLM Main)))"
+                "^$lm2_logic|CanReach(DSLMTop) and (Has(Mjolnir) and OrbCount(1) and (CanWarp or Has(Feather) or CanReach(DSLMMain)))"
             ]
         },
         {
@@ -406,12 +406,12 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(DSLMTop) and (Has(Feather) and Has(Pyramid Crystal) and Has(Silver Shield) and OrbCount(3) and (Has(Chain Whip) or Has(Knife) or Has(Axe) or Has(Katana) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
+                "^$lm2_logic|CanReach(DSLMTop) and (Has(Feather) and Has(Pyramid Crystal) and Has(Silver Shield) and OrbCount(3) and (Has(Chain Whip) or Has(Knife) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
             ]
         }
     ],
     "access_rules": [
-      "$lm2_logic|CanReach(DSLMMain) or CanReach(DSLMTop)"
+      "^$lm2_logic|CanReach(DSLMMain) or CanReach(DSLMTop)"
     ]
   },
   {
@@ -439,7 +439,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(Nibiru) and (Has(Death Sigil) and Has(Snapshot) and Has(Claydoll Suit))"
+          "^$lm2_logic|CanReach(Nibiru) and (Has(Death Sigil) and Has(Snapshot) and Has(Claydoll Suit))"
         ]
       },
       {
@@ -464,13 +464,13 @@
           }
         ],
         "access_rules": [
-            "$lm2_logic|CanReach(Nibiru) and (Has(Progressive Beherit) and Has(Power Band) and Has(Mjolnir) and Has(Claydoll Suit) and NibiruSkullCheck())"
+            "^$lm2_logic|CanReach(Nibiru) and (Has(Progressive Beherit) and Has(Power Band) and Has(Mjolnir) and Has(Claydoll Suit) and NibiruSkullCheck())"
         ],
         "visibility_rules": [ "setting_random_dissonance" ]
       }
     ],
     "access_rules": [
-      "$lm2_logic|CanReach(Nibiru)"
+      "^$lm2_logic|CanReach(Nibiru)"
     ]
   }
 ]

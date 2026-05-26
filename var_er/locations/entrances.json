@@ -28,7 +28,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|False"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -57,7 +57,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBMain) and Has(Dinosaur Figure)"
+                    "^$lm2_logic|CanReach(IBMain) and Has(Dinosaur Figure)"
                 ]
             },
             {
@@ -86,7 +86,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(AltarRight)"
+                    "^$lm2_logic|CanReach(AltarRight)"
                 ]
             },
             {
@@ -115,7 +115,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBMain) and Has(Dinosaur Figure) and HorizontalAttack"
+                    "^$lm2_logic|CanReach(IBMain) and Has(Dinosaur Figure) and HorizontalAttack"
                 ]
             },
             {
@@ -144,7 +144,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(ACBottom)"
+                    "^$lm2_logic|CanReach(ACBottom)"
                 ]
             },
             {
@@ -173,7 +173,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(TSBottom)"
+                    "^$lm2_logic|CanReach(TSBottom)"
                 ]
             },
             {
@@ -202,7 +202,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(AnnwfnMain)"
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
                 ]
             },
             {
@@ -231,7 +231,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|False"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -260,7 +260,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|False"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -289,7 +289,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBCetusLadder)"
+                    "^$lm2_logic|CanReach(IBCetusLadder)"
                 ]
             },
             {
@@ -318,7 +318,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(AnnwfnMain)"
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
                 ]
             },
             {
@@ -347,7 +347,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(RoYBottomLeft)"
+                    "^$lm2_logic|CanReach(RoYBottomLeft)"
                 ]
             },
             {
@@ -376,7 +376,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|False"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -405,7 +405,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(RoYTopLeft) and (CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb))"
+                    "^$lm2_logic|CanReach(RoYTopLeft) and ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))"
                 ]
             },
             {
@@ -434,7 +434,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(Cavern)"
+                    "^$lm2_logic|CanReach(Cavern)"
                 ]
             },
             {
@@ -463,7 +463,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBRight)"
+                    "^$lm2_logic|CanReach(IBRight)"
                 ]
             },
             {
@@ -492,7 +492,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(Cavern)"
+                    "^$lm2_logic|CanReach(Cavern)"
                 ]
             },
             {
@@ -521,7 +521,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|False"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -550,7 +550,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DSLMMain)"
+                    "^$lm2_logic|CanReach(DSLMMain)"
                 ]
             },
             {
@@ -579,7 +579,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotDWedjet) and PuzzleFinished(White Pedestals)"
+                    "^$lm2_logic|CanReach(GotDWedjet) and PuzzleFinished(White Pedestals)"
                 ]
             },
             {
@@ -608,7 +608,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DSLMPyramid) and (Has(Pyramid Crystal) and Has(Destiny Tablet) and CanChant(Heaven) and CanChant(Moon) and CanChant(Fire) and CanChant(Sea) and CanChant(Sun))"
+                    "^$lm2_logic|CanReach(DSLMPyramid) and (Has(Pyramid Crystal) and Has(Destiny Tablet) and CanChant(Heaven) and CanChant(Moon) and CanChant(Fire) and CanChant(Sea) and CanChant(Sun))"
                 ]
             },
             {
@@ -630,7 +630,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|False"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -659,7 +659,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFMain) and HorizontalAttack"
+                    "^$lm2_logic|CanReach(DFMain) and HorizontalAttack"
                 ]
             },
             {
@@ -688,7 +688,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(ValhallaMain)"
+                    "^$lm2_logic|CanReach(ValhallaMain)"
                 ]
             },
             {
@@ -717,7 +717,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(EndlessCorridor)"
+                    "^$lm2_logic|CanReach(EndlessCorridor)"
                 ]
             },
             {
@@ -746,7 +746,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(MausoleumofGiantsRubble) and CanReach(Annwfn Main)"
+                    "^$lm2_logic|CanReach(MausoleumofGiantsRubble) and CanReach(Annwfn Main)"
                 ]
             },
             {
@@ -775,7 +775,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GateofGuidance)"
+                    "^$lm2_logic|CanReach(GateofGuidance)"
                 ]
             },
             {
@@ -804,7 +804,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(MausoleumofGiants)"
+                    "^$lm2_logic|CanReach(MausoleumofGiants)"
                 ]
             },
             {
@@ -833,7 +833,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GateofGuidanceLeft)"
+                    "^$lm2_logic|CanReach(GateofGuidanceLeft)"
                 ]
             },
             {
@@ -862,7 +862,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GateofIllusion)"
+                    "^$lm2_logic|CanReach(GateofIllusion)"
                 ]
             },
             {
@@ -891,7 +891,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GateofGuidance)"
+                    "^$lm2_logic|CanReach(GateofGuidance)"
                 ]
             },
             {
@@ -920,7 +920,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(VoD)"
+                    "^$lm2_logic|CanReach(VoD)"
                 ]
             },
             {
@@ -949,7 +949,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GateofIllusion) and HorizontalAttack"
+                    "^$lm2_logic|CanReach(GateofIllusion) and HorizontalAttack"
                 ]
             },
             {
@@ -978,7 +978,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(RoYMiddle)"
+                    "^$lm2_logic|CanReach(RoYMiddle)"
                 ]
             },
             {
@@ -1007,7 +1007,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HoMTop)"
+                    "^$lm2_logic|CanReach(HoMTop)"
                 ]
             },
             {
@@ -1036,7 +1036,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLGate) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla))"
+                    "^$lm2_logic|CanReach(HLGate) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla))"
                 ]
             },
             {
@@ -1065,7 +1065,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|False"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -1094,7 +1094,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(TSNeckEntrance) and (CanChant(Earth) and CanChant(Wind) and CanChant(Fire) and CanChant(Sea) and CanChant(Heaven) and CanWarp)"
+                    "^$lm2_logic|CanReach(TSNeckEntrance) and (CanChant(Earth) and CanChant(Wind) and CanChant(Fire) and CanChant(Sea) and CanChant(Heaven) and CanWarp)"
                 ]
             },
             {
@@ -1123,7 +1123,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(ITLeft)"
+                    "^$lm2_logic|CanReach(ITLeft)"
                 ]
             },
             {
@@ -1152,7 +1152,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBLadder)"
+                    "^$lm2_logic|CanReach(IBLadder)"
                 ]
             },
             {
@@ -1181,7 +1181,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(ITRightLeftLadder)"
+                    "^$lm2_logic|CanReach(ITRightLeftLadder)"
                 ]
             },
             {
@@ -1210,7 +1210,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|False"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -1239,7 +1239,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(ITRight)"
+                    "^$lm2_logic|CanReach(ITRight)"
                 ]
             },
             {
@@ -1268,7 +1268,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBBattery)"
+                    "^$lm2_logic|CanReach(IBBattery)"
                 ]
             },
             {
@@ -1297,7 +1297,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(ITEntrance)"
+                    "^$lm2_logic|CanReach(ITEntrance)"
                 ]
             },
             {
@@ -1326,7 +1326,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(RoYTopMiddle)"
+                    "^$lm2_logic|CanReach(RoYTopMiddle)"
                 ]
             },
             {
@@ -1355,7 +1355,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|False"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -1384,7 +1384,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(RoYTopRight) and Has(Birth Sigil)"
+                    "^$lm2_logic|CanReach(RoYTopRight) and Has(Birth Sigil)"
                 ]
             },
             {
@@ -1413,7 +1413,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|False"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -1442,7 +1442,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(VoDLadder) and Has(Feather)"
+                    "^$lm2_logic|CanReach(VoDLadder) and Has(Feather)"
                 ]
             },
             {
@@ -1471,7 +1471,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGBloodTez) and (Has(Grapple Claw) and IsDead(Tezcatlipoca))"
+                    "^$lm2_logic|CanReach(SotFGBloodTez) and (Has(Grapple Claw) and IsDead(Tezcatlipoca))"
                 ]
             },
             {
@@ -1500,7 +1500,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(SotFGLeft)"
+                    "^$lm2_logic|CanReach(SotFGLeft)"
                 ]
             },
             {
@@ -1529,7 +1529,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(Start)"
+                    "^$lm2_logic|CanReach(Start)"
                 ]
             },
             {
@@ -1558,7 +1558,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(VoD)"
+                    "^$lm2_logic|CanReach(VoD)"
                 ]
             },
             {
@@ -1592,7 +1592,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|False"
+                    "^$lm2_logic|False"
                 ],
                 "children": [
                     {
@@ -1632,7 +1632,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_soulgate|er_hall_of_malice_soul_gate__d_3|CanReach(HoM) and Has(Death Sigil) and CanUse(Earth Spear) and (CanWarp or IsDead(HoM Middle Path))"
+                    "^$lm2_soulgate|er_hall_of_malice_soul_gate__d_3|CanReach(HoM) and Has(Death Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and (CanWarp or IsDead(HoM Middle Path))"
                 ],
                 "children": [
                     {

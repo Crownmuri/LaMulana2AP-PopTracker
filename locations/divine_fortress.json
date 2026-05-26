@@ -29,7 +29,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFRight)"
+                    "^$lm2_logic|CanReach(DFRight)"
                 ]
             },
             {
@@ -59,7 +59,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFRight) and (IsDead(Hugin and Munin))"
+                    "^$lm2_logic|CanReach(DFRight) and (IsDead(Hugin and Munin))"
                 ]
             },
             {
@@ -84,7 +84,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFRight) and (Has(Hand Scanner) and CanReach(Annwfn Right) and IsDead(Ixtab) and (Has(Origin Sigil) or Has(Feather) or Has(Grapple Claw)))"
+                    "^$lm2_logic|CanReach(DFRight) and (Has(Hand Scanner) and CanReach(Annwfn Right) and IsDead(Ixtab) and (Has(Origin Sigil) or Has(Feather) or Has(Grapple Claw)))"
                 ]
             },
             {
@@ -109,7 +109,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFRight) and (Has(Snapshot))"
+                    "^$lm2_logic|CanReach(DFRight) and (Has(Snapshot))"
                 ]
             },
             {
@@ -130,7 +130,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFRight) and (CanWarp or Has(Origin Sigil))"
+                    "^$lm2_logic|CanReach(DFRight) and (CanWarp or Has(Origin Sigil))"
                 ]
             },
             {
@@ -160,7 +160,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFMain) and (Has(Origin Sigil))"
+                    "^$lm2_logic|CanReach(DFMain) and (Has(Origin Sigil))"
                 ]
             },
             {
@@ -190,7 +190,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFMain)"
+                    "^$lm2_logic|CanReach(DFMain)"
                 ]
             },
             {
@@ -213,26 +213,26 @@
                         "name": "Shop Slot 1",
                         "item_count": 1,
                         "access_rules": [
-                            "$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
+                            "^$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
                         ]
                     },
                     {
                         "name": "Shop Slot 2",
                         "item_count": 1,
                         "access_rules": [
-                            "$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
+                            "^$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
                         ]
                     },
                     {
                         "name": "Shop Slot 3",
                         "item_count": 1,
                         "access_rules": [
-                            "$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
+                            "^$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFMain)"
+                    "^$lm2_logic|CanReach(DFMain)"
                 ]
             },
             {
@@ -262,12 +262,12 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(DFTop)"
+                    "^$lm2_logic|CanReach(DFTop)"
                 ]
             }
         ],
         "access_rules": [
-            "$lm2_logic|CanReach(DFMain) or CanReach(DFRight) or CanReach(DFTop)"
+            "^$lm2_logic|CanReach(DFMain) or CanReach(DFRight) or CanReach(DFTop)"
         ]
     }
 ]

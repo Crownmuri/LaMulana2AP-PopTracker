@@ -22,26 +22,26 @@
                 "name": "Shop Slot 1",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBTop)"
+                    "^$lm2_logic|CanReach(IBTop)"
                 ]
             },
             {
                 "name": "Shop Slot 2",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBTop)"
+                    "^$lm2_logic|CanReach(IBTop)"
                 ]
             },
             {
                 "name": "Shop Slot 3",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBTop)"
+                    "^$lm2_logic|CanReach(IBTop)"
                 ]
             }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBTop)"
+          "^$lm2_logic|CanReach(IBTop)"
         ]
       },
         {
@@ -62,7 +62,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBTop) and (CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops) or Has(Claydoll Suit) or (CanUse(Flare Gun) and (Has(Anchor) or Has(Fish Suit))) or ((CanUse(Shuriken) or CanUse(Chakram)) and Has(Scalesphere)) or (Has(Axe) and (Has(Scalesphere) or (OrbCount(1) and Has(Anchor)))) or (Has(Leather Whip) and Has(Anchor) and (Has(Scalesphere) or OrbCount(2))) or ((Has(Chain Whip) or Has(Katana)) and Has(Anchor) and (Has(Scalesphere) or OrbCount(1))))"
+                "^$lm2_logic|CanReach(IBTop) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or Has(Claydoll Suit) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Anchor) or Has(Fish Suit))) or (((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and Has(Scalesphere)) or (Has(Axe) and (Has(Scalesphere) or (OrbCount(1) and Has(Anchor)))) or (Has(Leather Whip) and Has(Anchor) and (Has(Scalesphere) or OrbCount(2))) or ((Has(Chain Whip) or Has(Katana)) and Has(Anchor) and (Has(Scalesphere) or OrbCount(1))))"
             ]
         },
         {
@@ -87,12 +87,12 @@
                     "hosted_item": "cursed_430021",
                     "clear_as_group": false,
                     "access_rules": [
-                        "^$lm2_cursed|430021|CanReach(IBTopLeft) and ((CanUse(Earth Spear) or CanUse(Flare Gun) or (CanUse(Bomb) and Has(Ring))) and Has(Glove))"
+                        "^$lm2_cursed|430021|CanReach(IBTopLeft) and (((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Ring))) and Has(Glove))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBTopLeft) and ((CanUse(Earth Spear) or CanUse(Flare Gun) or (CanUse(Bomb) and Has(Ring))) and Has(Glove))"
+                "^$lm2_logic|CanReach(IBTopLeft) and (((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Ring))) and Has(Glove))"
             ]
         },
       {
@@ -117,7 +117,7 @@
           }
         ],
         "access_rules": [
-            "$lm2_logic|CanReach(IBTopLeft) and (Has(Glove) or Has(Feather) or (CanReach(IBTop) and CanWarp and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops))))"
+            "^$lm2_logic|CanReach(IBTopLeft) and (Has(Glove) or Has(Feather) or (CanReach(IBTop) and CanWarp and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
         ]
       },
       {
@@ -142,7 +142,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|(CanReach(IBTop) and CanWarp) or (CanReach(IBTopLeft) and (Has(Feather) or (Has(Glove) and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops)))))"
+          "^$lm2_logic|(CanReach(IBTop) and CanWarp) or (CanReach(IBTopLeft) and (Has(Feather) or (Has(Glove) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))))"
         ],
         "visibility_rules": [ "setting_random_research" ]
       },
@@ -173,7 +173,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBMain)"
+                "^$lm2_logic|CanReach(IBMain)"
             ]
         },
         {
@@ -198,12 +198,12 @@
                     "hosted_item": "cursed_430027",
                     "clear_as_group": false,
                     "access_rules": [
-                        "^$lm2_cursed|430027|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Rolling Shuriken) or CanUse(Flare Gun) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit) or CanUse(Caltrops) or CanUse(Pistol)))"
+                        "^$lm2_cursed|430027|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Rolling Shuriken) or CanUse(Flare Gun) or CanUse(Chakram) or CanUse(Bomb) or Has(Claydoll Suit) or CanUse(Caltrops) or CanUse(Pistol)))"
+                "^$lm2_logic|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
             ]
         },
         {
@@ -233,7 +233,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
+                "^$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
             ]
         },
         {
@@ -258,12 +258,12 @@
                     "hosted_item": "cursed_430104",
                     "clear_as_group": false,
                     "access_rules": [
-                        "^$lm2_cursed|430104|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus)))"
+                        "^$lm2_cursed|430104|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus) or TrickyLogic))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus)))"
+                "^$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus) or TrickyLogic))"
             ]
         },
         {
@@ -293,7 +293,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2) and Has(Cog of Antiquity) and Has(Life Sigil))"
+                "^$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2) and Has(Cog of Antiquity) and Has(Life Sigil))"
             ]
         },
       {
@@ -318,7 +318,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2))"
+          "^$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2))"
         ]
       },
       {
@@ -343,7 +343,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBMain)"
+          "^$lm2_logic|CanReach(IBMain)"
         ],
         "visibility_rules": [ "setting_random_research" ]
       },
@@ -367,21 +367,21 @@
                 "name": "IB Research - Tent (First Time)",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)))"
+                    "^$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)))"
                 ]
             },
             {
                 "name": "IB Research - Tent (7 Guardians)",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and GuardianKills(7))"
+                    "^$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and GuardianKills(7))"
                 ]
             },
             {
                 "name": "IB Research - Tent (Post Heimdall)",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and IsDead(Heimdall))"
+                    "^$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and IsDead(Heimdall))"
                 ]
             }
         ],
@@ -409,7 +409,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBMain) and (CanReach(Annwfn Main) and GuardianKills(4))"
+          "^$lm2_logic|CanReach(IBMain) and (CanReach(Annwfn Main) and GuardianKills(4))"
         ]
       },
         {
@@ -430,7 +430,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 1))"
+                "^$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 1))"
             ]
         },
         {
@@ -456,7 +456,7 @@
                     "item_count": 1,
                     "hosted_item": "boss_jormungand",
                     "access_rules": [
-                        "$lm2_logic|HasAnkhFor(Jormungand)"
+                        "^$lm2_logic|HasAnkhFor(Jormungand)"
                     ]
                 },
                 {
@@ -470,7 +470,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBMain) and (IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight) and (((Has(Rapier) or CanUse(Rolling Shuriken)) and OrbCount(5)) or ((Has(Chain Whip) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Earth Spear) or CanUse(Flare Gun) or CanUse(Chakram)) and OrbCount(4)) or (CanUse(Pistol) and OrbCount(2))))"
+                "^$lm2_logic|CanReach(IBMain) and (IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight) and (((Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(5)) or ((Has(Chain Whip) or Has(Katana) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(4)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(2))))"
             ]
         },
       {
@@ -495,7 +495,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBRight) and (CanUse(Rolling Shuriken) and ((IsDead(Svipdagr) and Has(Life Sigil) and CanUse(Earth Spear)) or Glitch(Costume Clip)))"
+          "^$lm2_logic|CanReach(IBRight) and ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip)))"
         ]
       },
       {
@@ -518,26 +518,26 @@
                 "name": "Shop Slot 1",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
+                    "^$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
                 ]
             },
             {
                 "name": "Shop Slot 2",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
+                    "^$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
                 ]
             },
             {
                 "name": "Shop Slot 3",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
+                    "^$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
                 ]
             }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBRight)"
+          "^$lm2_logic|CanReach(IBRight)"
         ]
       },
         {
@@ -558,7 +558,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBRight) and (OrbCount(1))"
+                "^$lm2_logic|CanReach(IBRight) and (OrbCount(1))"
             ]
         },
       {
@@ -583,7 +583,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBBottom) and (Has(Glove) and (Has(Claydoll Suit) or OrbCount(1) or Has(Ice Cloak)))"
+          "^$lm2_logic|CanReach(IBBottom) and (Has(Glove) and (Has(Claydoll Suit) or OrbCount(1) or Has(Ice Cloak)))"
         ]
       },
       {
@@ -608,7 +608,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBBottom)"
+          "^$lm2_logic|CanReach(IBBottom)"
         ],
         "visibility_rules": [ "setting_random_research" ]
       },
@@ -622,7 +622,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBLeft) and (Has(Birth Sigil))"
+          "^$lm2_logic|CanReach(IBLeft) and (Has(Birth Sigil))"
         ]
       },
         {
@@ -647,7 +647,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBLeft)"
+                "^$lm2_logic|CanReach(IBLeft)"
             ],
             "visibility_rules": [ "setting_random_research" ]
         },
@@ -678,7 +678,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
+                "^$lm2_logic|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
             ]
         },
         {
@@ -703,12 +703,12 @@
                     "hosted_item": "cursed_430020",
                     "clear_as_group": false,
                     "access_rules": [
-                        "^$lm2_cursed|430020|CanReach(IBDinosaur) and (CanUse(Flare Gun) or CanUse(Earth Spear) or Has(Rapier))"
+                        "^$lm2_cursed|430020|CanReach(IBDinosaur) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Rapier))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(IBDinosaur) and (CanUse(Flare Gun) or CanUse(Earth Spear) or Has(Rapier))"
+                "^$lm2_logic|CanReach(IBDinosaur) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Rapier))"
             ]
         },
       {
@@ -733,12 +733,12 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(IBMoon) and (CanChant(Sun) and Has(Snapshot) and HorizontalAttack and Has(Life Sigil) and (CanWarp or CanReach(IBDinosaur) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and Setting(Non Random Ladders))))"
+          "^$lm2_logic|CanReach(IBMoon) and (CanChant(Sun) and Has(Snapshot) and HorizontalAttack and Has(Life Sigil) and (CanWarp or CanReach(IBDinosaur) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and Setting(Non Random Ladders))))"
         ]
       }
     ],
     "access_rules": [
-      "$lm2_logic|CanReach(IBBattery) or CanReach(IBBottom) or CanReach(IBDinosaur) or CanReach(IBLeft) or CanReach(IBMain) or CanReach(IBMoon) or CanReach(IBRight) or CanReach(IBTop) or CanReach(IBTopLeft)"
+      "^$lm2_logic|CanReach(IBBattery) or CanReach(IBBottom) or CanReach(IBDinosaur) or CanReach(IBLeft) or CanReach(IBMain) or CanReach(IBMoon) or CanReach(IBRight) or CanReach(IBTop) or CanReach(IBTopLeft)"
     ]
   },
   {
@@ -766,12 +766,12 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(Cavern) and (Has(Snapshot))"
+          "^$lm2_logic|CanReach(Cavern) and (Has(Snapshot))"
         ]
       }
     ],
     "access_rules": [
-      "$lm2_logic|CanReach(Cavern)"
+      "^$lm2_logic|CanReach(Cavern)"
     ]
   },
   {
@@ -799,12 +799,12 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(AltarLeft) and (IsDead(Heimdall) and Has(Feather))"
+          "^$lm2_logic|CanReach(AltarLeft) and (IsDead(Heimdall) and Has(Feather))"
         ]
       }
     ],
     "access_rules": [
-      "$lm2_logic|CanReach(AltarLeft) or CanReach(AltarRight)"
+      "^$lm2_logic|CanReach(AltarLeft) or CanReach(AltarRight)"
     ]
   }
 ]

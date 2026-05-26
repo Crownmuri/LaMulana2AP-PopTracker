@@ -27,7 +27,8 @@
                                     "setting_random_dissonance",
                                     "setting_req_guardians",
                                     "setting_req_skulls",
-                                    "setting_guardian_ankhs"
+                                    "setting_guardian_ankhs",
+                                    "setting_show_sequence_break"
                                 ]
                             ]
                         }

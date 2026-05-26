@@ -29,7 +29,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
+                "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
             ]
         },
         {
@@ -54,12 +54,12 @@
                     "hosted_item": "cursed_430132",
                     "clear_as_group": false,
                     "access_rules": [
-                        "^$lm2_cursed|430132|CanReach(RoY) and (Has(Feather) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Earth Spear) or CanUse(Pistol) or (CanUse(Flare Gun) and HorizontalAttack) or Has(Claydoll Suit) or CanStopTime or (Has(Gale Fibula) and Has(Grapple Claw) and HorizontalAttack))"
+                        "^$lm2_cursed|430132|CanReach(RoY) and (Has(Feather) or Has(Katana) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack) or Has(Claydoll Suit) or CanStopTime or (Has(Gale Fibula) and Has(Grapple Claw) and HorizontalAttack))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(RoY) and (Has(Feather) or Has(Katana) or Has(Axe) or CanUse(Bomb) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Earth Spear) or CanUse(Pistol) or (CanUse(Flare Gun) and HorizontalAttack) or Has(Claydoll Suit) or CanStopTime or (Has(Gale Fibula) and Has(Grapple Claw) and HorizontalAttack))"
+                "^$lm2_logic|CanReach(RoY) and (Has(Feather) or Has(Katana) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack) or Has(Claydoll Suit) or CanStopTime or (Has(Gale Fibula) and Has(Grapple Claw) and HorizontalAttack))"
             ]
         },
       {
@@ -84,7 +84,7 @@
                 "item_count": 1,
                 "hosted_item": "boss_fafnir",
                 "access_rules": [
-                    "$lm2_logic|HasAnkhFor(Fafnir) and (MeleeAttack or Glitch(Costume Clip))"
+                    "^$lm2_logic|HasAnkhFor(Fafnir) and (MeleeAttack or Glitch(Costume Clip))"
                 ]
             },
             {
@@ -98,7 +98,7 @@
             }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(RoY)"
+          "^$lm2_logic|CanReach(RoY)"
         ]
       },
       {
@@ -123,7 +123,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
+          "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
         ]
       },
       {
@@ -148,7 +148,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(RoY) and (Has(Origin Sigil))"
+          "^$lm2_logic|CanReach(RoY) and (Has(Origin Sigil))"
         ]
       },
       {
@@ -173,7 +173,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(RoY) and (Has(Snapshot))"
+          "^$lm2_logic|CanReach(RoY) and (Has(Snapshot))"
         ]
       },
       {
@@ -194,7 +194,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(RoY) and (MeleeAttack)"
+          "^$lm2_logic|CanReach(RoY) and (MeleeAttack)"
         ]
       },
       {
@@ -215,7 +215,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(RoY) and (MeleeAttack and (CanUse(Flare Gun) or CanUse(Pistol) or (OrbCount(1) and (CanUse(Shuriken) or Has(Claydoll Suit) or (CanUse(Chakram) and Has(Ring))))))"
+          "^$lm2_logic|CanReach(RoY) and (MeleeAttack and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (OrbCount(1) and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or Has(Claydoll Suit) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring))))))"
         ]
       },
         {
@@ -245,7 +245,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(RoYMiddle)"
+                "^$lm2_logic|CanReach(RoYMiddle)"
             ]
         },
         {
@@ -270,12 +270,12 @@
                     "hosted_item": "cursed_430007",
                     "clear_as_group": false,
                     "access_rules": [
-                        "^$lm2_cursed|430007|CanReach(RoYBottom) and (Has(Life Sigil) and (Has(Knife) or (Has(Mjolnir) and MeleeAttack) or (CanUse(Earth Spear) and Has(Ring) and MeleeAttack) or (Has(Spaulder) and (Has(Leather Whip) or Has(Rapier) or Has(Katana))) or (Has(Gauntlet) and Has(Leather Whip))))"
+                        "^$lm2_cursed|430007|CanReach(RoYBottom) and (Has(Life Sigil) and (Has(Knife) or (Has(Mjolnir) and MeleeAttack) or ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and Has(Ring) and MeleeAttack) or (Has(Spaulder) and (Has(Leather Whip) or Has(Rapier) or Has(Katana))) or (Has(Gauntlet) and Has(Leather Whip))))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(RoYBottom) and (Has(Life Sigil) and (Has(Knife) or (Has(Mjolnir) and MeleeAttack) or (CanUse(Earth Spear) and Has(Ring) and MeleeAttack) or (Has(Spaulder) and (Has(Leather Whip) or Has(Rapier) or Has(Katana))) or (Has(Gauntlet) and Has(Leather Whip))))"
+                "^$lm2_logic|CanReach(RoYBottom) and (Has(Life Sigil) and (Has(Knife) or (Has(Mjolnir) and MeleeAttack) or ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and Has(Ring) and MeleeAttack) or (Has(Spaulder) and (Has(Leather Whip) or Has(Rapier) or Has(Katana))) or (Has(Gauntlet) and Has(Leather Whip))))"
             ]
         },
       {
@@ -298,31 +298,31 @@
                 "name": "Shop Slot 1",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(RoYBottom)"
+                    "^$lm2_logic|CanReach(RoYBottom)"
                 ]
             },
             {
                 "name": "Shop Slot 2",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(RoYBottom)"
+                    "^$lm2_logic|CanReach(RoYBottom)"
                 ]
             },
             {
                 "name": "Shop Slot 3",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(RoYBottom)"
+                    "^$lm2_logic|CanReach(RoYBottom)"
                 ]
             }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(RoYBottom)"
+          "^$lm2_logic|CanReach(RoYBottom)"
         ]
       }
     ],
     "access_rules": [
-      "$lm2_logic|CanReach(RoY) or CanReach(RoYBottom) or CanReach(RoYMiddle)"
+      "^$lm2_logic|CanReach(RoY) or CanReach(RoYBottom) or CanReach(RoYMiddle)"
     ]
   }
 ]

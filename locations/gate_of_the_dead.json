@@ -29,7 +29,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack)"
                 ]
             },
             {
@@ -59,7 +59,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (Has(Glove))"
+                    "^$lm2_logic|CanReach(GotD) and (Has(Glove))"
                 ]
             },
             {
@@ -89,7 +89,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack)"
                 ]
             },
             {
@@ -119,7 +119,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD)"
+                    "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
@@ -149,7 +149,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (HorizontalAttack and CanReach(DF Main) and Has(Glove) and CanReach(Annwfn Right) and IsDead(Ixtab) and Has(Hand Scanner))"
+                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack and CanReach(DF Main) and Has(Glove) and CanReach(Annwfn Right) and IsDead(Ixtab) and Has(Hand Scanner))"
                 ]
             },
             {
@@ -174,12 +174,12 @@
                         "hosted_item": "cursed_430145",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430145|CanReach(GotD) and (MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or (CanUse(Flare Gun) and HorizontalAttack))"
+                            "^$lm2_cursed|430145|CanReach(GotD) and (MeleeAttack or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Caltrops) or (CanUse(Flare Gun) and HorizontalAttack))"
+                    "^$lm2_logic|CanReach(GotD) and (MeleeAttack or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack))"
                 ]
             },
             {
@@ -204,7 +204,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (Has(Life Sigil))"
+                    "^$lm2_logic|CanReach(GotD) and (Has(Life Sigil))"
                 ]
             },
             {
@@ -227,26 +227,26 @@
                         "name": "Shop Slot 1",
                         "item_count": 1,
                         "access_rules": [
-                            "$lm2_logic|CanReach(GotD)"
+                            "^$lm2_logic|CanReach(GotD)"
                         ]
                     },
                     {
                         "name": "Shop Slot 2",
                         "item_count": 1,
                         "access_rules": [
-                            "$lm2_logic|CanReach(GotD)"
+                            "^$lm2_logic|CanReach(GotD)"
                         ]
                     },
                     {
                         "name": "Shop Slot 3",
                         "item_count": 1,
                         "access_rules": [
-                            "$lm2_logic|CanReach(GotD)"
+                            "^$lm2_logic|CanReach(GotD)"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD)"
+                    "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
@@ -259,7 +259,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (Has(Pepper) and Has(Birth Sigil) and CanChant(Sun) and IsDead(Unicorn))"
+                    "^$lm2_logic|CanReach(GotD) and (Has(Pepper) and Has(Birth Sigil) and CanChant(Sun) and IsDead(Unicorn))"
                 ]
             },
             {
@@ -280,12 +280,12 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(GotD) and (OrbCount(1) and ((Has(Katana) and Has(Vajra)) or Has(Leather Whip) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Flare Gun) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol)))"
+                    "^$lm2_logic|CanReach(GotD) and (OrbCount(1) and ((Has(Katana) and Has(Vajra)) or Has(Leather Whip) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
                 ]
             }
         ],
         "access_rules": [
-            "$lm2_logic|CanReach(GotD)"
+            "^$lm2_logic|CanReach(GotD)"
         ]
     }
 ]

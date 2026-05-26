@@ -29,7 +29,8 @@
                                 "setting_req_guardians",
                                 "setting_req_skulls",
                                 "setting_guardian_ankhs",
-                                "setting_reveal_entrances"
+                                "setting_reveal_entrances",
+                                "setting_show_sequence_break"
                             ]
                         ]
                     }

@@ -10,7 +10,7 @@
             { "name": "Shop Slot 2", "item_count": 1 },
             { "name": "Shop Slot 3", "item_count": 1 }
         ],
-        "visibility_rules": [ "$lm2_logic|Start(RoY)" ]
+        "visibility_rules": [ "^$lm2_logic|Start(RoY)" ]
     },
     {
         "name": "Starting Shop Ann",
@@ -23,7 +23,7 @@
             { "name": "Shop Slot 2", "item_count": 1 },
             { "name": "Shop Slot 3", "item_count": 1 }
         ],
-        "visibility_rules": [ "$lm2_logic|Start(AnnwfnMain)" ]
+        "visibility_rules": [ "^$lm2_logic|Start(AnnwfnMain)" ]
     },
     {
         "name": "Starting Shop IB",
@@ -36,7 +36,7 @@
             { "name": "Shop Slot 2", "item_count": 1 },
             { "name": "Shop Slot 3", "item_count": 1 }
         ],
-        "visibility_rules": [ "$lm2_logic|Start(IBMain)" ]
+        "visibility_rules": [ "^$lm2_logic|Start(IBMain)" ]
     },
     {
         "name": "Starting Shop IT",
@@ -49,7 +49,7 @@
             { "name": "Shop Slot 2", "item_count": 1 },
             { "name": "Shop Slot 3", "item_count": 1 }
         ],
-        "visibility_rules": [ "$lm2_logic|Start(ITLeft)" ]
+        "visibility_rules": [ "^$lm2_logic|Start(ITLeft)" ]
     },
     {
         "name": "Starting Shop DF",
@@ -62,7 +62,7 @@
             { "name": "Shop Slot 2", "item_count": 1 },
             { "name": "Shop Slot 3", "item_count": 1 }
         ],
-        "visibility_rules": [ "$lm2_logic|Start(DFMain)" ]
+        "visibility_rules": [ "^$lm2_logic|Start(DFMain)" ]
     },
     {
         "name": "Starting Shop SFG",
@@ -75,7 +75,7 @@
             { "name": "Shop Slot 2", "item_count": 1 },
             { "name": "Shop Slot 3", "item_count": 1 }
         ],
-        "visibility_rules": [ "$lm2_logic|Start(SotFGGrail)" ]
+        "visibility_rules": [ "^$lm2_logic|Start(SotFGGrail)" ]
     },
     {
         "name": "Starting Shop TS",
@@ -88,7 +88,7 @@
             { "name": "Shop Slot 2", "item_count": 1 },
             { "name": "Shop Slot 3", "item_count": 1 }
         ],
-        "visibility_rules": [ "$lm2_logic|Start(TSLeft)" ]
+        "visibility_rules": [ "^$lm2_logic|Start(TSLeft)" ]
     },
     {
         "name": "Starting Shop Val",
@@ -101,7 +101,7 @@
             { "name": "Shop Slot 2", "item_count": 1 },
             { "name": "Shop Slot 3", "item_count": 1 }
         ],
-        "visibility_rules": [ "$lm2_logic|Start(ValhallaMain)" ]
+        "visibility_rules": [ "^$lm2_logic|Start(ValhallaMain)" ]
     },
     {
         "name": "Starting Shop DSLM",
@@ -114,7 +114,7 @@
             { "name": "Shop Slot 2", "item_count": 1 },
             { "name": "Shop Slot 3", "item_count": 1 }
         ],
-        "visibility_rules": [ "$lm2_logic|Start(DSLMMain)" ]
+        "visibility_rules": [ "^$lm2_logic|Start(DSLMMain)" ]
     },
     {
         "name": "Starting Shop AC",
@@ -127,7 +127,7 @@
             { "name": "Shop Slot 2", "item_count": 1 },
             { "name": "Shop Slot 3", "item_count": 1 }
         ],
-        "visibility_rules": [ "$lm2_logic|Start(ACTablet)" ]
+        "visibility_rules": [ "^$lm2_logic|Start(ACTablet)" ]
     },
     {
         "name": "Starting Shop HoM",
@@ -140,6 +140,6 @@
             { "name": "Shop Slot 2", "item_count": 1 },
             { "name": "Shop Slot 3", "item_count": 1 }
         ],
-        "visibility_rules": [ "$lm2_logic|Start(HoMTop)" ]
+        "visibility_rules": [ "^$lm2_logic|Start(HoMTop)" ]
     }
 ]

@@ -29,7 +29,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HL) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
                 ]
             },
             {
@@ -59,7 +59,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HL) and ((Has(Grapple Claw) or Glitch(Costume Clip)) and Has(Feather))"
+                    "^$lm2_logic|CanReach(HL) and ((Has(Grapple Claw) or Glitch(Costume Clip)) and Has(Feather))"
                 ]
             },
             {
@@ -82,26 +82,26 @@
                         "name": "Shop Slot 1",
                         "item_count": 1,
                         "access_rules": [
-                            "$lm2_logic|CanReach(HL) and (Has(Grapple Claw) and Has(Feather))"
+                            "^$lm2_logic|CanReach(HL) and (Has(Grapple Claw) and Has(Feather))"
                         ]
                     },
                     {
                         "name": "Shop Slot 2",
                         "item_count": 1,
                         "access_rules": [
-                            "$lm2_logic|CanReach(HL) and (Has(Grapple Claw) and Has(Feather))"
+                            "^$lm2_logic|CanReach(HL) and (Has(Grapple Claw) and Has(Feather))"
                         ]
                     },
                     {
                         "name": "Shop Slot 3",
                         "item_count": 1,
                         "access_rules": [
-                            "$lm2_logic|CanReach(HL) and (Has(Grapple Claw) and Has(Feather))"
+                            "^$lm2_logic|CanReach(HL) and (Has(Grapple Claw) and Has(Feather))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HL)"
+                    "^$lm2_logic|CanReach(HL)"
                 ]
             },
             {
@@ -131,7 +131,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Glasya Labolas))"
+                    "^$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Glasya Labolas))"
                 ]
             },
             {
@@ -161,7 +161,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLSpun) and (IsDead(Griffin))"
+                    "^$lm2_logic|CanReach(HLSpun) and (IsDead(Griffin))"
                 ]
             },
             {
@@ -186,7 +186,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and Has(Glove) and IsDead(Glasya Labolas))"
+                    "^$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and Has(Glove) and IsDead(Glasya Labolas))"
                 ]
             },
             {
@@ -211,7 +211,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla))"
+                    "^$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla))"
                 ]
             },
             {
@@ -236,7 +236,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLSpun) and (CanWarp and IsDead(Echidna) and Has(Progressive Beherit) and Has(Hand Scanner))"
+                    "^$lm2_logic|CanReach(HLSpun) and (CanWarp and IsDead(Echidna) and Has(Progressive Beherit) and Has(Hand Scanner))"
                 ],
                 "visibility_rules": [ "setting_random_dissonance" ]
             },
@@ -258,7 +258,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLSpun) and (CanWarp)"
+                    "^$lm2_logic|CanReach(HLSpun) and (CanWarp)"
                 ]
             },
             {
@@ -279,7 +279,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLSpun) and (CanWarp)"
+                    "^$lm2_logic|CanReach(HLSpun) and (CanWarp)"
                 ]
             },
             {
@@ -300,7 +300,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLSpun) and (CanWarp and OrbCount(1) and ((Has(Rapier) and (Has(Spaulder) or Has(Gauntlet) or Has(Vajra))) or Has(Chain Whip) or Has(Knife) or Has(Axe) or Has(Katana) or CanUse(Pistol) or CanUse(Chakrams) or CanUse(Earth Spear) or CanUse(Bomb)))"
+                    "^$lm2_logic|CanReach(HLSpun) and (CanWarp and OrbCount(1) and ((Has(Rapier) and (Has(Spaulder) or Has(Gauntlet) or Has(Vajra))) or Has(Chain Whip) or Has(Knife) or Has(Axe) or Has(Katana) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))))"
                 ]
             },
             {
@@ -321,7 +321,7 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLSpun) and ((Has(Gale Fibula) or CanStopTime) and Has(Glove) and Has(Life Sigil) and IsDead(Glasya Labolas) and OrbCount(2))"
+                    "^$lm2_logic|CanReach(HLSpun) and ((Has(Gale Fibula) or CanStopTime) and Has(Glove) and Has(Life Sigil) and IsDead(Glasya Labolas) and OrbCount(2))"
                 ]
             },
             {
@@ -351,12 +351,12 @@
                     }
                 ],
                 "access_rules": [
-                    "$lm2_logic|CanReach(HLCog) and (Has(Ancient Battery) and CanWarp and HorizontalAttack)"
+                    "^$lm2_logic|CanReach(HLCog) and (Has(Ancient Battery) and CanWarp and HorizontalAttack)"
                 ]
             }
         ],
         "access_rules": [
-            "$lm2_logic|CanReach(HL) or CanReach(HLCog) or CanReach(HLSpun)"
+            "^$lm2_logic|CanReach(HL) or CanReach(HLCog) or CanReach(HLSpun)"
         ]
     }
 ]

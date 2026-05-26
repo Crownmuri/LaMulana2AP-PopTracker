@@ -29,7 +29,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(AnnwfnMain)"
+                "^$lm2_logic|CanReach(AnnwfnMain)"
             ]
         },
         {
@@ -59,7 +59,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(AnnwfnMain)"
+                "^$lm2_logic|CanReach(AnnwfnMain)"
             ]
         },
         {
@@ -89,7 +89,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
+                "^$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
             ]
         },
       {
@@ -114,7 +114,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnMain) and (Has(Glove))"
+          "^$lm2_logic|CanReach(AnnwfnMain) and (Has(Glove))"
         ]
       },
       {
@@ -139,7 +139,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnMain)"
+          "^$lm2_logic|CanReach(AnnwfnMain)"
         ],
         "visibility_rules": [ "setting_random_research" ]
       },
@@ -163,26 +163,26 @@
                 "name": "Shop Slot 1",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
+                    "^$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
                 ]
             },
             {
                 "name": "Shop Slot 2",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
+                    "^$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
                 ]
             },
             {
                 "name": "Shop Slot 3",
                 "item_count": 1,
                 "access_rules": [
-                    "$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
+                    "^$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
                 ]
             }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnMain)"
+          "^$lm2_logic|CanReach(AnnwfnMain)"
         ]
       },
       {
@@ -207,7 +207,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and Has(Snapshot))"
+          "^$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and Has(Snapshot))"
         ]
       },
         {
@@ -228,7 +228,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(AnnwfnMain) and (CanUse(Rolling Shuriken))"
+                "^$lm2_logic|CanReach(AnnwfnMain) and ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))))"
             ]
         },
         {
@@ -249,7 +249,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(AnnwfnMain) and (CanSealCorridor and CanChant(Night) and OrbCount(7) and Has(Silver Shield) and (Has(Flail Whip) or Has(Katana) or Has(Axe)))"
+                "^$lm2_logic|CanReach(AnnwfnMain) and (CanSealCorridor and CanChant(Night) and OrbCount(7) and Has(Silver Shield) and (Has(Flail Whip) or Has(Katana) or Has(Axe)))"
             ]
         },
         {
@@ -274,12 +274,12 @@
                     "hosted_item": "cursed_430103",
                     "clear_as_group": false,
                     "access_rules": [
-                        "^$lm2_cursed|430103|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Flare Gun) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Pistol) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (CanUse(Caltrops) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or CanUse(Rolling Shuriken)))))"
+                        "^$lm2_cursed|430103|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))))))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or CanUse(Shuriken) or CanUse(Chakram) or CanUse(Flare Gun) or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Pistol) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (CanUse(Caltrops) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or CanUse(Rolling Shuriken)))))"
+                "^$lm2_logic|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))))))"
             ]
         },
       {
@@ -304,7 +304,7 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnRight) and (CanChant(Earth))"
+          "^$lm2_logic|CanReach(AnnwfnRight) and (CanChant(Earth))"
         ]
       },
         {
@@ -325,7 +325,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(AnnwfnRight) and (((Has(Leather Whip) or Has(Rapier) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb)) and OrbCount(1)) or CanUse(Flare Gun) or CanUse(Pistol))"
+                "^$lm2_logic|CanReach(AnnwfnRight) and (((Has(Leather Whip) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) and OrbCount(1)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))"
             ]
         },
         {
@@ -351,7 +351,7 @@
                     "item_count": 1,
                     "hosted_item": "boss_kujata",
                     "access_rules": [
-                        "$lm2_logic|HasAnkhFor(Kujata)"
+                        "^$lm2_logic|HasAnkhFor(Kujata)"
                     ]
                 },
                 {
@@ -365,7 +365,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(AnnwfnRight) and (Has(Frey's Ship) and IsDead(Ixtab) and ((CanUse(Pistol) and OrbCount(1)) or ((Has(Flail Whip) or Has(Axe) or CanUse(Bombs)) and OrbCount(2)) or ((Has(Chain Whip) or Has(Katana) or CanUse(Earth Spear) or CanUse(Chakram)) and OrbCount(3)) or ((Has(Knife) or Has(Rapier) or (CanUse(Shuriken) and Has(Ring))) and OrbCount(3) and Has(Feather)) or ((Has(Leather Whip) and CanUse(Rolling Shuriken)) and OrbCount(4))))"
+                "^$lm2_logic|CanReach(AnnwfnRight) and (Has(Frey's Ship) and IsDead(Ixtab) and (((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(1)) or ((Has(Flail Whip) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) and OrbCount(2)) or ((Has(Chain Whip) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(3)) or ((Has(Knife) or Has(Rapier) or ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) and Has(Ring))) and OrbCount(3) and Has(Feather)) or ((Has(Leather Whip) and (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(4))))"
             ]
         },
       {
@@ -378,12 +378,12 @@
           }
         ],
         "access_rules": [
-          "$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab))"
+          "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab))"
         ]
       }
     ],
     "access_rules": [
-      "$lm2_logic|CanReach(AnnwfnMain) or CanReach(AnnwfnRight)"
+      "^$lm2_logic|CanReach(AnnwfnMain) or CanReach(AnnwfnRight)"
     ]
   }
 ]

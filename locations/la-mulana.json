@@ -24,7 +24,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(VoD)"
+                "^$lm2_logic|CanReach(VoD)"
             ]
         },
         {
@@ -49,7 +49,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(VoD)"
+                "^$lm2_logic|CanReach(VoD)"
             ]
         },
         {
@@ -74,7 +74,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(VoD) and (IsDead(Vritra) or GuardianKills(6))"
+                "^$lm2_logic|CanReach(VoD) and (IsDead(Vritra) or GuardianKills(6))"
             ]
         },
         {
@@ -99,7 +99,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(VoD) and (GuardianKills(6))"
+                "^$lm2_logic|CanReach(VoD) and (GuardianKills(6))"
             ]
         },
         {
@@ -122,26 +122,26 @@
                     "name": "Shop Slot 1",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(VoD)"
+                        "^$lm2_logic|CanReach(VoD)"
                     ]
                 },
                 {
                     "name": "Shop Slot 2",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(VoD)"
+                        "^$lm2_logic|CanReach(VoD)"
                     ]
                 },
                 {
                     "name": "Shop Slot 3",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(VoD)"
+                        "^$lm2_logic|CanReach(VoD)"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(VoD)"
+                "^$lm2_logic|CanReach(VoD)"
             ]
         },
         {
@@ -164,26 +164,26 @@
                     "name": "Shop Slot 1",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(VoD)"
+                        "^$lm2_logic|CanReach(VoD)"
                     ]
                 },
                 {
                     "name": "Shop Slot 2",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(VoD)"
+                        "^$lm2_logic|CanReach(VoD)"
                     ]
                 },
                 {
                     "name": "Shop Slot 3",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(VoD)"
+                        "^$lm2_logic|CanReach(VoD)"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(VoD)"
+                "^$lm2_logic|CanReach(VoD)"
             ]
         },
         {
@@ -206,26 +206,26 @@
                     "name": "Shop Slot 1",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(VoD)"
+                        "^$lm2_logic|CanReach(VoD)"
                     ]
                 },
                 {
                     "name": "Shop Slot 2",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(VoD)"
+                        "^$lm2_logic|CanReach(VoD)"
                     ]
                 },
                 {
                     "name": "Shop Slot 3",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(VoD)"
+                        "^$lm2_logic|CanReach(VoD)"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(VoD)"
+                "^$lm2_logic|CanReach(VoD)"
             ]
         },
         {
@@ -250,7 +250,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(VoD) and (Has(Feather) and CanWarp)"
+                "^$lm2_logic|CanReach(VoD) and (Has(Feather) and CanWarp)"
             ]
         },
         {
@@ -275,7 +275,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(InfernoCavern) and (Has(Snapshot) and CanChant(Mother) and CanChant(Wind) and CanWarp)"
+                "^$lm2_logic|CanReach(InfernoCavern) and (Has(Snapshot) and CanChant(Mother) and CanChant(Wind) and CanWarp)"
             ]
         },
         {
@@ -305,7 +305,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(GateofGuidance)"
+                "^$lm2_logic|CanReach(GateofGuidance)"
             ]
         },
         {
@@ -335,7 +335,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(GateofGuidance)"
+                "^$lm2_logic|CanReach(GateofGuidance)"
             ]
         },
         {
@@ -358,33 +358,33 @@
                     "name": "Shop Slot 1",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
+                        "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
                     ]
                 },
                 {
                     "name": "Shop Slot 2",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
+                        "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
                     ]
                 },
                 {
                     "name": "Shop Slot 3",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
+                        "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
                     ]
                 },
                 {
                     "name": "Shop Slot 4",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack and GuardianKills(3))"
+                        "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack and GuardianKills(3))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(GateofGuidance)"
+                "^$lm2_logic|CanReach(GateofGuidance)"
             ]
         },
         {
@@ -409,7 +409,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(GateofGuidance) and (Has(Feather) or Has(Gale Fibula))"
+                "^$lm2_logic|CanReach(GateofGuidance) and (Has(Feather) or Has(Gale Fibula))"
             ]
         },
         {
@@ -434,7 +434,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(MausoleumofGiants) and (Has(Progressive Beherit) and CanChant(Sun) and PuzzleFinished(Sakit Puzzle))"
+                "^$lm2_logic|CanReach(MausoleumofGiants) and (Has(Progressive Beherit) and CanChant(Sun) and PuzzleFinished(Sakit Puzzle))"
             ],
             "visibility_rules": [ "setting_random_dissonance" ]
         },
@@ -460,7 +460,7 @@
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(EndlessCorridor)"
+                "^$lm2_logic|CanReach(EndlessCorridor)"
             ]
         },
         {
@@ -483,19 +483,19 @@
                     "name": "Fobos' Inspiration",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(GateofIllusion)"
+                        "^$lm2_logic|CanReach(GateofIllusion)"
                     ]
                 },
                 {
                     "name": "Fobos' Skull Check",
                     "item_count": 1,
                     "access_rules": [
-                        "$lm2_logic|CanReach(GateofIllusion) and (SkullCount(1))"
+                        "^$lm2_logic|CanReach(GateofIllusion) and (SkullCount(1))"
                     ]
                 }
             ],
             "access_rules": [
-                "$lm2_logic|CanReach(GateofIllusion)"
+                "^$lm2_logic|CanReach(GateofIllusion)"
             ]
         }
     ]
