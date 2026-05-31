@@ -48,21 +48,21 @@
                 "name": "Shop Slot 1",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)"
                 ]
             },
             {
                 "name": "Shop Slot 2",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)"
                 ]
             },
             {
                 "name": "Shop Slot 3",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)"
                 ]
             }
         ],
@@ -122,7 +122,7 @@
                     "item_count": 1,
                     "hosted_item": "boss_surtr",
                     "access_rules": [
-                        "^$lm2_logic|HasAnkhFor(Surtr)"
+                        "^$lm2_logic|(HasAnkhFor(Surtr) and (CanReach(ITSinmara) and (Has(Light Scythe) and (Has(Feather) or Has(Ice Cloak)) and (((Has(Knife) or Has(Rapier)) and OrbCount(7)) or ((Has(Chain Whip) or ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and Has(Ring))) and OrbCount(6)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana) or ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Ring))) and OrbCount(5)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(4)))))) or (MinimalLogic and (HasAnkhFor(Surtr) and (CanReach(ITSinmara) and Has(Light Scythe))))"
                     ]
                 },
                 {
@@ -136,7 +136,7 @@
                 }
             ],
             "access_rules": [
-                "^$lm2_logic|CanReach(ITSinmara) and (Has(Light Scythe) and (Has(Feather) or Has(Ice Cloak)) and (((Has(Knife) or Has(Rapier)) and OrbCount(7)) or ((Has(Chain Whip) or ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and Has(Ring))) and OrbCount(6)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana) or ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Ring))) and OrbCount(5)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(4))))"
+                "^$lm2_logic|CanReach(ITSinmara)"
             ]
         },
         {
@@ -289,7 +289,7 @@
                 }
             ],
             "access_rules": [
-                "^$lm2_logic|CanReach(ITLeft) and (OrbCount(1))"
+                "^$lm2_logic|CanReach(ITLeft) and CanKill(Vedfolnir)"
             ]
         },
         {
@@ -400,7 +400,7 @@
                 }
             ],
             "access_rules": [
-                "^$lm2_logic|CanReach(ITRight) and (IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and CanReach(IT Left) and (((Has(Leather Whip) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))) and OrbCount(3)) or ((Has(Chain Whip) or Has(Knife) or Has(Rapier) or Has(Axe) or Has(Katana) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(2)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(1))))"
+                "^$lm2_logic|CanReach(ITRight) and CanKill(Ratatoskr 3)"
             ]
         },
         {
@@ -421,7 +421,7 @@
                 }
             ],
             "access_rules": [
-                "^$lm2_logic|CanReach(ITVidofnir) and (Has(Flame Torc) and Has(Ice Cloak) and Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(6)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(5))))"
+                "^$lm2_logic|CanReach(ITVidofnir) and CanKill(Vidofnir)"
             ]
         }
     ],

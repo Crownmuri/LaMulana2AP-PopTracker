@@ -215,7 +215,7 @@
           }
         ],
         "access_rules": [
-          "^$lm2_logic|CanReach(RoY) and (MeleeAttack and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (OrbCount(1) and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or Has(Claydoll Suit) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring))))))"
+          "^$lm2_logic|CanReach(RoY) and CanKill(Nidhogg)"
         ]
       },
         {

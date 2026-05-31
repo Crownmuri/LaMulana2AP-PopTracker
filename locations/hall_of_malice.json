@@ -171,7 +171,7 @@
                 "item_count": 1,
                 "hosted_item": "boss_echidna",
                 "access_rules": [
-                    "^$lm2_logic|HasAnkhFor(Echidna) and (IsDead(HoM Left Path) and IsDead(HoM Middle Path) and Has(Feather) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe))) or (OrbCount(6) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))))"
+                    "^$lm2_logic|(HasAnkhFor(Echidna) and (IsDead(HoM Left Path) and IsDead(HoM Middle Path) and Has(Feather) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe))) or (OrbCount(6) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))))) or (MinimalLogic and (HasAnkhFor(Echidna) and (IsDead(HoM Left Path) and IsDead(HoM Middle Path) and Has(Feather))))"
                 ]
             },
             {
@@ -228,7 +228,7 @@
           }
         ],
         "access_rules": [
-          "^$lm2_logic|CanReach(HoMAwoken) and (Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(7)) or ((Has(Axe) or Has(Katana)) and OrbCount(6)) or (Has(Flail Whip) and OrbCount(5))))"
+          "^$lm2_logic|CanReach(HoMAwoken) and CanKill(HoM Left Path)"
         ]
       },
       {
@@ -241,7 +241,7 @@
           }
         ],
         "access_rules": [
-          "^$lm2_logic|CanReach(HoMAwoken) and (((Has(Silver Shield) and Has(Feather)) or Has(Angel Shield)) and ((Has(Chain Whip) and OrbCount(7)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(6))))"
+          "^$lm2_logic|CanReach(HoMAwoken) and CanKill(HoM Middle Path)"
         ]
       },
       {
@@ -254,7 +254,7 @@
           }
         ],
         "access_rules": [
-          "^$lm2_logic|CanReach(HoMAwoken) and (Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(7)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(6))))"
+          "^$lm2_logic|CanReach(HoMAwoken) and CanKill(HoM Right Path)"
         ]
       }
     ],

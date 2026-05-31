@@ -432,6 +432,11 @@ function ClearSpoiler()
             ClearTargetOverlay(code)
             local o = Tracker:FindObjectForCode(code)
             if o then o.Active = false end
+            -- Reset any soul-gate cost on this endpoint too; otherwise the
+            -- revealed cost lingers after the pairing is cleared. (Non-soul
+            -- entrances have no cost_ item and are skipped.)
+            local c = Tracker:FindObjectForCode("cost_" .. code)
+            if c then c.CurrentStage = 0 end
         end
     end
     ER_PAIRINGS = kept
@@ -455,6 +460,11 @@ function ApplySpoiler(entrance_pairs, soul_gate_pairs)
             ClearTargetOverlay(code)
             local o = Tracker:FindObjectForCode(code)
             if o then o.Active = false end
+            -- Reset any soul-gate cost on this endpoint too; otherwise the
+            -- revealed cost lingers after the pairing is cleared. (Non-soul
+            -- entrances have no cost_ item and are skipped.)
+            local c = Tracker:FindObjectForCode("cost_" .. code)
+            if c then c.CurrentStage = 0 end
         end
     end
     ER_PAIRINGS = kept

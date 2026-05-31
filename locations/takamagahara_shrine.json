@@ -122,7 +122,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain) and (Has(Mjolnir) and OrbCount(1))"
+                    "^$lm2_logic|CanReach(TSMain) and CanKill(Raijin and Fujin)"
                 ]
             },
             {
@@ -258,7 +258,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSBottom) and (OrbCount(2) and ((Has(Chain Whip) and (Has(Gauntlet) or Has(Spaulder))) or (Has(Knife) and Has(Spaulder) and Has(Feather)) or (Has(Rapier) and Has(Gauntlet) and Has(Spaulder) and Has(Feather)) or Has(Flail Whip) or Has(Axe) or Has(Katana) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Feather)) or ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) and Has(Ring) and Has(Feather)) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and (Has(Ring) or Has(Feather))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))and Has(Ring))))"
+                    "^$lm2_logic|CanReach(TSBottom) and CanKill(Daji)"
                 ]
             },
             {
@@ -309,7 +309,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSBlood) and (Has(Life Sigil) and Has(Cog of Antiquity) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(6))) and ((Has(Egg of Creation) and OrbCount(6) and (Has(Claydoll Suit) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) and Has(Ring)) or (Has(Katana) and Has(Feather)))) or (CanStopTime and OrbCount(3) and ((Has(Axe) and (Has(Gauntlet) or Has(Spaulder))) or (Has(Katana) and (Has(Vajra) or Has(Spaulder))) or (Has(Rapier) and Has(Vajra)) or (Has(Knife) and (Has(Vajra) or Has(Spaulder))) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))))))"
+                    "^$lm2_logic|CanReach(TSBlood) and CanKill(Belial)"
                 ]
             }
         ],

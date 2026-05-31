@@ -135,7 +135,7 @@
                 }
             ],
             "access_rules": [
-                "^$lm2_logic|CanReach(EPDMain) and (IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon) and Has(Feather))"
+                "^$lm2_logic|CanReach(EPDMain) and CanKill(Hraesvelgr)"
             ]
         },
         {
@@ -191,7 +191,7 @@
                 "item_count": 1,
                 "hosted_item": "boss_hel",
                 "access_rules": [
-                    "^$lm2_logic|HasAnkhFor(Hel) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe) or Has(Katana))) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and (OrbCount(6))))"
+                    "^$lm2_logic|(HasAnkhFor(Hel) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe) or Has(Katana))) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and (OrbCount(6))))) or (MinimalLogic and (HasAnkhFor(Hel)))"
                 ]
             },
             {

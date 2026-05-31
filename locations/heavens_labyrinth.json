@@ -300,7 +300,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLSpun) and (CanWarp and OrbCount(1) and ((Has(Rapier) and (Has(Spaulder) or Has(Gauntlet) or Has(Vajra))) or Has(Chain Whip) or Has(Knife) or Has(Axe) or Has(Katana) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))))"
+                    "^$lm2_logic|CanReach(HLSpun) and CanKill(Glasya Labolas)"
                 ]
             },
             {
@@ -321,7 +321,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLSpun) and ((Has(Gale Fibula) or CanStopTime) and Has(Glove) and Has(Life Sigil) and IsDead(Glasya Labolas) and OrbCount(2))"
+                    "^$lm2_logic|CanReach(HLSpun) and CanKill(Griffin)"
                 ]
             },
             {

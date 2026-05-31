@@ -70,15 +70,18 @@
         ]
     },
     {
-        "name": "Difficulty",
+        "name": "Logic Difficulty",
         "type": "progressive",
         "loop": true,
         "allow_disabled": false,
+        "initial_stage_idx": 0,
         "codes": "setting_logic",
         "stages": [
             { "img": "images/Settings/Difficulty1.png", "codes": "logic_normal",
               "inherit_codes": false },
-            { "img": "images/Settings/Difficulty2.png", "codes": "logic_hard",
+            { "img": "images/Settings/Difficulty2.png", "codes": "logic_tricky",
+              "inherit_codes": false },
+            { "img": "images/Settings/Difficulty3.png", "codes": "logic_minimal",
               "inherit_codes": false }
         ]
     },
@@ -166,5 +169,11 @@
         "img": "images/Other/Map.png",
         "codes": "setting_show_sequence_break",
         "initial_active_state": true
+    },
+    {
+        "name": "Potsanity (testing - not yet in logic)",
+        "type": "toggle",
+        "img": "images/Settings/Pot.png",
+        "codes": "setting_potsanity"
     }
 ]

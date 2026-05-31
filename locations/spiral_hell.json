@@ -26,7 +26,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SpiralHell) and (CanChant(Heaven) and CanChant(Earth) and CanChant(Sun) and CanChant(Moon) and CanChant(Fire) and CanChant(Sea) and CanChant(Wind) and CanChant(Mother) and CanChant(Child) and CanChant(Night) and Dissonance(6) and Has(Grapple Claw) and Has(Feather) and Has(Flame Torc) and OrbCount(8) and (Has(Flail Whip) or Has(Axe)))"
+                    "^$lm2_logic|CanReach(SpiralHell) and (CanChant(Heaven) and CanChant(Earth) and CanChant(Sun) and CanChant(Moon) and CanChant(Fire) and CanChant(Sea) and CanChant(Wind) and CanChant(Mother) and CanChant(Child) and CanChant(Night) and Dissonance(6) and Has(Grapple Claw) and Has(Feather) and Has(Flame Torc) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe))) or (MinimalLogic and MeleeAttack)))"
                 ]
             }
         ],

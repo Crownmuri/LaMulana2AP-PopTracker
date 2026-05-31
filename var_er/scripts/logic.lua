@@ -204,11 +204,10 @@ function CanSealCorridor()
     return has("boss_anu")
 end
 function Setting(name)
-    -- HardBosses maps to the progressive logic setting (stage 1 = hard)
-    if name == "HardBosses" then
-        local obj = Tracker:FindObjectForCode("setting_logic")
-        if obj then return obj.CurrentStage >= 1 end
-        return false
+    -- HardBosses / MinimalBosses: minimal combat requirements, in-logic at the
+    -- Minimal tier only (AP world maps MinimalBosses -> logic_difficulty == 2).
+    if name == "HardBosses" or name == "MinimalBosses" then
+        return LogicLevel() >= 2
     end
     if name == "Not Life for HoM" then
         return not has("setting_life_for_hom")
@@ -227,22 +226,36 @@ function Glitch(name)
     if name == "Costume Clip" then return has("setting_costume_clip") end
     return false
 end
--- TrickyLogic() / OutOfLogic(): both true only while the reachability
--- flood-fill / lm2_logic / lm2_cursed is running its second "out-of-logic"
--- pass. Anything reachable ONLY because of a TrickyLogic()/OutOfLogic()-gated
--- clause renders yellow (SequenceBreak) instead of green, and stays red if
--- unreachable even in that pass. Two separate names so they can diverge later:
+-- LogicLevel(): the player-selected logic difficulty tier read from the
+-- setting_logic progressive item (0 = Normal, 1 = Tricky, 2 = Minimal). Mirrors
+-- the AP world's LogicDifficulty option (worlds/lamulana2/options.py), whose
+-- _select_logic_for_level swaps in the TrickyLogic/HardLogic strings per tier.
+function LogicLevel()
+    local o = Tracker:FindObjectForCode("setting_logic")
+    if o then return o.CurrentStage end
+    return 0
+end
+
+-- _GLITCH_ACTIVE marks the second "relax everything" reachability pass that
+-- renders still-out-of-logic checks yellow (SequenceBreak). The difficulty
+-- predicates below are true either during that pass OR once the player's
+-- selected LogicLevel has reached the matching tier, at which point the gated
+-- clause counts as in-logic (green) instead of yellow:
 --   TrickyLogic - real but unintuitive techniques, e.g. the IBBottom->IBMain
 --                 horizontal-attack hop:
 --                   {"IBMain", "MeleeAttack or (TrickyLogic and HorizontalAttack)"}
---                 Candidate to become a real randomizer logic option someday
---                 (would then read green instead of yellow).
---   OutOfLogic  - never a logic option; purely "technically possible" caveats,
+--                 In-logic at Tricky+ (level >= 1).
+--   MinimalLogic - minimal combat requirements for (mini-)bosses layered on top
+--                 of tricky. In-logic at Minimal (level >= 2). NOTE: no location
+--                 strings gate on MinimalLogic yet (the AP HardLogic overrides
+--                 still need porting), so Minimal currently behaves like Tricky.
+--   OutOfLogic  - never a logic tier; purely "technically possible" caveats,
 --                 e.g. owning a subweapon but possibly running out of ammo:
 --                   "CanUse(Bomb) or (OutOfLogic and Has(Bomb))"
--- For now both simply track the glitch pass.
+--                 Only ever relaxed in the yellow seq-break pass.
 _GLITCH_ACTIVE = false
-function TrickyLogic() return _GLITCH_ACTIVE == true end
+function TrickyLogic() return _GLITCH_ACTIVE == true or LogicLevel() >= 1 end
+function MinimalLogic() return _GLITCH_ACTIVE == true or LogicLevel() >= 2 end
 function OutOfLogic() return _GLITCH_ACTIVE == true end
 
 -- Master view toggle. When off, the out-of-logic (yellow / SequenceBreak)
@@ -453,7 +466,9 @@ local EVENT_LOGIC = {
 
     -- Roots of Yggdrasil
     ["ratatoskr_1"] = "CanReach(RoY) and MeleeAttack",
-    ["nidhogg"] = "CanReach(RoY) and MeleeAttack and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring)))",
+    -- Normal keeps the OrbCount(1) gate on shuriken/claydoll/chakram (AP Logic);
+    -- Tricky drops it (AP TrickyLogic); Minimal -> MeleeAttack via EVENT_HARDLOGIC.
+    ["nidhogg"] = "CanReach(RoY) and ((MeleeAttack and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (OrbCount(1) and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or Has(Claydoll Suit) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring)))))) or (TrickyLogic and (MeleeAttack and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring))))))",
 
     -- Annwfn
     ["kaliya"] = "CanReach(AnnwfnMain) and (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))",
@@ -525,6 +540,57 @@ local EVENT_LOGIC = {
     ["garm_statue_puzzle"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and CanChant(Fire) and CanChant(Earth) and CanChant(Sun)",
     ["sakit_puzzle"] = "CanReach(EPG) and ((Has(Enga Musica) and IsDead(Vidofnir)) or Glitch(Costume Clip)) and Has(Feather) and Has(Giant's Flute) and Has(Vessel) and Has(Hand Scanner) and CanChant(Moon) and CanChant(Mother) and CanChant(Child) and IsDead(Fenrir)",
 }
+
+-- ============================================================
+-- Minimal-tier (HardLogic) relaxations, ported from each location's HardLogic
+-- string in the AP world's data/World.json (worlds/lamulana2). Each entry is
+-- the boss's HardLogic carrying the SAME CanReach(...) prefix as its EVENT_LOGIC
+-- base rule, so Minimal logic only relaxes the combat requirement, never the
+-- reachability. Folded into EVENT_LOGIC below as
+--     "(base) or (MinimalLogic and (hard))"
+-- which equals the base rule at Normal/Tricky (MinimalLogic false) and adds the
+-- relaxed clause at Minimal. Bosses whose HardLogic == base (Ratatoskr 1/2,
+-- Kaliya, Hugin and Munin, Arachne, Scylla) are intentionally omitted. The 9
+-- Guardians stay manual toggles, so their HardLogic is not ported.
+local EVENT_HARDLOGIC = {
+    ["nidhogg"] = "CanReach(RoY) and MeleeAttack",
+    ["heimdall"] = "CanReach(AnnwfnMain) and CanSealCorridor and CanChant(Night)",
+    ["ixtab"] = "CanReach(AnnwfnRight)",
+    ["cetus"] = "CanReach(IBTop)",
+    ["svipdagr"] = "CanReach(IBRight)",
+    ["vedfolnir"] = "CanReach(ITLeft)",
+    ["ratatoskr_3"] = "CanReach(ITRight) and IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and CanReach(IT Left)",
+    ["vidofnir"] = "CanReach(ITVidofnir) and MeleeAttack and Has(Flame Torc)",
+    ["badhbh_cath"] = "CanReach(SotFGMain)",
+    ["fenrir"] = "CanReach(SotFGMain) and PuzzleFinished(Bergelmir) and MeleeAttack and Has(Flame Torc)",
+    ["balor"] = "CanReach(SotFGBalor)",
+    ["tezcatlipoca"] = "CanReach(SotFGBloodTez) and Has(Glove)",
+    ["unicorn"] = "CanReach(GotD)",
+    ["raijin_and_fujin"] = "CanReach(TSMain)",
+    ["daji"] = "CanReach(TSBottom) and ((Has(Chain Whip) and (Has(Gauntlet) or Has(Spaulder))) or (Has(Knife) and Has(Spaulder) and Has(Feather)) or (Has(Rapier) and Has(Gauntlet) and Has(Spaulder) and Has(Feather)) or Has(Flail Whip) or Has(Axe) or Has(Katana) or (CanUse(Pistol) and Has(Feather)) or (CanUse(Rolling Shuriken) and Has(Ring) and Has(Feather)) or (CanUse(Chakram) and (Has(Ring) or Has(Feather))) or CanUse(Bomb) or CanUse(Flare Gun) or ((CanUse(Earth Spear) or CanUse(Caltrops)) and Has(Ring)))",
+    ["belial"] = "CanReach(TSBlood) and Has(Life Sigil) and Has(Cog of Antiquity) and (Has(Claydoll Suit) or Has(Ice Cloak)) and Has(Egg of Creation)",
+    ["glasya_labolas"] = "CanReach(HLSpun) and CanWarp",
+    ["griffin"] = "CanReach(HLSpun) and (Has(Gale Fibula) or CanStopTime) and Has(Glove) and Has(Life Sigil) and IsDead(Glasya Labolas)",
+    ["vucub_caquiz"] = "CanReach(ValhallaMain) and Has(Origin Sigil)",
+    ["jalandhara"] = "CanReach(ValhallaMain) and Has(Life Sigil) and Has(Feather)",
+    ["sekhmet"] = "CanReach(DSLMMain) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth)",
+    ["angra_mainyu"] = "CanReach(DSLMTop) and Has(Mjolnir) and (Has(Feather) or CanWarp or CanReach(DSLMMain))",
+    ["ammit"] = "CanReach(DSLMTop) and Has(Feather) and Has(Pyramid Crystal) and (MeleeAttack or CanUse(Earth Spear) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol) or ((CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Caltrops)) and Has(Ring)))",
+    ["ki_sikil_lil_la_ke"] = "CanReach(ACBottom) and (Has(Leather Whip) or (Has(Knife) and Has(Feather)) or Has(Rapier) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or CanUse(Shuriken) or CanUse(Earth Spear) or CanUse(Rolling Shuriken) or CanUse(Caltrops) or CanUse(Bomb) or CanUse(Chakram) or CanUse(Pistol))",
+    ["anzu"] = "CanReach(ACMain) and CanStopTime and Has(Claydoll Suit)",
+    ["hom_left_path"] = "CanReach(HoMAwoken) and MeleeAttack",
+    ["hom_middle_path"] = "CanReach(HoMAwoken) and (Has(Feather) or Has(Angel Shield)) and MeleeAttack",
+    ["hom_right_path"] = "CanReach(HoMAwoken) and MeleeAttack",
+    ["hraesvelgr"] = "CanReach(EPDMain) and IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon)",
+    ["ratatoskr_4"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3)",
+}
+
+for _k, _hard in pairs(EVENT_HARDLOGIC) do
+    local _base = EVENT_LOGIC[_k]
+    if _base then
+        EVENT_LOGIC[_k] = "(" .. _base .. ") or (MinimalLogic and (" .. _hard .. "))"
+    end
+end
 
 function IsDead(boss)
     local boss_key = string.lower(boss):gsub("%s+","_"):gsub("'","")
@@ -1229,7 +1295,8 @@ LOGIC_FUNCS = {
     Setting=Setting, Glitch=Glitch, Dissonance=Dissonance, Start=Start,
     NotVoDStart=NotVoDStart, HasAnkhFor=HasAnkhFor,
     NibiruSkullCheck=NibiruSkullCheck,
-    Cursed=Cursed, TrickyLogic=TrickyLogic, OutOfLogic=OutOfLogic,
+    Cursed=Cursed, TrickyLogic=TrickyLogic, MinimalLogic=MinimalLogic,
+    OutOfLogic=OutOfLogic, LogicLevel=LogicLevel,
 }
 
 -- ============================================================

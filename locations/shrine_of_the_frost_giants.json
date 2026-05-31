@@ -101,7 +101,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain) and (((Has(Leather Whip) or Has(Knife) or Has(Rapier) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(1)) or (Has(Chain Whip) or Has(Axe) or Has(Katana) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun)))))"
+                    "^$lm2_logic|CanReach(SotFGMain) and CanKill(Badhbh Cath)"
                 ]
             },
             {
@@ -122,7 +122,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain) and (PuzzleFinished(Bergelmir) and Has(Flame Torc) and Has(Silver Shield) and OrbCount(7) and (Has(Flail Whip) or Has(Axe) or Has(Katana)))"
+                    "^$lm2_logic|CanReach(SotFGMain) and CanKill(Fenrir)"
                 ]
             },
             {
@@ -313,7 +313,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGBalor) and (((Has(Knife) or Has(Rapier) or Has(Katana)) and Has(Feather) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and OrbCount(2)))"
+                    "^$lm2_logic|CanReach(SotFGBalor) and CanKill(Balor)"
                 ]
             },
             {
@@ -427,7 +427,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGBloodTez) and (Has(Glove) and OrbCount(1))"
+                    "^$lm2_logic|CanReach(SotFGBloodTez) and CanKill(Tezcatlipoca)"
                 ]
             }
         ],

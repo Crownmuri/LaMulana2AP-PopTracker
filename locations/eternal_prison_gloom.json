@@ -227,7 +227,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3) and (((Has(Chain Whip) or Has(Axe)) and OrbCount(7)) or ((Has(Flail Whip) or Has(Katana)) and OrbCount(6)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(5))))"
+                    "^$lm2_logic|CanReach(EPG) and CanKill(Ratatoskr 4)"
                 ]
             }
         ],

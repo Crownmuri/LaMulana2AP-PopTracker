@@ -249,7 +249,7 @@
                 }
             ],
             "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain) and (CanSealCorridor and CanChant(Night) and OrbCount(7) and Has(Silver Shield) and (Has(Flail Whip) or Has(Katana) or Has(Axe)))"
+                "^$lm2_logic|CanReach(AnnwfnMain) and CanKill(Heimdall)"
             ]
         },
         {
@@ -325,7 +325,7 @@
                 }
             ],
             "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnRight) and (((Has(Leather Whip) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) and OrbCount(1)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))"
+                "^$lm2_logic|CanReach(AnnwfnRight) and CanKill(Ixtab)"
             ]
         },
         {
@@ -351,7 +351,7 @@
                     "item_count": 1,
                     "hosted_item": "boss_kujata",
                     "access_rules": [
-                        "^$lm2_logic|HasAnkhFor(Kujata)"
+                        "^$lm2_logic|(HasAnkhFor(Kujata) and (CanReach(AnnwfnRight) and (Has(Frey's Ship) and IsDead(Ixtab) and (((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(1)) or ((Has(Flail Whip) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) and OrbCount(2)) or ((Has(Chain Whip) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(3)) or ((Has(Knife) or Has(Rapier) or ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) and Has(Ring))) and OrbCount(3) and Has(Feather)) or ((Has(Leather Whip) and (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(4)))))) or (MinimalLogic and (HasAnkhFor(Kujata) and (CanReach(AnnwfnRight) and Has(Frey's Ship) and IsDead(Ixtab))))"
                     ]
                 },
                 {
@@ -365,7 +365,7 @@
                 }
             ],
             "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnRight) and (Has(Frey's Ship) and IsDead(Ixtab) and (((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(1)) or ((Has(Flail Whip) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) and OrbCount(2)) or ((Has(Chain Whip) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(3)) or ((Has(Knife) or Has(Rapier) or ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) and Has(Ring))) and OrbCount(3) and Has(Feather)) or ((Has(Leather Whip) and (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(4))))"
+                "^$lm2_logic|CanReach(AnnwfnRight)"
             ]
         },
       {

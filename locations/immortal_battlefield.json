@@ -62,7 +62,7 @@
                 }
             ],
             "access_rules": [
-                "^$lm2_logic|CanReach(IBTop) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or Has(Claydoll Suit) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Anchor) or Has(Fish Suit))) or (((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and Has(Scalesphere)) or (Has(Axe) and (Has(Scalesphere) or (OrbCount(1) and Has(Anchor)))) or (Has(Leather Whip) and Has(Anchor) and (Has(Scalesphere) or OrbCount(2))) or ((Has(Chain Whip) or Has(Katana)) and Has(Anchor) and (Has(Scalesphere) or OrbCount(1))))"
+                "^$lm2_logic|CanReach(IBTop) and CanKill(Cetus)"
             ]
         },
         {
@@ -456,7 +456,7 @@
                     "item_count": 1,
                     "hosted_item": "boss_jormungand",
                     "access_rules": [
-                        "^$lm2_logic|HasAnkhFor(Jormungand)"
+                        "^$lm2_logic|(HasAnkhFor(Jormungand) and (CanReach(IBMain) and (IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight) and (((Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(5)) or ((Has(Chain Whip) or Has(Katana) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(4)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(2)))))) or (MinimalLogic and (HasAnkhFor(Jormungand) and (CanReach(IBMain) and IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight))))"
                     ]
                 },
                 {
@@ -470,7 +470,7 @@
                 }
             ],
             "access_rules": [
-                "^$lm2_logic|CanReach(IBMain) and (IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight) and (((Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(5)) or ((Has(Chain Whip) or Has(Katana) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(4)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(2))))"
+                "^$lm2_logic|CanReach(IBMain)"
             ]
         },
       {
@@ -558,7 +558,7 @@
                 }
             ],
             "access_rules": [
-                "^$lm2_logic|CanReach(IBRight) and (OrbCount(1))"
+                "^$lm2_logic|CanReach(IBRight) and CanKill(Svipdagr)"
             ]
         },
       {

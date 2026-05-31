@@ -280,7 +280,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD) and (OrbCount(1) and ((Has(Katana) and Has(Vajra)) or Has(Leather Whip) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
+                    "^$lm2_logic|CanReach(GotD) and CanKill(Unicorn)"
                 ]
             }
         ],
