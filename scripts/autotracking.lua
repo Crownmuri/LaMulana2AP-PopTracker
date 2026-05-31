@@ -852,6 +852,7 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     set_toggle("setting_autoscan",         slot_data.auto_scan_tablets)
     set_toggle("setting_random_dissonance", slot_data.random_dissonance)
     set_toggle("setting_random_research",   slot_data.random_research)
+    set_toggle("setting_potsanity",         slot_data.potsanity)
     set_count ("setting_req_guardians",    tonumber(slot_data.required_guardians))
     set_count ("setting_req_skulls",       tonumber(slot_data.required_skulls))
 
