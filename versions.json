@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.4.0",
+            "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.4.0/LaMulana2AP-PopTracker.v1.4.0.zip",
+            "sha256": "46d55aea89fccdfd83b3c18a386946984eb23bfa85a42fb1fb11c59b6cca4d37",
+            "changelog": [
+                "Added Potsanity stub, logic difficulties and improved out-of-logic coloring."
+            ]
+        },
+        {
             "package_version": "1.3.0",
             "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.3.0/LaMulana2AP-PopTracker.v1.3.0.zip",
             "sha256": "2101639c2425b5627465bd33ea76e09cf1962f718a39b2be565abe5a3433cd7d",
