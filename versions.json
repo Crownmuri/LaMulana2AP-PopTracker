@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.4.1",
+            "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.4.1/LaMulana2AP-PopTracker.v1.4.1.zip",
+            "sha256": "909bbc084d126566b716fdd7689a0c3fa88c4b16b6c855416047fe7033e78560",
+            "changelog": [
+                "Fixed autotracking issue with pots."
+            ]
+        },
+        {
             "package_version": "1.4.0",
             "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.4.0/LaMulana2AP-PopTracker.v1.4.0.zip",
             "sha256": "46d55aea89fccdfd83b3c18a386946984eb23bfa85a42fb1fb11c59b6cca4d37",
