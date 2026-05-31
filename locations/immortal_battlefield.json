@@ -735,6 +735,448 @@
         "access_rules": [
           "^$lm2_logic|CanReach(IBMoon) and (CanChant(Sun) and Has(Snapshot) and HorizontalAttack and Has(Life Sigil) and (CanWarp or CanReach(IBDinosaur) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and Setting(Non Random Ladders))))"
         ]
+      },
+      {
+          "name": "Cetus Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBTop)"
+          ]
+      },
+      {
+          "name": "Top-Left Weapon Vault Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBTopLeft)"
+          ]
+      },
+      {
+          "name": "Under Fake Wall Puzzle Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBTopLeft) and (HorizontalAttack)"
+          ]
+      },
+      {
+          "name": "Before Fake Wall Puzzle Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBTopLeft)"
+          ]
+      },
+      {
+          "name": "Corridor of Wind Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain)"
+          ]
+      },
+      {
+          "name": "Left Altar Lower Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip))))"
+          ]
+      },
+      {
+          "name": "Left Altar Upper Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip))))"
+          ]
+      },
+      {
+          "name": "Left of Spiral Boat Coin Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and Has(Birth Sigil))"
+          ]
+      },
+      {
+          "name": "Above Backside Grail Coin Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and Has(Birth Sigil))"
+          ]
+      },
+      {
+          "name": "Jormungandr Mural Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or IsDead(Cetus))))"
+          ]
+      },
+      {
+          "name": "Map Chest Left Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+          ]
+      },
+      {
+          "name": "Map Chest Right Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain)"
+          ]
+      },
+      {
+          "name": "Right of Spiral Boat Coin Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain)"
+          ]
+      },
+      {
+          "name": "Submerged Sigil Weight Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain)"
+          ]
+      },
+      {
+          "name": "Above Frontside Grail Coin Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+          ]
+      },
+      {
+          "name": "Frontside Grail Upper Coin Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+          ]
+      },
+      {
+          "name": "Frontside Grail Lower Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+          ]
+      },
+      {
+          "name": "Below Hidden Sigil Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+          ]
+      },
+      {
+          "name": "Right of Hiro Roderick Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBRight)"
+          ]
+      },
+      {
+          "name": "Path of Destruction Dropdown Coin Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBRight)"
+          ]
+      },
+      {
+          "name": "Path to Destruction Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBRight)"
+          ]
+      },
+      {
+          "name": "Corona Arsenal Right Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBRight) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip))"
+          ]
+      },
+      {
+          "name": "Corona Arsenal Left Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBRight) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip))"
+          ]
+      },
+      {
+          "name": "Left of Lava Weapon Vault Weight Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(IB Left Shortcut)))"
+          ]
+      },
+      {
+          "name": "Inferno Corridor Weight Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBBottom)"
+          ]
+      },
+      {
+          "name": "Time Altar Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack)"
+          ]
+      },
+      {
+          "name": "Path to Time Altar Coin Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack)"
+          ]
+      },
+      {
+          "name": "Path to Time Altar Hidden Coin Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBBottom) and (Has(Feather) and (MeleeAttack or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
+          ]
+      },
+      {
+          "name": "Path to Time Altar Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBBottom)"
+          ]
+      },
+      {
+          "name": "Left Soul Gate Weight Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBLeft) and (HorizontalAttack)"
+          ]
+      },
+      {
+          "name": "Alviss Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBDinosaur) and (HorizontalAttack)"
+          ]
+      },
+      {
+          "name": "Moon Altar Coin Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+          ]
+      },
+      {
+          "name": "Moon Altar Item Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+          ]
+      },
+      {
+          "name": "Inferno Corridor Coin Pot",
+          "sections": [
+              {
+                  "name": "Pot",
+                  "item_count": 1
+              }
+          ],
+          "visibility_rules": [ "setting_potsanity" ],
+          "access_rules": [
+              "^$lm2_logic|CanReach(IBLadder) and (HorizontalAttack and (CanWarp or Has(Feather)))"
+          ]
       }
     ],
     "access_rules": [

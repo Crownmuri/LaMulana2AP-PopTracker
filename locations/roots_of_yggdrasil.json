@@ -319,7 +319,189 @@
         "access_rules": [
           "^$lm2_logic|CanReach(RoYBottom)"
         ]
-      }
+      },
+        {
+            "name": "Second Room Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Weapon Vault Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoY)"
+            ]
+        },
+        {
+            "name": "Weapon Vault Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Convenient Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoY)"
+            ]
+        },
+        {
+            "name": "Below Ratatoskr Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Footprint Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoY) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)))"
+            ]
+        },
+        {
+            "name": "Bridge Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoY)"
+            ]
+        },
+        {
+            "name": "Birth Seal Gate Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoY)"
+            ]
+        },
+        {
+            "name": "First Room Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoYMiddle) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Large Breakable Wall Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoYBottom) and (Has(Leather Whip) or Has(Rapier) or Has(Katana) or Has(Axe) or Has(Claydoll Suit) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))"
+            ]
+        },
+        {
+            "name": "Korobock Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoYBottom) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Candlestick of Time Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoYBottom) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Torch Room Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoYBottom)"
+            ]
+        },
+        {
+            "name": "Golden Rock Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(RoYBottom)"
+            ]
+        }
     ],
     "access_rules": [
       "^$lm2_logic|CanReach(RoY) or CanReach(RoYBottom) or CanReach(RoYMiddle)"

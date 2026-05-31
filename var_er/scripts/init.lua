@@ -41,6 +41,7 @@ Tracker:AddLocations("locations/eternal_prison_gloom.json")
 Tracker:AddLocations("locations/spiral_hell.json")
 Tracker:AddLocations("locations/starting_shop.json")
 Tracker:AddLocations("locations/entrances.json")
+Tracker:AddLocations("locations/potwip.json")
 
 -- ============================================================
 -- Maps

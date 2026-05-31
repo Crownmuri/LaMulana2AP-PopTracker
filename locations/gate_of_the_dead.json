@@ -282,6 +282,240 @@
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD) and CanKill(Unicorn)"
                 ]
+            },
+            {
+                "name": "Aytum's Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                ]
+            },
+            {
+                "name": "Death Trap Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Thoth's Upper Coin Chest",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Thoth's Lower Item Chest",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Dwarves' Puzzle Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Unicorn Reward Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD) and (IsDead(Unicorn))"
+                ]
+            },
+            {
+                "name": "Pre-Unicorn Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Pre-Unicorn Weight Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Soul Gate Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                ]
+            },
+            {
+                "name": "Laser Beams Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                ]
+            },
+            {
+                "name": "Laser Beams Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Below Grail Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Pillar Pepper Puzzle Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Room of the Dark Night Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Flipped Push Block Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Horus Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Wedjet Gate Solo Item Pot #1",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
+            },
+            {
+                "name": "Wedjet Gate Solo Item Pot #2",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GotD)"
+                ]
             }
         ],
         "access_rules": [

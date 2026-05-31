@@ -408,6 +408,305 @@
             "access_rules": [
                 "^$lm2_logic|CanReach(DSLMTop) and CanKill(Ammit)"
             ]
+        },
+        {
+            "name": "Grail Top-Right Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain)"
+            ]
+        },
+        {
+            "name": "Double Staircases Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Left Winged Statue Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain)"
+            ]
+        },
+        {
+            "name": "Room of Judgement Left Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
+            ]
+        },
+        {
+            "name": "Room of Judgement Top Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
+            ]
+        },
+        {
+            "name": "Room of Judgement Bottom Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
+            ]
+        },
+        {
+            "name": "Kero Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and (Has(Grapple Claw) or Has(Feather)))"
+            ]
+        },
+        {
+            "name": "Altar of Atum Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain) and ((HorizontalAttack and (Has(Grapple Claw) or Has(Feather))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+            ]
+        },
+        {
+            "name": "Ladder to Atum Item Pot #1",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Ladder to Atum Item Pot #2",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain)"
+            ]
+        },
+        {
+            "name": "Ra's Hideout Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain)"
+            ]
+        },
+        {
+            "name": "Ra's Hideout Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain)"
+            ]
+        },
+        {
+            "name": "Right Winged Statue Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain)"
+            ]
+        },
+        {
+            "name": "Thunder Antechamber Left Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain) and (Has(Grapple Claw))"
+            ]
+        },
+        {
+            "name": "Thunder Antechamber Right Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain) and (Has(Grapple Claw))"
+            ]
+        },
+        {
+            "name": "Entrance Gate Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain)"
+            ]
+        },
+        {
+            "name": "Entrance Gate Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain)"
+            ]
+        },
+        {
+            "name": "Right of Pyramid Stacked Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Right of Pyramid Stacked Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Left Ladder to Stars Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMTop) and (Has(Feather))"
+            ]
+        },
+        {
+            "name": "Use Crystal Skull Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMTop) and (HorizontalAttack and (Has(Feather) or CanWarp or (CanReach(DSLMMain) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))))"
+            ]
+        },
+        {
+            "name": "Bombable Wall Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMTop) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (Has(Feather) or CanWarp or CanReach(DSLMMain)))"
+            ]
+        },
+        {
+            "name": "Right Ladder to Stars Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(DSLMTop) and (Has(Feather))"
+            ]
         }
     ],
     "access_rules": [

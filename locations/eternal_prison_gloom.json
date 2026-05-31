@@ -229,6 +229,240 @@
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and CanKill(Ratatoskr 4)"
                 ]
+            },
+            {
+                "name": "Below Garm Statue Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle))"
+                ]
+            },
+            {
+                "name": "Mantra Mural Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack and Has(Enga Musica))"
+                ]
+            },
+            {
+                "name": "Weapon Vault Item Pot #2",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle))"
+                ]
+            },
+            {
+                "name": "Weapon Vault Item Pot #1",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle) and HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Software Mural Item Pot #2",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Software Mural Item Pot #1",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG)"
+                ]
+            },
+            {
+                "name": "Gate with Glowing Eyes Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(6))))"
+                ]
+            },
+            {
+                "name": "Soul Gate Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                ]
+            },
+            {
+                "name": "Under River Styx Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG)"
+                ]
+            },
+            {
+                "name": "Under River Styx Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Leap of Faith Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Next to Grail Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Fourth Hell Gate Approach Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Key Fairy Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Key Fairy Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG)"
+                ]
+            },
+            {
+                "name": "Second Hell Gate Approach Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (Has(Grapple Claw))"
+                ]
+            },
+            {
+                "name": "Fifth Hell Gate Exit Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather) and Has(Glove)))"
+                ]
+            },
+            {
+                "name": "Right of Prison Cells Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                ]
             }
         ],
         "access_rules": [

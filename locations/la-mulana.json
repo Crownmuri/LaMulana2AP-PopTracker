@@ -497,6 +497,227 @@
             "access_rules": [
                 "^$lm2_logic|CanReach(GateofIllusion)"
             ]
+        },
+        {
+            "name": "Starting Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(Start) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Alsedana Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(VoD)"
+            ]
+        },
+        {
+            "name": "Nebur Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(VoD)"
+            ]
+        },
+        {
+            "name": "Xelpud Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(VoD) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Xelpud Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(VoD)"
+            ]
+        },
+        {
+            "name": "Pre-Ladder Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(VoD)"
+            ]
+        },
+        {
+            "name": "Post-Ladder Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(VoD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+            ]
+        },
+        {
+            "name": "Double Jump Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(VoD) and (Has(Feather))"
+            ]
+        },
+        {
+            "name": "Photo Stand-in Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(GateofGuidance) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "High-up Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(GateofGuidance)"
+            ]
+        },
+        {
+            "name": "Below Hiner Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(GateofGuidance) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Illusion Gate Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(GateofGuidanceLeft)"
+            ]
+        },
+        {
+            "name": "First Room Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(MausoleumofGiants)"
+            ]
+        },
+        {
+            "name": "Second Room Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(MausoleumofGiants)"
+            ]
+        },
+        {
+            "name": "Breakable Wall Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(MausoleumofGiants) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Futo Statue Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(MausoleumofGiants)"
+            ]
+        },
+        {
+            "name": "Pre-Ratatoskr Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(MausoleumofGiants) and (HorizontalAttack)"
+            ]
         }
     ]
   }

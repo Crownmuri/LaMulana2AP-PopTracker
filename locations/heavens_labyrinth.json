@@ -353,6 +353,201 @@
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLCog) and (Has(Ancient Battery) and CanWarp and HorizontalAttack)"
                 ]
+            },
+            {
+                "name": "After Megarock Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack and Has(Feather) and Has(Grapple Claw))"
+                ]
+            },
+            {
+                "name": "Below Megarock Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL) and (Has(Grapple Claw))"
+                ]
+            },
+            {
+                "name": "Ladder from B-2 Mural Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Celestial Disk Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL)"
+                ]
+            },
+            {
+                "name": "Celestial Disk Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL)"
+                ]
+            },
+            {
+                "name": "Typhon's Room Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Arachne's Corridor Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Arachne's Corridor Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Soul Gate Hidden Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL)"
+                ]
+            },
+            {
+                "name": "Spiral Mural Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Weapon Vault Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and (Has(Feather) or Has(Grapple Claw)))"
+                ]
+            },
+            {
+                "name": "Path to Chaos Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Scylla's Breakable Wall Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
+                ]
+            },
+            {
+                "name": "Twin Vessel Weight Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
+                ]
+            },
+            {
+                "name": "Twin Vessel Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
+                ]
             }
         ],
         "access_rules": [

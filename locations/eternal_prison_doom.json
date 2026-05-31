@@ -215,7 +215,163 @@
         "access_rules": [
           "^$lm2_logic|CanReach(EPDHel)"
         ]
-      }
+      },
+        {
+            "name": "Maze Clear Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDEntrance) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Maze Clear Item Pot #1",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDEntrance) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Maze Clear Item Pot #2",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDEntrance) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Blikjandabol Lava Drop Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDMain) and ((Has(Gale Fibula) or CanStopTime) or (CanReach(EPG) and (Has(Claydoll Suit) or (Has(Ice Cloak) and Has(Anchor)) or Has(Feather))))"
+            ]
+        },
+        {
+            "name": "Blikjandabol Lava Drop Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDMain) and ((Has(Gale Fibula) or CanStopTime) or (CanReach(EPG) and (Has(Claydoll Suit) or (Has(Ice Cloak) and Has(Anchor)) or Has(Feather))))"
+            ]
+        },
+        {
+            "name": "Yuga Wheel Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDMain)"
+            ]
+        },
+        {
+            "name": "Left Ladder Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDMain)"
+            ]
+        },
+        {
+            "name": "Sixth Hell Gate Approach Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDMain) and (Has(Feather))"
+            ]
+        },
+        {
+            "name": "Seventh Hell Gate Approach Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDTop)"
+            ]
+        },
+        {
+            "name": "Seventh Hell Gate Approach Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDTop)"
+            ]
+        },
+        {
+            "name": "Sixth Hell Gate Exit Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDTop)"
+            ]
+        },
+        {
+            "name": "Sixth Hell Gate Exit Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(EPDTop)"
+            ]
+        }
     ],
     "access_rules": [
       "^$lm2_logic|CanReach(EPDEntrance) or CanReach(EPDHel) or CanReach(EPDMain) or CanReach(EPDTop)"

@@ -256,7 +256,215 @@
         "access_rules": [
           "^$lm2_logic|CanReach(HoMAwoken) and CanKill(HoM Right Path)"
         ]
-      }
+      },
+        {
+            "name": "Below Entrance Gate Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoMTop)"
+            ]
+        },
+        {
+            "name": "Lernaean Hydra Room Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Nemean Lion Right Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack and CanWarp)"
+            ]
+        },
+        {
+            "name": "Nemean Lion Left Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Below Grail Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Delphyne Room Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoM) and (Has(Feather))"
+            ]
+        },
+        {
+            "name": "Sphinx Room Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Crusher Trap Hidden Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoM) and (Has(Feather))"
+            ]
+        },
+        {
+            "name": "Corridor of Blood Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Fairylan Left Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoM)"
+            ]
+        },
+        {
+            "name": "Fairylan Bottom Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoM)"
+            ]
+        },
+        {
+            "name": "Time Serdab Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path))"
+            ]
+        },
+        {
+            "name": "Time Serdab Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path))"
+            ]
+        },
+        {
+            "name": "Phaia Room Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
+            ]
+        },
+        {
+            "name": "Orthrus Approach Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
+            ]
+        },
+        {
+            "name": "Orthrus Third Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
+            ]
+        }
     ],
     "access_rules": [
       "^$lm2_logic|CanReach(HoM) or CanReach(HoMAwoken) or CanReach(HoMTop)"

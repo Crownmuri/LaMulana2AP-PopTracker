@@ -264,6 +264,227 @@
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFTop)"
                 ]
+            },
+            {
+                "name": "Divine Soul Gate Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFEntrance) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and CanReach(DFRight)))"
+                ]
+            },
+            {
+                "name": "Frey's Ship Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFRight) and (HorizontalAttack and (Has(Origin Sigil) or CanReach(DFTop)))"
+                ]
+            },
+            {
+                "name": "Above Mantra Mural Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFRight)"
+                ]
+            },
+            {
+                "name": "Pre-Hugin and Munin Weight Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFRight) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Dwarves' Hideout Right Pot #2",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                ]
+            },
+            {
+                "name": "Dwarves' Hideout Right Pot #1",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                ]
+            },
+            {
+                "name": "Corridor to Gate Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Moving Block Lower Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Antechamber - Ledge Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Antechamber - Gullinbursti Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain)"
+                ]
+            },
+            {
+                "name": "Antechamber - Ladder Weight Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Shuhoka Lower Weight Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain)"
+                ]
+            },
+            {
+                "name": "Shuhoka Upper Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                ]
+            },
+            {
+                "name": "Footprint Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Moving Block Upper Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFTop) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Grapple Claw) or Has(Feather))))"
+                ]
+            },
+            {
+                "name": "Breakable Push Block Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFTop)"
+                ]
+            },
+            {
+                "name": "Yuga Wheel Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFTop)"
+                ]
             }
         ],
         "access_rules": [

@@ -267,6 +267,201 @@
             "access_rules": [
                 "^$lm2_logic|CanReach(ValhallaTop) and ((Has(Feather) or Has(Grapple Claw)) and Has(Origin Sigil) and Has(Birth Sigil) and Has(Life Sigil) and Has(Death Sigil) and Has(Claydoll Suit) and CanReach(Valhalla Top Right))"
             ]
+        },
+        {
+            "name": "Entrance Gate Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Left of Grail Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain)"
+            ]
+        },
+        {
+            "name": "Near First Trickster Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain)"
+            ]
+        },
+        {
+            "name": "Near First Trickster Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain)"
+            ]
+        },
+        {
+            "name": "Near First Trickster Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain)"
+            ]
+        },
+        {
+            "name": "Above Grail Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain)"
+            ]
+        },
+        {
+            "name": "Corridor above Jalandhara Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Near Second Trickster Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain) and (((Has(Feather) or CanChant(Heaven)) and HorizontalAttack) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)))"
+            ]
+        },
+        {
+            "name": "Warrior's Aqueduct Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Above Laser Statue Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Near Third Trickster Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Below Zipakna Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Below Bargain Duck Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Mantra Mural Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaTop) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Soul Gate Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(ValhallaTopRight)"
+            ]
         }
     ],
     "access_rules": [

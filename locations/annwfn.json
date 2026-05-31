@@ -380,7 +380,241 @@
         "access_rules": [
           "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab))"
         ]
-      }
+      },
+        {
+            "name": "Fairy Watchtower Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain)"
+            ]
+        },
+        {
+            "name": "Pre-Kaliya Hidden Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain)"
+            ]
+        },
+        {
+            "name": "Kaliya's Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain) and (IsDead(Kaliya) or (Has(Feather) and CanWarp))"
+            ]
+        },
+        {
+            "name": "Kukulkan's Grail Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain)"
+            ]
+        },
+        {
+            "name": "Kukulkan's Grail Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain)"
+            ]
+        },
+        {
+            "name": "Fairy King's Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain)"
+            ]
+        },
+        {
+            "name": "Center Item Pot #1",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain)"
+            ]
+        },
+        {
+            "name": "Center Item Pot #2",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Huracan's Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Mantra Watchtower Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain)"
+            ]
+        },
+        {
+            "name": "Look Away Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Bifrost Left Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain)"
+            ]
+        },
+        {
+            "name": "Bifrost Right Item Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain)"
+            ]
+        },
+        {
+            "name": "Bifrost Right Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Feathercross One-Way Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnOneWay) and (HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Ixtab Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab) and HorizontalAttack)"
+            ]
+        },
+        {
+            "name": "Death's Prison Hidden Coin Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnRight) and (HorizontalAttack and (Has(Feather) or IsDead(Ixtab)))"
+            ]
+        },
+        {
+            "name": "Pre-Kujata Weight Pot",
+            "sections": [
+                {
+                    "name": "Pot",
+                    "item_count": 1
+                }
+            ],
+            "visibility_rules": [ "setting_potsanity" ],
+            "access_rules": [
+                "^$lm2_logic|CanReach(AnnwfnRight)"
+            ]
+        }
     ],
     "access_rules": [
       "^$lm2_logic|CanReach(AnnwfnMain) or CanReach(AnnwfnRight)"

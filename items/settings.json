@@ -171,7 +171,7 @@
         "initial_active_state": true
     },
     {
-        "name": "Potsanity (testing - not yet in logic)",
+        "name": "Potsanity (Stubbed Coordinates on Individual Maps)",
         "type": "toggle",
         "img": "images/Settings/Pot.png",
         "codes": "setting_potsanity"

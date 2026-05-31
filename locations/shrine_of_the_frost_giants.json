@@ -24,12 +24,12 @@
                         "hosted_item": "cursed_430116",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430116|CanReach(SotFGMain) and (Has(Origin Sigil) or HorizontalAttack)"
+                            "^$lm2_cursed|430116|CanReach(SotFGMain) and (Has(Origin Sigil) or Glitch(Costume Clip) or HorizontalAttack)"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain) and (Has(Origin Sigil) or HorizontalAttack)"
+                    "^$lm2_logic|CanReach(SotFGMain) and (Has(Origin Sigil) or Glitch(Costume Clip) or HorizontalAttack)"
                 ]
             },
             {
@@ -399,6 +399,279 @@
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGLeft) and (CanChant(Earth) and CanChant(Moon) and CanChant(Heaven))"
+                ]
+            },
+            {
+                "name": "Mantra Mural Exit Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Weapon Fairy - Upper Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain)"
+                ]
+            },
+            {
+                "name": "Weapon Fairy - Lower Weight Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and (Has(Vajra) or Has(Feather))) or (Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun)))))"
+                ]
+            },
+            {
+                "name": "Titanomachy Monument Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack or Has(Origin Sigil))"
+                ]
+            },
+            {
+                "name": "Golden Altar Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain) and (Has(Grapple Claw))"
+                ]
+            },
+            {
+                "name": "Path of Snow Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Path of Snow Weight Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain)"
+                ]
+            },
+            {
+                "name": "Footprint Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain)"
+                ]
+            },
+            {
+                "name": "Footprint Weight Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Weapon Vault Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGGrail)"
+                ]
+            },
+            {
+                "name": "Grail Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Sacred Wine Corridor Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Right Snow Drop Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Altar of Birth Approach Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)))"
+                ]
+            },
+            {
+                "name": "Bergelmir Blocking Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                ]
+            },
+            {
+                "name": "Left Snow Drop Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGLeft) and (Has(Katana) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Rapier) or Has(Knife) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))))))"
+                ]
+            },
+            {
+                "name": "Mimics Left Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGTop)"
+                ]
+            },
+            {
+                "name": "Mimics Right Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGTop)"
+                ]
+            },
+            {
+                "name": "Corridor of Blood Right Weight Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGBlood)"
+                ]
+            },
+            {
+                "name": "Corridor of Blood Left Coin Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGBlood)"
+                ]
+            },
+            {
+                "name": "Tezcatlipoca Reward Item Pot",
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [ "setting_potsanity" ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGBloodTez) and (HorizontalAttack and IsDead(Tezcatlipoca))"
                 ]
             }
         ],
