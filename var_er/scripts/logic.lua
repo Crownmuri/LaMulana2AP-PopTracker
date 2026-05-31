@@ -144,13 +144,18 @@ end
 
 function OrbCount(n) return count("sacred_orb") >= n end
 function SkullCount(n) return count("crystal_skull") >= n end
+local GUARDIAN_KILL_CODES = {"fafnir", "vritra", "kujata", "aten_ra", "jormungand", "anu", "surtr", "echidna", "hel"}
 function GuardianKills(n)
+    return GuardianKillCount() >= n
+end
+
+-- Number of guardians currently marked defeated (manual boss_* toggles).
+function GuardianKillCount()
     local total = 0
-    local guardians = {"fafnir", "vritra", "kujata", "aten_ra", "jormungand", "anu", "surtr", "echidna", "hel"}
-    for _, g in ipairs(guardians) do
+    for _, g in ipairs(GUARDIAN_KILL_CODES) do
         if has("boss_" .. g) then total = total + 1 end
     end
-    return total >= n
+    return total
 end
 
 -- Soul gate cost check: reads the manually-toggled cost from the "cost_<gate_code>"
@@ -255,7 +260,10 @@ end
 --                 Only ever relaxed in the yellow seq-break pass.
 _GLITCH_ACTIVE = false
 function TrickyLogic() return _GLITCH_ACTIVE == true or LogicLevel() >= 1 end
-function MinimalLogic() return _GLITCH_ACTIVE == true or LogicLevel() >= 2 end
+-- MinimalLogic deliberately does NOT key off _GLITCH_ACTIVE: minimal-combat
+-- clauses should only ever count as in-logic (green) once the player selects the
+-- Minimal tier, never get relaxed into the yellow sequence-break pass.
+function MinimalLogic() return LogicLevel() >= 2 end
 function OutOfLogic() return _GLITCH_ACTIVE == true end
 
 -- Master view toggle. When off, the out-of-logic (yellow / SequenceBreak)
@@ -657,11 +665,17 @@ GUARDIAN_ANKH_NAMES = {
 }
 
 function HasAnkhFor(guardian_name)
-    local ankh_item = GUARDIAN_ANKH_NAMES[guardian_name]
-    if ankh_item then
-        return Has(ankh_item)
+    local setting = Tracker:FindObjectForCode("setting_guardian_ankhs")
+    if setting and setting.Active then
+        -- Guardian-specific ankhs: this guardian needs its own named jewel.
+        local ankh_item = GUARDIAN_ANKH_NAMES[guardian_name]
+        if ankh_item then return Has(ankh_item) end
+        return count("ankh_jewel") >= 1
     end
-    return count("ankh_jewel") >= 1
+    -- Shared ankh pool: the tracker never consumes ankhs on use, so a guardian
+    -- only has a jewel free if the player holds more ankhs than guardians
+    -- already defeated (mirrors the AP world's cumulative AnkhCount model).
+    return count("ankh_jewel") > GuardianKillCount()
 end
 
 -- ============================================================

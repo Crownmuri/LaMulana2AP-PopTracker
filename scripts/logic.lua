@@ -158,6 +158,15 @@ function GuardianKills(n)
     return false
 end
 
+-- Number of guardians currently marked defeated (manual boss_* toggles).
+function GuardianKillCount()
+    local total = 0
+    for _, code in ipairs(GUARDIAN_CODES) do
+        if has(code) then total = total + 1 end
+    end
+    return total
+end
+
 -- Vanilla soul gate costs, used as a fallback when the ER cost_<code> items
 -- aren't loaded (i.e., in var_map / var_items, which don't load items/entrances.json).
 local VANILLA_SOUL_GATE_COSTS = {
@@ -294,16 +303,19 @@ end
 --                   {"IBMain", "MeleeAttack or (TrickyLogic and HorizontalAttack)"}
 --                 In-logic at Tricky+ (level >= 1).
 --   MinimalLogic - minimal combat requirements for (mini-)bosses layered on top
---                 of tricky. In-logic at Minimal (level >= 2). NOTE: no location
---                 strings gate on MinimalLogic yet (the AP HardLogic overrides
---                 still need porting), so Minimal currently behaves like Tricky.
+--                 of tricky. In-logic (green) only at Minimal (level >= 2); unlike
+--                 the others it is NOT relaxed during the yellow pass, so a
+--                 minimal-only clause never renders as a sequence break.
 --   OutOfLogic  - never a logic tier; purely "technically possible" caveats,
 --                 e.g. owning a subweapon but possibly running out of ammo:
 --                   "CanUse(Bomb) or (OutOfLogic and Has(Bomb))"
 --                 Only ever relaxed in the yellow seq-break pass.
 _GLITCH_ACTIVE = false
 function TrickyLogic() return _GLITCH_ACTIVE == true or LogicLevel() >= 1 end
-function MinimalLogic() return _GLITCH_ACTIVE == true or LogicLevel() >= 2 end
+-- MinimalLogic deliberately does NOT key off _GLITCH_ACTIVE: minimal-combat
+-- clauses should only ever count as in-logic (green) once the player selects the
+-- Minimal tier, never get relaxed into the yellow sequence-break pass.
+function MinimalLogic() return LogicLevel() >= 2 end
 function OutOfLogic() return _GLITCH_ACTIVE == true end
 
 -- Master view toggle. When off, the out-of-logic (yellow / SequenceBreak)
@@ -739,11 +751,17 @@ GUARDIAN_ANKH_NAMES = {
 }
 
 function HasAnkhFor(guardian_name)
-    local ankh_item = GUARDIAN_ANKH_NAMES[guardian_name]
-    if ankh_item then
-        return Has(ankh_item)
+    local setting = Tracker:FindObjectForCode("setting_guardian_ankhs")
+    if setting and setting.Active then
+        -- Guardian-specific ankhs: this guardian needs its own named jewel.
+        local ankh_item = GUARDIAN_ANKH_NAMES[guardian_name]
+        if ankh_item then return Has(ankh_item) end
+        return count("ankh_jewel") >= 1
     end
-    return count("ankh_jewel") >= 1
+    -- Shared ankh pool: the tracker never consumes ankhs on use, so a guardian
+    -- only has a jewel free if the player holds more ankhs than guardians
+    -- already defeated (mirrors the AP world's cumulative AnkhCount model).
+    return count("ankh_jewel") > GuardianKillCount()
 end
 
 -- ============================================================
