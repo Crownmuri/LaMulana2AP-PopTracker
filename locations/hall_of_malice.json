@@ -109,12 +109,12 @@
                         "hosted_item": "cursed_430028",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430028|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and Has(Feather) and (CanStopTime or TrickyLogic))"
+                            "^$lm2_cursed|430028|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and ((Has(Feather) and CanStopTime) or TrickyLogic))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and Has(Feather) and (CanStopTime or TrickyLogic))"
+                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and ((Has(Feather) and CanStopTime) or TrickyLogic))"
                 ]
             },
             {

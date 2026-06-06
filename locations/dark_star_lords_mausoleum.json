@@ -697,7 +697,7 @@
                     "setting_potsanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack or Has(Grapple Claw)))"
+                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack or Has(Grapple Claw))"
                 ]
             },
             {

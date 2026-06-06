@@ -787,7 +787,7 @@
                     "setting_potsanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnRight) and (HorizontalAttack and (Has(Feather) or IsDead(Ixtab)))"
+                    "^$lm2_logic|CanReach(AnnwfnRight) and ((MeleeAttack or CanUse(Earth Spear) or Has(Claydoll Suit)) and (Has(Feather) or IsDead(Ixtab)))"
                 ]
             },
             {
