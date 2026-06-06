@@ -403,273 +403,504 @@
             },
             {
                 "name": "Mantra Mural Exit Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 521,
+                        "y": 365,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Weapon Fairy - Upper Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 515,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain)"
                 ]
             },
             {
                 "name": "Weapon Fairy - Lower Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 515,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and (Has(Vajra) or Has(Feather))) or (Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun)))))"
                 ]
             },
             {
                 "name": "Titanomachy Monument Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 935,
+                        "y": 634,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack or Has(Origin Sigil))"
+                    "^$lm2_logic|CanReach(SotFGMain) and (Has(Origin Sigil) or Glitch(Costume Clip) or HorizontalAttack)"
                 ]
             },
             {
                 "name": "Golden Altar Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 1022,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain) and (Has(Grapple Claw))"
                 ]
             },
             {
                 "name": "Path of Snow Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 1059,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Path of Snow Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 1164,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain)"
                 ]
             },
             {
                 "name": "Footprint Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 1051,
+                        "y": 586,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain)"
                 ]
             },
             {
                 "name": "Footprint Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 1203,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Weapon Vault Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 350,
+                        "y": 611,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGGrail)"
                 ]
             },
             {
                 "name": "Grail Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 629,
+                        "y": 634,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Sacred Wine Corridor Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 581,
+                        "y": 769,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Right Snow Drop Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 928,
+                        "y": 792,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Altar of Birth Approach Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 793,
+                        "y": 831,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)))"
                 ]
             },
             {
                 "name": "Bergelmir Blocking Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 141,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
                 ]
             },
             {
                 "name": "Left Snow Drop Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 47,
+                        "y": 499,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGLeft) and (Has(Katana) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Rapier) or Has(Knife) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))))))"
                 ]
             },
             {
                 "name": "Mimics Left Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 521,
+                        "y": 207,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGTop)"
                 ]
             },
             {
                 "name": "Mimics Right Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 725,
+                        "y": 207,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGTop)"
                 ]
             },
             {
                 "name": "Corridor of Blood Right Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 595,
+                        "y": 72,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGBlood)"
                 ]
             },
             {
                 "name": "Corridor of Blood Left Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 581,
+                        "y": 72,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGBlood)"
                 ]
             },
             {
                 "name": "Tezcatlipoca Reward Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 26,
+                        "y": 120,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGBloodTez) and (HorizontalAttack and IsDead(Tezcatlipoca))"
                 ]

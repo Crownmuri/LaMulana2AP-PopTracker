@@ -238,10 +238,10 @@
         "codes": "boss_griffin"
     },
     {
-        "name": "Vucub Caquiz",
+        "name": "Vucub Caquix",
         "type": "toggle",
-        "img": "images/Other/VucubCaquiz.png",
-        "codes": "boss_vucub_caquiz"
+        "img": "images/Other/VucubCaquix.png",
+        "codes": "boss_vucub_caquix"
     },
     {
         "name": "Jalandhara",

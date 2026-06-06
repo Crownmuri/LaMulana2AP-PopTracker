@@ -285,234 +285,432 @@
             },
             {
                 "name": "Aytum's Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 274,
+                        "y": 366,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
                 "name": "Death Trap Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 476,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
                 "name": "Thoth's Upper Coin Chest",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 275,
+                        "y": 586,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
                 "name": "Thoth's Lower Item Chest",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 275,
+                        "y": 635,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack or (Has(Feather) and Has(Bracelet)))"
                 ]
             },
             {
                 "name": "Dwarves' Puzzle Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 453,
+                        "y": 793,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
-                "name": "Unicorn Reward Coin Pot",
+                "name": "Unicorn Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 703,
+                        "y": 73,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD) and (IsDead(Unicorn))"
+                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack and (Has(Feather) or CanWarp))"
                 ]
             },
             {
                 "name": "Pre-Unicorn Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 720,
+                        "y": 255,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
                 "name": "Pre-Unicorn Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 540,
+                        "y": 159,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
                 "name": "Soul Gate Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 729,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
                 ]
             },
             {
                 "name": "Laser Beams Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 524,
+                        "y": 927,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
                 ]
             },
             {
                 "name": "Laser Beams Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 725,
+                        "y": 880,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
                 "name": "Below Grail Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 979,
+                        "y": 318,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
                 "name": "Pillar Pepper Puzzle Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 944,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
                 "name": "Room of the Dark Night Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 878,
+                        "y": 793,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
                 "name": "Flipped Push Block Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 1014,
+                        "y": 318,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
                 "name": "Horus Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 1191,
+                        "y": 586,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Wedjet Gate Solo Item Pot #1",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 1380,
+                        "y": 563,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]
             },
             {
                 "name": "Wedjet Gate Solo Item Pot #2",
+                "map_locations": [
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 1380,
+                        "y": 587,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GotD)"
                 ]

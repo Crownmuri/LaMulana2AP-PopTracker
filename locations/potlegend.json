@@ -3,12 +3,6 @@
         "name": "Potsanity - La-Mulana (1)",
         "map_locations": [
             {
-                "map": "La-Mulana",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
-            {
                 "map": "Full Map",
                 "x": 50,
                 "y": 2400,
@@ -23,35 +17,35 @@
                 "name": "Starting Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(Start) and (HorizontalAttack)"
+                    "@La-Mulana/Starting Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Alsedana Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(VoD)"
+                    "@La-Mulana/Alsedana Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Nebur Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(VoD)"
+                    "@La-Mulana/Nebur Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Xelpud Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(VoD) and (HorizontalAttack)"
+                    "@La-Mulana/Xelpud Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Xelpud Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(VoD)"
+                    "@La-Mulana/Xelpud Weight Pot/Pot"
                 ]
             }
         ]
@@ -59,12 +53,6 @@
     {
         "name": "Potsanity - La-Mulana (2)",
         "map_locations": [
-            {
-                "map": "La-Mulana",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -80,35 +68,35 @@
                 "name": "Pre-Ladder Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(VoD)"
+                    "@La-Mulana/Pre-Ladder Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Post-Ladder Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(VoD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "@La-Mulana/Post-Ladder Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Double Jump Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(VoD) and (Has(Feather))"
+                    "@La-Mulana/Double Jump Item Pot/Pot"
                 ]
             },
             {
                 "name": "Photo Stand-in Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GateofGuidance) and (HorizontalAttack)"
+                    "@La-Mulana/Photo Stand-in Weight Pot/Pot"
                 ]
             },
             {
                 "name": "High-up Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GateofGuidance)"
+                    "@La-Mulana/High-up Coin Pot/Pot"
                 ]
             }
         ]
@@ -116,12 +104,6 @@
     {
         "name": "Potsanity - La-Mulana (3)",
         "map_locations": [
-            {
-                "map": "La-Mulana",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -137,35 +119,35 @@
                 "name": "Below Hiner Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GateofGuidance) and (HorizontalAttack)"
+                    "@La-Mulana/Below Hiner Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Illusion Gate Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GateofGuidanceLeft)"
+                    "@La-Mulana/Illusion Gate Item Pot/Pot"
                 ]
             },
             {
                 "name": "First Room Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(MausoleumofGiants)"
+                    "@La-Mulana/First Room Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Second Room Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(MausoleumofGiants)"
+                    "@La-Mulana/Second Room Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Breakable Wall Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(MausoleumofGiants) and (HorizontalAttack)"
+                    "@La-Mulana/Breakable Wall Coin Pot/Pot"
                 ]
             }
         ]
@@ -173,12 +155,6 @@
     {
         "name": "Potsanity - La-Mulana (4)",
         "map_locations": [
-            {
-                "map": "La-Mulana",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -194,14 +170,14 @@
                 "name": "Futo Statue Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(MausoleumofGiants)"
+                    "@La-Mulana/Futo Statue Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Pre-Ratatoskr Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(MausoleumofGiants) and (HorizontalAttack)"
+                    "@La-Mulana/Pre-Ratatoskr Weight Pot/Pot"
                 ]
             }
         ]
@@ -209,12 +185,6 @@
     {
         "name": "Potsanity - Roots of Yggdrasil (1)",
         "map_locations": [
-            {
-                "map": "Roots of Yggdrasil",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -230,35 +200,35 @@
                 "name": "Second Room Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
+                    "@Roots of Yggdrasil/Second Room Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Weapon Vault Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoY)"
+                    "@Roots of Yggdrasil/Weapon Vault Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Weapon Vault Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
+                    "@Roots of Yggdrasil/Weapon Vault Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Convenient Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoY)"
+                    "@Roots of Yggdrasil/Convenient Item Pot/Pot"
                 ]
             },
             {
                 "name": "Below Ratatoskr Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
+                    "@Roots of Yggdrasil/Below Ratatoskr Coin Pot/Pot"
                 ]
             }
         ]
@@ -266,12 +236,6 @@
     {
         "name": "Potsanity - Roots of Yggdrasil (2)",
         "map_locations": [
-            {
-                "map": "Roots of Yggdrasil",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -287,35 +251,35 @@
                 "name": "Footprint Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoY) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)))"
+                    "@Roots of Yggdrasil/Footprint Item Pot/Pot"
                 ]
             },
             {
                 "name": "Bridge Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoY)"
+                    "@Roots of Yggdrasil/Bridge Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Birth Seal Gate Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoY)"
+                    "@Roots of Yggdrasil/Birth Seal Gate Item Pot/Pot"
                 ]
             },
             {
                 "name": "First Room Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoYMiddle) and (HorizontalAttack)"
+                    "@Roots of Yggdrasil/First Room Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Large Breakable Wall Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoYBottom) and (Has(Leather Whip) or Has(Rapier) or Has(Katana) or Has(Axe) or Has(Claydoll Suit) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))"
+                    "@Roots of Yggdrasil/Large Breakable Wall Coin Pot/Pot"
                 ]
             }
         ]
@@ -323,12 +287,6 @@
     {
         "name": "Potsanity - Roots of Yggdrasil (3)",
         "map_locations": [
-            {
-                "map": "Roots of Yggdrasil",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -344,28 +302,28 @@
                 "name": "Korobock Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoYBottom) and (HorizontalAttack)"
+                    "@Roots of Yggdrasil/Korobock Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Candlestick of Time Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoYBottom) and (HorizontalAttack)"
+                    "@Roots of Yggdrasil/Candlestick of Time Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Torch Room Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoYBottom)"
+                    "@Roots of Yggdrasil/Torch Room Item Pot/Pot"
                 ]
             },
             {
                 "name": "Golden Rock Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoYBottom)"
+                    "@Roots of Yggdrasil/Golden Rock Coin Pot/Pot"
                 ]
             }
         ]
@@ -373,12 +331,6 @@
     {
         "name": "Potsanity - Annwfn (1)",
         "map_locations": [
-            {
-                "map": "Annwfn",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -394,35 +346,35 @@
                 "name": "Fairy Watchtower Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                    "@Annwfn/Fairy Watchtower Item Pot/Pot"
                 ]
             },
             {
                 "name": "Pre-Kaliya Hidden Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                    "@Annwfn/Pre-Kaliya Hidden Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Kaliya's Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain) and (IsDead(Kaliya) or (Has(Feather) and CanWarp))"
+                    "@Annwfn/Kaliya's Item Pot/Pot"
                 ]
             },
             {
                 "name": "Kukulkan's Grail Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                    "@Annwfn/Kukulkan's Grail Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Kukulkan's Grail Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                    "@Annwfn/Kukulkan's Grail Weight Pot/Pot"
                 ]
             }
         ]
@@ -430,12 +382,6 @@
     {
         "name": "Potsanity - Annwfn (2)",
         "map_locations": [
-            {
-                "map": "Annwfn",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -451,35 +397,35 @@
                 "name": "Fairy King's Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                    "@Annwfn/Fairy King's Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Center Item Pot #1",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                    "@Annwfn/Center Item Pot #1/Pot"
                 ]
             },
             {
                 "name": "Center Item Pot #2",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+                    "@Annwfn/Center Item Pot #2/Pot"
                 ]
             },
             {
                 "name": "Huracan's Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+                    "@Annwfn/Huracan's Item Pot/Pot"
                 ]
             },
             {
                 "name": "Mantra Watchtower Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                    "@Annwfn/Mantra Watchtower Weight Pot/Pot"
                 ]
             }
         ]
@@ -487,12 +433,6 @@
     {
         "name": "Potsanity - Annwfn (3)",
         "map_locations": [
-            {
-                "map": "Annwfn",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -508,35 +448,35 @@
                 "name": "Look Away Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+                    "@Annwfn/Look Away Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Bifrost Left Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                    "@Annwfn/Bifrost Left Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Bifrost Right Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                    "@Annwfn/Bifrost Right Item Pot/Pot"
                 ]
             },
             {
                 "name": "Bifrost Right Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+                    "@Annwfn/Bifrost Right Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Feathercross One-Way Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnOneWay) and (HorizontalAttack)"
+                    "@Annwfn/Feathercross One-Way Pot/Pot"
                 ]
             }
         ]
@@ -544,12 +484,6 @@
     {
         "name": "Potsanity - Annwfn (4)",
         "map_locations": [
-            {
-                "map": "Annwfn",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -565,21 +499,21 @@
                 "name": "Ixtab Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab) and HorizontalAttack)"
+                    "@Annwfn/Ixtab Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Death's Prison Hidden Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnRight) and (HorizontalAttack and (Has(Feather) or IsDead(Ixtab)))"
+                    "@Annwfn/Death's Prison Hidden Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Pre-Kujata Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnRight)"
+                    "@Annwfn/Pre-Kujata Weight Pot/Pot"
                 ]
             }
         ]
@@ -587,12 +521,6 @@
     {
         "name": "Potsanity - Immortal Battlefield (1)",
         "map_locations": [
-            {
-                "map": "Immortal Battlefield",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -608,35 +536,35 @@
                 "name": "Cetus Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBTop)"
+                    "@Immortal Battlefield/Cetus Item Pot/Pot"
                 ]
             },
             {
                 "name": "Top-Left Weapon Vault Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBTopLeft)"
+                    "@Immortal Battlefield/Top-Left Weapon Vault Item Pot/Pot"
                 ]
             },
             {
                 "name": "Under Fake Wall Puzzle Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBTopLeft) and (HorizontalAttack)"
+                    "@Immortal Battlefield/Under Fake Wall Puzzle Item Pot/Pot"
                 ]
             },
             {
                 "name": "Before Fake Wall Puzzle Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBTopLeft)"
+                    "@Immortal Battlefield/Before Fake Wall Puzzle Item Pot/Pot"
                 ]
             },
             {
                 "name": "Corridor of Wind Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain)"
+                    "@Immortal Battlefield/Corridor of Wind Item Pot/Pot"
                 ]
             }
         ]
@@ -644,12 +572,6 @@
     {
         "name": "Potsanity - Immortal Battlefield (2)",
         "map_locations": [
-            {
-                "map": "Immortal Battlefield",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -665,35 +587,35 @@
                 "name": "Left Altar Lower Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip))))"
+                    "@Immortal Battlefield/Left Altar Lower Item Pot/Pot"
                 ]
             },
             {
                 "name": "Left Altar Upper Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip))))"
+                    "@Immortal Battlefield/Left Altar Upper Item Pot/Pot"
                 ]
             },
             {
                 "name": "Left of Spiral Boat Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and Has(Birth Sigil))"
+                    "@Immortal Battlefield/Left of Spiral Boat Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Above Backside Grail Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and Has(Birth Sigil))"
+                    "@Immortal Battlefield/Above Backside Grail Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Jormungandr Mural Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or IsDead(Cetus))))"
+                    "@Immortal Battlefield/Jormungandr Mural Item Pot/Pot"
                 ]
             }
         ]
@@ -701,12 +623,6 @@
     {
         "name": "Potsanity - Immortal Battlefield (3)",
         "map_locations": [
-            {
-                "map": "Immortal Battlefield",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -722,35 +638,35 @@
                 "name": "Map Chest Left Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+                    "@Immortal Battlefield/Map Chest Left Item Pot/Pot"
                 ]
             },
             {
                 "name": "Map Chest Right Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain)"
+                    "@Immortal Battlefield/Map Chest Right Item Pot/Pot"
                 ]
             },
             {
                 "name": "Right of Spiral Boat Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain)"
+                    "@Immortal Battlefield/Right of Spiral Boat Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Submerged Sigil Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain)"
+                    "@Immortal Battlefield/Submerged Sigil Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Above Frontside Grail Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+                    "@Immortal Battlefield/Above Frontside Grail Coin Pot/Pot"
                 ]
             }
         ]
@@ -758,12 +674,6 @@
     {
         "name": "Potsanity - Immortal Battlefield (4)",
         "map_locations": [
-            {
-                "map": "Immortal Battlefield",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -779,35 +689,35 @@
                 "name": "Frontside Grail Upper Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+                    "@Immortal Battlefield/Frontside Grail Upper Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Frontside Grail Lower Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+                    "@Immortal Battlefield/Frontside Grail Lower Item Pot/Pot"
                 ]
             },
             {
                 "name": "Below Hidden Sigil Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+                    "@Immortal Battlefield/Below Hidden Sigil Item Pot/Pot"
                 ]
             },
             {
                 "name": "Right of Hiro Roderick Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBRight)"
+                    "@Immortal Battlefield/Right of Hiro Roderick Item Pot/Pot"
                 ]
             },
             {
                 "name": "Path of Destruction Dropdown Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBRight)"
+                    "@Immortal Battlefield/Path of Destruction Dropdown Coin Pot/Pot"
                 ]
             }
         ]
@@ -815,12 +725,6 @@
     {
         "name": "Potsanity - Immortal Battlefield (5)",
         "map_locations": [
-            {
-                "map": "Immortal Battlefield",
-                "x": 90,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 210,
@@ -836,35 +740,35 @@
                 "name": "Path to Destruction Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBRight)"
+                    "@Immortal Battlefield/Path to Destruction Item Pot/Pot"
                 ]
             },
             {
                 "name": "Corona Arsenal Right Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBRight) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip))"
+                    "@Immortal Battlefield/Corona Arsenal Right Item Pot/Pot"
                 ]
             },
             {
                 "name": "Corona Arsenal Left Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBRight) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip))"
+                    "@Immortal Battlefield/Corona Arsenal Left Item Pot/Pot"
                 ]
             },
             {
                 "name": "Left of Lava Weapon Vault Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(IB Left Shortcut)))"
+                    "@Immortal Battlefield/Left of Lava Weapon Vault Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Inferno Corridor Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBBottom)"
+                    "@Immortal Battlefield/Inferno Corridor Weight Pot/Pot"
                 ]
             }
         ]
@@ -872,12 +776,6 @@
     {
         "name": "Potsanity - Immortal Battlefield (6)",
         "map_locations": [
-            {
-                "map": "Immortal Battlefield",
-                "x": 110,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 250,
@@ -893,35 +791,35 @@
                 "name": "Time Altar Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack)"
+                    "@Immortal Battlefield/Time Altar Item Pot/Pot"
                 ]
             },
             {
                 "name": "Path to Time Altar Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack)"
+                    "@Immortal Battlefield/Path to Time Altar Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Path to Time Altar Hidden Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBBottom) and (Has(Feather) and (MeleeAttack or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
+                    "@Immortal Battlefield/Path to Time Altar Hidden Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Path to Time Altar Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBBottom)"
+                    "@Immortal Battlefield/Path to Time Altar Item Pot/Pot"
                 ]
             },
             {
                 "name": "Left Soul Gate Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBLeft) and (HorizontalAttack)"
+                    "@Immortal Battlefield/Left Soul Gate Weight Pot/Pot"
                 ]
             }
         ]
@@ -929,12 +827,6 @@
     {
         "name": "Potsanity - Immortal Battlefield (7)",
         "map_locations": [
-            {
-                "map": "Immortal Battlefield",
-                "x": 130,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 290,
@@ -950,28 +842,28 @@
                 "name": "Alviss Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBDinosaur) and (HorizontalAttack)"
+                    "@Immortal Battlefield/Alviss Item Pot/Pot"
                 ]
             },
             {
                 "name": "Moon Altar Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+                    "@Immortal Battlefield/Moon Altar/Moon Altar Coin Pot"
                 ]
             },
             {
                 "name": "Moon Altar Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+                    "@Immortal Battlefield/Moon Altar/Moon Altar Item Pot"
                 ]
             },
             {
                 "name": "Inferno Corridor Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBLadder) and (HorizontalAttack and (CanWarp or Has(Feather)))"
+                    "@Immortal Battlefield/Inferno Corridor Coin Pot/Pot"
                 ]
             }
         ]
@@ -979,12 +871,6 @@
     {
         "name": "Potsanity - Icefire Treetop (1)",
         "map_locations": [
-            {
-                "map": "Icefire Treetop",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -1000,35 +886,35 @@
                 "name": "Mino Center Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom)"
+                    "@Icefire Treetop/Mino Center Item Pot/Pot"
                 ]
             },
             {
                 "name": "Mino Bottom Left Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom)"
+                    "@Icefire Treetop/Mino Bottom Left Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Mino Top Right Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom)"
+                    "@Icefire Treetop/Mino Top Right Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Mino Bottom Right Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom) and (HorizontalAttack)"
+                    "@Icefire Treetop/Mino Bottom Right Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Bombable Wall Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Feather))"
+                    "@Icefire Treetop/Bombable Wall Coin Pot/Pot"
                 ]
             }
         ]
@@ -1036,12 +922,6 @@
     {
         "name": "Potsanity - Icefire Treetop (2)",
         "map_locations": [
-            {
-                "map": "Icefire Treetop",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -1057,35 +937,35 @@
                 "name": "Above Vidofnir Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom)"
+                    "@Icefire Treetop/Above Vidofnir Item Pot/Pot"
                 ]
             },
             {
                 "name": "Skull in Background Upper Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom)"
+                    "@Icefire Treetop/Skull in Background Upper Coin Pot/Pot"
                 ]
             },
             {
-                "name": "Below Frontside Grail Coin Pot",
+                "name": "Below Frontside Grail Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITSinmara) and (HorizontalAttack)"
+                    "@Icefire Treetop/Below Frontside Grail Item Pot/Pot"
                 ]
             },
             {
                 "name": "Surtr's Antechamber Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITSinmara) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(2))))"
+                    "@Icefire Treetop/Surtr's Antechamber Item Pot/Pot"
                 ]
             },
             {
                 "name": "BTK Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITLeft) and ((MeleeAttack or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Feather) and (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))) or (TrickyLogic and (True)))"
+                    "@Icefire Treetop/BTK Coin Pot/Pot"
                 ]
             }
         ]
@@ -1093,12 +973,6 @@
     {
         "name": "Potsanity - Icefire Treetop (3)",
         "map_locations": [
-            {
-                "map": "Icefire Treetop",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -1114,35 +988,35 @@
                 "name": "Altar of Life Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack)"
+                    "@Icefire Treetop/Altar of Life Item Pot/Pot"
                 ]
             },
             {
                 "name": "Altar of Life Approach Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITLeft)"
+                    "@Icefire Treetop/Altar of Life Approach Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Fireside Elevator Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITLeft)"
+                    "@Icefire Treetop/Fireside Elevator Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Vedfolnir Left Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(2))))"
+                    "@Icefire Treetop/Vedfolnir Left Item Pot/Pot"
                 ]
             },
             {
                 "name": "Vedfolnir Right Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(2))))"
+                    "@Icefire Treetop/Vedfolnir Right Item Pot/Pot"
                 ]
             }
         ]
@@ -1150,12 +1024,6 @@
     {
         "name": "Potsanity - Icefire Treetop (4)",
         "map_locations": [
-            {
-                "map": "Icefire Treetop",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -1171,35 +1039,35 @@
                 "name": "Ratatoskr Surprise Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack)"
+                    "@Icefire Treetop/Ratatoskr Surprise Item Pot/Pot"
                 ]
             },
             {
-                "name": "Lower Statue Item Pot",
+                "name": "Lowering Statue Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight)"
+                    "@Icefire Treetop/Lowering Statue Item Pot/Pot"
                 ]
             },
             {
                 "name": "Great Bird Nest Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight)"
+                    "@Icefire Treetop/Great Bird Nest Item Pot/Pot"
                 ]
             },
             {
                 "name": "Niflheim Stalactites Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)) or (HorizontalAttack and (Has(Feather) or (Has(Grapple Claw) and CanReach(ITEntrance)))))"
+                    "@Icefire Treetop/Niflheim Stalactites Item Pot/Pot"
                 ]
             },
             {
                 "name": "Backside Grail Hidden Coin Pot #1",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Anchor) or Has(Fish Suit))))"
+                    "@Icefire Treetop/Backside Grail Hidden Coin Pot #1/Pot"
                 ]
             }
         ]
@@ -1207,12 +1075,6 @@
     {
         "name": "Potsanity - Icefire Treetop (5)",
         "map_locations": [
-            {
-                "map": "Icefire Treetop",
-                "x": 90,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 210,
@@ -1228,28 +1090,28 @@
                 "name": "Iceside Elevator Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight)"
+                    "@Icefire Treetop/Iceside Elevator Item Pot/Pot"
                 ]
             },
             {
                 "name": "Backside Grail Hidden Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
+                    "@Icefire Treetop/Backside Grail Hidden Item Pot/Pot"
                 ]
             },
             {
                 "name": "Backside Grail Hidden Coin Pot #2",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
+                    "@Icefire Treetop/Backside Grail Hidden Coin Pot #2/Pot"
                 ]
             },
             {
                 "name": "Left Ladder Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRightLeftLadder) and (HorizontalAttack)"
+                    "@Icefire Treetop/Left Ladder Coin Pot/Pot"
                 ]
             }
         ]
@@ -1257,12 +1119,6 @@
     {
         "name": "Potsanity - Divine Fortress (1)",
         "map_locations": [
-            {
-                "map": "Divine Fortress",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -1278,35 +1134,35 @@
                 "name": "Divine Soul Gate Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFEntrance) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and CanReach(DFRight)))"
+                    "@Divine Fortress/Divine Soul Gate Item Pot/Pot"
                 ]
             },
             {
                 "name": "Frey's Ship Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFRight) and (HorizontalAttack and (Has(Origin Sigil) or CanReach(DFTop)))"
+                    "@Divine Fortress/Frey's Ship Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Above Mantra Mural Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFRight)"
+                    "@Divine Fortress/Above Mantra Mural Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Pre-Hugin and Munin Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFRight) and (HorizontalAttack)"
+                    "@Divine Fortress/Pre-Hugin and Munin Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Dwarves' Hideout Right Pot #2",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "@Divine Fortress/Dwarves' Hideout Right Pot #2/Pot"
                 ]
             }
         ]
@@ -1314,12 +1170,6 @@
     {
         "name": "Potsanity - Divine Fortress (2)",
         "map_locations": [
-            {
-                "map": "Divine Fortress",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -1335,35 +1185,35 @@
                 "name": "Dwarves' Hideout Right Pot #1",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "@Divine Fortress/Dwarves' Hideout Right Pot #1/Pot"
                 ]
             },
             {
                 "name": "Corridor to Gate Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                    "@Divine Fortress/Corridor to Gate Item Pot/Pot"
                 ]
             },
             {
                 "name": "Moving Block Lower Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                    "@Divine Fortress/Moving Block Lower Item Pot/Pot"
                 ]
             },
             {
                 "name": "Antechamber - Ledge Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                    "@Divine Fortress/Antechamber - Ledge Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Antechamber - Gullinbursti Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain)"
+                    "@Divine Fortress/Antechamber - Gullinbursti Item Pot/Pot"
                 ]
             }
         ]
@@ -1371,12 +1221,6 @@
     {
         "name": "Potsanity - Divine Fortress (3)",
         "map_locations": [
-            {
-                "map": "Divine Fortress",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -1392,35 +1236,35 @@
                 "name": "Antechamber - Ladder Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                    "@Divine Fortress/Antechamber - Ladder Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Shuhoka Lower Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain)"
+                    "@Divine Fortress/Shuhoka Lower Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Shuhoka Upper Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "@Divine Fortress/Shuhoka Upper Item Pot/Pot"
                 ]
             },
             {
                 "name": "Footprint Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                    "@Divine Fortress/Footprint Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Moving Block Upper Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFTop) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Grapple Claw) or Has(Feather))))"
+                    "@Divine Fortress/Moving Block Upper Coin Pot/Pot"
                 ]
             }
         ]
@@ -1428,12 +1272,6 @@
     {
         "name": "Potsanity - Divine Fortress (4)",
         "map_locations": [
-            {
-                "map": "Divine Fortress",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -1449,14 +1287,14 @@
                 "name": "Breakable Push Block Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFTop)"
+                    "@Divine Fortress/Breakable Push Block Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Yuga Wheel Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFTop)"
+                    "@Divine Fortress/Yuga Wheel Item Pot/Pot"
                 ]
             }
         ]
@@ -1464,12 +1302,6 @@
     {
         "name": "Potsanity - Shrine of the Frost Giants (1)",
         "map_locations": [
-            {
-                "map": "Shrine of the Frost Giants",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -1485,35 +1317,35 @@
                 "name": "Mantra Mural Exit Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
+                    "@Shrine of the Frost Giants/Mantra Mural Exit Item Pot/Pot"
                 ]
             },
             {
                 "name": "Weapon Fairy - Upper Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain)"
+                    "@Shrine of the Frost Giants/Weapon Fairy - Upper Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Weapon Fairy - Lower Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and (Has(Vajra) or Has(Feather))) or (Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun)))))"
+                    "@Shrine of the Frost Giants/Weapon Fairy - Lower Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Titanomachy Monument Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack or Has(Origin Sigil))"
+                    "@Shrine of the Frost Giants/Titanomachy Monument Item Pot/Pot"
                 ]
             },
             {
                 "name": "Golden Altar Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain) and (Has(Grapple Claw))"
+                    "@Shrine of the Frost Giants/Golden Altar Coin Pot/Pot"
                 ]
             }
         ]
@@ -1521,12 +1353,6 @@
     {
         "name": "Potsanity - Shrine of the Frost Giants (2)",
         "map_locations": [
-            {
-                "map": "Shrine of the Frost Giants",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -1542,35 +1368,35 @@
                 "name": "Path of Snow Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
+                    "@Shrine of the Frost Giants/Path of Snow Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Path of Snow Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain)"
+                    "@Shrine of the Frost Giants/Path of Snow Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Footprint Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain)"
+                    "@Shrine of the Frost Giants/Footprint Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Footprint Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
+                    "@Shrine of the Frost Giants/Footprint Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Weapon Vault Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGGrail)"
+                    "@Shrine of the Frost Giants/Weapon Vault Item Pot/Pot"
                 ]
             }
         ]
@@ -1578,12 +1404,6 @@
     {
         "name": "Potsanity - Shrine of the Frost Giants (3)",
         "map_locations": [
-            {
-                "map": "Shrine of the Frost Giants",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -1599,35 +1419,35 @@
                 "name": "Grail Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
+                    "@Shrine of the Frost Giants/Grail Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Sacred Wine Corridor Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
+                    "@Shrine of the Frost Giants/Sacred Wine Corridor Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Right Snow Drop Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
+                    "@Shrine of the Frost Giants/Right Snow Drop Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Altar of Birth Approach Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)))"
+                    "@Shrine of the Frost Giants/Altar of Birth Approach Item Pot/Pot"
                 ]
             },
             {
                 "name": "Bergelmir Blocking Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "@Shrine of the Frost Giants/Bergelmir Blocking Item Pot/Pot"
                 ]
             }
         ]
@@ -1635,12 +1455,6 @@
     {
         "name": "Potsanity - Shrine of the Frost Giants (4)",
         "map_locations": [
-            {
-                "map": "Shrine of the Frost Giants",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -1656,35 +1470,35 @@
                 "name": "Left Snow Drop Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGLeft) and (Has(Katana) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Rapier) or Has(Knife) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))))))"
+                    "@Shrine of the Frost Giants/Left Snow Drop Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Mimics Left Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGTop)"
+                    "@Shrine of the Frost Giants/Mimics Left Item Pot/Pot"
                 ]
             },
             {
                 "name": "Mimics Right Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGTop)"
+                    "@Shrine of the Frost Giants/Mimics Right Item Pot/Pot"
                 ]
             },
             {
                 "name": "Corridor of Blood Right Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGBlood)"
+                    "@Shrine of the Frost Giants/Corridor of Blood Right Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Corridor of Blood Left Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGBlood)"
+                    "@Shrine of the Frost Giants/Corridor of Blood Left Coin Pot/Pot"
                 ]
             }
         ]
@@ -1692,12 +1506,6 @@
     {
         "name": "Potsanity - Shrine of the Frost Giants (5)",
         "map_locations": [
-            {
-                "map": "Shrine of the Frost Giants",
-                "x": 90,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 210,
@@ -1713,7 +1521,7 @@
                 "name": "Tezcatlipoca Reward Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGBloodTez) and (HorizontalAttack and IsDead(Tezcatlipoca))"
+                    "@Shrine of the Frost Giants/Tezcatlipoca Reward Item Pot/Pot"
                 ]
             }
         ]
@@ -1721,12 +1529,6 @@
     {
         "name": "Potsanity - Gate of the Dead (1)",
         "map_locations": [
-            {
-                "map": "Gate of the Dead",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -1742,35 +1544,35 @@
                 "name": "Aytum's Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "@Gate of the Dead/Aytum's Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Death Trap Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Death Trap Item Pot/Pot"
                 ]
             },
             {
                 "name": "Thoth's Upper Coin Chest",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Thoth's Upper Coin Chest/Pot"
                 ]
             },
             {
                 "name": "Thoth's Lower Item Chest",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Thoth's Lower Item Chest/Pot"
                 ]
             },
             {
                 "name": "Dwarves' Puzzle Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Dwarves' Puzzle Item Pot/Pot"
                 ]
             }
         ]
@@ -1778,12 +1580,6 @@
     {
         "name": "Potsanity - Gate of the Dead (2)",
         "map_locations": [
-            {
-                "map": "Gate of the Dead",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -1796,38 +1592,38 @@
         ],
         "sections": [
             {
-                "name": "Unicorn Reward Coin Pot",
+                "name": "Unicorn Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD) and (IsDead(Unicorn))"
+                    "@Gate of the Dead/Unicorn Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Pre-Unicorn Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Pre-Unicorn Item Pot/Pot"
                 ]
             },
             {
                 "name": "Pre-Unicorn Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Pre-Unicorn Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Soul Gate Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "@Gate of the Dead/Soul Gate Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Laser Beams Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "@Gate of the Dead/Laser Beams Item Pot/Pot"
                 ]
             }
         ]
@@ -1835,12 +1631,6 @@
     {
         "name": "Potsanity - Gate of the Dead (3)",
         "map_locations": [
-            {
-                "map": "Gate of the Dead",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -1856,35 +1646,35 @@
                 "name": "Laser Beams Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Laser Beams Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Below Grail Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Below Grail Item Pot/Pot"
                 ]
             },
             {
                 "name": "Pillar Pepper Puzzle Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Pillar Pepper Puzzle Item Pot/Pot"
                 ]
             },
             {
                 "name": "Room of the Dark Night Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Room of the Dark Night Item Pot/Pot"
                 ]
             },
             {
                 "name": "Flipped Push Block Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Flipped Push Block Item Pot/Pot"
                 ]
             }
         ]
@@ -1892,12 +1682,6 @@
     {
         "name": "Potsanity - Gate of the Dead (4)",
         "map_locations": [
-            {
-                "map": "Gate of the Dead",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -1913,21 +1697,21 @@
                 "name": "Horus Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack)"
+                    "@Gate of the Dead/Horus Item Pot/Pot"
                 ]
             },
             {
                 "name": "Wedjet Gate Solo Item Pot #1",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Wedjet Gate Solo Item Pot #1/Pot"
                 ]
             },
             {
                 "name": "Wedjet Gate Solo Item Pot #2",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "@Gate of the Dead/Wedjet Gate Solo Item Pot #2/Pot"
                 ]
             }
         ]
@@ -1935,12 +1719,6 @@
     {
         "name": "Potsanity - Takamagahara Shrine (1)",
         "map_locations": [
-            {
-                "map": "Takamagahara Shrine",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -1956,35 +1734,35 @@
                 "name": "Spinning Platforms Left Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain)"
+                    "@Takamagahara Shrine/Spinning Platforms Left Item Pot/Pot"
                 ]
             },
             {
                 "name": "Spinning Platforms Right Weight Pot ",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain)"
+                    "@Takamagahara Shrine/Spinning Platforms Right Weight Pot /Pot"
                 ]
             },
             {
                 "name": "Next to Chest Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "@Takamagahara Shrine/Next to Chest Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Amenominakanushi Top-Left Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain)"
+                    "@Takamagahara Shrine/Amenominakanushi Top-Left Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Amenominakanushi Bottom Level Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack)"
+                    "@Takamagahara Shrine/Amenominakanushi Bottom Level Item Pot/Pot"
                 ]
             }
         ]
@@ -1992,12 +1770,6 @@
     {
         "name": "Potsanity - Takamagahara Shrine (2)",
         "map_locations": [
-            {
-                "map": "Takamagahara Shrine",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -2013,35 +1785,35 @@
                 "name": "Amenominakanushi Pre-Ladder Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain)"
+                    "@Takamagahara Shrine/Amenominakanushi Pre-Ladder Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Falling Platform Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack)"
+                    "@Takamagahara Shrine/Falling Platform Item Pot/Pot"
                 ]
             },
             {
                 "name": "Falling Platform Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack)"
+                    "@Takamagahara Shrine/Falling Platform Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Raijin and Fujin Reward Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain) and (IsDead(Raijin and Fujin))"
+                    "@Takamagahara Shrine/Raijin and Fujin Reward Item Pot/Pot"
                 ]
             },
             {
                 "name": "Maze Top-Left Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft) and (HorizontalAttack)"
+                    "@Takamagahara Shrine/Maze Top-Left Item Pot/Pot"
                 ]
             }
         ]
@@ -2049,12 +1821,6 @@
     {
         "name": "Potsanity - Takamagahara Shrine (3)",
         "map_locations": [
-            {
-                "map": "Takamagahara Shrine",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -2070,35 +1836,35 @@
                 "name": "Maze Middle Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
+                    "@Takamagahara Shrine/Maze Middle Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Maze Bottom-Left Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft) and ((Has(Leather Whip) and Has(Vajra)) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Knife) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
+                    "@Takamagahara Shrine/Maze Bottom-Left Item Pot/Pot"
                 ]
             },
             {
                 "name": "Above Grail Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft)"
+                    "@Takamagahara Shrine/Above Grail Item Pot/Pot"
                 ]
             },
             {
                 "name": "Spirit Palace Hidden Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft) and (MeleeAttack or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
+                    "@Takamagahara Shrine/Spirit Palace Hidden Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Spirit Palace Right Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft)"
+                    "@Takamagahara Shrine/Spirit Palace Right Item Pot/Pot"
                 ]
             }
         ]
@@ -2106,12 +1872,6 @@
     {
         "name": "Potsanity - Takamagahara Shrine (4)",
         "map_locations": [
-            {
-                "map": "Takamagahara Shrine",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -2127,35 +1887,35 @@
                 "name": "Left Dragon Path Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft) and (MeleeAttack or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))"
+                    "@Takamagahara Shrine/Left Dragon Path Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Breakable Pillar Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSBottom)"
+                    "@Takamagahara Shrine/Breakable Pillar Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Upper Corridor Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSBottom) and (HorizontalAttack)"
+                    "@Takamagahara Shrine/Upper Corridor Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Stacked Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSBottom) and (HorizontalAttack)"
+                    "@Takamagahara Shrine/Stacked Item Pot/Pot"
                 ]
             },
             {
                 "name": "Amanoiwato Gate Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSBottom)"
+                    "@Takamagahara Shrine/Amanoiwato Gate Item Pot/Pot"
                 ]
             }
         ]
@@ -2163,12 +1923,6 @@
     {
         "name": "Potsanity - Takamagahara Shrine (5)",
         "map_locations": [
-            {
-                "map": "Takamagahara Shrine",
-                "x": 90,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 210,
@@ -2184,14 +1938,14 @@
                 "name": "Pre-Belial Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSBlood) and (HorizontalAttack and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(6))))"
+                    "@Takamagahara Shrine/Pre-Belial Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Yuga Wheel Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSBlood) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(6)))"
+                    "@Takamagahara Shrine/Yuga Wheel Item Pot/Pot"
                 ]
             }
         ]
@@ -2199,12 +1953,6 @@
     {
         "name": "Potsanity - Heavens Labyrinth (1)",
         "map_locations": [
-            {
-                "map": "Heavens Labyrinth",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -2220,35 +1968,35 @@
                 "name": "After Megarock Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack and Has(Feather) and Has(Grapple Claw))"
+                    "@Heavens Labyrinth/After Megarock Item Pot/Pot"
                 ]
             },
             {
                 "name": "Below Megarock Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HL) and (Has(Grapple Claw))"
+                    "@Heavens Labyrinth/Below Megarock Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Ladder from B-2 Mural Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
+                    "@Heavens Labyrinth/Ladder from B-2 Mural Item Pot/Pot"
                 ]
             },
             {
                 "name": "Celestial Disk Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HL)"
+                    "@Heavens Labyrinth/Celestial Disk Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Celestial Disk Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HL)"
+                    "@Heavens Labyrinth/Celestial Disk Item Pot/Pot"
                 ]
             }
         ]
@@ -2256,12 +2004,6 @@
     {
         "name": "Potsanity - Heavens Labyrinth (2)",
         "map_locations": [
-            {
-                "map": "Heavens Labyrinth",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -2277,35 +2019,35 @@
                 "name": "Typhon's Room Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
+                    "@Heavens Labyrinth/Typhon's Room Item Pot/Pot"
                 ]
             },
             {
                 "name": "Arachne's Corridor Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
+                    "@Heavens Labyrinth/Arachne's Corridor Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Arachne's Corridor Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
+                    "@Heavens Labyrinth/Arachne's Corridor Item Pot/Pot"
                 ]
             },
             {
                 "name": "Soul Gate Hidden Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HL)"
+                    "@Heavens Labyrinth/Soul Gate Hidden Item Pot/Pot"
                 ]
             },
             {
                 "name": "Spiral Mural Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and HorizontalAttack)"
+                    "@Heavens Labyrinth/Spiral Mural Coin Pot/Pot"
                 ]
             }
         ]
@@ -2313,12 +2055,6 @@
     {
         "name": "Potsanity - Heavens Labyrinth (3)",
         "map_locations": [
-            {
-                "map": "Heavens Labyrinth",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -2334,35 +2070,35 @@
                 "name": "Weapon Vault Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and (Has(Feather) or Has(Grapple Claw)))"
+                    "@Heavens Labyrinth/Weapon Vault Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Path to Chaos Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and HorizontalAttack)"
+                    "@Heavens Labyrinth/Path to Chaos Item Pot/Pot"
                 ]
             },
             {
                 "name": "Scylla's Breakable Wall Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
+                    "@Heavens Labyrinth/Scylla's Breakable Wall Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Twin Vessel Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
+                    "@Heavens Labyrinth/Twin Vessel Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Twin Vessel Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
+                    "@Heavens Labyrinth/Twin Vessel Item Pot/Pot"
                 ]
             }
         ]
@@ -2370,12 +2106,6 @@
     {
         "name": "Potsanity - Valhalla (1)",
         "map_locations": [
-            {
-                "map": "Valhalla",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -2391,35 +2121,35 @@
                 "name": "Entrance Gate Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                    "@Valhalla/Entrance Gate Item Pot/Pot"
                 ]
             },
             {
                 "name": "Left of Grail Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain)"
+                    "@Valhalla/Left of Grail Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Near First Trickster Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain)"
+                    "@Valhalla/Near First Trickster Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Near First Trickster Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain)"
+                    "@Valhalla/Near First Trickster Item Pot/Pot"
                 ]
             },
             {
                 "name": "Near First Trickster Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain)"
+                    "@Valhalla/Near First Trickster Weight Pot/Pot"
                 ]
             }
         ]
@@ -2427,12 +2157,6 @@
     {
         "name": "Potsanity - Valhalla (2)",
         "map_locations": [
-            {
-                "map": "Valhalla",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -2448,35 +2172,35 @@
                 "name": "Above Grail Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain)"
+                    "@Valhalla/Above Grail Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Corridor above Jalandhara Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                    "@Valhalla/Corridor above Jalandhara Item Pot/Pot"
                 ]
             },
             {
                 "name": "Near Second Trickster Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and (((Has(Feather) or CanChant(Heaven)) and HorizontalAttack) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)))"
+                    "@Valhalla/Near Second Trickster Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Warrior's Aqueduct Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                    "@Valhalla/Warrior's Aqueduct Item Pot/Pot"
                 ]
             },
             {
                 "name": "Above Laser Statue Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                    "@Valhalla/Above Laser Statue Weight Pot/Pot"
                 ]
             }
         ]
@@ -2484,12 +2208,6 @@
     {
         "name": "Potsanity - Valhalla (3)",
         "map_locations": [
-            {
-                "map": "Valhalla",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -2505,35 +2223,35 @@
                 "name": "Near Third Trickster Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                    "@Valhalla/Near Third Trickster Item Pot/Pot"
                 ]
             },
             {
                 "name": "Below Zipakna Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                    "@Valhalla/Below Zipakna Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Below Bargain Duck Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                    "@Valhalla/Below Bargain Duck Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Mantra Mural Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaTop) and (HorizontalAttack)"
+                    "@Valhalla/Mantra Mural Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Soul Gate Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaTopRight)"
+                    "@Valhalla/Soul Gate Coin Pot/Pot"
                 ]
             }
         ]
@@ -2541,12 +2259,6 @@
     {
         "name": "Potsanity - Dark Star Lords Mausoleum (1)",
         "map_locations": [
-            {
-                "map": "Dark Star Lords Mausoleum",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -2562,35 +2274,35 @@
                 "name": "Grail Top-Right Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain)"
+                    "@Dark Star Lords Mausoleum/Grail Top-Right Item Pot/Pot"
                 ]
             },
             {
                 "name": "Double Staircases Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
+                    "@Dark Star Lords Mausoleum/Double Staircases Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Left Winged Statue Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain)"
+                    "@Dark Star Lords Mausoleum/Left Winged Statue Item Pot/Pot"
                 ]
             },
             {
                 "name": "Room of Judgement Left Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
+                    "@Dark Star Lords Mausoleum/Room of Judgement Left Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Room of Judgement Top Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
+                    "@Dark Star Lords Mausoleum/Room of Judgement Top Item Pot/Pot"
                 ]
             }
         ]
@@ -2598,12 +2310,6 @@
     {
         "name": "Potsanity - Dark Star Lords Mausoleum (2)",
         "map_locations": [
-            {
-                "map": "Dark Star Lords Mausoleum",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -2619,35 +2325,35 @@
                 "name": "Room of Judgement Bottom Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
+                    "@Dark Star Lords Mausoleum/Room of Judgement Bottom Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Kero Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and (Has(Grapple Claw) or Has(Feather)))"
+                    "@Dark Star Lords Mausoleum/Kero Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Altar of Atum Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and ((HorizontalAttack and (Has(Grapple Claw) or Has(Feather))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "@Dark Star Lords Mausoleum/Altar of Atum Item Pot/Pot"
                 ]
             },
             {
                 "name": "Ladder to Atum Item Pot #1",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
+                    "@Dark Star Lords Mausoleum/Ladder to Atum Item Pot #1/Pot"
                 ]
             },
             {
                 "name": "Ladder to Atum Item Pot #2",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain)"
+                    "@Dark Star Lords Mausoleum/Ladder to Atum Item Pot #2/Pot"
                 ]
             }
         ]
@@ -2655,12 +2361,6 @@
     {
         "name": "Potsanity - Dark Star Lords Mausoleum (3)",
         "map_locations": [
-            {
-                "map": "Dark Star Lords Mausoleum",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -2676,35 +2376,35 @@
                 "name": "Ra's Hideout Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain)"
+                    "@Dark Star Lords Mausoleum/Ra's Hideout Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Ra's Hideout Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain)"
+                    "@Dark Star Lords Mausoleum/Ra's Hideout Item Pot/Pot"
                 ]
             },
             {
                 "name": "Right Winged Statue Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain)"
+                    "@Dark Star Lords Mausoleum/Right Winged Statue Item Pot/Pot"
                 ]
             },
             {
                 "name": "Thunder Antechamber Left Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Grapple Claw))"
+                    "@Dark Star Lords Mausoleum/Thunder Antechamber Left Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Thunder Antechamber Right Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Grapple Claw))"
+                    "@Dark Star Lords Mausoleum/Thunder Antechamber Right Item Pot/Pot"
                 ]
             }
         ]
@@ -2712,12 +2412,6 @@
     {
         "name": "Potsanity - Dark Star Lords Mausoleum (4)",
         "map_locations": [
-            {
-                "map": "Dark Star Lords Mausoleum",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -2733,35 +2427,35 @@
                 "name": "Entrance Gate Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain)"
+                    "@Dark Star Lords Mausoleum/Entrance Gate Item Pot/Pot"
                 ]
             },
             {
                 "name": "Entrance Gate Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain)"
+                    "@Dark Star Lords Mausoleum/Entrance Gate Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Right of Pyramid Stacked Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
+                    "@Dark Star Lords Mausoleum/Right of Pyramid Stacked Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Right of Pyramid Stacked Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
+                    "@Dark Star Lords Mausoleum/Right of Pyramid Stacked Item Pot/Pot"
                 ]
             },
             {
                 "name": "Left Ladder to Stars Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMTop) and (Has(Feather))"
+                    "@Dark Star Lords Mausoleum/Left Ladder to Stars Coin Pot/Pot"
                 ]
             }
         ]
@@ -2769,12 +2463,6 @@
     {
         "name": "Potsanity - Dark Star Lords Mausoleum (5)",
         "map_locations": [
-            {
-                "map": "Dark Star Lords Mausoleum",
-                "x": 90,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 210,
@@ -2790,21 +2478,21 @@
                 "name": "Use Crystal Skull Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMTop) and (HorizontalAttack and (Has(Feather) or CanWarp or (CanReach(DSLMMain) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))))"
+                    "@Dark Star Lords Mausoleum/Use Crystal Skull Item Pot/Pot"
                 ]
             },
             {
                 "name": "Bombable Wall Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMTop) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (Has(Feather) or CanWarp or CanReach(DSLMMain)))"
+                    "@Dark Star Lords Mausoleum/Bombable Wall Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Right Ladder to Stars Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMTop) and (Has(Feather))"
+                    "@Dark Star Lords Mausoleum/Right Ladder to Stars Item Pot/Pot"
                 ]
             }
         ]
@@ -2812,12 +2500,6 @@
     {
         "name": "Potsanity - Ancient Chaos (1)",
         "map_locations": [
-            {
-                "map": "Ancient Chaos",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -2833,35 +2515,35 @@
                 "name": "Entrance Gate Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(6))))"
+                    "@Ancient Chaos/Entrance Gate Item Pot/Pot"
                 ]
             },
             {
                 "name": "Annunaki Hot Spring Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
+                    "@Ancient Chaos/Annunaki Hot Spring Item Pot/Pot"
                 ]
             },
             {
                 "name": "Annunaki Hot Spring Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
+                    "@Ancient Chaos/Annunaki Hot Spring Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Path to Inferno Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(6))))"
+                    "@Ancient Chaos/Path to Inferno Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Abandon Your Desires Coin Pot #1",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
+                    "@Ancient Chaos/Abandon Your Desires Coin Pot #1/Pot"
                 ]
             }
         ]
@@ -2869,12 +2551,6 @@
     {
         "name": "Potsanity - Ancient Chaos (2)",
         "map_locations": [
-            {
-                "map": "Ancient Chaos",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -2890,35 +2566,35 @@
                 "name": "Abandon Your Desires Coin Pot #2",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
+                    "@Ancient Chaos/Abandon Your Desires Coin Pot #2/Pot"
                 ]
             },
             {
                 "name": "Abandon Your Desires Coin Pot #3",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
+                    "@Ancient Chaos/Abandon Your Desires Coin Pot #3/Pot"
                 ]
             },
             {
                 "name": "Abandon Your Desires Coin Pot #4",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
+                    "@Ancient Chaos/Abandon Your Desires Coin Pot #4/Pot"
                 ]
             },
             {
                 "name": "Shortcut Room Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom)"
+                    "@Ancient Chaos/Shortcut Room Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Shortcut Room Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom)"
+                    "@Ancient Chaos/Shortcut Room Item Pot/Pot"
                 ]
             }
         ]
@@ -2926,12 +2602,6 @@
     {
         "name": "Potsanity - Ancient Chaos (3)",
         "map_locations": [
-            {
-                "map": "Ancient Chaos",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -2947,35 +2617,35 @@
                 "name": "There is Nothing Here Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACTablet)"
+                    "@Ancient Chaos/There is Nothing Here Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Grail Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACTablet)"
+                    "@Ancient Chaos/Grail Item Pot/Pot"
                 ]
             },
             {
                 "name": "Queen of the Night Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACTablet)"
+                    "@Ancient Chaos/Queen of the Night Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Queen of the Night Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACTablet) and (HorizontalAttack)"
+                    "@Ancient Chaos/Queen of the Night Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Nine Eyes Wrong Side Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACTablet) and (((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit)) or Glitch(Costume Clip))"
+                    "@Ancient Chaos/Nine Eyes Wrong Side Coin Pot/Pot"
                 ]
             }
         ]
@@ -2983,12 +2653,6 @@
     {
         "name": "Potsanity - Ancient Chaos (4)",
         "map_locations": [
-            {
-                "map": "Ancient Chaos",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -3004,35 +2668,35 @@
                 "name": "Pre-Secret Shortcut Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACTablet) and (HorizontalAttack)"
+                    "@Ancient Chaos/Pre-Secret Shortcut Item Pot/Pot"
                 ]
             },
             {
                 "name": "Post-Secret Shortcut Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACTablet) and (HorizontalAttack)"
+                    "@Ancient Chaos/Post-Secret Shortcut Item Pot/Pot"
                 ]
             },
             {
                 "name": "Ziggurat of Destiny Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACMain)"
+                    "@Ancient Chaos/Ziggurat of Destiny Item Pot/Pot"
                 ]
             },
             {
                 "name": "Zhulong Blocked Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACMain)"
+                    "@Ancient Chaos/Zhulong Blocked Item Pot/Pot"
                 ]
             },
             {
                 "name": "Above Mantra Mural Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACMain)"
+                    "@Ancient Chaos/Above Mantra Mural Item Pot/Pot"
                 ]
             }
         ]
@@ -3040,12 +2704,6 @@
     {
         "name": "Potsanity - Ancient Chaos (5)",
         "map_locations": [
-            {
-                "map": "Ancient Chaos",
-                "x": 90,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 210,
@@ -3061,21 +2719,21 @@
                 "name": "Soul Gate Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBlood)"
+                    "@Ancient Chaos/Soul Gate Item Pot/Pot"
                 ]
             },
             {
                 "name": "Corridor of Blood Upper Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBlood)"
+                    "@Ancient Chaos/Corridor of Blood Upper Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Corridor of Blood Right Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBlood)"
+                    "@Ancient Chaos/Corridor of Blood Right Coin Pot/Pot"
                 ]
             }
         ]
@@ -3083,12 +2741,6 @@
     {
         "name": "Potsanity - Hall of Malice (1)",
         "map_locations": [
-            {
-                "map": "Hall of Malice",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -3104,35 +2756,35 @@
                 "name": "Below Entrance Gate Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMTop)"
+                    "@Hall of Malice/Below Entrance Gate Item Pot/Pot"
                 ]
             },
             {
                 "name": "Lernaean Hydra Room Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+                    "@Hall of Malice/Lernaean Hydra Room Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Nemean Lion Right Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack and CanWarp)"
+                    "@Hall of Malice/Nemean Lion Right Item Pot/Pot"
                 ]
             },
             {
                 "name": "Nemean Lion Left Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+                    "@Hall of Malice/Nemean Lion Left Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Below Grail Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+                    "@Hall of Malice/Below Grail Coin Pot/Pot"
                 ]
             }
         ]
@@ -3140,12 +2792,6 @@
     {
         "name": "Potsanity - Hall of Malice (2)",
         "map_locations": [
-            {
-                "map": "Hall of Malice",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -3161,35 +2807,35 @@
                 "name": "Delphyne Room Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (Has(Feather))"
+                    "@Hall of Malice/Delphyne Room Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Sphinx Room Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+                    "@Hall of Malice/Sphinx Room Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Crusher Trap Hidden Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (Has(Feather))"
+                    "@Hall of Malice/Crusher Trap Hidden Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Corridor of Blood Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+                    "@Hall of Malice/Corridor of Blood Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Fairylan Left Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM)"
+                    "@Hall of Malice/Fairylan Left Coin Pot/Pot"
                 ]
             }
         ]
@@ -3197,12 +2843,6 @@
     {
         "name": "Potsanity - Hall of Malice (3)",
         "map_locations": [
-            {
-                "map": "Hall of Malice",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -3218,35 +2858,35 @@
                 "name": "Fairylan Bottom Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM)"
+                    "@Hall of Malice/Fairylan Bottom Item Pot/Pot"
                 ]
             },
             {
                 "name": "Time Serdab Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path))"
+                    "@Hall of Malice/Time Serdab Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Time Serdab Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path))"
+                    "@Hall of Malice/Time Serdab Item Pot/Pot"
                 ]
             },
             {
                 "name": "Phaia Room Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
+                    "@Hall of Malice/Phaia Room Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Orthrus Approach Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
+                    "@Hall of Malice/Orthrus Approach Coin Pot/Pot"
                 ]
             }
         ]
@@ -3254,12 +2894,6 @@
     {
         "name": "Potsanity - Hall of Malice (4)",
         "map_locations": [
-            {
-                "map": "Hall of Malice",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -3275,7 +2909,7 @@
                 "name": "Orthrus Third Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
+                    "@Hall of Malice/Orthrus Third Coin Pot/Pot"
                 ]
             }
         ]
@@ -3283,12 +2917,6 @@
     {
         "name": "Potsanity - Eternal Prison - Doom (1)",
         "map_locations": [
-            {
-                "map": "Eternal Prison - Doom",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -3304,35 +2932,35 @@
                 "name": "Maze Clear Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDEntrance) and (HorizontalAttack)"
+                    "@Eternal Prison - Doom/Maze Clear Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Maze Clear Item Pot #1",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDEntrance) and (HorizontalAttack)"
+                    "@Eternal Prison - Doom/Maze Clear Item Pot #1/Pot"
                 ]
             },
             {
                 "name": "Maze Clear Item Pot #2",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDEntrance) and (HorizontalAttack)"
+                    "@Eternal Prison - Doom/Maze Clear Item Pot #2/Pot"
                 ]
             },
             {
                 "name": "Blikjandabol Lava Drop Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDMain) and ((Has(Gale Fibula) or CanStopTime) or (CanReach(EPG) and (Has(Claydoll Suit) or (Has(Ice Cloak) and Has(Anchor)) or Has(Feather))))"
+                    "@Eternal Prison - Doom/Blikjandabol Lava Drop Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Blikjandabol Lava Drop Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDMain) and ((Has(Gale Fibula) or CanStopTime) or (CanReach(EPG) and (Has(Claydoll Suit) or (Has(Ice Cloak) and Has(Anchor)) or Has(Feather))))"
+                    "@Eternal Prison - Doom/Blikjandabol Lava Drop Item Pot/Pot"
                 ]
             }
         ]
@@ -3340,12 +2968,6 @@
     {
         "name": "Potsanity - Eternal Prison - Doom (2)",
         "map_locations": [
-            {
-                "map": "Eternal Prison - Doom",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -3361,35 +2983,35 @@
                 "name": "Yuga Wheel Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDMain)"
+                    "@Eternal Prison - Doom/Yuga Wheel Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Left Ladder Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDMain)"
+                    "@Eternal Prison - Doom/Left Ladder Weight Pot/Pot"
                 ]
             },
             {
                 "name": "Sixth Hell Gate Approach Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDMain) and (Has(Feather))"
+                    "@Eternal Prison - Doom/Sixth Hell Gate Approach Item Pot/Pot"
                 ]
             },
             {
                 "name": "Seventh Hell Gate Approach Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDTop)"
+                    "@Eternal Prison - Doom/Seventh Hell Gate Approach Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Seventh Hell Gate Approach Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDTop)"
+                    "@Eternal Prison - Doom/Seventh Hell Gate Approach Item Pot/Pot"
                 ]
             }
         ]
@@ -3397,12 +3019,6 @@
     {
         "name": "Potsanity - Eternal Prison - Doom (3)",
         "map_locations": [
-            {
-                "map": "Eternal Prison - Doom",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -3418,14 +3034,14 @@
                 "name": "Sixth Hell Gate Exit Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDTop)"
+                    "@Eternal Prison - Doom/Sixth Hell Gate Exit Item Pot/Pot"
                 ]
             },
             {
                 "name": "Sixth Hell Gate Exit Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDTop)"
+                    "@Eternal Prison - Doom/Sixth Hell Gate Exit Coin Pot/Pot"
                 ]
             }
         ]
@@ -3433,12 +3049,6 @@
     {
         "name": "Potsanity - Eternal Prison - Gloom (1)",
         "map_locations": [
-            {
-                "map": "Eternal Prison - Gloom",
-                "x": 10,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 50,
@@ -3454,35 +3064,35 @@
                 "name": "Below Garm Statue Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle))"
+                    "@Eternal Prison - Gloom/Below Garm Statue Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Mantra Mural Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack and Has(Enga Musica))"
+                    "@Eternal Prison - Gloom/Mantra Mural Item Pot/Pot"
                 ]
             },
             {
                 "name": "Weapon Vault Item Pot #2",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle))"
+                    "@Eternal Prison - Gloom/Weapon Vault Item Pot #2/Pot"
                 ]
             },
             {
                 "name": "Weapon Vault Item Pot #1",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle) and HorizontalAttack)"
+                    "@Eternal Prison - Gloom/Weapon Vault Item Pot #1/Pot"
                 ]
             },
             {
                 "name": "Software Mural Item Pot #2",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                    "@Eternal Prison - Gloom/Software Mural Item Pot #2/Pot"
                 ]
             }
         ]
@@ -3490,12 +3100,6 @@
     {
         "name": "Potsanity - Eternal Prison - Gloom (2)",
         "map_locations": [
-            {
-                "map": "Eternal Prison - Gloom",
-                "x": 30,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 90,
@@ -3511,35 +3115,35 @@
                 "name": "Software Mural Item Pot #1",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG)"
+                    "@Eternal Prison - Gloom/Software Mural Item Pot #1/Pot"
                 ]
             },
             {
                 "name": "Gate with Glowing Eyes Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(6))))"
+                    "@Eternal Prison - Gloom/Gate with Glowing Eyes Item Pot/Pot"
                 ]
             },
             {
                 "name": "Soul Gate Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "@Eternal Prison - Gloom/Soul Gate Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Under River Styx Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG)"
+                    "@Eternal Prison - Gloom/Under River Styx Item Pot/Pot"
                 ]
             },
             {
                 "name": "Under River Styx Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                    "@Eternal Prison - Gloom/Under River Styx Coin Pot/Pot"
                 ]
             }
         ]
@@ -3547,12 +3151,6 @@
     {
         "name": "Potsanity - Eternal Prison - Gloom (3)",
         "map_locations": [
-            {
-                "map": "Eternal Prison - Gloom",
-                "x": 50,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 130,
@@ -3568,35 +3166,35 @@
                 "name": "Leap of Faith Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                    "@Eternal Prison - Gloom/Leap of Faith Item Pot/Pot"
                 ]
             },
             {
                 "name": "Next to Grail Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                    "@Eternal Prison - Gloom/Next to Grail Item Pot/Pot"
                 ]
             },
             {
                 "name": "Fourth Hell Gate Approach Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                    "@Eternal Prison - Gloom/Fourth Hell Gate Approach Item Pot/Pot"
                 ]
             },
             {
                 "name": "Key Fairy Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                    "@Eternal Prison - Gloom/Key Fairy Item Pot/Pot"
                 ]
             },
             {
                 "name": "Key Fairy Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG)"
+                    "@Eternal Prison - Gloom/Key Fairy Coin Pot/Pot"
                 ]
             }
         ]
@@ -3604,12 +3202,6 @@
     {
         "name": "Potsanity - Eternal Prison - Gloom (4)",
         "map_locations": [
-            {
-                "map": "Eternal Prison - Gloom",
-                "x": 70,
-                "y": 10,
-                "size": 15
-            },
             {
                 "map": "Full Map",
                 "x": 170,
@@ -3625,21 +3217,21 @@
                 "name": "Second Hell Gate Approach Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (Has(Grapple Claw))"
+                    "@Eternal Prison - Gloom/Second Hell Gate Approach Item Pot/Pot"
                 ]
             },
             {
-                "name": "Fifth Hell Gate Exit Coin Pot",
+                "name": "Fourth Hell Gate Exit Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather) and Has(Glove)))"
+                    "@Eternal Prison - Gloom/Fourth Hell Gate Exit Coin Pot/Pot"
                 ]
             },
             {
                 "name": "Right of Prison Cells Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                    "@Eternal Prison - Gloom/Right of Prison Cells Coin Pot/Pot"
                 ]
             }
         ]

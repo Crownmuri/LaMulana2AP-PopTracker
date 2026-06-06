@@ -1,473 +1,647 @@
 [
-  {
-    "name": "Hall of Malice",
-    "children": [
-        {
-            "name": "Map Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 2357,
-                    "y": 2373,
-                    "size": 50
-                },
-                {
-                    "map": "Hall of Malice",
-                    "x": 721,
-                    "y": 38
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430123",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430123|CanReach(HoMTop)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoMTop)"
-            ]
-        },
-      {
-        "name": "HoM Ladder",
-        "sections": [
-          {
-            "name": "Puzzle",
-            "item_count": 1,
-            "hosted_item": "boss_hom_ladder"
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(HoMTop)"
-        ]
-      },
-      {
-        "name": "Fairylan",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2845,
-            "y": 2575,
-            "size": 50
-          },
-          {
-            "map": "Hall of Malice",
-            "x": 1725,
-            "y": 442
-          }
-        ],
-        "sections": [
+    {
+        "name": "Hall of Malice",
+        "children": [
             {
-                "name": "Shop Slot 1",
-                "item_count": 1,
+                "name": "Map Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2357,
+                        "y": 2373,
+                        "size": 50
+                    },
+                    {
+                        "map": "Hall of Malice",
+                        "x": 721,
+                        "y": 38
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430123",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430123|CanReach(HoMTop)"
+                        ]
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (Has(Claydoll Suit))"
+                    "^$lm2_logic|CanReach(HoMTop)"
                 ]
             },
             {
-                "name": "Shop Slot 2",
-                "item_count": 1,
+                "name": "HoM Ladder",
+                "sections": [
+                    {
+                        "name": "Puzzle",
+                        "item_count": 1,
+                        "hosted_item": "boss_hom_ladder"
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (Has(Claydoll Suit))"
+                    "^$lm2_logic|CanReach(HoMTop)"
                 ]
             },
             {
-                "name": "Shop Slot 3",
-                "item_count": 1,
+                "name": "Fairylan",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2845,
+                        "y": 2575,
+                        "size": 50
+                    },
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1725,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(HoM) and (Has(Claydoll Suit))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(HoM) and (Has(Claydoll Suit))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(HoM) and (Has(Claydoll Suit))"
+                        ]
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (Has(Claydoll Suit))"
+                    "^$lm2_logic|CanReach(HoM)"
+                ]
+            },
+            {
+                "name": "Time Puzzle Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2021,
+                        "y": 2575,
+                        "size": 50
+                    },
+                    {
+                        "map": "Hall of Malice",
+                        "x": 23,
+                        "y": 424
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430028",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430028|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and Has(Feather) and (CanStopTime or TrickyLogic))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and Has(Feather) and (CanStopTime or TrickyLogic))"
+                ]
+            },
+            {
+                "name": "Chest Behind Ladon",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2701,
+                        "y": 2519,
+                        "size": 50
+                    },
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1406,
+                        "y": 331
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430150",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430150|CanReach(HoMAwoken) and (IsDead(HoM Right Path) and Has(Death Sigil))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path) and Has(Death Sigil))"
+                ]
+            },
+            {
+                "name": "Echidna",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2307,
+                        "y": 2657,
+                        "size": 50
+                    },
+                    {
+                        "map": "Hall of Malice",
+                        "x": 624,
+                        "y": 608,
+                        "size": 50
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Guardian",
+                        "item_count": 1,
+                        "hosted_item": "boss_echidna",
+                        "access_rules": [
+                            "^$lm2_logic|(HasAnkhFor(Echidna) and (IsDead(HoM Left Path) and IsDead(HoM Middle Path) and Has(Feather) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe))) or (OrbCount(6) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))))) or (MinimalLogic and (HasAnkhFor(Echidna) and (IsDead(HoM Left Path) and IsDead(HoM Middle Path) and Has(Feather))))"
+                        ]
+                    },
+                    {
+                        "name": "Echidna Reward",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430012",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430012|CanReach(HoMAwoken) and (IsDead(Echidna))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken)"
+                ]
+            },
+            {
+                "name": "Flame Torc Breakable Wall Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2593,
+                        "y": 2642,
+                        "size": 50
+                    },
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1197,
+                        "y": 581
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430097",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430097|CanReach(HoMAwoken) and (Has(Flame Torc) and (Has(Leather Whip) or Has(Axe) or (Has(Katana) and Has(Vajra))) and IsDead(HoM Right Path))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Flame Torc) and (Has(Leather Whip) or Has(Axe) or (Has(Katana) and Has(Vajra))) and IsDead(HoM Right Path))"
+                ]
+            },
+            {
+                "name": "HoM Left Path",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_hom_left_path"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and CanKill(HoM Left Path)"
+                ]
+            },
+            {
+                "name": "HoM Middle Path",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_hom_middle_path"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and CanKill(HoM Middle Path)"
+                ]
+            },
+            {
+                "name": "HoM Right Path",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_hom_right_path"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and CanKill(HoM Right Path)"
+                ]
+            },
+            {
+                "name": "Below Entrance Gate Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 514,
+                        "y": 73,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMTop)"
+                ]
+            },
+            {
+                "name": "Lernaean Hydra Room Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 265,
+                        "y": 366,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Nemean Lion Right Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 385,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack and CanWarp)"
+                ]
+            },
+            {
+                "name": "Nemean Lion Left Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 265,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Below Grail Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 623,
+                        "y": 256,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Delphyne Room Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 514,
+                        "y": 293,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (Has(Feather))"
+                ]
+            },
+            {
+                "name": "Sphinx Room Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 974,
+                        "y": 255,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Crusher Trap Hidden Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1196,
+                        "y": 183,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (Has(Feather))"
+                ]
+            },
+            {
+                "name": "Corridor of Blood Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1463,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Fairylan Left Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1600,
+                        "y": 476,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM)"
+                ]
+            },
+            {
+                "name": "Fairylan Bottom Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1730,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM)"
+                ]
+            },
+            {
+                "name": "Time Serdab Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 29,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path))"
+                ]
+            },
+            {
+                "name": "Time Serdab Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 15,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path))"
+                ]
+            },
+            {
+                "name": "Phaia Room Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1023,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
+                ]
+            },
+            {
+                "name": "Orthrus Approach Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1023,
+                        "y": 562,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
+                ]
+            },
+            {
+                "name": "Orthrus Third Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 898,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
                 ]
             }
         ],
         "access_rules": [
-          "^$lm2_logic|CanReach(HoM)"
+            "^$lm2_logic|CanReach(HoM) or CanReach(HoMAwoken) or CanReach(HoMTop)"
         ]
-      },
-        {
-            "name": "Time Puzzle Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 2021,
-                    "y": 2575,
-                    "size": 50
-                },
-                {
-                    "map": "Hall of Malice",
-                    "x": 23,
-                    "y": 424
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430028",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430028|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and Has(Feather) and (CanStopTime or TrickyLogic))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path) and Has(Feather) and (CanStopTime or TrickyLogic))"
-            ]
-        },
-        {
-            "name": "Chest Behind Ladon",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 2701,
-                    "y": 2519,
-                    "size": 50
-                },
-                {
-                    "map": "Hall of Malice",
-                    "x": 1406,
-                    "y": 331
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430150",
-                    "clear_as_group": false,
-
-                    "access_rules": [
-                        "^$lm2_cursed|430150|CanReach(HoMAwoken) and (IsDead(HoM Right Path) and Has(Death Sigil))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path) and Has(Death Sigil))"
-            ]
-        },
-      {
-        "name": "Echidna",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2307,
-            "y": 2657,
-            "size": 50
-          },
-            {
-                "map": "Hall of Malice",
-                "x": 624,
-                "y": 608,
-                "size": 50
-
-            }
-        ],
-        "sections": [
-            {
-                "name": "Guardian",
-                "item_count": 1,
-                "hosted_item": "boss_echidna",
-                "access_rules": [
-                    "^$lm2_logic|(HasAnkhFor(Echidna) and (IsDead(HoM Left Path) and IsDead(HoM Middle Path) and Has(Feather) and ((OrbCount(8) and (Has(Flail Whip) or Has(Axe))) or (OrbCount(6) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))))) or (MinimalLogic and (HasAnkhFor(Echidna) and (IsDead(HoM Left Path) and IsDead(HoM Middle Path) and Has(Feather))))"
-                ]
-            },
-            {
-                "name": "Echidna Reward",
-                "item_count": 1,
-                "hosted_item": "cursed_430012",
-                "clear_as_group": false,
-                "access_rules": [
-                    "^$lm2_cursed|430012|CanReach(HoMAwoken) and (IsDead(Echidna))"
-                ]
-            }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(HoMAwoken)"
-        ]
-      },
-        {
-            "name": "Flame Torc Breakable Wall Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 2593,
-                    "y": 2642,
-                    "size": 50
-                },
-                {
-                    "map": "Hall of Malice",
-                    "x": 1197,
-                    "y": 581
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430097",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430097|CanReach(HoMAwoken) and (Has(Flame Torc) and (Has(Leather Whip) or Has(Axe) or (Has(Katana) and Has(Vajra))) and IsDead(HoM Right Path))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoMAwoken) and (Has(Flame Torc) and (Has(Leather Whip) or Has(Axe) or (Has(Katana) and Has(Vajra))) and IsDead(HoM Right Path))"
-            ]
-        },
-      {
-        "name": "HoM Left Path",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_hom_left_path"
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(HoMAwoken) and CanKill(HoM Left Path)"
-        ]
-      },
-      {
-        "name": "HoM Middle Path",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_hom_middle_path"
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(HoMAwoken) and CanKill(HoM Middle Path)"
-        ]
-      },
-      {
-        "name": "HoM Right Path",
-        "sections": [
-          {
-            "name": "Miniboss",
-            "item_count": 1,
-            "hosted_item": "boss_hom_right_path"
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(HoMAwoken) and CanKill(HoM Right Path)"
-        ]
-      },
-        {
-            "name": "Below Entrance Gate Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoMTop)"
-            ]
-        },
-        {
-            "name": "Lernaean Hydra Room Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Nemean Lion Right Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack and CanWarp)"
-            ]
-        },
-        {
-            "name": "Nemean Lion Left Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Below Grail Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Delphyne Room Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoM) and (Has(Feather))"
-            ]
-        },
-        {
-            "name": "Sphinx Room Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Crusher Trap Hidden Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoM) and (Has(Feather))"
-            ]
-        },
-        {
-            "name": "Corridor of Blood Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Fairylan Left Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoM)"
-            ]
-        },
-        {
-            "name": "Fairylan Bottom Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoM)"
-            ]
-        },
-        {
-            "name": "Time Serdab Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path))"
-            ]
-        },
-        {
-            "name": "Time Serdab Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path))"
-            ]
-        },
-        {
-            "name": "Phaia Room Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
-            ]
-        },
-        {
-            "name": "Orthrus Approach Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
-            ]
-        },
-        {
-            "name": "Orthrus Third Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
-            ]
-        }
-    ],
-    "access_rules": [
-      "^$lm2_logic|CanReach(HoM) or CanReach(HoMAwoken) or CanReach(HoMTop)"
-    ]
-  }
+    }
 ]

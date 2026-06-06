@@ -1,744 +1,1010 @@
 [
-  {
-    "name": "Icefire Treetop",
-    "children": [
-      {
-        "name": "IT Research Papers",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1895,
-            "y": 1401,
-            "size": 50
-          },
-          {
-            "map": "Icefire Treetop",
-            "x": 1046,
-            "y": 379
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(ITEntrance) and (CanWarp or Has(Feather) or Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2) or ((Has(Feather) or Has(Gale Fibula)) and CanReach(IT Right)))"
-        ],
-        "visibility_rules": [ "setting_random_research" ]
-      },
-      {
-        "name": "Mino the Bomb Guy",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1733,
-            "y": 1444,
-            "size": 50
-          },
-          {
-            "map": "Icefire Treetop",
-            "x": 723,
-            "y": 468
-          }
-        ],
-        "sections": [
+    {
+        "name": "Icefire Treetop",
+        "children": [
             {
-                "name": "Shop Slot 1",
-                "item_count": 1,
+                "name": "IT Research Papers",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1895,
+                        "y": 1401,
+                        "size": 50
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1046,
+                        "y": 379
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)"
+                    "^$lm2_logic|CanReach(ITEntrance) and (CanWarp or Has(Feather) or Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2) or ((Has(Feather) or Has(Gale Fibula)) and CanReach(IT Right)))"
+                ],
+                "visibility_rules": [
+                    "setting_random_research"
                 ]
             },
             {
-                "name": "Shop Slot 2",
-                "item_count": 1,
+                "name": "Mino the Bomb Guy",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1733,
+                        "y": 1444,
+                        "size": 50
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 723,
+                        "y": 468
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)"
+                        ]
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)"
+                    "^$lm2_logic|CanReach(ITBottom)"
                 ]
             },
             {
-                "name": "Shop Slot 3",
-                "item_count": 1,
+                "name": "Skull in Background Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1972,
+                        "y": 1444,
+                        "size": 50
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1200,
+                        "y": 474
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430033",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430033|CanReach(ITBottom)"
+                        ]
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)"
+                    "^$lm2_logic|CanReach(ITBottom)"
+                ]
+            },
+            {
+                "name": "Surtr",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1703,
+                        "y": 1334,
+                        "size": 50
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 624,
+                        "y": 182,
+                        "size": 50
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Guardian",
+                        "item_count": 1,
+                        "hosted_item": "boss_surtr",
+                        "access_rules": [
+                            "^$lm2_logic|(HasAnkhFor(Surtr) and (CanReach(ITSinmara) and (Has(Light Scythe) and (Has(Feather) or Has(Ice Cloak)) and (((Has(Knife) or Has(Rapier)) and OrbCount(7)) or ((Has(Chain Whip) or ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and Has(Ring))) and OrbCount(6)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana) or ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Ring))) and OrbCount(5)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(4)))))) or (MinimalLogic and (HasAnkhFor(Surtr) and (CanReach(ITSinmara) and Has(Light Scythe))))"
+                        ]
+                    },
+                    {
+                        "name": "Surtr Reward",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430022",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430022|CanReach(ITSinmara) and (IsDead(Surtr) and HorizontalAttack)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITSinmara)"
+                ]
+            },
+            {
+                "name": "Map Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1611,
+                        "y": 1286,
+                        "size": 50
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 479,
+                        "y": 158
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430114",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430114|CanReach(ITLeft)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft)"
+                ]
+            },
+            {
+                "name": "Vedfolnir Reward",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1565,
+                        "y": 1444,
+                        "size": 50
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 387,
+                        "y": 471
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430134",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430134|CanReach(ITLeft) and ((Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(1)) and IsDead(Vedfolnir))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft) and ((Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(1)) and IsDead(Vedfolnir))"
+                ]
+            },
+            {
+                "name": "Arrow Trap Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1432,
+                        "y": 1286,
+                        "size": 50
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 120,
+                        "y": 158
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430053",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430053|CanReach(ITLeft) and (Has(Birth Sigil) and CanWarp and ((Has(Leather Whip) or Has(Chain Whip) or Has(Rapier) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) or (Has(Knife) and (Has(Feather) or Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (Has(Axe) and (Has(Bracelet) or (Has(Spaulder) and (Has(Feather) or Has(Gauntlet)))))))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft) and (Has(Birth Sigil) and CanWarp and ((Has(Leather Whip) or Has(Chain Whip) or Has(Rapier) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) or (Has(Knife) and (Has(Feather) or Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (Has(Axe) and (Has(Bracelet) or (Has(Spaulder) and (Has(Feather) or Has(Gauntlet)))))))"
+                ]
+            },
+            {
+                "name": "BTK",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1403,
+                        "y": 1219,
+                        "size": 50
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 63,
+                        "y": 23
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ITLeft) and ((HorizontalAttack and Has(Feather)) or MeleeAttack or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (CanWarp or Has(Feather))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit) or (TrickyLogic and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ITLeft) and ((HorizontalAttack and Has(Feather)) or MeleeAttack or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (CanWarp or Has(Feather))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit) or (TrickyLogic and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ITLeft) and ((HorizontalAttack and Has(Feather)) or MeleeAttack or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (CanWarp or Has(Feather))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit) or (TrickyLogic and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft)"
+                ]
+            },
+            {
+                "name": "Vedfolnir",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 374,
+                        "y": 433,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_vedfolnir"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft) and CanKill(Vedfolnir)"
+                ]
+            },
+            {
+                "name": "Lowering Statue Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1891,
+                        "y": 1230,
+                        "size": 50
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1020,
+                        "y": 23
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430018",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430018|CanReach(ITRight) and (Has(Life Sigil))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight) and (Has(Life Sigil))"
+                ]
+            },
+            {
+                "name": "Ratatoskr 3 Reward",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2183,
+                        "y": 1310,
+                        "size": 50
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1622,
+                        "y": 206
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430143",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430143|CanReach(ITRight) and (IsDead(Ratatoskr 3))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight) and (IsDead(Ratatoskr 3))"
+                ]
+            },
+            {
+                "name": "Sunken Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2030,
+                        "y": 1468,
+                        "size": 50
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1316,
+                        "y": 512
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430105",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430105|CanReach(ITRight) and ((Has(Claydoll Suit) or ((Has(Anchor) or Has(Fish Suit)) and (OrbCount(1) or Has(Scalesphere)))) and HorizontalAttack)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight) and ((Has(Claydoll Suit) or ((Has(Anchor) or Has(Fish Suit)) and (OrbCount(1) or Has(Scalesphere)))) and HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Ratatoskr 3",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1622,
+                        "y": 169,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_ratatoskr_3"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight) and CanKill(Ratatoskr 3)"
+                ]
+            },
+            {
+                "name": "Vidofnir",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 873,
+                        "y": 716,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_vidofnir"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITVidofnir) and CanKill(Vidofnir)"
+                ]
+            },
+            {
+                "name": "Mino Center Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 614,
+                        "y": 475,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITBottom)"
+                ]
+            },
+            {
+                "name": "Mino Bottom Left Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 539,
+                        "y": 499,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITBottom)"
+                ]
+            },
+            {
+                "name": "Mino Top Right Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 735,
+                        "y": 427,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITBottom)"
+                ]
+            },
+            {
+                "name": "Mino Bottom Right Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 735,
+                        "y": 499,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITBottom) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Bombable Wall Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 706,
+                        "y": 562,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITBottom) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Feather))"
+                ]
+            },
+            {
+                "name": "Above Vidofnir Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 935,
+                        "y": 586,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITBottom)"
+                ]
+            },
+            {
+                "name": "Skull in Background Upper Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1037,
+                        "y": 451,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITBottom)"
+                ]
+            },
+            {
+                "name": "Below Frontside Grail Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 467,
+                        "y": 389,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITSinmara) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Surtr's Antechamber Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 734,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITSinmara) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(4))))"
+                ]
+            },
+            {
+                "name": "BTK Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 188,
+                        "y": 72,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft) and ((MeleeAttack or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Feather) and (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))) or (TrickyLogic and (True)))"
+                ]
+            },
+            {
+                "name": "Altar of Life Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 210,
+                        "y": 255,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Altar of Life Approach Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 82,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft)"
+                ]
+            },
+            {
+                "name": "Fireside Elevator Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 263,
+                        "y": 159,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft)"
+                ]
+            },
+            {
+                "name": "Vedfolnir Left Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 264,
+                        "y": 499,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(2))))"
+                ]
+            },
+            {
+                "name": "Vedfolnir Right Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 418,
+                        "y": 475,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(2))))"
+                ]
+            },
+            {
+                "name": "Ratatoskr Surprise Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 734,
+                        "y": 47,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Lowering Statue Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1011,
+                        "y": 72,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight)"
+                ]
+            },
+            {
+                "name": "Great Bird Nest Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1090,
+                        "y": 206,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight)"
+                ]
+            },
+            {
+                "name": "Niflheim Stalactites Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1200,
+                        "y": 341,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)) or (HorizontalAttack and (Has(Feather) or (Has(Grapple Claw) and CanReach(ITEntrance)))))"
+                ]
+            },
+            {
+                "name": "Backside Grail Hidden Coin Pot #1",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1476,
+                        "y": 96,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Anchor) or Has(Fish Suit))))"
+                ]
+            },
+            {
+                "name": "Iceside Elevator Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1483,
+                        "y": 293,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight)"
+                ]
+            },
+            {
+                "name": "Backside Grail Hidden Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1521,
+                        "y": 96,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
+                ]
+            },
+            {
+                "name": "Backside Grail Hidden Coin Pot #2",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1535,
+                        "y": 96,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
+                ]
+            },
+            {
+                "name": "Left Ladder Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1387,
+                        "y": 24,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRightLeftLadder) and (HorizontalAttack)"
                 ]
             }
         ],
         "access_rules": [
-          "^$lm2_logic|CanReach(ITBottom)"
+            "^$lm2_logic|CanReach(ITBottom) or CanReach(ITEntrance) or CanReach(ITLeft) or CanReach(ITRight) or CanReach(ITSinmara) or CanReach(ITVidofnir)"
         ]
-      },
-        {
-            "name": "Skull in Background Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1972,
-                    "y": 1444,
-                    "size": 50
-                },
-                {
-                    "map": "Icefire Treetop",
-                    "x": 1200,
-                    "y": 474
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430033",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430033|CanReach(ITBottom)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ITBottom)"
-            ]
-        },
-        {
-            "name": "Surtr",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1703,
-                    "y": 1334,
-                    "size": 50
-                },
-                {
-                    "map": "Icefire Treetop",
-                    "x": 624,
-                    "y": 182,
-                    "size": 50
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Guardian",
-                    "item_count": 1,
-                    "hosted_item": "boss_surtr",
-                    "access_rules": [
-                        "^$lm2_logic|(HasAnkhFor(Surtr) and (CanReach(ITSinmara) and (Has(Light Scythe) and (Has(Feather) or Has(Ice Cloak)) and (((Has(Knife) or Has(Rapier)) and OrbCount(7)) or ((Has(Chain Whip) or ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and Has(Ring))) and OrbCount(6)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana) or ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Ring))) and OrbCount(5)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(4)))))) or (MinimalLogic and (HasAnkhFor(Surtr) and (CanReach(ITSinmara) and Has(Light Scythe))))"
-                    ]
-                },
-                {
-                    "name": "Surtr Reward",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430022",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430022|CanReach(ITSinmara) and (IsDead(Surtr) and HorizontalAttack)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ITSinmara)"
-            ]
-        },
-        {
-            "name": "Map Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1611,
-                    "y": 1286,
-                    "size": 50
-                },
-                {
-                    "map": "Icefire Treetop",
-                    "x": 479,
-                    "y": 158
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430114",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430114|CanReach(ITLeft)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ITLeft)"
-            ]
-        },
-        {
-            "name": "Vedfolnir Reward",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1565,
-                    "y": 1444,
-                    "size": 50
-                },
-                {
-                    "map": "Icefire Treetop",
-                    "x": 387,
-                    "y": 471
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430134",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430134|CanReach(ITLeft) and ((Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(1)) and IsDead(Vedfolnir))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ITLeft) and ((Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(1)) and IsDead(Vedfolnir))"
-            ]
-        },
-        {
-            "name": "Arrow Trap Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1432,
-                    "y": 1286,
-                    "size": 50
-                },
-                {
-                    "map": "Icefire Treetop",
-                    "x": 120,
-                    "y": 158
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430053",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430053|CanReach(ITLeft) and (Has(Birth Sigil) and CanWarp and ((Has(Leather Whip) or Has(Chain Whip) or Has(Rapier) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) or (Has(Knife) and (Has(Feather) or Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (Has(Axe) and (Has(Bracelet) or (Has(Spaulder) and (Has(Feather) or Has(Gauntlet)))))))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ITLeft) and (Has(Birth Sigil) and CanWarp and ((Has(Leather Whip) or Has(Chain Whip) or Has(Rapier) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) or (Has(Knife) and (Has(Feather) or Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or (Has(Axe) and (Has(Bracelet) or (Has(Spaulder) and (Has(Feather) or Has(Gauntlet)))))))"
-            ]
-        },
-      {
-        "name": "BTK",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1403,
-            "y": 1219,
-            "size": 50
-          },
-          {
-            "map": "Icefire Treetop",
-            "x": 63,
-            "y": 23
-          }
-        ],
-        "sections": [
-          {
-            "name": "Shop Slot 1",
-            "item_count": 1,
-            "access_rules": [
-              "^$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun)))) and Has(Feather)))"
-            ]
-          },
-            {
-                "name": "Shop Slot 2",
-                "item_count": 1,
-                "access_rules": [
-                    "^$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun)))) and Has(Feather)))"
-                ]
-            },
-            {
-                "name": "Shop Slot 3",
-                "item_count": 1,
-                "access_rules": [
-                    "^$lm2_logic|CanReach(ITLeft) and (MeleeAttack or Has(Claydoll Suit) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun)))) and Has(Feather)))"
-                ]
-            }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(ITLeft)"
-        ]
-      },
-        {
-            "name": "Vedfolnir",
-            "map_locations": [
-                {
-                    "map": "Icefire Treetop",
-                    "x": 374,
-                    "y": 433,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_vedfolnir"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ITLeft) and CanKill(Vedfolnir)"
-            ]
-        },
-        {
-            "name": "Lower Statue Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1891,
-                    "y": 1230,
-                    "size": 50
-                },
-                {
-                    "map": "Icefire Treetop",
-                    "x": 1020,
-                    "y": 23
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430018",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430018|CanReach(ITRight) and (Has(Life Sigil))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ITRight) and (Has(Life Sigil))"
-            ]
-        },
-        {
-            "name": "Ratatoskr 3 Reward",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 2183,
-                    "y": 1310,
-                    "size": 50
-                },
-                {
-                    "map": "Icefire Treetop",
-                    "x": 1622,
-                    "y": 206
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430143",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430143|CanReach(ITRight) and (IsDead(Ratatoskr 3))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ITRight) and (IsDead(Ratatoskr 3))"
-            ]
-        },
-        {
-            "name": "Sunken Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 2030,
-                    "y": 1468,
-                    "size": 50
-                },
-                {
-                    "map": "Icefire Treetop",
-                    "x": 1316,
-                    "y": 512
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430105",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430105|CanReach(ITRight) and ((Has(Claydoll Suit) or ((Has(Anchor) or Has(Fish Suit)) and (OrbCount(1) or Has(Scalesphere)))) and HorizontalAttack)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ITRight) and ((Has(Claydoll Suit) or ((Has(Anchor) or Has(Fish Suit)) and (OrbCount(1) or Has(Scalesphere)))) and HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Ratatoskr 3",
-            "map_locations": [
-                {
-                    "map": "Icefire Treetop",
-                    "x": 1622,
-                    "y": 169,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_ratatoskr_3"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ITRight) and CanKill(Ratatoskr 3)"
-            ]
-        },
-        {
-            "name": "Vidofnir",
-            "map_locations": [
-                {
-                    "map": "Icefire Treetop",
-                    "x": 873,
-                    "y": 716,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_vidofnir"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ITVidofnir) and CanKill(Vidofnir)"
-            ]
-        },
-      {
-          "name": "Mino Center Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITBottom)"
-          ]
-      },
-      {
-          "name": "Mino Bottom Left Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITBottom)"
-          ]
-      },
-      {
-          "name": "Mino Top Right Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITBottom)"
-          ]
-      },
-      {
-          "name": "Mino Bottom Right Weight Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITBottom) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Bombable Wall Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITBottom) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Feather))"
-          ]
-      },
-      {
-          "name": "Above Vidofnir Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITBottom)"
-          ]
-      },
-      {
-          "name": "Skull in Background Upper Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITBottom)"
-          ]
-      },
-      {
-          "name": "Below Frontside Grail Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITSinmara) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Surtr's Antechamber Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITSinmara) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(2))))"
-          ]
-      },
-      {
-          "name": "BTK Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITLeft) and ((MeleeAttack or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Feather) and (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))) or (TrickyLogic and (True)))"
-          ]
-      },
-      {
-          "name": "Altar of Life Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Altar of Life Approach Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITLeft)"
-          ]
-      },
-      {
-          "name": "Fireside Elevator Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITLeft)"
-          ]
-      },
-      {
-          "name": "Vedfolnir Left Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(2))))"
-          ]
-      },
-      {
-          "name": "Vedfolnir Right Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(2))))"
-          ]
-      },
-      {
-          "name": "Ratatoskr Surprise Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Lower Statue Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITRight)"
-          ]
-      },
-      {
-          "name": "Great Bird Nest Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITRight)"
-          ]
-      },
-      {
-          "name": "Niflheim Stalactites Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITRight) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)) or (HorizontalAttack and (Has(Feather) or (Has(Grapple Claw) and CanReach(ITEntrance)))))"
-          ]
-      },
-      {
-          "name": "Backside Grail Hidden Coin Pot #1",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Anchor) or Has(Fish Suit))))"
-          ]
-      },
-      {
-          "name": "Iceside Elevator Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITRight)"
-          ]
-      },
-      {
-          "name": "Backside Grail Hidden Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
-          ]
-      },
-      {
-          "name": "Backside Grail Hidden Coin Pot #2",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
-          ]
-      },
-      {
-          "name": "Left Ladder Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(ITRightLeftLadder) and (HorizontalAttack)"
-          ]
-      }
-    ],
-    "access_rules": [
-      "^$lm2_logic|CanReach(ITBottom) or CanReach(ITEntrance) or CanReach(ITLeft) or CanReach(ITRight) or CanReach(ITSinmara) or CanReach(ITVidofnir)"
-    ]
-  }
+    }
 ]

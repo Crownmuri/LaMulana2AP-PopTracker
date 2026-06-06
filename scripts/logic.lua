@@ -603,7 +603,7 @@ local EVENT_LOGIC = {
     ["griffin"] = "CanReach(HLSpun) and (Has(Gale Fibula) or CanStopTime) and Has(Glove) and Has(Life Sigil) and IsDead(Glasya Labolas) and OrbCount(2)",
 
     -- Valhalla
-    ["vucub_caquiz"] = "CanReach(ValhallaMain) and Has(Origin Sigil) and (((Has(Leather Whip) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(1)) or (Has(Chain Whip) or Has(Rapier) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))))",
+    ["vucub_caquix"] = "CanReach(ValhallaMain) and Has(Origin Sigil) and (((Has(Leather Whip) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(1)) or (Has(Chain Whip) or Has(Rapier) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))))",
     ["jalandhara"] = "CanReach(ValhallaMain) and Has(Life Sigil) and Has(Feather) and OrbCount(4) and (Has(Chain Whip) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Mjolnir)))",
 
     -- Dark Star Lords Mausoleum
@@ -665,7 +665,7 @@ local EVENT_HARDLOGIC = {
     ["belial"] = "CanReach(TSBlood) and Has(Life Sigil) and Has(Cog of Antiquity) and (Has(Claydoll Suit) or Has(Ice Cloak)) and Has(Egg of Creation)",
     ["glasya_labolas"] = "CanReach(HLSpun) and CanWarp",
     ["griffin"] = "CanReach(HLSpun) and (Has(Gale Fibula) or CanStopTime) and Has(Glove) and Has(Life Sigil) and IsDead(Glasya Labolas)",
-    ["vucub_caquiz"] = "CanReach(ValhallaMain) and Has(Origin Sigil)",
+    ["vucub_caquix"] = "CanReach(ValhallaMain) and Has(Origin Sigil)",
     ["jalandhara"] = "CanReach(ValhallaMain) and Has(Life Sigil) and Has(Feather)",
     ["sekhmet"] = "CanReach(DSLMMain) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth)",
     ["angra_mainyu"] = "CanReach(DSLMTop) and Has(Mjolnir) and (Has(Feather) or CanWarp or CanReach(DSLMMain))",

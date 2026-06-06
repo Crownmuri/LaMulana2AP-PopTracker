@@ -232,234 +232,432 @@
             },
             {
                 "name": "Below Garm Statue Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 370,
+                        "y": 721,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle))"
                 ]
             },
             {
                 "name": "Mantra Mural Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 723,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack and Has(Enga Musica))"
                 ]
             },
             {
                 "name": "Weapon Vault Item Pot #2",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 734,
+                        "y": 745,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle))"
                 ]
             },
             {
                 "name": "Weapon Vault Item Pot #1",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 667,
+                        "y": 697,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle) and HorizontalAttack)"
                 ]
             },
             {
                 "name": "Software Mural Item Pot #2",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 514,
+                        "y": 903,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Software Mural Item Pot #1",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 609,
+                        "y": 880,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG)"
                 ]
             },
             {
                 "name": "Gate with Glowing Eyes Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 826,
+                        "y": 48,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(6))))"
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or Has(Ice Cloak) or OrbCount(6))))"
                 ]
             },
             {
                 "name": "Soul Gate Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 803,
+                        "y": 183,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
                 ]
             },
             {
                 "name": "Under River Styx Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 926,
+                        "y": 341,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG)"
                 ]
             },
             {
                 "name": "Under River Styx Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 861,
+                        "y": 341,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Leap of Faith Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 897,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Next to Grail Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 858,
+                        "y": 451,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Fourth Hell Gate Approach Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 915,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Key Fairy Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 883,
+                        "y": 792,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Key Fairy Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 873,
+                        "y": 745,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG)"
                 ]
             },
             {
                 "name": "Second Hell Gate Approach Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 1189,
+                        "y": 48,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (Has(Grapple Claw))"
                 ]
             },
             {
-                "name": "Fifth Hell Gate Exit Coin Pot",
+                "name": "Fourth Hell Gate Exit Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 1118,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather) and Has(Glove)))"
                 ]
             },
             {
                 "name": "Right of Prison Cells Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 1482,
+                        "y": 254,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
                 ]

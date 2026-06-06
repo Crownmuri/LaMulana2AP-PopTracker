@@ -458,7 +458,7 @@ local BOSS_HOSTED_SECTIONS = {
     ["boss_vedfolnir"]            = "@Icefire Treetop/Vedfolnir/Miniboss",
     ["boss_vidofnir"]             = "@Icefire Treetop/Vidofnir/Miniboss",
     ["boss_vritra"]               = "@Valhalla/Vritra/Guardian",
-    ["boss_vucub_caquiz"]         = "@Valhalla/Vucub Caquiz/Miniboss",
+    ["boss_vucub_caquix"]         = "@Valhalla/Vucub Caquix/Miniboss",
     ["boss_weapon_fairy"]         = "@Shrine of the Frost Giants/Weapon Fairy/Fairy",
     ["boss_white_pedestals"]      = "@Gate of the Dead/White Pedestals/Puzzle",
 }

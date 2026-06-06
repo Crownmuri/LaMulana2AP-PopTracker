@@ -1,623 +1,822 @@
 [
-  {
-    "name": "Annwfn",
-    "children": [
-        {
-            "name": "Map Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1896,
-                    "y": 572,
-                    "size": 50
-                },
-                {
-                    "map": "Annwfn",
-                    "x": 1046,
-                    "y": 358
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430112",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430112|CanReach(AnnwfnMain)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain)"
-            ]
-        },
-        {
-            "name": "Look Away Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1718,
-                    "y": 639,
-                    "size": 50
-                },
-                {
-                    "map": "Annwfn",
-                    "x": 690,
-                    "y": 468
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430019",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430019|CanReach(AnnwfnMain)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain)"
-            ]
-        },
-        {
-            "name": "Submerged Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1524,
-                    "y": 710,
-                    "size": 50
-                },
-                {
-                    "map": "Annwfn",
-                    "x": 302,
-                    "y": 647
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430141",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430141|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
-            ]
-        },
-      {
-        "name": "Annwfn Weapon Vault",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1684,
-            "y": 428,
-            "size": 50
-          },
-          {
-            "map": "Annwfn",
-            "x": 623,
-            "y": 24
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(AnnwfnMain) and (Has(Glove))"
-        ]
-      },
-      {
-        "name": "Annwfn Research Papers",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1706,
-            "y": 504,
-            "size": 50
-          },
-          {
-            "map": "Annwfn",
-            "x": 667,
-            "y": 183
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(AnnwfnMain)"
-        ],
-        "visibility_rules": [ "setting_random_research" ]
-      },
-      {
-        "name": "Pym",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1962,
-            "y": 435,
-            "size": 50
-          },
-          {
-            "map": "Annwfn",
-            "x": 1224,
-            "y": 25
-          }
-        ],
-        "sections": [
+    {
+        "name": "Annwfn",
+        "children": [
             {
-                "name": "Shop Slot 1",
-                "item_count": 1,
+                "name": "Map Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1896,
+                        "y": 572,
+                        "size": 50
+                    },
+                    {
+                        "map": "Annwfn",
+                        "x": 1046,
+                        "y": 358
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430112",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430112|CanReach(AnnwfnMain)"
+                        ]
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
                 ]
             },
             {
-                "name": "Shop Slot 2",
-                "item_count": 1,
+                "name": "Look Away Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1718,
+                        "y": 639,
+                        "size": 50
+                    },
+                    {
+                        "map": "Annwfn",
+                        "x": 690,
+                        "y": 468
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430019",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430019|CanReach(AnnwfnMain)"
+                        ]
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
                 ]
             },
             {
-                "name": "Shop Slot 3",
-                "item_count": 1,
+                "name": "Submerged Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1524,
+                        "y": 710,
+                        "size": 50
+                    },
+                    {
+                        "map": "Annwfn",
+                        "x": 302,
+                        "y": 647
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430141",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430141|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
+                        ]
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Annwfn Weapon Vault",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1684,
+                        "y": 428,
+                        "size": 50
+                    },
+                    {
+                        "map": "Annwfn",
+                        "x": 623,
+                        "y": 24
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (Has(Glove))"
+                ]
+            },
+            {
+                "name": "Annwfn Research Papers",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1706,
+                        "y": 504,
+                        "size": 50
+                    },
+                    {
+                        "map": "Annwfn",
+                        "x": 667,
+                        "y": 183
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ],
+                "visibility_rules": [
+                    "setting_random_research"
+                ]
+            },
+            {
+                "name": "Pym",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1962,
+                        "y": 435,
+                        "size": 50
+                    },
+                    {
+                        "map": "Annwfn",
+                        "x": 1224,
+                        "y": 25
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ]
+            },
+            {
+                "name": "Earth Mantra Mural",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1788,
+                        "y": 646,
+                        "size": 50
+                    },
+                    {
+                        "map": "Annwfn",
+                        "x": 830,
+                        "y": 477
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Mural",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and Has(Snapshot))"
+                ]
+            },
+            {
+                "name": "Kaliya",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 874,
+                        "y": 62,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_kaliya"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain) and ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))))"
+                ]
+            },
+            {
+                "name": "Heimdall",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 624,
+                        "y": 577,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_heimdall"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain) and CanKill(Heimdall)"
+                ]
+            },
+            {
+                "name": "Hidden Chest & Sigil",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1886,
+                        "y": 717,
+                        "size": 50
+                    },
+                    {
+                        "map": "Annwfn",
+                        "x": 1028,
+                        "y": 623
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430103",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430103|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))))))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))))))"
+                ]
+            },
+            {
+                "name": "Mimir Weapon Vault",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2042,
+                        "y": 683,
+                        "size": 50
+                    },
+                    {
+                        "map": "Annwfn",
+                        "x": 1339,
+                        "y": 561
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnRight) and (CanChant(Earth))"
+                ]
+            },
+            {
+                "name": "Ixtab",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 1129,
+                        "y": 467,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_ixtab"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnRight) and CanKill(Ixtab)"
+                ]
+            },
+            {
+                "name": "Kujata",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2056,
+                        "y": 504,
+                        "size": 50
+                    },
+                    {
+                        "map": "Annwfn",
+                        "x": 1368,
+                        "y": 207,
+                        "size": 50
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Guardian",
+                        "item_count": 1,
+                        "hosted_item": "boss_kujata",
+                        "access_rules": [
+                            "^$lm2_logic|(HasAnkhFor(Kujata) and (CanReach(AnnwfnRight) and (Has(Frey's Ship) and IsDead(Ixtab) and (((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(1)) or ((Has(Flail Whip) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) and OrbCount(2)) or ((Has(Chain Whip) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(3)) or ((Has(Knife) or Has(Rapier) or ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) and Has(Ring))) and OrbCount(3) and Has(Feather)) or ((Has(Leather Whip) and (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(4)))))) or (MinimalLogic and (HasAnkhFor(Kujata) and (CanReach(AnnwfnRight) and Has(Frey's Ship) and IsDead(Ixtab))))"
+                        ]
+                    },
+                    {
+                        "name": "Kujata Reward",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430001",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430001|CanReach(AnnwfnRight) and (IsDead(Kujata))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnRight)"
+                ]
+            },
+            {
+                "name": "Annwfn Right Shortcut",
+                "sections": [
+                    {
+                        "name": "Puzzle",
+                        "item_count": 1,
+                        "hosted_item": "boss_annwfn_right_shortcut"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab))"
+                ]
+            },
+            {
+                "name": "Fairy Watchtower Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 734,
+                        "y": 159,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ]
+            },
+            {
+                "name": "Pre-Kaliya Hidden Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 777,
+                        "y": 231,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ]
+            },
+            {
+                "name": "Kaliya's Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 849,
+                        "y": 24,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (IsDead(Kaliya) or (Has(Feather) and CanWarp))"
+                ]
+            },
+            {
+                "name": "Kukulkan's Grail Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 734,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ]
+            },
+            {
+                "name": "Kukulkan's Grail Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 681,
+                        "y": 365,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ]
+            },
+            {
+                "name": "Fairy King's Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 461,
+                        "y": 183,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ]
+            },
+            {
+                "name": "Center Item Pot #1",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 817,
+                        "y": 341,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ]
+            },
+            {
+                "name": "Center Item Pot #2",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 984,
+                        "y": 389,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Huracan's Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 1234,
+                        "y": 389,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Mantra Watchtower Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 1180,
+                        "y": 183,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ]
+            },
+            {
+                "name": "Look Away Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 514,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Bifrost Left Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 350,
+                        "y": 586,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ]
+            },
+            {
+                "name": "Bifrost Right Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 850,
+                        "y": 586,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ]
+            },
+            {
+                "name": "Bifrost Right Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 952,
+                        "y": 610,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Feathercross One-Way Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 1141,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnOneWay) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Ixtab Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 966,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab) and HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Death's Prison Hidden Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 1559,
+                        "y": 452,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnRight) and (HorizontalAttack and (Has(Feather) or IsDead(Ixtab)))"
+                ]
+            },
+            {
+                "name": "Pre-Kujata Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 1483,
+                        "y": 293,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnRight)"
                 ]
             }
         ],
         "access_rules": [
-          "^$lm2_logic|CanReach(AnnwfnMain)"
+            "^$lm2_logic|CanReach(AnnwfnMain) or CanReach(AnnwfnRight)"
         ]
-      },
-      {
-        "name": "Earth Mantra Mural",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1788,
-            "y": 646,
-            "size": 50
-          },
-          {
-            "map": "Annwfn",
-            "x": 830,
-            "y": 477
-          }
-        ],
-        "sections": [
-          {
-            "name": "Mural",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and Has(Snapshot))"
-        ]
-      },
-        {
-            "name": "Kaliya",
-            "map_locations": [
-                {
-                    "map": "Annwfn",
-                    "x": 874,
-                    "y": 62,
-                    "shape":"diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_kaliya"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain) and ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))))"
-            ]
-        },
-        {
-            "name": "Heimdall",
-            "map_locations": [
-                {
-                    "map": "Annwfn",
-                    "x": 624,
-                    "y": 577,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_heimdall"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain) and CanKill(Heimdall)"
-            ]
-        },
-        {
-            "name": "Hidden Chest & Sigil",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1886,
-                    "y": 717,
-                    "size": 50
-                },
-                {
-                    "map": "Annwfn",
-                    "x": 1028,
-                    "y": 623
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430103",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430103|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))))))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnRight) and (Has(Life Sigil) and Has(Feather) and ((Has(Leather Whip) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit)) or (Has(Knife) and (Has(Spaulder) or Has(Gauntlet) or Has(Bracelet))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)) or (Has(Bracelet) and (Has(Rapier) or Has(Katana) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))))))"
-            ]
-        },
-      {
-        "name": "Mimir Weapon Vault",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2042,
-            "y": 683,
-            "size": 50
-          },
-          {
-            "map": "Annwfn",
-            "x": 1339,
-            "y": 561
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(AnnwfnRight) and (CanChant(Earth))"
-        ]
-      },
-        {
-            "name": "Ixtab",
-            "map_locations": [
-                {
-                    "map": "Annwfn",
-                    "x": 1129,
-                    "y": 467,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_ixtab"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnRight) and CanKill(Ixtab)"
-            ]
-        },
-        {
-            "name": "Kujata",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 2056,
-                    "y": 504,
-                    "size": 50
-                },
-                {
-                    "map": "Annwfn",
-                    "x": 1368,
-                    "y": 207,
-                    "size": 50
-
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Guardian",
-                    "item_count": 1,
-                    "hosted_item": "boss_kujata",
-                    "access_rules": [
-                        "^$lm2_logic|(HasAnkhFor(Kujata) and (CanReach(AnnwfnRight) and (Has(Frey's Ship) and IsDead(Ixtab) and (((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(1)) or ((Has(Flail Whip) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) and OrbCount(2)) or ((Has(Chain Whip) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(3)) or ((Has(Knife) or Has(Rapier) or ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) and Has(Ring))) and OrbCount(3) and Has(Feather)) or ((Has(Leather Whip) and (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(4)))))) or (MinimalLogic and (HasAnkhFor(Kujata) and (CanReach(AnnwfnRight) and Has(Frey's Ship) and IsDead(Ixtab))))"
-                    ]
-                },
-                {
-                    "name": "Kujata Reward",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430001",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430001|CanReach(AnnwfnRight) and (IsDead(Kujata))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnRight)"
-            ]
-        },
-      {
-        "name": "Annwfn Right Shortcut",
-        "sections": [
-          {
-            "name": "Puzzle",
-            "item_count": 1,
-            "hosted_item": "boss_annwfn_right_shortcut"
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab))"
-        ]
-      },
-        {
-            "name": "Fairy Watchtower Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain)"
-            ]
-        },
-        {
-            "name": "Pre-Kaliya Hidden Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain)"
-            ]
-        },
-        {
-            "name": "Kaliya's Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain) and (IsDead(Kaliya) or (Has(Feather) and CanWarp))"
-            ]
-        },
-        {
-            "name": "Kukulkan's Grail Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain)"
-            ]
-        },
-        {
-            "name": "Kukulkan's Grail Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain)"
-            ]
-        },
-        {
-            "name": "Fairy King's Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain)"
-            ]
-        },
-        {
-            "name": "Center Item Pot #1",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain)"
-            ]
-        },
-        {
-            "name": "Center Item Pot #2",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Huracan's Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Mantra Watchtower Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain)"
-            ]
-        },
-        {
-            "name": "Look Away Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Bifrost Left Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain)"
-            ]
-        },
-        {
-            "name": "Bifrost Right Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain)"
-            ]
-        },
-        {
-            "name": "Bifrost Right Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Feathercross One-Way Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnOneWay) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Ixtab Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab) and HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Death's Prison Hidden Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnRight) and (HorizontalAttack and (Has(Feather) or IsDead(Ixtab)))"
-            ]
-        },
-        {
-            "name": "Pre-Kujata Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(AnnwfnRight)"
-            ]
-        }
-    ],
-    "access_rules": [
-      "^$lm2_logic|CanReach(AnnwfnMain) or CanReach(AnnwfnRight)"
-    ]
-  }
+    }
 ]

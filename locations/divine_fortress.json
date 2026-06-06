@@ -267,221 +267,408 @@
             },
             {
                 "name": "Divine Soul Gate Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 725,
+                        "y": 586,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFEntrance) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and CanReach(DFRight)))"
                 ]
             },
             {
                 "name": "Frey's Ship Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 802,
+                        "y": 365,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFRight) and (HorizontalAttack and (Has(Origin Sigil) or CanReach(DFTop)))"
                 ]
             },
             {
                 "name": "Above Mantra Mural Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 984,
+                        "y": 476,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFRight)"
                 ]
             },
             {
                 "name": "Pre-Hugin and Munin Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 1100,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFRight) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Dwarves' Hideout Right Pot #2",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 177,
+                        "y": 341,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
                 ]
             },
             {
                 "name": "Dwarves' Hideout Right Pot #1",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 177,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
                 ]
             },
             {
                 "name": "Corridor to Gate Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 223,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Moving Block Lower Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 360,
+                        "y": 255,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Antechamber - Ledge Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 424,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Antechamber - Gullinbursti Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 323,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain)"
                 ]
             },
             {
                 "name": "Antechamber - Ladder Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 292,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Shuhoka Lower Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 350,
+                        "y": 610,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain)"
                 ]
             },
             {
                 "name": "Shuhoka Upper Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 350,
+                        "y": 562,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
                 ]
             },
             {
                 "name": "Footprint Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 540,
+                        "y": 293,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Moving Block Upper Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 351,
+                        "y": 159,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFTop) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Grapple Claw) or Has(Feather))))"
                 ]
             },
             {
                 "name": "Breakable Push Block Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 590,
+                        "y": 183,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFTop)"
                 ]
             },
             {
                 "name": "Yuga Wheel Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 916,
+                        "y": 207,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFTop)"
                 ]

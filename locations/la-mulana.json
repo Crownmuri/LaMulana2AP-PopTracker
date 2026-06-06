@@ -1,724 +1,913 @@
 [
-  {
-    "name": "La-Mulana",
-    "children": [
-        {
-            "name": "Xelpud's Item",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 453,
-                    "y": 233,
-                    "size": 30
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 931,
-                    "y": 498
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Dialogue",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD)"
-            ]
-        },
-        {
-            "name": "Nebur's Item",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 578,
-                    "y": 253,
-                    "size": 30
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 1111,
-                    "y": 498
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Dialogue",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD)"
-            ]
-        },
-        {
-            "name": "Alsedana's Item (Vritra)",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 229,
-                    "y": 167,
-                    "size": 50
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 457,
-                    "y": 317
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Dialogue",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD) and (IsDead(Vritra) or GuardianKills(6))"
-            ]
-        },
-        {
-            "name": "Alsedana's Funeral (6 Guardians)",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 33,
-                    "y": 167,
-                    "size": 50
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 365,
-                    "y": 364
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Dialogue",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD) and (GuardianKills(6))"
-            ]
-        },
-        {
-            "name": "Nebur",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 365,
-                    "y": 218,
-                    "size": 30
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 730,
-                    "y": 451
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Shop Slot 1",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(VoD)"
-                    ]
-                },
-                {
-                    "name": "Shop Slot 2",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(VoD)"
-                    ]
-                },
-                {
-                    "name": "Shop Slot 3",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(VoD)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD)"
-            ]
-        },
-        {
-            "name": "Modro",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 498,
-                    "y": 218,
-                    "size": 30
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 1022,
-                    "y": 451
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Shop Slot 1",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(VoD)"
-                    ]
-                },
-                {
-                    "name": "Shop Slot 2",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(VoD)"
-                    ]
-                },
-                {
-                    "name": "Shop Slot 3",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(VoD)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD)"
-            ]
-        },
-        {
-            "name": "Sidro",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 538,
-                    "y": 233,
-                    "size": 30
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 1075,
-                    "y": 475
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Shop Slot 1",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(VoD)"
-                    ]
-                },
-                {
-                    "name": "Shop Slot 2",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(VoD)"
-                    ]
-                },
-                {
-                    "name": "Shop Slot 3",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(VoD)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD)"
-            ]
-        },
-        {
-            "name": "Waterfall Sacred Orb",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 843,
-                    "y": 178,
-                    "size": 50
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 1697,
-                    "y": 376
-                }
-            ],
-            "sections": [
-                {
-                    "name": "FreeStanding",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD) and (Has(Feather) and CanWarp)"
-            ]
-        },
-        {
-            "name": "Child Mantra Mural",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 681,
-                    "y": 243,
-                    "size": 50
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 1353,
-                    "y": 463
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Mural",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(InfernoCavern) and (Has(Snapshot) and CanChant(Mother) and CanChant(Wind) and CanWarp)"
-            ]
-        },
-        {
-            "name": "Shell Horn Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 898,
-                    "y": 369,
-                    "size": 50
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 1795,
-                    "y": 720
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430016",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430016|CanReach(GateofGuidance)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(GateofGuidance)"
-            ]
-        },
-        {
-            "name": "Holy Grail Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 655,
-                    "y": 494,
-                    "size": 30
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 1309,
-                    "y": 989
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430017",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430017|CanReach(GateofGuidance)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(GateofGuidance)"
-            ]
-        },
-        {
-            "name": "Hiner",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 702,
-                    "y": 484,
-                    "size": 30
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 1405,
-                    "y": 966
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Shop Slot 1",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
-                    ]
-                },
-                {
-                    "name": "Shop Slot 2",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
-                    ]
-                },
-                {
-                    "name": "Shop Slot 3",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
-                    ]
-                },
-                {
-                    "name": "Shop Slot 4",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack and GuardianKills(3))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(GateofGuidance)"
-            ]
-        },
-        {
-            "name": "Hidden Item Spot",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 741,
-                    "y": 484,
-                    "size": 30
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 1488,
-                    "y": 964
-                }
-            ],
-            "sections": [
-                {
-                    "name": "FreeStanding",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(GateofGuidance) and (Has(Feather) or Has(Gale Fibula))"
-            ]
-        },
-        {
-            "name": "Sakit's Dissonance",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1088,
-                    "y": 903,
-                    "size": 50
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 2178,
-                    "y": 1781
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Dissonance",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(MausoleumofGiants) and (Has(Progressive Beherit) and CanChant(Sun) and PuzzleFinished(Sakit Puzzle))"
-            ],
-            "visibility_rules": [ "setting_random_dissonance" ]
-        },
-        {
-            "name": "Freya's Item",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 166,
-                    "y": 969,
-                    "size": 50
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 301,
-                    "y": 1929
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Dialogue",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(EndlessCorridor)"
-            ]
-        },
-        {
-            "name": "Fobos",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 400,
-                    "y": 448,
-                    "size": 50
-                },
-                {
-                    "map": "La-Mulana",
-                    "x": 838,
-                    "y": 927
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Fobos' Inspiration",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(GateofIllusion)"
-                    ]
-                },
-                {
-                    "name": "Fobos' Skull Check",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(GateofIllusion) and (SkullCount(1))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(GateofIllusion)"
-            ]
-        },
-        {
-            "name": "Starting Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(Start) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Alsedana Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD)"
-            ]
-        },
-        {
-            "name": "Nebur Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD)"
-            ]
-        },
-        {
-            "name": "Xelpud Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Xelpud Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD)"
-            ]
-        },
-        {
-            "name": "Pre-Ladder Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD)"
-            ]
-        },
-        {
-            "name": "Post-Ladder Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
-            ]
-        },
-        {
-            "name": "Double Jump Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(VoD) and (Has(Feather))"
-            ]
-        },
-        {
-            "name": "Photo Stand-in Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(GateofGuidance) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "High-up Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(GateofGuidance)"
-            ]
-        },
-        {
-            "name": "Below Hiner Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(GateofGuidance) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Illusion Gate Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(GateofGuidanceLeft)"
-            ]
-        },
-        {
-            "name": "First Room Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(MausoleumofGiants)"
-            ]
-        },
-        {
-            "name": "Second Room Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(MausoleumofGiants)"
-            ]
-        },
-        {
-            "name": "Breakable Wall Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(MausoleumofGiants) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Futo Statue Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(MausoleumofGiants)"
-            ]
-        },
-        {
-            "name": "Pre-Ratatoskr Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(MausoleumofGiants) and (HorizontalAttack)"
-            ]
-        }
-    ]
-  }
+    {
+        "name": "La-Mulana",
+        "children": [
+            {
+                "name": "Xelpud's Item",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 453,
+                        "y": 233,
+                        "size": 30
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 931,
+                        "y": 498
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Dialogue",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Nebur's Item",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 578,
+                        "y": 253,
+                        "size": 30
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 1111,
+                        "y": 498
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Dialogue",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Alsedana's Item (Vritra)",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 229,
+                        "y": 167,
+                        "size": 50
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 457,
+                        "y": 317
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Dialogue",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD) and (IsDead(Vritra) or GuardianKills(6))"
+                ]
+            },
+            {
+                "name": "Alsedana's Funeral (6 Guardians)",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 33,
+                        "y": 167,
+                        "size": 50
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 365,
+                        "y": 364
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Dialogue",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD) and (GuardianKills(6))"
+                ]
+            },
+            {
+                "name": "Nebur",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 365,
+                        "y": 218,
+                        "size": 30
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 730,
+                        "y": 451
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(VoD)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(VoD)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(VoD)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Modro",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 498,
+                        "y": 218,
+                        "size": 30
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 1022,
+                        "y": 451
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(VoD)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(VoD)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(VoD)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Sidro",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 538,
+                        "y": 233,
+                        "size": 30
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 1075,
+                        "y": 475
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(VoD)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(VoD)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(VoD)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Waterfall Sacred Orb",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 843,
+                        "y": 178,
+                        "size": 50
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 1697,
+                        "y": 376
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD) and (Has(Feather) and CanWarp)"
+                ]
+            },
+            {
+                "name": "Child Mantra Mural",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 681,
+                        "y": 243,
+                        "size": 50
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 1353,
+                        "y": 463
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Mural",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(InfernoCavern) and (Has(Snapshot) and CanChant(Mother) and CanChant(Wind) and CanWarp)"
+                ]
+            },
+            {
+                "name": "Shell Horn Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 898,
+                        "y": 369,
+                        "size": 50
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 1795,
+                        "y": 720
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430016",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430016|CanReach(GateofGuidance)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidance)"
+                ]
+            },
+            {
+                "name": "Holy Grail Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 655,
+                        "y": 494,
+                        "size": 30
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 1309,
+                        "y": 989
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430017",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430017|CanReach(GateofGuidance)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidance)"
+                ]
+            },
+            {
+                "name": "Hiner",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 702,
+                        "y": 484,
+                        "size": 30
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 1405,
+                        "y": 966
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 4",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack and GuardianKills(3))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidance)"
+                ]
+            },
+            {
+                "name": "Hidden Item Spot",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 741,
+                        "y": 484,
+                        "size": 30
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 1488,
+                        "y": 964
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidance) and (Has(Feather) or Has(Gale Fibula))"
+                ]
+            },
+            {
+                "name": "Sakit's Dissonance",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1088,
+                        "y": 903,
+                        "size": 50
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 2178,
+                        "y": 1781
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Dissonance",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(MausoleumofGiants) and (Has(Progressive Beherit) and CanChant(Sun) and PuzzleFinished(Sakit Puzzle))"
+                ],
+                "visibility_rules": [
+                    "setting_random_dissonance"
+                ]
+            },
+            {
+                "name": "Freya's Item",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 166,
+                        "y": 969,
+                        "size": 50
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 301,
+                        "y": 1929
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Dialogue",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EndlessCorridor)"
+                ]
+            },
+            {
+                "name": "Fobos",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 400,
+                        "y": 448,
+                        "size": 50
+                    },
+                    {
+                        "map": "La-Mulana",
+                        "x": 838,
+                        "y": 927
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Fobos' Inspiration",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(GateofIllusion)"
+                        ]
+                    },
+                    {
+                        "name": "Fobos' Skull Check",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(GateofIllusion) and (SkullCount(1))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofIllusion)"
+                ]
+            },
+            {
+                "name": "Starting Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 149,
+                        "y": 499,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(Start) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Alsedana Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 370,
+                        "y": 318,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Nebur Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 635,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Xelpud Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 967,
+                        "y": 499,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Xelpud Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 784,
+                        "y": 452,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Pre-Ladder Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1137,
+                        "y": 451,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD)"
+                ]
+            },
+            {
+                "name": "Post-Ladder Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1079,
+                        "y": 347,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                ]
+            },
+            {
+                "name": "Double Jump Item Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1195,
+                        "y": 294,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD) and (Has(Feather))"
+                ]
+            },
+            {
+                "name": "Photo Stand-in Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1664,
+                        "y": 792,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidance) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "High-up Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1579,
+                        "y": 831,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidance)"
+                ]
+            },
+            {
+                "name": "Below Hiner Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1412,
+                        "y": 1124,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidance) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Illusion Gate Item Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1157,
+                        "y": 855,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidanceLeft)"
+                ]
+            },
+            {
+                "name": "First Room Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1008,
+                        "y": 1416,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(MausoleumofGiants)"
+                ]
+            },
+            {
+                "name": "Second Room Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1333,
+                        "y": 1416,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(MausoleumofGiants)"
+                ]
+            },
+            {
+                "name": "Breakable Wall Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1039,
+                        "y": 1551,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(MausoleumofGiants) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Futo Statue Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1849,
+                        "y": 1796,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(MausoleumofGiants)"
+                ]
+            },
+            {
+                "name": "Pre-Ratatoskr Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1702,
+                        "y": 1930,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(MausoleumofGiants) and (HorizontalAttack)"
+                ]
+            }
+        ]
+    }
 ]

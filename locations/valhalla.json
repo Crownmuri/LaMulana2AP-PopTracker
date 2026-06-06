@@ -1,471 +1,638 @@
 [
-  {
-    "name": "Valhalla",
-    "children": [
-        {
-            "name": "Map Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1520,
-                    "y": 1781,
-                    "size": 50
-                },
-                {
-                    "map": "Valhalla",
-                    "x": 28,
-                    "y": 340
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430120",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430120|CanReach(ValhallaMain) and (Has(Origin Sigil))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and (Has(Origin Sigil))"
-            ]
-        },
-        {
-            "name": "Vritra",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 2101,
-                    "y": 1780,
-                    "size": 50
-                },
-                {
-                    "map": "Valhalla",
-                    "x": 1145,
-                    "y": 320,
-                    "size": 50
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Guardian",
-                    "item_count": 1,
-                    "hosted_item": "boss_vritra",
-                    "access_rules": [
-                        "^$lm2_logic|(HasAnkhFor(Vritra) and (CanReach(RoY) and (MeleeAttack or Glitch(Costume Clip)) and IsDead(Vucub Caquiz) and (((Has(Leather Whip) or Has(Knife) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken)))) and OrbCount(1)) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))) or (MinimalLogic and (HasAnkhFor(Vritra) and (CanReach(RoY) and (MeleeAttack or Glitch(Costume Clip)) and IsDead(Vucub Caquiz))))"
-                    ]
-                },
-                {
-                    "name": "Vritra's Dissonance",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(ValhallaMain) and (Has(Progressive Beherit) and IsDead(Vritra))"
-                    ],
-                    "visibility_rules": [ "setting_random_dissonance" ]
-                },
-                {
-                    "name": "Vritra Reward",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430035",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430035|IsDead(Vritra) and HorizontalAttack"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain)"
-            ]
-        },
-        {
-            "name": "Jalandhara's Treasure",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1682,
-                    "y": 1917,
-                    "size": 50
-                },
-                {
-                    "map": "Valhalla",
-                    "x": 405,
-                    "y": 651
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430144",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430144|CanReach(ValhallaMain) and ((Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and Has(Death Sigil) and CanChant(Fire) and CanChant(Earth) and IsDead(Jalandhara) and HorizontalAttack)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and ((Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and Has(Death Sigil) and CanChant(Fire) and CanChant(Earth) and IsDead(Jalandhara) and HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Crawling Weapon Vault",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1806,
-                    "y": 1849,
-                    "size": 50
-                },
-                {
-                    "map": "Valhalla",
-                    "x": 619,
-                    "y": 475
-                }
-            ],
-            "sections": [
-                {
-                    "name": "FreeStanding",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain)"
-            ]
-        },
-        {
-            "name": "Bargain Duck",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1986,
-                    "y": 1849,
-                    "size": 50
-                },
-                {
-                    "map": "Valhalla",
-                    "x": 979,
-                    "y": 475
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Shop Slot 1",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(ValhallaMain)"
-                    ]
-                },
-                {
-                    "name": "Shop Slot 2",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(ValhallaMain)"
-                    ]
-                },
-                {
-                    "name": "Shop Slot 3",
-                    "item_count": 1,
-                    "access_rules": [
-                        "^$lm2_logic|CanReach(ValhallaMain)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain)"
-            ]
-        },
-        {
-            "name": "Vucub Caquiz",
-            "map_locations": [
-                {
-                    "map": "Valhalla",
-                    "x": 691,
-                    "y": 372,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_vucub_caquiz"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and CanKill(Vucub Caquiz)"
-            ]
-        },
-        {
-            "name": "Jalandhara",
-            "map_locations": [
-                {
-                    "map": "Valhalla",
-                    "x": 415,
-                    "y": 491,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_jalandhara"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and CanKill(Jalandhara)"
-            ]
-        },
-        {
-            "name": "Fire Mantra Mural",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1972,
-                    "y": 1629,
-                    "size": 50
-                },
-                {
-                    "map": "Valhalla",
-                    "x": 951,
-                    "y": 34
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Mural",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaTop) and (Has(Birth Sigil) and Has(Snapshot))"
-            ]
-        },
-        {
-            "name": "4 Sigil Weapon Vault",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1922,
-                    "y": 1738,
-                    "size": 50
-                },
-                {
-                    "map": "Valhalla",
-                    "x": 850,
-                    "y": 254
-                }
-            ],
-            "sections": [
-                {
-                    "name": "FreeStanding",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaTop) and ((Has(Feather) or Has(Grapple Claw)) and Has(Origin Sigil) and Has(Birth Sigil) and Has(Life Sigil) and Has(Death Sigil) and Has(Claydoll Suit) and CanReach(Valhalla Top Right))"
-            ]
-        },
-        {
-            "name": "Entrance Gate Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Left of Grail Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain)"
-            ]
-        },
-        {
-            "name": "Near First Trickster Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain)"
-            ]
-        },
-        {
-            "name": "Near First Trickster Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain)"
-            ]
-        },
-        {
-            "name": "Near First Trickster Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain)"
-            ]
-        },
-        {
-            "name": "Above Grail Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain)"
-            ]
-        },
-        {
-            "name": "Corridor above Jalandhara Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Near Second Trickster Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and (((Has(Feather) or CanChant(Heaven)) and HorizontalAttack) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)))"
-            ]
-        },
-        {
-            "name": "Warrior's Aqueduct Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Above Laser Statue Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Near Third Trickster Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Below Zipakna Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Below Bargain Duck Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Mantra Mural Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaTop) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Soul Gate Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ValhallaTopRight)"
-            ]
-        }
-    ],
-    "access_rules": [
-      "^$lm2_logic|CanReach(ValhallaMain) or CanReach(ValhallaTop)"
-    ]
-  }
+    {
+        "name": "Valhalla",
+        "children": [
+            {
+                "name": "Map Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1520,
+                        "y": 1781,
+                        "size": 50
+                    },
+                    {
+                        "map": "Valhalla",
+                        "x": 28,
+                        "y": 340
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430120",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430120|CanReach(ValhallaMain) and (Has(Origin Sigil))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and (Has(Origin Sigil))"
+                ]
+            },
+            {
+                "name": "Vritra",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2101,
+                        "y": 1780,
+                        "size": 50
+                    },
+                    {
+                        "map": "Valhalla",
+                        "x": 1145,
+                        "y": 320,
+                        "size": 50
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Guardian",
+                        "item_count": 1,
+                        "hosted_item": "boss_vritra",
+                        "access_rules": [
+                            "^$lm2_logic|(HasAnkhFor(Vritra) and (CanReach(RoY) and (MeleeAttack or Glitch(Costume Clip)) and IsDead(Vucub Caquix) and (((Has(Leather Whip) or Has(Knife) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken)))) and OrbCount(1)) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))) or (MinimalLogic and (HasAnkhFor(Vritra) and (CanReach(RoY) and (MeleeAttack or Glitch(Costume Clip)) and IsDead(Vucub Caquix))))"
+                        ]
+                    },
+                    {
+                        "name": "Vritra's Dissonance",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ValhallaMain) and (Has(Progressive Beherit) and IsDead(Vritra))"
+                        ],
+                        "visibility_rules": [
+                            "setting_random_dissonance"
+                        ]
+                    },
+                    {
+                        "name": "Vritra Reward",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430035",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430035|IsDead(Vritra) and HorizontalAttack"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            },
+            {
+                "name": "Jalandhara's Treasure",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1682,
+                        "y": 1917,
+                        "size": 50
+                    },
+                    {
+                        "map": "Valhalla",
+                        "x": 405,
+                        "y": 651
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430144",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430144|CanReach(ValhallaMain) and ((Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and Has(Death Sigil) and CanChant(Fire) and CanChant(Earth) and IsDead(Jalandhara) and HorizontalAttack)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and ((Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and Has(Death Sigil) and CanChant(Fire) and CanChant(Earth) and IsDead(Jalandhara) and HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Crawling Weapon Vault",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1806,
+                        "y": 1849,
+                        "size": 50
+                    },
+                    {
+                        "map": "Valhalla",
+                        "x": 619,
+                        "y": 475
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            },
+            {
+                "name": "Bargain Duck",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1986,
+                        "y": 1849,
+                        "size": 50
+                    },
+                    {
+                        "map": "Valhalla",
+                        "x": 979,
+                        "y": 475
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ValhallaMain)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ValhallaMain)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ValhallaMain)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            },
+            {
+                "name": "Vucub Caquix",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 691,
+                        "y": 372,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_vucub_caquix"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and CanKill(Vucub Caquix)"
+                ]
+            },
+            {
+                "name": "Jalandhara",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 415,
+                        "y": 491,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_jalandhara"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and CanKill(Jalandhara)"
+                ]
+            },
+            {
+                "name": "Fire Mantra Mural",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1972,
+                        "y": 1629,
+                        "size": 50
+                    },
+                    {
+                        "map": "Valhalla",
+                        "x": 951,
+                        "y": 34
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Mural",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaTop) and (Has(Birth Sigil) and Has(Snapshot))"
+                ]
+            },
+            {
+                "name": "4 Sigil Weapon Vault",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1922,
+                        "y": 1738,
+                        "size": 50
+                    },
+                    {
+                        "map": "Valhalla",
+                        "x": 850,
+                        "y": 254
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaTop) and ((Has(Feather) or Has(Grapple Claw)) and Has(Origin Sigil) and Has(Birth Sigil) and Has(Life Sigil) and Has(Death Sigil) and Has(Claydoll Suit) and CanReach(Valhalla Top Right))"
+                ]
+            },
+            {
+                "name": "Entrance Gate Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 63,
+                        "y": 183,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Left of Grail Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 212,
+                        "y": 341,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            },
+            {
+                "name": "Near First Trickster Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 149,
+                        "y": 452,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            },
+            {
+                "name": "Near First Trickster Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 102,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            },
+            {
+                "name": "Near First Trickster Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 102,
+                        "y": 476,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            },
+            {
+                "name": "Above Grail Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 303,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            },
+            {
+                "name": "Corridor above Jalandhara Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 296,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Near Second Trickster Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 715,
+                        "y": 159,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and (((Has(Feather) or CanChant(Heaven)) and HorizontalAttack) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)))"
+                ]
+            },
+            {
+                "name": "Warrior's Aqueduct Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 560,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Above Laser Statue Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 684,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ]
+            },
+            {
+                "name": "Near Third Trickster Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 974,
+                        "y": 293,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Below Zipakna Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 860,
+                        "y": 452,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Below Bargain Duck Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 984,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Mantra Mural Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 916,
+                        "y": 120,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaTop) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Soul Gate Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 1142,
+                        "y": 207,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaTopRight)"
+                ]
+            }
+        ],
+        "access_rules": [
+            "^$lm2_logic|CanReach(ValhallaMain) or CanReach(ValhallaTop)"
+        ]
+    }
 ]

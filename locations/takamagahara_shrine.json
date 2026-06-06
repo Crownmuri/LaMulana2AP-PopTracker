@@ -314,286 +314,528 @@
             },
             {
                 "name": "Spinning Platforms Left Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 516,
+                        "y": 562,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain)"
                 ]
             },
             {
                 "name": "Spinning Platforms Right Weight Pot ",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 724,
+                        "y": 610,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain)"
                 ]
             },
             {
                 "name": "Next to Chest Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 846,
+                        "y": 183,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
                 ]
             },
             {
                 "name": "Amenominakanushi Top-Left Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 767,
+                        "y": 294,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain)"
                 ]
             },
             {
                 "name": "Amenominakanushi Bottom Level Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 984,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Amenominakanushi Pre-Ladder Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 984,
+                        "y": 452,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain)"
                 ]
             },
             {
                 "name": "Falling Platform Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 878,
+                        "y": 634,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Falling Platform Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 773,
+                        "y": 610,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Raijin and Fujin Reward Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 1214,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain) and (IsDead(Raijin and Fujin))"
                 ]
             },
             {
                 "name": "Maze Top-Left Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 265,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Maze Middle Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 394,
+                        "y": 476,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
                 ]
             },
             {
                 "name": "Maze Bottom-Left Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 269,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft) and ((Has(Leather Whip) and Has(Vajra)) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Knife) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
                 ]
             },
             {
                 "name": "Above Grail Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 515,
+                        "y": 159,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft)"
                 ]
             },
             {
                 "name": "Spirit Palace Hidden Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 519,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft) and (MeleeAttack or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
                 ]
             },
             {
                 "name": "Spirit Palace Right Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 732,
+                        "y": 365,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft)"
                 ]
             },
             {
                 "name": "Left Dragon Path Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 561,
+                        "y": 452,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft) and (MeleeAttack or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))"
                 ]
             },
             {
                 "name": "Breakable Pillar Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 802,
+                        "y": 746,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBottom)"
                 ]
             },
             {
                 "name": "Upper Corridor Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 865,
+                        "y": 831,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBottom) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Stacked Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 984,
+                        "y": 855,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBottom) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Amanoiwato Gate Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 517,
+                        "y": 855,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBottom)"
                 ]
             },
             {
                 "name": "Pre-Belial Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 164,
+                        "y": 120,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBlood) and (HorizontalAttack and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(6))))"
                 ]
             },
             {
                 "name": "Yuga Wheel Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 460,
+                        "y": 48,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBlood) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(6)))"
                 ]

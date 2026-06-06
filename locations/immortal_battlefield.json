@@ -1,1252 +1,1621 @@
 [
-  {
-    "name": "Immortal Battlefield",
-    "children": [
-      {
-        "name": "Peibalusa",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1774,
-            "y": 785,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 1055,
-            "y": 90
-          }
-        ],
-        "sections": [
+    {
+        "name": "Immortal Battlefield",
+        "children": [
             {
-                "name": "Shop Slot 1",
-                "item_count": 1,
+                "name": "Peibalusa",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1774,
+                        "y": 785,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1055,
+                        "y": 90
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBTop)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBTop)"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBTop)"
+                        ]
+                    }
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBTop)"
                 ]
             },
             {
-                "name": "Shop Slot 2",
-                "item_count": 1,
+                "name": "Cetus",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1267,
+                        "y": 93,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_cetus"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBTop) and CanKill(Cetus)"
+                ]
+            },
+            {
+                "name": "Fake Wall Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1403,
+                        "y": 840,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 268,
+                        "y": 206
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430021",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430021|CanReach(IBTopLeft) and (((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Ring))) and Has(Glove))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBTopLeft) and (((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Ring))) and Has(Glove))"
+                ]
+            },
+            {
+                "name": "Top-Left Weapon Vault",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1524,
+                        "y": 761,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 533,
+                        "y": 48
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBTopLeft) and (Has(Glove) or Has(Feather) or (CanReach(IBTop) and CanWarp and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
+                ]
+            },
+            {
+                "name": "IB Research - Top Left",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1632,
+                        "y": 786,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 781,
+                        "y": 119
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|(CanReach(IBTop) and CanWarp) or (CanReach(IBTopLeft) and (Has(Feather) or (Has(Glove) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))))"
+                ],
+                "visibility_rules": [
+                    "setting_random_research"
+                ]
+            },
+            {
+                "name": "Map Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1933,
+                        "y": 828,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1371,
+                        "y": 182
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430113",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430113|CanReach(IBMain)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain)"
+                ]
+            },
+            {
+                "name": "Hidden Sigil Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2039,
+                        "y": 1030,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1585,
+                        "y": 585
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430027",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430027|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
+                ]
+            },
+            {
+                "name": "Top Dash Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1632,
+                        "y": 841,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 768,
+                        "y": 206
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430032",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430032|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
+                ]
+            },
+            {
+                "name": "Submerged Sigil Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1951,
+                        "y": 1085,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1407,
+                        "y": 696
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430104",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430104|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus) or TrickyLogic))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus) or TrickyLogic))"
+                ]
+            },
+            {
+                "name": "Time Altar Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1467,
+                        "y": 986,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 439,
+                        "y": 496
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430005",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430005|CanReach(IBMain) and (IsDead(Ratatoskr 2) and Has(Cog of Antiquity) and Has(Life Sigil))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2) and Has(Cog of Antiquity) and Has(Life Sigil))"
+                ]
+            },
+            {
+                "name": "Ratatoskr 2 Reward",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1579,
+                        "y": 907,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 662,
+                        "y": 340
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2))"
+                ]
+            },
+            {
+                "name": "IB Research - Top Right",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2081,
+                        "y": 773,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1671,
+                        "y": 66
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain)"
+                ],
+                "visibility_rules": [
+                    "setting_random_research"
+                ]
+            },
+            {
+                "name": "Immortal Battlefield Tent",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1816,
+                        "y": 908,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1137,
+                        "y": 340
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "IB Research - Tent (First Time)",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)))"
+                        ]
+                    },
+                    {
+                        "name": "IB Research - Tent (7 Guardians)",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and GuardianKills(7))"
+                        ]
+                    },
+                    {
+                        "name": "IB Research - Tent (Post Heimdall)",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and IsDead(Heimdall))"
+                        ]
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_random_research"
+                ]
+            },
+            {
+                "name": "Mulbruk's Item (4 Guardians)",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2053,
+                        "y": 854,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1680,
+                        "y": 286
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Dialogue",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (CanReach(Annwfn Main) and GuardianKills(4))"
+                ]
+            },
+            {
+                "name": "Ratatoskr 2",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 586,
+                        "y": 340,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_ratatoskr_2"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 1))"
+                ]
+            },
+            {
+                "name": "Jormungand",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1862,
+                        "y": 1053,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1117,
+                        "y": 609,
+                        "size": 50
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Guardian",
+                        "item_count": 1,
+                        "hosted_item": "boss_jormungand",
+                        "access_rules": [
+                            "^$lm2_logic|(HasAnkhFor(Jormungand) and (CanReach(IBMain) and (IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight) and (((Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(5)) or ((Has(Chain Whip) or Has(Katana) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(4)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(2)))))) or (MinimalLogic and (HasAnkhFor(Jormungand) and (CanReach(IBMain) and IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight))))"
+                        ]
+                    },
+                    {
+                        "name": "Jormungand Reward",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430002",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430002|CanReach(IBMain) and (IsDead(Jormungand))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain)"
+                ]
+            },
+            {
+                "name": "Pressure Plate Weapon Vault",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2313,
+                        "y": 1097,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 2131,
+                        "y": 714
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBRight) and ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip)))"
+                ]
+            },
+            {
+                "name": "Hiro Roderick",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2063,
+                        "y": 1097,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1632,
+                        "y": 720
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBRight)"
+                ]
+            },
+            {
+                "name": "Svipdagr",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1873,
+                        "y": 744,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_svipdagr"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBRight) and CanKill(Svipdagr)"
+                ]
+            },
+            {
+                "name": "Lava Weapon Vault",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1538,
+                        "y": 1121,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 581,
+                        "y": 762
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBBottom) and (Has(Glove) and (Has(Claydoll Suit) or OrbCount(1) or Has(Ice Cloak)))"
+                ]
+            },
+            {
+                "name": "IB Research - Pit of Time",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1510,
+                        "y": 1047,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 523,
+                        "y": 627
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBBottom)"
+                ],
+                "visibility_rules": [
+                    "setting_random_research"
+                ]
+            },
+            {
+                "name": "IB Left Shortcut",
+                "sections": [
+                    {
+                        "name": "Puzzle",
+                        "item_count": 1,
+                        "hosted_item": "boss_ib_left_shortcut"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBLeft) and (Has(Birth Sigil))"
+                ]
+            },
+            {
+                "name": "IB Research - Left Chamber",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1297,
+                        "y": 1110,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 101,
+                        "y": 740
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBLeft)"
+                ],
+                "visibility_rules": [
+                    "setting_random_research"
+                ]
+            },
+            {
+                "name": "Buried Fortress Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2148,
+                        "y": 1153,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1800,
+                        "y": 830
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430004",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430004|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
+                ]
+            },
+            {
+                "name": "Dinosaur Figure Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1883,
+                        "y": 1173,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1272,
+                        "y": 878
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430020",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430020|CanReach(IBDinosaur) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Rapier))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBDinosaur) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Rapier))"
+                ]
+            },
+            {
+                "name": "Moon Mantra Mural",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1809,
+                        "y": 1173,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1123,
+                        "y": 850
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Mural",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMoon) and (CanChant(Sun) and Has(Snapshot) and HorizontalAttack and Has(Life Sigil) and (CanWarp or CanReach(IBDinosaur) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and Setting(Non Random Ladders))))"
+                ]
+            },
+            {
+                "name": "Cetus Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1103,
+                        "y": 49,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBTop)"
                 ]
             },
             {
-                "name": "Shop Slot 3",
-                "item_count": 1,
+                "name": "Top-Left Weapon Vault Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 514,
+                        "y": 72,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBTop)"
+                    "^$lm2_logic|CanReach(IBTopLeft) and (Has(Glove) or Has(Feather) or (CanReach(IBTop) and CanWarp and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
+                ]
+            },
+            {
+                "name": "Under Fake Wall Puzzle Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 463,
+                        "y": 255,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBTopLeft) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Before Fake Wall Puzzle Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 576,
+                        "y": 231,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBTopLeft)"
+                ]
+            },
+            {
+                "name": "Corridor of Wind Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 851,
+                        "y": 231,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain)"
+                ]
+            },
+            {
+                "name": "Left Altar Lower Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 960,
+                        "y": 341,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip))))"
+                ]
+            },
+            {
+                "name": "Left Altar Upper Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 984,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip))))"
+                ]
+            },
+            {
+                "name": "Left of Spiral Boat Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 869,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and Has(Birth Sigil))"
+                ]
+            },
+            {
+                "name": "Above Backside Grail Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 983,
+                        "y": 610,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and Has(Birth Sigil))"
+                ]
+            },
+            {
+                "name": "Jormungandr Mural Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1204,
+                        "y": 721,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or IsDead(Cetus))))"
+                ]
+            },
+            {
+                "name": "Map Chest Left Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1272,
+                        "y": 255,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Map Chest Right Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1453,
+                        "y": 207,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain)"
+                ]
+            },
+            {
+                "name": "Right of Spiral Boat Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1463,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain)"
+                ]
+            },
+            {
+                "name": "Submerged Sigil Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1381,
+                        "y": 697,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus) or TrickyLogic)"
+                ]
+            },
+            {
+                "name": "Above Frontside Grail Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1560,
+                        "y": 255,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Frontside Grail Upper Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1732,
+                        "y": 341,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Frontside Grail Lower Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1732,
+                        "y": 390,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Below Hidden Sigil Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1544,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Right of Hiro Roderick Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1732,
+                        "y": 769,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBRight)"
+                ]
+            },
+            {
+                "name": "Path of Destruction Dropdown Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1791,
+                        "y": 610,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBRight)"
+                ]
+            },
+            {
+                "name": "Path to Destruction Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1934,
+                        "y": 562,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBRight)"
+                ]
+            },
+            {
+                "name": "Corona Arsenal Right Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 2175,
+                        "y": 745,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBRight) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip))"
+                ]
+            },
+            {
+                "name": "Corona Arsenal Left Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 2011,
+                        "y": 697,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBRight) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip))"
+                ]
+            },
+            {
+                "name": "Left of Lava Weapon Vault Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 423,
+                        "y": 697,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(IB Left Shortcut)))"
+                ]
+            },
+            {
+                "name": "Inferno Corridor Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 541,
+                        "y": 855,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBBottom)"
+                ]
+            },
+            {
+                "name": "Time Altar Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 265,
+                        "y": 476,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Path to Time Altar Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 484,
+                        "y": 634,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Path to Time Altar Hidden Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 322,
+                        "y": 562,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBBottom) and (Has(Feather) and (MeleeAttack or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
+                ]
+            },
+            {
+                "name": "Path to Time Altar Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 265,
+                        "y": 610,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBBottom)"
+                ]
+            },
+            {
+                "name": "Left Soul Gate Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 296,
+                        "y": 831,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBLeft) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Alviss Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1674,
+                        "y": 903,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBDinosaur) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Moon Altar",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1013,
+                        "y": 903,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "sections": [
+                    {
+                        "name": "Moon Altar Coin Pot",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+                        ]
+                    },
+                    {
+                        "name": "Moon Altar Item Pot",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+                ]
+            },
+            {
+                "name": "Inferno Corridor Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 966,
+                        "y": 927,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBLadder) and (HorizontalAttack and (CanWarp or Has(Feather)))"
                 ]
             }
         ],
         "access_rules": [
-          "^$lm2_logic|CanReach(IBTop)"
+            "^$lm2_logic|CanReach(IBBattery) or CanReach(IBBottom) or CanReach(IBDinosaur) or CanReach(IBLeft) or CanReach(IBMain) or CanReach(IBMoon) or CanReach(IBRight) or CanReach(IBTop) or CanReach(IBTopLeft)"
         ]
-      },
-        {
-            "name": "Cetus",
-            "map_locations": [
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 1267,
-                    "y": 93,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_cetus"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBTop) and CanKill(Cetus)"
-            ]
-        },
-        {
-            "name": "Fake Wall Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1403,
-                    "y": 840,
-                    "size": 50
-                },
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 268,
-                    "y": 206
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430021",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430021|CanReach(IBTopLeft) and (((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Ring))) and Has(Glove))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBTopLeft) and (((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Ring))) and Has(Glove))"
-            ]
-        },
-      {
-        "name": "Top-Left Weapon Vault",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1524,
-            "y": 761,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 533,
-            "y": 48
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-            "^$lm2_logic|CanReach(IBTopLeft) and (Has(Glove) or Has(Feather) or (CanReach(IBTop) and CanWarp and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
-        ]
-      },
-      {
-        "name": "IB Research - Top Left",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1632,
-            "y": 786,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 781,
-            "y": 119
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|(CanReach(IBTop) and CanWarp) or (CanReach(IBTopLeft) and (Has(Feather) or (Has(Glove) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))))"
-        ],
-        "visibility_rules": [ "setting_random_research" ]
-      },
-        {
-            "name": "Map Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1933,
-                    "y": 828,
-                    "size": 50
-                },
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 1371,
-                    "y": 182
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430113",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430113|CanReach(IBMain)"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBMain)"
-            ]
-        },
-        {
-            "name": "Hidden Sigil Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 2039,
-                    "y": 1030,
-                    "size": 50
-                },
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 1585,
-                    "y": 585
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430027",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430027|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBMain) and (Has(Life Sigil) and (Has(Feather) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
-            ]
-        },
-        {
-            "name": "Top Dash Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1632,
-                    "y": 841,
-                    "size": 50
-                },
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 768,
-                    "y": 206
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430032",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430032|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
-            ]
-        },
-        {
-            "name": "Submerged Sigil Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1951,
-                    "y": 1085,
-                    "size": 50
-                },
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 1407,
-                    "y": 696
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430104",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430104|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus) or TrickyLogic))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus) or TrickyLogic))"
-            ]
-        },
-        {
-            "name": "Time Altar Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1467,
-                    "y": 986,
-                    "size": 50
-                },
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 439,
-                    "y": 496
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430005",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430005|CanReach(IBMain) and (IsDead(Ratatoskr 2) and Has(Cog of Antiquity) and Has(Life Sigil))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2) and Has(Cog of Antiquity) and Has(Life Sigil))"
-            ]
-        },
-      {
-        "name": "Ratatoskr 2 Reward",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1579,
-            "y": 907,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 662,
-            "y": 340
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 2))"
-        ]
-      },
-      {
-        "name": "IB Research - Top Right",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2081,
-            "y": 773,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 1671,
-            "y": 66
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(IBMain)"
-        ],
-        "visibility_rules": [ "setting_random_research" ]
-      },
-      {
-        "name": "Immortal Battlefield Tent",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1816,
-            "y": 908,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 1137,
-            "y": 340
-          }
-        ],
-        "sections": [
+    },
+    {
+        "name": "Cavern",
+        "children": [
             {
-                "name": "IB Research - Tent (First Time)",
-                "item_count": 1,
+                "name": "Sun Mantra Mural",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2432,
+                        "y": 975,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 2371,
+                        "y": 454
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Mural",
+                        "item_count": 1
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)))"
-                ]
-            },
-            {
-                "name": "IB Research - Tent (7 Guardians)",
-                "item_count": 1,
-                "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and GuardianKills(7))"
-                ]
-            },
-            {
-                "name": "IB Research - Tent (Post Heimdall)",
-                "item_count": 1,
-                "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and ((Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip)) and IsDead(Heimdall))"
-                ]
-            }
-        ],
-        "visibility_rules": [ "setting_random_research" ]
-      },
-      {
-        "name": "Mulbruk's Item (4 Guardians)",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2053,
-            "y": 854,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 1680,
-            "y": 286
-          }
-        ],
-        "sections": [
-          {
-            "name": "Dialogue",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(IBMain) and (CanReach(Annwfn Main) and GuardianKills(4))"
-        ]
-      },
-        {
-            "name": "Ratatoskr 2",
-            "map_locations": [
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 586,
-                    "y": 340,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_ratatoskr_2"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBMain) and (IsDead(Ratatoskr 1))"
-            ]
-        },
-        {
-            "name": "Jormungand",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1862,
-                    "y": 1053,
-                    "size": 50
-                },
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 1117,
-                    "y": 609,
-                    "size": 50
-
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Guardian",
-                    "item_count": 1,
-                    "hosted_item": "boss_jormungand",
-                    "access_rules": [
-                        "^$lm2_logic|(HasAnkhFor(Jormungand) and (CanReach(IBMain) and (IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight) and (((Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(5)) or ((Has(Chain Whip) or Has(Katana) or Has(Axe) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and OrbCount(4)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(2)))))) or (MinimalLogic and (HasAnkhFor(Jormungand) and (CanReach(IBMain) and IsDead(Cetus) and Has(Pochette Key) and CanReach(AltarRight))))"
-                    ]
-                },
-                {
-                    "name": "Jormungand Reward",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430002",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430002|CanReach(IBMain) and (IsDead(Jormungand))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBMain)"
-            ]
-        },
-      {
-        "name": "Pressure Plate Weapon Vault",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2313,
-            "y": 1097,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 2131,
-            "y": 714
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(IBRight) and ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip)))"
-        ]
-      },
-      {
-        "name": "Hiro Roderick",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2063,
-            "y": 1097,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 1632,
-            "y": 720
-          }
-        ],
-        "sections": [
-            {
-                "name": "Shop Slot 1",
-                "item_count": 1,
-                "access_rules": [
-                    "^$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
-                ]
-            },
-            {
-                "name": "Shop Slot 2",
-                "item_count": 1,
-                "access_rules": [
-                    "^$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
-                ]
-            },
-            {
-                "name": "Shop Slot 3",
-                "item_count": 1,
-                "access_rules": [
-                    "^$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
+                    "^$lm2_logic|CanReach(Cavern) and (Has(Snapshot))"
                 ]
             }
         ],
         "access_rules": [
-          "^$lm2_logic|CanReach(IBRight)"
+            "^$lm2_logic|CanReach(Cavern)"
         ]
-      },
-        {
-            "name": "Svipdagr",
-            "map_locations": [
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 1873,
-                    "y": 744,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_svipdagr"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBRight) and CanKill(Svipdagr)"
-            ]
-        },
-      {
-        "name": "Lava Weapon Vault",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1538,
-            "y": 1121,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 581,
-            "y": 762
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
+    },
+    {
+        "name": "Altar",
+        "children": [
+            {
+                "name": "Secret Treasure of Life Location",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2432,
+                        "y": 1035,
+                        "size": 50
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 2367,
+                        "y": 582
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "FreeStanding",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AltarLeft) and (IsDead(Heimdall) and Has(Feather))"
+                ]
+            }
         ],
         "access_rules": [
-          "^$lm2_logic|CanReach(IBBottom) and (Has(Glove) and (Has(Claydoll Suit) or OrbCount(1) or Has(Ice Cloak)))"
+            "^$lm2_logic|CanReach(AltarLeft) or CanReach(AltarRight)"
         ]
-      },
-      {
-        "name": "IB Research - Pit of Time",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1510,
-            "y": 1047,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 523,
-            "y": 627
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(IBBottom)"
-        ],
-        "visibility_rules": [ "setting_random_research" ]
-      },
-      {
-        "name": "IB Left Shortcut",
-        "sections": [
-          {
-            "name": "Puzzle",
-            "item_count": 1,
-            "hosted_item": "boss_ib_left_shortcut"
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(IBLeft) and (Has(Birth Sigil))"
-        ]
-      },
-        {
-            "name": "IB Research - Left Chamber",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1297,
-                    "y": 1110,
-                    "size": 50
-                },
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 101,
-                    "y": 740
-                }
-            ],
-            "sections": [
-                {
-                    "name": "FreeStanding",
-                    "item_count": 1
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBLeft)"
-            ],
-            "visibility_rules": [ "setting_random_research" ]
-        },
-        {
-            "name": "Buried Fortress Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 2148,
-                    "y": 1153,
-                    "size": 50
-                },
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 1800,
-                    "y": 830
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430004",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430004|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
-            ]
-        },
-        {
-            "name": "Dinosaur Figure Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1883,
-                    "y": 1173,
-                    "size": 50
-                },
-                {
-                    "map": "Immortal Battlefield",
-                    "x": 1272,
-                    "y": 878
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430020",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430020|CanReach(IBDinosaur) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Rapier))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(IBDinosaur) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Rapier))"
-            ]
-        },
-      {
-        "name": "Moon Mantra Mural",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1809,
-            "y": 1173,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 1123,
-            "y": 850
-          }
-        ],
-        "sections": [
-          {
-            "name": "Mural",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(IBMoon) and (CanChant(Sun) and Has(Snapshot) and HorizontalAttack and Has(Life Sigil) and (CanWarp or CanReach(IBDinosaur) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and Setting(Non Random Ladders))))"
-        ]
-      },
-      {
-          "name": "Cetus Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBTop)"
-          ]
-      },
-      {
-          "name": "Top-Left Weapon Vault Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBTopLeft)"
-          ]
-      },
-      {
-          "name": "Under Fake Wall Puzzle Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBTopLeft) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Before Fake Wall Puzzle Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBTopLeft)"
-          ]
-      },
-      {
-          "name": "Corridor of Wind Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain)"
-          ]
-      },
-      {
-          "name": "Left Altar Lower Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip))))"
-          ]
-      },
-      {
-          "name": "Left Altar Upper Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip))))"
-          ]
-      },
-      {
-          "name": "Left of Spiral Boat Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and Has(Birth Sigil))"
-          ]
-      },
-      {
-          "name": "Above Backside Grail Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and Has(Birth Sigil))"
-          ]
-      },
-      {
-          "name": "Jormungandr Mural Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or IsDead(Cetus))))"
-          ]
-      },
-      {
-          "name": "Map Chest Left Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Map Chest Right Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain)"
-          ]
-      },
-      {
-          "name": "Right of Spiral Boat Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain)"
-          ]
-      },
-      {
-          "name": "Submerged Sigil Weight Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain)"
-          ]
-      },
-      {
-          "name": "Above Frontside Grail Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Frontside Grail Upper Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Frontside Grail Lower Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Below Hidden Sigil Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Right of Hiro Roderick Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBRight)"
-          ]
-      },
-      {
-          "name": "Path of Destruction Dropdown Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBRight)"
-          ]
-      },
-      {
-          "name": "Path to Destruction Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBRight)"
-          ]
-      },
-      {
-          "name": "Corona Arsenal Right Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBRight) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip))"
-          ]
-      },
-      {
-          "name": "Corona Arsenal Left Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBRight) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip))"
-          ]
-      },
-      {
-          "name": "Left of Lava Weapon Vault Weight Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(IB Left Shortcut)))"
-          ]
-      },
-      {
-          "name": "Inferno Corridor Weight Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBBottom)"
-          ]
-      },
-      {
-          "name": "Time Altar Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Path to Time Altar Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Path to Time Altar Hidden Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBBottom) and (Has(Feather) and (MeleeAttack or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
-          ]
-      },
-      {
-          "name": "Path to Time Altar Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBBottom)"
-          ]
-      },
-      {
-          "name": "Left Soul Gate Weight Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBLeft) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Alviss Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBDinosaur) and (HorizontalAttack)"
-          ]
-      },
-      {
-          "name": "Moon Altar Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
-          ]
-      },
-      {
-          "name": "Moon Altar Item Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
-          ]
-      },
-      {
-          "name": "Inferno Corridor Coin Pot",
-          "sections": [
-              {
-                  "name": "Pot",
-                  "item_count": 1
-              }
-          ],
-          "visibility_rules": [ "setting_potsanity" ],
-          "access_rules": [
-              "^$lm2_logic|CanReach(IBLadder) and (HorizontalAttack and (CanWarp or Has(Feather)))"
-          ]
-      }
-    ],
-    "access_rules": [
-      "^$lm2_logic|CanReach(IBBattery) or CanReach(IBBottom) or CanReach(IBDinosaur) or CanReach(IBLeft) or CanReach(IBMain) or CanReach(IBMoon) or CanReach(IBRight) or CanReach(IBTop) or CanReach(IBTopLeft)"
-    ]
-  },
-  {
-    "name": "Cavern",
-    "children": [
-      {
-        "name": "Sun Mantra Mural",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2432,
-            "y": 975,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 2371,
-            "y": 454
-          }
-        ],
-        "sections": [
-          {
-            "name": "Mural",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(Cavern) and (Has(Snapshot))"
-        ]
-      }
-    ],
-    "access_rules": [
-      "^$lm2_logic|CanReach(Cavern)"
-    ]
-  },
-  {
-    "name": "Altar",
-    "children": [
-      {
-        "name": "Secret Treasure of Life Location",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 2432,
-            "y": 1035,
-            "size": 50
-          },
-          {
-            "map": "Immortal Battlefield",
-            "x": 2367,
-            "y": 582
-          }
-        ],
-        "sections": [
-          {
-            "name": "FreeStanding",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(AltarLeft) and (IsDead(Heimdall) and Has(Feather))"
-        ]
-      }
-    ],
-    "access_rules": [
-      "^$lm2_logic|CanReach(AltarLeft) or CanReach(AltarRight)"
-    ]
-  }
+    }
 ]

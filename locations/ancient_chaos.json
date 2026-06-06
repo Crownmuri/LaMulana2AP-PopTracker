@@ -1,578 +1,830 @@
 [
-  {
-    "name": "Ancient Chaos",
-    "children": [
-        {
-            "name": "Map Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1209,
-                    "y": 2519,
-                    "size": 50
-                },
-                {
-                    "map": "Ancient Chaos",
-                    "x": 422,
-                    "y": 740
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430122",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430122|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack))"
-            ]
-        },
-      {
-        "name": "Venum",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1342,
-            "y": 2519,
-            "size": 50
-          },
-          {
-            "map": "Ancient Chaos",
-            "x": 689,
-            "y": 740
-          }
-        ],
-        "sections": [
+    {
+        "name": "Ancient Chaos",
+        "children": [
             {
-                "name": "Shop Slot 1",
-                "item_count": 1,
+                "name": "Map Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1209,
+                        "y": 2519,
+                        "size": 50
+                    },
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 422,
+                        "y": 740
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430122",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430122|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack))"
+                        ]
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                    "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack))"
                 ]
             },
             {
-                "name": "Shop Slot 2",
-                "item_count": 1,
+                "name": "Venum",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1342,
+                        "y": 2519,
+                        "size": 50
+                    },
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 689,
+                        "y": 740
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Shop Slot 1",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 2",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                        ]
+                    },
+                    {
+                        "name": "Shop Slot 3",
+                        "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                        ]
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                    "^$lm2_logic|CanReach(ACBottom)"
                 ]
             },
             {
-                "name": "Shop Slot 3",
-                "item_count": 1,
+                "name": "Ki sikil lil la ke",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 67,
+                        "y": 739,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_ki_sikil_lil_la_ke"
+                    }
+                ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                    "^$lm2_logic|CanReach(ACBottom) and CanKill(Ki sikil lil la ke)"
+                ]
+            },
+            {
+                "name": "Wind Mantra Mural",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1434,
+                        "y": 2445,
+                        "size": 50
+                    },
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 873,
+                        "y": 590
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Mural",
+                        "item_count": 1
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACWind) and (Has(Snapshot))"
+                ]
+            },
+            {
+                "name": "There is Nothing Here",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1061,
+                        "y": 2372,
+                        "size": 50
+                    },
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 111,
+                        "y": 424
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430137",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430137|CanReach(ACTablet) and (IsDead(Ki sikil lil la ke))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACTablet) and (IsDead(Ki sikil lil la ke))"
+                ]
+            },
+            {
+                "name": "Simultaneous Strike Chest",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1150,
+                        "y": 2456,
+                        "size": 50
+                    },
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 345,
+                        "y": 651
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430148",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430148|CanReach(ACTablet) and (((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit)) or (Glitch(Costume Clip) and HorizontalAttack))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACTablet) and (((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit)) or (Glitch(Costume Clip) and HorizontalAttack))"
+                ]
+            },
+            {
+                "name": "Anzu Reward",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1435,
+                        "y": 2255,
+                        "size": 50
+                    },
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 873,
+                        "y": 176
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430049",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430049|CanReach(ACMain) and (IsDead(Anzu))"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACMain) and (IsDead(Anzu))"
+                ]
+            },
+            {
+                "name": "Anu",
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1435,
+                        "y": 2183,
+                        "size": 50
+                    },
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 875,
+                        "y": 41,
+                        "size": 50
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Guardian",
+                        "item_count": 1,
+                        "hosted_item": "boss_anu",
+                        "access_rules": [
+                            "^$lm2_logic|(HasAnkhFor(Anu) and (Has(Glove) and IsDead(Ki sikil lil la ke) and (((Has(Chain Whip) or Has(Rapier) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) and Has(Ring))) and OrbCount(5)) or ((Has(Flail Whip) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or Has(Ring)))) and OrbCount(4)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(3))))) or (MinimalLogic and (HasAnkhFor(Anu) and (Has(Glove) and IsDead(Ki sikil lil la ke) and (Has(Leather Whip) or Has(Knife) or Has(Rapier) or Has(Katana) or Has(Axe) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Caltrops) or CanUse(Flare Gun) or CanUse(Earth Spear) or (CanUse(Bomb) and Has(Ring)) or (CanUse(Chakram) and Has(Ring)) or Has(Claydoll Suit)))))"
+                        ]
+                    },
+                    {
+                        "name": "Anu Reward",
+                        "item_count": 1,
+                        "hosted_item": "cursed_430042",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430042|CanReach(ACMain) and (IsDead(Anu) and HorizontalAttack)"
+                        ]
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACMain)"
+                ]
+            },
+            {
+                "name": "Anzu",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 873,
+                        "y": 230,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_anzu"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACMain) and CanKill(Anzu)"
+                ]
+            },
+            {
+                "name": "Entrance Gate Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 896,
+                        "y": 745,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(6))))"
+                ]
+            },
+            {
+                "name": "Annunaki Hot Spring Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 855,
+                        "y": 831,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBottom) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
+                ]
+            },
+            {
+                "name": "Annunaki Hot Spring Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 888,
+                        "y": 879,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBottom) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
+                ]
+            },
+            {
+                "name": "Path to Inferno Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 467,
+                        "y": 720,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(6))))"
+                ]
+            },
+            {
+                "name": "Abandon Your Desires Coin Pot #1",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 294,
+                        "y": 697,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
+                ]
+            },
+            {
+                "name": "Abandon Your Desires Coin Pot #2",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 308,
+                        "y": 697,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
+                ]
+            },
+            {
+                "name": "Abandon Your Desires Coin Pot #3",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 322,
+                        "y": 697,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
+                ]
+            },
+            {
+                "name": "Abandon Your Desires Coin Pot #4",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 346,
+                        "y": 697,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
+                ]
+            },
+            {
+                "name": "Shortcut Room Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 653,
+                        "y": 610,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBottom)"
+                ]
+            },
+            {
+                "name": "Shortcut Room Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 624,
+                        "y": 586,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBottom) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "There is Nothing Here Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 107,
+                        "y": 476,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACTablet)"
+                ]
+            },
+            {
+                "name": "Grail Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 349,
+                        "y": 476,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACTablet)"
+                ]
+            },
+            {
+                "name": "Queen of the Night Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 224,
+                        "y": 610,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACTablet)"
+                ]
+            },
+            {
+                "name": "Queen of the Night Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 234,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACTablet) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Nine Eyes Wrong Side Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 437,
+                        "y": 634,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACTablet) and (((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit)) or Glitch(Costume Clip))"
+                ]
+            },
+            {
+                "name": "Pre-Secret Shortcut Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 677,
+                        "y": 476,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACTablet) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Post-Secret Shortcut Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 648,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACTablet) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "Ziggurat of Destiny Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 974,
+                        "y": 365,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACMain)"
+                ]
+            },
+            {
+                "name": "Zhulong Blocked Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 984,
+                        "y": 586,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACMain)"
+                ]
+            },
+            {
+                "name": "Above Mantra Mural Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 904,
+                        "y": 563,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACMain)"
+                ]
+            },
+            {
+                "name": "Soul Gate Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 596,
+                        "y": 98,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBlood)"
+                ]
+            },
+            {
+                "name": "Corridor of Blood Upper Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 593,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBlood)"
+                ]
+            },
+            {
+                "name": "Corridor of Blood Right Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 733,
+                        "y": 341,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBlood)"
                 ]
             }
         ],
         "access_rules": [
-          "^$lm2_logic|CanReach(ACBottom)"
+            "^$lm2_logic|CanReach(ACBottom) or CanReach(ACMain) or CanReach(ACTablet) or CanReach(ACWind)"
         ]
-      },
-        {
-            "name": "Ki sikil lil la ke",
-            "map_locations": [
-                {
-                    "map": "Ancient Chaos",
-                    "x": 67,
-                    "y": 739,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_ki_sikil_lil_la_ke"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom) and CanKill(Ki sikil lil la ke)"
-            ]
-        },
-      {
-        "name": "Wind Mantra Mural",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1434,
-            "y": 2445,
-            "size": 50
-          },
-          {
-            "map": "Ancient Chaos",
-            "x": 873,
-            "y": 590
-          }
-        ],
-        "sections": [
-          {
-            "name": "Mural",
-            "item_count": 1
-          }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(ACWind) and (Has(Snapshot))"
-        ]
-      },
-        {
-            "name": "There is Nothing Here",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1061,
-                    "y": 2372,
-                    "size": 50
-                },
-                {
-                    "map": "Ancient Chaos",
-                    "x": 111,
-                    "y": 424
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430137",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430137|CanReach(ACTablet) and (IsDead(Ki sikil lil la ke))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACTablet) and (IsDead(Ki sikil lil la ke))"
-            ]
-        },
-        {
-            "name": "Simultaneous Strike Chest",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1150,
-                    "y": 2456,
-                    "size": 50
-                },
-                {
-                    "map": "Ancient Chaos",
-                    "x": 345,
-                    "y": 651
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430148",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430148|CanReach(ACTablet) and (((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit)) or (Glitch(Costume Clip) and HorizontalAttack))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACTablet) and (((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit)) or (Glitch(Costume Clip) and HorizontalAttack))"
-            ]
-        },
-        {
-            "name": "Anzu Reward",
-            "map_locations": [
-                {
-                    "map": "Full Map",
-                    "x": 1435,
-                    "y": 2255,
-                    "size": 50
-                },
-                {
-                    "map": "Ancient Chaos",
-                    "x": 873,
-                    "y": 176
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Chest",
-                    "item_count": 1,
-                    "hosted_item": "cursed_430049",
-                    "clear_as_group": false,
-                    "access_rules": [
-                        "^$lm2_cursed|430049|CanReach(ACMain) and (IsDead(Anzu))"
-                    ]
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACMain) and (IsDead(Anzu))"
-            ]
-        },
-      {
-        "name": "Anu",
-        "map_locations": [
-          {
-            "map": "Full Map",
-            "x": 1435,
-            "y": 2183,
-            "size": 50
-          },
-            {
-                "map": "Ancient Chaos",
-                "x": 875,
-                "y": 41,
-                "size": 50
-
-            }
-        ],
-        "sections": [
-          {
-            "name": "Guardian",
-            "item_count": 1,
-            "hosted_item": "boss_anu",
-            "access_rules": [
-              "^$lm2_logic|(HasAnkhFor(Anu) and (Has(Glove) and IsDead(Ki sikil lil la ke) and (((Has(Chain Whip) or Has(Rapier) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) and Has(Ring))) and OrbCount(5)) or ((Has(Flail Whip) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or Has(Ring)))) and OrbCount(4)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(3))))) or (MinimalLogic and (HasAnkhFor(Anu) and (Has(Glove) and IsDead(Ki sikil lil la ke) and (Has(Leather Whip) or Has(Knife) or Has(Rapier) or Has(Katana) or Has(Axe) or CanUse(Shuriken) or CanUse(Rolling Shuriken) or CanUse(Caltrops) or CanUse(Flare Gun) or CanUse(Earth Spear) or (CanUse(Bomb) and Has(Ring)) or (CanUse(Chakram) and Has(Ring)) or Has(Claydoll Suit)))))"
-            ]
-          },
-            {
-                "name": "Anu Reward",
-                "item_count": 1,
-                "hosted_item": "cursed_430042",
-                "clear_as_group": false,
-                "access_rules": [
-                    "^$lm2_cursed|430042|CanReach(ACMain) and (IsDead(Anu) and HorizontalAttack)"
-                ]
-            }
-        ],
-        "access_rules": [
-          "^$lm2_logic|CanReach(ACMain)"
-        ]
-      },
-        {
-            "name": "Anzu",
-            "map_locations": [
-                {
-                    "map": "Ancient Chaos",
-                    "x": 873,
-                    "y": 230,
-                    "shape": "diamond"
-                }
-            ],
-            "sections": [
-                {
-                    "name": "Miniboss",
-                    "item_count": 1,
-                    "hosted_item": "boss_anzu"
-                }
-            ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACMain) and CanKill(Anzu)"
-            ]
-        },
-        {
-            "name": "Entrance Gate Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(6))))"
-            ]
-        },
-        {
-            "name": "Annunaki Hot Spring Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
-            ]
-        },
-        {
-            "name": "Annunaki Hot Spring Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
-            ]
-        },
-        {
-            "name": "Path to Inferno Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(6))))"
-            ]
-        },
-        {
-            "name": "Abandon Your Desires Coin Pot #1",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
-            ]
-        },
-        {
-            "name": "Abandon Your Desires Coin Pot #2",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
-            ]
-        },
-        {
-            "name": "Abandon Your Desires Coin Pot #3",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
-            ]
-        },
-        {
-            "name": "Abandon Your Desires Coin Pot #4",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
-            ]
-        },
-        {
-            "name": "Shortcut Room Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom)"
-            ]
-        },
-        {
-            "name": "Shortcut Room Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBottom)"
-            ]
-        },
-        {
-            "name": "There is Nothing Here Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACTablet)"
-            ]
-        },
-        {
-            "name": "Grail Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACTablet)"
-            ]
-        },
-        {
-            "name": "Queen of the Night Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACTablet)"
-            ]
-        },
-        {
-            "name": "Queen of the Night Weight Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACTablet) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Nine Eyes Wrong Side Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACTablet) and (((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit)) or Glitch(Costume Clip))"
-            ]
-        },
-        {
-            "name": "Pre-Secret Shortcut Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACTablet) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Post-Secret Shortcut Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACTablet) and (HorizontalAttack)"
-            ]
-        },
-        {
-            "name": "Ziggurat of Destiny Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACMain)"
-            ]
-        },
-        {
-            "name": "Zhulong Blocked Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACMain)"
-            ]
-        },
-        {
-            "name": "Above Mantra Mural Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACMain)"
-            ]
-        },
-        {
-            "name": "Soul Gate Item Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBlood)"
-            ]
-        },
-        {
-            "name": "Corridor of Blood Upper Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBlood)"
-            ]
-        },
-        {
-            "name": "Corridor of Blood Right Coin Pot",
-            "sections": [
-                {
-                    "name": "Pot",
-                    "item_count": 1
-                }
-            ],
-            "visibility_rules": [ "setting_potsanity" ],
-            "access_rules": [
-                "^$lm2_logic|CanReach(ACBlood)"
-            ]
-        }
-    ],
-    "access_rules": [
-      "^$lm2_logic|CanReach(ACBottom) or CanReach(ACMain) or CanReach(ACTablet) or CanReach(ACWind)"
-    ]
-  }
+    }
 ]

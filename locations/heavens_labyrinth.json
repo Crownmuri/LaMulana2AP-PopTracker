@@ -238,7 +238,9 @@
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLSpun) and (CanWarp and IsDead(Echidna) and Has(Progressive Beherit) and Has(Hand Scanner))"
                 ],
-                "visibility_rules": [ "setting_random_dissonance" ]
+                "visibility_rules": [
+                    "setting_random_dissonance"
+                ]
             },
             {
                 "name": "Arachne",
@@ -356,195 +358,360 @@
             },
             {
                 "name": "After Megarock Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 225,
+                        "y": 255,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (HorizontalAttack and Has(Feather) and Has(Grapple Claw))"
                 ]
             },
             {
                 "name": "Below Megarock Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 71,
+                        "y": 365,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (Has(Grapple Claw))"
                 ]
             },
             {
                 "name": "Ladder from B-2 Mural Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 404,
+                        "y": 121,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Celestial Disk Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 572,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL)"
                 ]
             },
             {
                 "name": "Celestial Disk Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 701,
+                        "y": 341,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL)"
                 ]
             },
             {
                 "name": "Typhon's Room Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 549,
+                        "y": 524,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Arachne's Corridor Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 956,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Arachne's Corridor Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 942,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
                 ]
             },
             {
                 "name": "Soul Gate Hidden Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 1098,
+                        "y": 610,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL)"
                 ]
             },
             {
                 "name": "Spiral Mural Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 1013,
+                        "y": 365,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and HorizontalAttack)"
                 ]
             },
             {
                 "name": "Weapon Vault Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 313,
+                        "y": 24,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and (Has(Feather) or Has(Grapple Claw)))"
                 ]
             },
             {
                 "name": "Path to Chaos Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 686,
+                        "y": 255,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and HorizontalAttack)"
                 ]
             },
             {
                 "name": "Scylla's Breakable Wall Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 329,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
                 ]
             },
             {
                 "name": "Twin Vessel Weight Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 47,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
                 ]
             },
             {
                 "name": "Twin Vessel Item Pot",
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 194,
+                        "y": 658,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
                 "sections": [
                     {
                         "name": "Pot",
                         "item_count": 1
                     }
                 ],
-                "visibility_rules": [ "setting_potsanity" ],
+                "visibility_rules": [
+                    "setting_potsanity"
+                ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
                 ]
