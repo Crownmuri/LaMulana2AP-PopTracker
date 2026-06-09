@@ -451,7 +451,7 @@
                     "setting_potsanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain) and (IsDead(Kaliya) or (Has(Feather) and CanWarp))"
+                    "^$lm2_logic|CanReach(AnnwfnMain) and ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))))"
                 ]
             },
             {
