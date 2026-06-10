@@ -627,6 +627,13 @@
                         "y": 1792,
                         "size": 30,
                         "shape": "diamond"
+                    },
+                    {
+                        "map": "Dark Star Lords Mausoleum",
+                        "x": 998,
+                        "y": 231,
+                        "size": 30,
+                        "shape": "diamond"
                     }
                 ],
                 "access_rules": [
