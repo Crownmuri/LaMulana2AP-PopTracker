@@ -147,12 +147,12 @@
                         "hosted_item": "cursed_430052",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430052|CanReach(SotFGGrail) and (Has(Origin Sigil) and HorizontalAttack)"
+                            "^$lm2_cursed|430052|CanReach(SotFGGrail) and ((Has(Origin Sigil) or (PuzzleFinished(Bergelmir) and (IsDead(Fenrir) or CanStopTime))) and HorizontalAttack)"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGGrail) and (Has(Origin Sigil) and HorizontalAttack)"
+                    "^$lm2_logic|CanReach(SotFGGrail) and ((Has(Origin Sigil) or (PuzzleFinished(Bergelmir) and (IsDead(Fenrir) or CanStopTime))) and HorizontalAttack)"
                 ]
             },
             {
@@ -734,7 +734,7 @@
                     "setting_potsanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)))"
+                    "^$lm2_logic|CanReach(SotFGGrail) and ((Has(Origin Sigil) or (PuzzleFinished(Bergelmir) and (IsDead(Fenrir) or CanStopTime))) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring))))"
                 ]
             },
             {

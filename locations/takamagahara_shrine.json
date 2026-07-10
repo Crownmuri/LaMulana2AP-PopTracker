@@ -505,7 +505,7 @@
                 ]
             },
             {
-                "name": "Raijin and Fujin Reward Item Pot",
+                "name": "Raijin and Fujin's Item Pot",
                 "map_locations": [
                     {
                         "map": "Takamagahara Shrine",
@@ -525,7 +525,7 @@
                     "setting_potsanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain) and (IsDead(Raijin and Fujin))"
+                    "^$lm2_logic|CanReach(TSMain) and (CanKill(Raijin and Fujin) or CanWarp)"
                 ]
             },
             {
@@ -813,7 +813,7 @@
                     "setting_potsanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSBlood) and (HorizontalAttack and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(6))))"
+                    "^$lm2_logic|CanReach(TSBlood) and (HorizontalAttack and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(3))))"
                 ]
             },
             {
@@ -837,7 +837,7 @@
                     "setting_potsanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSBlood) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(6)))"
+                    "^$lm2_logic|CanReach(TSBlood) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(3)))"
                 ]
             }
         ],
