@@ -550,7 +550,8 @@ end
 GUARDIAN_SET = {
     ["boss_fafnir"]=true, ["boss_vritra"]=true, ["boss_kujata"]=true,
     ["boss_aten_ra"]=true, ["boss_jormungand"]=true, ["boss_anu"]=true,
-    ["boss_surtr"]=true, ["boss_echidna"]=true, ["boss_hel"]=true
+    ["boss_surtr"]=true, ["boss_echidna"]=true, ["boss_hel"]=true,
+    ["boss_ninth_child"]=true
 }
 
 local EVENT_LOGIC = {

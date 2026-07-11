@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 561,
+                        "y": 1232,
+                        "size": 50
+                    },
+                    {
                         "map": "Takamagahara Shrine",
                         "x": 874,
                         "y": 179
@@ -37,6 +43,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 598,
+                        "y": 1434,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 598,
                         "y": 1434,
                         "size": 50
@@ -72,6 +84,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 435,
+                        "y": 1378,
+                        "size": 50
+                    },
+                    {
                         "map": "Takamagahara Shrine",
                         "x": 619,
                         "y": 470
@@ -97,6 +115,16 @@
                         "item_count": 1,
                         "access_rules": [
                             "^$lm2_logic|CanReach(TSMain)"
+                        ]
+                    },
+                    {
+                        "name": "NPC Glossary (Ash Geen)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(TSLeft)"
                         ]
                     }
                 ],
@@ -135,6 +163,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 351,
+                        "y": 1366,
+                        "size": 50
+                    },
+                    {
                         "map": "Takamagahara Shrine",
                         "x": 452,
                         "y": 446
@@ -165,6 +199,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 845,
+                        "y": 1299,
+                        "size": 50
+                    },
+                    {
                         "map": "Takamagahara Shrine",
                         "x": 1397,
                         "y": 311
@@ -185,6 +225,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 394,
+                        "y": 1536,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 394,
                         "y": 1536,
                         "size": 50
@@ -215,6 +261,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 652,
+                        "y": 1490,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 652,
                         "y": 1490,
                         "size": 50
@@ -271,6 +323,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 186,
+                        "y": 1237,
+                        "size": 50
+                    },
+                    {
                         "map": "Takamagahara Shrine",
                         "x": 22,
                         "y": 220
@@ -319,8 +377,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 516,
                         "y": 562,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -330,7 +387,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain)"
@@ -343,8 +400,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 724,
                         "y": 610,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -354,7 +410,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain)"
@@ -367,8 +423,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 846,
                         "y": 183,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -378,7 +433,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
@@ -391,8 +446,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 767,
                         "y": 294,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -402,7 +456,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain)"
@@ -415,8 +469,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 984,
                         "y": 500,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -426,7 +479,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack)"
@@ -439,8 +492,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 984,
                         "y": 452,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -450,7 +502,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain)"
@@ -463,8 +515,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 878,
                         "y": 634,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -474,7 +525,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack)"
@@ -487,8 +538,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 773,
                         "y": 610,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -498,7 +548,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain) and (HorizontalAttack)"
@@ -511,8 +561,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 1214,
                         "y": 317,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -522,7 +571,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSMain) and (CanKill(Raijin and Fujin) or CanWarp)"
@@ -535,8 +584,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 265,
                         "y": 428,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -546,7 +594,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_chakram"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft) and (HorizontalAttack)"
@@ -559,8 +607,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 394,
                         "y": 476,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -570,7 +617,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
@@ -583,8 +630,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 269,
                         "y": 500,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -594,7 +640,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft) and ((Has(Leather Whip) and Has(Vajra)) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Knife) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
@@ -607,8 +653,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 515,
                         "y": 159,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -618,7 +663,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft)"
@@ -631,8 +676,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 519,
                         "y": 317,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -642,7 +686,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft) and (MeleeAttack or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
@@ -655,8 +699,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 732,
                         "y": 365,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -666,7 +709,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft)"
@@ -679,8 +722,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 561,
                         "y": 452,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -690,7 +732,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSLeft) and (MeleeAttack or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))"
@@ -703,8 +745,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 802,
                         "y": 746,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -714,7 +755,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBottom)"
@@ -727,8 +768,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 865,
                         "y": 831,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -738,7 +778,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBottom) and (HorizontalAttack)"
@@ -751,8 +791,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 984,
                         "y": 855,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -762,7 +801,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBottom) and (HorizontalAttack)"
@@ -775,8 +814,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 517,
                         "y": 855,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -786,7 +824,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBottom)"
@@ -799,8 +837,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 164,
                         "y": 120,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -810,7 +847,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBlood) and (HorizontalAttack and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(3))))"
@@ -823,8 +860,7 @@
                         "map": "Takamagahara Shrine",
                         "x": 460,
                         "y": 48,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -834,10 +870,194 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TSBlood) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(3)))"
+                ]
+            },
+            {
+                "name": "[TS E-3] Glossary in Raijin and Fujin's Room",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TSMain) and ((CanKill(Raijin and Fujin) or CanWarp))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 1014,
+                        "y": 387,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[TS E-6] Glossary in Wall Flared Before Daji",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TSMain) and (CanUse(Flare Gun))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 1018,
+                        "y": 696,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[TS D-4] Glossary in Bottom-Right Breakable Wall",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TSMain) and (CanWarp)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 984,
+                        "y": 524,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[TS D-1] NPC Glossary (Kami-musubi)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TSMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 770,
+                        "y": 72,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[TS C-3] NPC Glossary (Izanagi)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TSLeft)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 617,
+                        "y": 316,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[TS D-7] NPC Glossary (Shitateruhime)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TSBottom)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 827,
+                        "y": 878,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[TS D-6] NPC Glossary (Amenotokotachi)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TSBottom)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 864,
+                        "y": 791,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[TS B-1] Glossary inside the Poison Lava (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TSBlood) and (Has(Hand Scanner) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(3))))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 322,
+                        "y": 96,
+                        "size": 15
+                    }
                 ]
             }
         ],

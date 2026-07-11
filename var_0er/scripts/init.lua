@@ -1,5 +1,27 @@
 DEBUG = true
 ENABLE_DEBUG_LOG = DEBUG
+
+-- ============================================================
+-- Bulk-load performance
+-- ============================================================
+-- Location access rules are opaque "^$lm2_logic|..." Lua calls, so PopTracker
+-- cannot dependency-track them and re-evaluates EVERY location rule on EVERY
+-- item change -- and each rule runs a full CanReach flood-fill. On (re)connect
+-- to a finished AP slot, hundreds of items and locations replay at once, so the
+-- naive path is O(items x locations x flood-fill) and blocks the main thread
+-- long enough for the AP socket to time out and disconnect. (Worse here: the ER
+-- variant also loads the entrance + escape items and a dynamic entrance graph.)
+--
+-- AllowDeferredLogicUpdate lets PopTracker coalesce those into far fewer logic
+-- passes (evaluated fewer times than items update), which is exactly "only do
+-- the reachability work once per batch instead of once per item". It auto-
+-- enables for 'ap' packs only since PopTracker 0.31.0, and this pack targets
+-- 0.29.0, so it must be set explicitly. The nil-guard keeps older PopTracker
+-- builds (< 0.28.1, which lack the property) working unchanged.
+if Tracker.AllowDeferredLogicUpdate ~= nil then
+    Tracker.AllowDeferredLogicUpdate = true
+end
+
 -- ============================================================
 -- Items
 -- ============================================================
@@ -42,6 +64,9 @@ Tracker:AddLocations("locations/spiral_hell.json")
 Tracker:AddLocations("locations/starting_shop.json")
 Tracker:AddLocations("locations/entrances.json")
 Tracker:AddLocations("locations/potlegend.json")
+Tracker:AddLocations("locations/enemyglossary.json")
+Tracker:AddLocations("locations/glossarylegend.json")
+
 
 -- ============================================================
 -- Maps

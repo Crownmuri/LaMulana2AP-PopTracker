@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2286,
+                        "y": 2856,
+                        "size": 50
+                    },
+                    {
                         "map": "Eternal Prison - Gloom",
                         "x": 1079,
                         "y": 196
@@ -42,6 +48,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2076,
+                        "y": 3198,
+                        "size": 50
+                    },
+                    {
                         "map": "Eternal Prison - Gloom",
                         "x": 687,
                         "y": 899
@@ -62,6 +74,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1809,
+                        "y": 2744,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1809,
                         "y": 2744,
                         "size": 50
@@ -97,6 +115,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2060,
+                        "y": 3045,
+                        "size": 50
+                    },
+                    {
                         "map": "Eternal Prison - Gloom",
                         "x": 628,
                         "y": 571
@@ -117,6 +141,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1823,
+                        "y": 3057,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1823,
                         "y": 3057,
                         "size": 50
@@ -144,18 +174,29 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 943,
                         "y": 719,
-                        "shape": "diamond"
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
                     {
                         "name": "Fairy",
                         "item_count": 1,
-                        "hosted_item": "boss_key_fairy"
+                        "hosted_item": "boss_key_fairy",
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(EPG) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Right))"
+                        ]
+                    },
+                    {
+                        "name": "[EPG D-6] NPC Glossary (Fairy Guild Corporal)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(EPG) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Right))"
+                        ]
                     }
-                ],
-                "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Right))"
                 ]
             },
             {
@@ -176,6 +217,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2058,
+                        "y": 3125,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2058,
                         "y": 3125,
                         "size": 50
@@ -237,8 +284,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 370,
                         "y": 721,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -248,7 +294,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle))"
@@ -261,8 +307,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 723,
                         "y": 658,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -272,7 +317,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack and Has(Enga Musica))"
@@ -285,8 +330,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 734,
                         "y": 745,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -296,7 +340,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle))"
@@ -309,8 +353,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 667,
                         "y": 697,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -320,7 +363,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle) and HorizontalAttack)"
@@ -333,8 +376,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 514,
                         "y": 903,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -344,7 +386,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
@@ -357,8 +399,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 609,
                         "y": 880,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -368,7 +409,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG)"
@@ -381,8 +422,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 826,
                         "y": 48,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -392,7 +432,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or Has(Ice Cloak) or OrbCount(6))))"
@@ -405,8 +445,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 803,
                         "y": 183,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -416,7 +455,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
@@ -429,8 +468,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 926,
                         "y": 341,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -440,7 +478,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG)"
@@ -453,8 +491,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 861,
                         "y": 341,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -464,7 +501,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
@@ -477,8 +514,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 897,
                         "y": 524,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -488,7 +524,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
@@ -501,8 +537,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 858,
                         "y": 451,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -512,7 +547,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
@@ -525,8 +560,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 915,
                         "y": 658,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -536,7 +570,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
@@ -549,8 +583,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 883,
                         "y": 792,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -560,7 +593,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_chakram"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
@@ -573,8 +606,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 873,
                         "y": 745,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -584,7 +616,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG)"
@@ -597,8 +629,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 1189,
                         "y": 48,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -608,7 +639,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (Has(Grapple Claw))"
@@ -621,8 +652,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 1118,
                         "y": 317,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -632,7 +662,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather) and Has(Glove)))"
@@ -645,8 +675,7 @@
                         "map": "Eternal Prison - Gloom",
                         "x": 1482,
                         "y": 254,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -656,10 +685,171 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "[EPG F-2] NPC Glossary (Ereshkigal)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (((Has(Feather) and HorizontalAttack) or IsDead(Vidofnir)))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 1427,
+                        "y": 159,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[EPG B-5] NPC Glossary (Hades)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (Has(Enga Musica))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 302,
+                        "y": 585,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[EPG D-2] Glossary Past The River Styx",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 762,
+                        "y": 221,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[EPG D-5] NPC Glossary (Eurydice)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 767,
+                        "y": 582,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[EPG C-7] NPC Glossary (Izanami)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 673,
+                        "y": 854,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[EPG F-3] Glossary After Talking to Sakit",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (((Has(Enga Musica) and IsDead(Vidofnir)) or Glitch(Costume Clip)) and Has(Feather) and Has(Giant's Flute) and Has(Vessel) and Has(Hand Scanner) and CanChant(Moon) and CanChant(Mother) and CanChant(Child) and IsDead(Fenrir))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 1354,
+                        "y": 365,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[EPG C-7] Glossary in Pillar next to NPC (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 692,
+                        "y": 823,
+                        "size": 15
+                    }
                 ]
             }
         ],

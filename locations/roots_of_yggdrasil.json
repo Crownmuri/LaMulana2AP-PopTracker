@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1962,
+                        "y": 171,
+                        "size": 50
+                    },
+                    {
                         "map": "Roots of Yggdrasil",
                         "x": 1223,
                         "y": 357
@@ -42,6 +48,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1535,
+                        "y": 171,
+                        "size": 50
+                    },
+                    {
                         "map": "Roots of Yggdrasil",
                         "x": 277,
                         "y": 381
@@ -67,6 +79,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2058,
+                        "y": 171,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2058,
                         "y": 171,
                         "size": 50
@@ -111,6 +129,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1700,
+                        "y": 171,
+                        "size": 50
+                    },
+                    {
                         "map": "Roots of Yggdrasil",
                         "x": 629,
                         "y": 309
@@ -136,6 +160,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1535,
+                        "y": 101,
+                        "size": 50
+                    },
+                    {
                         "map": "Roots of Yggdrasil",
                         "x": 275,
                         "y": 176
@@ -156,6 +186,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1809,
+                        "y": 94,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1809,
                         "y": 94,
                         "size": 50
@@ -228,6 +264,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1962,
+                        "y": 236,
+                        "size": 50
+                    },
+                    {
                         "map": "Roots of Yggdrasil",
                         "x": 1179,
                         "y": 443
@@ -253,6 +295,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1962,
+                        "y": 371,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1962,
                         "y": 371,
                         "size": 50
@@ -288,6 +336,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1700,
+                        "y": 303,
+                        "size": 50
+                    },
+                    {
                         "map": "Roots of Yggdrasil",
                         "x": 611,
                         "y": 604
@@ -311,6 +365,16 @@
                     {
                         "name": "Shop Slot 3",
                         "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(RoYBottom)"
+                        ]
+                    },
+                    {
+                        "name": "NPC Glossary (Korobock)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
                         "access_rules": [
                             "^$lm2_logic|CanReach(RoYBottom)"
                         ]
@@ -338,7 +402,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
@@ -362,7 +426,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoY)"
@@ -386,7 +450,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
@@ -410,7 +474,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoY)"
@@ -434,7 +498,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
@@ -458,7 +522,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoY) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)))"
@@ -482,7 +546,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoY)"
@@ -506,7 +570,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoY)"
@@ -530,7 +594,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoYMiddle) and (HorizontalAttack)"
@@ -554,7 +618,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoYBottom) and (Has(Leather Whip) or Has(Rapier) or Has(Katana) or Has(Axe) or Has(Claydoll Suit) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))"
@@ -578,7 +642,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoYBottom) and (HorizontalAttack)"
@@ -602,7 +666,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoYBottom) and (HorizontalAttack)"
@@ -626,7 +690,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoYBottom)"
@@ -650,7 +714,151 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(RoYBottom)"
+                ]
+            },
+            {
+                "name": "[ROY C-5] Glossary in Wall Above Korobock",
+                "map_locations": [
+                    {
+                        "map": "Roots of Yggdrasil",
+                        "x": 667,
+                        "y": 562,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(RoYBottom)"
+                ]
+            },
+            {
+                "name": "[ROY E-5] Glossary in Torch Room Wall",
+                "map_locations": [
+                    {
+                        "map": "Roots of Yggdrasil",
+                        "x": 1169,
+                        "y": 634,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(RoYBottom) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "[ROY C-4] Glossary in Opened Wall",
+                "map_locations": [
+                    {
+                        "map": "Roots of Yggdrasil",
+                        "x": 593,
+                        "y": 523,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(RoYBottom)"
+                ]
+            },
+            {
+                "name": "[ROY B-3] NPC Glossary (Sigyn)",
+                "map_locations": [
+                    {
+                        "map": "Roots of Yggdrasil",
+                        "x": 269,
+                        "y": 292,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(RoY)"
+                ]
+            },
+            {
+                "name": "[ROY E-4] NPC Glossary (Vili)",
+                "map_locations": [
+                    {
+                        "map": "Roots of Yggdrasil",
+                        "x": 1015,
+                        "y": 427,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(RoYMiddle)"
+                ]
+            },
+            {
+                "name": "[ROY E-6] NPC Glossary (Ve)",
+                "map_locations": [
+                    {
+                        "map": "Roots of Yggdrasil",
+                        "x": 1055,
+                        "y": 791,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(RoYBottom)"

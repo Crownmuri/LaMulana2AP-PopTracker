@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2357,
+                        "y": 2373,
+                        "size": 50
+                    },
+                    {
                         "map": "Hall of Malice",
                         "x": 721,
                         "y": 38
@@ -55,6 +61,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2845,
+                        "y": 2575,
+                        "size": 50
+                    },
+                    {
                         "map": "Hall of Malice",
                         "x": 1725,
                         "y": 442
@@ -81,6 +93,16 @@
                         "access_rules": [
                             "^$lm2_logic|CanReach(HoM) and (Has(Claydoll Suit))"
                         ]
+                    },
+                    {
+                        "name": "NPC Glossary (Fairylan)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(HoM)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -92,6 +114,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2021,
+                        "y": 2575,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2021,
                         "y": 2575,
                         "size": 50
@@ -127,6 +155,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2701,
+                        "y": 2519,
+                        "size": 50
+                    },
+                    {
                         "map": "Hall of Malice",
                         "x": 1406,
                         "y": 331
@@ -152,6 +186,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2307,
+                        "y": 2657,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2307,
                         "y": 2657,
                         "size": 50
@@ -191,6 +231,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2593,
+                        "y": 2642,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2593,
                         "y": 2642,
                         "size": 50
@@ -262,8 +308,7 @@
                         "map": "Hall of Malice",
                         "x": 514,
                         "y": 73,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -273,7 +318,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoMTop)"
@@ -286,8 +331,7 @@
                         "map": "Hall of Malice",
                         "x": 265,
                         "y": 366,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -297,7 +341,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
@@ -310,8 +354,7 @@
                         "map": "Hall of Malice",
                         "x": 385,
                         "y": 524,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -321,7 +364,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoM) and (HorizontalAttack and CanWarp)"
@@ -334,8 +377,7 @@
                         "map": "Hall of Malice",
                         "x": 265,
                         "y": 524,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -345,7 +387,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
@@ -358,8 +400,7 @@
                         "map": "Hall of Malice",
                         "x": 623,
                         "y": 256,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -369,7 +410,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
@@ -382,8 +423,7 @@
                         "map": "Hall of Malice",
                         "x": 514,
                         "y": 293,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -393,7 +433,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoM) and (Has(Feather))"
@@ -406,8 +446,7 @@
                         "map": "Hall of Malice",
                         "x": 974,
                         "y": 255,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -417,7 +456,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
@@ -430,8 +469,7 @@
                         "map": "Hall of Malice",
                         "x": 1196,
                         "y": 183,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -441,7 +479,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoM) and (Has(Feather))"
@@ -454,8 +492,7 @@
                         "map": "Hall of Malice",
                         "x": 1463,
                         "y": 658,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -465,7 +502,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoM) and (HorizontalAttack)"
@@ -478,8 +515,7 @@
                         "map": "Hall of Malice",
                         "x": 1600,
                         "y": 476,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -489,7 +525,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoM)"
@@ -502,8 +538,7 @@
                         "map": "Hall of Malice",
                         "x": 1730,
                         "y": 500,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -513,7 +548,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoM)"
@@ -526,8 +561,7 @@
                         "map": "Hall of Malice",
                         "x": 29,
                         "y": 524,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -537,7 +571,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path))"
@@ -550,8 +584,7 @@
                         "map": "Hall of Malice",
                         "x": 15,
                         "y": 524,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -561,7 +594,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Left Path))"
@@ -574,8 +607,7 @@
                         "map": "Hall of Malice",
                         "x": 1023,
                         "y": 524,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -585,7 +617,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
@@ -598,8 +630,7 @@
                         "map": "Hall of Malice",
                         "x": 1023,
                         "y": 562,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -609,7 +640,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
@@ -622,8 +653,7 @@
                         "map": "Hall of Malice",
                         "x": 898,
                         "y": 658,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -633,10 +663,332 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
+                ]
+            },
+            {
+                "name": "[HOM D-2] Glossary at Sphynx Statue (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 859,
+                        "y": 242,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM C-3] Glossary at Delphyne Statue (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 625,
+                        "y": 325,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM B-3] Glossary at Lernaean Hydra Statue (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 375,
+                        "y": 327,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM B-4] Glossary at Nemean Lion Statue (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 378,
+                        "y": 494,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM B-3] Glossary at Lernaean Hydra's Wall",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 265,
+                        "y": 292,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM E-3] Glossary at Ladon when Awoken",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1225,
+                        "y": 340,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM D-4] Glossary at Chimera Statue (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 827,
+                        "y": 504,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM E-4] Glossary at Phaia Statue (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1224,
+                        "y": 514,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM G-4] Glossary in the Laser Beam (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM) and (Has(Hand Scanner) and Has(Claydoll Suit))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1674,
+                        "y": 476,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM D-5] Glossary in Orthrus' Right Wall (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Hand Scanner) and Has(Feather))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 971,
+                        "y": 562,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM E-5] Glossary at Spikes before Orthrus (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1023,
+                        "y": 634,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM E-2] NPC Glossary (Eurytus)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1230,
+                        "y": 255,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM B-4] NPC Glossary (Porphyrion)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 478,
+                        "y": 427,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HOM F-3] NPC Glossary (Alcyoneus)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HoM)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Hall of Malice",
+                        "x": 1452,
+                        "y": 317,
+                        "size": 15
+                    }
                 ]
             }
         ],

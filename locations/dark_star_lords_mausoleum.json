@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2185,
+                        "y": 2109,
+                        "size": 50
+                    },
+                    {
                         "map": "Dark Star Lords Mausoleum",
                         "x": 125,
                         "y": 444
@@ -37,6 +43,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2736,
+                        "y": 2026,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2736,
                         "y": 2026,
                         "size": 50
@@ -72,6 +84,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2420,
+                        "y": 2251,
+                        "size": 50
+                    },
+                    {
                         "map": "Dark Star Lords Mausoleum",
                         "x": 599,
                         "y": 740
@@ -97,6 +115,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2433,
+                        "y": 2385,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2433,
                         "y": 2385,
                         "size": 50
@@ -151,6 +175,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2353,
+                        "y": 2314,
+                        "size": 50
+                    },
+                    {
                         "map": "Dark Star Lords Mausoleum",
                         "x": 465,
                         "y": 863
@@ -176,6 +206,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2239,
+                        "y": 2131,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2239,
                         "y": 2131,
                         "size": 50
@@ -209,6 +245,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2465,
+                        "y": 1994,
+                        "size": 50
+                    },
+                    {
                         "map": "Dark Star Lords Mausoleum",
                         "x": 692,
                         "y": 227
@@ -235,6 +277,16 @@
                         "access_rules": [
                             "^$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
                         ]
+                    },
+                    {
+                        "name": "NPC Glossary (Kero)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(DSLMMain)"
+                        ]
                     }
                 ]
             },
@@ -245,18 +297,29 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 365,
                         "y": 787,
-                        "shape": "diamond"
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
                     {
                         "name": "Fairy",
                         "item_count": 1,
-                        "hosted_item": "boss_money_fairy"
+                        "hosted_item": "boss_money_fairy",
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(DSLMMain) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Main) and (Has(Gale Fibula) or CanStopTime))"
+                        ]
+                    },
+                    {
+                        "name": "[DSLM B-6] NPC Glossary (Fairy Guild Lieutenant)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(DSLMMain)"
+                        ]
                     }
-                ],
-                "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Main) and (Has(Gale Fibula) or CanStopTime))"
                 ]
             },
             {
@@ -285,6 +348,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2325,
+                        "y": 2049,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2325,
                         "y": 2049,
                         "size": 50
@@ -320,6 +389,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2393,
+                        "y": 2061,
+                        "size": 50
+                    },
+                    {
                         "map": "Dark Star Lords Mausoleum",
                         "x": 523,
                         "y": 357
@@ -345,6 +420,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2372,
+                        "y": 1938,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2372,
                         "y": 1938,
                         "size": 50
@@ -419,8 +500,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 456,
                         "y": 428,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -430,7 +510,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain)"
@@ -443,8 +523,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 364,
                         "y": 634,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -454,7 +533,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
@@ -467,8 +546,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 285,
                         "y": 744,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -478,7 +556,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain)"
@@ -491,8 +569,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 367,
                         "y": 927,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -502,7 +579,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
@@ -515,8 +592,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 379,
                         "y": 915,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -526,7 +602,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
@@ -539,8 +615,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 379,
                         "y": 927,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -550,7 +625,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and IsDead(Ammit) and Has(Feather) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth) and CanChant(Fire) and IsDead(Sekhmet))"
@@ -563,8 +638,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 639,
                         "y": 255,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -574,7 +648,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and (Has(Grapple Claw) or Has(Feather)))"
@@ -587,8 +661,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 514,
                         "y": 341,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -598,7 +671,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and ((HorizontalAttack and (Has(Grapple Claw) or Has(Feather))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
@@ -611,8 +684,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 667,
                         "y": 524,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -622,7 +694,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
@@ -635,8 +707,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 696,
                         "y": 452,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -646,7 +717,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain)"
@@ -659,8 +730,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 729,
                         "y": 586,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -670,7 +740,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain)"
@@ -683,8 +753,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 596,
                         "y": 610,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -694,7 +763,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack or Has(Grapple Claw))"
@@ -707,8 +776,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 666,
                         "y": 696,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -718,7 +786,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain)"
@@ -731,8 +799,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 764,
                         "y": 586,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -742,7 +809,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and (Has(Grapple Claw))"
@@ -755,8 +822,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 978,
                         "y": 586,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -766,7 +832,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and (Has(Grapple Claw))"
@@ -779,8 +845,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 764,
                         "y": 903,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -790,7 +855,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain)"
@@ -803,8 +868,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 764,
                         "y": 831,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -814,7 +878,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain)"
@@ -827,8 +891,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 1233,
                         "y": 511,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -838,7 +901,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
@@ -851,8 +914,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 1233,
                         "y": 523,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -862,7 +924,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
@@ -875,8 +937,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 286,
                         "y": 183,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -886,7 +947,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMTop) and (Has(Feather))"
@@ -899,8 +960,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 331,
                         "y": 293,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -910,7 +970,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMTop) and (HorizontalAttack and (Has(Feather) or CanWarp or (CanReach(DSLMMain) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))))"
@@ -923,8 +983,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 476,
                         "y": 365,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -934,7 +993,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMTop) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (Has(Feather) or CanWarp or CanReach(DSLMMain)))"
@@ -947,8 +1006,7 @@
                         "map": "Dark Star Lords Mausoleum",
                         "x": 696,
                         "y": 159,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -958,10 +1016,204 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_chakram"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DSLMTop) and (Has(Feather))"
+                ]
+            },
+            {
+                "name": "[DSLM B-6] Glossary in Wall Below Winged Statue",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DSLMMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dark Star Lords Mausoleum",
+                        "x": 272,
+                        "y": 770,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[DSLM B-2] Glossary in Visibly Breakable Wall",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DSLMMain) and ((MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Bomb)))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dark Star Lords Mausoleum",
+                        "x": 332,
+                        "y": 256,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[DSLM C-4] Glossary in Breakable Wall to Atum",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dark Star Lords Mausoleum",
+                        "x": 676,
+                        "y": 477,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "Ra",
+                "map_locations": [
+                    {
+                        "map": "Dark Star Lords Mausoleum",
+                        "x": 605,
+                        "y": 792,
+                        "size": 15
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "[DSLM C-6] NPC Glossary (Ra)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(DSLMMain)"
+                        ]
+                    },
+                    {
+                        "name": "[DSLM C-6] Glossary after Aten-Ra Defeated",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_freestanding"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(DSLMMain) and (IsDead(Aten Ra))"
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "[DSLM B-5] NPC Glossary (Set)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DSLMMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dark Star Lords Mausoleum",
+                        "x": 272,
+                        "y": 658,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[DSLM B-3] NPC Glossary (Amunet)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DSLMTop)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dark Star Lords Mausoleum",
+                        "x": 408,
+                        "y": 293,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[DSLM B-2] NPC Glossary (Nun)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DSLMMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dark Star Lords Mausoleum",
+                        "x": 478,
+                        "y": 158,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[DSLM C-3] Glossary at Altar of Atum Statue (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dark Star Lords Mausoleum",
+                        "x": 730,
+                        "y": 366,
+                        "size": 15
+                    }
                 ]
             }
         ],
@@ -977,6 +1229,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2624,
+                        "y": 1708,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2624,
                         "y": 1708,
                         "size": 50
@@ -1007,6 +1265,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2624,
+                        "y": 1643,
+                        "size": 50
+                    },
+                    {
                         "map": "Dark Star Lords Mausoleum",
                         "x": 998,
                         "y": 43
@@ -1023,6 +1287,29 @@
                 ],
                 "visibility_rules": [
                     "setting_random_dissonance"
+                ]
+            },
+            {
+                "name": "[NIBIRU] Glossary in the Top-Right Corner (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(Nibiru) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Dark Star Lords Mausoleum",
+                        "x": 1210,
+                        "y": 11,
+                        "size": 15
+                    }
                 ]
             }
         ],

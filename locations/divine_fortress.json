@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2534,
+                        "y": 285,
+                        "size": 50
+                    },
+                    {
                         "map": "Divine Fortress",
                         "x": 825,
                         "y": 427
@@ -37,6 +43,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2683,
+                        "y": 229,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2683,
                         "y": 229,
                         "size": 50
@@ -72,6 +84,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2564,
+                        "y": 223,
+                        "size": 50
+                    },
+                    {
                         "map": "Divine Fortress",
                         "x": 888,
                         "y": 332
@@ -92,6 +110,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2524,
+                        "y": 349,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2524,
                         "y": 349,
                         "size": 50
@@ -143,6 +167,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2183,
+                        "y": 276,
+                        "size": 50
+                    },
+                    {
                         "map": "Divine Fortress",
                         "x": 113,
                         "y": 427
@@ -168,6 +198,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2299,
+                        "y": 221,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2299,
                         "y": 221,
                         "size": 50
@@ -203,6 +239,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2282,
+                        "y": 374,
+                        "size": 50
+                    },
+                    {
                         "map": "Divine Fortress",
                         "x": 322,
                         "y": 630
@@ -229,6 +271,16 @@
                         "access_rules": [
                             "^$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
                         ]
+                    },
+                    {
+                        "name": "NPC Glossary (Shuhoka)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(DFMain)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -240,6 +292,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2462,
+                        "y": 165,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2462,
                         "y": 165,
                         "size": 50
@@ -283,7 +341,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFEntrance) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and CanReach(DFRight)))"
@@ -307,7 +365,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFRight) and (HorizontalAttack and (Has(Origin Sigil) or CanReach(DFTop)))"
@@ -331,7 +389,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFRight)"
@@ -355,7 +413,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFRight) and (HorizontalAttack)"
@@ -379,7 +437,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
@@ -403,7 +461,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
@@ -427,7 +485,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
@@ -451,7 +509,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
@@ -475,7 +533,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
@@ -499,7 +557,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain)"
@@ -523,7 +581,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
@@ -547,7 +605,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain)"
@@ -571,7 +629,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
@@ -595,7 +653,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
@@ -619,7 +677,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFTop) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Grapple Claw) or Has(Feather))))"
@@ -643,7 +701,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFTop)"
@@ -667,10 +725,158 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFTop)"
+                ]
+            },
+            {
+                "name": "[DF D-5] Glossary in Wall Right of Mural",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 963,
+                        "y": 639,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[DF D-4] NPC Glossary (Hermod)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFRight)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 912,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "Brokkr & Eitri",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 65,
+                        "y": 317,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "[DF A-3] NPC Glossary (Brokkr)",
+                        "item_count": 1
+                    },
+                    {
+                        "name": "[DF A-3] NPC Glossary (Eitri)",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain)"
+                ]
+            },
+            {
+                "name": "[DF E-4] NPC Glossary (Tyr)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFRight)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 1226,
+                        "y": 523,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[DF C-2] NPC Glossary (Thor)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFTop)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 586,
+                        "y": 231,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[DF E-4] Glossary in Pre-Hugin and Munin Wall",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFRight)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 1050,
+                        "y": 500,
+                        "size": 15,
+                        "shape": "rect"
+                    }
                 ]
             }
         ],

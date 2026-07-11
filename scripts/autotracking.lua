@@ -852,7 +852,28 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     set_toggle("setting_autoscan",         slot_data.auto_scan_tablets)
     set_toggle("setting_random_dissonance", slot_data.random_dissonance)
     set_toggle("setting_random_research",   slot_data.random_research)
-    set_toggle("setting_potsanity",         slot_data.potsanity)
+
+    -- Partitioned potsanity: per-pool toggles gate each pot pool's visibility.
+    -- (The old master `potsanity` option was removed in apworld 0.9.)
+    -- Per-pool values live in slot_data.options (Options.as_dict dump).
+    local _opts = slot_data.options or {}
+    set_toggle("setting_potsanity_low_value",        _opts.potsanity_low_value)
+    set_toggle("setting_potsanity_high_value",       _opts.potsanity_high_value)
+    set_toggle("setting_potsanity_shuriken",         _opts.potsanity_shuriken)
+    set_toggle("setting_potsanity_rolling_shuriken", _opts.potsanity_rolling_shuriken)
+    set_toggle("setting_potsanity_earth_spear",      _opts.potsanity_earth_spear)
+    set_toggle("setting_potsanity_flare",            _opts.potsanity_flare)
+    set_toggle("setting_potsanity_caltrops",         _opts.potsanity_caltrops)
+    set_toggle("setting_potsanity_chakram",          _opts.potsanity_chakram)
+    set_toggle("setting_potsanity_bomb",             _opts.potsanity_bomb)
+
+    -- Partitioned glossanity: per-category toggles gate glossary visibility.
+    set_toggle("setting_glossanity_freestanding", _opts.glossanity_freestanding)
+    set_toggle("setting_glossanity_scannable",    _opts.glossanity_scannable)
+    set_toggle("setting_glossanity_npc",          _opts.glossanity_npc)
+    set_toggle("setting_glossanity_enemy",        _opts.glossanity_enemy)
+    set_toggle("setting_costumesanity",           _opts.costumesanity)
+
     set_count ("setting_req_guardians",    tonumber(slot_data.required_guardians))
     set_count ("setting_req_skulls",       tonumber(slot_data.required_skulls))
 
@@ -1024,6 +1045,62 @@ end
 -- removes them. ApplySpoiler/ClearSpoiler only exist in the var_er
 -- variant; on the base pack the click is a no-op.
 -- ============================================================
+
+-- ============================================================
+-- Maps layout composition (Enemy Glossary tab + Oannes/DLC maps)
+-- PopTracker layouts have no per-tab visibility rules, so tabs and map
+-- images are shown/hidden by swapping layout definitions at runtime
+-- (dynamic layout replacement, supported since PopTracker fixed it).
+--
+-- Two independent display toggles both rewrite the maps layout, so they are
+-- kept orthogonal by owning DISJOINT layout keys (no combinatorial file
+-- explosion):
+--   * setting_glossanity_enemy owns tabbed_maps_horizontal -- whether the
+--     Enemy Glossary tab exists. maps.json defines it WITH the tab;
+--     maps_glossary_off.json WITHOUT.
+--   * setting_oannessanity owns the leaf content keys full_map_content,
+--     enemy_glossary_content and individual_maps_layout -- swapping the
+--     Full Map / La-Mulana / Enemy Glossary images to their (+DLC) variants
+--     and adding the Tower of Oannes tab. maps_content_base.json holds the
+--     base versions; maps_content_dlc.json the DLC versions.
+--
+-- Both watches call ApplyMapLayouts, which reloads the content (leaf) file
+-- FIRST and the top file LAST, so the tabbed layout re-renders against the
+-- current leaf definitions. Reacts to both AP slot_data and manual toggling.
+-- ============================================================
+
+local _maps_state = nil
+local function ApplyMapLayouts()
+    local g = Tracker:FindObjectForCode("setting_glossanity_enemy")
+    local o = Tracker:FindObjectForCode("setting_oannessanity")
+    local glossary = g and g.Active or false
+    local dlc = o and o.Active or false
+    local state = tostring(glossary) .. "/" .. tostring(dlc)
+    if state == _maps_state then return end
+    _maps_state = state
+
+    -- Leaf content first (defines full_map_content / enemy_glossary_content /
+    -- individual_maps_layout), then the top layout so it re-renders.
+    if dlc then
+        Tracker:AddLayouts("layouts/maps_content_dlc.json")
+    else
+        Tracker:AddLayouts("layouts/maps_content_base.json")
+    end
+    if glossary then
+        Tracker:AddLayouts("layouts/maps.json")
+    else
+        Tracker:AddLayouts("layouts/maps_glossary_off.json")
+    end
+end
+
+-- Set the correct initial state at load, then keep it in sync on change.
+ApplyMapLayouts()
+ScriptHost:AddWatchForCode("enemy_glossary_tab_watch", "setting_glossanity_enemy", function()
+    ApplyMapLayouts()
+end)
+ScriptHost:AddWatchForCode("oannessanity_maps_watch", "setting_oannessanity", function()
+    ApplyMapLayouts()
+end)
 
 local _spoiler_processing = false
 ScriptHost:AddWatchForCode("reveal_spoiler_watch", "setting_reveal_entrances", function(code)

@@ -1,0 +1,2086 @@
+[
+    {
+        "name": "Enemy Glossary",
+        "children": [
+            {
+                "name": "[ROY] Enemy Glossary (Bat)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 161,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 161,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(RoY) and (True)) or (CanReach(RoYMiddle) and (True)) or (CanReach(RoYTopRight) and (True)) or (CanReach(RoYBottom) and (True)) or (CanReach(AnnwfnMain) and (True)) or (CanReach(IBTop) and (True)) or (CanReach(IBTopLeft) and (True)) or (CanReach(IBRight) and (True)) or (CanReach(IBMain) and (True)) or (CanReach(IBLadder) and (True)) or (CanReach(IBBottom) and (True)) or (CanReach(ITLeft) and (True)) or (CanReach(ITBottom) and (True)) or (CanReach(ITEntrance) and (True)) or (CanReach(DFRight) and (True)) or (CanReach(DFMain) and (True)) or (CanReach(DFTop) and (True)) or (CanReach(SotFGMain) and (True)) or (CanReach(GotD) and (True)) or (CanReach(ValhallaMain) and (True)) or (CanReach(ValhallaTop) and (True)) or (CanReach(EPG) and (True)) or (CanReach(EPDEntrance) and (True)) or (CanReach(EPDMain) and (True)))"
+                ]
+            },
+            {
+                "name": "[ROY] Enemy Glossary (Skeleton)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 161,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 161,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(RoY) and (HorizontalAttack)) or (CanReach(RoYTopLeft) and (HorizontalAttack)) or (CanReach(RoYTopRight) and (HorizontalAttack)) or (CanReach(RoYBottom) and (True)) or (CanReach(AnnwfnMain) and (True)) or (CanReach(IBTopLeft) and (HorizontalAttack)) or (CanReach(IBRight) and (HorizontalAttack)) or (CanReach(IBMain) and (HorizontalAttack)) or (CanReach(IBLadder) and (HorizontalAttack)) or (CanReach(ITLeft) and (HorizontalAttack)) or (CanReach(ITBottom) and (HorizontalAttack or (CanUse(Flare Gun) and Has(Claydoll Suit)))) or (CanReach(ITRight) and (HorizontalAttack)) or (CanReach(ITEntrance) and (HorizontalAttack)) or (CanReach(DFRight) and (True)) or (CanReach(DFMain) and (True)) or (CanReach(DFTop) and (True)) or (CanReach(GotD) and (True)) or (CanReach(ValhallaMain) and (True)) or (CanReach(ValhallaTop) and (True)) or (CanReach(DSLMMain) and (True)) or (CanReach(DSLMPyramid) and (True)))"
+                ]
+            },
+            {
+                "name": "[ROY] Enemy Glossary (Carbuncle)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 161,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 161,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(RoY) and (True)) or (CanReach(RoYBottom) and (True)))"
+                ]
+            },
+            {
+                "name": "[ROY] Enemy Glossary (Fachan)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 161,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 161,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(RoY) and (True)) or (CanReach(RoYMiddle) and (True)) or (CanReach(RoYBottom) and (True)))"
+                ]
+            },
+            {
+                "name": "[ROY] Enemy Glossary (Skvader)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 161,
+                        "y": 533
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 161,
+                        "y": 533
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(RoY) and (True)) or (CanReach(RoYMiddle) and (True)) or (CanReach(RoYTopRight) and (True)) or (CanReach(RoYBottom) and (True)))"
+                ]
+            },
+            {
+                "name": "[ROY] Enemy Glossary (Black Carbuncle)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 161,
+                        "y": 625
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 161,
+                        "y": 625
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(RoY) and (HorizontalAttack and (IsDead(Ratatoskr 1) or IsDead(Nidhogg)))))"
+                ]
+            },
+            {
+                "name": "[ANN] Enemy Glossary (Apsara)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 248,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 248,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(AnnwfnMain) and (True)) or (CanReach(AnnwfnRight) and (True)))"
+                ]
+            },
+            {
+                "name": "[ANN] Enemy Glossary (Odontotyrannos)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 248,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 248,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(AnnwfnMain) and (True)))"
+                ]
+            },
+            {
+                "name": "[ANN] Enemy Glossary (Makara)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 248,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 248,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(AnnwfnMain) and (True)))"
+                ]
+            },
+            {
+                "name": "[ANN] Enemy Glossary (Hanuman)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 248,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 248,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(AnnwfnRight) and (True)) or (CanReach(IBMoon) and (True)))"
+                ]
+            },
+            {
+                "name": "[ANN] Enemy Glossary (Behemoth)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 248,
+                        "y": 533
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 248,
+                        "y": 533
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(AnnwfnRight) and (True)) or (CanReach(AnnwfnMain) and (HorizontalAttack)))"
+                ]
+            },
+            {
+                "name": "[ANN] Enemy Glossary (Tog)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 248,
+                        "y": 625
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 248,
+                        "y": 625
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(AnnwfnMain) and (True)) or (CanReach(AnnwfnRight) and (True)))"
+                ]
+            },
+            {
+                "name": "[ANN] Enemy Glossary (Aghasura)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 248,
+                        "y": 717
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 248,
+                        "y": 717
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(AnnwfnMain) and (Has(Knife) or CanUse(Bomb) or CanUse(Pistol) or (Has(Vajra) and (Has(Rapier) or Has(Katana) or (Has(Gauntlet) and Has(Leather Whip)))) or (Has(Gauntlet) and (Has(Chain Whip) or Has(Rapier) or Has(Katana))))))"
+                ]
+            },
+            {
+                "name": "[IB] Enemy Glossary (Kabandha)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 335,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 335,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(IBMain) and (True)) or (CanReach(IBRight) and (HorizontalAttack)) or (CanReach(IBLeft) and (True)) or (CanReach(IBBottom) and (True)))"
+                ]
+            },
+            {
+                "name": "[IB] Enemy Glossary (El Baul)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 335,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 335,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(IBMain) and (True)) or (CanReach(IBRight) and (True)) or (CanReach(IBDinosaur) and (True)))"
+                ]
+            },
+            {
+                "name": "[IB] Enemy Glossary (Lycanthrope)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 335,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 335,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(IBMain) and (True)) or (CanReach(IBLeft) and (True)) or (CanReach(IBDinosaur) and (True)) or (CanReach(IBBottom) and (True)))"
+                ]
+            },
+            {
+                "name": "[IB] Enemy Glossary (Vimana)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 335,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 335,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(IBMain) and (True)) or (CanReach(IBRight) and (True)) or (CanReach(IBLeft) and (True)) or (CanReach(IBDinosaur) and (True)) or (CanReach(SotFGMain) and (IsDead(Badhbh Cath) and Has(Grapple Claw) and ((Has(Feather) or Has(Life Sigil)) or CanUse(Flare Gun)))))"
+                ]
+            },
+            {
+                "name": "[IB] Enemy Glossary (Kraken)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 335,
+                        "y": 533
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 335,
+                        "y": 533
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(IBMain) and ((HorizontalAttack and CanWarp) or IsDead(Cetus))) or (CanReach(ITRight) and (HorizontalAttack)) or (CanReach(ITRightLeftLadder) and (HorizontalAttack)))"
+                ]
+            },
+            {
+                "name": "[IT] Enemy Glossary (Garm)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 422,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 422,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ITLeft) and (HorizontalAttack)) or (CanReach(ITSinmara) and (True)) or (CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip))) or (CanReach(ITRight) and (True)) or (CanReach(ITRightLeftLadder) and (HorizontalAttack)))"
+                ]
+            },
+            {
+                "name": "[IT] Enemy Glossary (Lindworm)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 422,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 422,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ITLeft) and (True)) or (CanReach(ITBottom) and (True)) or (CanReach(ITRight) and (True)))"
+                ]
+            },
+            {
+                "name": "[IT] Enemy Glossary (Langsuir)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 422,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 422,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ITLeft) and (True)) or (CanReach(ITBottom) and (True)) or (CanReach(ITRight) and (True)))"
+                ]
+            },
+            {
+                "name": "[IT] Enemy Glossary (Muu Shuwuu)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 422,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 422,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ITLeft) and (True)) or (CanReach(ITBottom) and (True)) or (CanReach(ITRight) and (True)))"
+                ]
+            },
+            {
+                "name": "[DF] Enemy Glossary (Einherjar)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 509,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 509,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(DFEntrance) and (True)) or (CanReach(DFRight) and (True)) or (CanReach(DFMain) and (True)) or (CanReach(DFTop) and (True)))"
+                ]
+            },
+            {
+                "name": "[DF] Enemy Glossary (Valkyrie)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 509,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 509,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(DFMain) and (True)) or (CanReach(DFTop) and (True)))"
+                ]
+            },
+            {
+                "name": "[DF] Enemy Glossary (Dokkalfar)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 509,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 509,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(DFMain) and (True)) or (CanReach(DFTop) and (True)))"
+                ]
+            },
+            {
+                "name": "[DF] Enemy Glossary (Vodyanoy)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 509,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 509,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(DFRight) and (True)) or (CanReach(DFMain) and (True)) or (CanReach(DFTop) and (True)))"
+                ]
+            },
+            {
+                "name": "[DF] Enemy Glossary (Gullinbursti)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 509,
+                        "y": 533
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 509,
+                        "y": 533
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(DFRight) and (True)) or (CanReach(DFMain) and (True)) or (CanReach(DFTop) and (HorizontalAttack)))"
+                ]
+            },
+            {
+                "name": "[SFG] Enemy Glossary (Yeti)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 596,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 596,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(SotFGLeft) and (True)) or (CanReach(SotFGGrail) and (True)) or (CanReach(SotFGMain) and (True)) or (CanReach(SotFGTop) and (True)) or (CanReach(SotFGBalor) and (HorizontalAttack)) or (CanReach(SotFGBlood) and (HorizontalAttack)))"
+                ]
+            },
+            {
+                "name": "[SFG] Enemy Glossary (Huallepen)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 596,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 596,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(SotFGMain) and (True)) or (CanReach(SotFGLeft) and (True)) or (CanReach(SotFGGrail) and (True)) or (CanReach(SotFGTop) and (True)) or (CanReach(SotFGBalor) and (IsDead(Balor))))"
+                ]
+            },
+            {
+                "name": "[SFG] Enemy Glossary (Ungur)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 596,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 596,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(SotFGMain) and (True)) or (CanReach(SotFGLeft) and (True)) or (CanReach(SotFGBloodTez) and (IsDead(Tezcatlipoca))))"
+                ]
+            },
+            {
+                "name": "[SFG] Enemy Glossary (Zorya)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 596,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 596,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(SotFGMain) and (HorizontalAttack)) or (CanReach(SotFGLeft) and (HorizontalAttack)) or (CanReach(SotFGBlood) and (HorizontalAttack)))"
+                ]
+            },
+            {
+                "name": "[SFG] Enemy Glossary (Baba Yaga)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 596,
+                        "y": 533
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 596,
+                        "y": 533
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(SotFGMain) and (HorizontalAttack)) or (CanReach(SotFGLeft) and (HorizontalAttack)) or (CanReach(SotFGTop) and (True)) or (CanReach(SotFGBloodTez) and (IsDead(Tezcatlipoca))))"
+                ]
+            },
+            {
+                "name": "[GOTD] Enemy Glossary (Asp)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 683,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 683,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(GotD) and (True)))"
+                ]
+            },
+            {
+                "name": "[GOTD] Enemy Glossary (Red Cap)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 683,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 683,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(GotD) and (True)))"
+                ]
+            },
+            {
+                "name": "[GOTD] Enemy Glossary (Mask)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 683,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 683,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(GotD) and (True)))"
+                ]
+            },
+            {
+                "name": "[GOTD] Enemy Glossary (Medjed)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 683,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 683,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(GotD) and (True)))"
+                ]
+            },
+            {
+                "name": "[TS] Enemy Glossary (Edimmu)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 770,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 770,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TSMain) and (HorizontalAttack)) or (CanReach(TSLeft) and (MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb))) or (CanReach(TSBottom) and (HorizontalAttack)) or (CanReach(TSBlood) and (HorizontalAttack or OrbCount(3) or Has(Egg of Creation))))"
+                ]
+            },
+            {
+                "name": "[TS] Enemy Glossary (Nurikabe)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 770,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 770,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TSMain) and ((Has(Gauntlet) and (Has(Axe) or Has(Rapier) or Has(Katana))) or (Has(Vajra) and (Has(Rapier) or Has(Katana))) or (Has(Spaulder) and Has(Rapier)) or Has(Knife))))"
+                ]
+            },
+            {
+                "name": "[TS] Enemy Glossary (Enenra)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 770,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 770,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TSMain) and (True)) or (CanReach(TSLeft) and (True)) or (CanReach(TSNeck) and (True)) or (CanReach(TSBottom) and (True)))"
+                ]
+            },
+            {
+                "name": "[TS] Enemy Glossary (Guhin)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 770,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 770,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TSMain) and (True)) or (CanReach(TSLeft) and (True)) or (CanReach(TSBottom) and (HorizontalAttack)))"
+                ]
+            },
+            {
+                "name": "[TS] Enemy Glossary (Kuda-gitsune)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 770,
+                        "y": 533
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 770,
+                        "y": 533
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TSMain) and (True)) or (CanReach(TSEntrance) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and (Has(Spaulder) or Has(Vajra))))) or (CanReach(TSLeft) and (True)))"
+                ]
+            },
+            {
+                "name": "[TS] Enemy Glossary (Blue Skeleton)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 770,
+                        "y": 625
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 770,
+                        "y": 625
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(IBRight) and (Has(Perfume))) or (CanReach(TSMain) and (Has(Perfume))) or (CanReach(TSEntrance) and (Has(Perfume) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and (Has(Spaulder) or Has(Vajra)))))) or (CanReach(TSLeft) and (Has(Perfume))) or (CanReach(TSBottom) and (Has(Perfume))) or (CanReach(HL) and (Has(Perfume))) or (CanReach(HLCog) and (Has(Perfume))) or (CanReach(HLSpun) and (Has(Perfume))) or (CanReach(ACBottom) and (Has(Perfume))) or (CanReach(ACTablet) and (Has(Perfume))) or (CanReach(ACWind) and (Has(Perfume))) or (CanReach(ACMain) and (Has(Perfume))) or (CanReach(ACBlood) and (Has(Perfume))))"
+                ]
+            },
+            {
+                "name": "[HL] Enemy Glossary (Harpy)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 857,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 857,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(HL) and (True)) or (CanReach(HLCog) and (True)) or (CanReach(HLSpun) and (True)))"
+                ]
+            },
+            {
+                "name": "[HL] Enemy Glossary (Lizardman)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 857,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 857,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(HL) and (HorizontalAttack)) or (CanReach(HLCog) and (HorizontalAttack)) or (CanReach(HLSpun) and (HorizontalAttack)))"
+                ]
+            },
+            {
+                "name": "[HL] Enemy Glossary (Andrealphus)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 857,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 857,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(HL) and (True)) or (CanReach(HLSpun) and (True)))"
+                ]
+            },
+            {
+                "name": "[VAL] Enemy Glossary (Gandharv)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 944,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 944,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ValhallaMain) and (True)) or (CanReach(ValhallaTop) and (True)))"
+                ]
+            },
+            {
+                "name": "[VAL] Enemy Glossary (Kinnara)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 944,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 944,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ValhallaMain) and (True)))"
+                ]
+            },
+            {
+                "name": "[VAL] Enemy Glossary (Rakshasa)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 944,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 944,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ValhallaMain) and (True)) or (CanReach(ValhallaTop) and (HorizontalAttack)) or (CanReach(ValhallaTopRight) and (True)))"
+                ]
+            },
+            {
+                "name": "[VAL] Enemy Glossary (Carbunco)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 944,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 944,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ValhallaMain) and (True)) or (CanReach(ValhallaTop) and (True)) or (CanReach(ValhallaTopRight) and (True)))"
+                ]
+            },
+            {
+                "name": "[VAL] Enemy Glossary (Cabracan)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 944,
+                        "y": 533
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 944,
+                        "y": 533
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ValhallaMain) and (HorizontalAttack)))"
+                ]
+            },
+            {
+                "name": "[VAL] Enemy Glossary (Zipakna)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 944,
+                        "y": 625
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 944,
+                        "y": 625
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ValhallaMain) and (True)))"
+                ]
+            },
+            {
+                "name": "[DSLM] Enemy Glossary (Ba)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1031,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1031,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(DSLMMain) and (HorizontalAttack)) or (CanReach(DSLMTop) and (HorizontalAttack)) or (CanReach(DSLMPyramid) and (HorizontalAttack)))"
+                ]
+            },
+            {
+                "name": "[DSLM] Enemy Glossary (Basilisk)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1031,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1031,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(DSLMMain) and (True)) or (CanReach(DSLMTop) and (True)) or (CanReach(DSLMPyramid) and (HorizontalAttack)))"
+                ]
+            },
+            {
+                "name": "[DSLM] Enemy Glossary (Scarabaeus)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1031,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1031,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(DSLMMain) and (True)) or (CanReach(DSLMTop) and (Has(Feather))) or (CanReach(TowerOfOannesLeftB) and (Has(Feather))))"
+                ]
+            },
+            {
+                "name": "[DSLM] Enemy Glossary (Soul)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1031,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1031,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(DSLMMain) and (True)) or (CanReach(DSLMTop) and (True)) or (CanReach(DSLMPyramid) and (True)))"
+                ]
+            },
+            {
+                "name": "[AC] Enemy Glossary (Simurgh)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1118,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1118,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ACBottom) and (True)) or (CanReach(ACTablet) and (True)) or (CanReach(ACWind) and (True)) or (CanReach(ACMain) and (True)))"
+                ]
+            },
+            {
+                "name": "[AC] Enemy Glossary (Zhulong)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1118,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1118,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ACBottom) and (True)) or (CanReach(ACTablet) and (True)) or (CanReach(ACWind) and (CanUse(Flare Gun) or CanUse(Bomb) or CanUse(Earth Spear))) or (CanReach(ACMain) and (True)))"
+                ]
+            },
+            {
+                "name": "[AC] Enemy Glossary (Azhdaha)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1118,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1118,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ACBottom) and (True)) or (CanReach(ACTablet) and (True)) or (CanReach(ACMain) and (True)) or (CanReach(ACBlood) and (True)))"
+                ]
+            },
+            {
+                "name": "[AC] Enemy Glossary (Galla)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1118,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1118,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(ACBottom) and (True)) or (CanReach(ACTablet) and (True)) or (CanReach(ACMain) and (True)))"
+                ]
+            },
+            {
+                "name": "[HOM] Enemy Glossary (Minotaur)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1205,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1205,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(HoM) and (True)) or (CanReach(HoMAwoken) and (True)))"
+                ]
+            },
+            {
+                "name": "[HOM] Enemy Glossary (Mammon)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1205,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1205,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(HoMTop) and (True)) or (CanReach(HoM) and (True)) or (CanReach(HoMAwoken) and (True)))"
+                ]
+            },
+            {
+                "name": "[HOM] Enemy Glossary (Wyvern)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1205,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1205,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(HoMTop) and (True)) or (CanReach(HoM) and (True)) or (CanReach(HoMAwoken) and (True)))"
+                ]
+            },
+            {
+                "name": "[EP] Enemy Glossary (Hekatonkheires)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1292,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1292,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(EPG) and (True)) or (CanReach(EPDMain) and (True)) or (CanReach(EPDTop) and (True)))"
+                ]
+            },
+            {
+                "name": "[EP] Enemy Glossary (Avnas)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1292,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1292,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(EPG) and (True)) or (CanReach(EPDMain) and (True)) or (CanReach(EPDTop) and (True)))"
+                ]
+            },
+            {
+                "name": "[EP] Enemy Glossary (Erinyes)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1292,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1292,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(EPG) and (True)) or (CanReach(EPDEntrance) and (True)) or (CanReach(EPDMain) and (True)) or (CanReach(EPDTop) and (True)))"
+                ]
+            },
+            {
+                "name": "[EP] Enemy Glossary (Cacus)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1292,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1292,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(EPG) and (True)))"
+                ]
+            },
+            {
+                "name": "[EP] Enemy Glossary (Lucifer)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1292,
+                        "y": 533
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1292,
+                        "y": 533
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(EPG) and (True)) or (CanReach(EPDEntrance) and (True)) or (CanReach(EPDMain) and (True)) or (CanReach(EPDTop) and (True)))"
+                ]
+            },
+            {
+                "name": "[EP] Enemy Glossary (Lucifuge Rofocale)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1292,
+                        "y": 625
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1292,
+                        "y": 625
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(EPDEntrance) and (HorizontalAttack)) or (CanReach(EPDMain) and (True)) or (CanReach(EPDTop) and (True)))"
+                ]
+            },
+            {
+                "name": "[IT E-4] Enemy Glossary During Escape (Urd)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1379,
+                        "y": 166
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1379,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITBottom) and (IsDead(Ninth Child))"
+                ]
+            },
+            {
+                "name": "[ROY F-2] Enemy Glossary During Escape (Verdandi)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1379,
+                        "y": 258
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1379,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(RoY) and (IsDead(Ninth Child))"
+                ]
+            },
+            {
+                "name": "[SH C-5] Enemy Glossary (Skuld)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1379,
+                        "y": 350
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1379,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SpiralHell) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "[SH] Enemy Glossary (Dvergr)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1379,
+                        "y": 442
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1379,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                ]
+            },
+            {
+                "name": "[SH] Enemy Glossary (Ginnungagap)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1379,
+                        "y": 533
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1379,
+                        "y": 533
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                ]
+            },
+            {
+                "name": "[SH] Enemy Glossary (Muspell)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1379,
+                        "y": 625
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1379,
+                        "y": 625
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                ]
+            },
+            {
+                "name": "[SH] Enemy Glossary (Managarmr)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1379,
+                        "y": 717
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1379,
+                        "y": 717
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                ]
+            },
+            {
+                "name": "[SH] Enemy Glossary (Berserker)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1379,
+                        "y": 809
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1379,
+                        "y": 809
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                ]
+            },
+            {
+                "name": "[SH] Enemy Glossary (Fjalar)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary",
+                        "x": 1379,
+                        "y": 901
+                    },
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1379,
+                        "y": 901
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                ]
+            }
+        ]
+    }
+]

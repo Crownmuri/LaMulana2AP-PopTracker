@@ -106,5 +106,35 @@
         "location_size": 24,
         "location_border_thickness": 2,
         "img": "images/maps/sh.png"
+    },
+    {
+        "name": "Enemy Glossary",
+        "location_size": 54,
+        "location_border_thickness": 2,
+        "img": "images/maps/glossaryenemy.png"
+    },
+    {
+        "name": "Full Map (+DLC)",
+        "location_size": 16,
+        "location_border_thickness": 2,
+        "img": "images/maps/fulldlc.png"
+    },
+    {
+        "name": "La-Mulana (+DLC)",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/lmdlc.png"
+    },
+    {
+        "name": "Tower of Oannes",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/dlc.png"
+    },
+    {
+        "name": "Enemy Glossary (+DLC)",
+        "location_size": 54,
+        "location_border_thickness": 2,
+        "img": "images/maps/glossaryenemydlc.png"
     }
 ]

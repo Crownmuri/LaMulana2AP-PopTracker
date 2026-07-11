@@ -12,7 +12,18 @@
                         "size": 30
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 453,
+                        "y": 233,
+                        "size": 30
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 931,
+                        "y": 498
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 931,
                         "y": 498
                     }
@@ -37,7 +48,18 @@
                         "size": 30
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 578,
+                        "y": 253,
+                        "size": 30
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1111,
+                        "y": 498
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1111,
                         "y": 498
                     }
@@ -62,7 +84,18 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 229,
+                        "y": 167,
+                        "size": 50
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 457,
+                        "y": 317
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 457,
                         "y": 317
                     }
@@ -87,7 +120,18 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 33,
+                        "y": 167,
+                        "size": 50
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 365,
+                        "y": 364
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 365,
                         "y": 364
                     }
@@ -112,7 +156,18 @@
                         "size": 30
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 365,
+                        "y": 218,
+                        "size": 30
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 730,
+                        "y": 451
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 730,
                         "y": 451
                     }
@@ -154,7 +209,18 @@
                         "size": 30
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 498,
+                        "y": 218,
+                        "size": 30
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1022,
+                        "y": 451
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1022,
                         "y": 451
                     }
@@ -180,6 +246,16 @@
                         "access_rules": [
                             "^$lm2_logic|CanReach(VoD)"
                         ]
+                    },
+                    {
+                        "name": "NPC Glossary (Modro)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(VoD) and (Has(Ruins Encyclopedia))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -196,7 +272,18 @@
                         "size": 30
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 538,
+                        "y": 233,
+                        "size": 30
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1075,
+                        "y": 475
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1075,
                         "y": 475
                     }
@@ -222,6 +309,16 @@
                         "access_rules": [
                             "^$lm2_logic|CanReach(VoD)"
                         ]
+                    },
+                    {
+                        "name": "NPC Glossary (Sidro)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(VoD) and (Has(Ruins Encyclopedia))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -238,7 +335,18 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 843,
+                        "y": 178,
+                        "size": 50
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1697,
+                        "y": 376
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1697,
                         "y": 376
                     }
@@ -263,7 +371,18 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 681,
+                        "y": 243,
+                        "size": 50
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1353,
+                        "y": 463
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1353,
                         "y": 463
                     }
@@ -288,7 +407,18 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 898,
+                        "y": 369,
+                        "size": 50
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1795,
+                        "y": 720
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1795,
                         "y": 720
                     }
@@ -318,7 +448,18 @@
                         "size": 30
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 655,
+                        "y": 494,
+                        "size": 30
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1309,
+                        "y": 989
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1309,
                         "y": 989
                     }
@@ -348,7 +489,18 @@
                         "size": 30
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 702,
+                        "y": 484,
+                        "size": 30
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1405,
+                        "y": 966
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1405,
                         "y": 966
                     }
@@ -381,6 +533,16 @@
                         "access_rules": [
                             "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack and GuardianKills(3))"
                         ]
+                    },
+                    {
+                        "name": "NPC Glossary (Hiner)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(GateofGuidance)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -397,7 +559,18 @@
                         "size": 30
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 741,
+                        "y": 484,
+                        "size": 30
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1488,
+                        "y": 964
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1488,
                         "y": 964
                     }
@@ -422,7 +595,18 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1088,
+                        "y": 903,
+                        "size": 50
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 2178,
+                        "y": 1781
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 2178,
                         "y": 1781
                     }
@@ -450,7 +634,18 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 166,
+                        "y": 969,
+                        "size": 50
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 301,
+                        "y": 1929
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 301,
                         "y": 1929
                     }
@@ -475,7 +670,18 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 400,
+                        "y": 448,
+                        "size": 50
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 838,
+                        "y": 927
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 838,
                         "y": 927
                     }
@@ -509,6 +715,13 @@
                         "y": 499,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 149,
+                        "y": 499,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -518,7 +731,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(Start) and (HorizontalAttack)"
@@ -533,6 +746,13 @@
                         "y": 318,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 370,
+                        "y": 318,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -542,7 +762,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(VoD)"
@@ -557,6 +777,13 @@
                         "y": 428,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 635,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -566,7 +793,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(VoD)"
@@ -581,6 +808,13 @@
                         "y": 499,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 967,
+                        "y": 499,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -590,7 +824,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(VoD) and (HorizontalAttack)"
@@ -605,6 +839,13 @@
                         "y": 452,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 784,
+                        "y": 452,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -614,7 +855,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(VoD)"
@@ -629,6 +870,13 @@
                         "y": 451,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1137,
+                        "y": 451,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -638,7 +886,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(VoD)"
@@ -653,6 +901,13 @@
                         "y": 347,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1079,
+                        "y": 347,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -662,7 +917,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(VoD) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
@@ -677,6 +932,13 @@
                         "y": 294,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1195,
+                        "y": 294,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -686,7 +948,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_chakram"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(VoD) and (Has(Feather))"
@@ -701,6 +963,13 @@
                         "y": 792,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1664,
+                        "y": 792,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -710,7 +979,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GateofGuidance) and (HorizontalAttack)"
@@ -725,6 +994,13 @@
                         "y": 831,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1579,
+                        "y": 831,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -734,7 +1010,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GateofGuidance)"
@@ -749,6 +1025,13 @@
                         "y": 1124,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1412,
+                        "y": 1124,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -758,7 +1041,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GateofGuidance) and (HorizontalAttack)"
@@ -773,6 +1056,13 @@
                         "y": 855,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1157,
+                        "y": 855,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -782,7 +1072,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(GateofGuidanceLeft)"
@@ -797,6 +1087,13 @@
                         "y": 1416,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1008,
+                        "y": 1416,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -806,7 +1103,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(MausoleumofGiants)"
@@ -821,6 +1118,13 @@
                         "y": 1416,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1333,
+                        "y": 1416,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -830,7 +1134,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(MausoleumofGiants)"
@@ -845,6 +1149,13 @@
                         "y": 1551,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1039,
+                        "y": 1551,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -854,7 +1165,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(MausoleumofGiants) and (HorizontalAttack)"
@@ -869,6 +1180,13 @@
                         "y": 1796,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1849,
+                        "y": 1796,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -878,7 +1196,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(MausoleumofGiants)"
@@ -893,6 +1211,13 @@
                         "y": 1930,
                         "size": 15,
                         "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1702,
+                        "y": 1930,
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
@@ -902,10 +1227,258 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(MausoleumofGiants) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "[VOD C-4] Glossary Above Hot Spring (Scan)",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 527,
+                        "y": 429,
+                        "size": 15,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 527,
+                        "y": 429,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(VoD) and (Has(Hand Scanner))"
+                ]
+            },
+            {
+                "name": "[GOG D-2] Glossary Above Children",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1883,
+                        "y": 696,
+                        "size": 15,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1883,
+                        "y": 696,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidance) and (Has(Feather))"
+                ]
+            },
+            {
+                "name": "[MOG C-3] Glossary Behind Pot",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1624,
+                        "y": 1660,
+                        "size": 15,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1624,
+                        "y": 1660,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(MausoleumofGiants) and (Has(Feather))"
+                ]
+            },
+            {
+                "name": "[GOG E-2] Glossary at Spring in the Sky Entrance",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 2202,
+                        "y": 695,
+                        "size": 15,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 2202,
+                        "y": 695,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidance)"
+                ]
+            },
+            {
+                "name": "[IC B-1] Glossary Next to Spikes",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1527,
+                        "y": 523,
+                        "size": 15,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1527,
+                        "y": 523,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(InfernoCavern)"
+                ]
+            },
+            {
+                "name": "[GOI C-1] Glossary Next to Child's Statue",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 984,
+                        "y": 870,
+                        "size": 15,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 984,
+                        "y": 870,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofIllusion) and (Has(Feather))"
+                ]
+            },
+            {
+                "name": "[GOG A-3] Glossary Below Gate of Illusion Door",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 1042,
+                        "y": 902,
+                        "size": 15,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 1042,
+                        "y": 902,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidanceLeft)"
+                ]
+            },
+            {
+                "name": "[EC B-1] Glossary Behind Rubble (Scan)",
+                "map_locations": [
+                    {
+                        "map": "La-Mulana",
+                        "x": 685,
+                        "y": 1976,
+                        "size": 15,
+                        "shape": "rect"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 685,
+                        "y": 1976,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EndlessCorridor) and (Has(Hand Scanner))"
                 ]
             }
         ]

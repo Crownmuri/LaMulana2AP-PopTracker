@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1520,
+                        "y": 1781,
+                        "size": 50
+                    },
+                    {
                         "map": "Valhalla",
                         "x": 28,
                         "y": 340
@@ -37,6 +43,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2101,
+                        "y": 1780,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2101,
                         "y": 1780,
                         "size": 50
@@ -91,6 +103,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1682,
+                        "y": 1917,
+                        "size": 50
+                    },
+                    {
                         "map": "Valhalla",
                         "x": 405,
                         "y": 651
@@ -121,6 +139,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1806,
+                        "y": 1849,
+                        "size": 50
+                    },
+                    {
                         "map": "Valhalla",
                         "x": 619,
                         "y": 475
@@ -141,6 +165,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1986,
+                        "y": 1849,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1986,
                         "y": 1849,
                         "size": 50
@@ -169,6 +199,16 @@
                     {
                         "name": "Shop Slot 3",
                         "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ValhallaMain)"
+                        ]
+                    },
+                    {
+                        "name": "NPC Glossary (Bargain Duck)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
                         "access_rules": [
                             "^$lm2_logic|CanReach(ValhallaMain)"
                         ]
@@ -230,6 +270,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1972,
+                        "y": 1629,
+                        "size": 50
+                    },
+                    {
                         "map": "Valhalla",
                         "x": 951,
                         "y": 34
@@ -250,6 +296,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1922,
+                        "y": 1738,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1922,
                         "y": 1738,
                         "size": 50
@@ -277,8 +329,7 @@
                         "map": "Valhalla",
                         "x": 63,
                         "y": 183,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -288,7 +339,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
@@ -301,8 +352,7 @@
                         "map": "Valhalla",
                         "x": 212,
                         "y": 341,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -312,7 +362,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain)"
@@ -325,8 +375,7 @@
                         "map": "Valhalla",
                         "x": 149,
                         "y": 452,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -336,7 +385,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain)"
@@ -349,8 +398,7 @@
                         "map": "Valhalla",
                         "x": 102,
                         "y": 428,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -360,7 +408,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain)"
@@ -373,8 +421,7 @@
                         "map": "Valhalla",
                         "x": 102,
                         "y": 476,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -384,7 +431,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain)"
@@ -397,8 +444,7 @@
                         "map": "Valhalla",
                         "x": 303,
                         "y": 317,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -408,7 +454,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain)"
@@ -421,8 +467,7 @@
                         "map": "Valhalla",
                         "x": 296,
                         "y": 428,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -432,7 +477,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
@@ -445,8 +490,7 @@
                         "map": "Valhalla",
                         "x": 715,
                         "y": 159,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -456,7 +500,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain) and (((Has(Feather) or CanChant(Heaven)) and HorizontalAttack) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)))"
@@ -469,8 +513,7 @@
                         "map": "Valhalla",
                         "x": 560,
                         "y": 500,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -480,7 +523,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
@@ -493,8 +536,7 @@
                         "map": "Valhalla",
                         "x": 684,
                         "y": 428,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -504,34 +546,43 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain)"
                 ]
             },
             {
-                "name": "Near Third Trickster Item Pot",
+                "name": "Behind Third Trickster",
                 "map_locations": [
                     {
                         "map": "Valhalla",
                         "x": 974,
                         "y": 293,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
                     {
-                        "name": "Pot",
-                        "item_count": 1
+                        "name": "Near Third Trickster Item Pot",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_potsanity_shuriken"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                        ]
+                    },
+                    {
+                        "name": "[VAL D-3] Glossary Behind Third Trickster Spot",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_freestanding"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
+                        ]
                     }
-                ],
-                "visibility_rules": [
-                    "setting_potsanity"
-                ],
-                "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
                 ]
             },
             {
@@ -541,8 +592,7 @@
                         "map": "Valhalla",
                         "x": 860,
                         "y": 452,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -552,7 +602,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
@@ -565,8 +615,7 @@
                         "map": "Valhalla",
                         "x": 984,
                         "y": 500,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -576,7 +625,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack)"
@@ -589,8 +638,7 @@
                         "map": "Valhalla",
                         "x": 916,
                         "y": 120,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -600,7 +648,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaTop) and (HorizontalAttack)"
@@ -613,8 +661,7 @@
                         "map": "Valhalla",
                         "x": 1142,
                         "y": 207,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -624,10 +671,171 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ValhallaTopRight)"
+                ]
+            },
+            {
+                "name": "[VAL A-2] Glossary in Breakable Wall Above Spikes",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 154,
+                        "y": 232,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[VAL B-4] Glossary in Jalandhara's Corridor (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 352,
+                        "y": 428,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[VAL A-3] NPC Glossary (Hoenir)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 130,
+                        "y": 317,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[VAL D-3] NPC Glossary (Brihaspathi)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 797,
+                        "y": 317,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[VAL C-1] NPC Glossary (Pushan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 566,
+                        "y": 73,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[VAL A-4] NPC Glossary (Bhaga)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 67,
+                        "y": 428,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[VAL A-4] Glossary Locked Behind Floor Switch",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and ((Has(Earth Spear) or Has(Bomb)))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 25,
+                        "y": 523,
+                        "size": 15
+                    }
                 ]
             }
         ],

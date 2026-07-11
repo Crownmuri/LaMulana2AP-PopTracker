@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1223,
+                        "y": 705,
+                        "size": 50
+                    },
+                    {
                         "map": "Shrine of the Frost Giants",
                         "x": 951,
                         "y": 603
@@ -37,6 +43,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1361,
+                        "y": 548,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1361,
                         "y": 548,
                         "size": 50
@@ -69,18 +81,29 @@
                         "map": "Shrine of the Frost Giants",
                         "x": 720,
                         "y": 447,
-                        "shape": "diamond"
+                        "size": 15,
+                        "shape": "rect"
                     }
                 ],
                 "sections": [
                     {
                         "name": "Fairy",
                         "item_count": 1,
-                        "hosted_item": "boss_weapon_fairy"
+                        "hosted_item": "boss_weapon_fairy",
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(SotFGMain) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Right))"
+                        ]
+                    },
+                    {
+                        "name": "[SFG C-4] NPC Glossary (Fairy Guild General)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(SotFGMain)"
+                        ]
                     }
-                ],
-                "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Right))"
                 ]
             },
             {
@@ -135,6 +158,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1344,
+                        "y": 853,
+                        "size": 50
+                    },
+                    {
                         "map": "Shrine of the Frost Giants",
                         "x": 1220,
                         "y": 896
@@ -160,6 +189,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 914,
+                        "y": 770,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 914,
                         "y": 770,
                         "size": 50
@@ -195,6 +230,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 940,
+                        "y": 695,
+                        "size": 50
+                    },
+                    {
                         "map": "Shrine of the Frost Giants",
                         "x": 385,
                         "y": 585
@@ -215,6 +256,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1081,
+                        "y": 503,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1081,
                         "y": 503,
                         "size": 50
@@ -250,6 +297,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1081,
+                        "y": 553,
+                        "size": 50
+                    },
+                    {
                         "map": "Shrine of the Frost Giants",
                         "x": 668,
                         "y": 298
@@ -270,6 +323,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1132,
+                        "y": 437,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1132,
                         "y": 437,
                         "size": 50
@@ -326,6 +385,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 810,
+                        "y": 559,
+                        "size": 50
+                    },
+                    {
                         "map": "Shrine of the Frost Giants",
                         "x": 125,
                         "y": 310
@@ -356,6 +421,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 802,
+                        "y": 681,
+                        "size": 50
+                    },
+                    {
                         "map": "Shrine of the Frost Giants",
                         "x": 106,
                         "y": 555
@@ -381,6 +452,16 @@
                         "item_count": 1,
                         "access_rules": [
                             "^$lm2_logic|CanReach(SotFGLeft) and (((Has(Snow Shoes) and Has(Gale Fibula)) or CanStopTime) and PuzzleFinished(Bergelmir))"
+                        ]
+                    },
+                    {
+                        "name": "NPC Glossary (Hydlit)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(SotFGLeft)"
                         ]
                     }
                 ],
@@ -419,7 +500,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
@@ -443,7 +524,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain)"
@@ -467,7 +548,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and (Has(Vajra) or Has(Feather))) or (Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun)))))"
@@ -491,7 +572,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain) and (Has(Origin Sigil) or Glitch(Costume Clip) or HorizontalAttack)"
@@ -515,7 +596,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain) and (Has(Grapple Claw))"
@@ -539,7 +620,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
@@ -563,7 +644,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain)"
@@ -587,7 +668,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain)"
@@ -611,7 +692,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGMain) and (HorizontalAttack)"
@@ -635,7 +716,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGGrail)"
@@ -659,7 +740,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
@@ -683,7 +764,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
@@ -707,7 +788,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGGrail) and (HorizontalAttack)"
@@ -731,7 +812,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGGrail) and ((Has(Origin Sigil) or (PuzzleFinished(Bergelmir) and (IsDead(Fenrir) or CanStopTime))) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring))))"
@@ -755,14 +836,14 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
                 ]
             },
             {
-                "name": "Left Snow Drop Coin Pot",
+                "name": "Left Snow Drop",
                 "map_locations": [
                     {
                         "map": "Shrine of the Frost Giants",
@@ -774,12 +855,19 @@
                 ],
                 "sections": [
                     {
-                        "name": "Pot",
-                        "item_count": 1
+                        "name": "Left Snow Drop Coin Pot",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_potsanity_high_value"
+                        ]
+                    },
+                    {
+                        "name": "[SFG A-4] Glossary at Left Snow Drop",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_freestanding"
+                        ]
                     }
-                ],
-                "visibility_rules": [
-                    "setting_potsanity"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGLeft) and (Has(Katana) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Rapier) or Has(Knife) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))))))"
@@ -803,7 +891,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGTop)"
@@ -827,12 +915,260 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGTop)"
                 ]
             },
+            {
+                "name": "[SFG B-4] Glossary Behind Eye (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGLeft) and (Has(Hand Scanner) and PuzzleFinished(Bergelmir))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 455,
+                        "y": 422,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[SFG E-4] Glossary in the Path of Snow",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 1165,
+                        "y": 485,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[SFG B-5] Glossary in the Snow Below Skeleton",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGGrail) and ((Has(Origin Sigil) or (PuzzleFinished(Bergelmir) and (IsDead(Fenrir) or CanStopTime))))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 480,
+                        "y": 648,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[SFG D-5] Glossary in the Checkered Pillar",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 840,
+                        "y": 660,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[SFG D-4] Glossary in Between the Elevators",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 874,
+                        "y": 452,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[SFG C-2] Glossary in Hollow Pillar Before Balor",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGBalor) and (PuzzleFinished(Bergelmir) and CanWarp)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 744,
+                        "y": 253,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[SFG D-7] Glossary in Flame Torc Wall Above Spikes",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGGrail) and ((Has(Origin Sigil) or (PuzzleFinished(Bergelmir) and (IsDead(Fenrir) or CanStopTime))) and Has(Flame Torc) and Has(Feather))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 821,
+                        "y": 877,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[SFG E-4] NPC Glossary (Gerd)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 1225,
+                        "y": 428,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[SFG D-5] NPC Glossary (Thrymr)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 768,
+                        "y": 610,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[SFG B-4] NPC Glossary (Mnemosyne's Remains)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGLeft) and (PuzzleFinished(Bergelmir))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 481,
+                        "y": 451,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            }
+        ],
+        "access_rules": [
+            "^$lm2_logic|CanReach(SotFGBalor) or CanReach(SotFGGrail) or CanReach(SotFGLeft) or CanReach(SotFGMain) or CanReach(SotFGTop)"
+        ]
+    },
+    {
+        "name": "BloodTez",
+        "children": [
             {
                 "name": "Corridor of Blood Right Weight Pot",
                 "map_locations": [
@@ -851,7 +1187,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGBlood)"
@@ -875,10 +1211,31 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGBlood)"
+                ]
+            },
+            {
+                "name": "Tezcatlipoca",
+                "map_locations": [
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 375,
+                        "y": 62,
+                        "shape": "diamond"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_tezcatlipoca"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGBloodTez) and CanKill(Tezcatlipoca)"
                 ]
             },
             {
@@ -899,39 +1256,34 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_chakram"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SotFGBloodTez) and (HorizontalAttack and IsDead(Tezcatlipoca))"
                 ]
-            }
-        ],
-        "access_rules": [
-            "^$lm2_logic|CanReach(SotFGBalor) or CanReach(SotFGGrail) or CanReach(SotFGLeft) or CanReach(SotFGMain) or CanReach(SotFGTop)"
-        ]
-    },
-    {
-        "name": "BloodTez",
-        "children": [
+            },
             {
-                "name": "Tezcatlipoca",
+                "name": "[SFGB A-1] Glossary Post-Tezcatlipoca",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SotFGBloodTez) and (IsDead(Tezcatlipoca))"
+                ],
                 "map_locations": [
                     {
                         "map": "Shrine of the Frost Giants",
-                        "x": 375,
-                        "y": 62,
-                        "shape": "diamond"
+                        "x": 202,
+                        "y": 120,
+                        "size": 15,
+                        "shape": "rect"
                     }
-                ],
-                "sections": [
-                    {
-                        "name": "Miniboss",
-                        "item_count": 1,
-                        "hosted_item": "boss_tezcatlipoca"
-                    }
-                ],
-                "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGBloodTez) and CanKill(Tezcatlipoca)"
                 ]
             }
         ],

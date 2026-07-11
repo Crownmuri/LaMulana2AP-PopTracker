@@ -7,10 +7,13 @@
                 "x": 50,
                 "y": 2400,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2400,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -18,6 +21,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Starting Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -25,6 +31,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Alsedana Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -32,6 +41,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Nebur Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -39,6 +51,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Xelpud Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -46,6 +61,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Xelpud Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -58,10 +76,13 @@
                 "x": 90,
                 "y": 2400,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2400,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -69,6 +90,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Pre-Ladder Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -76,6 +100,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Post-Ladder Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -83,6 +110,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Double Jump Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_chakram"
                 ]
             },
             {
@@ -90,6 +120,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Photo Stand-in Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -97,6 +130,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/High-up Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -109,10 +145,13 @@
                 "x": 130,
                 "y": 2400,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2400,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -120,6 +159,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Below Hiner Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -127,6 +169,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Illusion Gate Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -134,6 +179,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/First Room Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -141,6 +189,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Second Room Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -148,6 +199,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Breakable Wall Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -160,10 +214,13 @@
                 "x": 170,
                 "y": 2400,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 2400,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -171,6 +228,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Futo Statue Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -178,6 +238,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Pre-Ratatoskr Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -190,10 +253,13 @@
                 "x": 50,
                 "y": 2450,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2450,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -201,6 +267,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Second Room Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -208,6 +277,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Weapon Vault Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -215,6 +287,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Weapon Vault Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -222,6 +297,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Convenient Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -229,6 +307,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Below Ratatoskr Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -241,10 +322,13 @@
                 "x": 90,
                 "y": 2450,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2450,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -252,6 +336,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Footprint Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -259,6 +346,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Bridge Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -266,6 +356,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Birth Seal Gate Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -273,6 +366,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/First Room Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -280,6 +376,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Large Breakable Wall Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -292,10 +391,13 @@
                 "x": 130,
                 "y": 2450,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2450,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -303,6 +405,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Korobock Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -310,6 +415,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Candlestick of Time Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -317,6 +425,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Torch Room Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -324,6 +435,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Golden Rock Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -336,10 +450,13 @@
                 "x": 50,
                 "y": 2500,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2500,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -347,6 +464,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Fairy Watchtower Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -354,6 +474,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Pre-Kaliya Hidden Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -361,6 +484,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Kaliya's Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -368,6 +494,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Kukulkan's Grail Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -375,6 +504,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Kukulkan's Grail Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -387,10 +519,13 @@
                 "x": 90,
                 "y": 2500,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2500,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -398,6 +533,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Fairy King's Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -405,6 +543,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Center Item Pot #1/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -412,6 +553,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Center Item Pot #2/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -419,6 +563,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Huracan's Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -426,6 +573,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Mantra Watchtower Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -438,10 +588,13 @@
                 "x": 130,
                 "y": 2500,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2500,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -449,6 +602,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Look Away Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -456,6 +612,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Bifrost Left Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -463,6 +622,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Bifrost Right Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -470,6 +632,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Bifrost Right Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -477,6 +642,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Feathercross One-Way Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -489,10 +657,13 @@
                 "x": 170,
                 "y": 2500,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 2500,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -500,6 +671,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Ixtab Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -507,6 +681,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Death's Prison Hidden Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -514,6 +691,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Pre-Kujata Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -526,10 +706,13 @@
                 "x": 50,
                 "y": 2550,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2550,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -537,6 +720,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Cetus Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -544,6 +730,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Top-Left Weapon Vault Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -551,6 +740,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Under Fake Wall Puzzle Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -558,6 +750,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Before Fake Wall Puzzle Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -565,6 +760,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Corridor of Wind Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             }
         ]
@@ -577,10 +775,13 @@
                 "x": 90,
                 "y": 2550,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2550,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -588,6 +789,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Left Altar Lower Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -595,6 +799,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Left Altar Upper Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -602,6 +809,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Left of Spiral Boat Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -609,6 +819,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Above Backside Grail Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -616,6 +829,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Jormungandr Mural Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             }
         ]
@@ -628,10 +844,13 @@
                 "x": 130,
                 "y": 2550,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2550,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -639,6 +858,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Map Chest Left Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -646,6 +868,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Map Chest Right Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -653,6 +878,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Right of Spiral Boat Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -660,6 +888,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Submerged Sigil Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -667,6 +898,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Above Frontside Grail Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -679,10 +913,13 @@
                 "x": 170,
                 "y": 2550,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 2550,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -690,6 +927,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Frontside Grail Upper Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -697,6 +937,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Frontside Grail Lower Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -704,6 +947,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Below Hidden Sigil Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -711,6 +957,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Right of Hiro Roderick Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -718,6 +967,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Path of Destruction Dropdown Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             }
         ]
@@ -730,10 +982,13 @@
                 "x": 210,
                 "y": 2550,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 210,
+                "y": 2550,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -741,6 +996,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Path to Destruction Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -748,6 +1006,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Corona Arsenal Right Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -755,6 +1016,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Corona Arsenal Left Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -762,6 +1026,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Left of Lava Weapon Vault Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -769,6 +1036,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Inferno Corridor Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -781,10 +1051,13 @@
                 "x": 250,
                 "y": 2550,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 250,
+                "y": 2550,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -792,6 +1065,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Time Altar Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -799,6 +1075,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Path to Time Altar Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -806,6 +1085,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Path to Time Altar Hidden Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -813,6 +1095,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Path to Time Altar Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -820,6 +1105,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Left Soul Gate Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -832,10 +1120,13 @@
                 "x": 290,
                 "y": 2550,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 290,
+                "y": 2550,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -843,6 +1134,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Alviss Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -850,6 +1144,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Moon Altar/Moon Altar Coin Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -857,6 +1154,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Moon Altar/Moon Altar Item Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_chakram"
                 ]
             },
             {
@@ -864,6 +1164,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Inferno Corridor Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             }
         ]
@@ -876,10 +1179,13 @@
                 "x": 50,
                 "y": 2600,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2600,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -887,6 +1193,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Mino Center Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -894,6 +1203,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Mino Bottom Left Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -901,6 +1213,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Mino Top Right Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -908,6 +1223,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Mino Bottom Right Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -915,6 +1233,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Bombable Wall Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             }
         ]
@@ -927,10 +1248,13 @@
                 "x": 90,
                 "y": 2600,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2600,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -938,6 +1262,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Above Vidofnir Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -945,6 +1272,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Skull in Background Upper Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -952,6 +1282,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Below Frontside Grail Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -959,6 +1292,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Surtr's Antechamber Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -966,6 +1302,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/BTK Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -978,10 +1317,13 @@
                 "x": 130,
                 "y": 2600,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2600,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -989,6 +1331,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Altar of Life Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -996,6 +1341,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Altar of Life Approach Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1003,6 +1351,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Fireside Elevator Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1010,6 +1361,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Vedfolnir Left Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -1017,6 +1371,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Vedfolnir Right Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             }
         ]
@@ -1029,10 +1386,13 @@
                 "x": 170,
                 "y": 2600,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 2600,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1040,6 +1400,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Ratatoskr Surprise Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -1047,6 +1410,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Lowering Statue Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -1054,6 +1420,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Great Bird Nest Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -1061,6 +1430,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Niflheim Stalactites Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -1068,6 +1440,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Backside Grail Hidden Coin Pot #1/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -1080,10 +1455,13 @@
                 "x": 210,
                 "y": 2600,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 210,
+                "y": 2600,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1091,6 +1469,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Iceside Elevator Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -1098,6 +1479,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Backside Grail Hidden Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_chakram"
                 ]
             },
             {
@@ -1105,6 +1489,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Backside Grail Hidden Coin Pot #2/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1112,6 +1499,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Left Ladder Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -1124,10 +1514,13 @@
                 "x": 50,
                 "y": 2650,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2650,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1135,6 +1528,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Divine Soul Gate Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -1142,6 +1538,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Frey's Ship Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1149,6 +1548,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Above Mantra Mural Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1156,6 +1558,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Pre-Hugin and Munin Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1163,6 +1568,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Dwarves' Hideout Right Pot #2/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             }
         ]
@@ -1175,10 +1583,13 @@
                 "x": 90,
                 "y": 2650,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2650,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1186,6 +1597,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Dwarves' Hideout Right Pot #1/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1193,6 +1607,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Corridor to Gate Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -1200,6 +1617,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Moving Block Lower Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -1207,6 +1627,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Antechamber - Ledge Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1214,6 +1637,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Antechamber - Gullinbursti Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             }
         ]
@@ -1226,10 +1652,13 @@
                 "x": 130,
                 "y": 2650,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2650,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1237,6 +1666,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Antechamber - Ladder Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1244,6 +1676,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Shuhoka Lower Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1251,6 +1686,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Shuhoka Upper Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -1258,6 +1696,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Footprint Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1265,6 +1706,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Moving Block Upper Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -1277,10 +1721,13 @@
                 "x": 170,
                 "y": 2650,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 2650,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1288,6 +1735,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Breakable Push Block Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1295,6 +1745,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Yuga Wheel Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             }
         ]
@@ -1307,10 +1760,13 @@
                 "x": 50,
                 "y": 2700,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2700,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1318,6 +1774,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Mantra Mural Exit Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -1325,6 +1784,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Weapon Fairy - Upper Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1332,6 +1794,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Weapon Fairy - Lower Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1339,6 +1804,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Titanomachy Monument Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -1346,6 +1814,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Golden Altar Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -1358,10 +1829,13 @@
                 "x": 90,
                 "y": 2700,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2700,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1369,6 +1843,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Path of Snow Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1376,6 +1853,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Path of Snow Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1383,6 +1863,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Footprint Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1390,6 +1873,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Footprint Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1397,6 +1883,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Weapon Vault Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             }
         ]
@@ -1409,10 +1898,13 @@
                 "x": 130,
                 "y": 2700,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2700,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1420,6 +1912,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Grail Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1427,6 +1922,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Sacred Wine Corridor Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1434,6 +1932,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Right Snow Drop Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1441,6 +1942,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Altar of Birth Approach Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -1448,6 +1952,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Bergelmir Blocking Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             }
         ]
@@ -1460,17 +1967,23 @@
                 "x": 170,
                 "y": 2700,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 2700,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
                 "name": "Left Snow Drop Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/Left Snow Drop Coin Pot/Pot"
+                    "@Shrine of the Frost Giants/Left Snow Drop/Left Snow Drop Coin Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -1478,6 +1991,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Mimics Left Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -1485,20 +2001,29 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Mimics Right Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
                 "name": "Corridor of Blood Right Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/Corridor of Blood Right Weight Pot/Pot"
+                    "@BloodTez/Corridor of Blood Right Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
                 "name": "Corridor of Blood Left Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/Corridor of Blood Left Coin Pot/Pot"
+                    "@BloodTez/Corridor of Blood Left Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             }
         ]
@@ -1511,17 +2036,23 @@
                 "x": 210,
                 "y": 2700,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 210,
+                "y": 2700,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
                 "name": "Tezcatlipoca Reward Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/Tezcatlipoca Reward Item Pot/Pot"
+                    "@BloodTez/Tezcatlipoca Reward Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_chakram"
                 ]
             }
         ]
@@ -1534,10 +2065,13 @@
                 "x": 50,
                 "y": 2750,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2750,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1545,6 +2079,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Aytum's Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1552,6 +2089,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Death Trap Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -1559,6 +2099,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Thoth's Upper Coin Chest/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1566,6 +2109,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Thoth's Lower Item Chest/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -1573,6 +2119,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Dwarves' Puzzle Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             }
         ]
@@ -1585,10 +2134,13 @@
                 "x": 90,
                 "y": 2750,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2750,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1596,6 +2148,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Unicorn Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1603,6 +2158,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Pre-Unicorn Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -1610,6 +2168,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Pre-Unicorn Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1617,6 +2178,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Soul Gate Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1624,6 +2188,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Laser Beams Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             }
         ]
@@ -1636,10 +2203,13 @@
                 "x": 130,
                 "y": 2750,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2750,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1647,6 +2217,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Laser Beams Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1654,6 +2227,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Below Grail Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -1661,6 +2237,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Pillar Pepper Puzzle Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -1668,6 +2247,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Room of the Dark Night Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -1675,6 +2257,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Flipped Push Block Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             }
         ]
@@ -1687,10 +2272,13 @@
                 "x": 170,
                 "y": 2750,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 2750,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1698,6 +2286,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Horus Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -1705,6 +2296,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Wedjet Gate Solo Item Pot #1/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -1712,6 +2306,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Wedjet Gate Solo Item Pot #2/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             }
         ]
@@ -1724,10 +2321,13 @@
                 "x": 50,
                 "y": 2800,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2800,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1735,6 +2335,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Spinning Platforms Left Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -1742,6 +2345,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Spinning Platforms Right Weight Pot /Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1749,6 +2355,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Next to Chest Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1756,6 +2365,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Amenominakanushi Top-Left Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1763,6 +2375,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Amenominakanushi Bottom Level Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             }
         ]
@@ -1775,10 +2390,13 @@
                 "x": 90,
                 "y": 2800,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2800,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1786,6 +2404,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Amenominakanushi Pre-Ladder Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1793,6 +2414,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Falling Platform Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -1800,13 +2424,19 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Falling Platform Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
-                "name": "Raijin and Fujin Reward Item Pot",
+                "name": "Raijin and Fujin's Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "@Takamagahara Shrine/Raijin and Fujin Reward Item Pot/Pot"
+                    "@Takamagahara Shrine/Raijin and Fujin's Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -1814,6 +2444,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Maze Top-Left Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_chakram"
                 ]
             }
         ]
@@ -1826,10 +2459,13 @@
                 "x": 130,
                 "y": 2800,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2800,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1837,6 +2473,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Maze Middle Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -1844,6 +2483,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Maze Bottom-Left Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -1851,6 +2493,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Above Grail Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -1858,6 +2503,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Spirit Palace Hidden Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1865,6 +2513,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Spirit Palace Right Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             }
         ]
@@ -1877,10 +2528,13 @@
                 "x": 170,
                 "y": 2800,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 2800,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1888,6 +2542,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Left Dragon Path Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1895,6 +2552,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Breakable Pillar Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -1902,6 +2562,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Upper Corridor Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1909,6 +2572,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Stacked Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -1916,6 +2582,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Amanoiwato Gate Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             }
         ]
@@ -1928,10 +2597,13 @@
                 "x": 210,
                 "y": 2800,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 210,
+                "y": 2800,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1939,6 +2611,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Pre-Belial Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1946,6 +2621,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Yuga Wheel Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             }
         ]
@@ -1958,10 +2636,13 @@
                 "x": 50,
                 "y": 2850,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2850,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -1969,6 +2650,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/After Megarock Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -1976,6 +2660,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Below Megarock Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1983,6 +2670,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Ladder from B-2 Mural Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -1990,6 +2680,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Celestial Disk Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -1997,6 +2690,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Celestial Disk Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             }
         ]
@@ -2009,10 +2705,13 @@
                 "x": 90,
                 "y": 2850,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2850,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2020,6 +2719,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Typhon's Room Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -2027,6 +2729,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Arachne's Corridor Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2034,6 +2739,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Arachne's Corridor Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -2041,6 +2749,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Soul Gate Hidden Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_chakram"
                 ]
             },
             {
@@ -2048,6 +2759,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Spiral Mural Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -2060,10 +2774,13 @@
                 "x": 130,
                 "y": 2850,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2850,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2071,6 +2788,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Weapon Vault Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2078,13 +2798,19 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Path to Chaos Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
                 "name": "Scylla's Breakable Wall Coin Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "@Heavens Labyrinth/Scylla's Breakable Wall Coin Pot/Pot"
+                    "@Heavens Labyrinth/Scylla's Breakable Wall/Scylla's Breakable Wall Coin Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2092,6 +2818,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Twin Vessel Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2099,6 +2828,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Twin Vessel Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             }
         ]
@@ -2111,10 +2843,13 @@
                 "x": 50,
                 "y": 2900,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2900,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2122,6 +2857,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Entrance Gate Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -2129,6 +2867,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Left of Grail Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2136,6 +2877,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Near First Trickster Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2143,6 +2887,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Near First Trickster Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -2150,6 +2897,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Near First Trickster Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -2162,10 +2912,13 @@
                 "x": 90,
                 "y": 2900,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2900,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2173,6 +2926,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Above Grail Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2180,6 +2936,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Corridor above Jalandhara Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -2187,6 +2946,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Near Second Trickster Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2194,6 +2956,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Warrior's Aqueduct Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -2201,6 +2966,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Above Laser Statue Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -2213,17 +2981,23 @@
                 "x": 130,
                 "y": 2900,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2900,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
                 "name": "Near Third Trickster Item Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "@Valhalla/Near Third Trickster Item Pot/Pot"
+                    "@Valhalla/Behind Third Trickster/Near Third Trickster Item Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -2231,6 +3005,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Below Zipakna Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2238,6 +3015,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Below Bargain Duck Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2245,6 +3025,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Mantra Mural Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -2252,6 +3035,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Soul Gate Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             }
         ]
@@ -2264,10 +3050,13 @@
                 "x": 50,
                 "y": 2950,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 2950,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2275,6 +3064,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Grail Top-Right Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -2282,6 +3074,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Double Staircases Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2289,6 +3084,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Left Winged Statue Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -2296,6 +3094,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Room of Judgement Left Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -2303,6 +3104,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Room of Judgement Top Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             }
         ]
@@ -2315,10 +3119,13 @@
                 "x": 90,
                 "y": 2950,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 2950,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2326,6 +3133,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Room of Judgement Bottom Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -2333,6 +3143,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Kero Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2340,6 +3153,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Altar of Atum Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -2347,6 +3163,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Ladder to Atum Item Pot #1/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -2354,6 +3173,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Ladder to Atum Item Pot #2/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             }
         ]
@@ -2366,10 +3188,13 @@
                 "x": 130,
                 "y": 2950,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 2950,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2377,6 +3202,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Ra's Hideout Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -2384,6 +3212,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Ra's Hideout Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -2391,6 +3222,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Right Winged Statue Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -2398,6 +3232,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Thunder Antechamber Left Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2405,6 +3242,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Thunder Antechamber Right Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             }
         ]
@@ -2417,10 +3257,13 @@
                 "x": 170,
                 "y": 2950,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 2950,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2428,6 +3271,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Entrance Gate Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -2435,6 +3281,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Entrance Gate Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2442,6 +3291,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Right of Pyramid Stacked Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2449,6 +3301,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Right of Pyramid Stacked Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -2456,6 +3311,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Left Ladder to Stars Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -2468,10 +3326,13 @@
                 "x": 210,
                 "y": 2950,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 210,
+                "y": 2950,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2479,6 +3340,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Use Crystal Skull Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -2486,6 +3350,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Bombable Wall Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -2493,6 +3360,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Right Ladder to Stars Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_chakram"
                 ]
             }
         ]
@@ -2505,10 +3375,13 @@
                 "x": 50,
                 "y": 3000,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 3000,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2516,6 +3389,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Entrance Gate Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -2523,6 +3399,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Annunaki Hot Spring Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -2530,6 +3409,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Annunaki Hot Spring Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2537,6 +3419,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Path to Inferno Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2544,6 +3429,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Abandon Your Desires Coin Pot #1/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -2556,10 +3444,13 @@
                 "x": 90,
                 "y": 3000,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 3000,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2567,6 +3458,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Abandon Your Desires Coin Pot #2/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2574,6 +3468,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Abandon Your Desires Coin Pot #3/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2581,6 +3478,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Abandon Your Desires Coin Pot #4/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2588,6 +3488,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Shortcut Room Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2595,6 +3498,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Shortcut Room Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             }
         ]
@@ -2607,10 +3513,13 @@
                 "x": 130,
                 "y": 3000,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 3000,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2618,6 +3527,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/There is Nothing Here Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2625,6 +3537,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Grail Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -2632,6 +3547,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Queen of the Night Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2639,6 +3557,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Queen of the Night Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2646,6 +3567,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Nine Eyes Wrong Side Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -2658,10 +3582,13 @@
                 "x": 170,
                 "y": 3000,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 3000,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2669,6 +3596,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Pre-Secret Shortcut Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -2676,6 +3606,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Post-Secret Shortcut Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -2683,6 +3616,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Ziggurat of Destiny Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -2690,6 +3626,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Zhulong Blocked Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             },
             {
@@ -2697,6 +3636,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Above Mantra Mural Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             }
         ]
@@ -2709,10 +3651,13 @@
                 "x": 210,
                 "y": 3000,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 210,
+                "y": 3000,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2720,6 +3665,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Soul Gate Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_chakram"
                 ]
             },
             {
@@ -2727,6 +3675,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Corridor of Blood Upper Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2734,6 +3685,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Corridor of Blood Right Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             }
         ]
@@ -2746,10 +3700,13 @@
                 "x": 50,
                 "y": 3050,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 3050,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2757,6 +3714,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Below Entrance Gate Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ]
             },
             {
@@ -2764,6 +3724,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Lernaean Hydra Room Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2771,6 +3734,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Nemean Lion Right Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -2778,6 +3744,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Nemean Lion Left Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2785,6 +3754,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Below Grail Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -2797,10 +3769,13 @@
                 "x": 90,
                 "y": 3050,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 3050,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2808,6 +3783,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Delphyne Room Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2815,6 +3793,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Sphinx Room Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2822,6 +3803,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Crusher Trap Hidden Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -2829,6 +3813,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Corridor of Blood Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -2836,6 +3823,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Fairylan Left Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -2848,10 +3838,13 @@
                 "x": 130,
                 "y": 3050,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 3050,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2859,6 +3852,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Fairylan Bottom Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -2866,6 +3862,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Time Serdab Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -2873,6 +3872,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Time Serdab Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2880,6 +3882,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Phaia Room Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2887,6 +3892,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Orthrus Approach Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -2899,10 +3907,13 @@
                 "x": 170,
                 "y": 3050,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 3050,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2910,6 +3921,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Orthrus Third Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -2922,10 +3936,13 @@
                 "x": 50,
                 "y": 3100,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 3100,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2933,6 +3950,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Maze Clear Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -2940,6 +3960,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Maze Clear Item Pot #1/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -2947,6 +3970,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Maze Clear Item Pot #2/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_chakram"
                 ]
             },
             {
@@ -2954,6 +3980,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Blikjandabol Lava Drop Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -2961,6 +3990,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Blikjandabol Lava Drop Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             }
         ]
@@ -2973,10 +4005,13 @@
                 "x": 90,
                 "y": 3100,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 3100,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -2984,6 +4019,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Yuga Wheel Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             },
             {
@@ -2991,6 +4029,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Left Ladder Weight Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -2998,6 +4039,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Sixth Hell Gate Approach Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -3005,6 +4049,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Seventh Hell Gate Approach Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -3012,6 +4059,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Seventh Hell Gate Approach Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_caltrops"
                 ]
             }
         ]
@@ -3024,10 +4074,13 @@
                 "x": 130,
                 "y": 3100,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 3100,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -3035,6 +4088,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Sixth Hell Gate Exit Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -3042,6 +4098,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Doom/Sixth Hell Gate Exit Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -3054,10 +4113,13 @@
                 "x": 50,
                 "y": 3150,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 50,
+                "y": 3150,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -3065,6 +4127,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Below Garm Statue Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -3072,6 +4137,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Mantra Mural Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -3079,6 +4147,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Weapon Vault Item Pot #2/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -3086,6 +4157,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Weapon Vault Item Pot #1/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -3093,6 +4167,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Software Mural Item Pot #2/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             }
         ]
@@ -3105,10 +4182,13 @@
                 "x": 90,
                 "y": 3150,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 90,
+                "y": 3150,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -3116,6 +4196,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Software Mural Item Pot #1/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_rolling_shuriken"
                 ]
             },
             {
@@ -3123,6 +4206,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Gate with Glowing Eyes Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -3130,6 +4216,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Soul Gate Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -3137,6 +4226,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Under River Styx Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -3144,6 +4236,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Under River Styx Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -3156,10 +4251,13 @@
                 "x": 130,
                 "y": 3150,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 130,
+                "y": 3150,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -3167,6 +4265,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Leap of Faith Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_bomb"
                 ]
             },
             {
@@ -3174,6 +4275,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Next to Grail Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_earth_spear"
                 ]
             },
             {
@@ -3181,6 +4285,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Fourth Hell Gate Approach Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_flare"
                 ]
             },
             {
@@ -3188,6 +4295,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Key Fairy Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_chakram"
                 ]
             },
             {
@@ -3195,6 +4305,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Key Fairy Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             }
         ]
@@ -3207,10 +4320,13 @@
                 "x": 170,
                 "y": 3150,
                 "size": 30
+            },
+            {
+                "map": "Full Map (+DLC)",
+                "x": 170,
+                "y": 3150,
+                "size": 30
             }
-        ],
-        "visibility_rules": [
-            "setting_potsanity"
         ],
         "sections": [
             {
@@ -3218,6 +4334,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Second Hell Gate Approach Item Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -3225,6 +4344,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Fourth Hell Gate Exit Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
                 ]
             },
             {
@@ -3232,6 +4354,9 @@
                 "item_count": 1,
                 "access_rules": [
                     "@Eternal Prison - Gloom/Right of Prison Cells Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
                 ]
             }
         ]

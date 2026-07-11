@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1104,
+                        "y": 1378,
+                        "size": 50
+                    },
+                    {
                         "map": "Heavens Labyrinth",
                         "x": 713,
                         "y": 602
@@ -37,6 +43,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 767,
+                        "y": 1163,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 767,
                         "y": 1163,
                         "size": 50
@@ -72,6 +84,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 791,
+                        "y": 1231,
+                        "size": 50
+                    },
+                    {
                         "map": "Heavens Labyrinth",
                         "x": 86,
                         "y": 307
@@ -98,6 +116,16 @@
                         "access_rules": [
                             "^$lm2_logic|CanReach(HL) and (Has(Grapple Claw) and Has(Feather))"
                         ]
+                    },
+                    {
+                        "name": "NPC Glossary (Megarock)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(HL)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -109,6 +137,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1010,
+                        "y": 1152,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1010,
                         "y": 1152,
                         "size": 50
@@ -144,6 +178,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1269,
+                        "y": 1165,
+                        "size": 50
+                    },
+                    {
                         "map": "Heavens Labyrinth",
                         "x": 1050,
                         "y": 174
@@ -174,6 +214,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 923,
+                        "y": 1097,
+                        "size": 50
+                    },
+                    {
                         "map": "Heavens Labyrinth",
                         "x": 351,
                         "y": 40
@@ -199,6 +245,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1175,
+                        "y": 1097,
+                        "size": 50
+                    },
+                    {
                         "map": "Heavens Labyrinth",
                         "x": 855,
                         "y": 20
@@ -215,10 +267,16 @@
                 ]
             },
             {
-                "name": "Typhon's Dissonance",
+                "name": "Typhon",
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1060,
+                        "y": 1302,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1060,
                         "y": 1302,
                         "size": 50
@@ -231,15 +289,25 @@
                 ],
                 "sections": [
                     {
-                        "name": "Dissonance",
-                        "item_count": 1
+                        "name": "Typhon's Dissonance",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_random_dissonance"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(HLSpun) and (CanWarp and IsDead(Echidna) and Has(Progressive Beherit) and Has(Hand Scanner))"
+                        ]
+                    },
+                    {
+                        "name": "[HL C-4] Glossary After Destroying Typhon (Scan)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_scannable"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(HLSpun) and (Has(Hand Scanner) and IsDead(Echidna))"
+                        ]
                     }
-                ],
-                "access_rules": [
-                    "^$lm2_logic|CanReach(HLSpun) and (CanWarp and IsDead(Echidna) and Has(Progressive Beherit) and Has(Hand Scanner))"
-                ],
-                "visibility_rules": [
-                    "setting_random_dissonance"
                 ]
             },
             {
@@ -336,6 +404,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 810,
+                        "y": 1400,
+                        "size": 50
+                    },
+                    {
                         "map": "Heavens Labyrinth",
                         "x": 125,
                         "y": 606
@@ -363,8 +437,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 225,
                         "y": 255,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -374,7 +447,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (HorizontalAttack and Has(Feather) and Has(Grapple Claw))"
@@ -387,8 +460,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 71,
                         "y": 365,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -398,7 +470,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (Has(Grapple Claw))"
@@ -411,8 +483,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 404,
                         "y": 121,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -422,7 +493,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
@@ -435,8 +506,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 572,
                         "y": 317,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -446,7 +516,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL)"
@@ -459,8 +529,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 701,
                         "y": 341,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -470,7 +539,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL)"
@@ -483,8 +552,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 549,
                         "y": 524,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -494,7 +562,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
@@ -507,8 +575,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 956,
                         "y": 658,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -518,7 +585,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
@@ -531,8 +598,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 942,
                         "y": 658,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -542,7 +608,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
@@ -555,8 +621,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 1098,
                         "y": 610,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -566,7 +631,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_chakram"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HL)"
@@ -579,8 +644,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 1013,
                         "y": 365,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -590,7 +654,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and HorizontalAttack)"
@@ -603,8 +667,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 313,
                         "y": 24,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -614,7 +677,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and (Has(Feather) or Has(Grapple Claw)))"
@@ -627,8 +690,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 686,
                         "y": 255,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -638,34 +700,43 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and HorizontalAttack)"
                 ]
             },
             {
-                "name": "Scylla's Breakable Wall Coin Pot",
+                "name": "Scylla's Breakable Wall",
                 "map_locations": [
                     {
                         "map": "Heavens Labyrinth",
                         "x": 329,
                         "y": 658,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
                     {
-                        "name": "Pot",
-                        "item_count": 1
+                        "name": "Scylla's Breakable Wall Coin Pot",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_potsanity_low_value"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
+                        ]
+                    },
+                    {
+                        "name": "[HL B-5] Glossary in Scylla's Breakable Wall",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_freestanding"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack)"
+                        ]
                     }
-                ],
-                "visibility_rules": [
-                    "setting_potsanity"
-                ],
-                "access_rules": [
-                    "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
                 ]
             },
             {
@@ -675,8 +746,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 47,
                         "y": 658,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -686,7 +756,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
@@ -699,8 +769,7 @@
                         "map": "Heavens Labyrinth",
                         "x": 194,
                         "y": 658,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -710,10 +779,171 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
+                ]
+            },
+            {
+                "name": "[HL D-5] Glossary in Arachne's Room",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 813,
+                        "y": 586,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HL C-2] Glossary along the Path to Chaos",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HLSpun)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 715,
+                        "y": 159,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HL E-3] Glossary behind Griffin's Statue (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HLSpun) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 1234,
+                        "y": 388,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HL C-5] NPC Glossary (Hermes)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 558,
+                        "y": 585,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HL A-3] NPC Glossary (Eros)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 181,
+                        "y": 388,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HL A-2] NPC Glossary (Orpheus)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 221,
+                        "y": 158,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[HL B-1] NPC Glossary (Baphomet)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(HL)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 284,
+                        "y": 120,
+                        "size": 15
+                    }
                 ]
             }
         ],

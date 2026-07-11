@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1531,
+                        "y": 2788,
+                        "size": 50
+                    },
+                    {
                         "map": "Eternal Prison - Doom",
                         "x": 24,
                         "y": 468
@@ -37,6 +43,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1909,
+                        "y": 2880,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1909,
                         "y": 2880,
                         "size": 50
@@ -72,6 +84,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1885,
+                        "y": 2799,
+                        "size": 50
+                    },
+                    {
                         "map": "Eternal Prison - Doom",
                         "x": 777,
                         "y": 474
@@ -93,10 +111,16 @@
                 ]
             },
             {
-                "name": "Anubis Trials",
+                "name": "Osiris",
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2059,
+                        "y": 2867,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2059,
                         "y": 2867,
                         "size": 50
@@ -109,8 +133,15 @@
                 ],
                 "sections": [
                     {
-                        "name": "Dialogue",
+                        "name": "Anubis Trials",
                         "item_count": 1
+                    },
+                    {
+                        "name": "[EPD E-5] NPC Glossary (Osiris)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -148,6 +179,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1768,
+                        "y": 2642,
+                        "size": 50
+                    },
+                    {
                         "map": "Eternal Prison - Doom",
                         "x": 547,
                         "y": 178
@@ -173,6 +210,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1559,
+                        "y": 2727,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1559,
                         "y": 2727,
                         "size": 50
@@ -224,8 +267,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 80,
                         "y": 522,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -235,7 +277,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDEntrance) and (HorizontalAttack)"
@@ -248,8 +290,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 92,
                         "y": 522,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -259,7 +300,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDEntrance) and (HorizontalAttack)"
@@ -272,8 +313,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 156,
                         "y": 522,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -283,7 +323,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_chakram"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDEntrance) and (HorizontalAttack)"
@@ -296,8 +336,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 514,
                         "y": 695,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -307,7 +346,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDMain) and (HorizontalAttack or OrbCount(3)) and ((Has(Gale Fibula) or CanStopTime) or (CanReach(EPG) and (Has(Claydoll Suit) or (Has(Ice Cloak) and Has(Anchor)) or Has(Feather))))"
@@ -320,8 +359,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 514,
                         "y": 830,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -331,7 +369,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDMain) and (HorizontalAttack or OrbCount(3)) and ((Has(Gale Fibula) or CanStopTime) or (CanReach(EPG) and (Has(Claydoll Suit) or (Has(Ice Cloak) and Has(Anchor)) or Has(Feather))))"
@@ -344,8 +382,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 856,
                         "y": 634,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -355,7 +392,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDMain)"
@@ -368,8 +405,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 806,
                         "y": 610,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -379,7 +415,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDMain)"
@@ -392,8 +428,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 1147,
                         "y": 452,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -403,7 +438,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDMain) and (Has(Feather))"
@@ -416,8 +451,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 545,
                         "y": 254,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -427,7 +461,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDTop) and (HorizontalAttack)"
@@ -440,8 +474,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 734,
                         "y": 207,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -451,7 +484,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDTop)"
@@ -464,8 +497,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 734,
                         "y": 24,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -475,7 +507,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDTop)"
@@ -488,8 +520,7 @@
                         "map": "Eternal Prison - Doom",
                         "x": 620,
                         "y": 72,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -499,10 +530,125 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(EPDTop)"
+                ]
+            },
+            {
+                "name": "[EPD C-4] Glossary in Wall Under Blood Corridor",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPDEntrance) and (Has(Feather) and (HorizontalAttack or OrbCount(3)))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Doom",
+                        "x": 624,
+                        "y": 475,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[EPD C-3] Glossary in Right Mirrored Door (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPG) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Doom",
+                        "x": 722,
+                        "y": 295,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[EPD A-3] Glossary in Hel's Preview Area (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPDTop) and (Has(Hand Scanner) and Has(Feather) and HorizontalAttack)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Doom",
+                        "x": 222,
+                        "y": 292,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[EPD D-4] NPC Glossary (Neti)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPDMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Doom",
+                        "x": 835,
+                        "y": 522,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[EPD E-5] NPC Glossary (Anubis)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(EPDMain) and (Has(Maat's Feather))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Eternal Prison - Doom",
+                        "x": 1123,
+                        "y": 585,
+                        "size": 15
+                    }
                 ]
             }
         ],

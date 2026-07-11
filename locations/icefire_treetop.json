@@ -3,10 +3,51 @@
         "name": "Icefire Treetop",
         "children": [
             {
+                "name": "Kimono Cowgirl Costume Chest",
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_costumesanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or Has(Feather) or (CanReach(ITEntrance) and Has(Grapple Claw)))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1273,
+                        "y": 335,
+                        "size": 30
+                    },
+                    {
+                        "map": "Full Map",
+                        "x": 2007,
+                        "y": 1377,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 2007,
+                        "y": 1377,
+                        "size": 50
+                    }
+                ]
+            },
+            {
                 "name": "IT Research Papers",
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1895,
+                        "y": 1401,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1895,
                         "y": 1401,
                         "size": 50
@@ -40,6 +81,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1733,
+                        "y": 1444,
+                        "size": 50
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 723,
                         "y": 468
@@ -66,6 +113,16 @@
                         "access_rules": [
                             "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)"
                         ]
+                    },
+                    {
+                        "name": "NPC Glossary (Mino the Bomb Guy)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ITBottom)"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -77,6 +134,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1972,
+                        "y": 1444,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1972,
                         "y": 1444,
                         "size": 50
@@ -107,6 +170,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1703,
+                        "y": 1334,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1703,
                         "y": 1334,
                         "size": 50
@@ -151,6 +220,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1611,
+                        "y": 1286,
+                        "size": 50
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 479,
                         "y": 158
@@ -176,6 +251,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1565,
+                        "y": 1444,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1565,
                         "y": 1444,
                         "size": 50
@@ -211,6 +292,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1432,
+                        "y": 1286,
+                        "size": 50
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 120,
                         "y": 158
@@ -241,6 +328,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1403,
+                        "y": 1219,
+                        "size": 50
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 63,
                         "y": 23
@@ -264,6 +357,16 @@
                     {
                         "name": "Shop Slot 3",
                         "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ITLeft) and ((HorizontalAttack and Has(Feather)) or MeleeAttack or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (CanWarp or Has(Feather))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit) or (TrickyLogic and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))))"
+                        ]
+                    },
+                    {
+                        "name": "NPC Glossary (Porque Item Shop)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
                         "access_rules": [
                             "^$lm2_logic|CanReach(ITLeft) and ((HorizontalAttack and Has(Feather)) or MeleeAttack or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (CanWarp or Has(Feather))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Claydoll Suit) or (TrickyLogic and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))))"
                         ]
@@ -304,6 +407,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1891,
+                        "y": 1230,
+                        "size": 50
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 1020,
                         "y": 23
@@ -334,6 +443,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2183,
+                        "y": 1310,
+                        "size": 50
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 1622,
                         "y": 206
@@ -359,6 +474,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2030,
+                        "y": 1468,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2030,
                         "y": 1468,
                         "size": 50
@@ -433,8 +554,7 @@
                         "map": "Icefire Treetop",
                         "x": 614,
                         "y": 475,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -444,7 +564,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITBottom)"
@@ -457,8 +577,7 @@
                         "map": "Icefire Treetop",
                         "x": 539,
                         "y": 499,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -468,7 +587,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITBottom)"
@@ -481,8 +600,7 @@
                         "map": "Icefire Treetop",
                         "x": 735,
                         "y": 427,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -492,7 +610,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITBottom)"
@@ -505,8 +623,7 @@
                         "map": "Icefire Treetop",
                         "x": 735,
                         "y": 499,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -516,7 +633,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITBottom) and (HorizontalAttack)"
@@ -529,8 +646,7 @@
                         "map": "Icefire Treetop",
                         "x": 706,
                         "y": 562,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -540,7 +656,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITBottom) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Feather))"
@@ -553,8 +669,7 @@
                         "map": "Icefire Treetop",
                         "x": 935,
                         "y": 586,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -564,7 +679,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITBottom)"
@@ -577,8 +692,7 @@
                         "map": "Icefire Treetop",
                         "x": 1037,
                         "y": 451,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -588,7 +702,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITBottom)"
@@ -601,8 +715,7 @@
                         "map": "Icefire Treetop",
                         "x": 467,
                         "y": 389,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -612,7 +725,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITSinmara) and (HorizontalAttack)"
@@ -625,8 +738,7 @@
                         "map": "Icefire Treetop",
                         "x": 734,
                         "y": 317,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -636,7 +748,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITSinmara) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(4))))"
@@ -649,8 +761,7 @@
                         "map": "Icefire Treetop",
                         "x": 188,
                         "y": 72,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -660,7 +771,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITLeft) and ((MeleeAttack or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Feather) and (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))) or (TrickyLogic and (True)))"
@@ -673,8 +784,7 @@
                         "map": "Icefire Treetop",
                         "x": 210,
                         "y": 255,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -684,7 +794,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack)"
@@ -697,8 +807,7 @@
                         "map": "Icefire Treetop",
                         "x": 82,
                         "y": 317,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -708,7 +817,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITLeft)"
@@ -721,8 +830,7 @@
                         "map": "Icefire Treetop",
                         "x": 263,
                         "y": 159,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -732,7 +840,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITLeft)"
@@ -745,8 +853,7 @@
                         "map": "Icefire Treetop",
                         "x": 264,
                         "y": 499,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -756,7 +863,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(2))))"
@@ -769,8 +876,7 @@
                         "map": "Icefire Treetop",
                         "x": 418,
                         "y": 475,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -780,7 +886,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(2))))"
@@ -793,8 +899,7 @@
                         "map": "Icefire Treetop",
                         "x": 734,
                         "y": 47,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -804,7 +909,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITLeft) and (HorizontalAttack)"
@@ -817,8 +922,7 @@
                         "map": "Icefire Treetop",
                         "x": 1011,
                         "y": 72,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -828,7 +932,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITRight)"
@@ -841,8 +945,7 @@
                         "map": "Icefire Treetop",
                         "x": 1090,
                         "y": 206,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -852,7 +955,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITRight)"
@@ -865,8 +968,7 @@
                         "map": "Icefire Treetop",
                         "x": 1200,
                         "y": 341,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -876,7 +978,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITRight) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)) or (HorizontalAttack and (Has(Feather) or (Has(Grapple Claw) and CanReach(ITEntrance)))))"
@@ -889,8 +991,7 @@
                         "map": "Icefire Treetop",
                         "x": 1476,
                         "y": 96,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -900,7 +1001,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Anchor) or Has(Fish Suit))))"
@@ -913,8 +1014,7 @@
                         "map": "Icefire Treetop",
                         "x": 1483,
                         "y": 293,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -924,7 +1024,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITRight)"
@@ -937,8 +1037,7 @@
                         "map": "Icefire Treetop",
                         "x": 1521,
                         "y": 96,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -948,7 +1047,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_chakram"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
@@ -961,8 +1060,7 @@
                         "map": "Icefire Treetop",
                         "x": 1535,
                         "y": 96,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -972,7 +1070,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
@@ -985,8 +1083,7 @@
                         "map": "Icefire Treetop",
                         "x": 1387,
                         "y": 24,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -996,10 +1093,194 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(ITRightLeftLadder) and (HorizontalAttack)"
+                ]
+            },
+            {
+                "name": "[IT C-2] Glossary in Surtr's Room (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITBottom) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 531,
+                        "y": 207,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IT B-1] Glossary in Left Breakable Floor",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITBottom) and ((Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and Has(Vajra))))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 316,
+                        "y": 96,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IT C-5] Glossary at Poison Lava Skeleton (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITBottom) and (Has(Hand Scanner) and Has(Claydoll Suit))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 647,
+                        "y": 657,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IT E-2] Glossary in the Hot Spring (Scan)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight) and (Has(Hand Scanner))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1032,
+                        "y": 260,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IT C-3] NPC Glossary (Sinmara)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITSinmara)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 519,
+                        "y": 292,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IT F-3] NPC Glossary (Modgud)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1172,
+                        "y": 47,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IT E-1] NPC Glossary (Inanna)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1312,
+                        "y": 389,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IT E-2] NPC Glossary (Enimul)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ITRight)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1111,
+                        "y": 254,
+                        "size": 15
+                    }
                 ]
             }
         ],

@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1896,
+                        "y": 572,
+                        "size": 50
+                    },
+                    {
                         "map": "Annwfn",
                         "x": 1046,
                         "y": 358
@@ -37,6 +43,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1718,
+                        "y": 639,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1718,
                         "y": 639,
                         "size": 50
@@ -72,6 +84,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1524,
+                        "y": 710,
+                        "size": 50
+                    },
+                    {
                         "map": "Annwfn",
                         "x": 302,
                         "y": 647
@@ -102,6 +120,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1684,
+                        "y": 428,
+                        "size": 50
+                    },
+                    {
                         "map": "Annwfn",
                         "x": 623,
                         "y": 24
@@ -122,6 +146,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1706,
+                        "y": 504,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1706,
                         "y": 504,
                         "size": 50
@@ -155,6 +185,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1962,
+                        "y": 435,
+                        "size": 50
+                    },
+                    {
                         "map": "Annwfn",
                         "x": 1224,
                         "y": 25
@@ -181,6 +217,16 @@
                         "access_rules": [
                             "^$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
                         ]
+                    },
+                    {
+                        "name": "NPC Glossary (Pym)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(AnnwfnMain) and ((IsDead(Kaliya) or Has(Feather)) and Has(Glove))"
+                        ]
                     }
                 ],
                 "access_rules": [
@@ -192,6 +238,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1788,
+                        "y": 646,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1788,
                         "y": 646,
                         "size": 50
@@ -264,6 +316,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1886,
+                        "y": 717,
+                        "size": 50
+                    },
+                    {
                         "map": "Annwfn",
                         "x": 1028,
                         "y": 623
@@ -289,6 +347,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2042,
+                        "y": 683,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2042,
                         "y": 683,
                         "size": 50
@@ -335,6 +399,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2056,
+                        "y": 504,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2056,
                         "y": 504,
                         "size": 50
@@ -400,7 +470,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain)"
@@ -424,7 +494,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain)"
@@ -448,7 +518,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain) and ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))))"
@@ -472,7 +542,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain)"
@@ -496,7 +566,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain)"
@@ -520,7 +590,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain)"
@@ -544,7 +614,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain)"
@@ -568,7 +638,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
@@ -592,7 +662,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
@@ -616,7 +686,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain)"
@@ -640,7 +710,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
@@ -664,7 +734,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain)"
@@ -688,7 +758,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain)"
@@ -712,7 +782,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
@@ -736,7 +806,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnOneWay) and (HorizontalAttack)"
@@ -760,7 +830,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab) and HorizontalAttack)"
@@ -784,7 +854,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnRight) and ((MeleeAttack or CanUse(Earth Spear) or Has(Claydoll Suit)) and (Has(Feather) or IsDead(Ixtab)))"
@@ -808,10 +878,154 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnRight)"
+                ]
+            },
+            {
+                "name": "[ANN D-1] Glossary in Kaliya's Room",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (CanUse(Rolling Shuriken))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 766,
+                        "y": 95,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[ANN D-5] Glossary Behind Skull Underwater",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 294,
+                        "y": 388,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[ANN B-5] Glossary in Top-Right Breakable Wall",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 462,
+                        "y": 560,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[ANN F-2] Glossary in Bottom-Left Wall Past Kujata",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnRight) and (MeleeAttack)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 1307,
+                        "y": 254,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[ANN C-2] Glossary in Wall Approaching Frey",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 575,
+                        "y": 232,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
+                "name": "[ANN D-4] NPC Glossary (Voluspa)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AnnwfnMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Annwfn",
+                        "x": 952,
+                        "y": 474,
+                        "size": 15,
+                        "shape": "rect"
+                    }
                 ]
             }
         ],

@@ -77,18 +77,33 @@
         "initial_stage_idx": 0,
         "codes": "setting_logic",
         "stages": [
-            { "img": "images/Settings/Difficulty1.png", "codes": "logic_normal",
-              "inherit_codes": false },
-            { "img": "images/Settings/Difficulty2.png", "codes": "logic_tricky",
-              "inherit_codes": false },
-            { "img": "images/Settings/Difficulty3.png", "codes": "logic_minimal",
-              "inherit_codes": false }
+            {
+                "img": "images/Settings/Difficulty1.png",
+                "codes": "logic_normal",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Difficulty2.png",
+                "codes": "logic_tricky",
+                "inherit_codes": false
+            },
+            {
+                "img": "images/Settings/Difficulty3.png",
+                "codes": "logic_minimal",
+                "inherit_codes": false
+            }
         ]
+    },
+    {
+        "name": "Oannessanity",
+        "type": "toggle",
+        "img": "images/Settings/DLC.png",
+        "codes": "setting_oannessanity"
     },
     {
         "name": "DLC Item Logic",
         "type": "toggle",
-        "img": "images/Settings/DLC.png",
+        "img": "images/Settings/Fish Suit.png",
         "codes": "setting_dlc_logic"
     },
     {
@@ -171,9 +186,87 @@
         "initial_active_state": true
     },
     {
-        "name": "Potsanity (Stubbed Coordinates on Individual Maps)",
+        "name": "Potsanity - Low Value (Coins/Weights)",
         "type": "toggle",
-        "img": "images/Settings/Pot.png",
-        "codes": "setting_potsanity"
+        "img": "images/Settings/Pot1.png",
+        "codes": "setting_potsanity_low_value"
+    },
+    {
+        "name": "Potsanity - High Value",
+        "type": "toggle",
+        "img": "images/Settings/Pot2.png",
+        "codes": "setting_potsanity_high_value"
+    },
+    {
+        "name": "Potsanity - Shuriken",
+        "type": "toggle",
+        "img": "images/Settings/Pot3.png",
+        "codes": "setting_potsanity_shuriken"
+    },
+    {
+        "name": "Potsanity - Rolling Shuriken",
+        "type": "toggle",
+        "img": "images/Settings/Pot4.png",
+        "codes": "setting_potsanity_rolling_shuriken"
+    },
+    {
+        "name": "Potsanity - Earth Spear",
+        "type": "toggle",
+        "img": "images/Settings/Pot5.png",
+        "codes": "setting_potsanity_earth_spear"
+    },
+    {
+        "name": "Potsanity - Flare Gun",
+        "type": "toggle",
+        "img": "images/Settings/Pot6.png",
+        "codes": "setting_potsanity_flare"
+    },
+    {
+        "name": "Potsanity - Caltrops",
+        "type": "toggle",
+        "img": "images/Settings/Pot7.png",
+        "codes": "setting_potsanity_caltrops"
+    },
+    {
+        "name": "Potsanity - Chakram",
+        "type": "toggle",
+        "img": "images/Settings/Pot8.png",
+        "codes": "setting_potsanity_chakram"
+    },
+    {
+        "name": "Potsanity - Bomb",
+        "type": "toggle",
+        "img": "images/Settings/Pot9.png",
+        "codes": "setting_potsanity_bomb"
+    },
+    {
+        "name": "Glossanity - Freestanding (Floor)",
+        "type": "toggle",
+        "img": "images/Settings/ChipN.png",
+        "codes": "setting_glossanity_freestanding"
+    },
+    {
+        "name": "Glossanity - Scannable",
+        "type": "toggle",
+        "img": "images/Settings/ChipR.png",
+        "codes": "setting_glossanity_scannable"
+    },
+    {
+        "name": "Glossanity - NPC",
+        "type": "toggle",
+        "img": "images/Settings/ChipSR.png",
+        "codes": "setting_glossanity_npc"
+    },
+    {
+        "name": "Glossanity - Enemy (Drops)",
+        "type": "toggle",
+        "img": "images/Settings/ChipUR.png",
+        "codes": "setting_glossanity_enemy"
+    },
+    {
+        "name": "Costumesanity",
+        "type": "toggle",
+        "img": "images/Settings/Costume.png",
+        "codes": "setting_costumesanity"
     }
 ]

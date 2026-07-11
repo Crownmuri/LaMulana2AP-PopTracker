@@ -20,6 +20,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2255,
+                        "y": 1019,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 2020,
                         "y": 558,
@@ -43,6 +50,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1646,
+                        "y": 896,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1646,
                         "y": 896,
                         "size": 30,
@@ -78,6 +92,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2610,
+                        "y": 1066,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 2724,
                         "y": 655,
@@ -101,6 +122,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1961,
+                        "y": 933,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1961,
                         "y": 933,
                         "size": 30,
@@ -136,6 +164,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1484,
+                        "y": 2508,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Ancient Chaos",
                         "x": 971,
                         "y": 716,
@@ -159,6 +194,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 424,
+                        "y": 1605,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 424,
                         "y": 1605,
                         "size": 30,
@@ -194,6 +236,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1684,
+                        "y": 724,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Annwfn",
                         "x": 623,
                         "y": 643,
@@ -217,6 +266,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1684,
+                        "y": 760,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1684,
                         "y": 760,
                         "size": 30,
@@ -252,6 +308,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1955,
+                        "y": 730,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Annwfn",
                         "x": 1139,
                         "y": 653,
@@ -275,6 +338,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1955,
+                        "y": 758,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1955,
                         "y": 758,
                         "size": 30,
@@ -310,6 +380,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1631,
+                        "y": 413,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Annwfn",
                         "x": 515,
                         "y": 19,
@@ -333,6 +410,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1631,
+                        "y": 382,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1631,
                         "y": 382,
                         "size": 30,
@@ -368,6 +452,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2226,
+                        "y": 628,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Annwfn",
                         "x": 1708,
                         "y": 447,
@@ -391,6 +482,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1390,
+                        "y": 34,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1390,
                         "y": 34,
                         "size": 30,
@@ -426,6 +524,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2265,
+                        "y": 975,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 2016,
                         "y": 469,
@@ -449,6 +554,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2233,
+                        "y": 975,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2233,
                         "y": 975,
                         "size": 30,
@@ -484,6 +596,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2610,
+                        "y": 975,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 2725,
                         "y": 471,
@@ -507,6 +626,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2629,
+                        "y": 952,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2629,
                         "y": 952,
                         "size": 30,
@@ -542,6 +668,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2608,
+                        "y": 2331,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Dark Star Lords Mausoleum",
                         "x": 974,
                         "y": 898,
@@ -565,6 +698,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2853,
+                        "y": 761,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2853,
                         "y": 761,
                         "size": 30,
@@ -600,6 +740,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2622,
+                        "y": 2049,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Dark Star Lords Mausoleum",
                         "x": 998,
                         "y": 331,
@@ -623,6 +770,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2624,
+                        "y": 1792,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2624,
                         "y": 1792,
                         "size": 30,
@@ -658,6 +812,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2134,
+                        "y": 257,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Divine Fortress",
                         "x": 25,
                         "y": 384,
@@ -681,6 +842,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1559,
+                        "y": 1691,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1559,
                         "y": 1691,
                         "size": 30,
@@ -716,7 +884,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 486,
+                        "y": 987,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 973,
+                        "y": 1975,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 973,
                         "y": 1975,
                         "size": 30,
@@ -745,7 +927,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 515,
+                        "y": 987,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1017,
+                        "y": 1975,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1017,
                         "y": 1975,
                         "size": 30,
@@ -774,7 +970,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 511,
+                        "y": 660,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1022,
+                        "y": 1325,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1022,
                         "y": 1325,
                         "size": 30,
@@ -803,7 +1013,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 511,
+                        "y": 688,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1022,
+                        "y": 1367,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1022,
                         "y": 1367,
                         "size": 30,
@@ -832,7 +1056,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 529,
+                        "y": 426,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1057,
+                        "y": 851,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1057,
                         "y": 851,
                         "size": 30,
@@ -861,7 +1099,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 169,
+                        "y": 413,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 337,
+                        "y": 832,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 337,
                         "y": 832,
                         "size": 30,
@@ -890,7 +1142,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 765,
+                        "y": 314,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1520,
+                        "y": 630,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1520,
                         "y": 630,
                         "size": 30,
@@ -919,7 +1185,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 734,
+                        "y": 314,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1473,
+                        "y": 630,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1473,
                         "y": 630,
                         "size": 30,
@@ -948,7 +1228,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 461,
+                        "y": 462,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 923,
+                        "y": 922,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 923,
                         "y": 922,
                         "size": 30,
@@ -971,6 +1265,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1809,
+                        "y": 236,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1809,
                         "y": 236,
                         "size": 30,
@@ -1006,6 +1307,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2264,
+                        "y": 2372,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Hall of Malice",
                         "x": 535,
                         "y": 44,
@@ -1029,6 +1337,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1225,
+                        "y": 1110,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1225,
                         "y": 1110,
                         "size": 30,
@@ -1064,6 +1379,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 811,
+                        "y": 1356,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Heavens Labyrinth",
                         "x": 125,
                         "y": 554,
@@ -1087,6 +1409,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 811,
+                        "y": 1326,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 811,
                         "y": 1326,
                         "size": 30,
@@ -1122,6 +1451,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1720,
+                        "y": 1222,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 696,
                         "y": 22,
@@ -1145,6 +1481,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1720,
+                        "y": 1188,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1720,
                         "y": 1188,
                         "size": 30,
@@ -1180,6 +1523,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2060,
+                        "y": 1225,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 1377,
                         "y": 19,
@@ -1203,6 +1553,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2060,
+                        "y": 1200,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2060,
                         "y": 1200,
                         "size": 30,
@@ -1238,6 +1595,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2100,
+                        "y": 1225,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 1455,
                         "y": 19,
@@ -1261,6 +1625,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2100,
+                        "y": 1200,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2100,
                         "y": 1200,
                         "size": 30,
@@ -1296,6 +1667,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1808,
+                        "y": 1378,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 873,
                         "y": 336,
@@ -1319,6 +1697,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1808,
+                        "y": 11,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1808,
                         "y": 11,
                         "size": 30,
@@ -1354,6 +1739,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1360,
+                        "y": 1099,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 225,
                         "y": 716,
@@ -1377,6 +1769,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2197,
+                        "y": 46,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2197,
                         "y": 46,
                         "size": 30,
@@ -1412,7 +1811,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 787,
+                        "y": 212,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1550,
+                        "y": 425,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1550,
                         "y": 425,
                         "size": 30,
@@ -1441,7 +1854,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 670,
+                        "y": 194,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 1339,
+                        "y": 383,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 1339,
                         "y": 383,
                         "size": 30,
@@ -1464,6 +1891,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1305,
+                        "y": 2106,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1305,
                         "y": 2106,
                         "size": 30,
@@ -1499,6 +1933,13 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 947,
+                        "y": 640,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "Shrine of the Frost Giants",
                         "x": 398,
                         "y": 471,
@@ -1528,7 +1969,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 245,
+                        "y": 247,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 480,
+                        "y": 496,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 480,
                         "y": 496,
                         "size": 30,
@@ -1557,7 +2012,21 @@
                         "shape": "diamond"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 421,
+                        "y": 247,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
                         "map": "La-Mulana",
+                        "x": 842,
+                        "y": 494,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
                         "x": 842,
                         "y": 494,
                         "size": 30,
@@ -1584,6 +2053,14 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1733,
+                        "y": 975,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1733,
                         "y": 975,
                         "size": 30,
@@ -1631,6 +2108,14 @@
                         "shape": "trapezoid"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2437,
+                        "y": 2510,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
                         "map": "Hall of Malice",
                         "x": 874,
                         "y": 302,
@@ -1664,6 +2149,14 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1359,
+                        "y": 1402,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1359,
                         "y": 1402,
                         "size": 30,
@@ -1711,6 +2204,14 @@
                         "shape": "trapezoid"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2134,
+                        "y": 1365,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 1525,
                         "y": 313,
@@ -1744,6 +2245,14 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 562,
+                        "y": 1154,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 562,
                         "y": 1154,
                         "size": 30,
@@ -1791,6 +2300,14 @@
                         "shape": "trapezoid"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1463,
+                        "y": 1201,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 430,
                         "y": 922,
@@ -1824,6 +2341,14 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2472,
+                        "y": 355,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2472,
                         "y": 355,
                         "size": 30,
@@ -1871,6 +2396,14 @@
                         "shape": "trapezoid"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1809,
+                        "y": 371,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
                         "map": "Roots of Yggdrasil",
                         "x": 873,
                         "y": 739,
@@ -1904,6 +2437,14 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1310,
+                        "y": 2172,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1310,
                         "y": 2172,
                         "size": 30,
@@ -1951,6 +2492,14 @@
                         "shape": "trapezoid"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 363,
+                        "y": 1189,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
                         "map": "Takamagahara Shrine",
                         "x": 475,
                         "y": 92,
@@ -1984,6 +2533,14 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2184,
+                        "y": 853,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2184,
                         "y": 853,
                         "size": 30,
@@ -2031,6 +2588,14 @@
                         "shape": "trapezoid"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2457,
+                        "y": 719,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
                         "map": "Gate of the Dead",
                         "x": 671,
                         "y": 493,
@@ -2064,6 +2629,14 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1263,
+                        "y": 627,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1263,
                         "y": 627,
                         "size": 30,
@@ -2111,6 +2684,14 @@
                         "shape": "trapezoid"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1485,
+                        "y": 627,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
                         "map": "Annwfn",
                         "x": 225,
                         "y": 446,
@@ -2144,6 +2725,14 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1291,
+                        "y": 426,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1291,
                         "y": 426,
                         "size": 30,
@@ -2191,6 +2780,14 @@
                         "shape": "trapezoid"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2088,
+                        "y": 1702,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
                         "map": "Valhalla",
                         "x": 1181,
                         "y": 178,
@@ -2231,6 +2828,14 @@
                         "shape": "trapezoid"
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1809,
+                        "y": 1603,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
                         "map": "Icefire Treetop",
                         "x": 873,
                         "y": 786,
@@ -2264,6 +2869,14 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2184,
+                        "y": 2844,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2184,
                         "y": 2844,
                         "size": 30,

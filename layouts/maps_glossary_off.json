@@ -1,0 +1,28 @@
+{
+    "tabbed_maps_horizontal": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Full Map",
+                "content": {
+                    "type": "layout",
+                    "key": "full_map_content"
+                }
+            },
+            {
+                "title": "Individual Maps",
+                "content": {
+                    "type": "layout",
+                    "key": "individual_maps_layout"
+                }
+            },
+            {
+                "title": "References",
+                "content": {
+                    "type": "layout",
+                    "key": "references"
+                }
+            }
+        ]
+    }
+}

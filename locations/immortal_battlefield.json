@@ -12,6 +12,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1774,
+                        "y": 785,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 1055,
                         "y": 90
@@ -35,6 +41,16 @@
                     {
                         "name": "Shop Slot 3",
                         "item_count": 1,
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBTop)"
+                        ]
+                    },
+                    {
+                        "name": "NPC Glossary (Peibalusa)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
                         "access_rules": [
                             "^$lm2_logic|CanReach(IBTop)"
                         ]
@@ -75,6 +91,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1403,
+                        "y": 840,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 268,
                         "y": 206
@@ -105,6 +127,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1524,
+                        "y": 761,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 533,
                         "y": 48
@@ -125,6 +153,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1632,
+                        "y": 786,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1632,
                         "y": 786,
                         "size": 50
@@ -153,6 +187,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1933,
+                        "y": 828,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1933,
                         "y": 828,
                         "size": 50
@@ -188,6 +228,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2039,
+                        "y": 1030,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 1585,
                         "y": 585
@@ -213,6 +259,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1632,
+                        "y": 841,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1632,
                         "y": 841,
                         "size": 50
@@ -248,6 +300,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1951,
+                        "y": 1085,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 1407,
                         "y": 696
@@ -273,6 +331,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1467,
+                        "y": 986,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1467,
                         "y": 986,
                         "size": 50
@@ -308,6 +372,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1579,
+                        "y": 907,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 662,
                         "y": 340
@@ -328,6 +398,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2081,
+                        "y": 773,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2081,
                         "y": 773,
                         "size": 50
@@ -356,6 +432,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1816,
+                        "y": 908,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1816,
                         "y": 908,
                         "size": 50
@@ -398,6 +480,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2053,
+                        "y": 854,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2053,
                         "y": 854,
                         "size": 50
@@ -449,6 +537,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1862,
+                        "y": 1053,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 1117,
                         "y": 609,
@@ -488,6 +582,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2313,
+                        "y": 1097,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 2131,
                         "y": 714
@@ -508,6 +608,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2063,
+                        "y": 1097,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2063,
                         "y": 1097,
                         "size": 50
@@ -538,6 +644,16 @@
                         "item_count": 1,
                         "access_rules": [
                             "^$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
+                        ]
+                    },
+                    {
+                        "name": "NPC Glossary (Hiro Roderick)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(IBRight)"
                         ]
                     }
                 ],
@@ -576,6 +692,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1538,
+                        "y": 1121,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 581,
                         "y": 762
@@ -596,6 +718,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 1510,
+                        "y": 1047,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 1510,
                         "y": 1047,
                         "size": 50
@@ -642,6 +770,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1297,
+                        "y": 1110,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 101,
                         "y": 740
@@ -665,6 +799,12 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2148,
+                        "y": 1153,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2148,
                         "y": 1153,
                         "size": 50
@@ -700,6 +840,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1883,
+                        "y": 1173,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 1272,
                         "y": 878
@@ -730,6 +876,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 1809,
+                        "y": 1173,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 1123,
                         "y": 850
@@ -752,8 +904,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1103,
                         "y": 49,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -763,7 +914,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBTop)"
@@ -776,8 +927,7 @@
                         "map": "Immortal Battlefield",
                         "x": 514,
                         "y": 72,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -787,7 +937,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBTopLeft) and (Has(Glove) or Has(Feather) or (CanReach(IBTop) and CanWarp and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
@@ -800,8 +950,7 @@
                         "map": "Immortal Battlefield",
                         "x": 463,
                         "y": 255,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -811,7 +960,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBTopLeft) and (HorizontalAttack)"
@@ -824,8 +973,7 @@
                         "map": "Immortal Battlefield",
                         "x": 576,
                         "y": 231,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -835,7 +983,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBTopLeft)"
@@ -848,8 +996,7 @@
                         "map": "Immortal Battlefield",
                         "x": 851,
                         "y": 231,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -859,7 +1006,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain)"
@@ -872,8 +1019,7 @@
                         "map": "Immortal Battlefield",
                         "x": 960,
                         "y": 341,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -883,7 +1029,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip))))"
@@ -896,8 +1042,7 @@
                         "map": "Immortal Battlefield",
                         "x": 984,
                         "y": 317,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -907,7 +1052,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Gale Fibula) or CanStopTime or Glitch(Costume Clip))))"
@@ -920,8 +1065,7 @@
                         "map": "Immortal Battlefield",
                         "x": 869,
                         "y": 524,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -931,7 +1075,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and Has(Birth Sigil))"
@@ -944,8 +1088,7 @@
                         "map": "Immortal Battlefield",
                         "x": 983,
                         "y": 610,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -955,7 +1098,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and Has(Birth Sigil))"
@@ -968,8 +1111,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1204,
                         "y": 721,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -979,7 +1121,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or IsDead(Cetus))))"
@@ -992,8 +1134,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1272,
                         "y": 255,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1003,7 +1144,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
@@ -1016,8 +1157,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1453,
                         "y": 207,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1027,7 +1167,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain)"
@@ -1040,8 +1180,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1463,
                         "y": 500,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1051,7 +1190,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain)"
@@ -1064,8 +1203,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1381,
                         "y": 697,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1075,7 +1213,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus) or TrickyLogic)"
@@ -1088,8 +1226,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1560,
                         "y": 255,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1099,7 +1236,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
@@ -1112,8 +1249,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1732,
                         "y": 341,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1123,7 +1259,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
@@ -1136,8 +1272,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1732,
                         "y": 390,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1147,7 +1282,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
@@ -1160,8 +1295,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1544,
                         "y": 658,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1171,7 +1305,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
@@ -1184,8 +1318,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1732,
                         "y": 769,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1195,7 +1328,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBRight)"
@@ -1208,8 +1341,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1791,
                         "y": 610,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1219,7 +1351,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBRight)"
@@ -1232,8 +1364,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1934,
                         "y": 562,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1243,7 +1374,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBRight)"
@@ -1256,8 +1387,7 @@
                         "map": "Immortal Battlefield",
                         "x": 2175,
                         "y": 745,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1267,7 +1397,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBRight) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip))"
@@ -1280,8 +1410,7 @@
                         "map": "Immortal Battlefield",
                         "x": 2011,
                         "y": 697,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1291,7 +1420,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_bomb"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBRight) and ((IsDead(Svipdagr) and Has(Life Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))) or Glitch(Costume Clip))"
@@ -1304,8 +1433,7 @@
                         "map": "Immortal Battlefield",
                         "x": 423,
                         "y": 697,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1315,7 +1443,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(IB Left Shortcut)))"
@@ -1328,8 +1456,7 @@
                         "map": "Immortal Battlefield",
                         "x": 541,
                         "y": 855,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1339,7 +1466,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBBottom)"
@@ -1352,8 +1479,7 @@
                         "map": "Immortal Battlefield",
                         "x": 265,
                         "y": 476,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1363,7 +1489,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_flare"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack)"
@@ -1376,8 +1502,7 @@
                         "map": "Immortal Battlefield",
                         "x": 484,
                         "y": 634,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1387,7 +1512,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack)"
@@ -1400,8 +1525,7 @@
                         "map": "Immortal Battlefield",
                         "x": 322,
                         "y": 562,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1411,7 +1535,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBBottom) and (Has(Feather) and (MeleeAttack or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
@@ -1424,8 +1548,7 @@
                         "map": "Immortal Battlefield",
                         "x": 265,
                         "y": 610,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1435,7 +1558,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBBottom)"
@@ -1448,8 +1571,7 @@
                         "map": "Immortal Battlefield",
                         "x": 296,
                         "y": 831,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1459,7 +1581,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_low_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBLeft) and (HorizontalAttack)"
@@ -1472,8 +1594,7 @@
                         "map": "Immortal Battlefield",
                         "x": 1674,
                         "y": 903,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1483,7 +1604,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBDinosaur) and (HorizontalAttack)"
@@ -1496,12 +1617,8 @@
                         "map": "Immortal Battlefield",
                         "x": 1013,
                         "y": 903,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
-                ],
-                "visibility_rules": [
-                    "setting_potsanity"
                 ],
                 "sections": [
                     {
@@ -1509,6 +1626,9 @@
                         "item_count": 1,
                         "access_rules": [
                             "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+                        ],
+                        "visibility_rules": [
+                            "setting_potsanity_high_value"
                         ]
                     },
                     {
@@ -1516,6 +1636,9 @@
                         "item_count": 1,
                         "access_rules": [
                             "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+                        ],
+                        "visibility_rules": [
+                            "setting_potsanity_chakram"
                         ]
                     }
                 ],
@@ -1530,8 +1653,7 @@
                         "map": "Immortal Battlefield",
                         "x": 966,
                         "y": 927,
-                        "size": 15,
-                        "shape": "rect"
+                        "size": 15
                     }
                 ],
                 "sections": [
@@ -1541,10 +1663,194 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_potsanity"
+                    "setting_potsanity_high_value"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBLadder) and (HorizontalAttack and (CanWarp or Has(Feather)))"
+                ]
+            },
+            {
+                "name": "[IB G-1] Glossary Post Cetus Water Passage",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain) and (IsDead(Cetus))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1506,
+                        "y": 121,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IB B-6] Glossary at Left-side Long Ladder",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBBottom) and (Has(Feather))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 486,
+                        "y": 740,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IB H-7] Glossary in the Buried Fortress",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBRight) and (IsDead(Svipdagr) and CanWarp and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1925,
+                        "y": 902,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IB B-2] NPC Glossary (Kubera)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBTopLeft)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 421,
+                        "y": 158,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IB F-2] NPC Glossary (Soma)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1477,
+                        "y": 255,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IB E-6] NPC Glossary (Yama)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1016,
+                        "y": 696,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IB G-7] NPC Glossary (Alviss)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBDinosaur) and (CanStopTime)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1516,
+                        "y": 854,
+                        "size": 15
+                    }
+                ]
+            },
+            {
+                "name": "[IB G-4] NPC Glossary (Haja)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_npc"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBMain)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1622,
+                        "y": 427,
+                        "size": 15
+                    }
                 ]
             }
         ],
@@ -1556,10 +1862,51 @@
         "name": "Cavern",
         "children": [
             {
+                "name": "Valkyrie Costume Chest",
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_costumesanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(Cavern) and (HorizontalAttack)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 2634,
+                        "y": 520,
+                        "size": 30
+                    },
+                    {
+                        "map": "Full Map",
+                        "x": 2566,
+                        "y": 986,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 2566,
+                        "y": 986,
+                        "size": 50
+                    }
+                ]
+            },
+            {
                 "name": "Sun Mantra Mural",
                 "map_locations": [
                     {
                         "map": "Full Map",
+                        "x": 2432,
+                        "y": 975,
+                        "size": 50
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
                         "x": 2432,
                         "y": 975,
                         "size": 50
@@ -1598,6 +1945,12 @@
                         "size": 50
                     },
                     {
+                        "map": "Full Map (+DLC)",
+                        "x": 2432,
+                        "y": 1035,
+                        "size": 50
+                    },
+                    {
                         "map": "Immortal Battlefield",
                         "x": 2367,
                         "y": 582
@@ -1611,6 +1964,29 @@
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AltarLeft) and (IsDead(Heimdall) and Has(Feather))"
+                ]
+            },
+            {
+                "name": "[ALTAR] Glossary on Left Platform",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(AltarLeft)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 2112,
+                        "y": 585,
+                        "size": 15
+                    }
                 ]
             }
         ],
