@@ -307,7 +307,7 @@
                         "item_count": 1,
                         "hosted_item": "boss_money_fairy",
                         "access_rules": [
-                            "^$lm2_logic|CanReach(DSLMMain) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Main) and (Has(Gale Fibula) or CanStopTime))"
+                            "^$lm2_logic|CanReach(DSLMMain) and (((Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Main) and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and (Has(Gale Fibula) or CanStopTime)) or (TrickyLogic and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Main) and HorizontalAttack and (Has(Gale Fibula) or CanStopTime)))))"
                         ]
                     },
                     {
@@ -317,7 +317,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(DSLMMain)"
+                            "^$lm2_logic|CanReach(DSLMMain) and (((((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and (Has(Gale Fibula) or CanStopTime)) or (TrickyLogic and (HorizontalAttack and (Has(Gale Fibula) or CanStopTime)))))"
                         ]
                     }
                 ]
@@ -1159,7 +1159,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMTop)"
+                    "^$lm2_logic|CanReach(DSLMTop) and (Has(Feather) or CanWarp)"
                 ],
                 "map_locations": [
                     {
@@ -1182,7 +1182,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain)"
+                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
                 ],
                 "map_locations": [
                     {
@@ -1301,7 +1301,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(Nibiru) and (Has(Hand Scanner))"
+                    "^$lm2_logic|CanReach(Nibiru) and (Has(Hand Scanner) and Has(Claydoll Suit))"
                 ],
                 "map_locations": [
                     {

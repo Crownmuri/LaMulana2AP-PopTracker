@@ -461,7 +461,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(SotFGLeft)"
+                            "^$lm2_logic|CanReach(SotFGLeft) and (((Has(Snow Shoes) and Has(Gale Fibula)) or CanStopTime) and PuzzleFinished(Bergelmir))"
                         ]
                     }
                 ],
@@ -981,7 +981,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGGrail) and ((Has(Origin Sigil) or (PuzzleFinished(Bergelmir) and (IsDead(Fenrir) or CanStopTime))))"
+                    "^$lm2_logic|CanReach(SotFGGrail)"
                 ],
                 "map_locations": [
                     {
@@ -1053,7 +1053,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGBalor) and (PuzzleFinished(Bergelmir) and CanWarp)"
+                    "^$lm2_logic|CanReach(SotFGBalor) and (Has(Feather) and PuzzleFinished(Bergelmir) and CanWarp)"
                 ],
                 "map_locations": [
                     {
@@ -1125,7 +1125,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGMain)"
+                    "^$lm2_logic|CanReach(SotFGMain) and (Has(Birth Sigil))"
                 ],
                 "map_locations": [
                     {

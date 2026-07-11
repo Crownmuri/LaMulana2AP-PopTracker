@@ -2909,7 +2909,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GateofGuidanceLeft)"
+                    "^$lm2_logic|CanReach(GateofGuidance)"
                 ]
             },
             {

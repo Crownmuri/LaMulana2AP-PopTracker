@@ -101,7 +101,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(HoM)"
+                            "^$lm2_logic|CanReach(HoM) and (Has(Claydoll Suit))"
                         ]
                     }
                 ],
@@ -773,7 +773,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM)"
+                    "^$lm2_logic|CanReach(HoM) and (Has(Feather))"
                 ],
                 "map_locations": [
                     {
@@ -796,7 +796,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken)"
+                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(7)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(6))))"
                 ],
                 "map_locations": [
                     {
@@ -819,7 +819,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (Has(Hand Scanner))"
+                    "^$lm2_logic|CanReach(HoM) and (Has(Hand Scanner) and CanWarp)"
                 ],
                 "map_locations": [
                     {
@@ -842,7 +842,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Hand Scanner))"
+                    "^$lm2_logic|CanReach(HoM) and (Has(Hand Scanner))"
                 ],
                 "map_locations": [
                     {
@@ -980,7 +980,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM)"
+                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(7)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(6))))"
                 ],
                 "map_locations": [
                     {

@@ -938,6 +938,31 @@ ER_ENTRANCE_DATA = {
     ["er_valhalla_soul_gate__e_2"] = { area = "ValhallaTopRight" },
     ["er_icefire_treetop_vidofnir_soul_gate__d_6"] = { area = "ITVidofnir" },
     ["er_eternal_prison_gloom_soul_gate__d_2"] = { area = "EPG" },
+    -- DLC entrances (Spring in the Sky / Tower of Oannes / Bailey)
+    ["er_gate_of_guidance_right_ladder__e_2"] = { area = "GateofGuidance" },
+    ["er_spring_in_the_sky_ladder_down__a_6"] = { area = "SpringintheSky" },
+    ["er_spring_in_the_sky_ladder_up__c_1"] = { area = "SpringintheSky" },
+    ["er_tower_of_oannes_left_a_ladder_down__b_16"] = { area = "TowerOfOannesLeftA" },
+    ["er_tower_of_oannes_fish_slime_zero_escape__c_1"] = { area = "TowerOfOannesLeftC" },
+    ["er_tower_of_oannes_left_a_bottom_gate__c_15"] = { area = "TowerOfOannesLeftA" },
+    ["er_tower_of_oannes_left_a_top_gate__c_10"] = { area = "TowerOfOannesLeftA" },
+    ["er_tower_of_oannes_left_b_bottom_gate__c_9"] = { area = "TowerOfOannesLeftB" },
+    ["er_tower_of_oannes_left_b_top_gate__c_7"] = { area = "TowerOfOannesLeftB" },
+    ["er_tower_of_oannes_left_c_bottom_gate__c_6"] = { area = "TowerOfOannesLeftC" },
+    ["er_tower_of_oannes_left_c_top_gate__c_5"] = { area = "TowerOfOannesLeftC" },
+    ["er_tower_of_oannes_right_entrance_gate__d_12"] = { area = "TowerOfOannesRight" },
+    ["er_tower_of_oannes_moving_tiles_escape__d_10"] = { area = "TowerOfOannesRight" },
+    ["er_tower_of_oannes_dark_fish_crystal_escape__e_6"] = { area = "TowerOfOannesRight" },
+    ["er_bailey_left_gyonin_drop__b_1"] = { area = "BaileyLevel3" },
+    ["er_bailey_bottom_gate__a_11"] = { area = "BaileyBottom" },
+    ["er_bailey_level_1_lower_gate__a_6"] = { area = "BaileyLevel1" },
+    ["er_bailey_level_1_upper_gate__a_5"] = { area = "BaileyLevel1" },
+    ["er_bailey_level_2_lower_gate__a_3"] = { area = "BaileyLevel2" },
+    ["er_bailey_level_2_upper_gate__a_3"] = { area = "BaileyLevel2" },
+    ["er_bailey_level_3_gate__a_1"] = { area = "BaileyLevel3" },
+    ["er_bailey_top_right_gate__f_8"] = { area = "BaileyTopRight" },
+    ["er_bailey_right_one_way_exit_slide__e_6"] = { area = "BaileyTopRight" },
+    ["er_bailey_right_gyonin_drop__e_1"] = { area = "BaileyTopRight" },
 }
 
 ER_ENTRANCES_BY_AREA = {
@@ -1017,6 +1042,7 @@ ER_ENTRANCES_BY_AREA = {
     ["GateofGuidance"] = {
         { code = "er_gate_of_guidance_ladder_down__a_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "MausoleumofGiants" },
         { code = "er_gate_of_guidance_main_entrance__c_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "VoD" },
+        { code = "er_gate_of_guidance_right_ladder__e_2", logic = "IsDead(Heimdall)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "SpringintheSky" },
     },
     ["MausoleumofGiants"] = {
         { code = "er_mausoleum_of_giants_ladder_up__a_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "GateofGuidance" },
@@ -1140,6 +1166,50 @@ ER_ENTRANCES_BY_AREA = {
     },
     ["EPG"] = {
         { code = "er_eternal_prison_gloom_soul_gate__d_2", logic = "True", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "ITVidofnir" },
+    },
+    -- DLC entrances (Spring in the Sky / Tower of Oannes / Bailey)
+    ["SpringintheSky"] = {
+        { code = "er_spring_in_the_sky_ladder_down__a_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "GateofGuidance" },
+        { code = "er_spring_in_the_sky_ladder_up__c_1", logic = "Has(Feather) and Has(Rebirth Sigil)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftA" },
+    },
+    ["TowerOfOannesLeftA"] = {
+        { code = "er_tower_of_oannes_left_a_ladder_down__b_16", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "SpringintheSky" },
+        { code = "er_tower_of_oannes_left_a_bottom_gate__c_15", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
+        { code = "er_tower_of_oannes_left_a_top_gate__c_10", logic = "Has(Feather)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel1" },
+    },
+    ["TowerOfOannesLeftB"] = {
+        { code = "er_tower_of_oannes_left_b_bottom_gate__c_9", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel1" },
+        { code = "er_tower_of_oannes_left_b_top_gate__c_7", logic = "Has(Feather) and IsDead(Fish-Valusa Re-gyo-ded)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel2" },
+    },
+    ["TowerOfOannesLeftC"] = {
+        { code = "er_tower_of_oannes_fish_slime_zero_escape__c_1", logic = "IsDead(Fish-Valusa Re-gyo-ded) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
+        { code = "er_tower_of_oannes_left_c_bottom_gate__c_6", logic = "Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel2" },
+        { code = "er_tower_of_oannes_left_c_top_gate__c_5", logic = "(Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and IsDead(Fish-Slime Zero)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel3" },
+    },
+    ["TowerOfOannesRight"] = {
+        { code = "er_tower_of_oannes_right_entrance_gate__d_12", logic = "Has(Feather)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyTopRight" },
+        { code = "er_tower_of_oannes_moving_tiles_escape__d_10", logic = "Has(Feather)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyTopRight" },
+        { code = "er_tower_of_oannes_dark_fish_crystal_escape__e_6", logic = "CanReach(BaileyTopRight) and IsDead(Fish-Slime Zero)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
+    },
+    ["BaileyBottom"] = {
+        { code = "er_bailey_bottom_gate__a_11", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftA" },
+    },
+    ["BaileyLevel1"] = {
+        { code = "er_bailey_level_1_lower_gate__a_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftA" },
+        { code = "er_bailey_level_1_upper_gate__a_5", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftB" },
+    },
+    ["BaileyLevel2"] = {
+        { code = "er_bailey_level_2_lower_gate__a_3", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftB" },
+        { code = "er_bailey_level_2_upper_gate__a_3", logic = "Has(Feather)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftC" },
+    },
+    ["BaileyLevel3"] = {
+        { code = "er_bailey_left_gyonin_drop__b_1", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
+        { code = "er_bailey_level_3_gate__a_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftC" },
+    },
+    ["BaileyTopRight"] = {
+        { code = "er_bailey_top_right_gate__f_8", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesRight" },
+        { code = "er_bailey_right_one_way_exit_slide__e_6", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
+        { code = "er_bailey_right_gyonin_drop__e_1", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
     },
 }
 

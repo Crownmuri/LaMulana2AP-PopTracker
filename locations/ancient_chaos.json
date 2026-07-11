@@ -14,15 +14,14 @@
                     "setting_glossanity_freestanding,setting_oannessanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and IsDead(Heimdall)"
+                    "^$lm2_logic|CanReach(ACBottom) and (IsDead(Heimdall) and CanReach(Eden) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4))))"
                 ],
                 "map_locations": [
                     {
                         "map": "Ancient Chaos",
-                        "x": 1,
-                        "y": 1,
-                        "size": 15,
-                        "shape": "rect"
+                        "x": 664,
+                        "y": 776,
+                        "size": 15
                     }
                 ]
             },
@@ -815,7 +814,7 @@
                     "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACMain)"
+                    "^$lm2_logic|CanReach(ACWind)"
                 ]
             },
             {
@@ -838,7 +837,7 @@
                     "setting_potsanity_bomb"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACMain)"
+                    "^$lm2_logic|CanReach(ACWind)"
                 ]
             },
             {
@@ -1037,7 +1036,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACMain)"
+                    "^$lm2_logic|CanReach(ACWind)"
                 ],
                 "map_locations": [
                     {
@@ -1060,7 +1059,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom)"
+                    "^$lm2_logic|CanReach(ACBottom) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
                 ],
                 "map_locations": [
                     {

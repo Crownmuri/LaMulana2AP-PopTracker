@@ -872,7 +872,7 @@ FORWARD_EXITS = {
     -- =================================================================
     -- DLC regions: Spring in the Sky / Tower of Oannes / Bailey / Eden.
     -- =================================================================
-    ["SpringintheSky"] = {{"GateofGuidanceLeft", "True"}, {"TowerOfOannesLeftA", "Has(Feather) and Has(Rebirth Sigil)"}},
+    ["SpringintheSky"] = {{"GateofGuidance", "True"}, {"TowerOfOannesLeftA", "Has(Feather) and Has(Rebirth Sigil)"}},
     ["TowerOfOannesLeftA"] = {{"SpringintheSky", "True"}, {"BaileyBottom", "True"}, {"BaileyLevel1", "Has(Feather)"}},
     ["TowerOfOannesLeftB"] = {{"BaileyLevel1", "True"}, {"BaileyLevel2", "Has(Feather) and IsDead(Fish-Valusa Re-gyo-ded)"}},
     ["TowerOfOannesLeftC"] = {{"BaileyLevel2", "Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))"}, {"BaileyLevel3", "(Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and IsDead(Fish-Slime Zero)"}, {"BaileyBottom", "IsDead(Fish-Valusa Re-gyo-ded) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))"}},

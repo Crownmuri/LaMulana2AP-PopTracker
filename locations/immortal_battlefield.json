@@ -653,7 +653,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(IBRight)"
+                            "^$lm2_logic|CanReach(IBRight) and (IsDead(Cetus))"
                         ]
                     }
                 ],
@@ -1727,7 +1727,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBRight) and (IsDead(Svipdagr) and CanWarp and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
+                    "^$lm2_logic|CanReach(IBRight) and (IsDead(Svipdagr) and CanWarp and Has(Claydoll Suit) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or Glitch(Costume Clip)))"
                 ],
                 "map_locations": [
                     {
@@ -1796,7 +1796,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain)"
+                    "^$lm2_logic|CanReach(IBMain) and (Has(Feather) or Has(Grapple Claw) or IsDead(Cetus) or TrickyLogic)"
                 ],
                 "map_locations": [
                     {
@@ -1819,7 +1819,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBDinosaur) and (CanStopTime)"
+                    "^$lm2_logic|CanReach(IBDinosaur)"
                 ],
                 "map_locations": [
                     {
@@ -1842,7 +1842,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain)"
+                    "^$lm2_logic|CanReach(IBMain) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))))"
                 ],
                 "map_locations": [
                     {

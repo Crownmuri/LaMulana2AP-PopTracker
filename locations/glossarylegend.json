@@ -3195,10 +3195,10 @@
                 ]
             },
             {
-                "name": "[EPG C-7] Glossary in Pillar next to NPC (Scan)",
+                "name": "[EPG C-7] Glossary in Izanami's Pillar (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Gloom/[EPG C-7] Glossary in Pillar next to NPC (Scan)/Glossary"
+                    "@Eternal Prison - Gloom/[EPG C-7] Glossary in Izanami's Pillar (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"

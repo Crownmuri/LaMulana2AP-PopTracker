@@ -571,7 +571,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (Has(Hand Scanner))"
+                    "^$lm2_logic|CanReach(EPG) and (Has(Hand Scanner) and ((Has(Death Sigil) and Has(Feather)) or (Has(Future Development Company) and CanWarp)))"
                 ],
                 "map_locations": [
                     {

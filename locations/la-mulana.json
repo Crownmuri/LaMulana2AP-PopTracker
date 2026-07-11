@@ -541,7 +541,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(GateofGuidance)"
+                            "^$lm2_logic|CanReach(GateofGuidance) and (Has(Ruins Encyclopedia))"
                         ]
                     }
                 ],
@@ -1261,7 +1261,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(VoD) and (Has(Hand Scanner))"
+                    "^$lm2_logic|CanReach(VoD) and (Has(Hand Scanner) and Has(Feather))"
                 ]
             },
             {
@@ -1292,7 +1292,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GateofGuidance) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(GateofGuidance) and (Has(Ruins Encyclopedia) and Has(Feather))"
                 ]
             },
             {
@@ -1323,7 +1323,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(MausoleumofGiants) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(MausoleumofGiants) and (Has(Ruins Encyclopedia) and Has(Feather))"
                 ]
             },
             {
@@ -1354,7 +1354,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GateofGuidance)"
+                    "^$lm2_logic|CanReach(GateofGuidance) and (Has(Ruins Encyclopedia))"
                 ]
             },
             {
@@ -1416,7 +1416,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GateofIllusion) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(GateofIllusion) and (Has(Ruins Encyclopedia) and Has(Feather))"
                 ]
             },
             {
@@ -1447,7 +1447,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GateofGuidanceLeft)"
+                    "^$lm2_logic|CanReach(GateofGuidanceLeft) and (Has(Ruins Encyclopedia))"
                 ]
             },
             {

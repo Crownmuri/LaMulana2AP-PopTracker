@@ -688,7 +688,7 @@
                     "setting_potsanity_high_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(EPG) and (((Has(Feather) and HorizontalAttack) or IsDead(Vidofnir)))"
                 ]
             },
             {
@@ -726,7 +726,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (Has(Enga Musica))"
+                    "^$lm2_logic|CanReach(EPG) and (Has(Enga Musica) and Has(Feather))"
                 ],
                 "map_locations": [
                     {
@@ -749,7 +749,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG)"
+                    "^$lm2_logic|CanReach(EPG) and (Has(Feather))"
                 ],
                 "map_locations": [
                     {
@@ -830,7 +830,7 @@
                 ]
             },
             {
-                "name": "[EPG C-7] Glossary in Pillar next to NPC (Scan)",
+                "name": "[EPG C-7] Glossary in Izanami's Pillar (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",

@@ -124,7 +124,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(TSLeft)"
+                            "^$lm2_logic|CanReach(TSMain)"
                         ]
                     }
                 ],
@@ -888,7 +888,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain) and ((CanKill(Raijin and Fujin) or CanWarp))"
+                    "^$lm2_logic|CanReach(TSMain) and (CanKill(Raijin and Fujin) or CanWarp)"
                 ],
                 "map_locations": [
                     {
@@ -934,7 +934,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain) and (CanWarp)"
+                    "^$lm2_logic|CanReach(TSMain) and (CanWarp or ((Has(Gauntlet) and (Has(Axe) or Has(Rapier) or Has(Katana))) or (Has(Vajra) and (Has(Rapier) or Has(Katana))) or (Has(Spaulder) and Has(Rapier)) or Has(Knife)))"
                 ],
                 "map_locations": [
                     {
@@ -957,7 +957,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain)"
+                    "^$lm2_logic|CanReach(TSMain) and (Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))"
                 ],
                 "map_locations": [
                     {

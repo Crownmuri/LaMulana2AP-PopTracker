@@ -14,15 +14,14 @@
                     "setting_glossanity_freestanding,setting_oannessanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and IsDead(Heimdall)"
+                    "^$lm2_logic|CanReach(ValhallaMain) and (IsDead(Heimdall) and CanReach(Eden))"
                 ],
                 "map_locations": [
                     {
                         "map": "Valhalla",
-                        "x": 1,
-                        "y": 1,
-                        "size": 15,
-                        "shape": "rect"
+                        "x": 807,
+                        "y": 519,
+                        "size": 15
                     }
                 ]
             },
@@ -736,7 +735,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and (Has(Hand Scanner))"
+                    "^$lm2_logic|CanReach(ValhallaMain) and (HorizontalAttack and Has(Hand Scanner))"
                 ],
                 "map_locations": [
                     {

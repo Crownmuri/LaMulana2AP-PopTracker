@@ -14,15 +14,14 @@
                     "setting_glossanity_freestanding,setting_oannessanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and IsDead(Heimdall)"
+                    "^$lm2_logic|CanReach(ITRight) and (IsDead(Heimdall) and CanReach(Eden))"
                 ],
                 "map_locations": [
                     {
                         "map": "Icefire Treetop",
-                        "x": 1,
-                        "y": 1,
-                        "size": 15,
-                        "shape": "rect"
+                        "x": 1392,
+                        "y": 480,
+                        "size": 15
                     }
                 ]
             },
@@ -145,7 +144,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(ITBottom)"
+                            "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip))"
                         ]
                     }
                 ],
@@ -1135,7 +1134,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom) and (Has(Hand Scanner))"
+                    "^$lm2_logic|CanReach(ITSinmara) and (Has(Hand Scanner) and Has(Light Scythe))"
                 ],
                 "map_locations": [
                     {
@@ -1158,7 +1157,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom) and ((Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and Has(Vajra))))"
+                    "^$lm2_logic|CanReach(ITLeft) and ((Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra))))"
                 ],
                 "map_locations": [
                     {
@@ -1250,7 +1249,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight)"
+                    "^$lm2_logic|CanReach(ITRight) and (Has(Feather) or (Has(Grapple Claw) and CanReach(ITEntrance)))"
                 ],
                 "map_locations": [
                     {
@@ -1273,7 +1272,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight)"
+                    "^$lm2_logic|CanReach(ITRight) and (Has(Life Sigil))"
                 ],
                 "map_locations": [
                     {

@@ -279,7 +279,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(DFMain)"
+                            "^$lm2_logic|CanReach(DFMain) and (Has(Birth Sigil))"
                         ]
                     }
                 ],
@@ -743,7 +743,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(DFRight) and (HorizontalAttack)"
                 ],
                 "map_locations": [
                     {
