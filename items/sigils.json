@@ -17,10 +17,16 @@
     "img": "images/OtherItems/LifeSigil.png",
     "codes": "life_sigil"
   },
-  {
-    "name": "Death Sigil",
-    "type": "toggle",
-    "img": "images/OtherItems/DeathSigil.png",
-    "codes": "death_sigil"
-  }
+    {
+        "name": "Death Sigil",
+        "type": "toggle",
+        "img": "images/OtherItems/DeathSigil.png",
+        "codes": "death_sigil"
+    },
+    {
+        "name": "Rebirth Sigil",
+        "type": "toggle",
+        "img": "images/OtherItems/RebirthSigil.png",
+        "codes": "rebirth_sigil"
+    }
 ]

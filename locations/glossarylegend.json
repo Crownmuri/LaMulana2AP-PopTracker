@@ -470,6 +470,16 @@
         ],
         "sections": [
             {
+                "name": "[ANN F-2] Fish Glossary (Nijimasu)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Annwfn/[ANN F-2] Fish Glossary (Nijimasu)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding,setting_oannessanity"
+                ]
+            },
+            {
                 "name": "[ANN D-1] Glossary in Kaliya's Room",
                 "item_count": 1,
                 "access_rules": [
@@ -863,6 +873,16 @@
             }
         ],
         "sections": [
+            {
+                "name": "[IT F-4] Fish Glossary (Sanma)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Icefire Treetop/[IT F-4] Fish Glossary (Sanma)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding,setting_oannessanity"
+                ]
+            },
             {
                 "name": "[IT B-1] Glossary in Left Breakable Floor",
                 "item_count": 1,
@@ -2172,6 +2192,16 @@
         ],
         "sections": [
             {
+                "name": "[VAL D-4] Fish Glossary (Sawara)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Valhalla/[VAL D-4] Fish Glossary (Sawara)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding,setting_oannessanity"
+                ]
+            },
+            {
                 "name": "[VAL A-2] Glossary in Breakable Wall Above Spikes",
                 "item_count": 1,
                 "access_rules": [
@@ -2613,6 +2643,16 @@
             }
         ],
         "sections": [
+            {
+                "name": "[AC C-6] Fish Glossary (Nodoguro)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Ancient Chaos/[AC C-6] Fish Glossary (Nodoguro)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding,setting_oannessanity"
+                ]
+            },
             {
                 "name": "[AC D-7] Glossary at the Bottom of Lava Funnel",
                 "item_count": 1,
@@ -3379,6 +3419,99 @@
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Glossary - Tower of Oannes (DLC)",
+        "map_locations": [
+            {
+                "map": "Full Map (+DLC)",
+                "x": 520,
+                "y": 3150,
+                "size": 30
+            }
+        ],
+        "sections": [
+            {
+                "name": "[DLC C-3] Glossary at the Top of the First Tower",
+                "item_count": 1,
+                "access_rules": [
+                    "@Tower of Oannes/[DLC C-3] Glossary at the Top of the First Tower/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding,setting_oannessanity"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Gyonin Tribe)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Enemy Glossary/[DLC] Enemy Glossary (Gyonin Tribe)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Gyonin the Vogue)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Enemy Glossary/[DLC] Enemy Glossary (Gyonin the Vogue)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Gyonin Flight Test Model)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Enemy Glossary/[DLC] Enemy Glossary (Gyonin Flight Test Model)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Fishbone Calcium)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Enemy Glossary/[DLC] Enemy Glossary (Fishbone Calcium)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Gyonin Pestirylium)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Enemy Glossary/[DLC] Enemy Glossary (Gyonin Pestirylium)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Gyo-balloon ~Strawberry Flavor~)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Enemy Glossary/[DLC] Enemy Glossary (Gyo-balloon ~Strawberry Flavor~)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Fish Wall'22)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Enemy Glossary/[DLC] Enemy Glossary (Fish Wall'22)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
                 ]
             }
         ]

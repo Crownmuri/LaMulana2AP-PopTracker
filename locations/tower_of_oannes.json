@@ -1,0 +1,88 @@
+[
+    {
+        "name": "Tower of Oannes",
+        "children": [
+            {
+                "name": "[DLC] Four Trials Reward Chest",
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_oannessanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(Eden) and CanReach(Start) and CanReach(ITRight) and CanReach(ACBottom) and Has(Ice Cloak) and CanReach(ValhallaMain) and IsDead(Fafnir) and CanChant(Moon)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 749,
+                        "y": 2608,
+                        "size": 50
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1049,
+                        "y": 80,
+                        "size": 30
+                    }
+                ]
+            },
+            {
+                "name": "[DLC D-1] DLC Boss Reward Chest",
+                "sections": [
+                    {
+                        "name": "Chest",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_oannessanity,setting_costumesanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|IsDead(Fish-Gear mk-2 turboR)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1660,
+                        "y": 76,
+                        "size": 30
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1186,
+                        "y": 2591,
+                        "size": 50
+                    }
+                ]
+            },
+            {
+                "name": "[DLC C-3] Glossary at the Top of the First Tower",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding,setting_oannessanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftC)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 364,
+                        "y": 267,
+                        "size": 15
+                    }
+                ]
+            }
+        ]
+    }
+]

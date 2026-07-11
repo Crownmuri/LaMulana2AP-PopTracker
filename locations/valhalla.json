@@ -3,6 +3,30 @@
         "name": "Valhalla",
         "children": [
             {
+                "name": "[VAL D-4] Fish Glossary (Sawara)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding,setting_oannessanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ValhallaMain) and IsDead(Heimdall)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Valhalla",
+                        "x": 1,
+                        "y": 1,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
                 "name": "Map Chest",
                 "map_locations": [
                     {

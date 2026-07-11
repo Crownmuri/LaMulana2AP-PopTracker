@@ -771,4 +771,20 @@ LOCATION_MAPPING = {
     [432229] = {"@Shrine of the Frost Giants/Left Snow Drop/[SFG A-4] Glossary at Left Snow Drop", "@Glossary - Shrine of the Frost Giants (Freestanding)/[SFG A-4] Glossary at Left Snow Drop"}, -- [SFG A-4] Glossary at Left Snow Drop
     [432230] = {"@Gate of the Dead/[GOTD B-3] Glossary at Bottom of Spike Pit/Glossary", "@Glossary - Gate of the Dead (Freestanding)/[GOTD B-3] Glossary at Bottom of Spike Pit"}, -- [GOTD B-3] Glossary at Bottom of Spike Pit
     [432231] = {"@Dark Star Lords Mausoleum/[DSLM C-3] Glossary at Altar of Atum Statue (Scan)/Glossary", "@Glossary - Dark Star Lords Mausoleum (Scannable)/[DSLM C-3] Glossary at Altar of Atum Statue (Scan)"}, -- [DSLM C-3] Glossary at Altar of Atum Statue (Scan)
+
+    -- DLC (oannessanity)
+    [430055] = {"@Tower of Oannes/[DLC] Four Trials Reward Chest/Chest"}, -- [DLC] Four Trials Reward Chest (Rebirth Sigil)
+    [430061] = {"@Tower of Oannes/[DLC D-1] DLC Boss Reward Chest/Chest"}, -- [DLC D-1] DLC Boss Reward Chest (Fish Suit)
+    [432232] = {"@Tower of Oannes/[DLC C-3] Glossary at the Top of the First Tower/Glossary", "@Glossary - Tower of Oannes (DLC)/[DLC C-3] Glossary at the Top of the First Tower"}, -- [DLC C-3] Glossary at the Top of the First Tower (Gyonin King)
+    [432233] = {"@Annwfn/[ANN F-2] Fish Glossary (Nijimasu)/Glossary", "@Glossary - Annwfn (Freestanding)/[ANN F-2] Fish Glossary (Nijimasu)"}, -- [ANN F-2] Fish Glossary (Nijimasu)
+    [432234] = {"@Icefire Treetop/[IT F-4] Fish Glossary (Sanma)/Glossary", "@Glossary - Icefire Treetop (Freestanding)/[IT F-4] Fish Glossary (Sanma)"}, -- [IT F-4] Fish Glossary (Sanma)
+    [432235] = {"@Valhalla/[VAL D-4] Fish Glossary (Sawara)/Glossary", "@Glossary - Valhalla (Freestanding)/[VAL D-4] Fish Glossary (Sawara)"}, -- [VAL D-4] Fish Glossary (Sawara)
+    [432236] = {"@Ancient Chaos/[AC C-6] Fish Glossary (Nodoguro)/Glossary", "@Glossary - Ancient Chaos (Freestanding)/[AC C-6] Fish Glossary (Nodoguro)"}, -- [AC C-6] Fish Glossary (Nodoguro)
+    [432237] = {"@Enemy Glossary/[DLC] Enemy Glossary (Gyonin Tribe)/Glossary", "@Glossary - Tower of Oannes (DLC)/[DLC] Enemy Glossary (Gyonin Tribe)"}, -- [DLC] Enemy Glossary (Gyonin Tribe)
+    [432238] = {"@Enemy Glossary/[DLC] Enemy Glossary (Gyonin the Vogue)/Glossary", "@Glossary - Tower of Oannes (DLC)/[DLC] Enemy Glossary (Gyonin the Vogue)"}, -- [DLC] Enemy Glossary (Gyonin the Vogue)
+    [432239] = {"@Enemy Glossary/[DLC] Enemy Glossary (Gyonin Flight Test Model)/Glossary", "@Glossary - Tower of Oannes (DLC)/[DLC] Enemy Glossary (Gyonin Flight Test Model)"}, -- [DLC] Enemy Glossary (Gyonin Flight Test Model)
+    [432240] = {"@Enemy Glossary/[DLC] Enemy Glossary (Fishbone Calcium)/Glossary", "@Glossary - Tower of Oannes (DLC)/[DLC] Enemy Glossary (Fishbone Calcium)"}, -- [DLC] Enemy Glossary (Fishbone Calcium)
+    [432241] = {"@Enemy Glossary/[DLC] Enemy Glossary (Gyonin Pestirylium)/Glossary", "@Glossary - Tower of Oannes (DLC)/[DLC] Enemy Glossary (Gyonin Pestirylium)"}, -- [DLC] Enemy Glossary (Gyonin Pestirylium)
+    [432242] = {"@Enemy Glossary/[DLC] Enemy Glossary (Gyo-balloon ~Strawberry Flavor~)/Glossary", "@Glossary - Tower of Oannes (DLC)/[DLC] Enemy Glossary (Gyo-balloon ~Strawberry Flavor~)"}, -- [DLC] Enemy Glossary (Gyo-balloon ~Strawberry Flavor~)
+    [432243] = {"@Enemy Glossary/[DLC] Enemy Glossary (Fish Wall'22)/Glossary", "@Glossary - Tower of Oannes (DLC)/[DLC] Enemy Glossary (Fish Wall'22)"}, -- [DLC] Enemy Glossary (Fish Wall'22)
 }

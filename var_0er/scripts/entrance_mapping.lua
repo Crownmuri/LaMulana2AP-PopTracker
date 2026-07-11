@@ -74,6 +74,31 @@ ER_ENTRANCE_NAMES = {
     ["er_ancient_chaos_soul_gate__c_1"] = "AC Blood SG (C-1)",
     ["er_hall_of_malice_soul_gate__d_3"] = "HoM Hidden SG (D-3)",
     ["er_eternal_prison_gloom_soul_gate__d_2"] = "EP Gloom SG (D-2)",
+    -- DLC (Tower of Oannes / Bailey)
+    ["er_gate_of_guidance_right_ladder__e_2"] = "Guidance Right Ladder (E-2)",
+    ["er_spring_in_the_sky_ladder_down__a_6"] = "Spring Ladder Down (A-6)",
+    ["er_spring_in_the_sky_ladder_up__c_1"] = "Spring Ladder Up (C-1)",
+    ["er_tower_of_oannes_left_a_ladder_down__b_16"] = "Oannes Left-A Ladder Down (B-16)",
+    ["er_tower_of_oannes_left_a_bottom_gate__c_15"] = "Oannes Left-A Bottom Gate (C-15)",
+    ["er_tower_of_oannes_left_a_top_gate__c_10"] = "Oannes Left-A Top Gate (C-10)",
+    ["er_tower_of_oannes_left_b_bottom_gate__c_9"] = "Oannes Left-B Bottom Gate (C-9)",
+    ["er_tower_of_oannes_left_b_top_gate__c_7"] = "Oannes Left-B Top Gate (C-7)",
+    ["er_tower_of_oannes_left_c_bottom_gate__c_6"] = "Oannes Left-C Bottom Gate (C-6)",
+    ["er_tower_of_oannes_left_c_top_gate__c_5"] = "Oannes Left-C Top Gate (C-5)",
+    ["er_tower_of_oannes_right_entrance_gate__d_12"] = "Oannes Right Gate (D-12)",
+    ["er_tower_of_oannes_fish_slime_zero_escape__c_1"] = "Oannes Fish-Slime Escape (C-1)",
+    ["er_tower_of_oannes_moving_tiles_escape__d_10"] = "Oannes Moving Tiles Escape (D-10)",
+    ["er_tower_of_oannes_dark_fish_crystal_escape__e_6"] = "Oannes Dark Fish Escape (E-6)",
+    ["er_bailey_bottom_gate__a_11"] = "Bailey Bottom Gate (A-11)",
+    ["er_bailey_level_1_lower_gate__a_6"] = "Bailey Lv1 Lower Gate (A-6)",
+    ["er_bailey_level_1_upper_gate__a_5"] = "Bailey Lv1 Upper Gate (A-5)",
+    ["er_bailey_level_2_lower_gate__a_3"] = "Bailey Lv2 Lower Gate (A-3)",
+    ["er_bailey_level_2_upper_gate__a_3"] = "Bailey Lv2 Upper Gate (A-3)",
+    ["er_bailey_level_3_gate__a_1"] = "Bailey Lv3 Gate (A-1)",
+    ["er_bailey_top_right_gate__f_8"] = "Bailey Top Right Gate (F-8)",
+    ["er_bailey_left_gyonin_drop__b_1"] = "Bailey Left Gyonin Drop (B-1)",
+    ["er_bailey_right_one_way_exit_slide__e_6"] = "Bailey Right Exit Slide (E-6)",
+    ["er_bailey_right_gyonin_drop__e_1"] = "Bailey Right Gyonin Drop (E-1)",
 }
 
 -- Global pairing table: ER_PAIRINGS[codeA] = codeB (bidirectional)
@@ -411,6 +436,31 @@ EXIT_ID_TO_ER_CODE = {
     [70] = "er_nibiru_spaceship",
     [71] = "er_altar_left_door__a_1",
     [72] = "er_altar_right_door__c_1",
+    -- DLC exits (include_dlc_entrances)
+    [73] = "er_gate_of_guidance_right_ladder__e_2",
+    [74] = "er_spring_in_the_sky_ladder_down__a_6",
+    [75] = "er_spring_in_the_sky_ladder_up__c_1",
+    [76] = "er_tower_of_oannes_left_a_ladder_down__b_16",
+    [77] = "er_tower_of_oannes_fish_slime_zero_escape__c_1",
+    [78] = "er_tower_of_oannes_left_a_bottom_gate__c_15",
+    [79] = "er_tower_of_oannes_left_a_top_gate__c_10",
+    [80] = "er_tower_of_oannes_left_b_bottom_gate__c_9",
+    [81] = "er_tower_of_oannes_left_b_top_gate__c_7",
+    [82] = "er_tower_of_oannes_left_c_bottom_gate__c_6",
+    [83] = "er_tower_of_oannes_left_c_top_gate__c_5",
+    [84] = "er_tower_of_oannes_right_entrance_gate__d_12",
+    [85] = "er_tower_of_oannes_moving_tiles_escape__d_10",
+    [86] = "er_tower_of_oannes_dark_fish_crystal_escape__e_6",
+    [87] = "er_bailey_left_gyonin_drop__b_1",
+    [88] = "er_bailey_bottom_gate__a_11",
+    [89] = "er_bailey_level_1_lower_gate__a_6",
+    [90] = "er_bailey_level_1_upper_gate__a_5",
+    [91] = "er_bailey_level_2_lower_gate__a_3",
+    [92] = "er_bailey_level_2_upper_gate__a_3",
+    [93] = "er_bailey_level_3_gate__a_1",
+    [94] = "er_bailey_top_right_gate__f_8",
+    [95] = "er_bailey_right_one_way_exit_slide__e_6",
+    [96] = "er_bailey_right_gyonin_drop__e_1",
 }
 
 -- cost item stage indices (items/entrances.json):
@@ -549,6 +599,16 @@ local VANILLA_STRUCTURAL_PAIRS = {
     { "er_immortal_battlefield_moon_altar_hallway__g_7", "er_icefire_treetop_ice_side_left_ladder__f_1", "vertical" },
     { "er_roots_of_yggdrasil_ladder_down__c_5", "er_annwfn_ladder_up__c_1", "vertical" },
     { "er_village_of_departure_ladder_down__f_3", "er_inferno_cavern__b_1", "vertical" },
+    -- DLC (locked vanilla unless include_dlc_entrances; category gated on oannesanity)
+    { "er_gate_of_guidance_right_ladder__e_2", "er_spring_in_the_sky_ladder_down__a_6", "dlc" },
+    { "er_spring_in_the_sky_ladder_up__c_1", "er_tower_of_oannes_left_a_ladder_down__b_16", "dlc" },
+    { "er_tower_of_oannes_left_a_bottom_gate__c_15", "er_bailey_bottom_gate__a_11", "dlc" },
+    { "er_tower_of_oannes_left_a_top_gate__c_10", "er_bailey_level_1_lower_gate__a_6", "dlc" },
+    { "er_tower_of_oannes_left_b_bottom_gate__c_9", "er_bailey_level_1_upper_gate__a_5", "dlc" },
+    { "er_tower_of_oannes_left_b_top_gate__c_7", "er_bailey_level_2_lower_gate__a_3", "dlc" },
+    { "er_tower_of_oannes_left_c_bottom_gate__c_6", "er_bailey_level_2_upper_gate__a_3", "dlc" },
+    { "er_tower_of_oannes_left_c_top_gate__c_5", "er_bailey_level_3_gate__a_1", "dlc" },
+    { "er_tower_of_oannes_right_entrance_gate__d_12", "er_bailey_top_right_gate__f_8", "dlc" },
 }
 
 -- { codeA, codeB, soul_amount, is_nine }
@@ -610,6 +670,7 @@ function RebuildVanillaEntrances()
         vertical   = (not full_random) and not _opt_on(opts, "vertical_entrances"),
         gate       = (not full_random) and not _opt_on(opts, "gate_entrances"),
         unique     = not _opt_on(opts, "unique_transitions"),
+        dlc        = _opt_on(opts, "oannesanity") and not _opt_on(opts, "include_dlc_entrances"),
     }
 
     for _, p in ipairs(VANILLA_STRUCTURAL_PAIRS) do

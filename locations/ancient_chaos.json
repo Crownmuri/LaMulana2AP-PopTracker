@@ -3,6 +3,30 @@
         "name": "Ancient Chaos",
         "children": [
             {
+                "name": "[AC C-6] Fish Glossary (Nodoguro)",
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding,setting_oannessanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(ACBottom) and IsDead(Heimdall)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 1,
+                        "y": 1,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ]
+            },
+            {
                 "name": "Eastern Europe Costume Chest",
                 "sections": [
                     {
@@ -25,8 +49,8 @@
                     },
                     {
                         "map": "Full Map (+DLC)",
-                        "x": 1269,
-                        "y": 2329,
+                        "x": 1270,
+                        "y": 2261,
                         "size": 50
                     },
                     {
@@ -48,8 +72,8 @@
                     },
                     {
                         "map": "Full Map (+DLC)",
-                        "x": 1209,
-                        "y": 2519,
+                        "x": 1210,
+                        "y": 2451,
                         "size": 50
                     },
                     {
@@ -84,8 +108,8 @@
                     },
                     {
                         "map": "Full Map (+DLC)",
-                        "x": 1342,
-                        "y": 2519,
+                        "x": 1343,
+                        "y": 2451,
                         "size": 50
                     },
                     {
@@ -163,8 +187,8 @@
                     },
                     {
                         "map": "Full Map (+DLC)",
-                        "x": 1434,
-                        "y": 2445,
+                        "x": 1435,
+                        "y": 2377,
                         "size": 50
                     },
                     {
@@ -194,8 +218,8 @@
                     },
                     {
                         "map": "Full Map (+DLC)",
-                        "x": 1061,
-                        "y": 2372,
+                        "x": 1062,
+                        "y": 2304,
                         "size": 50
                     },
                     {
@@ -230,8 +254,8 @@
                     },
                     {
                         "map": "Full Map (+DLC)",
-                        "x": 1150,
-                        "y": 2456,
+                        "x": 1151,
+                        "y": 2388,
                         "size": 50
                     },
                     {
@@ -266,8 +290,8 @@
                     },
                     {
                         "map": "Full Map (+DLC)",
-                        "x": 1435,
-                        "y": 2255,
+                        "x": 1436,
+                        "y": 2187,
                         "size": 50
                     },
                     {
@@ -302,8 +326,8 @@
                     },
                     {
                         "map": "Full Map (+DLC)",
-                        "x": 1435,
-                        "y": 2183,
+                        "x": 1436,
+                        "y": 2115,
                         "size": 50
                     },
                     {

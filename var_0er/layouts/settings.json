@@ -61,6 +61,13 @@
                             }
                         },
                         {
+                            "title": "Entrances (DLC)",
+                            "content": {
+                                "type": "layout",
+                                "key": "entrances_dlc_layout"
+                            }
+                        },
+                        {
                             "title": "Escape Sequence",
                             "content": {
                                 "type": "layout",

@@ -2080,6 +2080,160 @@
                 "access_rules": [
                     "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
                 ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Gyonin Tribe)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1466,
+                        "y": 166
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (True)))"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Gyonin the Vogue)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1466,
+                        "y": 258
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (True)))"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Gyonin Flight Test Model)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1466,
+                        "y": 350
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (True)))"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Fishbone Calcium)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1466,
+                        "y": 442
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (True)))"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Gyonin Pestirylium)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1466,
+                        "y": 533
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (True)))"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Gyo-balloon ~Strawberry Flavor~)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1466,
+                        "y": 625
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TowerOfOannesRight) and (True)))"
+                ]
+            },
+            {
+                "name": "[DLC] Enemy Glossary (Fish Wall'22)",
+                "map_locations": [
+                    {
+                        "map": "Enemy Glossary (+DLC)",
+                        "x": 1466,
+                        "y": 717
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Glossary",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_enemy,setting_oannessanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (True)))"
+                ]
             }
         ]
     }
