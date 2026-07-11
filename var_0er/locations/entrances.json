@@ -2064,7 +2064,6 @@
                         "x": 1733,
                         "y": 975,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2112,7 +2111,6 @@
                         "x": 2437,
                         "y": 2510,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2160,7 +2158,6 @@
                         "x": 1359,
                         "y": 1402,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2208,7 +2205,6 @@
                         "x": 2134,
                         "y": 1365,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2256,7 +2252,6 @@
                         "x": 562,
                         "y": 1154,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2304,7 +2299,6 @@
                         "x": 1463,
                         "y": 1201,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2352,7 +2346,6 @@
                         "x": 2472,
                         "y": 355,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2400,7 +2393,6 @@
                         "x": 1809,
                         "y": 371,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2448,7 +2440,6 @@
                         "x": 1311,
                         "y": 2104,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2496,7 +2487,6 @@
                         "x": 363,
                         "y": 1189,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2544,7 +2534,6 @@
                         "x": 2184,
                         "y": 853,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2592,7 +2581,6 @@
                         "x": 2457,
                         "y": 719,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2640,7 +2628,6 @@
                         "x": 1263,
                         "y": 627,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2688,7 +2675,6 @@
                         "x": 1485,
                         "y": 627,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2736,7 +2722,6 @@
                         "x": 1291,
                         "y": 426,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2784,7 +2769,6 @@
                         "x": 2088,
                         "y": 1702,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2832,7 +2816,6 @@
                         "x": 1809,
                         "y": 1603,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2880,7 +2863,6 @@
                         "x": 2184,
                         "y": 2844,
                         "size": 30,
-                        "border_thickness": 12,
                         "shape": "trapezoid"
                     },
                     {
@@ -2899,6 +2881,716 @@
                         "name": "Cost Toggle",
                         "code": "cost_er_eternal_prison_gloom_soul_gate__d_2"
                     }
+                ]
+            },
+            {
+                "name": "Guidance Right Ladder (E-2)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_gate_of_guidance_right_ladder__e_2",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1108,
+                        "y": 424,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 2231,
+                        "y": 829,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(GateofGuidanceLeft)"
+                ]
+            },
+            {
+                "name": "Spring Ladder Down (A-6)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_spring_in_the_sky_ladder_down__a_6",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1108,
+                        "y": 377,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1,
+                        "y": 1,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 2231,
+                        "y": 774,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SpringintheSky)"
+                ]
+            },
+            {
+                "name": "Spring Ladder Up (C-1)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_spring_in_the_sky_ladder_up__c_1",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1345,
+                        "y": 17,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1,
+                        "y": 1,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "La-Mulana (+DLC)",
+                        "x": 2728,
+                        "y": 16,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(SpringintheSky)"
+                ]
+            },
+            {
+                "name": "Oannes Left-A Ladder Down (B-16)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_tower_of_oannes_left_a_ladder_down__b_16",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 238,
+                        "y": 3612,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 333,
+                        "y": 1489,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftA)"
+                ]
+            },
+            {
+                "name": "Oannes Left-A Bottom Gate (C-15)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_tower_of_oannes_left_a_bottom_gate__c_15",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 362,
+                        "y": 3547,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 507,
+                        "y": 1394,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftA)"
+                ]
+            },
+            {
+                "name": "Bailey Bottom Gate (A-11)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_bailey_bottom_gate__a_11",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 484,
+                        "y": 3547,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 679,
+                        "y": 1394,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(BaileyBottom)"
+                ]
+            },
+            {
+                "name": "Oannes Left-A Top Gate (C-10)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_tower_of_oannes_left_a_top_gate__c_10",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 362,
+                        "y": 3172,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 508,
+                        "y": 865,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftA)"
+                ]
+            },
+            {
+                "name": "Bailey Lv1 Lower Gate (A-6)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_bailey_level_1_lower_gate__a_6",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 485,
+                        "y": 3170,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 679,
+                        "y": 865,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(BaileyLevel1)"
+                ]
+            },
+            {
+                "name": "Oannes Left-B Bottom Gate (C-9)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_tower_of_oannes_left_b_bottom_gate__c_9",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 326,
+                        "y": 3148,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 456,
+                        "y": 835,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftB)"
+                ]
+            },
+            {
+                "name": "Bailey Lv1 Upper Gate (A-5)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_bailey_level_1_upper_gate__a_5",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 452,
+                        "y": 3148,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 632,
+                        "y": 835,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(BaileyLevel1)"
+                ]
+            },
+            {
+                "name": "Oannes Left-B Top Gate (C-7)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_tower_of_oannes_left_b_top_gate__c_7",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 362,
+                        "y": 2969,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 509,
+                        "y": 583,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftB)"
+                ]
+            },
+            {
+                "name": "Bailey Lv2 Lower Gate (A-3)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_bailey_level_2_lower_gate__a_3",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 485,
+                        "y": 2978,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 679,
+                        "y": 596,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(BaileyLevel2)"
+                ]
+            },
+            {
+                "name": "Oannes Left-C Bottom Gate (C-6)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_tower_of_oannes_left_c_bottom_gate__c_6",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 326,
+                        "y": 2946,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 457,
+                        "y": 552,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftC)"
+                ]
+            },
+            {
+                "name": "Bailey Lv2 Upper Gate (A-3)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_bailey_level_2_upper_gate__a_3",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 452,
+                        "y": 2957,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 632,
+                        "y": 565,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(BaileyLevel2)"
+                ]
+            },
+            {
+                "name": "Oannes Left-C Top Gate (C-5)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_tower_of_oannes_left_c_top_gate__c_5",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 362,
+                        "y": 2841,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 508,
+                        "y": 402,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftC)"
+                ]
+            },
+            {
+                "name": "Bailey Lv3 Gate (A-1)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_bailey_level_3_gate__a_1",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 485,
+                        "y": 2844,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 679,
+                        "y": 406,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(BaileyLevel3)"
+                ]
+            },
+            {
+                "name": "Oannes Right Gate (D-12)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_tower_of_oannes_right_entrance_gate__d_12",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1157,
+                        "y": 3350,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1620,
+                        "y": 1117,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesRight)"
+                ]
+            },
+            {
+                "name": "Bailey Top Right Gate (F-8)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_bailey_top_right_gate__f_8",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1019,
+                        "y": 3352,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1428,
+                        "y": 1121,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(BaileyTopRight)"
+                ]
+            },
+            {
+                "name": "Oannes Fish-Slime Escape (C-1)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_tower_of_oannes_fish_slime_zero_escape__c_1",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 312,
+                        "y": 2601,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 437,
+                        "y": 72,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftC)"
+                ]
+            },
+            {
+                "name": "Oannes Moving Tiles Escape (D-10)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_tower_of_oannes_moving_tiles_escape__d_10",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1125,
+                        "y": 3170,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1575,
+                        "y": 863,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesRight)"
+                ]
+            },
+            {
+                "name": "Oannes Dark Fish Escape (E-6)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_tower_of_oannes_dark_fish_crystal_escape__e_6",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1318,
+                        "y": 2909,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1845,
+                        "y": 499,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(TowerOfOannesRight)"
+                ]
+            },
+            {
+                "name": "Bailey Left Gyonin Drop (B-1)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_bailey_left_gyonin_drop__b_1",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 624,
+                        "y": 2837,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 874,
+                        "y": 390,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(BaileyLevel3)"
+                ]
+            },
+            {
+                "name": "Bailey Right Exit Slide (E-6)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_bailey_right_one_way_exit_slide__e_6",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 873,
+                        "y": 2837,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1388,
+                        "y": 863,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(BaileyTopRight)"
+                ]
+            },
+            {
+                "name": "Bailey Right Gyonin Drop (E-1)",
+                "sections": [
+                    {
+                        "name": "Entrance",
+                        "hosted_item": "er_bailey_right_gyonin_drop__e_1",
+                        "item_size": "200,16"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 990,
+                        "y": 3170,
+                        "size": 30,
+                        "shape": "diamond"
+                    },
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1223,
+                        "y": 390,
+                        "size": 30,
+                        "shape": "diamond"
+                    }
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(BaileyTopRight)"
                 ]
             }
         ]

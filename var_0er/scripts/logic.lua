@@ -538,6 +538,12 @@ local EVENT_LOGIC = {
     -- Eternal Prison
     ["hraesvelgr"] = "CanReach(EPDMain) and IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon) and Has(Feather)",
     ["ratatoskr_4"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3) and (((Has(Chain Whip) or Has(Axe)) and OrbCount(7)) or ((Has(Flail Whip) or Has(Katana)) and OrbCount(6)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(5)))",
+    
+    -- Tower of Oannes
+    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and OrbCount(2)",
+    ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftC) and IsDead(Fish-Valusa Re-gyo-ded) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and OrbCount(2)",
+    ["evil_fish_crystal"] = "CanReach(TowerOfOannesRight) and CanReach(BaileyTopRight) and IsDead(Fish-Slime Zero) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6)",
+    ["fish-gear_mk-2_turbor"] = "CanReach(TowerOfOannesRight) and IsDead(Evil Fish Crystal) and Has(Rebirth Sigil) and CanReach(TowerOfOannesLeftA) and CanReach(TowerOfOannesLeftB) and (Has(Gale Fibula) or CanStopTime) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Feather) and CanWarp and Has(Flail Whip) and OrbCount(10)",
 
     -- =================================================================
     -- Puzzles
@@ -592,6 +598,9 @@ local EVENT_HARDLOGIC = {
     ["hom_right_path"] = "CanReach(HoMAwoken) and MeleeAttack",
     ["hraesvelgr"] = "CanReach(EPDMain) and IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon)",
     ["ratatoskr_4"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3)",
+    -- DLC (HardLogic="True" in World.json -> reachability-only at Minimal)
+    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA)",
+    ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftC) and IsDead(Fish-Valusa Re-gyo-ded)",
 }
 
 for _k, _hard in pairs(EVENT_HARDLOGIC) do
@@ -693,7 +702,7 @@ FORWARD_EXITS = {
     ["AnnwfnMain"] = {{"AnnwfnSG", "Has(Glove) or Has(Feather)"}, {"AnnwfnRight", "Has(Annwfn Right Shortcut)"}},
     ["AnnwfnOneWay"] = {{"AnnwfnMain", "CanWarp and HorizontalAttack"}},
     ["AnnwfnPoison"] = {{"AnnwfnRight", "(CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or Has(Claydoll Suit) or CanStopTime"}},
-    ["AnnwfnRight"] = {{"AnnwfnMain", "IsDead(Ixtab)"}, {"AnnwfnPoison", "True"}},
+    ["AnnwfnRight"] = {{"AnnwfnMain", "IsDead(Ixtab)"}, {"AnnwfnPoison", "True"}, {"Eden", "IsDead(Heimdall) and Has(Vessel) and CanChant(Earth) and CanChant(Sun) and CanChant(Fire) and CanChant(Wind) and CanChant(Mother) and CanChant(Child) and CanChant(Night)"}},
     ["AnnwfnSG"] = {{"AnnwfnMain", "Has(Glove) or Has(Feather) or CanWarp"}},
     ["DFEntrance"] = {{"DFRight", "(CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or Has(Claydoll Suit) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))"}},
     ["DFMain"] = {{"DFTop", "Has(Feather) or Has(Grapple Claw)"}, {"DFRight", "Has(Leather Whip) or Has(Rapier) or Has(Katana) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit)"}},
@@ -753,7 +762,15 @@ FORWARD_EXITS = {
     ["ValhallaMain"] = {{"ValhallaTop", "Has(Feather) or CanChant(Heaven)"}, {"SotFGBlood", "CanWarp or CanSpinCorridor"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["ValhallaTop"] = {{"ValhallaMain", "True"}},
     ["ValhallaTopRight"] = {{"ValhallaTop", "Has(Feather)"}, {"ValhallaMain", "CanWarp or Has(Feather) or (Has(Claydoll Suit) and CanChant(Heaven))"}},
-    ["VoD"] = {{"VoDLadder", "Has(Feather)"}}
+    ["VoD"] = {{"VoDLadder", "Has(Feather)"}},
+    -- =================================================================
+    -- DLC regions: Spring in the Sky / Tower of Oannes / Bailey / Eden.
+    -- =================================================================
+    ["BaileyLevel1"] = {{"BaileyBottom", "CanWarp"}},
+    ["BaileyLevel2"] = {{"BaileyLevel1", "CanWarp"}},
+    ["BaileyLevel3"] = {{"BaileyLevel2", "CanWarp"}, {"BaileyTopRight", "Has(Gale Fibula) and CanWarp"}},
+    ["BaileyTopRight"] = {{"BaileyBottom", "CanWarp"}},
+    ["Eden"] = {{"VoD", "True"}}
 }
 
 --FORWARD_EXITS = {

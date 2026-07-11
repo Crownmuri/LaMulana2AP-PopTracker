@@ -625,14 +625,7 @@ local EVENT_LOGIC = {
     ["hraesvelgr"] = "CanReach(EPDMain) and IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon) and Has(Feather)",
     ["ratatoskr_4"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3) and (((Has(Chain Whip) or Has(Axe)) and OrbCount(7)) or ((Has(Flail Whip) or Has(Katana)) and OrbCount(6)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(5)))",
 
-    -- =================================================================
-    -- DLC minibosses (Tower of Oannes). Fight logic + area reachability
-    -- from data/World.json (worlds/lamulana2). These four fights gate the
-    -- DLC region graph and the DLC Boss Reward Chest; they mirror AP
-    -- unconditionally (the DLC *checks* are visibility-gated by
-    -- setting_oannessanity, not these events). Fish-Valusa and Fish-Slime
-    -- carry HardLogic="True" in World.json -> ported to EVENT_HARDLOGIC as
-    -- reachability-only (Minimal relaxes combat, never reachability).
+    -- Tower of Oannes
     ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and OrbCount(2)",
     ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftC) and IsDead(Fish-Valusa Re-gyo-ded) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and OrbCount(2)",
     ["evil_fish_crystal"] = "CanReach(TowerOfOannesRight) and CanReach(BaileyTopRight) and IsDead(Fish-Slime Zero) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6)",
@@ -812,8 +805,8 @@ FORWARD_EXITS = {
     ["EPDTop"] = {{"EPDHel", "((IsDead(Vidofnir) and GuardianKills(5)) or Setting(Random Soul Gates)) and IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Glove) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"}},
     ["EPG"] = {{"EPDMain", "(Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1)) or Has(Grapple Claw)) and Has(Feather)"}, {"EPDTop", "Has(Death Sigil) and (Has(Feather) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp))"}, {"ITVidofnir", "GuardianKills(5) or Setting(Random Soul Gates)"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["EndlessCorridor"] = {{"MausoleumofGiantsRubble", "True"}},
-    ["GateofGuidance"] = {{"VoD", "True"}, {"MausoleumofGiants", "True"}},
-    ["GateofGuidanceLeft"] = {{"GateofIllusion", "True"}, {"GateofGuidance", "CanReach(Mausoleum of Giants)"}, {"SpringintheSky", "IsDead(Heimdall)"}},
+    ["GateofGuidance"] = {{"VoD", "True"}, {"MausoleumofGiants", "True"}, {"SpringintheSky", "IsDead(Heimdall)"}},
+    ["GateofGuidanceLeft"] = {{"GateofIllusion", "True"}, {"GateofGuidance", "CanReach(Mausoleum of Giants)"}},
     ["GateofIllusion"] = {{"RoYMiddle", "HorizontalAttack"}, {"GateofGuidanceLeft", "True"}},
     ["GotD"] = {{"IBMain", "GuardianKills(2) or Setting(Random Soul Gates)"}, {"GotDWedjet", "True"}},
     ["GotDWedjet"] = {{"DSLMMain", "PuzzleFinished(White Pedestals)"}, {"GotD", "CanWarp or (Has(Pepper) and Has(Birth Sigil) and CanChant(Sun) and CanKill(Unicorn))"}},
@@ -878,12 +871,6 @@ FORWARD_EXITS = {
 
     -- =================================================================
     -- DLC regions: Spring in the Sky / Tower of Oannes / Bailey / Eden.
-    -- Vanilla connections (ConnectingAreaID + Logic) from data/World.json.
-    -- Entry points are added to GateofGuidanceLeft (-> SpringintheSky) and
-    -- AnnwfnRight (-> Eden) above. The graph is unconditional (matches AP,
-    -- which always builds these region exits); the DLC *checks* placed in
-    -- these regions are visibility-gated by setting_oannessanity. One-way
-    -- exits whose vanilla logic is False are omitted (dead links).
     -- =================================================================
     ["SpringintheSky"] = {{"GateofGuidanceLeft", "True"}, {"TowerOfOannesLeftA", "Has(Feather) and Has(Rebirth Sigil)"}},
     ["TowerOfOannesLeftA"] = {{"SpringintheSky", "True"}, {"BaileyBottom", "True"}, {"BaileyLevel1", "Has(Feather)"}},
@@ -891,10 +878,10 @@ FORWARD_EXITS = {
     ["TowerOfOannesLeftC"] = {{"BaileyLevel2", "Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))"}, {"BaileyLevel3", "(Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and IsDead(Fish-Slime Zero)"}, {"BaileyBottom", "IsDead(Fish-Valusa Re-gyo-ded) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))"}},
     ["TowerOfOannesRight"] = {{"BaileyTopRight", "Has(Feather)"}, {"BaileyBottom", "CanReach(BaileyTopRight) and IsDead(Fish-Slime Zero)"}},
     ["BaileyBottom"] = {{"TowerOfOannesLeftA", "True"}},
-    ["BaileyLevel1"] = {{"TowerOfOannesLeftA", "True"}, {"TowerOfOannesLeftB", "True"}, {"BaileyBottom", "True"}},
-    ["BaileyLevel2"] = {{"TowerOfOannesLeftB", "True"}, {"TowerOfOannesLeftC", "Has(Feather)"}, {"BaileyLevel1", "True"}},
-    ["BaileyLevel3"] = {{"TowerOfOannesLeftC", "True"}, {"BaileyLevel2", "True"}, {"BaileyTopRight", "Has(Gale Fibula)"}},
-    ["BaileyTopRight"] = {{"TowerOfOannesRight", "True"}, {"BaileyBottom", "True"}},
+    ["BaileyLevel1"] = {{"TowerOfOannesLeftA", "True"}, {"TowerOfOannesLeftB", "True"}, {"BaileyBottom", "CanWarp"}},
+    ["BaileyLevel2"] = {{"TowerOfOannesLeftB", "True"}, {"TowerOfOannesLeftC", "Has(Feather)"}, {"BaileyLevel1", "CanWarp"}},
+    ["BaileyLevel3"] = {{"TowerOfOannesLeftC", "True"}, {"BaileyLevel2", "CanWarp"}, {"BaileyTopRight", "Has(Gale Fibula) and CanWarp"}},
+    ["BaileyTopRight"] = {{"TowerOfOannesRight", "True"}, {"BaileyBottom", "CanWarp"}},
     ["Eden"] = {{"VoD", "True"}}
 }
 

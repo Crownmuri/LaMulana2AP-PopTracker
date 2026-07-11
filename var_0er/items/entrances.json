@@ -1576,7 +1576,7 @@
         "type": "toggle",
         "codes": "er_gate_of_guidance_right_ladder__e_2",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_gate_of_guidance_right_ladder__e_2.png"
     },
     {
         "name": "Target for Guidance Right Ladder (E-2)",
@@ -1589,7 +1589,7 @@
         "type": "toggle",
         "codes": "er_spring_in_the_sky_ladder_down__a_6",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_spring_in_the_sky_ladder_down__a_6.png"
     },
     {
         "name": "Target for Spring Ladder Down (A-6)",
@@ -1602,7 +1602,7 @@
         "type": "toggle",
         "codes": "er_spring_in_the_sky_ladder_up__c_1",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_spring_in_the_sky_ladder_up__c_1.png"
     },
     {
         "name": "Target for Spring Ladder Up (C-1)",
@@ -1615,7 +1615,7 @@
         "type": "toggle",
         "codes": "er_tower_of_oannes_left_a_ladder_down__b_16",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_tower_of_oannes_left_a_ladder_down__b_16.png"
     },
     {
         "name": "Target for Oannes Left-A Ladder Down (B-16)",
@@ -1628,7 +1628,7 @@
         "type": "toggle",
         "codes": "er_tower_of_oannes_left_a_bottom_gate__c_15",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_tower_of_oannes_left_a_bottom_gate__c_15.png"
     },
     {
         "name": "Target for Oannes Left-A Bottom Gate (C-15)",
@@ -1641,7 +1641,7 @@
         "type": "toggle",
         "codes": "er_tower_of_oannes_left_a_top_gate__c_10",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_tower_of_oannes_left_a_top_gate__c_10.png"
     },
     {
         "name": "Target for Oannes Left-A Top Gate (C-10)",
@@ -1654,7 +1654,7 @@
         "type": "toggle",
         "codes": "er_tower_of_oannes_left_b_bottom_gate__c_9",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_tower_of_oannes_left_b_bottom_gate__c_9.png"
     },
     {
         "name": "Target for Oannes Left-B Bottom Gate (C-9)",
@@ -1667,7 +1667,7 @@
         "type": "toggle",
         "codes": "er_tower_of_oannes_left_b_top_gate__c_7",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_tower_of_oannes_left_b_top_gate__c_7.png"
     },
     {
         "name": "Target for Oannes Left-B Top Gate (C-7)",
@@ -1680,7 +1680,7 @@
         "type": "toggle",
         "codes": "er_tower_of_oannes_left_c_bottom_gate__c_6",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_tower_of_oannes_left_c_bottom_gate__c_6.png"
     },
     {
         "name": "Target for Oannes Left-C Bottom Gate (C-6)",
@@ -1693,7 +1693,7 @@
         "type": "toggle",
         "codes": "er_tower_of_oannes_left_c_top_gate__c_5",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_tower_of_oannes_left_c_top_gate__c_5.png"
     },
     {
         "name": "Target for Oannes Left-C Top Gate (C-5)",
@@ -1706,7 +1706,7 @@
         "type": "toggle",
         "codes": "er_tower_of_oannes_right_entrance_gate__d_12",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_tower_of_oannes_right_entrance_gate__d_12.png"
     },
     {
         "name": "Target for Oannes Right Gate (D-12)",
@@ -1719,7 +1719,7 @@
         "type": "toggle",
         "codes": "er_tower_of_oannes_fish_slime_zero_escape__c_1",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_tower_of_oannes_fish_slime_zero_escape__c_1.png"
     },
     {
         "name": "Target for Oannes Fish-Slime Escape (C-1)",
@@ -1732,7 +1732,7 @@
         "type": "toggle",
         "codes": "er_tower_of_oannes_moving_tiles_escape__d_10",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_tower_of_oannes_moving_tiles_escape__d_10.png"
     },
     {
         "name": "Target for Oannes Moving Tiles Escape (D-10)",
@@ -1745,7 +1745,7 @@
         "type": "toggle",
         "codes": "er_tower_of_oannes_dark_fish_crystal_escape__e_6",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_tower_of_oannes_dark_fish_crystal_escape__e_6.png"
     },
     {
         "name": "Target for Oannes Dark Fish Escape (E-6)",
@@ -1758,7 +1758,7 @@
         "type": "toggle",
         "codes": "er_bailey_bottom_gate__a_11",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_bailey_bottom_gate__a_11.png"
     },
     {
         "name": "Target for Bailey Bottom Gate (A-11)",
@@ -1771,7 +1771,7 @@
         "type": "toggle",
         "codes": "er_bailey_level_1_lower_gate__a_6",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_bailey_level_1_lower_gate__a_6.png"
     },
     {
         "name": "Target for Bailey Lv1 Lower Gate (A-6)",
@@ -1784,7 +1784,7 @@
         "type": "toggle",
         "codes": "er_bailey_level_1_upper_gate__a_5",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_bailey_level_1_upper_gate__a_5.png"
     },
     {
         "name": "Target for Bailey Lv1 Upper Gate (A-5)",
@@ -1797,7 +1797,7 @@
         "type": "toggle",
         "codes": "er_bailey_level_2_lower_gate__a_3",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_bailey_level_2_lower_gate__a_3.png"
     },
     {
         "name": "Target for Bailey Lv2 Lower Gate (A-3)",
@@ -1810,7 +1810,7 @@
         "type": "toggle",
         "codes": "er_bailey_level_2_upper_gate__a_3",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_bailey_level_2_upper_gate__a_3.png"
     },
     {
         "name": "Target for Bailey Lv2 Upper Gate (A-3)",
@@ -1823,7 +1823,7 @@
         "type": "toggle",
         "codes": "er_bailey_level_3_gate__a_1",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_bailey_level_3_gate__a_1.png"
     },
     {
         "name": "Target for Bailey Lv3 Gate (A-1)",
@@ -1836,7 +1836,7 @@
         "type": "toggle",
         "codes": "er_bailey_top_right_gate__f_8",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_bailey_top_right_gate__f_8.png"
     },
     {
         "name": "Target for Bailey Top Right Gate (F-8)",
@@ -1849,7 +1849,7 @@
         "type": "toggle",
         "codes": "er_bailey_left_gyonin_drop__b_1",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_bailey_left_gyonin_drop__b_1.png"
     },
     {
         "name": "Target for Bailey Left Gyonin Drop (B-1)",
@@ -1862,7 +1862,7 @@
         "type": "toggle",
         "codes": "er_bailey_right_one_way_exit_slide__e_6",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_bailey_right_one_way_exit_slide__e_6.png"
     },
     {
         "name": "Target for Bailey Right Exit Slide (E-6)",
@@ -1875,7 +1875,7 @@
         "type": "toggle",
         "codes": "er_bailey_right_gyonin_drop__e_1",
         "category": "entrance",
-        "img": "images/entrances/unmapped.png"
+        "img": "images/entrances/er_bailey_right_gyonin_drop__e_1.png"
     },
     {
         "name": "Target for Bailey Right Gyonin Drop (E-1)",

@@ -323,13 +323,13 @@
                 "map_locations": [
                     {
                         "map": "Full Map",
-                        "x": 1132,
+                        "x": 1152,
                         "y": 437,
                         "size": 50
                     },
                     {
                         "map": "Full Map (+DLC)",
-                        "x": 1132,
+                        "x": 1152,
                         "y": 437,
                         "size": 50
                     },
