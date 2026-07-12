@@ -713,3 +713,34 @@ function RebuildVanillaEntrances()
 
     if UpdateEscapeRoute then UpdateEscapeRoute() end
 end
+
+-- ============================================================
+-- Settings popup: Entrances (DLC) tab visibility
+-- PopTracker has no per-tab visibility rules, so the DLC entrances tab is
+-- shown/hidden by swapping the layout that defines entrance_settings_tabs
+-- (same dynamic-layout-replacement trick as ApplyMapLayouts in the base
+-- autotracking). settings_tabs_dlc.json includes the "Entrances (DLC)" tab;
+-- settings_tabs_base.json omits it. The leaf file is re-added FIRST and the
+-- settings.json popup LAST so settings_popup re-renders against the current
+-- tab definitions. Reacts to both AP slot_data and manual toggling.
+-- ============================================================
+local _entrance_tabs_state = nil
+local function ApplyEntranceSettingsTabs()
+    local o = Tracker:FindObjectForCode("setting_oannesanity")
+    local dlc = o and o.Active or false
+    local state = tostring(dlc)
+    if state == _entrance_tabs_state then return end
+    _entrance_tabs_state = state
+
+    if dlc then
+        Tracker:AddLayouts("layouts/settings_tabs_dlc.json")
+    else
+        Tracker:AddLayouts("layouts/settings_tabs_base.json")
+    end
+    Tracker:AddLayouts("layouts/settings.json")
+end
+
+ApplyEntranceSettingsTabs()
+ScriptHost:AddWatchForCode("entrance_dlc_tab_watch", "setting_oannesanity", function()
+    ApplyEntranceSettingsTabs()
+end)

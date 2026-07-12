@@ -476,7 +476,7 @@
                     "@Annwfn/[ANN F-2] Fish Glossary (Nijimasu)/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_freestanding,setting_oannessanity"
+                    "setting_glossanity_freestanding,setting_oannesanity"
                 ]
             },
             {
@@ -880,7 +880,7 @@
                     "@Icefire Treetop/[IT F-4] Fish Glossary (Sanma)/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_freestanding,setting_oannessanity"
+                    "setting_glossanity_freestanding,setting_oannesanity"
                 ]
             },
             {
@@ -2198,7 +2198,7 @@
                     "@Valhalla/[VAL D-4] Fish Glossary (Sawara)/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_freestanding,setting_oannessanity"
+                    "setting_glossanity_freestanding,setting_oannesanity"
                 ]
             },
             {
@@ -2650,7 +2650,7 @@
                     "@Ancient Chaos/[AC C-6] Fish Glossary (Nodoguro)/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_freestanding,setting_oannessanity"
+                    "setting_glossanity_freestanding,setting_oannesanity"
                 ]
             },
             {
@@ -3441,7 +3441,7 @@
                     "@Tower of Oannes/[DLC C-3] Glossary at the Top of the First Tower/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_freestanding,setting_oannessanity"
+                    "setting_glossanity_freestanding,setting_oannesanity"
                 ]
             },
             {
@@ -3451,7 +3451,7 @@
                     "@Enemy Glossary/[DLC] Enemy Glossary (Gyonin Tribe)/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_enemy,setting_oannessanity"
+                    "setting_glossanity_enemy,setting_oannesanity"
                 ]
             },
             {
@@ -3461,7 +3461,7 @@
                     "@Enemy Glossary/[DLC] Enemy Glossary (Gyonin the Vogue)/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_enemy,setting_oannessanity"
+                    "setting_glossanity_enemy,setting_oannesanity"
                 ]
             },
             {
@@ -3471,7 +3471,7 @@
                     "@Enemy Glossary/[DLC] Enemy Glossary (Gyonin Flight Test Model)/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_enemy,setting_oannessanity"
+                    "setting_glossanity_enemy,setting_oannesanity"
                 ]
             },
             {
@@ -3481,7 +3481,7 @@
                     "@Enemy Glossary/[DLC] Enemy Glossary (Fishbone Calcium)/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_enemy,setting_oannessanity"
+                    "setting_glossanity_enemy,setting_oannesanity"
                 ]
             },
             {
@@ -3491,7 +3491,7 @@
                     "@Enemy Glossary/[DLC] Enemy Glossary (Gyonin Pestirylium)/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_enemy,setting_oannessanity"
+                    "setting_glossanity_enemy,setting_oannesanity"
                 ]
             },
             {
@@ -3501,7 +3501,7 @@
                     "@Enemy Glossary/[DLC] Enemy Glossary (Gyo-balloon ~Strawberry Flavor~)/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_enemy,setting_oannessanity"
+                    "setting_glossanity_enemy,setting_oannesanity"
                 ]
             },
             {
@@ -3511,7 +3511,7 @@
                     "@Enemy Glossary/[DLC] Enemy Glossary (Fish Wall'22)/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_enemy,setting_oannessanity"
+                    "setting_glossanity_enemy,setting_oannesanity"
                 ]
             }
         ]

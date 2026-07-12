@@ -95,10 +95,10 @@
         ]
     },
     {
-        "name": "Oannessanity",
+        "name": "Oannesanity",
         "type": "toggle",
         "img": "images/Settings/DLC.png",
-        "codes": "setting_oannessanity"
+        "codes": "setting_oannesanity"
     },
     {
         "name": "DLC Item Logic",

@@ -19,7 +19,7 @@
                             [
                                 "setting_start",
                                 "setting_logic",
-                                "setting_oannessanity",
+                                "setting_oannesanity",
                                 "setting_dlc_logic",
                                 "setting_costume_clip",
                                 "setting_remove_it_statue",
@@ -51,37 +51,8 @@
                     }
                 },
                 {
-                    "type": "tabbed",
-                    "tabs": [
-                        {
-                            "title": "Entrances",
-                            "content": {
-                                "type": "layout",
-                                "key": "entrances_layout"
-                            }
-                        },
-                        {
-                            "title": "Entrances (DLC)",
-                            "content": {
-                                "type": "layout",
-                                "key": "entrances_dlc_layout"
-                            }
-                        },
-                        {
-                            "title": "Escape Sequence",
-                            "content": {
-                                "type": "layout",
-                                "key": "escape_sequence_layout"
-                            }
-                        },
-                        {
-                            "title": "References",
-                            "content": {
-                                "type": "layout",
-                                "key": "references"
-                            }
-                        }
-                    ]
+                    "type": "layout",
+                    "key": "entrance_settings_tabs"
                 }
             ]
         }

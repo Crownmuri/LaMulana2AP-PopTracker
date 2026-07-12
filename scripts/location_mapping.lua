@@ -772,7 +772,7 @@ LOCATION_MAPPING = {
     [432230] = {"@Gate of the Dead/[GOTD B-3] Glossary at Bottom of Spike Pit/Glossary", "@Glossary - Gate of the Dead (Freestanding)/[GOTD B-3] Glossary at Bottom of Spike Pit"}, -- [GOTD B-3] Glossary at Bottom of Spike Pit
     [432231] = {"@Dark Star Lords Mausoleum/[DSLM C-3] Glossary at Altar of Atum Statue (Scan)/Glossary", "@Glossary - Dark Star Lords Mausoleum (Scannable)/[DSLM C-3] Glossary at Altar of Atum Statue (Scan)"}, -- [DSLM C-3] Glossary at Altar of Atum Statue (Scan)
 
-    -- DLC (oannessanity)
+    -- DLC (oannesanity)
     [430055] = {"@Tower of Oannes/[DLC] Four Trials Reward Chest/Chest"}, -- [DLC] Four Trials Reward Chest (Rebirth Sigil)
     [430061] = {"@Tower of Oannes/[DLC D-1] DLC Boss Reward Chest/Chest"}, -- [DLC D-1] DLC Boss Reward Chest (Fish Suit)
     [432232] = {"@Tower of Oannes/[DLC C-3] Glossary at the Top of the First Tower/Glossary", "@Glossary - Tower of Oannes (DLC)/[DLC C-3] Glossary at the Top of the First Tower"}, -- [DLC C-3] Glossary at the Top of the First Tower (Gyonin King)

@@ -280,7 +280,15 @@ function Setting(name)
     return m[name] and has(m[name]) or false
 end
 function Glitch(name)
-    if name == "Costume Clip" then return has("setting_costume_clip") end
+    if name == "Costume Clip" then
+        if not has("setting_costume_clip") then return false end
+        -- Without Costumesanity the player always has a costume to clip with.
+        if not has("setting_costumesanity") then return true end
+        -- With Costumesanity, need at least one wearable costume found
+        -- (mirrors COSTUME_CLIP_ITEMS in the AP world's ids.py).
+        return has("claydoll_suit") or has("kimono_cowboy") or has("valkyrie")
+            or has("little_demon") or has("eastern_european") or has("fish_suit")
+    end
     return false
 end
 -- LogicLevel(): the player-selected logic difficulty tier read from the
@@ -628,8 +636,8 @@ local EVENT_LOGIC = {
     -- Tower of Oannes
     ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and OrbCount(2)",
     ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftC) and IsDead(Fish-Valusa Re-gyo-ded) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and OrbCount(2)",
-    ["evil_fish_crystal"] = "CanReach(TowerOfOannesRight) and CanReach(BaileyTopRight) and IsDead(Fish-Slime Zero) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6)",
-    ["fish-gear_mk-2_turbor"] = "CanReach(TowerOfOannesRight) and IsDead(Evil Fish Crystal) and Has(Rebirth Sigil) and CanReach(TowerOfOannesLeftA) and CanReach(TowerOfOannesLeftB) and (Has(Gale Fibula) or CanStopTime) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Feather) and CanWarp and Has(Flail Whip) and OrbCount(10)",
+    ["evil_fish_crystal"] = "CanReach(TowerOfOannesRight) and CanReach(BaileyTopRight) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Leather Whip) or Has(Axe) or ((Has(Knife) or Has(Rapier)) and Has(Spaulder)))",
+    ["fish-gear_mk-2_turbor"] = "CanReach(TowerOfOannesRight) and IsDead(Evil Fish Crystal) and Has(Rebirth Sigil) and CanReach(TowerOfOannesLeftA) and (Has(Gale Fibula) or CanStopTime) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Grapple Claw) and Has(Feather) and CanWarp and Has(Flail Whip) and OrbCount(10)",
 
     -- =================================================================
     -- Puzzles
@@ -684,8 +692,8 @@ local EVENT_HARDLOGIC = {
     ["hom_right_path"] = "CanReach(HoMAwoken) and MeleeAttack",
     ["hraesvelgr"] = "CanReach(EPDMain) and IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon)",
     ["ratatoskr_4"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3)",
-    -- DLC (HardLogic="True" in World.json -> reachability-only at Minimal)
-    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA)",
+    -- DLC
+    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and Has(Feather) and CanUse(Flare Gun)",
     ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftC) and IsDead(Fish-Valusa Re-gyo-ded)",
 }
 

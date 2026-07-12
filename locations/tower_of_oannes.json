@@ -11,7 +11,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_oannessanity"
+                    "setting_oannesanity"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(Eden) and CanReach(Start) and CanReach(ITRight) and CanReach(ACBottom) and Has(Ice Cloak) and CanReach(ValhallaMain) and IsDead(Fafnir) and CanChant(Moon)"
@@ -40,7 +40,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_oannessanity,setting_costumesanity"
+                    "setting_oannesanity,setting_costumesanity"
                 ],
                 "access_rules": [
                     "^$lm2_logic|IsDead(Fish-Gear mk-2 turboR)"
@@ -69,7 +69,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_freestanding,setting_oannessanity"
+                    "setting_glossanity_freestanding,setting_oannesanity"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(TowerOfOannesLeftC)"

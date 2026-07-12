@@ -853,10 +853,10 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     set_toggle("setting_random_dissonance", slot_data.random_dissonance)
     set_toggle("setting_random_research",   slot_data.random_research)
 
-    -- Partitioned potsanity: per-pool toggles gate each pot pool's visibility.
-    -- (The old master `potsanity` option was removed in apworld 0.9.)
-    -- Per-pool values live in slot_data.options (Options.as_dict dump).
+
     local _opts = slot_data.options or {}
+    set_toggle("setting_costumesanity",           _opts.costumesanity)
+    -- Partitioned potsanity: per-pool toggles gate each pot pool's visibility.
     set_toggle("setting_potsanity_low_value",        _opts.potsanity_low_value)
     set_toggle("setting_potsanity_high_value",       _opts.potsanity_high_value)
     set_toggle("setting_potsanity_shuriken",         _opts.potsanity_shuriken)
@@ -872,7 +872,8 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     set_toggle("setting_glossanity_scannable",    _opts.glossanity_scannable)
     set_toggle("setting_glossanity_npc",          _opts.glossanity_npc)
     set_toggle("setting_glossanity_enemy",        _opts.glossanity_enemy)
-    set_toggle("setting_costumesanity",           _opts.costumesanity)
+
+    set_toggle("setting_oannesanity",            _opts.oannesanity)
 
     set_count ("setting_req_guardians",    tonumber(slot_data.required_guardians))
     set_count ("setting_req_skulls",       tonumber(slot_data.required_skulls))
@@ -1058,7 +1059,7 @@ end
 --   * setting_glossanity_enemy owns tabbed_maps_horizontal -- whether the
 --     Enemy Glossary tab exists. maps.json defines it WITH the tab;
 --     maps_glossary_off.json WITHOUT.
---   * setting_oannessanity owns the leaf content keys full_map_content,
+--   * setting_oannesanity owns the leaf content keys full_map_content,
 --     enemy_glossary_content and individual_maps_layout -- swapping the
 --     Full Map / La-Mulana / Enemy Glossary images to their (+DLC) variants
 --     and adding the Tower of Oannes tab. maps_content_base.json holds the
@@ -1072,12 +1073,23 @@ end
 local _maps_state = nil
 local function ApplyMapLayouts()
     local g = Tracker:FindObjectForCode("setting_glossanity_enemy")
-    local o = Tracker:FindObjectForCode("setting_oannessanity")
+    local o = Tracker:FindObjectForCode("setting_oannesanity")
     local glossary = g and g.Active or false
     local dlc = o and o.Active or false
     local state = tostring(glossary) .. "/" .. tostring(dlc)
     if state == _maps_state then return end
     _maps_state = state
+
+    -- Item grid follows the DLC toggle too: the DLC-only Rebirth Sigil is
+    -- only obtainable with Oannesanity, so items_dlc.json adds it to the
+    -- sigil row while items.json (base) omits it. Re-adding the file that
+    -- defines shared_item_grid_horizontal re-renders its reference in
+    -- tracker.json, same as the maps content swap below.
+    if dlc then
+        Tracker:AddLayouts("layouts/items_dlc.json")
+    else
+        Tracker:AddLayouts("layouts/items.json")
+    end
 
     -- Leaf content first (defines full_map_content / enemy_glossary_content /
     -- individual_maps_layout), then the top layout so it re-renders.
@@ -1098,7 +1110,7 @@ ApplyMapLayouts()
 ScriptHost:AddWatchForCode("enemy_glossary_tab_watch", "setting_glossanity_enemy", function()
     ApplyMapLayouts()
 end)
-ScriptHost:AddWatchForCode("oannessanity_maps_watch", "setting_oannessanity", function()
+ScriptHost:AddWatchForCode("oannesanity_maps_watch", "setting_oannesanity", function()
     ApplyMapLayouts()
 end)
 

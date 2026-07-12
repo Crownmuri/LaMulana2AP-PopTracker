@@ -293,10 +293,40 @@
     "img": "images/OtherItems/MSX3.png",
     "codes": "mobile_super"
   },
-  {
-    "name": "Claydoll Suit",
-    "type": "toggle",
-    "img": "images/OtherItems/ClaydollSuit.png",
-    "codes": "claydoll_suit"
-  }
+    {
+        "name": "Claydoll Suit",
+        "type": "toggle",
+        "img": "images/OtherItems/ClaydollSuit.png",
+        "codes": "claydoll_suit"
+    },
+    {
+        "name": "Kimono Cowgirl",
+        "type": "toggle",
+        "img": "images/OtherItems/KimonoCowgirl.png",
+        "codes": "kimono_cowgirl"
+    },
+    {
+        "name": "Valkyrie",
+        "type": "toggle",
+        "img": "images/OtherItems/Valkyrie.png",
+        "codes": "valkyrie"
+    },
+    {
+        "name": "Little Demon",
+        "type": "toggle",
+        "img": "images/OtherItems/LittleDemon.png",
+        "codes": "little_demon"
+    },
+    {
+        "name": "Eastern Europe",
+        "type": "toggle",
+        "img": "images/OtherItems/EasternEurope.png",
+        "codes": "eastern_europe"
+    },
+    {
+        "name": "Fish Suit",
+        "type": "toggle",
+        "img": "images/OtherItems/FishSuit.png",
+        "codes": "fish_suit"
+    }
 ]

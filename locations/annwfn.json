@@ -11,7 +11,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_freestanding,setting_oannessanity"
+                    "setting_glossanity_freestanding,setting_oannesanity"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Heimdall) and CanReach(Eden))"
