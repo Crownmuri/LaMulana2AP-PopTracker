@@ -1317,7 +1317,7 @@ local function get_dynamic_exits(area_id)
                         extra_logic = " and CanWarp"
                     elseif target_code == "er_shrine_of_the_frost_giants_balor_soul_gate__e_1" then 
                         -- f06GateN7
-                        extra_logic = " and Has(Feather) and Has(Claydoll Suit)"
+                        extra_logic = " and (CanWarp or Has(Feather)) and Has(Claydoll Suit)"
                     elseif target_code == "er_ancient_chaos_soul_gate__c_1" then 
                         -- f12GateN8
                         extra_logic = " and (CanWarp or Has(Feather))"

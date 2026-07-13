@@ -159,9 +159,19 @@ local function SetSubweaponAmmoStage(stage, sm_code)
     end
 end
 
+-- Glossary (glossanity) location IDs form a contiguous range. Each check
+-- collected bumps the glossary_count consumable shown in the item layout.
+local GLOSSARY_ID_MIN = 432000
+local GLOSSARY_ID_MAX = 432243
+
 function onLocation(location_id, location_name)
     if seen_locations[location_id] then return end
     seen_locations[location_id] = true
+
+    if location_id >= GLOSSARY_ID_MIN and location_id <= GLOSSARY_ID_MAX then
+        local g = Tracker:FindObjectForCode("glossary_count")
+        if g then g.AcquiredCount = g.AcquiredCount + 1 end
+    end
 
     local location_array = LOCATION_MAPPING[location_id]
     if not location_array or not location_array[1] then
@@ -208,6 +218,10 @@ function onClear(slot_data)
     for _, g in ipairs(GUARDIANS) do
         _guardian_was_dead[g] = false
     end
+    -- Zero the glossary counter so the location replay below rebuilds it
+    -- from scratch rather than adding on top of a restored count.
+    local gloss = Tracker:FindObjectForCode("glossary_count")
+    if gloss then gloss.AcquiredCount = 0 end
 end
 
 Archipelago:AddItemHandler("*", onItem)
@@ -877,6 +891,10 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
 
     set_count ("setting_req_guardians",    tonumber(slot_data.required_guardians))
     set_count ("setting_req_skulls",       tonumber(slot_data.required_skulls))
+
+    -- Goal stage indices match the apworld Goal option values directly:
+    -- 0 = beat_the_game, 1 = beat_the_dlc, 2 = glossary_hunt.
+    set_stage ("setting_goal",             tonumber(slot_data.goal))
 
     -- Forwarded only if the seed carries these keys (not in fill_slot_data today):
     set_stage ("setting_logic",         tonumber(slot_data.logic_difficulty))

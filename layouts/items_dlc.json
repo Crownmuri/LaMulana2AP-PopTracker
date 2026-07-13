@@ -33,8 +33,8 @@
             [ "mekuri_master", "bounce_shot", "miracle_witch", "fdc", "la_mulana", "la_mulana_2" ],
             [ "mantra_heaven", "mantra_earth", "mantra_sun", "mantra_moon", "mantra_sea", "boss_money_fairy" ],
             [ "mantra_fire", "mantra_wind", "mantra_mother", "mantra_child", "mantra_night", "boss_key_fairy" ],
-            [ "boss_fafnir", "boss_vritra", "boss_kujata", "boss_jormungand", "boss_aten_ra", "" ],
-            [ "boss_anu", "boss_surtr", "boss_echidna", "boss_hel", "boss_ninth_child", "" ]
+            [ "boss_fafnir", "boss_vritra", "boss_kujata", "boss_jormungand", "boss_aten_ra", "map_item" ],
+            [ "boss_anu", "boss_surtr", "boss_echidna", "boss_hel", "boss_ninth_child", "glossary_count" ]
         ]
       }
     ]

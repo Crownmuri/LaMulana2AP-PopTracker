@@ -95,6 +95,34 @@
         ]
     },
     {
+        "name": "Goal",
+        "type": "progressive",
+        "loop": true,
+        "allow_disabled": false,
+        "initial_stage_idx": 0,
+        "codes": "setting_goal",
+        "stages": [
+            {
+                "name": "Goal: Beat the Game",
+                "img": "images/Guardians/NinthChild.png",
+                "codes": "goal_beat_game",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal: Beat the DLC",
+                "img": "images/Guardians/GyoninKing.png",
+                "codes": "goal_beat_dlc",
+                "inherit_codes": false
+            },
+            {
+                "name": "Goal: Glossary Hunt",
+                "img": "images/Software/RuinsEncyclopedia.png",
+                "codes": "goal_glossary_hunt",
+                "inherit_codes": false
+            }
+        ]
+    },
+    {
         "name": "Oannesanity",
         "type": "toggle",
         "img": "images/Settings/DLC.png",

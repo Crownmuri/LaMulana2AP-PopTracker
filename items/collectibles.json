@@ -34,9 +34,17 @@
   {
     "name": "Map",
     "type": "consumable",
-    "img": "images/Other/Map.png",
+    "img": "images/OtherItems/Map.png",
     "codes": "map_item",
     "max_quantity": 16,
+    "increment": 1
+  },
+  {
+    "name": "Glossary",
+    "type": "consumable",
+    "img": "images/Settings/ChipN.png",
+    "codes": "glossary_count",
+    "max_quantity": 244,
     "increment": 1
   }
 ]

@@ -346,12 +346,12 @@
                         "hosted_item": "cursed_430056",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430056|CanReach(SotFGBalor) and (Has(Life Sigil) and Has(Feather) and IsDead(Balor))"
+                            "^$lm2_cursed|430056|CanReach(SotFGBalor) and (Has(Life Sigil) and IsDead(Balor))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGBalor) and (Has(Life Sigil) and Has(Feather) and IsDead(Balor))"
+                    "^$lm2_logic|CanReach(SotFGBalor) and (Has(Life Sigil) and IsDead(Balor))"
                 ]
             },
             {
@@ -1053,7 +1053,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGBalor) and (Has(Feather) and PuzzleFinished(Bergelmir) and CanWarp)"
+                    "^$lm2_logic|CanReach(SotFGBalor) and (PuzzleFinished(Bergelmir) and CanWarp)"
                 ],
                 "map_locations": [
                     {
