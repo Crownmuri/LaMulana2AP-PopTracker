@@ -2909,7 +2909,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GateofGuidance)"
+                    "^$lm2_logic|CanReach(GateofGuidance) and IsDead(Heimdall)"
                 ]
             },
             {
@@ -2967,7 +2967,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SpringintheSky) and (Has(Feather) and Has(Rebirth Sigil))"
+                    "^$lm2_logic|CanReach(SpringintheSkyTop) and (Has(Feather) and Has(Rebirth Sigil))"
                 ]
             },
             {
@@ -3083,7 +3083,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TowerOfOannesLeftA) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftATopGate)"
                 ]
             },
             {
@@ -3199,7 +3199,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TowerOfOannesLeftB) and IsDead(Fish-Valusa Re-gyo-ded)"
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftBTopGate) and IsDead(Fish-Valusa Re-gyo-ded)"
                 ]
             },
             {
@@ -3373,15 +3373,15 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TowerOfOannesRight) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(TowerOfOannesRightA) and (Has(Feather) or CanWarp)"
                 ]
             },
             {
-                "name": "Bailey Top Right Gate (F-8)",
+                "name": "Bailey Right Gate (F-8)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_bailey_top_right_gate__f_8",
+                        "hosted_item": "er_bailey_right_gate__f_8",
                         "item_size": "200,16"
                     }
                 ],
@@ -3402,7 +3402,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(BaileyTopRight)"
+                    "^$lm2_logic|CanReach(BaileyRight)"
                 ]
             },
             {
@@ -3460,7 +3460,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TowerOfOannesRight) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(TowerOfOannesRightASlide) and (HorizontalAttack)"
                 ]
             },
             {
@@ -3489,7 +3489,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TowerOfOannesRight) and (CanReach(BaileyTopRight) and Has(Feather))"
+                    "^$lm2_logic|CanReach(TowerOfOannesRightB) and (CanReach(BaileyRight))"
                 ]
             },
             {

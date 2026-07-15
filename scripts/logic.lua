@@ -636,7 +636,7 @@ local EVENT_LOGIC = {
     -- Tower of Oannes
     ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and OrbCount(2)",
     ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftC) and IsDead(Fish-Valusa Re-gyo-ded) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and OrbCount(2)",
-    ["evil_fish_crystal"] = "CanReach(TowerOfOannesRight) and CanReach(BaileyTopRight) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Leather Whip) or Has(Axe) or ((Has(Knife) or Has(Rapier)) and Has(Spaulder)))",
+    ["evil_fish_crystal"] = "CanReach(TowerOfOannesRight) and CanReach(BaileyRight) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Leather Whip) or Has(Axe) or ((Has(Knife) or Has(Rapier)) and Has(Spaulder)))",
     ["fish-gear_mk-2_turbor"] = "CanReach(TowerOfOannesRight) and IsDead(Evil Fish Crystal) and Has(Rebirth Sigil) and CanReach(TowerOfOannesLeftA) and (Has(Gale Fibula) or CanStopTime) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Grapple Claw) and Has(Feather) and CanWarp and Has(Flail Whip) and OrbCount(10)",
 
     -- =================================================================
@@ -884,12 +884,12 @@ FORWARD_EXITS = {
     ["TowerOfOannesLeftA"] = {{"SpringintheSky", "True"}, {"BaileyBottom", "True"}, {"BaileyLevel1", "Has(Feather)"}},
     ["TowerOfOannesLeftB"] = {{"BaileyLevel1", "True"}, {"BaileyLevel2", "Has(Feather) and IsDead(Fish-Valusa Re-gyo-ded)"}},
     ["TowerOfOannesLeftC"] = {{"BaileyLevel2", "Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))"}, {"BaileyLevel3", "(Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and IsDead(Fish-Slime Zero)"}, {"BaileyBottom", "IsDead(Fish-Valusa Re-gyo-ded) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))"}},
-    ["TowerOfOannesRight"] = {{"BaileyTopRight", "Has(Feather)"}, {"BaileyBottom", "CanReach(BaileyTopRight) and IsDead(Fish-Slime Zero)"}},
+    ["TowerOfOannesRight"] = {{"BaileyRight", "Has(Feather)"}, {"BaileyBottom", "CanReach(BaileyRight) and IsDead(Fish-Slime Zero)"}},
     ["BaileyBottom"] = {{"TowerOfOannesLeftA", "True"}},
     ["BaileyLevel1"] = {{"TowerOfOannesLeftA", "True"}, {"TowerOfOannesLeftB", "True"}, {"BaileyBottom", "CanWarp"}},
     ["BaileyLevel2"] = {{"TowerOfOannesLeftB", "True"}, {"TowerOfOannesLeftC", "Has(Feather)"}, {"BaileyLevel1", "CanWarp"}},
-    ["BaileyLevel3"] = {{"TowerOfOannesLeftC", "True"}, {"BaileyLevel2", "CanWarp"}, {"BaileyTopRight", "Has(Gale Fibula) and CanWarp"}},
-    ["BaileyTopRight"] = {{"TowerOfOannesRight", "True"}, {"BaileyBottom", "CanWarp"}},
+    ["BaileyLevel3"] = {{"TowerOfOannesLeftC", "True"}, {"BaileyLevel2", "CanWarp"}, {"BaileyRight", "Has(Gale Fibula) and CanWarp"}},
+    ["BaileyRight"] = {{"TowerOfOannesRight", "True"}, {"BaileyBottom", "CanWarp"}},
     ["Eden"] = {{"VoD", "True"}}
 }
 

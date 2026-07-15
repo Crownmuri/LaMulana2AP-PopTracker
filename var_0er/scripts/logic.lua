@@ -550,8 +550,8 @@ local EVENT_LOGIC = {
     -- Tower of Oannes
     ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and OrbCount(2)",
     ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftC) and IsDead(Fish-Valusa Re-gyo-ded) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and OrbCount(2)",
-    ["evil_fish_crystal"] = "CanReach(TowerOfOannesRight) and CanReach(BaileyTopRight) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Leather Whip) or Has(Axe) or ((Has(Knife) or Has(Rapier)) and Has(Spaulder)))",
-    ["fish-gear_mk-2_turbor"] = "CanReach(TowerOfOannesRight) and IsDead(Evil Fish Crystal) and Has(Rebirth Sigil) and CanReach(TowerOfOannesLeftA) and (Has(Gale Fibula) or CanStopTime) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Grapple Claw) and Has(Feather) and CanWarp and Has(Flail Whip) and OrbCount(10)",
+    ["evil_fish_crystal"] = "CanReach(TowerOfOannesRightB) and CanReach(BaileyRight) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Leather Whip) or Has(Axe) or ((Has(Knife) or Has(Rapier)) and Has(Spaulder)))",
+    ["fish-gear_mk-2_turbor"] = "CanReach(TowerOfOannesRightB) and IsDead(Evil Fish Crystal) and Has(Rebirth Sigil) and CanReach(TowerOfOannesLeftA) and (Has(Gale Fibula) or CanStopTime) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Grapple Claw) and Has(Feather) and CanWarp and Has(Flail Whip) and OrbCount(10)",
 
     -- =================================================================
     -- Puzzles
@@ -707,7 +707,7 @@ FORWARD_EXITS = {
     ["ACTablet"] = {{"ACMain", "True"}},
     ["ACWind"] = {{"ACMain", "Has(Feather)"}, {"ACBottom", "True"}},
     ["AltarLeft"] = {{"AltarRight", "CanWarp"}},
-    ["AnnwfnMain"] = {{"AnnwfnSG", "Has(Glove) or Has(Feather)"}, {"AnnwfnRight", "Has(Annwfn Right Shortcut)"}},
+    ["AnnwfnMain"] = {{"AnnwfnSG", "Has(Glove) or Has(Feather)"}, {"AnnwfnRight", "Has(Annwfn Right Shortcut)"},{"AnnwfnOneWay", "HorizontalAttack"}},
     ["AnnwfnOneWay"] = {{"AnnwfnMain", "CanWarp and HorizontalAttack"}},
     ["AnnwfnPoison"] = {{"AnnwfnRight", "(CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or Has(Claydoll Suit) or CanStopTime"}},
     ["AnnwfnRight"] = {{"AnnwfnMain", "IsDead(Ixtab)"}, {"AnnwfnPoison", "True"}, {"Eden", "IsDead(Heimdall) and Has(Vessel) and CanChant(Earth) and CanChant(Sun) and CanChant(Fire) and CanChant(Wind) and CanChant(Mother) and CanChant(Child) and CanChant(Night)"}},
@@ -774,10 +774,27 @@ FORWARD_EXITS = {
     -- =================================================================
     -- DLC regions: Spring in the Sky / Tower of Oannes / Bailey / Eden.
     -- =================================================================
+    -- Tower top-gate pockets: the shuffled gate carries only its real
+    -- requirement; the CanWarp softlock-failsafe lives on the internal
+    -- reverse edge back to the tower body (never shuffled).
+    -- Spring in the Sky top pocket: fL04Up (up-ladder) needs Rebirth Sigil to
+    -- spawn; the CanWarp failsafe lives on the internal climb-down edge.
+    ["SpringintheSky"] = {{"SpringintheSkyTop", "Has(Feather)"}},
+    ["SpringintheSkyTop"] = {{"SpringintheSky", "CanWarp or Has(Feather)"}},
+    ["TowerOfOannesLeftA"] = {{"TowerOfOannesLeftATopGate", "Has(Feather)"}},
+    ["TowerOfOannesLeftATopGate"] = {{"TowerOfOannesLeftA", "CanWarp or Has(Feather)"}},
+    ["TowerOfOannesLeftB"] = {{"TowerOfOannesLeftBTopGate", "Has(Feather)"}},
+    ["TowerOfOannesLeftBTopGate"] = {{"TowerOfOannesLeftB", "CanWarp or IsDead(Fish-Valusa Re-gyo-ded)"}},
+    -- Tower of Oannes Right: puzzle room (A) ⇄ boss room (B) / slide pocket.
+    -- Forward = the Feather+CanWarp jumping-puzzle traverse; back = CanWarp
+    -- warp/renav failsafe (never shuffled). fEx1_Rout2 arrival lands in B.
+    ["TowerOfOannesRightA"] = {{"TowerOfOannesRightASlide", "Has(Feather) and CanWarp"}, {"TowerOfOannesRightB", "Has(Feather) and CanWarp"}},
+    ["TowerOfOannesRightASlide"] = {{"TowerOfOannesRightA", "CanWarp"}},
+    ["TowerOfOannesRightB"] = {{"TowerOfOannesRightA", "CanWarp"}},
     ["BaileyLevel1"] = {{"BaileyBottom", "CanWarp"}},
     ["BaileyLevel2"] = {{"BaileyLevel1", "CanWarp"}},
-    ["BaileyLevel3"] = {{"BaileyLevel2", "CanWarp"}, {"BaileyTopRight", "Has(Gale Fibula) and CanWarp"}},
-    ["BaileyTopRight"] = {{"BaileyBottom", "CanWarp"}},
+    ["BaileyLevel3"] = {{"BaileyLevel2", "CanWarp"}, {"BaileyRight", "Has(Gale Fibula) and CanWarp"}},
+    ["BaileyRight"] = {{"BaileyBottom", "CanWarp"}},
     ["Eden"] = {{"VoD", "True"}}
 }
 
@@ -949,18 +966,18 @@ ER_ENTRANCE_DATA = {
     -- DLC entrances (Spring in the Sky / Tower of Oannes / Bailey)
     ["er_gate_of_guidance_right_ladder__e_2"] = { area = "GateofGuidance" },
     ["er_spring_in_the_sky_ladder_down__a_6"] = { area = "SpringintheSky" },
-    ["er_spring_in_the_sky_ladder_up__c_1"] = { area = "SpringintheSky" },
+    ["er_spring_in_the_sky_ladder_up__c_1"] = { area = "SpringintheSkyTop" },
     ["er_tower_of_oannes_left_a_ladder_down__b_16"] = { area = "TowerOfOannesLeftA" },
     ["er_tower_of_oannes_fish_slime_zero_escape__c_1"] = { area = "TowerOfOannesLeftC" },
     ["er_tower_of_oannes_left_a_bottom_gate__c_15"] = { area = "TowerOfOannesLeftA" },
-    ["er_tower_of_oannes_left_a_top_gate__c_10"] = { area = "TowerOfOannesLeftA" },
+    ["er_tower_of_oannes_left_a_top_gate__c_10"] = { area = "TowerOfOannesLeftATopGate" },
     ["er_tower_of_oannes_left_b_bottom_gate__c_9"] = { area = "TowerOfOannesLeftB" },
-    ["er_tower_of_oannes_left_b_top_gate__c_7"] = { area = "TowerOfOannesLeftB" },
+    ["er_tower_of_oannes_left_b_top_gate__c_7"] = { area = "TowerOfOannesLeftBTopGate" },
     ["er_tower_of_oannes_left_c_bottom_gate__c_6"] = { area = "TowerOfOannesLeftC" },
     ["er_tower_of_oannes_left_c_top_gate__c_5"] = { area = "TowerOfOannesLeftC" },
-    ["er_tower_of_oannes_right_entrance_gate__d_12"] = { area = "TowerOfOannesRight" },
-    ["er_tower_of_oannes_moving_tiles_escape__d_10"] = { area = "TowerOfOannesRight" },
-    ["er_tower_of_oannes_dark_fish_crystal_escape__e_6"] = { area = "TowerOfOannesRight" },
+    ["er_tower_of_oannes_right_entrance_gate__d_12"] = { area = "TowerOfOannesRightA" },
+    ["er_tower_of_oannes_moving_tiles_escape__d_10"] = { area = "TowerOfOannesRightASlide" },
+    ["er_tower_of_oannes_dark_fish_crystal_escape__e_6"] = { area = "TowerOfOannesRightB" },
     ["er_bailey_left_gyonin_drop__b_1"] = { area = "BaileyBottom" },
     ["er_bailey_bottom_gate__a_11"] = { area = "BaileyBottom" },
     ["er_bailey_level_1_lower_gate__a_6"] = { area = "BaileyLevel1" },
@@ -968,7 +985,7 @@ ER_ENTRANCE_DATA = {
     ["er_bailey_level_2_lower_gate__a_3"] = { area = "BaileyLevel2" },
     ["er_bailey_level_2_upper_gate__a_3"] = { area = "BaileyLevel2" },
     ["er_bailey_level_3_gate__a_1"] = { area = "BaileyLevel3" },
-    ["er_bailey_top_right_gate__f_8"] = { area = "BaileyTopRight" },
+    ["er_bailey_right_gate__f_8"] = { area = "BaileyRight" },
     ["er_bailey_right_one_way_exit_slide__e_6"] = { area = "BaileyBottom" },
     ["er_bailey_right_gyonin_drop__e_1"] = { area = "BaileyBottom" },
 }
@@ -1178,32 +1195,42 @@ ER_ENTRANCES_BY_AREA = {
     -- DLC entrances (Spring in the Sky / Tower of Oannes / Bailey)
     ["SpringintheSky"] = {
         { code = "er_spring_in_the_sky_ladder_down__a_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "GateofGuidance" },
+    },
+    ["SpringintheSkyTop"] = {
         { code = "er_spring_in_the_sky_ladder_up__c_1", logic = "Has(Feather) and Has(Rebirth Sigil)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftA" },
     },
     ["TowerOfOannesLeftA"] = {
-        { code = "er_tower_of_oannes_left_a_ladder_down__b_16", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "SpringintheSky" },
+        { code = "er_tower_of_oannes_left_a_ladder_down__b_16", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "SpringintheSkyTop" },
         { code = "er_tower_of_oannes_left_a_bottom_gate__c_15", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
-        { code = "er_tower_of_oannes_left_a_top_gate__c_10", logic = "Has(Feather) or CanWarp", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel1" },
+    },
+    ["TowerOfOannesLeftATopGate"] = {
+        { code = "er_tower_of_oannes_left_a_top_gate__c_10", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel1" },
     },
     ["TowerOfOannesLeftB"] = {
         { code = "er_tower_of_oannes_left_b_bottom_gate__c_9", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel1" },
-        { code = "er_tower_of_oannes_left_b_top_gate__c_7", logic = "IsDead(Fish-Valusa Re-gyo-ded) or CanWarp", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel2" },
+    },
+    ["TowerOfOannesLeftBTopGate"] = {
+        { code = "er_tower_of_oannes_left_b_top_gate__c_7", logic = "IsDead(Fish-Valusa Re-gyo-ded)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel2" },
     },
     ["TowerOfOannesLeftC"] = {
         { code = "er_tower_of_oannes_fish_slime_zero_escape__c_1", logic = "IsDead(Fish-Valusa Re-gyo-ded) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
         { code = "er_tower_of_oannes_left_c_bottom_gate__c_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel2" },
         { code = "er_tower_of_oannes_left_c_top_gate__c_5", logic = "(Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and IsDead(Fish-Slime Zero)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel3" },
     },
-    ["TowerOfOannesRight"] = {
-        { code = "er_tower_of_oannes_right_entrance_gate__d_12", logic = "Has(Feather)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyTopRight" },
-        { code = "er_tower_of_oannes_moving_tiles_escape__d_10", logic = "Has(Feather)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyTopRight" },
-        { code = "er_tower_of_oannes_dark_fish_crystal_escape__e_6", logic = "CanReach(BaileyTopRight) and IsDead(Fish-Slime Zero)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
+    ["TowerOfOannesRightA"] = {
+        { code = "er_tower_of_oannes_right_entrance_gate__d_12", logic = "Has(Feather) or CanWarp", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyRight" },
+    },
+    ["TowerOfOannesRightASlide"] = {
+        { code = "er_tower_of_oannes_moving_tiles_escape__d_10", logic = "HorizontalAttack", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
+    },
+    ["TowerOfOannesRightB"] = {
+        { code = "er_tower_of_oannes_dark_fish_crystal_escape__e_6", logic = "CanReach(BaileyRight)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
     },
     ["BaileyBottom"] = {
         { code = "er_bailey_bottom_gate__a_11", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftA" },
         { code = "er_bailey_left_gyonin_drop__b_1", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftC" },
-        { code = "er_bailey_right_one_way_exit_slide__e_6", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesRight" },
-        { code = "er_bailey_right_gyonin_drop__e_1", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesRight" },
+        { code = "er_bailey_right_one_way_exit_slide__e_6", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesRightB" },
+        { code = "er_bailey_right_gyonin_drop__e_1", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesRightA" },
     },
     ["BaileyLevel1"] = {
         { code = "er_bailey_level_1_lower_gate__a_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftA" },
@@ -1216,8 +1243,8 @@ ER_ENTRANCES_BY_AREA = {
     ["BaileyLevel3"] = {
         { code = "er_bailey_level_3_gate__a_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftC" },
     },
-    ["BaileyTopRight"] = {
-        { code = "er_bailey_top_right_gate__f_8", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesRight" },
+    ["BaileyRight"] = {
+        { code = "er_bailey_right_gate__f_8", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesRightA" },
     },
 }
 
@@ -1240,26 +1267,6 @@ local _reach_valid = false
 -- and the glitch graph, which additionally traverses TrickyLogic()-gated edges.
 local _reach_normal = {}
 local _reach_glitch = {}
-
--- One-way drops/slides: a partner routed INTO one of these lands at the drop's
--- DESTINATION area, not the room the drop starts in.  A Gyonin drop lives in
--- BaileyLevel3 but deposits you in BaileyBottom, so connecting an entrance to it
--- must grant BaileyBottom only -- not the top of the drop (and, via grail-warp
--- between Bailey levels, the whole Bailey).  Mirrors the apworld's
--- ExitType.OneWay handling in entrances.py `_apply_pairings`.  Keyed by the
--- exits whose World.json ConnectionType is "OneWay"; dest = ConnectingAreaID.
-local ER_ONEWAY_DEST = {
-    ["er_annwfn_bifrost"]                                = "IBBifrost",
-    ["er_immortal_battlefield_bifrost_fall"]             = "AnnwfnMain",
-    ["er_nibiru_spaceship"]                              = "DSLMPyramid",
-    ["er_heavens_labyrinth_monster_s_jaw"]              = "TSNeckEntrance",
-    ["er_takamagahara_shrine_neck"]                      = "HLCog",
-    ["er_tower_of_oannes_fish_slime_zero_escape__c_1"]   = "BaileyBottom",
-    ["er_tower_of_oannes_dark_fish_crystal_escape__e_6"] = "BaileyBottom",
-    ["er_bailey_left_gyonin_drop__b_1"]                  = "BaileyBottom",
-    ["er_bailey_right_one_way_exit_slide__e_6"]          = "BaileyBottom",
-    ["er_bailey_right_gyonin_drop__e_1"]                 = "BaileyBottom",
-}
 
 local function get_dynamic_exits(area_id)
     local exits = {}
@@ -1332,10 +1339,7 @@ local function get_dynamic_exits(area_id)
 
                     local target_data = ER_ENTRANCE_DATA[target_code]
                     if target_data then
-                        -- One-way drops deposit you at their landing area, not
-                        -- the room they start in (see ER_ONEWAY_DEST above).
-                        local arrive_area = ER_ONEWAY_DEST[target_code] or target_data.area
-                        table.insert(exits, {arrive_area, edge_logic})
+                        table.insert(exits, {target_data.area, edge_logic})
                     end
                 end
             else
@@ -1361,12 +1365,26 @@ local function _flood_one(glitch)
 
     local changed = true
     local iterations = 0
-    while changed and iterations < 20 do
+    -- Cap is a safety valve only; the fixpoint below converges in <= graph-depth
+    -- passes. Kept well above the ~108-region count so it never truncates.
+    while changed and iterations < 200 do
         changed = false
         iterations = iterations + 1
 
-        -- Iterate over currently reachable areas and explore dynamic exits
-        for area_id, _ in pairs(reach) do
+        -- Snapshot the currently-reachable area IDs BEFORE exploring. We must not
+        -- add keys to `reach` while iterating it with pairs() -- that is undefined
+        -- behavior in Lua (a rehash mid-traversal makes pairs() visit only an
+        -- arbitrary subset), which previously left the flood-fill needing far more
+        -- than the old 20-pass cap to converge and thus dropping reachable regions.
+        local frontier = {}
+        for area_id in pairs(reach) do
+            frontier[#frontier + 1] = area_id
+        end
+
+        -- Iterate the snapshot array and explore dynamic exits. Re-scanning every
+        -- reachable area each pass (rather than a one-shot BFS) is required so that
+        -- CanReach()-gated edges open once their prerequisite area is reached.
+        for _, area_id in ipairs(frontier) do
             local exits = get_dynamic_exits(area_id)
             for _, edge in ipairs(exits) do
                 local target = edge[1]

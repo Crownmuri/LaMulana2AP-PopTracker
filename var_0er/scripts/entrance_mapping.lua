@@ -95,7 +95,7 @@ ER_ENTRANCE_NAMES = {
     ["er_bailey_level_2_lower_gate__a_3"] = "Bailey Lv2 Lower Gate (A-3)",
     ["er_bailey_level_2_upper_gate__a_3"] = "Bailey Lv2 Upper Gate (A-3)",
     ["er_bailey_level_3_gate__a_1"] = "Bailey Lv3 Gate (A-1)",
-    ["er_bailey_top_right_gate__f_8"] = "Bailey Top Right Gate (F-8)",
+    ["er_bailey_right_gate__f_8"] = "Bailey Right Gate (F-8)",
     ["er_bailey_left_gyonin_drop__b_1"] = "Bailey Left Gyonin Drop (B-1)",
     ["er_bailey_right_one_way_exit_slide__e_6"] = "Bailey Right Exit Slide (E-6)",
     ["er_bailey_right_gyonin_drop__e_1"] = "Bailey Right Gyonin Drop (E-1)",
@@ -458,7 +458,7 @@ EXIT_ID_TO_ER_CODE = {
     [91] = "er_bailey_level_2_lower_gate__a_3",
     [92] = "er_bailey_level_2_upper_gate__a_3",
     [93] = "er_bailey_level_3_gate__a_1",
-    [94] = "er_bailey_top_right_gate__f_8",
+    [94] = "er_bailey_right_gate__f_8",
     [95] = "er_bailey_right_one_way_exit_slide__e_6",
     [96] = "er_bailey_right_gyonin_drop__e_1",
 }
@@ -608,7 +608,7 @@ local VANILLA_STRUCTURAL_PAIRS = {
     { "er_tower_of_oannes_left_b_top_gate__c_7", "er_bailey_level_2_lower_gate__a_3", "dlc" },
     { "er_tower_of_oannes_left_c_bottom_gate__c_6", "er_bailey_level_2_upper_gate__a_3", "dlc" },
     { "er_tower_of_oannes_left_c_top_gate__c_5", "er_bailey_level_3_gate__a_1", "dlc" },
-    { "er_tower_of_oannes_right_entrance_gate__d_12", "er_bailey_top_right_gate__f_8", "dlc" },
+    { "er_tower_of_oannes_right_entrance_gate__d_12", "er_bailey_right_gate__f_8", "dlc" },
 }
 
 -- { codeA, codeB, soul_amount, is_nine }

@@ -1832,16 +1832,16 @@
         "img": "images/entrances/unmapped.png"
     },
     {
-        "name": "Bailey Top Right Gate (F-8)",
+        "name": "Bailey Right Gate (F-8)",
         "type": "toggle",
-        "codes": "er_bailey_top_right_gate__f_8",
+        "codes": "er_bailey_right_gate__f_8",
         "category": "entrance",
-        "img": "images/entrances/er_bailey_top_right_gate__f_8.png"
+        "img": "images/entrances/er_bailey_right_gate__f_8.png"
     },
     {
-        "name": "Target for Bailey Top Right Gate (F-8)",
+        "name": "Target for Bailey Right Gate (F-8)",
         "type": "static",
-        "codes": "target_er_bailey_top_right_gate__f_8",
+        "codes": "target_er_bailey_right_gate__f_8",
         "img": "images/entrances/unmapped.png"
     },
     {

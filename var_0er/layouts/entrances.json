@@ -327,7 +327,7 @@
                                 [ "er_bailey_level_2_upper_gate__a_3" ],
                                 [ "er_bailey_level_3_gate__a_1" ],
                                 [ "er_bailey_left_gyonin_drop__b_1" ],
-                                [ "er_bailey_top_right_gate__f_8" ],
+                                [ "er_bailey_right_gate__f_8" ],
                                 [ "er_bailey_right_one_way_exit_slide__e_6" ],
                                 [ "er_bailey_right_gyonin_drop__e_1" ]
                             ]
@@ -389,7 +389,7 @@
                                 [ "target_er_bailey_level_2_upper_gate__a_3" ],
                                 [ "target_er_bailey_level_3_gate__a_1" ],
                                 [ "target_er_bailey_left_gyonin_drop__b_1" ],
-                                [ "target_er_bailey_top_right_gate__f_8" ],
+                                [ "target_er_bailey_right_gate__f_8" ],
                                 [ "target_er_bailey_right_one_way_exit_slide__e_6" ],
                                 [ "target_er_bailey_right_gyonin_drop__e_1" ]
                             ]
