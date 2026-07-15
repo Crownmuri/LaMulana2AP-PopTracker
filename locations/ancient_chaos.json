@@ -1072,7 +1072,7 @@
             }
         ],
         "access_rules": [
-            "^$lm2_logic|CanReach(ACBottom) or CanReach(ACMain) or CanReach(ACTablet) or CanReach(ACWind)"
+            "^$lm2_logic|CanReach(ACBottom) or CanReach(ACMain) or CanReach(ACTablet) or CanReach(ACWind) or CanReach(ACBlood)"
         ]
     }
 ]

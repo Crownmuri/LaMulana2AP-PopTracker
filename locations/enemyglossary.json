@@ -350,7 +350,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(AnnwfnMain) and (Has(Knife) or CanUse(Bomb) or CanUse(Pistol) or (Has(Vajra) and (Has(Rapier) or Has(Katana) or (Has(Gauntlet) and Has(Leather Whip)))) or (Has(Gauntlet) and (Has(Chain Whip) or Has(Rapier) or Has(Katana))))))"
+                    "^$lm2_logic|((CanReach(AnnwfnMain) and (Has(Knife) or CanUse(Bomb) or CanUse(Pistol) or (Has(Vajra) and (Has(Rapier) or Has(Katana)) or (Has(Gauntlet) and Has(Leather Whip))) or (Has(Gauntlet) and (Has(Chain Whip) or Has(Rapier) or Has(Katana))))))"
                 ]
             },
             {

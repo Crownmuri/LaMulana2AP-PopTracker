@@ -1308,7 +1308,7 @@
             }
         ],
         "access_rules": [
-            "^$lm2_logic|CanReach(ITBottom) or CanReach(ITEntrance) or CanReach(ITLeft) or CanReach(ITRight) or CanReach(ITSinmara) or CanReach(ITVidofnir)"
+            "^$lm2_logic|CanReach(ITBottom) or CanReach(ITEntrance) or CanReach(ITLeft) or CanReach(ITRight) or CanReach(ITSinmara) or CanReach(ITVidofnir) or CanReach(ITRightLeftLadder)"
         ]
     }
 ]

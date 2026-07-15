@@ -817,7 +817,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnOneWay) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (HorizontalAttack)"
                 ]
             },
             {
@@ -1029,7 +1029,7 @@
             }
         ],
         "access_rules": [
-            "^$lm2_logic|CanReach(AnnwfnMain) or CanReach(AnnwfnRight)"
+            "^$lm2_logic|CanReach(AnnwfnMain) or CanReach(AnnwfnRight) or CanReach(AnnwfnOneWay)"
         ]
     }
 ]
