@@ -72,7 +72,7 @@
                     "setting_glossanity_freestanding,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TowerOfOannesLeftC)"
+                    "^$lm2_logic|CanReach(TowerOfOannesLeftCTop)"
                 ],
                 "map_locations": [
                     {

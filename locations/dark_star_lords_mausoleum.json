@@ -1109,7 +1109,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(DSLMMain)"
+                            "^$lm2_logic|CanReach(DSLMMain) and (PuzzleFinished(White Pedestals))"
                         ]
                     },
                     {

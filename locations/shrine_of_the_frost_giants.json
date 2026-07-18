@@ -1274,7 +1274,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGBloodTez) and (IsDead(Tezcatlipoca))"
+                    "^$lm2_logic|CanReach(SotFGBloodTez) and ((Has(Feather) or CanWarp) and IsDead(Tezcatlipoca))"
                 ],
                 "map_locations": [
                     {

@@ -549,8 +549,8 @@ local EVENT_LOGIC = {
     
     -- Tower of Oannes
     ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and OrbCount(2)",
-    ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftC) and IsDead(Fish-Valusa Re-gyo-ded) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and OrbCount(2)",
-    ["evil_fish_crystal"] = "CanReach(TowerOfOannesRightB) and CanReach(BaileyRight) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Leather Whip) or Has(Axe) or ((Has(Knife) or Has(Rapier)) and Has(Spaulder)))",
+    ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftCTop) and IsDead(Fish-Valusa Re-gyo-ded) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and OrbCount(2)",
+    ["evil_fish_crystal"] = "CanReach(TowerOfOannesRightBCrystal) and CanReach(BaileyRight) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Leather Whip) or Has(Axe) or ((Has(Knife) or Has(Rapier)) and Has(Spaulder)))",
     ["fish-gear_mk-2_turbor"] = "CanReach(TowerOfOannesRightB) and IsDead(Evil Fish Crystal) and Has(Rebirth Sigil) and CanReach(TowerOfOannesLeftA) and (Has(Gale Fibula) or CanStopTime) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Grapple Claw) and Has(Feather) and CanWarp and Has(Flail Whip) and OrbCount(10)",
 
     -- =================================================================
@@ -608,7 +608,7 @@ local EVENT_HARDLOGIC = {
     ["ratatoskr_4"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3)",
     -- DLC
     ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and Has(Feather) and CanUse(Flare Gun)",
-    ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftC) and IsDead(Fish-Valusa Re-gyo-ded)",
+    ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftCTop) and IsDead(Fish-Valusa Re-gyo-ded)",
 }
 
 for _k, _hard in pairs(EVENT_HARDLOGIC) do
@@ -785,12 +785,20 @@ FORWARD_EXITS = {
     ["TowerOfOannesLeftATopGate"] = {{"TowerOfOannesLeftA", "CanWarp or Has(Feather)"}},
     ["TowerOfOannesLeftB"] = {{"TowerOfOannesLeftBTopGate", "Has(Feather)"}},
     ["TowerOfOannesLeftBTopGate"] = {{"TowerOfOannesLeftB", "CanWarp or IsDead(Fish-Valusa Re-gyo-ded)"}},
-    -- Tower of Oannes Right: puzzle room (A) ⇄ boss room (B) / slide pocket.
-    -- Forward = the Feather+CanWarp jumping-puzzle traverse; back = CanWarp
-    -- warp/renav failsafe (never shuffled). fEx1_Rout2 arrival lands in B.
+    -- Left C: gate hub ⇄ Top pocket (FSZ + C-3 glossary). Forward = whips
+    -- traverse up; back = Has(Feather) climb down to the gates. fEx1_Lout
+    -- (FSZ escape) arrival lands in LeftCTop.
+    ["TowerOfOannesLeftC"] = {{"TowerOfOannesLeftCTop", "Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))"}},
+    ["TowerOfOannesLeftCTop"] = {{"TowerOfOannesLeftC", "Has(Feather)"}},
+    -- Tower of Oannes Right: puzzle room (A) → boss room (B) → Crystal pocket.
+    -- A→B forward = the Feather+CanWarp jumping-puzzle traverse. B→A is False
+    -- (A's puzzle already opens all of A's entrances, so B never grants new
+    -- access to A). B⇄Crystal: back = CanWarp/Feather failsafe, ledge = True.
+    -- fEx1_Rout2 (DFC escape) arrival lands in Crystal.
     ["TowerOfOannesRightA"] = {{"TowerOfOannesRightASlide", "Has(Feather) and CanWarp"}, {"TowerOfOannesRightB", "Has(Feather) and CanWarp"}},
     ["TowerOfOannesRightASlide"] = {{"TowerOfOannesRightA", "CanWarp"}},
-    ["TowerOfOannesRightB"] = {{"TowerOfOannesRightA", "CanWarp"}},
+    ["TowerOfOannesRightB"] = {{"TowerOfOannesRightBCrystal", "CanWarp or Has(Feather)"}},
+    ["TowerOfOannesRightBCrystal"] = {{"TowerOfOannesRightB", "True"}},
     ["BaileyLevel1"] = {{"BaileyBottom", "CanWarp"}},
     ["BaileyLevel2"] = {{"BaileyLevel1", "CanWarp"}},
     ["BaileyLevel3"] = {{"BaileyLevel2", "CanWarp"}, {"BaileyRight", "Has(Gale Fibula) and CanWarp"}},
@@ -968,7 +976,7 @@ ER_ENTRANCE_DATA = {
     ["er_spring_in_the_sky_ladder_down__a_6"] = { area = "SpringintheSky" },
     ["er_spring_in_the_sky_ladder_up__c_1"] = { area = "SpringintheSkyTop" },
     ["er_tower_of_oannes_left_a_ladder_down__b_16"] = { area = "TowerOfOannesLeftA" },
-    ["er_tower_of_oannes_fish_slime_zero_escape__c_1"] = { area = "TowerOfOannesLeftC" },
+    ["er_tower_of_oannes_fish_slime_zero_escape__c_1"] = { area = "TowerOfOannesLeftCTop" },
     ["er_tower_of_oannes_left_a_bottom_gate__c_15"] = { area = "TowerOfOannesLeftA" },
     ["er_tower_of_oannes_left_a_top_gate__c_10"] = { area = "TowerOfOannesLeftATopGate" },
     ["er_tower_of_oannes_left_b_bottom_gate__c_9"] = { area = "TowerOfOannesLeftB" },
@@ -977,7 +985,7 @@ ER_ENTRANCE_DATA = {
     ["er_tower_of_oannes_left_c_top_gate__c_5"] = { area = "TowerOfOannesLeftC" },
     ["er_tower_of_oannes_right_entrance_gate__d_12"] = { area = "TowerOfOannesRightA" },
     ["er_tower_of_oannes_moving_tiles_escape__d_10"] = { area = "TowerOfOannesRightASlide" },
-    ["er_tower_of_oannes_dark_fish_crystal_escape__e_6"] = { area = "TowerOfOannesRightB" },
+    ["er_tower_of_oannes_dark_fish_crystal_escape__e_6"] = { area = "TowerOfOannesRightBCrystal" },
     ["er_bailey_left_gyonin_drop__b_1"] = { area = "BaileyBottom" },
     ["er_bailey_bottom_gate__a_11"] = { area = "BaileyBottom" },
     ["er_bailey_level_1_lower_gate__a_6"] = { area = "BaileyLevel1" },
@@ -1213,9 +1221,11 @@ ER_ENTRANCES_BY_AREA = {
         { code = "er_tower_of_oannes_left_b_top_gate__c_7", logic = "IsDead(Fish-Valusa Re-gyo-ded)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel2" },
     },
     ["TowerOfOannesLeftC"] = {
-        { code = "er_tower_of_oannes_fish_slime_zero_escape__c_1", logic = "IsDead(Fish-Valusa Re-gyo-ded) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
         { code = "er_tower_of_oannes_left_c_bottom_gate__c_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel2" },
         { code = "er_tower_of_oannes_left_c_top_gate__c_5", logic = "(Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and IsDead(Fish-Slime Zero)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyLevel3" },
+    },
+    ["TowerOfOannesLeftCTop"] = {
+        { code = "er_tower_of_oannes_fish_slime_zero_escape__c_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
     },
     ["TowerOfOannesRightA"] = {
         { code = "er_tower_of_oannes_right_entrance_gate__d_12", logic = "Has(Feather) or CanWarp", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyRight" },
@@ -1223,14 +1233,14 @@ ER_ENTRANCES_BY_AREA = {
     ["TowerOfOannesRightASlide"] = {
         { code = "er_tower_of_oannes_moving_tiles_escape__d_10", logic = "HorizontalAttack", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
     },
-    ["TowerOfOannesRightB"] = {
-        { code = "er_tower_of_oannes_dark_fish_crystal_escape__e_6", logic = "CanReach(BaileyRight)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
+    ["TowerOfOannesRightBCrystal"] = {
+        { code = "er_tower_of_oannes_dark_fish_crystal_escape__e_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
     },
     ["BaileyBottom"] = {
         { code = "er_bailey_bottom_gate__a_11", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftA" },
-        { code = "er_bailey_left_gyonin_drop__b_1", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftC" },
-        { code = "er_bailey_right_one_way_exit_slide__e_6", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesRightB" },
-        { code = "er_bailey_right_gyonin_drop__e_1", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesRightA" },
+        { code = "er_bailey_left_gyonin_drop__b_1", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftCTop" },
+        { code = "er_bailey_right_one_way_exit_slide__e_6", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesRightASlide" },
+        { code = "er_bailey_right_gyonin_drop__e_1", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesRightBCrystal" },
     },
     ["BaileyLevel1"] = {
         { code = "er_bailey_level_1_lower_gate__a_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftA" },

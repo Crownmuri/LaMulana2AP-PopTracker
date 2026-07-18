@@ -1134,7 +1134,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITSinmara) and (Has(Hand Scanner) and Has(Light Scythe))"
+                    "^$lm2_logic|CanReach(ITSinmara) and (Has(Hand Scanner) and (Has(Light Scythe) or Has(Claydoll Suit)))"
                 ],
                 "map_locations": [
                     {
