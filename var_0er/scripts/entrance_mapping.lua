@@ -120,6 +120,17 @@ ENTRANCE_SELECTED = nil
 -- which sees the (also-restored) pairing and treats it as an unpair click.
 ER_SUPPRESS_FRAMES = 0
 
+-- Pairings are created inside AddWatchForCode callbacks
+-- which run AFTER the logic pass that the triggering click already kicked off.
+-- So a hand-made pairing doesn't trigger until some an item changes state.
+-- Bumping a hidden consumable makes the edit look like a state change and
+-- forces a fresh evaluation over the new graph.
+function NotifyPairingsChanged()
+    if InvalidateReachCache then InvalidateReachCache() end
+    local nonce = Tracker:FindObjectForCode("er_logic_nonce")
+    if nonce then nonce.AcquiredCount = (nonce.AcquiredCount + 1) % 1000 end
+end
+
 -- --- Helper: Sync Soul Gate Costs ---
 function SyncSoulGateCosts(codeA, codeB)
     local costA = Tracker:FindObjectForCode("cost_" .. codeA)
@@ -191,6 +202,7 @@ function UnlinkEntrance(code)
     ER_PAIRINGS[code] = nil
     ER_PAIRINGS[paired] = nil
 
+    NotifyPairingsChanged()
     if UpdateEscapeRoute then UpdateEscapeRoute() end
 end
 
@@ -241,6 +253,7 @@ function EntranceClick(code)
     -- Reset selection
     ENTRANCE_SELECTED = nil
 
+    NotifyPairingsChanged()
     if UpdateEscapeRoute then UpdateEscapeRoute() end
 end
 
@@ -308,6 +321,8 @@ local function ApplyPairing(a, b)
 
     -- Sync costs during state restore
     SyncSoulGateCosts(a, b)
+
+    NotifyPairingsChanged()
 end
 
 local function SavePairingsFunc(self)
@@ -331,6 +346,7 @@ local function LoadPairingsFunc(self, data)
     SuppressClicks(SUPPRESS_RESTORE_FRAMES)
     ER_PAIRINGS = {}
     ER_VANILLA = {}
+    NotifyPairingsChanged()
     if type(data) ~= "table" or data.Name ~= self.Name then return end
     local pairs_list = data.Pairings
     if type(pairs_list) ~= "table" then return end
@@ -491,6 +507,7 @@ function ClearSpoiler()
     end
     ER_PAIRINGS = kept
 
+    NotifyPairingsChanged()
     if UpdateEscapeRoute then UpdateEscapeRoute() end
 end
 

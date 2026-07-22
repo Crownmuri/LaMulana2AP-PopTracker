@@ -1442,6 +1442,14 @@ function CanReach(area_name)
     return _reach_normal[id] == true
 end
 
+-- Drop the cached reachable sets. The "*" item watch below covers item state
+-- changes, but the entrance graph also moves when ER_PAIRINGS is edited, which
+-- is not an item change -- entrance_mapping.lua calls this after every pairing
+-- edit so the next CanReach re-floods over the new graph.
+function InvalidateReachCache()
+    _reach_valid = false
+end
+
 -- ============================================================
 -- Populate LOGIC_FUNCS
 -- ============================================================
