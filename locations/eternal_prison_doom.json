@@ -464,7 +464,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDTop) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(EPDTop) and ((OrbCount(3) or Has(Ice Cloak) or Has(Claydoll Suit)) and HorizontalAttack)"
                 ]
             },
             {
@@ -487,7 +487,7 @@
                     "setting_potsanity_caltrops"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDTop)"
+                    "^$lm2_logic|CanReach(EPDTop) and (OrbCount(3) or Has(Ice Cloak) or Has(Claydoll Suit))"
                 ]
             },
             {
@@ -594,7 +594,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDTop) and (Has(Hand Scanner) and Has(Feather) and HorizontalAttack)"
+                    "^$lm2_logic|CanReach(EPDTop) and ((OrbCount(3) or Has(Ice Cloak) or Has(Claydoll Suit)) and Has(Hand Scanner) and Has(Feather) and HorizontalAttack)"
                 ],
                 "map_locations": [
                     {

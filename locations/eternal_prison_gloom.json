@@ -194,7 +194,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(EPG) and (Has(Fairy Guild Pass) and Has(Freya's Pendant) and CanReach(Annwfn Right))"
+                            "^$lm2_logic|CanReach(EPG)"
                         ]
                     }
                 ]

@@ -2341,10 +2341,10 @@
                 ]
             },
             {
-                "name": "Spinning Platforms Right Weight Pot ",
+                "name": "Spinning Platforms Right Weight Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "@Takamagahara Shrine/Spinning Platforms Right Weight Pot /Pot"
+                    "@Takamagahara Shrine/Spinning Platforms Right Weight Pot/Pot"
                 ],
                 "visibility_rules": [
                     "setting_potsanity_low_value"

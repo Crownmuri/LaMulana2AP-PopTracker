@@ -344,7 +344,7 @@
         ]
     },
     {
-        "name": "Cursed: [DSLM C-6] Map Chest (S3)",
+        "name": "Cursed: [DSLM C-6] Map Chest (S2)",
         "type": "progressive",
         "allow_disabled": false,
         "loop": true,
@@ -1464,5 +1464,13 @@
                 "codes": "cursed_430035"
             }
         ]
+    },
+    {
+        "name": "ER Logic Nonce",
+        "type": "consumable",
+        "img": "images/uncursed.png",
+        "codes": "er_logic_nonce",
+        "max_quantity": 999,
+        "increment": 1
     }
 ]

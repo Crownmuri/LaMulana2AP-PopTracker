@@ -4,8 +4,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 2800,
+                "x": 440,
+                "y": 2400,
                 "size": 30
             },
             {
@@ -83,8 +83,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2780,
-                "y": 2800,
+                "x": 480,
+                "y": 2400,
                 "size": 30
             },
             {
@@ -122,8 +122,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 2800,
+                "x": 520,
+                "y": 2400,
                 "size": 30
             },
             {
@@ -171,8 +171,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 2850,
+                "x": 400,
+                "y": 2450,
                 "size": 30
             },
             {
@@ -260,8 +260,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 2850,
+                "x": 440,
+                "y": 2450,
                 "size": 30
             },
             {
@@ -309,8 +309,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 2850,
+                "x": 520,
+                "y": 2450,
                 "size": 30
             },
             {
@@ -368,8 +368,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 2900,
+                "x": 400,
+                "y": 2500,
                 "size": 30
             },
             {
@@ -457,8 +457,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 2900,
+                "x": 440,
+                "y": 2500,
                 "size": 30
             },
             {
@@ -536,8 +536,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 2900,
+                "x": 520,
+                "y": 2500,
                 "size": 30
             },
             {
@@ -575,8 +575,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 2950,
+                "x": 400,
+                "y": 2550,
                 "size": 30
             },
             {
@@ -644,8 +644,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 2950,
+                "x": 440,
+                "y": 2550,
                 "size": 30
             },
             {
@@ -703,8 +703,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 2950,
+                "x": 520,
+                "y": 2550,
                 "size": 30
             },
             {
@@ -792,8 +792,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3000,
+                "x": 400,
+                "y": 2600,
                 "size": 30
             },
             {
@@ -861,8 +861,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 3000,
+                "x": 440,
+                "y": 2600,
                 "size": 30
             },
             {
@@ -900,8 +900,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2780,
-                "y": 3000,
+                "x": 480,
+                "y": 2600,
                 "size": 30
             },
             {
@@ -949,8 +949,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 3000,
+                "x": 520,
+                "y": 2600,
                 "size": 30
             },
             {
@@ -1028,8 +1028,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3050,
+                "x": 400,
+                "y": 2650,
                 "size": 30
             },
             {
@@ -1097,8 +1097,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 3050,
+                "x": 440,
+                "y": 2650,
                 "size": 30
             },
             {
@@ -1136,8 +1136,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 3050,
+                "x": 520,
+                "y": 2650,
                 "size": 30
             },
             {
@@ -1215,8 +1215,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3100,
+                "x": 400,
+                "y": 2700,
                 "size": 30
             },
             {
@@ -1284,8 +1284,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 3100,
+                "x": 440,
+                "y": 2700,
                 "size": 30
             },
             {
@@ -1357,16 +1357,6 @@
                 ]
             },
             {
-                "name": "[SFG D-7] Glossary in Flame Torc Wall Above Spikes",
-                "item_count": 1,
-                "access_rules": [
-                    "@Shrine of the Frost Giants/[SFG D-7] Glossary in Flame Torc Wall Above Spikes/Glossary"
-                ],
-                "visibility_rules": [
-                    "setting_glossanity_freestanding"
-                ]
-            },
-            {
                 "name": "[SFG A-4] Glossary at Left Snow Drop",
                 "item_count": 1,
                 "access_rules": [
@@ -1383,8 +1373,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2780,
-                "y": 3100,
+                "x": 480,
+                "y": 2700,
                 "size": 30
             },
             {
@@ -1404,6 +1394,16 @@
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
+            },
+            {
+                "name": "[SFG D-7] Glossary in Flame Torc Wall Above Spikes (Scan)",
+                "item_count": 1,
+                "access_rules": [
+                    "@Shrine of the Frost Giants/[SFG D-7] Glossary in Flame Torc Wall Above Spikes (Scan)/Glossary"
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_scannable"
+                ]
             }
         ]
     },
@@ -1412,8 +1412,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 3100,
+                "x": 520,
+                "y": 2700,
                 "size": 30
             },
             {
@@ -1481,8 +1481,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3150,
+                "x": 400,
+                "y": 2750,
                 "size": 30
             },
             {
@@ -1540,8 +1540,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 3150,
+                "x": 440,
+                "y": 2750,
                 "size": 30
             },
             {
@@ -1579,8 +1579,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 3150,
+                "x": 520,
+                "y": 2750,
                 "size": 30
             },
             {
@@ -1668,8 +1668,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3200,
+                "x": 400,
+                "y": 2800,
                 "size": 30
             },
             {
@@ -1747,8 +1747,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 3200,
+                "x": 440,
+                "y": 2800,
                 "size": 30
             },
             {
@@ -1796,8 +1796,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2780,
-                "y": 3200,
+                "x": 480,
+                "y": 2800,
                 "size": 30
             },
             {
@@ -1825,8 +1825,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 3200,
+                "x": 520,
+                "y": 2800,
                 "size": 30
             },
             {
@@ -1894,8 +1894,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3250,
+                "x": 400,
+                "y": 2850,
                 "size": 30
             },
             {
@@ -1943,8 +1943,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 3250,
+                "x": 440,
+                "y": 2850,
                 "size": 30
             },
             {
@@ -1992,8 +1992,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2780,
-                "y": 3250,
+                "x": 480,
+                "y": 2850,
                 "size": 30
             },
             {
@@ -2031,8 +2031,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 3250,
+                "x": 520,
+                "y": 2850,
                 "size": 30
             },
             {
@@ -2100,8 +2100,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3300,
+                "x": 400,
+                "y": 2900,
                 "size": 30
             },
             {
@@ -2179,8 +2179,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 3300,
+                "x": 440,
+                "y": 2900,
                 "size": 30
             },
             {
@@ -2238,8 +2238,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2780,
-                "y": 3300,
+                "x": 480,
+                "y": 2900,
                 "size": 30
             },
             {
@@ -2267,8 +2267,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 3300,
+                "x": 520,
+                "y": 2900,
                 "size": 30
             },
             {
@@ -2336,8 +2336,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3350,
+                "x": 400,
+                "y": 2950,
                 "size": 30
             },
             {
@@ -2395,8 +2395,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 3350,
+                "x": 440,
+                "y": 2950,
                 "size": 30
             },
             {
@@ -2454,8 +2454,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2780,
-                "y": 3350,
+                "x": 480,
+                "y": 2950,
                 "size": 30
             },
             {
@@ -2493,8 +2493,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 3350,
+                "x": 520,
+                "y": 2950,
                 "size": 30
             },
             {
@@ -2572,8 +2572,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3400,
+                "x": 400,
+                "y": 3000,
                 "size": 30
             },
             {
@@ -2631,8 +2631,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 3400,
+                "x": 440,
+                "y": 3000,
                 "size": 30
             },
             {
@@ -2680,8 +2680,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2780,
-                "y": 3400,
+                "x": 480,
+                "y": 3000,
                 "size": 30
             },
             {
@@ -2709,8 +2709,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 3400,
+                "x": 520,
+                "y": 3000,
                 "size": 30
             },
             {
@@ -2778,8 +2778,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3450,
+                "x": 400,
+                "y": 3050,
                 "size": 30
             },
             {
@@ -2827,8 +2827,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 3450,
+                "x": 440,
+                "y": 3050,
                 "size": 30
             },
             {
@@ -2866,8 +2866,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2780,
-                "y": 3450,
+                "x": 480,
+                "y": 3050,
                 "size": 30
             },
             {
@@ -2975,8 +2975,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 3450,
+                "x": 520,
+                "y": 3050,
                 "size": 30
             },
             {
@@ -3034,8 +3034,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3500,
+                "x": 400,
+                "y": 3100,
                 "size": 30
             },
             {
@@ -3113,8 +3113,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2740,
-                "y": 3500,
+                "x": 440,
+                "y": 3100,
                 "size": 30
             },
             {
@@ -3162,8 +3162,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2780,
-                "y": 3500,
+                "x": 480,
+                "y": 3100,
                 "size": 30
             },
             {
@@ -3211,8 +3211,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2820,
-                "y": 3500,
+                "x": 520,
+                "y": 3100,
                 "size": 30
             },
             {
@@ -3310,8 +3310,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2700,
-                "y": 3550,
+                "x": 400,
+                "y": 3150,
                 "size": 30
             },
             {
@@ -3399,8 +3399,8 @@
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 2780,
-                "y": 3550,
+                "x": 480,
+                "y": 3150,
                 "size": 30
             },
             {

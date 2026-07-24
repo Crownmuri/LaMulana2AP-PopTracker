@@ -1066,7 +1066,7 @@
                 ]
             },
             {
-                "name": "[SFG D-7] Glossary in Flame Torc Wall Above Spikes",
+                "name": "[SFG D-7] Glossary in Flame Torc Wall Above Spikes (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1074,10 +1074,10 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_freestanding"
+                    "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGGrail) and ((Has(Origin Sigil) or (PuzzleFinished(Bergelmir) and (IsDead(Fenrir) or CanStopTime))) and Has(Flame Torc) and Has(Feather))"
+                    "^$lm2_logic|CanReach(SotFGGrail) and ((Has(Origin Sigil) or (PuzzleFinished(Bergelmir) and (IsDead(Fenrir) or CanStopTime))) and Has(Flame Torc) and Has(Feather) and Has(Hand Scanner))"
                 ],
                 "map_locations": [
                     {
@@ -1274,7 +1274,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SotFGBloodTez) and ((Has(Feather) or CanWarp) and IsDead(Tezcatlipoca))"
+                    "^$lm2_logic|CanReach(SotFGBloodTez) and (CanWarp and IsDead(Tezcatlipoca))"
                 ],
                 "map_locations": [
                     {

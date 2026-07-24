@@ -1027,7 +1027,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Anchor) or Has(Fish Suit))))"
+                    "^$lm2_logic|CanReach(ITRight) and ((Has(Feather) and HorizontalAttack) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Anchor) or Has(Fish Suit))))"
                 ]
             },
             {
@@ -1073,7 +1073,7 @@
                     "setting_potsanity_chakram"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
+                    "^$lm2_logic|CanReach(ITRight) and ((Has(Feather) and HorizontalAttack) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
                 ]
             },
             {
@@ -1096,7 +1096,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
+                    "^$lm2_logic|CanReach(ITRight) and ((Has(Feather) and HorizontalAttack) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))"
                 ]
             },
             {
@@ -1249,7 +1249,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and (Has(Feather) or (Has(Grapple Claw) and CanReach(ITEntrance)))"
+                    "^$lm2_logic|CanReach(ITRight) and (Has(Life Sigil))"
                 ],
                 "map_locations": [
                     {
@@ -1272,7 +1272,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and (Has(Life Sigil))"
+                    "^$lm2_logic|CanReach(ITRight) and (Has(Feather) or (Has(Grapple Claw) and CanReach(ITEntrance)))"
                 ],
                 "map_locations": [
                     {

@@ -269,7 +269,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(AnnwfnRight) and (True)) or (CanReach(IBMoon) and (True)))"
+                    "^$lm2_logic|((CanReach(AnnwfnRight) and (True)) or (CanReach(IBMoon) and (Has(Life Sigil) and HorizontalAttack)))"
                 ]
             },
             {
@@ -1727,7 +1727,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(EPG) and (True)) or (CanReach(EPDMain) and (True)) or (CanReach(EPDTop) and (True)))"
+                    "^$lm2_logic|((CanReach(EPG) and (True)))"
                 ]
             },
             {
@@ -1781,7 +1781,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(EPG) and (True)))"
+                    "^$lm2_logic|((CanReach(EPG) and (True)) or (CanReach(EPDMain) and (True)) or (CanReach(EPDTop) and (True)))"
                 ]
             },
             {
@@ -2122,7 +2122,7 @@
                     "setting_glossanity_enemy,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TowerOfOannesLeftB) and (HorizontalAttack and Has(Feather))) or (CanReach(TowerOfOannesRightB) and (HorizontalAttack and Has(Feather))))"
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftB) and (HorizontalAttack)) or (CanReach(TowerOfOannesRightB) and (HorizontalAttack)))"
                 ]
             },
             {
@@ -2144,7 +2144,7 @@
                     "setting_glossanity_enemy,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (Has(Feather))) or (CanReach(TowerOfOannesLeftC) and (Has(Feather) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))))) or (CanReach(TowerOfOannesRightB) and (Has(Feather))))"
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (True)) or (CanReach(TowerOfOannesLeftCTop) and (True)) or (CanReach(TowerOfOannesRightB) and (True)))"
                 ]
             },
             {
@@ -2166,7 +2166,7 @@
                     "setting_glossanity_enemy,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (Has(Feather))) or (CanReach(TowerOfOannesLeftC) and (Has(Feather) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))))))"
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (True)) or (CanReach(TowerOfOannesLeftCTop) and (True)))"
                 ]
             },
             {
@@ -2188,7 +2188,7 @@
                     "setting_glossanity_enemy,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (CanReach(TowerOfOannesLeftB) and Has(Feather) and HorizontalAttack and CanUse(Flare Gun))) or (CanReach(TowerOfOannesRightA) and (Has(Feather))) or (CanReach(TowerOfOannesRightB) and (Has(Feather))))"
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (CanReach(TowerOfOannesLeftB) and Has(Feather) and HorizontalAttack and CanUse(Flare Gun))) or (CanReach(TowerOfOannesRightA) and (True)) or (CanReach(TowerOfOannesRightB) and (True)))"
                 ]
             },
             {
@@ -2210,7 +2210,7 @@
                     "setting_glossanity_enemy,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TowerOfOannesRightB) and (Has(Feather))))"
+                    "^$lm2_logic|((CanReach(TowerOfOannesRightB) and (True)))"
                 ]
             },
             {
@@ -2232,7 +2232,7 @@
                     "setting_glossanity_enemy,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))) or (CanReach(TowerOfOannesLeftC) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))))"
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and ((MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))) or (CanReach(TowerOfOannesLeftC) and ((MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))))"
                 ]
             }
         ]

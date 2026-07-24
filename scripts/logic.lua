@@ -634,7 +634,7 @@ local EVENT_LOGIC = {
     ["ratatoskr_4"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3) and (((Has(Chain Whip) or Has(Axe)) and OrbCount(7)) or ((Has(Flail Whip) or Has(Katana)) and OrbCount(6)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(5)))",
 
     -- Tower of Oannes
-    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))) and OrbCount(2)",
+    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))) and OrbCount(2)",
     ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftCTop) and IsDead(Fish-Valusa Re-gyo-ded) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and OrbCount(2)",
     ["evil_fish_crystal"] = "CanReach(TowerOfOannesRightBCrystal) and CanReach(BaileyRight) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Leather Whip) or Has(Axe) or ((Has(Knife) or Has(Rapier)) and Has(Spaulder)))",
     ["fish-gear_mk-2_turbor"] = "CanReach(TowerOfOannesRightB) and IsDead(Evil Fish Crystal) and Has(Rebirth Sigil) and CanReach(TowerOfOannesLeftA) and (Has(Gale Fibula) or CanStopTime) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Grapple Claw) and Has(Feather) and CanWarp and Has(Flail Whip) and OrbCount(10)",
@@ -809,7 +809,7 @@ FORWARD_EXITS = {
     ["DSLMPyramid"] = {{"Nibiru", "Has(Pyramid Crystal) and Has(Destiny Tablet) and CanChant(Heaven) and CanChant(Moon) and CanChant(Fire) and CanChant(Sea) and CanChant(Sun)"}},
     ["DSLMTop"] = {{"DSLMMain", "Has(Feather) or CanWarp"}, {"ValhallaMain", "CanWarp or CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["EPDEntrance"] = {{"EPDMain", "True"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}},
-    ["EPDMain"] = {{"EPDEntrance", "IsDead(Hraesvelgr) and Has(Feather)"}, {"EPDTop", "Has(Feather) and Has(Glove)"}, {"EPG", "Has(Grapple Claw) and (Has(Gale Fibula) or CanStopTime) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1) and Has(Anchor)))"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
+    ["EPDMain"] = {{"EPDEntrance", "IsDead(Hraesvelgr) and Has(Feather)"}, {"EPDTop", "Has(Feather) and Has(Grapple Claw)"}, {"EPG", "Has(Grapple Claw) and (Has(Gale Fibula) or CanStopTime) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1) and Has(Anchor)))"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["EPDTop"] = {{"EPDHel", "((IsDead(Vidofnir) and GuardianKills(5)) or Setting(Random Soul Gates)) and IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Glove) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"}},
     ["EPG"] = {{"EPDMain", "(Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1)) or Has(Grapple Claw)) and Has(Feather)"}, {"EPDTop", "Has(Death Sigil) and (Has(Feather) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp))"}, {"ITVidofnir", "GuardianKills(5) or Setting(Random Soul Gates)"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["EndlessCorridor"] = {{"MausoleumofGiantsRubble", "True"}},
@@ -886,11 +886,11 @@ FORWARD_EXITS = {
     -- SpringintheSky (Feather-gated both ways, no DLC locations there).
     -- =================================================================
     ["SpringintheSky"] = {{"GateofGuidance", "True"}, {"TowerOfOannesLeftA", "Has(Feather) and Has(Rebirth Sigil)"}},
-    ["TowerOfOannesLeftA"] = {{"SpringintheSky", "True"}, {"BaileyBottom", "True"}, {"TowerOfOannesLeftATopGate", "Has(Feather)"}},
+    ["TowerOfOannesLeftA"] = {{"SpringintheSky", "CanWarp or Has(Feather)"}, {"BaileyBottom", "True"}, {"TowerOfOannesLeftATopGate", "Has(Feather)"}},
     ["TowerOfOannesLeftATopGate"] = {{"BaileyLevel1", "True"}, {"TowerOfOannesLeftA", "CanWarp or Has(Feather)"}},
     ["TowerOfOannesLeftB"] = {{"BaileyLevel1", "True"}, {"TowerOfOannesLeftBTopGate", "Has(Feather)"}},
     ["TowerOfOannesLeftBTopGate"] = {{"BaileyLevel2", "IsDead(Fish-Valusa Re-gyo-ded)"}, {"TowerOfOannesLeftB", "CanWarp or IsDead(Fish-Valusa Re-gyo-ded)"}},
-    ["TowerOfOannesLeftC"] = {{"BaileyLevel2", "True"}, {"BaileyLevel3", "IsDead(Fish-Slime Zero) and (Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))"}, {"TowerOfOannesLeftCTop", "Has(Flail Whip) or (Has(Chain Whip) and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))"}},
+    ["TowerOfOannesLeftC"] = {{"BaileyLevel2", "True"}, {"BaileyLevel3", "IsDead(Fish-Slime Zero) and (MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))"}, {"TowerOfOannesLeftCTop", "MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))"}},
     ["TowerOfOannesLeftCTop"] = {{"BaileyBottom", "True"}, {"TowerOfOannesLeftC", "Has(Feather)"}},
     ["TowerOfOannesRightA"] = {{"BaileyRight", "Has(Feather) or CanWarp"}, {"TowerOfOannesRightASlide", "Has(Feather) and CanWarp"}, {"TowerOfOannesRightB", "Has(Feather) and CanWarp"}},
     ["TowerOfOannesRightASlide"] = {{"BaileyBottom", "HorizontalAttack"}, {"TowerOfOannesRightA", "CanWarp"}},

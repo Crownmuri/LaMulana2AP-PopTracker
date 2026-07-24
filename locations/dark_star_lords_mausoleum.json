@@ -285,7 +285,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(DSLMMain)"
+                            "^$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
                         ]
                     }
                 ]
@@ -651,7 +651,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and (Has(Grapple Claw) or Has(Feather)))"
+                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and (CanReach(DSLMTop) or Has(Grapple Claw) or Has(Feather)))"
                 ]
             },
             {
@@ -674,7 +674,7 @@
                     "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and ((HorizontalAttack and (Has(Grapple Claw) or Has(Feather))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                    "^$lm2_logic|CanReach(DSLMMain) and ((HorizontalAttack and (CanReach(DSLMTop) or Has(Grapple Claw) or Has(Feather))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
                 ]
             },
             {
@@ -1057,7 +1057,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and ((MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Bomb)))"
+                    "^$lm2_logic|CanReach(DSLMMain) and ((MeleeAttack or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) or (TrickyLogic and HorizontalAttack))"
                 ],
                 "map_locations": [
                     {
@@ -1092,7 +1092,7 @@
                 ]
             },
             {
-                "name": "Ra",
+                "name": "[DSLM C-6] Glossary after Aten-Ra Defeated",
                 "map_locations": [
                     {
                         "map": "Dark Star Lords Mausoleum",
@@ -1103,25 +1103,15 @@
                 ],
                 "sections": [
                     {
-                        "name": "[DSLM C-6] NPC Glossary (Ra)",
-                        "item_count": 1,
-                        "visibility_rules": [
-                            "setting_glossanity_npc"
-                        ],
-                        "access_rules": [
-                            "^$lm2_logic|CanReach(DSLMMain) and (PuzzleFinished(White Pedestals))"
-                        ]
-                    },
-                    {
-                        "name": "[DSLM C-6] Glossary after Aten-Ra Defeated",
-                        "item_count": 1,
-                        "visibility_rules": [
-                            "setting_glossanity_freestanding"
-                        ],
-                        "access_rules": [
-                            "^$lm2_logic|CanReach(DSLMMain) and (IsDead(Aten Ra))"
-                        ]
+                        "name": "Glossary",
+                        "item_count": 1
                     }
+                ],
+                "visibility_rules": [
+                    "setting_glossanity_freestanding"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DSLMMain) and (IsDead(Aten Ra))"
                 ]
             },
             {

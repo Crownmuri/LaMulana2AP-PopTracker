@@ -394,7 +394,7 @@
                 ]
             },
             {
-                "name": "Spinning Platforms Right Weight Pot ",
+                "name": "Spinning Platforms Right Weight Pot",
                 "map_locations": [
                     {
                         "map": "Takamagahara Shrine",
@@ -911,7 +911,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain) and (CanUse(Flare Gun))"
+                    "^$lm2_logic|CanReach(TSMain) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))))"
                 ],
                 "map_locations": [
                     {
@@ -957,7 +957,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSMain) and (Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))"
+                    "^$lm2_logic|(CanReach(TSEntrance) and (Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))) or (CanReach(TSMain) and Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (Has(Katana) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack))"
                 ],
                 "map_locations": [
                     {

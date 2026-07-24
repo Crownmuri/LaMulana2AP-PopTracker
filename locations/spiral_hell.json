@@ -47,7 +47,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SpiralHell)"
+                    "^$lm2_logic|CanReach(SpiralHell) and IsDead(Ninth Child)"
                 ],
                 "map_locations": [
                     {
