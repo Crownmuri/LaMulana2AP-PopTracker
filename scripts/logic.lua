@@ -809,7 +809,7 @@ FORWARD_EXITS = {
     ["DSLMPyramid"] = {{"Nibiru", "Has(Pyramid Crystal) and Has(Destiny Tablet) and CanChant(Heaven) and CanChant(Moon) and CanChant(Fire) and CanChant(Sea) and CanChant(Sun)"}},
     ["DSLMTop"] = {{"DSLMMain", "Has(Feather) or CanWarp"}, {"ValhallaMain", "CanWarp or CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["EPDEntrance"] = {{"EPDMain", "True"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}},
-    ["EPDMain"] = {{"EPDEntrance", "IsDead(Hraesvelgr) and Has(Feather)"}, {"EPDTop", "Has(Feather) and Has(Glove)"}, {"EPG", "Has(Grapple Claw) and (Has(Gale Fibula) or CanStopTime) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1) and Has(Anchor)))"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
+    ["EPDMain"] = {{"EPDEntrance", "IsDead(Hraesvelgr) and Has(Feather)"}, {"EPDTop", "Has(Feather) and Has(Grapple Claw)"}, {"EPG", "Has(Grapple Claw) and (Has(Gale Fibula) or CanStopTime) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1) and Has(Anchor)))"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["EPDTop"] = {{"EPDHel", "((IsDead(Vidofnir) and GuardianKills(5)) or Setting(Random Soul Gates)) and IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Glove) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"}},
     ["EPG"] = {{"EPDMain", "(Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1)) or Has(Grapple Claw)) and Has(Feather)"}, {"EPDTop", "Has(Death Sigil) and (Has(Feather) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp))"}, {"ITVidofnir", "GuardianKills(5) or Setting(Random Soul Gates)"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["EndlessCorridor"] = {{"MausoleumofGiantsRubble", "True"}},
@@ -886,7 +886,7 @@ FORWARD_EXITS = {
     -- SpringintheSky (Feather-gated both ways, no DLC locations there).
     -- =================================================================
     ["SpringintheSky"] = {{"GateofGuidance", "True"}, {"TowerOfOannesLeftA", "Has(Feather) and Has(Rebirth Sigil)"}},
-    ["TowerOfOannesLeftA"] = {{"SpringintheSky", "True"}, {"BaileyBottom", "True"}, {"TowerOfOannesLeftATopGate", "Has(Feather)"}},
+    ["TowerOfOannesLeftA"] = {{"SpringintheSky", "CanWarp or Has(Feather)"}, {"BaileyBottom", "True"}, {"TowerOfOannesLeftATopGate", "Has(Feather)"}},
     ["TowerOfOannesLeftATopGate"] = {{"BaileyLevel1", "True"}, {"TowerOfOannesLeftA", "CanWarp or Has(Feather)"}},
     ["TowerOfOannesLeftB"] = {{"BaileyLevel1", "True"}, {"TowerOfOannesLeftBTopGate", "Has(Feather)"}},
     ["TowerOfOannesLeftBTopGate"] = {{"BaileyLevel2", "IsDead(Fish-Valusa Re-gyo-ded)"}, {"TowerOfOannesLeftB", "CanWarp or IsDead(Fish-Valusa Re-gyo-ded)"}},

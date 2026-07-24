@@ -944,7 +944,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Hand Scanner) and (Has(Feather) or (IsDead(Ki sikil lil la ke) and (CanUse(Flare Gun) or CanUse(Bomb) or CanUse(Earth Spear)))))"
+                    "^$lm2_logic|CanReach(ACBottom) and (Has(Hand Scanner) and (Has(Feather) or (IsDead(Ki sikil lil la ke) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear)))))))"
                 ],
                 "map_locations": [
                     {

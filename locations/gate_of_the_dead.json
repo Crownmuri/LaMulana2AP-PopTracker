@@ -883,18 +883,29 @@
                 ]
             },
             {
-                "name": "[GOTD E-5] NPC Glossary (Horus)",
+                "name": "Horus",
                 "sections": [
+
                     {
-                        "name": "Glossary",
-                        "item_count": 1
+                        "name": "[GOTD E-5] NPC Glossary (Horus)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(GotD)"
+                        ]
+                    },
+                    {
+                        "name": "[DSLM C-6] NPC Glossary (Ra)",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_glossanity_npc"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(DSLMMain) and (PuzzleFinished(White Pedestals))"
+                        ]
                     }
-                ],
-                "visibility_rules": [
-                    "setting_glossanity_npc"
-                ],
-                "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
                 ],
                 "map_locations": [
                     {

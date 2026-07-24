@@ -863,7 +863,7 @@
                     "setting_potsanity_high_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnRight) and ((MeleeAttack or CanUse(Earth Spear) or Has(Claydoll Suit)) and (Has(Feather) or IsDead(Ixtab)))"
+                    "^$lm2_logic|CanReach(AnnwfnRight) and ((MeleeAttack or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Claydoll Suit)) and (Has(Feather) or IsDead(Ixtab)))"
                 ]
             },
             {
@@ -901,7 +901,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain) and (CanUse(Rolling Shuriken))"
+                    "^$lm2_logic|CanReach(AnnwfnMain) and ((CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))))"
                 ],
                 "map_locations": [
                     {
@@ -970,7 +970,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnRight) and (MeleeAttack)"
+                    "^$lm2_logic|CanReach(AnnwfnRight) and (MeleeAttack or (TrickyLogic and HorizontalAttack))"
                 ],
                 "map_locations": [
                     {
