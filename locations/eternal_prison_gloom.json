@@ -188,7 +188,7 @@
                         ]
                     },
                     {
-                        "name": "[EPG D-6] NPC Glossary (Fairy Guild Corporal)",
+                        "name": "NPC Glossary (Fairy Guild Corporal)",
                         "item_count": 1,
                         "visibility_rules": [
                             "setting_glossanity_npc"
@@ -324,7 +324,7 @@
                 ]
             },
             {
-                "name": "Weapon Vault Item Pot #2",
+                "name": "Weapon Vault Lower Item Pot",
                 "map_locations": [
                     {
                         "map": "Eternal Prison - Gloom",
@@ -343,11 +343,11 @@
                     "setting_potsanity_bomb"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle))"
+                    "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle) and HorizontalAttack)"
                 ]
             },
             {
-                "name": "Weapon Vault Item Pot #1",
+                "name": "Weapon Vault Upper Item Pot",
                 "map_locations": [
                     {
                         "map": "Eternal Prison - Gloom",
@@ -366,11 +366,11 @@
                     "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle) and HorizontalAttack)"
+                    "^$lm2_logic|CanReach(EPG) and (PuzzleFinished(Garm Statue Puzzle))"
                 ]
             },
             {
-                "name": "Software Mural Item Pot #2",
+                "name": "Software Mural Left Item Pot",
                 "map_locations": [
                     {
                         "map": "Eternal Prison - Gloom",
@@ -393,7 +393,7 @@
                 ]
             },
             {
-                "name": "Software Mural Item Pot #1",
+                "name": "Software Mural Right Item Pot",
                 "map_locations": [
                     {
                         "map": "Eternal Prison - Gloom",
@@ -692,7 +692,7 @@
                 ]
             },
             {
-                "name": "[EPG F-2] NPC Glossary (Ereshkigal)",
+                "name": "NPC Glossary (Ereshkigal)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -715,7 +715,7 @@
                 ]
             },
             {
-                "name": "[EPG B-5] NPC Glossary (Hades)",
+                "name": "NPC Glossary (Hades)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -738,7 +738,7 @@
                 ]
             },
             {
-                "name": "[EPG D-2] Glossary Past The River Styx",
+                "name": "Glossary Past The River Styx",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -761,7 +761,7 @@
                 ]
             },
             {
-                "name": "[EPG D-5] NPC Glossary (Eurydice)",
+                "name": "NPC Glossary (Eurydice)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -784,7 +784,7 @@
                 ]
             },
             {
-                "name": "[EPG C-7] NPC Glossary (Izanami)",
+                "name": "NPC Glossary (Izanami)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -807,7 +807,7 @@
                 ]
             },
             {
-                "name": "[EPG F-3] Glossary After Talking to Sakit",
+                "name": "Glossary After Talking to Sakit",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -830,7 +830,7 @@
                 ]
             },
             {
-                "name": "[EPG C-7] Glossary in Izanami's Pillar (Scan)",
+                "name": "Glossary in Izanami's Pillar (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",

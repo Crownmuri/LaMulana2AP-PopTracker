@@ -17,60 +17,60 @@
         ],
         "sections": [
             {
-                "name": "[GOG D-2] Glossary Above Children",
+                "name": "Glossary Above Children",
                 "item_count": 1,
                 "access_rules": [
-                    "@La-Mulana/[GOG D-2] Glossary Above Children/Glossary"
+                    "@La-Mulana/Glossary Above Children/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[GOG E-2] Glossary at Spring in the Sky Entrance",
+                "name": "Glossary at Spring in the Sky Entrance",
                 "item_count": 1,
                 "access_rules": [
-                    "@La-Mulana/[GOG E-2] Glossary at Spring in the Sky Entrance/Glossary"
+                    "@La-Mulana/Glossary at Spring in the Sky Entrance/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[GOG A-3] Glossary Below Gate of Illusion Door",
+                "name": "Glossary Below Gate of Illusion Door",
                 "item_count": 1,
                 "access_rules": [
-                    "@La-Mulana/[GOG A-3] Glossary Below Gate of Illusion Door/Glossary"
+                    "@La-Mulana/Glossary Below Gate of Illusion Door/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[MOG C-3] Glossary Behind Pot",
+                "name": "Glossary Behind Pot",
                 "item_count": 1,
                 "access_rules": [
-                    "@La-Mulana/[MOG C-3] Glossary Behind Pot/Glossary"
+                    "@La-Mulana/Glossary Behind Pot/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[IC B-1] Glossary Next to Spikes",
+                "name": "Glossary Next to Spikes",
                 "item_count": 1,
                 "access_rules": [
-                    "@La-Mulana/[IC B-1] Glossary Next to Spikes/Glossary"
+                    "@La-Mulana/Glossary Next to Spikes/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[GOI C-1] Glossary Next to Child's Statue",
+                "name": "Glossary Next to Child's Statue",
                 "item_count": 1,
                 "access_rules": [
-                    "@La-Mulana/[GOI C-1] Glossary Next to Child's Statue/Glossary"
+                    "@La-Mulana/Glossary Next to Child's Statue/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -96,20 +96,20 @@
         ],
         "sections": [
             {
-                "name": "[VOD C-4] Glossary Above Hot Spring (Scan)",
+                "name": "Glossary Above Hot Spring (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@La-Mulana/[VOD C-4] Glossary Above Hot Spring (Scan)/Glossary"
+                    "@La-Mulana/Glossary Above Hot Spring (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[EC B-1] Glossary Behind Rubble (Scan)",
+                "name": "Glossary Behind Rubble (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@La-Mulana/[EC B-1] Glossary Behind Rubble (Scan)/Glossary"
+                    "@La-Mulana/Glossary Behind Rubble (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
@@ -135,7 +135,7 @@
         ],
         "sections": [
             {
-                "name": "[VOD E-4] NPC Glossary (Sidro)",
+                "name": "NPC Glossary (Sidro)",
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Sidro/NPC Glossary (Sidro)"
@@ -145,7 +145,7 @@
                 ]
             },
             {
-                "name": "[VOD E-4] NPC Glossary (Modro)",
+                "name": "NPC Glossary (Modro)",
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Modro/NPC Glossary (Modro)"
@@ -155,7 +155,7 @@
                 ]
             },
             {
-                "name": "[GOG B-4] NPC Glossary (Hiner)",
+                "name": "NPC Glossary (Hiner)",
                 "item_count": 1,
                 "access_rules": [
                     "@La-Mulana/Hiner/NPC Glossary (Hiner)"
@@ -273,30 +273,30 @@
         ],
         "sections": [
             {
-                "name": "[ROY C-5] Glossary in Wall Above Korobock",
+                "name": "Glossary in Wall Above Korobock",
                 "item_count": 1,
                 "access_rules": [
-                    "@Roots of Yggdrasil/[ROY C-5] Glossary in Wall Above Korobock/Glossary"
+                    "@Roots of Yggdrasil/Glossary in Wall Above Korobock/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[ROY E-5] Glossary in Torch Room Wall",
+                "name": "Glossary in Torch Room Wall",
                 "item_count": 1,
                 "access_rules": [
-                    "@Roots of Yggdrasil/[ROY E-5] Glossary in Torch Room Wall/Glossary"
+                    "@Roots of Yggdrasil/Glossary in Torch Room Wall/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[ROY C-4] Glossary in Opened Wall",
+                "name": "Glossary in Opened Wall",
                 "item_count": 1,
                 "access_rules": [
-                    "@Roots of Yggdrasil/[ROY C-4] Glossary in Opened Wall/Glossary"
+                    "@Roots of Yggdrasil/Glossary in Opened Wall/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -322,37 +322,37 @@
         ],
         "sections": [
             {
-                "name": "[ROY B-3] NPC Glossary (Sigyn)",
+                "name": "NPC Glossary (Sigyn)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Roots of Yggdrasil/[ROY B-3] NPC Glossary (Sigyn)/Glossary"
+                    "@Roots of Yggdrasil/NPC Glossary (Sigyn)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[ROY E-4] NPC Glossary (Vili)",
+                "name": "NPC Glossary (Vili)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Roots of Yggdrasil/[ROY E-4] NPC Glossary (Vili)/Glossary"
+                    "@Roots of Yggdrasil/NPC Glossary (Vili)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[ROY E-6] NPC Glossary (Ve)",
+                "name": "NPC Glossary (Ve)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Roots of Yggdrasil/[ROY E-6] NPC Glossary (Ve)/Glossary"
+                    "@Roots of Yggdrasil/NPC Glossary (Ve)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[ROY C-5] NPC Glossary (Korobock)",
+                "name": "NPC Glossary (Korobock)",
                 "item_count": 1,
                 "access_rules": [
                     "@Roots of Yggdrasil/Korobock/NPC Glossary (Korobock)"
@@ -470,60 +470,60 @@
         ],
         "sections": [
             {
-                "name": "[ANN F-2] Fish Glossary (Nijimasu)",
+                "name": "Fish Glossary (Nijimasu)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Annwfn/[ANN F-2] Fish Glossary (Nijimasu)/Glossary"
+                    "@Annwfn/Fish Glossary (Nijimasu)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding,setting_oannesanity"
                 ]
             },
             {
-                "name": "[ANN D-1] Glossary in Kaliya's Room",
+                "name": "Glossary in Kaliya's Room",
                 "item_count": 1,
                 "access_rules": [
-                    "@Annwfn/[ANN D-1] Glossary in Kaliya's Room/Glossary"
+                    "@Annwfn/Glossary in Kaliya's Room/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[ANN D-5] Glossary Behind Skull Underwater",
+                "name": "Glossary Behind Skull Underwater",
                 "item_count": 1,
                 "access_rules": [
-                    "@Annwfn/[ANN D-5] Glossary Behind Skull Underwater/Glossary"
+                    "@Annwfn/Glossary Behind Skull Underwater/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[ANN B-5] Glossary in Top-Right Breakable Wall",
+                "name": "Glossary in Top-Right Breakable Wall",
                 "item_count": 1,
                 "access_rules": [
-                    "@Annwfn/[ANN B-5] Glossary in Top-Right Breakable Wall/Glossary"
+                    "@Annwfn/Glossary in Top-Right Breakable Wall/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[ANN F-2] Glossary in Bottom-Left Wall Past Kujata",
+                "name": "Glossary in Bottom-Left Wall Past Kujata",
                 "item_count": 1,
                 "access_rules": [
-                    "@Annwfn/[ANN F-2] Glossary in Bottom-Left Wall Past Kujata/Glossary"
+                    "@Annwfn/Glossary in Bottom-Left Wall Past Kujata/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[ANN C-2] Glossary in Wall Approaching Frey",
+                "name": "Glossary in Wall Approaching Frey",
                 "item_count": 1,
                 "access_rules": [
-                    "@Annwfn/[ANN C-2] Glossary in Wall Approaching Frey/Glossary"
+                    "@Annwfn/Glossary in Wall Approaching Frey/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -549,17 +549,17 @@
         ],
         "sections": [
             {
-                "name": "[ANN D-4] NPC Glossary (Voluspa)",
+                "name": "NPC Glossary (Voluspa)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Annwfn/[ANN D-4] NPC Glossary (Voluspa)/Glossary"
+                    "@Annwfn/NPC Glossary (Voluspa)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[ANN D-1] NPC Glossary (Pym)",
+                "name": "NPC Glossary (Pym)",
                 "item_count": 1,
                 "access_rules": [
                     "@Annwfn/Pym/NPC Glossary (Pym)"
@@ -657,40 +657,40 @@
         ],
         "sections": [
             {
-                "name": "[IB G-1] Glossary Post Cetus Water Passage",
+                "name": "Glossary Post Cetus Water Passage",
                 "item_count": 1,
                 "access_rules": [
-                    "@Immortal Battlefield/[IB G-1] Glossary Post Cetus Water Passage/Glossary"
+                    "@Immortal Battlefield/Glossary Post Cetus Water Passage/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[IB B-6] Glossary at Left-side Long Ladder",
+                "name": "Glossary at Left-side Long Ladder",
                 "item_count": 1,
                 "access_rules": [
-                    "@Immortal Battlefield/[IB B-6] Glossary at Left-side Long Ladder/Glossary"
+                    "@Immortal Battlefield/Glossary at Left-side Long Ladder/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[IB H-7] Glossary in the Buried Fortress",
+                "name": "Glossary in the Buried Fortress",
                 "item_count": 1,
                 "access_rules": [
-                    "@Immortal Battlefield/[IB H-7] Glossary in the Buried Fortress/Glossary"
+                    "@Immortal Battlefield/Glossary in the Buried Fortress/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[ALTAR] Glossary on Left Platform",
+                "name": "Glossary on Left Platform",
                 "item_count": 1,
                 "access_rules": [
-                    "@Altar/[ALTAR] Glossary on Left Platform/Glossary"
+                    "@Altar/Glossary on Left Platform/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -716,47 +716,47 @@
         ],
         "sections": [
             {
-                "name": "[IB B-2] NPC Glossary (Kubera)",
+                "name": "NPC Glossary (Kubera)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Immortal Battlefield/[IB B-2] NPC Glossary (Kubera)/Glossary"
+                    "@Immortal Battlefield/NPC Glossary (Kubera)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[IB F-2] NPC Glossary (Soma)",
+                "name": "NPC Glossary (Soma)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Immortal Battlefield/[IB F-2] NPC Glossary (Soma)/Glossary"
+                    "@Immortal Battlefield/NPC Glossary (Soma)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[IB E-6] NPC Glossary (Yama)",
+                "name": "NPC Glossary (Yama)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Immortal Battlefield/[IB E-6] NPC Glossary (Yama)/Glossary"
+                    "@Immortal Battlefield/NPC Glossary (Yama)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[IB G-7] NPC Glossary (Alviss)",
+                "name": "NPC Glossary (Alviss)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Immortal Battlefield/[IB G-7] NPC Glossary (Alviss)/Glossary"
+                    "@Immortal Battlefield/NPC Glossary (Alviss)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[IB E-1] NPC Glossary (Peibalusa)",
+                "name": "NPC Glossary (Peibalusa)",
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Peibalusa/NPC Glossary (Peibalusa)"
@@ -766,7 +766,7 @@
                 ]
             },
             {
-                "name": "[IB G-6] NPC Glossary (Hiro Roderick)",
+                "name": "NPC Glossary (Hiro Roderick)",
                 "item_count": 1,
                 "access_rules": [
                     "@Immortal Battlefield/Hiro Roderick/NPC Glossary (Hiro Roderick)"
@@ -776,10 +776,10 @@
                 ]
             },
             {
-                "name": "[IB G-4] NPC Glossary (Haja)",
+                "name": "NPC Glossary (Haja)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Immortal Battlefield/[IB G-4] NPC Glossary (Haja)/Glossary"
+                    "@Immortal Battlefield/NPC Glossary (Haja)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
@@ -874,20 +874,20 @@
         ],
         "sections": [
             {
-                "name": "[IT F-4] Fish Glossary (Sanma)",
+                "name": "Fish Glossary (Sanma)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Icefire Treetop/[IT F-4] Fish Glossary (Sanma)/Glossary"
+                    "@Icefire Treetop/Fish Glossary (Sanma)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding,setting_oannesanity"
                 ]
             },
             {
-                "name": "[IT B-1] Glossary in Left Breakable Floor",
+                "name": "Glossary in Left Breakable Floor",
                 "item_count": 1,
                 "access_rules": [
-                    "@Icefire Treetop/[IT B-1] Glossary in Left Breakable Floor/Glossary"
+                    "@Icefire Treetop/Glossary in Left Breakable Floor/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -913,30 +913,30 @@
         ],
         "sections": [
             {
-                "name": "[IT C-2] Glossary in Surtr's Room (Scan)",
+                "name": "Glossary in Surtr's Room (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Icefire Treetop/[IT C-2] Glossary in Surtr's Room (Scan)/Glossary"
+                    "@Icefire Treetop/Glossary in Surtr's Room (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[IT C-5] Glossary at Poison Lava Skeleton (Scan)",
+                "name": "Glossary at Poison Lava Skeleton (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Icefire Treetop/[IT C-5] Glossary at Poison Lava Skeleton (Scan)/Glossary"
+                    "@Icefire Treetop/Glossary at Poison Lava Skeleton (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[IT E-2] Glossary in the Hot Spring (Scan)",
+                "name": "Glossary in the Hot Spring (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Icefire Treetop/[IT E-2] Glossary in the Hot Spring (Scan)/Glossary"
+                    "@Icefire Treetop/Glossary in the Hot Spring (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
@@ -962,37 +962,37 @@
         ],
         "sections": [
             {
-                "name": "[IT C-3] NPC Glossary (Sinmara)",
+                "name": "NPC Glossary (Sinmara)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Icefire Treetop/[IT C-3] NPC Glossary (Sinmara)/Glossary"
+                    "@Icefire Treetop/NPC Glossary (Sinmara)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[IT F-3] NPC Glossary (Modgud)",
+                "name": "NPC Glossary (Modgud)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Icefire Treetop/[IT F-3] NPC Glossary (Modgud)/Glossary"
+                    "@Icefire Treetop/NPC Glossary (Modgud)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[IT E-1] NPC Glossary (Inanna)",
+                "name": "NPC Glossary (Inanna)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Icefire Treetop/[IT E-1] NPC Glossary (Inanna)/Glossary"
+                    "@Icefire Treetop/NPC Glossary (Inanna)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[IT A-1] NPC Glossary (Porque Item Shop)",
+                "name": "NPC Glossary (Porque Item Shop)",
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/BTK/NPC Glossary (Porque Item Shop)"
@@ -1002,7 +1002,7 @@
                 ]
             },
             {
-                "name": "[IT C-4] NPC Glossary (Mino the Bomb Guy)",
+                "name": "NPC Glossary (Mino the Bomb Guy)",
                 "item_count": 1,
                 "access_rules": [
                     "@Icefire Treetop/Mino the Bomb Guy/NPC Glossary (Mino the Bomb Guy)"
@@ -1012,10 +1012,10 @@
                 ]
             },
             {
-                "name": "[IT E-2] NPC Glossary (Enimul)",
+                "name": "NPC Glossary (Enimul)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Icefire Treetop/[IT E-2] NPC Glossary (Enimul)/Glossary"
+                    "@Icefire Treetop/NPC Glossary (Enimul)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
@@ -1110,20 +1110,20 @@
         ],
         "sections": [
             {
-                "name": "[DF D-5] Glossary in Wall Right of Mural",
+                "name": "Glossary in Wall Right of Mural",
                 "item_count": 1,
                 "access_rules": [
-                    "@Divine Fortress/[DF D-5] Glossary in Wall Right of Mural/Glossary"
+                    "@Divine Fortress/Glossary in Wall Right of Mural/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[DF E-4] Glossary in Pre-Hugin and Munin Wall",
+                "name": "Glossary in Pre-Hugin and Munin Wall",
                 "item_count": 1,
                 "access_rules": [
-                    "@Divine Fortress/[DF E-4] Glossary in Pre-Hugin and Munin Wall/Glossary"
+                    "@Divine Fortress/Glossary in Pre-Hugin and Munin Wall/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -1149,57 +1149,57 @@
         ],
         "sections": [
             {
-                "name": "[DF D-4] NPC Glossary (Hermod)",
+                "name": "NPC Glossary (Hermod)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Divine Fortress/[DF D-4] NPC Glossary (Hermod)/Glossary"
+                    "@Divine Fortress/NPC Glossary (Hermod)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[DF A-3] NPC Glossary (Brokkr)",
+                "name": "NPC Glossary (Brokkr)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Divine Fortress/Brokkr & Eitri/[DF A-3] NPC Glossary (Brokkr)"
+                    "@Divine Fortress/Brokkr & Eitri/NPC Glossary (Brokkr)"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[DF A-3] NPC Glossary (Eitri)",
+                "name": "NPC Glossary (Eitri)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Divine Fortress/Brokkr & Eitri/[DF A-3] NPC Glossary (Eitri)"
+                    "@Divine Fortress/Brokkr & Eitri/NPC Glossary (Eitri)"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[DF E-4] NPC Glossary (Tyr)",
+                "name": "NPC Glossary (Tyr)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Divine Fortress/[DF E-4] NPC Glossary (Tyr)/Glossary"
+                    "@Divine Fortress/NPC Glossary (Tyr)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[DF C-2] NPC Glossary (Thor)",
+                "name": "NPC Glossary (Thor)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Divine Fortress/[DF C-2] NPC Glossary (Thor)/Glossary"
+                    "@Divine Fortress/NPC Glossary (Thor)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[DF B-5] NPC Glossary (Shuhoka)",
+                "name": "NPC Glossary (Shuhoka)",
                 "item_count": 1,
                 "access_rules": [
                     "@Divine Fortress/Shuhoka/NPC Glossary (Shuhoka)"
@@ -1297,70 +1297,70 @@
         ],
         "sections": [
             {
-                "name": "[SFG E-4] Glossary in the Path of Snow",
+                "name": "Glossary in the Path of Snow",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/[SFG E-4] Glossary in the Path of Snow/Glossary"
+                    "@Shrine of the Frost Giants/Glossary in the Path of Snow/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[SFG B-5] Glossary in the Snow Below Skeleton",
+                "name": "Glossary in the Snow Below Skeleton",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/[SFG B-5] Glossary in the Snow Below Skeleton/Glossary"
+                    "@Shrine of the Frost Giants/Glossary in the Snow Below Skeleton/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[SFG D-5] Glossary in the Checkered Pillar",
+                "name": "Glossary in the Checkered Pillar",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/[SFG D-5] Glossary in the Checkered Pillar/Glossary"
+                    "@Shrine of the Frost Giants/Glossary in the Checkered Pillar/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[SFG D-4] Glossary in Between the Elevators",
+                "name": "Glossary in Between the Elevators",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/[SFG D-4] Glossary in Between the Elevators/Glossary"
+                    "@Shrine of the Frost Giants/Glossary in Between the Elevators/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[SFGB A-1] Glossary Post-Tezcatlipoca",
+                "name": "Glossary Post-Tezcatlipoca",
                 "item_count": 1,
                 "access_rules": [
-                    "@BloodTez/[SFGB A-1] Glossary Post-Tezcatlipoca/Glossary"
+                    "@BloodTez/Glossary Post-Tezcatlipoca/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[SFG C-2] Glossary in Hollow Pillar Before Balor",
+                "name": "Glossary in Hollow Pillar Before Balor",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/[SFG C-2] Glossary in Hollow Pillar Before Balor/Glossary"
+                    "@Shrine of the Frost Giants/Glossary in Hollow Pillar Before Balor/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[SFG A-4] Glossary at Left Snow Drop",
+                "name": "Glossary at Left Snow Drop",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/Left Snow Drop/[SFG A-4] Glossary at Left Snow Drop"
+                    "@Shrine of the Frost Giants/Left Snow Drop/Glossary at Left Snow Drop"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -1386,20 +1386,20 @@
         ],
         "sections": [
             {
-                "name": "[SFG B-4] Glossary Behind Eye (Scan)",
+                "name": "Glossary Behind Eye (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/[SFG B-4] Glossary Behind Eye (Scan)/Glossary"
+                    "@Shrine of the Frost Giants/Glossary Behind Eye (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[SFG D-7] Glossary in Flame Torc Wall Above Spikes (Scan)",
+                "name": "Glossary in Flame Torc Wall Above Spikes (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/[SFG D-7] Glossary in Flame Torc Wall Above Spikes (Scan)/Glossary"
+                    "@Shrine of the Frost Giants/Glossary in Flame Torc Wall Above Spikes (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
@@ -1425,37 +1425,37 @@
         ],
         "sections": [
             {
-                "name": "[SFG E-4] NPC Glossary (Gerd)",
+                "name": "NPC Glossary (Gerd)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/[SFG E-4] NPC Glossary (Gerd)/Glossary"
+                    "@Shrine of the Frost Giants/NPC Glossary (Gerd)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[SFG D-5] NPC Glossary (Thrymr)",
+                "name": "NPC Glossary (Thrymr)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/[SFG D-5] NPC Glossary (Thrymr)/Glossary"
+                    "@Shrine of the Frost Giants/NPC Glossary (Thrymr)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[SFG B-4] NPC Glossary (Mnemosyne's Remains)",
+                "name": "NPC Glossary (Mnemosyne's Remains)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/[SFG B-4] NPC Glossary (Mnemosyne's Remains)/Glossary"
+                    "@Shrine of the Frost Giants/NPC Glossary (Mnemosyne's Remains)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[SFG A-5] NPC Glossary (Hydlit)",
+                "name": "NPC Glossary (Hydlit)",
                 "item_count": 1,
                 "access_rules": [
                     "@Shrine of the Frost Giants/Hydlit/NPC Glossary (Hydlit)"
@@ -1465,10 +1465,10 @@
                 ]
             },
             {
-                "name": "[SFG C-4] NPC Glossary (Fairy Guild General)",
+                "name": "NPC Glossary (Fairy Guild General)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Shrine of the Frost Giants/Weapon Fairy/[SFG C-4] NPC Glossary (Fairy Guild General)"
+                    "@Shrine of the Frost Giants/Weapon Fairy/NPC Glossary (Fairy Guild General)"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
@@ -1553,20 +1553,20 @@
         ],
         "sections": [
             {
-                "name": "[GOTD D-6] Glossary in Center Breakable Wall",
+                "name": "Glossary in Center Breakable Wall",
                 "item_count": 1,
                 "access_rules": [
-                    "@Gate of the Dead/[GOTD D-6] Glossary in Center Breakable Wall/Glossary"
+                    "@Gate of the Dead/Glossary in Center Breakable Wall/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[GOTD B-3] Glossary at Bottom of Spike Pit",
+                "name": "Glossary at Bottom of Spike Pit",
                 "item_count": 1,
                 "access_rules": [
-                    "@Gate of the Dead/[GOTD B-3] Glossary at Bottom of Spike Pit/Glossary"
+                    "@Gate of the Dead/Glossary at Bottom of Spike Pit/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -1592,67 +1592,67 @@
         ],
         "sections": [
             {
-                "name": "[GOTD B-2] NPC Glossary (Amen)",
+                "name": "NPC Glossary (Amen)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Gate of the Dead/[GOTD B-2] NPC Glossary (Amen)/Glossary"
+                    "@Gate of the Dead/NPC Glossary (Amen)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[GOTD A-4] NPC Glossary (Nekhbet)",
+                "name": "NPC Glossary (Nekhbet)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Gate of the Dead/[GOTD A-4] NPC Glossary (Nekhbet)/Glossary"
+                    "@Gate of the Dead/NPC Glossary (Nekhbet)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[GOTD D-4] NPC Glossary (Isis)",
+                "name": "NPC Glossary (Isis)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Gate of the Dead/[GOTD D-4] NPC Glossary (Isis)/Glossary"
+                    "@Gate of the Dead/NPC Glossary (Isis)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[GOTD E-5] NPC Glossary (Horus)",
+                "name": "NPC Glossary (Horus)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Gate of the Dead/[GOTD E-5] NPC Glossary (Horus)/Glossary"
+                    "@Gate of the Dead/Horus/NPC Glossary (Horus)"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[GOTD D-6] NPC Glossary (Nephthys)",
+                "name": "NPC Glossary (Nephthys)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Gate of the Dead/[GOTD D-6] NPC Glossary (Nephthys)/Glossary"
+                    "@Gate of the Dead/NPC Glossary (Nephthys)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[GOTD B-5] NPC Glossary (Thoth)",
+                "name": "NPC Glossary (Thoth)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Gate of the Dead/[GOTD B-5] NPC Glossary (Thoth)/Glossary"
+                    "@Gate of the Dead/NPC Glossary (Thoth)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[GOTD B-3] NPC Glossary (Aytum)",
+                "name": "NPC Glossary (Aytum)",
                 "item_count": 1,
                 "access_rules": [
                     "@Gate of the Dead/Aytum/NPC Glossary (Aytum)"
@@ -1760,30 +1760,30 @@
         ],
         "sections": [
             {
-                "name": "[TS E-3] Glossary in Raijin and Fujin's Room",
+                "name": "Glossary in Raijin and Fujin's Room",
                 "item_count": 1,
                 "access_rules": [
-                    "@Takamagahara Shrine/[TS E-3] Glossary in Raijin and Fujin's Room/Glossary"
+                    "@Takamagahara Shrine/Glossary in Raijin and Fujin's Room/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[TS E-6] Glossary in Wall Flared Before Daji",
+                "name": "Glossary in Wall Flared Before Daji",
                 "item_count": 1,
                 "access_rules": [
-                    "@Takamagahara Shrine/[TS E-6] Glossary in Wall Flared Before Daji/Glossary"
+                    "@Takamagahara Shrine/Glossary in Wall Flared Before Daji/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[TS D-4] Glossary in Bottom-Right Breakable Wall",
+                "name": "Glossary in Bottom-Right Breakable Wall",
                 "item_count": 1,
                 "access_rules": [
-                    "@Takamagahara Shrine/[TS D-4] Glossary in Bottom-Right Breakable Wall/Glossary"
+                    "@Takamagahara Shrine/Glossary in Bottom-Right Breakable Wall/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -1809,10 +1809,10 @@
         ],
         "sections": [
             {
-                "name": "[TS B-1] Glossary inside the Poison Lava (Scan)",
+                "name": "Glossary inside the Poison Lava (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Takamagahara Shrine/[TS B-1] Glossary inside the Poison Lava (Scan)/Glossary"
+                    "@Takamagahara Shrine/Glossary inside the Poison Lava (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
@@ -1838,47 +1838,47 @@
         ],
         "sections": [
             {
-                "name": "[TS D-1] NPC Glossary (Kami-musubi)",
+                "name": "NPC Glossary (Kami-musubi)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Takamagahara Shrine/[TS D-1] NPC Glossary (Kami-musubi)/Glossary"
+                    "@Takamagahara Shrine/NPC Glossary (Kami-musubi)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[TS C-3] NPC Glossary (Izanagi)",
+                "name": "NPC Glossary (Izanagi)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Takamagahara Shrine/[TS C-3] NPC Glossary (Izanagi)/Glossary"
+                    "@Takamagahara Shrine/NPC Glossary (Izanagi)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[TS D-7] NPC Glossary (Shitateruhime)",
+                "name": "NPC Glossary (Shitateruhime)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Takamagahara Shrine/[TS D-7] NPC Glossary (Shitateruhime)/Glossary"
+                    "@Takamagahara Shrine/NPC Glossary (Shitateruhime)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[TS D-6] NPC Glossary (Amenotokotachi)",
+                "name": "NPC Glossary (Amenotokotachi)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Takamagahara Shrine/[TS D-6] NPC Glossary (Amenotokotachi)/Glossary"
+                    "@Takamagahara Shrine/NPC Glossary (Amenotokotachi)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[TS C-4] NPC Glossary (Ash Geen)",
+                "name": "NPC Glossary (Ash Geen)",
                 "item_count": 1,
                 "access_rules": [
                     "@Takamagahara Shrine/Ash Geen/NPC Glossary (Ash Geen)"
@@ -1956,30 +1956,30 @@
         ],
         "sections": [
             {
-                "name": "[HL D-5] Glossary in Arachne's Room",
+                "name": "Glossary in Arachne's Room",
                 "item_count": 1,
                 "access_rules": [
-                    "@Heavens Labyrinth/[HL D-5] Glossary in Arachne's Room/Glossary"
+                    "@Heavens Labyrinth/Glossary in Arachne's Room/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[HL B-5] Glossary in Scylla's Breakable Wall",
+                "name": "Glossary in Scylla's Breakable Wall",
                 "item_count": 1,
                 "access_rules": [
-                    "@Heavens Labyrinth/Scylla's Breakable Wall/[HL B-5] Glossary in Scylla's Breakable Wall"
+                    "@Heavens Labyrinth/Scylla's Breakable Wall/Glossary in Scylla's Breakable Wall"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[HL C-2] Glossary along the Path to Chaos",
+                "name": "Glossary along the Path to Chaos",
                 "item_count": 1,
                 "access_rules": [
-                    "@Heavens Labyrinth/[HL C-2] Glossary along the Path to Chaos/Glossary"
+                    "@Heavens Labyrinth/Glossary along the Path to Chaos/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -2005,20 +2005,20 @@
         ],
         "sections": [
             {
-                "name": "[HL E-3] Glossary behind Griffin's Statue (Scan)",
+                "name": "Glossary behind Griffin's Statue (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Heavens Labyrinth/[HL E-3] Glossary behind Griffin's Statue (Scan)/Glossary"
+                    "@Heavens Labyrinth/Glossary behind Griffin's Statue (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[HL C-4] Glossary After Destroying Typhon (Scan)",
+                "name": "Glossary After Destroying Typhon (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Heavens Labyrinth/Typhon/[HL C-4] Glossary After Destroying Typhon (Scan)"
+                    "@Heavens Labyrinth/Typhon/Glossary After Destroying Typhon (Scan)"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
@@ -2044,47 +2044,47 @@
         ],
         "sections": [
             {
-                "name": "[HL C-5] NPC Glossary (Hermes)",
+                "name": "NPC Glossary (Hermes)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Heavens Labyrinth/[HL C-5] NPC Glossary (Hermes)/Glossary"
+                    "@Heavens Labyrinth/NPC Glossary (Hermes)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[HL A-3] NPC Glossary (Eros)",
+                "name": "NPC Glossary (Eros)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Heavens Labyrinth/[HL A-3] NPC Glossary (Eros)/Glossary"
+                    "@Heavens Labyrinth/NPC Glossary (Eros)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[HL A-2] NPC Glossary (Orpheus)",
+                "name": "NPC Glossary (Orpheus)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Heavens Labyrinth/[HL A-2] NPC Glossary (Orpheus)/Glossary"
+                    "@Heavens Labyrinth/NPC Glossary (Orpheus)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[HL B-1] NPC Glossary (Baphomet)",
+                "name": "NPC Glossary (Baphomet)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Heavens Labyrinth/[HL B-1] NPC Glossary (Baphomet)/Glossary"
+                    "@Heavens Labyrinth/NPC Glossary (Baphomet)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[HL A-3] NPC Glossary (Megarock)",
+                "name": "NPC Glossary (Megarock)",
                 "item_count": 1,
                 "access_rules": [
                     "@Heavens Labyrinth/Megarock/NPC Glossary (Megarock)"
@@ -2192,40 +2192,40 @@
         ],
         "sections": [
             {
-                "name": "[VAL D-4] Fish Glossary (Sawara)",
+                "name": "Fish Glossary (Sawara)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Valhalla/[VAL D-4] Fish Glossary (Sawara)/Glossary"
+                    "@Valhalla/Fish Glossary (Sawara)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding,setting_oannesanity"
                 ]
             },
             {
-                "name": "[VAL A-2] Glossary in Breakable Wall Above Spikes",
+                "name": "Glossary in Breakable Wall Above Spikes",
                 "item_count": 1,
                 "access_rules": [
-                    "@Valhalla/[VAL A-2] Glossary in Breakable Wall Above Spikes/Glossary"
+                    "@Valhalla/Glossary in Breakable Wall Above Spikes/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[VAL D-3] Glossary Behind Third Trickster Spot",
+                "name": "Glossary Behind Third Trickster Spot",
                 "item_count": 1,
                 "access_rules": [
-                    "@Valhalla/Behind Third Trickster/[VAL D-3] Glossary Behind Third Trickster Spot"
+                    "@Valhalla/Behind Third Trickster/Glossary Behind Third Trickster Spot"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[VAL A-4] Glossary Locked Behind Floor Switch",
+                "name": "Glossary Locked Behind Floor Switch",
                 "item_count": 1,
                 "access_rules": [
-                    "@Valhalla/[VAL A-4] Glossary Locked Behind Floor Switch/Glossary"
+                    "@Valhalla/Glossary Locked Behind Floor Switch/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -2251,10 +2251,10 @@
         ],
         "sections": [
             {
-                "name": "[VAL B-4] Glossary in Jalandhara's Corridor (Scan)",
+                "name": "Glossary in Jalandhara's Corridor (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Valhalla/[VAL B-4] Glossary in Jalandhara's Corridor (Scan)/Glossary"
+                    "@Valhalla/Glossary in Jalandhara's Corridor (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
@@ -2280,47 +2280,47 @@
         ],
         "sections": [
             {
-                "name": "[VAL A-3] NPC Glossary (Hoenir)",
+                "name": "NPC Glossary (Hoenir)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Valhalla/[VAL A-3] NPC Glossary (Hoenir)/Glossary"
+                    "@Valhalla/NPC Glossary (Hoenir)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[VAL D-3] NPC Glossary (Brihaspathi)",
+                "name": "NPC Glossary (Brihaspathi)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Valhalla/[VAL D-3] NPC Glossary (Brihaspathi)/Glossary"
+                    "@Valhalla/NPC Glossary (Brihaspathi)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[VAL C-1] NPC Glossary (Pushan)",
+                "name": "NPC Glossary (Pushan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Valhalla/[VAL C-1] NPC Glossary (Pushan)/Glossary"
+                    "@Valhalla/NPC Glossary (Pushan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[VAL A-4] NPC Glossary (Bhaga)",
+                "name": "NPC Glossary (Bhaga)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Valhalla/[VAL A-4] NPC Glossary (Bhaga)/Glossary"
+                    "@Valhalla/NPC Glossary (Bhaga)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[VAL D-4] NPC Glossary (Bargain Duck)",
+                "name": "NPC Glossary (Bargain Duck)",
                 "item_count": 1,
                 "access_rules": [
                     "@Valhalla/Bargain Duck/NPC Glossary (Bargain Duck)"
@@ -2408,40 +2408,40 @@
         ],
         "sections": [
             {
-                "name": "[DSLM B-6] Glossary in Wall Below Winged Statue",
+                "name": "Glossary in Wall Below Winged Statue",
                 "item_count": 1,
                 "access_rules": [
-                    "@Dark Star Lords Mausoleum/[DSLM B-6] Glossary in Wall Below Winged Statue/Glossary"
+                    "@Dark Star Lords Mausoleum/Glossary in Wall Below Winged Statue/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[DSLM B-2] Glossary in Visibly Breakable Wall",
+                "name": "Glossary in Visibly Breakable Wall",
                 "item_count": 1,
                 "access_rules": [
-                    "@Dark Star Lords Mausoleum/[DSLM B-2] Glossary in Visibly Breakable Wall/Glossary"
+                    "@Dark Star Lords Mausoleum/Glossary in Visibly Breakable Wall/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[DSLM C-4] Glossary in Breakable Wall to Atum",
+                "name": "Glossary in Breakable Wall to Atum",
                 "item_count": 1,
                 "access_rules": [
-                    "@Dark Star Lords Mausoleum/[DSLM C-4] Glossary in Breakable Wall to Atum/Glossary"
+                    "@Dark Star Lords Mausoleum/Glossary in Breakable Wall to Atum/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[DSLM C-6] Glossary after Aten-Ra Defeated",
+                "name": "Glossary after Aten-Ra Defeated",
                 "item_count": 1,
                 "access_rules": [
-                    "@Dark Star Lords Mausoleum/Ra/[DSLM C-6] Glossary after Aten-Ra Defeated"
+                    "@Dark Star Lords Mausoleum/Glossary after Aten-Ra Defeated/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -2467,20 +2467,20 @@
         ],
         "sections": [
             {
-                "name": "[NIBIRU] Glossary in the Top-Right Corner (Scan)",
+                "name": "Glossary in the Top-Right Corner (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Nibiru/[NIBIRU] Glossary in the Top-Right Corner (Scan)/Glossary"
+                    "@Nibiru/Glossary in the Top-Right Corner (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[DSLM C-3] Glossary at Altar of Atum Statue (Scan)",
+                "name": "Glossary at Altar of Atum Statue (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Dark Star Lords Mausoleum/[DSLM C-3] Glossary at Altar of Atum Statue (Scan)/Glossary"
+                    "@Dark Star Lords Mausoleum/Glossary at Altar of Atum Statue (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
@@ -2506,47 +2506,47 @@
         ],
         "sections": [
             {
-                "name": "[DSLM B-5] NPC Glossary (Set)",
+                "name": "NPC Glossary (Set)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Dark Star Lords Mausoleum/[DSLM B-5] NPC Glossary (Set)/Glossary"
+                    "@Dark Star Lords Mausoleum/NPC Glossary (Set)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[DSLM B-3] NPC Glossary (Amunet)",
+                "name": "NPC Glossary (Amunet)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Dark Star Lords Mausoleum/[DSLM B-3] NPC Glossary (Amunet)/Glossary"
+                    "@Dark Star Lords Mausoleum/NPC Glossary (Amunet)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[DSLM B-2] NPC Glossary (Nun)",
+                "name": "NPC Glossary (Nun)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Dark Star Lords Mausoleum/[DSLM B-2] NPC Glossary (Nun)/Glossary"
+                    "@Dark Star Lords Mausoleum/NPC Glossary (Nun)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[DSLM C-6] NPC Glossary (Ra)",
+                "name": "NPC Glossary (Ra)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Dark Star Lords Mausoleum/Ra/[DSLM C-6] NPC Glossary (Ra)"
+                    "@Gate of the Dead/Horus/NPC Glossary (Ra)"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[DSLM C-2] NPC Glossary (Kero)",
+                "name": "NPC Glossary (Kero)",
                 "item_count": 1,
                 "access_rules": [
                     "@Dark Star Lords Mausoleum/Kero/NPC Glossary (Kero)"
@@ -2556,10 +2556,10 @@
                 ]
             },
             {
-                "name": "[DSLM B-6] NPC Glossary (Fairy Guild Lieutenant)",
+                "name": "NPC Glossary (Fairy Guild Lieutenant)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Dark Star Lords Mausoleum/Money Fairy/[DSLM B-6] NPC Glossary (Fairy Guild Lieutenant)"
+                    "@Dark Star Lords Mausoleum/Money Fairy/NPC Glossary (Fairy Guild Lieutenant)"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
@@ -2644,30 +2644,30 @@
         ],
         "sections": [
             {
-                "name": "[AC C-6] Fish Glossary (Nodoguro)",
+                "name": "Fish Glossary (Nodoguro)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Ancient Chaos/[AC C-6] Fish Glossary (Nodoguro)/Glossary"
+                    "@Ancient Chaos/Fish Glossary (Nodoguro)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding,setting_oannesanity"
                 ]
             },
             {
-                "name": "[AC D-7] Glossary at the Bottom of Lava Funnel",
+                "name": "Glossary at the Bottom of Lava Funnel",
                 "item_count": 1,
                 "access_rules": [
-                    "@Ancient Chaos/[AC D-7] Glossary at the Bottom of Lava Funnel/Glossary"
+                    "@Ancient Chaos/Glossary at the Bottom of Lava Funnel/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[AC D-3] Glossary in Left Wall Before Anzu",
+                "name": "Glossary in Left Wall Before Anzu",
                 "item_count": 1,
                 "access_rules": [
-                    "@Ancient Chaos/[AC D-3] Glossary in Left Wall Before Anzu/Glossary"
+                    "@Ancient Chaos/Glossary in Left Wall Before Anzu/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -2693,10 +2693,10 @@
         ],
         "sections": [
             {
-                "name": "[AC A-6] Glossary in Wall Between The Eyes (Scan)",
+                "name": "Glossary in Wall Between The Eyes (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Ancient Chaos/[AC A-6] Glossary in Wall Between The Eyes (Scan)/Glossary"
+                    "@Ancient Chaos/Glossary in Wall Between The Eyes (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
@@ -2722,37 +2722,37 @@
         ],
         "sections": [
             {
-                "name": "[AC C-5] NPC Glossary (Pangu)",
+                "name": "NPC Glossary (Pangu)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Ancient Chaos/[AC C-5] NPC Glossary (Pangu)/Glossary"
+                    "@Ancient Chaos/NPC Glossary (Pangu)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[AC A-4] NPC Glossary (Shennong)",
+                "name": "NPC Glossary (Shennong)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Ancient Chaos/[AC A-4] NPC Glossary (Shennong)/Glossary"
+                    "@Ancient Chaos/NPC Glossary (Shennong)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[AC D-5] NPC Glossary (Zhuanxu)",
+                "name": "NPC Glossary (Zhuanxu)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Ancient Chaos/[AC D-5] NPC Glossary (Zhuanxu)/Glossary"
+                    "@Ancient Chaos/NPC Glossary (Zhuanxu)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[AC C-6] NPC Glossary (Venum)",
+                "name": "NPC Glossary (Venum)",
                 "item_count": 1,
                 "access_rules": [
                     "@Ancient Chaos/Venum/NPC Glossary (Venum)"
@@ -2762,10 +2762,10 @@
                 ]
             },
             {
-                "name": "[AC D-7] NPC Glossary (Sykick)",
+                "name": "NPC Glossary (Sykick)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Ancient Chaos/[AC D-7] NPC Glossary (Sykick)/Glossary"
+                    "@Ancient Chaos/NPC Glossary (Sykick)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
@@ -2840,20 +2840,20 @@
         ],
         "sections": [
             {
-                "name": "[HOM B-3] Glossary at Lernaean Hydra's Wall",
+                "name": "Glossary at Lernaean Hydra's Wall",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM B-3] Glossary at Lernaean Hydra's Wall/Glossary"
+                    "@Hall of Malice/Glossary at Lernaean Hydra's Wall/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[HOM E-3] Glossary at Ladon when Awoken",
+                "name": "Glossary at Ladon when Awoken",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM E-3] Glossary at Ladon when Awoken/Glossary"
+                    "@Hall of Malice/Glossary at Ladon when Awoken/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -2879,90 +2879,90 @@
         ],
         "sections": [
             {
-                "name": "[HOM D-2] Glossary at Sphynx Statue (Scan)",
+                "name": "Glossary at Sphynx Statue (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM D-2] Glossary at Sphynx Statue (Scan)/Glossary"
+                    "@Hall of Malice/Glossary at Sphynx Statue (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[HOM C-3] Glossary at Delphyne Statue (Scan)",
+                "name": "Glossary at Delphyne Statue (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM C-3] Glossary at Delphyne Statue (Scan)/Glossary"
+                    "@Hall of Malice/Glossary at Delphyne Statue (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[HOM B-3] Glossary at Lernaean Hydra Statue (Scan)",
+                "name": "Glossary at Lernaean Hydra Statue (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM B-3] Glossary at Lernaean Hydra Statue (Scan)/Glossary"
+                    "@Hall of Malice/Glossary at Lernaean Hydra Statue (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[HOM B-4] Glossary at Nemean Lion Statue (Scan)",
+                "name": "Glossary at Nemean Lion Statue (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM B-4] Glossary at Nemean Lion Statue (Scan)/Glossary"
+                    "@Hall of Malice/Glossary at Nemean Lion Statue (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[HOM D-4] Glossary at Chimera Statue (Scan)",
+                "name": "Glossary at Chimera Statue (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM D-4] Glossary at Chimera Statue (Scan)/Glossary"
+                    "@Hall of Malice/Glossary at Chimera Statue (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[HOM E-4] Glossary at Phaia Statue (Scan)",
+                "name": "Glossary at Phaia Statue (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM E-4] Glossary at Phaia Statue (Scan)/Glossary"
+                    "@Hall of Malice/Glossary at Phaia Statue (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[HOM G-4] Glossary in the Laser Beam (Scan)",
+                "name": "Glossary in the Laser Beam (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM G-4] Glossary in the Laser Beam (Scan)/Glossary"
+                    "@Hall of Malice/Glossary in the Laser Beam (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[HOM D-5] Glossary in Orthrus' Right Wall (Scan)",
+                "name": "Glossary in Orthrus' Right Wall (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM D-5] Glossary in Orthrus' Right Wall (Scan)/Glossary"
+                    "@Hall of Malice/Glossary in Orthrus' Right Wall (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[HOM E-5] Glossary at Spikes before Orthrus (Scan)",
+                "name": "Glossary at Spikes before Orthrus (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM E-5] Glossary at Spikes before Orthrus (Scan)/Glossary"
+                    "@Hall of Malice/Glossary at Spikes before Orthrus (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
@@ -2988,37 +2988,37 @@
         ],
         "sections": [
             {
-                "name": "[HOM E-2] NPC Glossary (Eurytus)",
+                "name": "NPC Glossary (Eurytus)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM E-2] NPC Glossary (Eurytus)/Glossary"
+                    "@Hall of Malice/NPC Glossary (Eurytus)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[HOM B-4] NPC Glossary (Porphyrion)",
+                "name": "NPC Glossary (Porphyrion)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM B-4] NPC Glossary (Porphyrion)/Glossary"
+                    "@Hall of Malice/NPC Glossary (Porphyrion)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[HOM F-3] NPC Glossary (Alcyoneus)",
+                "name": "NPC Glossary (Alcyoneus)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Hall of Malice/[HOM F-3] NPC Glossary (Alcyoneus)/Glossary"
+                    "@Hall of Malice/NPC Glossary (Alcyoneus)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[HOM G-4] NPC Glossary (Fairylan)",
+                "name": "NPC Glossary (Fairylan)",
                 "item_count": 1,
                 "access_rules": [
                     "@Hall of Malice/Fairylan/NPC Glossary (Fairylan)"
@@ -3126,30 +3126,30 @@
         ],
         "sections": [
             {
-                "name": "[EPD C-4] Glossary in Wall Under Blood Corridor",
+                "name": "Glossary in Wall Under Blood Corridor",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Doom/[EPD C-4] Glossary in Wall Under Blood Corridor/Glossary"
+                    "@Eternal Prison - Doom/Glossary in Wall Under Blood Corridor/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[EPG D-2] Glossary Past The River Styx",
+                "name": "Glossary Past The River Styx",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Gloom/[EPG D-2] Glossary Past The River Styx/Glossary"
+                    "@Eternal Prison - Gloom/Glossary Past The River Styx/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
                 ]
             },
             {
-                "name": "[EPG F-3] Glossary After Talking to Sakit",
+                "name": "Glossary After Talking to Sakit",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Gloom/[EPG F-3] Glossary After Talking to Sakit/Glossary"
+                    "@Eternal Prison - Gloom/Glossary After Talking to Sakit/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding"
@@ -3175,30 +3175,30 @@
         ],
         "sections": [
             {
-                "name": "[EPD C-3] Glossary in Right Mirrored Door (Scan)",
+                "name": "Glossary in Right Mirrored Door (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Doom/[EPD C-3] Glossary in Right Mirrored Door (Scan)/Glossary"
+                    "@Eternal Prison - Doom/Glossary in Right Mirrored Door (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[EPD A-3] Glossary in Hel's Preview Area (Scan)",
+                "name": "Glossary in Hel's Preview Area (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Doom/[EPD A-3] Glossary in Hel's Preview Area (Scan)/Glossary"
+                    "@Eternal Prison - Doom/Glossary in Hel's Preview Area (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
                 ]
             },
             {
-                "name": "[EPG C-7] Glossary in Izanami's Pillar (Scan)",
+                "name": "Glossary in Izanami's Pillar (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Gloom/[EPG C-7] Glossary in Izanami's Pillar (Scan)/Glossary"
+                    "@Eternal Prison - Gloom/Glossary in Izanami's Pillar (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
@@ -3224,80 +3224,80 @@
         ],
         "sections": [
             {
-                "name": "[EPG F-2] NPC Glossary (Ereshkigal)",
+                "name": "NPC Glossary (Ereshkigal)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Gloom/[EPG F-2] NPC Glossary (Ereshkigal)/Glossary"
+                    "@Eternal Prison - Gloom/NPC Glossary (Ereshkigal)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[EPG B-5] NPC Glossary (Hades)",
+                "name": "NPC Glossary (Hades)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Gloom/[EPG B-5] NPC Glossary (Hades)/Glossary"
+                    "@Eternal Prison - Gloom/NPC Glossary (Hades)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[EPG D-5] NPC Glossary (Eurydice)",
+                "name": "NPC Glossary (Eurydice)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Gloom/[EPG D-5] NPC Glossary (Eurydice)/Glossary"
+                    "@Eternal Prison - Gloom/NPC Glossary (Eurydice)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[EPG C-7] NPC Glossary (Izanami)",
+                "name": "NPC Glossary (Izanami)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Gloom/[EPG C-7] NPC Glossary (Izanami)/Glossary"
+                    "@Eternal Prison - Gloom/NPC Glossary (Izanami)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[EPD D-4] NPC Glossary (Neti)",
+                "name": "NPC Glossary (Neti)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Doom/[EPD D-4] NPC Glossary (Neti)/Glossary"
+                    "@Eternal Prison - Doom/NPC Glossary (Neti)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[EPD E-5] NPC Glossary (Anubis)",
+                "name": "NPC Glossary (Anubis)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Doom/[EPD E-5] NPC Glossary (Anubis)/Glossary"
+                    "@Eternal Prison - Doom/NPC Glossary (Anubis)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[EPD E-5] NPC Glossary (Osiris)",
+                "name": "NPC Glossary (Osiris)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Doom/Osiris/[EPD E-5] NPC Glossary (Osiris)"
+                    "@Eternal Prison - Doom/Osiris/NPC Glossary (Osiris)"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
                 ]
             },
             {
-                "name": "[EPG D-6] NPC Glossary (Fairy Guild Corporal)",
+                "name": "NPC Glossary (Fairy Guild Corporal)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Eternal Prison - Gloom/Key Fairy/[EPG D-6] NPC Glossary (Fairy Guild Corporal)"
+                    "@Eternal Prison - Gloom/Key Fairy/NPC Glossary (Fairy Guild Corporal)"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_npc"
@@ -3412,10 +3412,10 @@
         ],
         "sections": [
             {
-                "name": "[SH C-4] Glossary on the Escape Route (Scan)",
+                "name": "Glossary on the Escape Route (Scan)",
                 "item_count": 1,
                 "access_rules": [
-                    "@Spiral Hell/[SH C-4] Glossary on the Escape Route (Scan)/Glossary"
+                    "@Spiral Hell/Glossary on the Escape Route (Scan)/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_scannable"
@@ -3435,10 +3435,10 @@
         ],
         "sections": [
             {
-                "name": "[DLC C-3] Glossary at the Top of the First Tower",
+                "name": "Glossary at the Top of the First Tower",
                 "item_count": 1,
                 "access_rules": [
-                    "@Tower of Oannes/[DLC C-3] Glossary at the Top of the First Tower/Glossary"
+                    "@Tower of Oannes/Glossary at the Top of the First Tower/Glossary"
                 ],
                 "visibility_rules": [
                     "setting_glossanity_freestanding,setting_oannesanity"

@@ -54,10 +54,10 @@ ITEM_MAPPING = {
     [420055] = {"death_sigil", "toggle"}, -- Death Sigil
     [420056] = {"claydoll_suit", "toggle"}, -- Claydoll Suit
     -- Costumesanity costumes (cosmetic-only in AP logic, tracked as collectibles)
-    [420057] = {"kimono_cowboy", "toggle"}, -- Kimono Cowgirl
+    [420057] = {"kimono_cowgirl", "toggle"}, -- Kimono Cowgirl
     [420058] = {"valkyrie", "toggle"}, -- Valkyrie
     [420059] = {"little_demon", "toggle"}, -- Little Demon
-    [420060] = {"eastern_european", "toggle"}, -- Eastern Europe
+    [420060] = {"eastern_europe", "toggle"}, -- Eastern Europe
     [420061] = {"whip1", "progressive"}, -- Progressive Whip
     [420064] = {"knife", "toggle"}, -- Knife
     [420065] = {"rapier", "toggle"}, -- Rapier

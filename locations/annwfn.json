@@ -3,7 +3,7 @@
         "name": "Annwfn",
         "children": [
             {
-                "name": "[ANN F-2] Fish Glossary (Nijimasu)",
+                "name": "Fish Glossary (Nijimasu)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -14,7 +14,7 @@
                     "setting_glossanity_freestanding,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Heimdall) and CanReach(Eden))"
+                    "^$lm2_logic|CanReach(AnnwfnRight) and (IsDead(Ixtab) and IsDead(Heimdall) and CanReach(Eden))"
                 ],
                 "map_locations": [
                     {
@@ -886,11 +886,11 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnRight)"
+                    "^$lm2_logic|CanReach(AnnwfnRight) and IsDead(Ixtab)"
                 ]
             },
             {
-                "name": "[ANN D-1] Glossary in Kaliya's Room",
+                "name": "Glossary in Kaliya's Room",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -913,7 +913,7 @@
                 ]
             },
             {
-                "name": "[ANN D-5] Glossary Behind Skull Underwater",
+                "name": "Glossary Behind Skull Underwater",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -936,7 +936,7 @@
                 ]
             },
             {
-                "name": "[ANN B-5] Glossary in Top-Right Breakable Wall",
+                "name": "Glossary in Top-Right Breakable Wall",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -959,7 +959,7 @@
                 ]
             },
             {
-                "name": "[ANN F-2] Glossary in Bottom-Left Wall Past Kujata",
+                "name": "Glossary in Bottom-Left Wall Past Kujata",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -970,7 +970,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnRight) and (MeleeAttack or (TrickyLogic and HorizontalAttack))"
+                    "^$lm2_logic|CanReach(AnnwfnRight) and IsDead(Ixtab) and (MeleeAttack or (TrickyLogic and HorizontalAttack))"
                 ],
                 "map_locations": [
                     {
@@ -982,7 +982,7 @@
                 ]
             },
             {
-                "name": "[ANN C-2] Glossary in Wall Approaching Frey",
+                "name": "Glossary in Wall Approaching Frey",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1005,7 +1005,7 @@
                 ]
             },
             {
-                "name": "[ANN D-4] NPC Glossary (Voluspa)",
+                "name": "NPC Glossary (Voluspa)",
                 "sections": [
                     {
                         "name": "Glossary",

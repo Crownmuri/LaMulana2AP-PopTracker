@@ -3,7 +3,7 @@
         "name": "Valhalla",
         "children": [
             {
-                "name": "[VAL D-4] Fish Glossary (Sawara)",
+                "name": "Fish Glossary (Sawara)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -597,7 +597,7 @@
                         ]
                     },
                     {
-                        "name": "[VAL D-3] Glossary Behind Third Trickster Spot",
+                        "name": "Glossary Behind Third Trickster Spot",
                         "item_count": 1,
                         "visibility_rules": [
                             "setting_glossanity_freestanding"
@@ -701,7 +701,7 @@
                 ]
             },
             {
-                "name": "[VAL A-2] Glossary in Breakable Wall Above Spikes",
+                "name": "Glossary in Breakable Wall Above Spikes",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -724,7 +724,7 @@
                 ]
             },
             {
-                "name": "[VAL B-4] Glossary in Jalandhara's Corridor (Scan)",
+                "name": "Glossary in Jalandhara's Corridor (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -747,7 +747,7 @@
                 ]
             },
             {
-                "name": "[VAL A-3] NPC Glossary (Hoenir)",
+                "name": "NPC Glossary (Hoenir)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -770,7 +770,7 @@
                 ]
             },
             {
-                "name": "[VAL D-3] NPC Glossary (Brihaspathi)",
+                "name": "NPC Glossary (Brihaspathi)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -793,7 +793,7 @@
                 ]
             },
             {
-                "name": "[VAL C-1] NPC Glossary (Pushan)",
+                "name": "NPC Glossary (Pushan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -816,7 +816,7 @@
                 ]
             },
             {
-                "name": "[VAL A-4] NPC Glossary (Bhaga)",
+                "name": "NPC Glossary (Bhaga)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -839,7 +839,7 @@
                 ]
             },
             {
-                "name": "[VAL A-4] Glossary Locked Behind Floor Switch",
+                "name": "Glossary Locked Behind Floor Switch",
                 "sections": [
                     {
                         "name": "Glossary",

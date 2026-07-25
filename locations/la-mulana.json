@@ -1234,7 +1234,7 @@
                 ]
             },
             {
-                "name": "[VOD C-4] Glossary Above Hot Spring (Scan)",
+                "name": "Glossary Above Hot Spring (Scan)",
                 "map_locations": [
                     {
                         "map": "La-Mulana",
@@ -1265,7 +1265,7 @@
                 ]
             },
             {
-                "name": "[GOG D-2] Glossary Above Children",
+                "name": "Glossary Above Children",
                 "map_locations": [
                     {
                         "map": "La-Mulana",
@@ -1296,7 +1296,7 @@
                 ]
             },
             {
-                "name": "[MOG C-3] Glossary Behind Pot",
+                "name": "Glossary Behind Pot",
                 "map_locations": [
                     {
                         "map": "La-Mulana",
@@ -1327,7 +1327,7 @@
                 ]
             },
             {
-                "name": "[GOG E-2] Glossary at Spring in the Sky Entrance",
+                "name": "Glossary at Spring in the Sky Entrance",
                 "map_locations": [
                     {
                         "map": "La-Mulana",
@@ -1358,7 +1358,7 @@
                 ]
             },
             {
-                "name": "[IC B-1] Glossary Next to Spikes",
+                "name": "Glossary Next to Spikes",
                 "map_locations": [
                     {
                         "map": "La-Mulana",
@@ -1389,7 +1389,7 @@
                 ]
             },
             {
-                "name": "[GOI C-1] Glossary Next to Child's Statue",
+                "name": "Glossary Next to Child's Statue",
                 "map_locations": [
                     {
                         "map": "La-Mulana",
@@ -1420,7 +1420,7 @@
                 ]
             },
             {
-                "name": "[GOG A-3] Glossary Below Gate of Illusion Door",
+                "name": "Glossary Below Gate of Illusion Door",
                 "map_locations": [
                     {
                         "map": "La-Mulana",
@@ -1451,7 +1451,7 @@
                 ]
             },
             {
-                "name": "[EC B-1] Glossary Behind Rubble (Scan)",
+                "name": "Glossary Behind Rubble (Scan)",
                 "map_locations": [
                     {
                         "map": "La-Mulana",

@@ -311,7 +311,7 @@
                         ]
                     },
                     {
-                        "name": "[DSLM B-6] NPC Glossary (Fairy Guild Lieutenant)",
+                        "name": "NPC Glossary (Fairy Guild Lieutenant)",
                         "item_count": 1,
                         "visibility_rules": [
                             "setting_glossanity_npc"
@@ -678,7 +678,7 @@
                 ]
             },
             {
-                "name": "Ladder to Atum Item Pot #1",
+                "name": "Ladder to Atum Lower Item Pot",
                 "map_locations": [
                     {
                         "map": "Dark Star Lords Mausoleum",
@@ -701,7 +701,7 @@
                 ]
             },
             {
-                "name": "Ladder to Atum Item Pot #2",
+                "name": "Ladder to Atum Upper Item Pot",
                 "map_locations": [
                     {
                         "map": "Dark Star Lords Mausoleum",
@@ -1023,7 +1023,7 @@
                 ]
             },
             {
-                "name": "[DSLM B-6] Glossary in Wall Below Winged Statue",
+                "name": "Glossary in Wall Below Winged Statue",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1046,7 +1046,7 @@
                 ]
             },
             {
-                "name": "[DSLM B-2] Glossary in Visibly Breakable Wall",
+                "name": "Glossary in Visibly Breakable Wall",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1069,7 +1069,7 @@
                 ]
             },
             {
-                "name": "[DSLM C-4] Glossary in Breakable Wall to Atum",
+                "name": "Glossary in Breakable Wall to Atum",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1092,7 +1092,7 @@
                 ]
             },
             {
-                "name": "[DSLM C-6] Glossary after Aten-Ra Defeated",
+                "name": "Glossary after Aten-Ra Defeated",
                 "map_locations": [
                     {
                         "map": "Dark Star Lords Mausoleum",
@@ -1115,7 +1115,7 @@
                 ]
             },
             {
-                "name": "[DSLM B-5] NPC Glossary (Set)",
+                "name": "NPC Glossary (Set)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1138,7 +1138,7 @@
                 ]
             },
             {
-                "name": "[DSLM B-3] NPC Glossary (Amunet)",
+                "name": "NPC Glossary (Amunet)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1161,7 +1161,7 @@
                 ]
             },
             {
-                "name": "[DSLM B-2] NPC Glossary (Nun)",
+                "name": "NPC Glossary (Nun)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1184,7 +1184,7 @@
                 ]
             },
             {
-                "name": "[DSLM C-3] Glossary at Altar of Atum Statue (Scan)",
+                "name": "Glossary at Altar of Atum Statue (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1280,7 +1280,7 @@
                 ]
             },
             {
-                "name": "[NIBIRU] Glossary in the Top-Right Corner (Scan)",
+                "name": "Glossary in the Top-Right Corner (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",

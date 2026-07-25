@@ -3,7 +3,7 @@
         "name": "Tower of Oannes",
         "children": [
             {
-                "name": "[DLC] Four Trials Reward Chest",
+                "name": "Four Trials Reward Chest",
                 "sections": [
                     {
                         "name": "Chest",
@@ -32,7 +32,7 @@
                 ]
             },
             {
-                "name": "[DLC D-1] DLC Boss Reward Chest",
+                "name": "DLC Boss Reward Chest",
                 "sections": [
                     {
                         "name": "Chest",
@@ -61,7 +61,7 @@
                 ]
             },
             {
-                "name": "[DLC C-3] Glossary at the Top of the First Tower",
+                "name": "Glossary at the Top of the First Tower",
                 "sections": [
                     {
                         "name": "Glossary",

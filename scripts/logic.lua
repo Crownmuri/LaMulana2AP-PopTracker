@@ -286,8 +286,8 @@ function Glitch(name)
         if not has("setting_costumesanity") then return true end
         -- With Costumesanity, need at least one wearable costume found
         -- (mirrors COSTUME_CLIP_ITEMS in the AP world's ids.py).
-        return has("claydoll_suit") or has("kimono_cowboy") or has("valkyrie")
-            or has("little_demon") or has("eastern_european") or has("fish_suit")
+        return has("claydoll_suit") or has("kimono_cowgirl") or has("valkyrie")
+            or has("little_demon") or has("eastern_europe") or has("fish_suit")
     end
     return false
 end

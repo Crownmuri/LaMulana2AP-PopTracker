@@ -299,7 +299,7 @@
                         ]
                     },
                     {
-                        "name": "[HL C-4] Glossary After Destroying Typhon (Scan)",
+                        "name": "Glossary After Destroying Typhon (Scan)",
                         "item_count": 1,
                         "visibility_rules": [
                             "setting_glossanity_scannable"
@@ -477,7 +477,7 @@
                 ]
             },
             {
-                "name": "Ladder from B-2 Mural Item Pot",
+                "name": "Baphomet's Item Pot",
                 "map_locations": [
                     {
                         "map": "Heavens Labyrinth",
@@ -728,7 +728,7 @@
                         ]
                     },
                     {
-                        "name": "[HL B-5] Glossary in Scylla's Breakable Wall",
+                        "name": "Glossary in Scylla's Breakable Wall",
                         "item_count": 1,
                         "visibility_rules": [
                             "setting_glossanity_freestanding"
@@ -786,7 +786,7 @@
                 ]
             },
             {
-                "name": "[HL D-5] Glossary in Arachne's Room",
+                "name": "Glossary in Arachne's Room",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -809,7 +809,7 @@
                 ]
             },
             {
-                "name": "[HL C-2] Glossary along the Path to Chaos",
+                "name": "Glossary along the Path to Chaos",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -832,7 +832,7 @@
                 ]
             },
             {
-                "name": "[HL E-3] Glossary behind Griffin's Statue (Scan)",
+                "name": "Glossary behind Griffin's Statue (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -855,7 +855,7 @@
                 ]
             },
             {
-                "name": "[HL C-5] NPC Glossary (Hermes)",
+                "name": "NPC Glossary (Hermes)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -878,7 +878,7 @@
                 ]
             },
             {
-                "name": "[HL A-3] NPC Glossary (Eros)",
+                "name": "NPC Glossary (Eros)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -901,7 +901,7 @@
                 ]
             },
             {
-                "name": "[HL A-2] NPC Glossary (Orpheus)",
+                "name": "NPC Glossary (Orpheus)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -924,7 +924,7 @@
                 ]
             },
             {
-                "name": "[HL B-1] NPC Glossary (Baphomet)",
+                "name": "NPC Glossary (Baphomet)",
                 "sections": [
                     {
                         "name": "Glossary",

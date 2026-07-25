@@ -95,7 +95,7 @@
                         ]
                     },
                     {
-                        "name": "[SFG C-4] NPC Glossary (Fairy Guild General)",
+                        "name": "NPC Glossary (Fairy Guild General)",
                         "item_count": 1,
                         "visibility_rules": [
                             "setting_glossanity_npc"
@@ -862,7 +862,7 @@
                         ]
                     },
                     {
-                        "name": "[SFG A-4] Glossary at Left Snow Drop",
+                        "name": "Glossary at Left Snow Drop",
                         "item_count": 1,
                         "visibility_rules": [
                             "setting_glossanity_freestanding"
@@ -922,7 +922,7 @@
                 ]
             },
             {
-                "name": "[SFG B-4] Glossary Behind Eye (Scan)",
+                "name": "Glossary Behind Eye (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -946,7 +946,7 @@
                 ]
             },
             {
-                "name": "[SFG E-4] Glossary in the Path of Snow",
+                "name": "Glossary in the Path of Snow",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -970,7 +970,7 @@
                 ]
             },
             {
-                "name": "[SFG B-5] Glossary in the Snow Below Skeleton",
+                "name": "Glossary in the Snow Below Skeleton",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -994,7 +994,7 @@
                 ]
             },
             {
-                "name": "[SFG D-5] Glossary in the Checkered Pillar",
+                "name": "Glossary in the Checkered Pillar",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1018,7 +1018,7 @@
                 ]
             },
             {
-                "name": "[SFG D-4] Glossary in Between the Elevators",
+                "name": "Glossary in Between the Elevators",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1042,7 +1042,7 @@
                 ]
             },
             {
-                "name": "[SFG C-2] Glossary in Hollow Pillar Before Balor",
+                "name": "Glossary in Hollow Pillar Before Balor",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1066,7 +1066,7 @@
                 ]
             },
             {
-                "name": "[SFG D-7] Glossary in Flame Torc Wall Above Spikes (Scan)",
+                "name": "Glossary in Flame Torc Wall Above Spikes (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1090,7 +1090,7 @@
                 ]
             },
             {
-                "name": "[SFG E-4] NPC Glossary (Gerd)",
+                "name": "NPC Glossary (Gerd)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1114,7 +1114,7 @@
                 ]
             },
             {
-                "name": "[SFG D-5] NPC Glossary (Thrymr)",
+                "name": "NPC Glossary (Thrymr)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1138,7 +1138,7 @@
                 ]
             },
             {
-                "name": "[SFG B-4] NPC Glossary (Mnemosyne's Remains)",
+                "name": "NPC Glossary (Mnemosyne's Remains)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1263,7 +1263,7 @@
                 ]
             },
             {
-                "name": "[SFGB A-1] Glossary Post-Tezcatlipoca",
+                "name": "Glossary Post-Tezcatlipoca",
                 "sections": [
                     {
                         "name": "Glossary",

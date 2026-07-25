@@ -721,7 +721,7 @@
                 ]
             },
             {
-                "name": "[ROY C-5] Glossary in Wall Above Korobock",
+                "name": "Glossary in Wall Above Korobock",
                 "map_locations": [
                     {
                         "map": "Roots of Yggdrasil",
@@ -745,7 +745,7 @@
                 ]
             },
             {
-                "name": "[ROY E-5] Glossary in Torch Room Wall",
+                "name": "Glossary in Torch Room Wall",
                 "map_locations": [
                     {
                         "map": "Roots of Yggdrasil",
@@ -769,7 +769,7 @@
                 ]
             },
             {
-                "name": "[ROY C-4] Glossary in Opened Wall",
+                "name": "Glossary in Opened Wall",
                 "map_locations": [
                     {
                         "map": "Roots of Yggdrasil",
@@ -793,7 +793,7 @@
                 ]
             },
             {
-                "name": "[ROY B-3] NPC Glossary (Sigyn)",
+                "name": "NPC Glossary (Sigyn)",
                 "map_locations": [
                     {
                         "map": "Roots of Yggdrasil",
@@ -817,7 +817,7 @@
                 ]
             },
             {
-                "name": "[ROY E-4] NPC Glossary (Vili)",
+                "name": "NPC Glossary (Vili)",
                 "map_locations": [
                     {
                         "map": "Roots of Yggdrasil",
@@ -841,7 +841,7 @@
                 ]
             },
             {
-                "name": "[ROY E-6] NPC Glossary (Ve)",
+                "name": "NPC Glossary (Ve)",
                 "map_locations": [
                     {
                         "map": "Roots of Yggdrasil",

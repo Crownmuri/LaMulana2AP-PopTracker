@@ -3,7 +3,7 @@
         "name": "Ancient Chaos",
         "children": [
             {
-                "name": "[AC C-6] Fish Glossary (Nodoguro)",
+                "name": "Fish Glossary (Nodoguro)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -910,7 +910,7 @@
                 ]
             },
             {
-                "name": "[AC D-7] Glossary at the Bottom of Lava Funnel",
+                "name": "Glossary at the Bottom of Lava Funnel",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -933,7 +933,7 @@
                 ]
             },
             {
-                "name": "[AC A-6] Glossary in Wall Between The Eyes (Scan)",
+                "name": "Glossary in Wall Between The Eyes (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -956,7 +956,7 @@
                 ]
             },
             {
-                "name": "[AC D-3] Glossary in Left Wall Before Anzu",
+                "name": "Glossary in Left Wall Before Anzu",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -979,7 +979,7 @@
                 ]
             },
             {
-                "name": "[AC C-5] NPC Glossary (Pangu)",
+                "name": "NPC Glossary (Pangu)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1002,7 +1002,7 @@
                 ]
             },
             {
-                "name": "[AC A-4] NPC Glossary (Shennong)",
+                "name": "NPC Glossary (Shennong)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1025,7 +1025,7 @@
                 ]
             },
             {
-                "name": "[AC D-5] NPC Glossary (Zhuanxu)",
+                "name": "NPC Glossary (Zhuanxu)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1048,7 +1048,7 @@
                 ]
             },
             {
-                "name": "[AC D-7] NPC Glossary (Sykick)",
+                "name": "NPC Glossary (Sykick)",
                 "sections": [
                     {
                         "name": "Glossary",

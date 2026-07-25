@@ -372,7 +372,7 @@
                 ]
             },
             {
-                "name": "Above Mantra Mural Coin Pot",
+                "name": "Hermod's Coin Pot",
                 "map_locations": [
                     {
                         "map": "Divine Fortress",
@@ -420,31 +420,7 @@
                 ]
             },
             {
-                "name": "Dwarves' Hideout Right Pot #2",
-                "map_locations": [
-                    {
-                        "map": "Divine Fortress",
-                        "x": 177,
-                        "y": 341,
-                        "size": 15,
-                        "shape": "rect"
-                    }
-                ],
-                "sections": [
-                    {
-                        "name": "Pot",
-                        "item_count": 1
-                    }
-                ],
-                "visibility_rules": [
-                    "setting_potsanity_shuriken"
-                ],
-                "access_rules": [
-                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
-                ]
-            },
-            {
-                "name": "Dwarves' Hideout Right Pot #1",
+                "name": "Dwarves' Hideout Upper Right Pot",
                 "map_locations": [
                     {
                         "map": "Divine Fortress",
@@ -462,6 +438,30 @@
                 ],
                 "visibility_rules": [
                     "setting_potsanity_low_value"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
+                ]
+            },
+            {
+                "name": "Dwarves' Hideout Lower Right Pot",
+                "map_locations": [
+                    {
+                        "map": "Divine Fortress",
+                        "x": 177,
+                        "y": 341,
+                        "size": 15,
+                        "shape": "rect"
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(DFMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather)))"
@@ -732,7 +732,7 @@
                 ]
             },
             {
-                "name": "[DF D-5] Glossary in Wall Right of Mural",
+                "name": "Glossary in Wall Right of Mural",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -756,7 +756,7 @@
                 ]
             },
             {
-                "name": "[DF D-4] NPC Glossary (Hermod)",
+                "name": "NPC Glossary (Hermod)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -792,11 +792,11 @@
                 ],
                 "sections": [
                     {
-                        "name": "[DF A-3] NPC Glossary (Brokkr)",
+                        "name": "NPC Glossary (Brokkr)",
                         "item_count": 1
                     },
                     {
-                        "name": "[DF A-3] NPC Glossary (Eitri)",
+                        "name": "NPC Glossary (Eitri)",
                         "item_count": 1
                     }
                 ],
@@ -808,7 +808,7 @@
                 ]
             },
             {
-                "name": "[DF E-4] NPC Glossary (Tyr)",
+                "name": "NPC Glossary (Tyr)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -832,7 +832,7 @@
                 ]
             },
             {
-                "name": "[DF C-2] NPC Glossary (Thor)",
+                "name": "NPC Glossary (Thor)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -856,7 +856,7 @@
                 ]
             },
             {
-                "name": "[DF E-4] Glossary in Pre-Hugin and Munin Wall",
+                "name": "Glossary in Pre-Hugin and Munin Wall",
                 "sections": [
                     {
                         "name": "Glossary",

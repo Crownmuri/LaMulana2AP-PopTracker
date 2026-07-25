@@ -3,7 +3,7 @@
         "name": "Icefire Treetop",
         "children": [
             {
-                "name": "[IT F-4] Fish Glossary (Sanma)",
+                "name": "Fish Glossary (Sanma)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1100,7 +1100,7 @@
                 ]
             },
             {
-                "name": "Left Ladder Coin Pot",
+                "name": "Iceside Left Ladder Coin Pot",
                 "map_locations": [
                     {
                         "map": "Icefire Treetop",
@@ -1123,7 +1123,7 @@
                 ]
             },
             {
-                "name": "[IT C-2] Glossary in Surtr's Room (Scan)",
+                "name": "Glossary in Surtr's Room (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1146,7 +1146,7 @@
                 ]
             },
             {
-                "name": "[IT B-1] Glossary in Left Breakable Floor",
+                "name": "Glossary in Left Breakable Floor",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1169,7 +1169,7 @@
                 ]
             },
             {
-                "name": "[IT C-5] Glossary at Poison Lava Skeleton (Scan)",
+                "name": "Glossary at Poison Lava Skeleton (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1192,7 +1192,7 @@
                 ]
             },
             {
-                "name": "[IT E-2] Glossary in the Hot Spring (Scan)",
+                "name": "Glossary in the Hot Spring (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1215,7 +1215,7 @@
                 ]
             },
             {
-                "name": "[IT C-3] NPC Glossary (Sinmara)",
+                "name": "NPC Glossary (Sinmara)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1238,7 +1238,7 @@
                 ]
             },
             {
-                "name": "[IT F-3] NPC Glossary (Modgud)",
+                "name": "NPC Glossary (Modgud)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1261,7 +1261,7 @@
                 ]
             },
             {
-                "name": "[IT E-1] NPC Glossary (Inanna)",
+                "name": "NPC Glossary (Inanna)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1284,7 +1284,7 @@
                 ]
             },
             {
-                "name": "[IT E-2] NPC Glossary (Enimul)",
+                "name": "NPC Glossary (Enimul)",
                 "sections": [
                     {
                         "name": "Glossary",

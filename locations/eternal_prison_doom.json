@@ -137,7 +137,7 @@
                         "item_count": 1
                     },
                     {
-                        "name": "[EPD E-5] NPC Glossary (Osiris)",
+                        "name": "NPC Glossary (Osiris)",
                         "item_count": 1,
                         "visibility_rules": [
                             "setting_glossanity_npc"
@@ -284,7 +284,7 @@
                 ]
             },
             {
-                "name": "Maze Clear Item Pot #1",
+                "name": "Maze Clear Left Item Pot",
                 "map_locations": [
                     {
                         "map": "Eternal Prison - Doom",
@@ -307,7 +307,7 @@
                 ]
             },
             {
-                "name": "Maze Clear Item Pot #2",
+                "name": "Maze Clear Right Item Pot",
                 "map_locations": [
                     {
                         "map": "Eternal Prison - Doom",
@@ -537,7 +537,7 @@
                 ]
             },
             {
-                "name": "[EPD C-4] Glossary in Wall Under Blood Corridor",
+                "name": "Glossary in Wall Under Blood Corridor",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -560,7 +560,7 @@
                 ]
             },
             {
-                "name": "[EPD C-3] Glossary in Right Mirrored Door (Scan)",
+                "name": "Glossary in Right Mirrored Door (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -583,7 +583,7 @@
                 ]
             },
             {
-                "name": "[EPD A-3] Glossary in Hel's Preview Area (Scan)",
+                "name": "Glossary in Hel's Preview Area (Scan)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -606,7 +606,7 @@
                 ]
             },
             {
-                "name": "[EPD D-4] NPC Glossary (Neti)",
+                "name": "NPC Glossary (Neti)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -629,7 +629,7 @@
                 ]
             },
             {
-                "name": "[EPD E-5] NPC Glossary (Anubis)",
+                "name": "NPC Glossary (Anubis)",
                 "sections": [
                     {
                         "name": "Glossary",

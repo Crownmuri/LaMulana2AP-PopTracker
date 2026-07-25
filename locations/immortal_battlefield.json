@@ -1105,7 +1105,7 @@
                 ]
             },
             {
-                "name": "Jormungandr Mural Item Pot",
+                "name": "Jormungand Mural Item Pot",
                 "map_locations": [
                     {
                         "map": "Immortal Battlefield",
@@ -1670,7 +1670,7 @@
                 ]
             },
             {
-                "name": "[IB G-1] Glossary Post Cetus Water Passage",
+                "name": "Glossary Post Cetus Water Passage",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1693,7 +1693,7 @@
                 ]
             },
             {
-                "name": "[IB B-6] Glossary at Left-side Long Ladder",
+                "name": "Glossary at Left-side Long Ladder",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1716,7 +1716,7 @@
                 ]
             },
             {
-                "name": "[IB H-7] Glossary in the Buried Fortress",
+                "name": "Glossary in the Buried Fortress",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1739,7 +1739,7 @@
                 ]
             },
             {
-                "name": "[IB B-2] NPC Glossary (Kubera)",
+                "name": "NPC Glossary (Kubera)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1762,7 +1762,7 @@
                 ]
             },
             {
-                "name": "[IB F-2] NPC Glossary (Soma)",
+                "name": "NPC Glossary (Soma)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1785,7 +1785,7 @@
                 ]
             },
             {
-                "name": "[IB E-6] NPC Glossary (Yama)",
+                "name": "NPC Glossary (Yama)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1808,7 +1808,7 @@
                 ]
             },
             {
-                "name": "[IB G-7] NPC Glossary (Alviss)",
+                "name": "NPC Glossary (Alviss)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1831,7 +1831,7 @@
                 ]
             },
             {
-                "name": "[IB G-4] NPC Glossary (Haja)",
+                "name": "NPC Glossary (Haja)",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -1967,7 +1967,7 @@
                 ]
             },
             {
-                "name": "[ALTAR] Glossary on Left Platform",
+                "name": "Glossary on Left Platform",
                 "sections": [
                     {
                         "name": "Glossary",
