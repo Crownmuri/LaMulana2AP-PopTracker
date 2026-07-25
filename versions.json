@@ -1,9 +1,9 @@
 {
     "versions": [
         {
-            "package_version": "0.9.0",
+            "package_version": "1.5.0",
             "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.5.0/LaMulana2AP-PopTracker.v1.5.0.zip",
-            "sha256": "caa7a07eb3b82f1a708f3be76c9841d19b0af670f8fe873385a8931e11d942b7",
+            "sha256": "b27c3da433b3ee8990823e1cbe9ae9aa3d3389c0e5c9f3d9982c96b14fab50ab",
             "changelog": [
                 "Added sanities and DLC support."
             ]
