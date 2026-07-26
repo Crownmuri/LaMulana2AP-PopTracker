@@ -3863,16 +3863,6 @@
                 "visibility_rules": [
                     "setting_potsanity_high_value"
                 ]
-            },
-            {
-                "name": "Phaia Room Coin Pot",
-                "item_count": 1,
-                "access_rules": [
-                    "@Hall of Malice/Phaia Room Coin Pot/Pot"
-                ],
-                "visibility_rules": [
-                    "setting_potsanity_low_value"
-                ]
             }
         ]
     },
@@ -3893,6 +3883,16 @@
             }
         ],
         "sections": [
+            {
+                "name": "Phaia Room Coin Pot",
+                "item_count": 1,
+                "access_rules": [
+                    "@Hall of Malice/Phaia Room Coin Pot/Pot"
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_low_value"
+                ]
+            },
             {
                 "name": "Orthrus Approach Coin Pot",
                 "item_count": 1,
