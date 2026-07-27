@@ -3464,11 +3464,11 @@
                 ]
             },
             {
-                "name": "Oannes Dark Fish Escape (E-6)",
+                "name": "Oannes Fish Crystal Escape (E-6)",
                 "sections": [
                     {
                         "name": "Entrance",
-                        "hosted_item": "er_tower_of_oannes_dark_fish_crystal_escape__e_6",
+                        "hosted_item": "er_tower_of_oannes_evil_fish_crystal_escape__e_6",
                         "item_size": "200,16"
                     }
                 ],

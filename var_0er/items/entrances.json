@@ -1741,16 +1741,16 @@
         "img": "images/entrances/unmapped.png"
     },
     {
-        "name": "Oannes Dark Fish Escape (E-6)",
+        "name": "Oannes Fish Crystal Escape (E-6)",
         "type": "toggle",
-        "codes": "er_tower_of_oannes_dark_fish_crystal_escape__e_6",
+        "codes": "er_tower_of_oannes_evil_fish_crystal_escape__e_6",
         "category": "entrance",
-        "img": "images/entrances/er_tower_of_oannes_dark_fish_crystal_escape__e_6.png"
+        "img": "images/entrances/er_tower_of_oannes_evil_fish_crystal_escape__e_6.png"
     },
     {
-        "name": "Target for Oannes Dark Fish Escape (E-6)",
+        "name": "Target for Oannes Fish Crystal Escape (E-6)",
         "type": "static",
-        "codes": "target_er_tower_of_oannes_dark_fish_crystal_escape__e_6",
+        "codes": "target_er_tower_of_oannes_evil_fish_crystal_escape__e_6",
         "img": "images/entrances/unmapped.png"
     },
     {

@@ -974,7 +974,7 @@ ER_ENTRANCE_DATA = {
     ["er_tower_of_oannes_left_c_top_gate__c_5"] = { area = "TowerOfOannesLeftC" },
     ["er_tower_of_oannes_right_entrance_gate__d_12"] = { area = "TowerOfOannesRightA" },
     ["er_tower_of_oannes_moving_tiles_escape__d_10"] = { area = "TowerOfOannesRightASlide" },
-    ["er_tower_of_oannes_dark_fish_crystal_escape__e_6"] = { area = "TowerOfOannesRightBCrystal" },
+    ["er_tower_of_oannes_evil_fish_crystal_escape__e_6"] = { area = "TowerOfOannesRightBCrystal" },
     ["er_bailey_left_gyonin_drop__b_1"] = { area = "BaileyBottom" },
     ["er_bailey_bottom_gate__a_11"] = { area = "BaileyBottom" },
     ["er_bailey_level_1_lower_gate__a_6"] = { area = "BaileyLevel1" },
@@ -1225,7 +1225,7 @@ ER_ENTRANCES_BY_AREA = {
         { code = "er_tower_of_oannes_moving_tiles_escape__d_10", logic = "HorizontalAttack", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
     },
     ["TowerOfOannesRightBCrystal"] = {
-        { code = "er_tower_of_oannes_dark_fish_crystal_escape__e_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
+        { code = "er_tower_of_oannes_evil_fish_crystal_escape__e_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
     },
     ["BaileyBottom"] = {
         { code = "er_bailey_bottom_gate__a_11", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftA" },
