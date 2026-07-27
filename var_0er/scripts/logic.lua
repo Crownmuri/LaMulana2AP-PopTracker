@@ -722,6 +722,7 @@ FORWARD_EXITS = {
     ["EPDMain"] = {{"EPDEntrance", "IsDead(Hraesvelgr) and Has(Feather)"}, {"EPDTop", "Has(Feather) and Has(Grapple Claw)"}, {"EPG", "Has(Grapple Claw) and (Has(Gale Fibula) or CanStopTime) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1) and Has(Anchor)))"},{"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["EPDTop"] = {{"EPDHel", "((IsDead(Vidofnir) and GuardianKills(5)) or Setting(Random Soul Gates)) and IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Glove) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"}},
     ["EPG"] = {{"EPDMain", "(Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1)) or Has(Grapple Claw)) and Has(Feather)"}, {"EPDTop", "Has(Death Sigil) and (Has(Feather) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp))"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
+    ["GateofGuidance"] = {{"GateofGuidanceRightLadder", "IsDead(Heimdall)"}},
     ["GateofGuidanceLeft"] = {{"GateofGuidance", "CanReach(Mausoleum of Giants)"}},
     ["GotD"] = {{"GotDWedjet", "True"}},
     ["GotDWedjet"] = {{"GotD", "CanWarp or (Has(Pepper) and Has(Birth Sigil) and CanChant(Sun) and CanKill(Unicorn))"}},
@@ -774,27 +775,15 @@ FORWARD_EXITS = {
     -- =================================================================
     -- DLC regions: Spring in the Sky / Tower of Oannes / Bailey / Eden.
     -- =================================================================
-    -- Tower top-gate pockets: the shuffled gate carries only its real
-    -- requirement; the CanWarp softlock-failsafe lives on the internal
-    -- reverse edge back to the tower body (never shuffled).
-    -- Spring in the Sky top pocket: fL04Up (up-ladder) needs Rebirth Sigil to
-    -- spawn; the CanWarp failsafe lives on the internal climb-down edge.
+    ["GateofGuidanceRightLadder"] = {{"GateofGuidance", "IsDead(Heimdall)"}},
     ["SpringintheSky"] = {{"SpringintheSkyTop", "Has(Feather)"}},
     ["SpringintheSkyTop"] = {{"SpringintheSky", "CanWarp or Has(Feather)"}},
     ["TowerOfOannesLeftA"] = {{"TowerOfOannesLeftATopGate", "Has(Feather)"}},
     ["TowerOfOannesLeftATopGate"] = {{"TowerOfOannesLeftA", "CanWarp or Has(Feather)"}},
     ["TowerOfOannesLeftB"] = {{"TowerOfOannesLeftBTopGate", "Has(Feather)"}},
     ["TowerOfOannesLeftBTopGate"] = {{"TowerOfOannesLeftB", "CanWarp or IsDead(Fish-Valusa Re-gyo-ded)"}},
-    -- Left C: gate hub ⇄ Top pocket (FSZ + C-3 glossary). Forward = whips
-    -- traverse up; back = Has(Feather) climb down to the gates. fEx1_Lout
-    -- (FSZ escape) arrival lands in LeftCTop.
     ["TowerOfOannesLeftC"] = {{"TowerOfOannesLeftCTop", "MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))"}},
     ["TowerOfOannesLeftCTop"] = {{"TowerOfOannesLeftC", "Has(Feather)"}},
-    -- Tower of Oannes Right: puzzle room (A) → boss room (B) → Crystal pocket.
-    -- A→B forward = the Feather+CanWarp jumping-puzzle traverse. B→A is False
-    -- (A's puzzle already opens all of A's entrances, so B never grants new
-    -- access to A). B⇄Crystal: back = CanWarp/Feather failsafe, ledge = True.
-    -- fEx1_Rout2 (DFC escape) arrival lands in Crystal.
     ["TowerOfOannesRightA"] = {{"TowerOfOannesRightASlide", "Has(Feather) and CanWarp"}, {"TowerOfOannesRightB", "Has(Feather) and CanWarp"}},
     ["TowerOfOannesRightASlide"] = {{"TowerOfOannesRightA", "CanWarp"}},
     ["TowerOfOannesRightB"] = {{"TowerOfOannesRightBCrystal", "CanWarp or Has(Feather)"}},
@@ -972,7 +961,7 @@ ER_ENTRANCE_DATA = {
     ["er_icefire_treetop_vidofnir_soul_gate__d_6"] = { area = "ITVidofnir" },
     ["er_eternal_prison_gloom_soul_gate__d_2"] = { area = "EPG" },
     -- DLC entrances (Spring in the Sky / Tower of Oannes / Bailey)
-    ["er_gate_of_guidance_right_ladder__e_2"] = { area = "GateofGuidance" },
+    ["er_gate_of_guidance_right_ladder__e_2"] = { area = "GateofGuidanceRightLadder" },
     ["er_spring_in_the_sky_ladder_down__a_6"] = { area = "SpringintheSky" },
     ["er_spring_in_the_sky_ladder_up__c_1"] = { area = "SpringintheSkyTop" },
     ["er_tower_of_oannes_left_a_ladder_down__b_16"] = { area = "TowerOfOannesLeftA" },
@@ -1075,7 +1064,9 @@ ER_ENTRANCES_BY_AREA = {
     ["GateofGuidance"] = {
         { code = "er_gate_of_guidance_ladder_down__a_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "MausoleumofGiants" },
         { code = "er_gate_of_guidance_main_entrance__c_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "VoD" },
-        { code = "er_gate_of_guidance_right_ladder__e_2", logic = "IsDead(Heimdall)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "SpringintheSky" },
+    },
+    ["GateofGuidanceRightLadder"] = {
+        { code = "er_gate_of_guidance_right_ladder__e_2", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "SpringintheSky" },
     },
     ["MausoleumofGiants"] = {
         { code = "er_mausoleum_of_giants_ladder_up__a_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "GateofGuidance" },
@@ -1202,7 +1193,7 @@ ER_ENTRANCES_BY_AREA = {
     },
     -- DLC entrances (Spring in the Sky / Tower of Oannes / Bailey)
     ["SpringintheSky"] = {
-        { code = "er_spring_in_the_sky_ladder_down__a_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "GateofGuidance" },
+        { code = "er_spring_in_the_sky_ladder_down__a_6", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "GateofGuidanceRightLadder" },
     },
     ["SpringintheSkyTop"] = {
         { code = "er_spring_in_the_sky_ladder_up__c_1", logic = "Has(Feather) and Has(Rebirth Sigil)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "TowerOfOannesLeftA" },

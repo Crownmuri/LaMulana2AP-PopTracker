@@ -2909,7 +2909,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GateofGuidance) and IsDead(Heimdall)"
+                    "^$lm2_logic|CanReach(GateofGuidanceRightLadder)"
                 ]
             },
             {

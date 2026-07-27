@@ -813,7 +813,7 @@ FORWARD_EXITS = {
     ["EPDTop"] = {{"EPDHel", "((IsDead(Vidofnir) and GuardianKills(5)) or Setting(Random Soul Gates)) and IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Glove) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"}},
     ["EPG"] = {{"EPDMain", "(Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1)) or Has(Grapple Claw)) and Has(Feather)"}, {"EPDTop", "Has(Death Sigil) and (Has(Feather) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp))"}, {"ITVidofnir", "GuardianKills(5) or Setting(Random Soul Gates)"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["EndlessCorridor"] = {{"MausoleumofGiantsRubble", "True"}},
-    ["GateofGuidance"] = {{"VoD", "True"}, {"MausoleumofGiants", "True"}, {"SpringintheSky", "IsDead(Heimdall)"}},
+    ["GateofGuidance"] = {{"VoD", "True"}, {"MausoleumofGiants", "True"}, {"GateofGuidanceRightLadder", "IsDead(Heimdall)"}},
     ["GateofGuidanceLeft"] = {{"GateofIllusion", "True"}, {"GateofGuidance", "CanReach(Mausoleum of Giants)"}},
     ["GateofIllusion"] = {{"RoYMiddle", "HorizontalAttack"}, {"GateofGuidanceLeft", "True"}},
     ["GotD"] = {{"IBMain", "GuardianKills(2) or Setting(Random Soul Gates)"}, {"GotDWedjet", "True"}},
@@ -879,13 +879,9 @@ FORWARD_EXITS = {
 
     -- =================================================================
     -- DLC regions: Spring in the Sky / Tower of Oannes / Bailey / Eden.
-    -- Mirrors World.json exits 1:1 (all fixed edges — the base variant has
-    -- no entrance shuffle, so both the internal exits and the Bailey/Spring
-    -- connections are hard-wired here; var_0er routes the shuffled ones via
-    -- ER_ENTRANCES_BY_AREA instead). Spring in the Sky Top is collapsed into
-    -- SpringintheSky (Feather-gated both ways, no DLC locations there).
     -- =================================================================
-    ["SpringintheSky"] = {{"GateofGuidance", "True"}, {"TowerOfOannesLeftA", "Has(Feather) and Has(Rebirth Sigil)"}},
+    ["GateofGuidanceRightLadder"] = {{"GateofGuidance", "IsDead(Heimdall)"}, {"SpringintheSky", "True"}},
+    ["SpringintheSky"] = {{"GateofGuidanceRightLadder", "True"}, {"TowerOfOannesLeftA", "Has(Feather) and Has(Rebirth Sigil)"}},
     ["TowerOfOannesLeftA"] = {{"SpringintheSky", "CanWarp or Has(Feather)"}, {"BaileyBottom", "True"}, {"TowerOfOannesLeftATopGate", "Has(Feather)"}},
     ["TowerOfOannesLeftATopGate"] = {{"BaileyLevel1", "True"}, {"TowerOfOannesLeftA", "CanWarp or Has(Feather)"}},
     ["TowerOfOannesLeftB"] = {{"BaileyLevel1", "True"}, {"TowerOfOannesLeftBTopGate", "Has(Feather)"}},
