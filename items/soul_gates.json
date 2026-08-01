@@ -1,0 +1,542 @@
+[
+    {
+        "name": "Cost: Roots of Yggdrasil Bottom Soul Gate (D-6)",
+        "type": "progressive",
+        "codes": "cost_er_roots_of_yggdrasil_bottom_soul_gate__d_6",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Divine Fortress Soul Gate (C-5)",
+        "type": "progressive",
+        "codes": "cost_er_divine_fortress_soul_gate__c_5",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Annwfn Soul Gate (A-4)",
+        "type": "progressive",
+        "codes": "cost_er_annwfn_soul_gate__a_4",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Shrine of the Frost Giants Main Soul Gate (E-4)",
+        "type": "progressive",
+        "codes": "cost_er_shrine_of_the_frost_giants_main_soul_gate__e_4",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Immortal Battlefield Top Right Gate (H-2)",
+        "type": "progressive",
+        "codes": "cost_er_immortal_battlefield_top_right_gate__h_2",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Gate of the Dead Soul Gate (C-4)",
+        "type": "progressive",
+        "codes": "cost_er_gate_of_the_dead_soul_gate__c_4",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 1,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Immortal Battlefield Bottom Left Gate (B-7)",
+        "type": "progressive",
+        "codes": "cost_er_immortal_battlefield_bottom_left_gate__b_7",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 2,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Takamagahara Shrine Top Main Soul Gate (D-1)",
+        "type": "progressive",
+        "codes": "cost_er_takamagahara_shrine_top_main_soul_gate__d_1",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 2,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Icefire Treetop Under Ratatoskr Soul Gate (G-3)",
+        "type": "progressive",
+        "codes": "cost_er_icefire_treetop_under_ratatoskr_soul_gate__g_3",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 2,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Heavens Labyrinth Soul Gate (E-5)",
+        "type": "progressive",
+        "codes": "cost_er_heavens_labyrinth_soul_gate__e_5",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 2,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Icefire Treetop Vidofnir Soul Gate (D-6)",
+        "type": "progressive",
+        "codes": "cost_er_icefire_treetop_vidofnir_soul_gate__d_6",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 3,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Eternal Prison Gloom Soul Gate (D-2)",
+        "type": "progressive",
+        "codes": "cost_er_eternal_prison_gloom_soul_gate__d_2",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 3,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Shrine of the Frost Giants Balor Soul Gate (E-1)",
+        "type": "progressive",
+        "codes": "cost_er_shrine_of_the_frost_giants_balor_soul_gate__e_1",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 3,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Valhalla Soul Gate (E-2)",
+        "type": "progressive",
+        "codes": "cost_er_valhalla_soul_gate__e_2",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 3,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Takamagahara Shrine Belial Soul Gate (B-1)",
+        "type": "progressive",
+        "codes": "cost_er_takamagahara_shrine_belial_soul_gate__b_1",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 3,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Ancient Chaos Soul Gate (C-1)",
+        "type": "progressive",
+        "codes": "cost_er_ancient_chaos_soul_gate__c_1",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 3,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Immortal Battlefield Spiral Boat Soul Gate(D-4)",
+        "type": "progressive",
+        "codes": "cost_er_immortal_battlefield_spiral_boat_soul_gate_d_4",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 4,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    },
+    {
+        "name": "Cost: Hall of Malice Soul Gate (D-3)",
+        "type": "progressive",
+        "codes": "cost_er_hall_of_malice_soul_gate__d_3",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 4,
+        "stages": [
+            {
+                "name": "1 Soul",
+                "img": "images/entrances/SG1.png"
+            },
+            {
+                "name": "2 Souls",
+                "img": "images/entrances/SG2.png"
+            },
+            {
+                "name": "3 Souls",
+                "img": "images/entrances/SG3.png"
+            },
+            {
+                "name": "5 Souls",
+                "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "9 Souls",
+                "img": "images/entrances/SG9.png"
+            }
+        ]
+    }
+]

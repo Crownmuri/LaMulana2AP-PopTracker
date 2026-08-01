@@ -176,6 +176,12 @@
         "initial_active_state": true
     },
     {
+        "name": "Random Soul Gates",
+        "type": "toggle",
+        "img": "images/gate.png",
+        "codes": "setting_random_soul_gates"
+    },
+    {
         "name": "Random Research",
         "type": "toggle",
         "img": "images/Software/KosugiResearch.png",
