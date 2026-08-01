@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "1.5.2",
+            "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.5.2/LaMulana2AP-PopTracker.v1.5.2.zip",
+            "sha256": "c38a265c4d13f3b9690c4a81a1b0311dec40b05b5d755628692ac56ba8901ffe",
+            "changelog": [
+                "Implemented Random Soul Gate Values for the non-ER pack and fixed one DLC entrance' access logic"
+            ]
+        },
+        {
             "package_version": "1.5.1",
             "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v1.5.1/LaMulana2AP-PopTracker.v1.5.1.zip",
             "sha256": "e01d7e2475dd15c6f3da874593b02d9b4c151efce54743be04719cc98a94e63d",
