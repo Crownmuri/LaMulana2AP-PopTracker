@@ -1,0 +1,781 @@
+[
+    {
+        "name": "Soul Gates",
+        "children": [
+            {
+                "name": "Roots of Yggdrasil Bottom Soul Gate (D-6)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_roots_of_yggdrasil_bottom_soul_gate__d_6|CanReach(RoYBottom)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_roots_of_yggdrasil_bottom_soul_gate__d_6",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1809,
+                        "y": 371,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1809,
+                        "y": 371,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Roots of Yggdrasil",
+                        "x": 873,
+                        "y": 739,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Divine Fortress Soul Gate (C-5)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_divine_fortress_soul_gate__c_5|CanReach(DFEntrance)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_divine_fortress_soul_gate__c_5",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2472,
+                        "y": 355,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 2472,
+                        "y": 355,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Divine Fortress",
+                        "x": 701,
+                        "y": 580,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Annwfn Soul Gate (A-4)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_annwfn_soul_gate__a_4|CanReach(AnnwfnSG) and Has(Origin Sigil)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_annwfn_soul_gate__a_4",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1485,
+                        "y": 627,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1485,
+                        "y": 627,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Annwfn",
+                        "x": 225,
+                        "y": 446,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Shrine of the Frost Giants Main Soul Gate (E-4)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_shrine_of_the_frost_giants_main_soul_gate__e_4|CanReach(SotFGMain)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_shrine_of_the_frost_giants_main_soul_gate__e_4",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1263,
+                        "y": 627,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1263,
+                        "y": 627,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 1030,
+                        "y": 446,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Immortal Battlefield Top Right Gate (H-2)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_immortal_battlefield_top_right_gate__h_2|CanReach(IBMain) and HorizontalAttack"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_immortal_battlefield_top_right_gate__h_2",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2184,
+                        "y": 853,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 2184,
+                        "y": 853,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 1871,
+                        "y": 226,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Gate of the Dead Soul Gate (C-4)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_gate_of_the_dead_soul_gate__c_4|CanReach(GotD)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_gate_of_the_dead_soul_gate__c_4",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2457,
+                        "y": 719,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 2457,
+                        "y": 719,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Gate of the Dead",
+                        "x": 671,
+                        "y": 493,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Immortal Battlefield Bottom Left Gate (B-7)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_immortal_battlefield_bottom_left_gate__b_7|CanReach(IBLeftSG)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_immortal_battlefield_bottom_left_gate__b_7",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1463,
+                        "y": 1201,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1463,
+                        "y": 1201,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 430,
+                        "y": 922,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Takamagahara Shrine Top Main Soul Gate (D-1)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_takamagahara_shrine_top_main_soul_gate__d_1|CanReach(TSEntrance)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_takamagahara_shrine_top_main_soul_gate__d_1",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 562,
+                        "y": 1154,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 562,
+                        "y": 1154,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 874,
+                        "y": 19,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Icefire Treetop Under Ratatoskr Soul Gate (G-3)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_icefire_treetop_under_ratatoskr_soul_gate__g_3|CanReach(ITRight) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_icefire_treetop_under_ratatoskr_soul_gate__g_3",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2134,
+                        "y": 1365,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 2134,
+                        "y": 1365,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 1525,
+                        "y": 313,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Heavens Labyrinth Soul Gate (E-5)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_heavens_labyrinth_soul_gate__e_5|CanReach(HL)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_heavens_labyrinth_soul_gate__e_5",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1359,
+                        "y": 1402,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1359,
+                        "y": 1402,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Heavens Labyrinth",
+                        "x": 1223,
+                        "y": 653,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Icefire Treetop Vidofnir Soul Gate (D-6)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_icefire_treetop_vidofnir_soul_gate__d_6|CanReach(ITVidofnir) and IsDead(Vidofnir) and CanWarp"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_icefire_treetop_vidofnir_soul_gate__d_6",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1809,
+                        "y": 1603,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1809,
+                        "y": 1603,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Icefire Treetop",
+                        "x": 873,
+                        "y": 786,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Eternal Prison Gloom Soul Gate (D-2)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_eternal_prison_gloom_soul_gate__d_2|CanReach(EPG)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_eternal_prison_gloom_soul_gate__d_2",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2184,
+                        "y": 2844,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 2184,
+                        "y": 2844,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Eternal Prison - Gloom",
+                        "x": 875,
+                        "y": 178,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Shrine of the Frost Giants Balor Soul Gate (E-1)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_shrine_of_the_frost_giants_balor_soul_gate__e_1|CanReach(SotFGBalor) and Has(Claydoll Suit) and IsDead(Balor)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_shrine_of_the_frost_giants_balor_soul_gate__e_1",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1291,
+                        "y": 426,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1291,
+                        "y": 426,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Shrine of the Frost Giants",
+                        "x": 1085,
+                        "y": 44,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Valhalla Soul Gate (E-2)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_valhalla_soul_gate__e_2|CanReach(ValhallaTopRight) and Has(Claydoll Suit)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_valhalla_soul_gate__e_2",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2088,
+                        "y": 1702,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 2088,
+                        "y": 1702,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Valhalla",
+                        "x": 1181,
+                        "y": 178,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Takamagahara Shrine Belial Soul Gate (B-1)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_takamagahara_shrine_belial_soul_gate__b_1|CanReach(TSBlood)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_takamagahara_shrine_belial_soul_gate__b_1",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 363,
+                        "y": 1189,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 363,
+                        "y": 1189,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Takamagahara Shrine",
+                        "x": 475,
+                        "y": 92,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Ancient Chaos Soul Gate (C-1)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_ancient_chaos_soul_gate__c_1|CanReach(ACBlood) and Has(Feather)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_ancient_chaos_soul_gate__c_1",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1310,
+                        "y": 2172,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1311,
+                        "y": 2104,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Ancient Chaos",
+                        "x": 624,
+                        "y": 42,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Immortal Battlefield Spiral Boat Soul Gate(D-4)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_immortal_battlefield_spiral_boat_soul_gate_d_4|CanReach(IBBoat)"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_immortal_battlefield_spiral_boat_soul_gate_d_4",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 1733,
+                        "y": 975,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 1733,
+                        "y": 975,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 969,
+                        "y": 470,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            },
+            {
+                "name": "Hall of Malice Soul Gate (D-3)",
+                "visibility_rules": [
+                    "setting_random_soul_gates"
+                ],
+                "access_rules": [
+                    "^$lm2_soulgate|er_hall_of_malice_soul_gate__d_3|CanReach(HoM) and Has(Death Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and (CanWarp or IsDead(HoM Middle Path))"
+                ],
+                "sections": [
+                    {
+                        "name": "Soul Gate",
+                        "item_count": 1,
+                        "chest_unopened_img": "images/gate.png",
+                        "chest_opened_img": "images/gate.png",
+                        "hosted_item": "cost_er_hall_of_malice_soul_gate__d_3",
+                        "item_size": "32,32"
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "Full Map",
+                        "x": 2437,
+                        "y": 2510,
+                        "size": 30,
+                        "border_thickness": 12,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Full Map (+DLC)",
+                        "x": 2437,
+                        "y": 2510,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    },
+                    {
+                        "map": "Hall of Malice",
+                        "x": 874,
+                        "y": 302,
+                        "size": 30,
+                        "shape": "trapezoid"
+                    }
+                ]
+            }
+        ]
+    }
+]

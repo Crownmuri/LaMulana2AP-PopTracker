@@ -35,6 +35,7 @@ Tracker:AddItems("items/ammo.json")
 Tracker:AddItems("items/options.json")
 Tracker:AddItems("items/bosses.json")
 Tracker:AddItems("items/settings.json")
+Tracker:AddItems("items/soul_gates.json")
 Tracker:AddItems("items/shop_marks.json")
 Tracker:AddItems("items/cursed.json")
 
@@ -60,7 +61,9 @@ Tracker:AddLocations("locations/eternal_prison_gloom.json")
 Tracker:AddLocations("locations/spiral_hell.json")
 Tracker:AddLocations("locations/tower_of_oannes.json")
 Tracker:AddLocations("locations/starting_shop.json")
-Tracker:AddLocations("locations/entrances.json")
+-- Soul gate markers. The ER variant loads the full locations/entrances.json
+-- (which includes these gates with their pairing UI) from its own init.lua.
+Tracker:AddLocations("locations/soul_gates.json")
 Tracker:AddLocations("locations/potlegend.json")
 Tracker:AddLocations("locations/enemyglossary.json")
 Tracker:AddLocations("locations/glossarylegend.json")

@@ -850,6 +850,13 @@ local function set_toggle(code, value)
     if obj then obj.Active = (tonumber(value) or 0) ~= 0 end
 end
 
+-- slot_data.options values arrive as either booleans or 0/1 depending on the
+-- option class, so normalise before combining several of them.
+local function _opt_on(value)
+    if type(value) == "boolean" then return value end
+    return (tonumber(value) or 0) ~= 0
+end
+
 -- Cached slot_data for the "Reveal Spoiler" button (var_er only).
 -- onClear runs every (re)connect, so this stays current with the server.
 _cached_slot_data = nil
@@ -888,6 +895,22 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     set_toggle("setting_glossanity_enemy",        _opts.glossanity_enemy)
 
     set_toggle("setting_oannesanity",            _opts.oannesanity)
+
+    -- Soul gates (non-ER variants). The toggle shows/hides the gate markers, so
+    -- a connected player never has to set it by hand; an offline one flips it on
+    -- and clicks the costs in from the map. random_dissonance is deliberately
+    -- not included -- it only rewrites the [9] boat gate, which SpiralBoatGate()
+    -- already models, and it's on by default, so it would put all 18 markers on
+    -- the map for nearly every seed.
+    set_toggle("setting_random_soul_gates",
+        (_opt_on(_opts.random_soul_gate_value) or _opt_on(_opts.include_nine_soul_gates)) and 1 or 0)
+    -- Costs themselves always come straight from the seed; an empty/absent list
+    -- just resets every gate to vanilla. ER owns its cost_ items through the
+    -- opt-in "Reveal Spoiler" button and doesn't define ApplySoulGateCosts, so
+    -- this is a no-op there.
+    if ApplySoulGateCosts then
+        ApplySoulGateCosts(slot_data.soul_gate_pairs)
+    end
 
     set_count ("setting_req_guardians",    tonumber(slot_data.required_guardians))
     set_count ("setting_req_skulls",       tonumber(slot_data.required_skulls))

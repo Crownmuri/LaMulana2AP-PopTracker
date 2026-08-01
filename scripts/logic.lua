@@ -190,19 +190,54 @@ local VANILLA_SOUL_GATE_COSTS = {
     ["er_eternal_prison_gloom_soul_gate__d_2"] = 5,
 }
 
--- Soul gate cost check. In ER mode, reads the manually-toggled cost from the
--- cost_<gate_code> progressive item; stage 0 (Untracked) means the gate is
--- blocked until the player sets a real value. In non-ER variants the cost_*
--- items don't exist, so it falls back to the vanilla cost.
+-- The two endpoints of the [9] HoM <-> IB Boat pair. Their vanilla cost is
+-- subject to the random_dissonance floor, so with no cost item to read they
+-- fall back to SpiralBoatGate() rather than a flat GuardianKills(9).
+local SOUL_GATE_NINE = {
+    ["er_immortal_battlefield_spiral_boat_soul_gate_d_4"] = true,
+    ["er_hall_of_malice_soul_gate__d_3"] = true,
+}
+
+-- The vanilla soul gate pairings, which the non-ER graph always keeps: only
+-- the cost moves. Cycling one endpoint syncs the other (see the cost watches
+-- further down), so a pair can never disagree with itself.
+local SOUL_GATE_PARTNER = {}
+for _, pair in ipairs({
+    {"er_roots_of_yggdrasil_bottom_soul_gate__d_6", "er_divine_fortress_soul_gate__c_5"},
+    {"er_annwfn_soul_gate__a_4", "er_shrine_of_the_frost_giants_main_soul_gate__e_4"},
+    {"er_immortal_battlefield_top_right_gate__h_2", "er_gate_of_the_dead_soul_gate__c_4"},
+    {"er_immortal_battlefield_bottom_left_gate__b_7", "er_takamagahara_shrine_top_main_soul_gate__d_1"},
+    {"er_icefire_treetop_under_ratatoskr_soul_gate__g_3", "er_heavens_labyrinth_soul_gate__e_5"},
+    {"er_icefire_treetop_vidofnir_soul_gate__d_6", "er_eternal_prison_gloom_soul_gate__d_2"},
+    {"er_shrine_of_the_frost_giants_balor_soul_gate__e_1", "er_valhalla_soul_gate__e_2"},
+    {"er_takamagahara_shrine_belial_soul_gate__b_1", "er_ancient_chaos_soul_gate__c_1"},
+    {"er_immortal_battlefield_spiral_boat_soul_gate_d_4", "er_hall_of_malice_soul_gate__d_3"},
+}) do
+    SOUL_GATE_PARTNER[pair[1]] = pair[2]
+    SOUL_GATE_PARTNER[pair[2]] = pair[1]
+end
+
+-- Soul gate costs, indexed by cost_<gate_code>.CurrentStage + 1. The cost items
+-- have no "off" stage: every gate always shows a concrete cost, starting at its
+-- vanilla value, so an offline player is correct from the first frame and only
+-- has to touch the gates a seed actually moved.
+local SOUL_GATE_STAGE_COST = {1, 2, 3, 5, 9}
+local SOUL_COST_TO_STAGE = {}
+for stage, cost in ipairs(SOUL_GATE_STAGE_COST) do
+    SOUL_COST_TO_STAGE[cost] = stage - 1
+end
+
+-- Soul gate cost check. Reads the cost from the cost_<gate_code> progressive
+-- item, which is filled in from slot_data.soul_gate_pairs on connect and can
+-- otherwise be cycled from the gate's map marker. The fallbacks only matter if
+-- the item is missing entirely (a variant that doesn't load items/soul_gates.json).
 function SoulGateCost(gate_code)
     local cost_obj = Tracker:FindObjectForCode("cost_" .. gate_code)
     if cost_obj then
-        if cost_obj.CurrentStage <= 0 then return false end
-        local stages = {1, 2, 3, 5, 9}
-        local cost = stages[cost_obj.CurrentStage]
-        if not cost then return false end
-        return GuardianKills(cost)
+        local cost = SOUL_GATE_STAGE_COST[cost_obj.CurrentStage + 1]
+        if cost then return GuardianKills(cost) end
     end
+    if SOUL_GATE_NINE[gate_code] then return SpiralBoatGate() end
     local vanilla = VANILLA_SOUL_GATE_COSTS[gate_code]
     if vanilla then return GuardianKills(vanilla) end
     return false
@@ -225,8 +260,9 @@ end
 -- value in {1,2,3,5,9} that is <= required_guardians whenever
 -- random_dissonance is ON (entrances.py _floor_to_available_gate_value),
 -- so the player never has to kill extra guardians just to reach the final
--- area. With random_dissonance OFF it stays at vanilla 9. ER packs read the
--- floored value from the per-gate cost_ item via SoulGateCost instead.
+-- area. With random_dissonance OFF it stays at vanilla 9. This is only the
+-- fallback for an untracked gate -- once slot_data has filled in the cost_
+-- items, SoulGateCost reads the real (already floored) value from there.
 function SpiralBoatGate()
     if not has("setting_random_dissonance") then
         return GuardianKills(9)
@@ -237,6 +273,90 @@ function SpiralBoatGate()
         if v <= req then floored = v end
     end
     return GuardianKills(floored)
+end
+
+-- ============================================================
+-- Soul gate costs from slot_data (non-ER variants)
+-- ============================================================
+-- The AP world emits slot_data.soul_gate_pairs as {gate1_exit_id,
+-- gate2_exit_id, soul_amount} whenever random_soul_gate_value,
+-- include_nine_soul_gates or random_dissonance is on, and it always lists all
+-- nine vanilla pairs (entrances.py _randomize_soul_gate_values_speculative
+-- tops up the untouched ones). Both endpoints of a pair share the cost, so
+-- each triple fills in two cost_ items.
+--
+-- Only soul gate ExitIDs are listed; the full table lives in the ER variant's
+-- entrance_mapping.lua, which owns the pairing side of this data.
+local SOUL_GATE_EXIT_ID_TO_CODE = {
+    [43] = "er_roots_of_yggdrasil_bottom_soul_gate__d_6",
+    [44] = "er_annwfn_soul_gate__a_4",
+    [45] = "er_immortal_battlefield_top_right_gate__h_2",
+    [46] = "er_immortal_battlefield_bottom_left_gate__b_7",
+    [47] = "er_immortal_battlefield_spiral_boat_soul_gate_d_4",
+    [48] = "er_icefire_treetop_under_ratatoskr_soul_gate__g_3",
+    [49] = "er_icefire_treetop_vidofnir_soul_gate__d_6",
+    [50] = "er_divine_fortress_soul_gate__c_5",
+    [51] = "er_shrine_of_the_frost_giants_main_soul_gate__e_4",
+    [52] = "er_shrine_of_the_frost_giants_balor_soul_gate__e_1",
+    [53] = "er_gate_of_the_dead_soul_gate__c_4",
+    [54] = "er_takamagahara_shrine_top_main_soul_gate__d_1",
+    [55] = "er_takamagahara_shrine_belial_soul_gate__b_1",
+    [56] = "er_heavens_labyrinth_soul_gate__e_5",
+    [57] = "er_valhalla_soul_gate__e_2",
+    [58] = "er_ancient_chaos_soul_gate__c_1",
+    [59] = "er_hall_of_malice_soul_gate__d_3",
+    [60] = "er_eternal_prison_gloom_soul_gate__d_2",
+}
+
+local function _set_gate_cost(exit_id, amount)
+    local code = SOUL_GATE_EXIT_ID_TO_CODE[tonumber(exit_id) or -1]
+    local stage = SOUL_COST_TO_STAGE[tonumber(amount) or -1]
+    if not code or not stage then return end
+    local obj = Tracker:FindObjectForCode("cost_" .. code)
+    if obj then obj.CurrentStage = stage end
+end
+
+-- Defined only here, so the ER variant's logic.lua (which owns cost_ items via
+-- its opt-in "Reveal Spoiler" button) leaves this nil and autotracking skips it.
+function ApplySoulGateCosts(soul_gate_pairs)
+    -- Reset to vanilla first: a seed with no soul gate randomization sends an
+    -- empty list, and connecting to it must not leave a previous slot's costs
+    -- (or the player's manual guesses) behind.
+    for _, code in pairs(SOUL_GATE_EXIT_ID_TO_CODE) do
+        local obj = Tracker:FindObjectForCode("cost_" .. code)
+        local stage = SOUL_COST_TO_STAGE[VANILLA_SOUL_GATE_COSTS[code] or -1]
+        if obj and stage then obj.CurrentStage = stage end
+    end
+
+    if type(soul_gate_pairs) ~= "table" then return end
+    for _, p in ipairs(soul_gate_pairs) do
+        if type(p) == "table" and p[1] and p[2] and p[3] then
+            _set_gate_cost(p[1], p[3])
+            _set_gate_cost(p[2], p[3])
+        end
+    end
+end
+
+-- Keep both endpoints of a pair in step when a cost is cycled from the map --
+-- the AP seed always gives a pair one shared cost, so setting IB Top Right to
+-- [3] must move Gate of the Dead with it. The inequality check is what stops
+-- the two watches from bouncing off each other.
+local function _on_soul_gate_cost_changed(code)
+    local partner = SOUL_GATE_PARTNER[code:gsub("^cost_", "")]
+    if not partner then return end
+    local mine = Tracker:FindObjectForCode(code)
+    local theirs = Tracker:FindObjectForCode("cost_" .. partner)
+    if mine and theirs and theirs.CurrentStage ~= mine.CurrentStage then
+        theirs.CurrentStage = mine.CurrentStage
+    end
+end
+
+-- No-op on variants that don't load items/soul_gates.json.
+for gate_code in pairs(SOUL_GATE_PARTNER) do
+    local code = "cost_" .. gate_code
+    if Tracker:FindObjectForCode(code) then
+        ScriptHost:AddWatchForCode("sg_cost_sync_" .. code, code, _on_soul_gate_cost_changed)
+    end
 end
 
 function MeleeAttack() return has("whip1") or has("knife") or has("rapier") or has("axe") or has("katana") end
@@ -251,7 +371,8 @@ function CanSpinCorridor() return count("beherit") >= 1 and Dissonance(1) end
 -- (random_dissonance ? GuardianKills(RequiredGuardians) : Anu) is the
 -- endgame trigger that opens the Spiral Hell door; without it CanReach
 -- (SpiralHell) would light the Ninth Child location before the required
--- guardians are down (notably with Random Soul Gates bypassing the boat gate).
+-- guardians are down (notably when a randomized/floored boat gate cost is well
+-- below the required guardian count).
 function CanSealCorridor()
     if not (count("beherit") >= 1 and Dissonance(6)) then return false end
     if not (CanReach("ValhallaMain") or CanReach("DSLMTop") or CanReach("SotFGBlood")
@@ -787,7 +908,7 @@ end
 -- ============================================================
 
 FORWARD_EXITS = {
-    ["ACBlood"] = {{"TSBlood", "Has(Feather) and (GuardianKills(5) or Setting(Random Soul Gates))"}, {"ACMain", "Glitch(Costume Clip) and CanWarp"}, {"DSLMTop", "CanSpinCorridor"}, {"HoM", "CanWarp or CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
+    ["ACBlood"] = {{"TSBlood", "Has(Feather) and SoulGateCost(er_ancient_chaos_soul_gate__c_1)"}, {"ACMain", "Glitch(Costume Clip) and CanWarp"}, {"DSLMTop", "CanSpinCorridor"}, {"HoM", "CanWarp or CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["ACBottom"] = {{"ACTablet", "IsDead(Ki sikil lil la ke)"}, {"ACWind", "Has(Grapple Claw)"}, {"TSBottom", "True"}},
     ["ACMain"] = {{"ACTablet", "True"}, {"ACWind", "True"}, {"ACBlood", "(CanUse(Bomb) or (OutOfLogic and Has(Bomb)))"}},
     ["ACTablet"] = {{"ACMain", "True"}},
@@ -798,10 +919,10 @@ FORWARD_EXITS = {
     ["AnnwfnOneWay"] = {{"AnnwfnMain", "CanWarp and HorizontalAttack"}, {"IBCetusLadder", "False"}},
     ["AnnwfnPoison"] = {{"RoYTopLeft", "False"}, {"AnnwfnRight", "(CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or Has(Claydoll Suit) or CanStopTime"}},
     ["AnnwfnRight"] = {{"AnnwfnMain", "IsDead(Ixtab)"}, {"AnnwfnPoison", "True"}, {"Eden", "IsDead(Heimdall) and Has(Vessel) and CanChant(Earth) and CanChant(Sun) and CanChant(Fire) and CanChant(Wind) and CanChant(Mother) and CanChant(Child) and CanChant(Night)"}},
-    ["AnnwfnSG"] = {{"AnnwfnMain", "Has(Glove) or Has(Feather) or CanWarp"}, {"SotFGMain", "(GuardianKills(2) or Setting(Random Soul Gates)) and Has(Origin Sigil)"}},
+    ["AnnwfnSG"] = {{"AnnwfnMain", "Has(Glove) or Has(Feather) or CanWarp"}, {"SotFGMain", "SoulGateCost(er_annwfn_soul_gate__a_4) and Has(Origin Sigil)"}},
     ["Cavern"] = {{"IBRight", "True"}, {"Cliff", "True"}},
     ["Cliff"] = {{"Cavern", "False"}},
-    ["DFEntrance"] = {{"DFRight", "(CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or Has(Claydoll Suit) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))"}, {"RoYMiddle", "GuardianKills(1) or Setting(Random Soul Gates)"}},
+    ["DFEntrance"] = {{"DFRight", "(CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or Has(Claydoll Suit) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))"}, {"RoYMiddle", "SoulGateCost(er_divine_fortress_soul_gate__c_5)"}},
     ["DFMain"] = {{"DFTop", "Has(Feather) or Has(Grapple Claw)"}, {"DFRight", "Has(Leather Whip) or Has(Rapier) or Has(Katana) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit)"}, {"ValhallaMain", "True"}},
     ["DFRight"] = {{"DFMain", "(CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or Has(Claydoll Suit) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and Has(Ring))"}, {"DFEntrance", "True"}},
     ["DFTop"] = {{"DFMain", "True"}, {"DFRight", "True"}},
@@ -810,19 +931,19 @@ FORWARD_EXITS = {
     ["DSLMTop"] = {{"DSLMMain", "Has(Feather) or CanWarp"}, {"ValhallaMain", "CanWarp or CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["EPDEntrance"] = {{"EPDMain", "True"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}},
     ["EPDMain"] = {{"EPDEntrance", "IsDead(Hraesvelgr) and Has(Feather)"}, {"EPDTop", "Has(Feather) and Has(Grapple Claw)"}, {"EPG", "Has(Grapple Claw) and (Has(Gale Fibula) or CanStopTime) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1) and Has(Anchor)))"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
-    ["EPDTop"] = {{"EPDHel", "((IsDead(Vidofnir) and GuardianKills(5)) or Setting(Random Soul Gates)) and IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Glove) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"}},
-    ["EPG"] = {{"EPDMain", "(Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1)) or Has(Grapple Claw)) and Has(Feather)"}, {"EPDTop", "Has(Death Sigil) and (Has(Feather) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp))"}, {"ITVidofnir", "GuardianKills(5) or Setting(Random Soul Gates)"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
+    ["EPDTop"] = {{"EPDHel", "(IsDead(Vidofnir) and SoulGateCost(er_icefire_treetop_vidofnir_soul_gate__d_6)) and IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Glove) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"}},
+    ["EPG"] = {{"EPDMain", "(Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1)) or Has(Grapple Claw)) and Has(Feather)"}, {"EPDTop", "Has(Death Sigil) and (Has(Feather) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp))"}, {"ITVidofnir", "SoulGateCost(er_eternal_prison_gloom_soul_gate__d_2)"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["EndlessCorridor"] = {{"MausoleumofGiantsRubble", "True"}},
     ["GateofGuidance"] = {{"VoD", "True"}, {"MausoleumofGiants", "True"}, {"GateofGuidanceRightLadder", "IsDead(Heimdall)"}},
     ["GateofGuidanceLeft"] = {{"GateofIllusion", "True"}, {"GateofGuidance", "CanReach(Mausoleum of Giants)"}},
     ["GateofIllusion"] = {{"RoYMiddle", "HorizontalAttack"}, {"GateofGuidanceLeft", "True"}},
-    ["GotD"] = {{"IBMain", "GuardianKills(2) or Setting(Random Soul Gates)"}, {"GotDWedjet", "True"}},
+    ["GotD"] = {{"IBMain", "SoulGateCost(er_gate_of_the_dead_soul_gate__c_4)"}, {"GotDWedjet", "True"}},
     ["GotDWedjet"] = {{"DSLMMain", "PuzzleFinished(White Pedestals)"}, {"GotD", "CanWarp or (Has(Pepper) and Has(Birth Sigil) and CanChant(Sun) and CanKill(Unicorn))"}},
-    ["HL"] = {{"HLSpun", "CanChant(Heaven)"}, {"ITRight", "GuardianKills(3) or Setting(Random Soul Gates)"}},
+    ["HL"] = {{"HLSpun", "CanChant(Heaven)"}, {"ITRight", "SoulGateCost(er_heavens_labyrinth_soul_gate__e_5)"}},
     ["HLCog"] = {{"TSNeckEntrance", "False"}},
     ["HLGate"] = {{"HL", "CanWarp"}, {"HoMTop", "(Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla)"}},
     ["HLSpun"] = {{"HLGate", "True"}},
-    ["HoM"] = {{"HoMTop", "Has(HoM Ladder)"}, {"ACBlood", "CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}, {"IBBoat", "Has(Death Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and (CanWarp or IsDead(HoM Middle Path)) and (SpiralBoatGate or Setting(Random Soul Gates))"}},
+    ["HoM"] = {{"HoMTop", "Has(HoM Ladder)"}, {"ACBlood", "CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}, {"IBBoat", "Has(Death Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and (CanWarp or IsDead(HoM Middle Path)) and SoulGateCost(er_hall_of_malice_soul_gate__d_3)"}},
     ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}, {"HL", "False"}},
     ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}, {"ITRight", "True"}},
     ["IBBifrost"] = {{"IBTop", "CanWarp or (CanKill(Cetus) and Setting(Non Random Ladders))"}, {"AnnwfnMain", "False"}},
@@ -832,8 +953,8 @@ FORWARD_EXITS = {
     ["IBDinosaur"] = {{"IBBattery", "Has(Grapple Claw) or (Glitch(Costume Clip) and CanWarp)"}, {"IBMoon", "Glitch(Costume Clip) and Has(Feather) and CanWarp"}},
     ["IBLadder"] = {{"ITLeft", "True"}},
     ["IBLeft"] = {{"RoYTopRight", "False"}, {"IBBottom", "CanWarp or Has(Birth Sigil)"}, {"IBLeftSG", "CanWarp or Has(Birth Sigil)"}},
-    ["IBLeftSG"] = {{"TSEntrance", "GuardianKills(3) or Setting(Random Soul Gates)"}, {"IBBottom", "True"}},
-    ["IBMain"] = {{"IBTopLeft", "True"}, {"IBRight", "True"}, {"IBDinosaur", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)"}, {"IBBottom", "True"}, {"GotD", "(GuardianKills(2) or Setting(Random Soul Gates)) and HorizontalAttack"}, {"AltarLeft", "Has(Dinosaur Figure)"}, {"AltarRight", "Has(Dinosaur Figure)"}},
+    ["IBLeftSG"] = {{"TSEntrance", "SoulGateCost(er_immortal_battlefield_bottom_left_gate__b_7)"}, {"IBBottom", "True"}},
+    ["IBMain"] = {{"IBTopLeft", "True"}, {"IBRight", "True"}, {"IBDinosaur", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)"}, {"IBBottom", "True"}, {"GotD", "SoulGateCost(er_immortal_battlefield_top_right_gate__h_2) and HorizontalAttack"}, {"AltarLeft", "Has(Dinosaur Figure)"}, {"AltarRight", "Has(Dinosaur Figure)"}},
     ["IBMoon"] = {{"IBDinosaur", "Has(Life Sigil) and (CanWarp or (Has(Grapple Claw) and Setting(Non Random Ladders)))"}, {"ITRightLeftLadder", "False"}},
     ["IBRight"] = {{"IBMain", "Has(Feather) or Has(Grapple Claw)"}, {"Cavern", "True"}},
     ["IBTop"] = {{"IBTopLeft", "CanWarp or ((Has(Feather) or Has(Glove)) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))"}, {"IBMain", "IsDead(Cetus)"}, {"IBCetusLadder", "IsDead(Cetus)"}},
@@ -841,39 +962,39 @@ FORWARD_EXITS = {
     ["ITBottom"] = {{"ITSinmara", "True"}, {"ITRight", "Has(Feather) or (Has(Gale Fibula) and (Has(Leather Whip) or Has(Axe) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring))))"}, {"ITVidofnir", "CanChant(Moon) and CanChant(Sun) and CanWarp"}},
     ["ITEntrance"] = {{"RoYTopMiddle", "False"}, {"ITBottom", "CanWarp or Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2) or (Has(Feather) and Has(Grapple Claw))"}, {"ITSinmara", "Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2)"}, {"ITRight", "Has(Grapple Claw) and (CanWarp or Has(Feather) or CanReach(ITSinmara))"}},
     ["ITLeft"] = {{"ITSinmara", "HorizontalAttack"}, {"ITEntrance", "Glitch(Costume Clip) and (Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2) or CanWarp)"}, {"IBLadder", "True"}},
-    ["ITRight"] = {{"ITBottom", "CanWarp or Has(Feather) or (Has(Gale Fibula) and (Has(Leather Whip) or Has(Axe) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring))))"}, {"ITEntrance", "Has(Feather) and Has(Grapple Claw)"}, {"ITRightLeftLadder", "Has(Life Sigil)"}, {"IBBattery", "True"}, {"HL", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3) and (GuardianKills(3) or Setting(Random Soul Gates))"}},
+    ["ITRight"] = {{"ITBottom", "CanWarp or Has(Feather) or (Has(Gale Fibula) and (Has(Leather Whip) or Has(Axe) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring))))"}, {"ITEntrance", "Has(Feather) and Has(Grapple Claw)"}, {"ITRightLeftLadder", "Has(Life Sigil)"}, {"IBBattery", "True"}, {"HL", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and IsDead(Ratatoskr 3) and SoulGateCost(er_icefire_treetop_under_ratatoskr_soul_gate__g_3)"}},
     ["ITRightLeftLadder"] = {{"IBMoon", "True"}},
     ["ITSinmara"] = {{"ITEntrance", "Setting(Remove IT Statue) and (Has(Claydoll Suit) or Has(Ice Cloak) or OrbCount(2))"}, {"ITBottom", "HorizontalAttack"}, {"ITLeft", "True"}},
-    ["ITVidofnir"] = {{"EPG", "IsDead(Vidofnir) and (GuardianKills(5) and CanWarp)"}},
+    ["ITVidofnir"] = {{"EPG", "IsDead(Vidofnir) and SoulGateCost(er_icefire_treetop_vidofnir_soul_gate__d_6) and CanWarp"}},
     ["InfernoCavern"] = {{"VoD", "False"}},
     ["MausoleumofGiants"] = {{"GateofGuidance", "True"}, {"GateofGuidanceLeft", "True"}, {"MausoleumofGiantsRubble", "True"}},
     ["MausoleumofGiantsRubble"] = {{"EndlessCorridor", "CanReach(Annwfn Main)"}, {"MausoleumofGiants", "CanWarp or CanReach(AnnwfnMain)"}},
     ["Nibiru"] = {{"DSLMPyramid", "False"}},
     ["RoY"] = {{"RoYTopLeft", "IsDead(Ratatoskr 1)"}, {"RoYTopMiddle", "IsDead(Nidhogg)"}, {"RoYTopRight", "Has(Feather) or Has(Grapple Claw)"}, {"RoYMiddle", "True"}, {"RoYBottom", "True"}},
-    ["RoYBottom"] = {{"DFEntrance", "GuardianKills(1)"}, {"RoYMiddle", "True"}, {"RoYBottomLeft", "Has(Origin Sigil)"}},
+    ["RoYBottom"] = {{"DFEntrance", "SoulGateCost(er_roots_of_yggdrasil_bottom_soul_gate__d_6)"}, {"RoYMiddle", "True"}, {"RoYBottomLeft", "Has(Origin Sigil)"}},
     ["RoYBottomLeft"] = {{"AnnwfnMain", "True"}},
     ["RoYMiddle"] = {{"GateofIllusion", "False"}, {"RoY", "HorizontalAttack"}},
     ["RoYTopLeft"] = {{"AnnwfnPoison", "(CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))"}},
     ["RoYTopMiddle"] = {{"ITEntrance", "True"}, {"RoY", "CanWarp or CanKill(Nidhogg)"}},
     ["RoYTopRight"] = {{"IBLeft", "Has(Birth Sigil)"}, {"RoY", "CanWarp or Has(Birth Sigil)"}},
-    ["SotFGBalor"] = {{"ValhallaTopRight", "Has(Claydoll Suit) and (GuardianKills(5)) and IsDead(Balor)"}},
+    ["SotFGBalor"] = {{"ValhallaTopRight", "Has(Claydoll Suit) and SoulGateCost(er_shrine_of_the_frost_giants_balor_soul_gate__e_1) and IsDead(Balor)"}},
     ["SotFGBlood"] = {{"SotFGBloodTez", "True"}, {"ACBlood", "CanWarp or CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"ValhallaMain", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["SotFGBloodTez"] = {{"SotFGLeft", "Has(Grapple Claw) and IsDead(Tezcatlipoca)"}, {"SotFGBlood", "CanKill(Tezcatlipoca) and (CanWarp or Has(Grapple Claw))"}},
     ["SotFGGrail"] = {{"SotFGMain", "HorizontalAttack or Start(SotFGGrail)"}},
     ["SotFGLeft"] = {{"SotFGMain", "True"}, {"SotFGGrail", "CanWarp or HorizontalAttack"}, {"SotFGBloodTez", "False"}},
-    ["SotFGMain"] = {{"AnnwfnSG", "GuardianKills(2)"}, {"SotFGGrail", "CanWarp or HorizontalAttack"}, {"SotFGTop", "IsDead(Badhbh Cath) and Has(Grapple Claw) and HorizontalAttack"}, {"SotFGLeft", "Start(SotFGGrail)"}},
+    ["SotFGMain"] = {{"AnnwfnSG", "SoulGateCost(er_shrine_of_the_frost_giants_main_soul_gate__e_4)"}, {"SotFGGrail", "CanWarp or HorizontalAttack"}, {"SotFGTop", "IsDead(Badhbh Cath) and Has(Grapple Claw) and HorizontalAttack"}, {"SotFGLeft", "Start(SotFGGrail)"}},
     ["SotFGTop"] = {{"SotFGBalor", "Has(Feather) and PuzzleFinished(Bergelmir)"}},
     ["Start"] = {{"VoD", "True"}},
-    ["TSBlood"] = {{"ACBlood", "GuardianKills(5)"}},
+    ["TSBlood"] = {{"ACBlood", "SoulGateCost(er_takamagahara_shrine_belial_soul_gate__b_1)"}},
     ["TSBottom"] = {{"TSMain", "True"}, {"ACBottom", "True"}},
-    ["TSEntrance"] = {{"TSLeft", "Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))"}, {"TSMain", "Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and (Has(Spaulder) or Has(Vajra)))"}, {"IBLeftSG", "GuardianKills(3) or Setting(Random Soul Gates)"}},
+    ["TSEntrance"] = {{"TSLeft", "Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))"}, {"TSMain", "Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and (Has(Spaulder) or Has(Vajra)))"}, {"IBLeftSG", "SoulGateCost(er_takamagahara_shrine_top_main_soul_gate__d_1)"}},
     ["TSLeft"] = {{"TSMain", "True"}},
     ["TSMain"] = {{"TSBottom", "Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Start(TSLeft)"}, {"TSNeck", "IsDead(Raijin and Fujin)"}, {"TSEntrance", "Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (Has(Katana) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack)"}},
     ["TSNeck"] = {{"TSMain", "CanKill(Raijin and Fujin) or (CanStopTime and CanWarp)"}, {"TSNeckEntrance", "True"}},
     ["TSNeckEntrance"] = {{"TSNeck", "CanWarp or (CanChant(Heaven) and CanChant(Earth) and CanChant(Sea) and CanChant(Fire) and CanChant(Wind))"}, {"HLCog", "CanChant(Earth) and CanChant(Wind) and CanChant(Fire) and CanChant(Sea) and CanChant(Heaven) and CanWarp"}},
     ["ValhallaMain"] = {{"ValhallaTop", "Has(Feather) or CanChant(Heaven)"}, {"DFMain", "True"}, {"SotFGBlood", "CanWarp or CanSpinCorridor or (CanReach(SotFG Main) and CanKill(Tezcatlipoca) and Setting(Non Random Gates))"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["ValhallaTop"] = {{"ValhallaMain", "True"}},
-    ["ValhallaTopRight"] = {{"ValhallaTop", "Has(Feather)"}, {"ValhallaMain", "CanWarp or Has(Feather) or (Has(Claydoll Suit) and CanChant(Heaven))"}, {"SotFGBalor", "Has(Claydoll Suit) and (GuardianKills(5) or Setting(Random Soul Gates))"}},
+    ["ValhallaTopRight"] = {{"ValhallaTop", "Has(Feather)"}, {"ValhallaMain", "CanWarp or Has(Feather) or (Has(Claydoll Suit) and CanChant(Heaven))"}, {"SotFGBalor", "Has(Claydoll Suit) and SoulGateCost(er_valhalla_soul_gate__e_2)"}},
     ["VoD"] = {{"GateofGuidance", "True"}, {"Start", "True"}, {"VoDLadder", "Has(Feather)"}},
     ["VoDLadder"] = {{"InfernoCavern", "Has(Feather)"}},
 
@@ -1055,6 +1176,31 @@ function lm2_cursed(id, reachability)
         local glitch_reachable = eval_logic_bool(reachability)
         _GLITCH_ACTIVE = false
         if glitch_reachable then return ACCESS_YELLOW end
+    end
+
+    return ACCESS_RED
+end
+
+-- Soul gate map markers (locations/soul_gates.json). `reachability` is the
+-- rule for standing in front of the gate; the cost is layered on top so a
+-- reachable-but-unaffordable gate reads differently from an unreachable one:
+--   green  - standing there and the cost is paid
+--   yellow - only reachable via the out-of-logic pass
+--   red    - can't get there, or can't pay
+function lm2_soulgate(gate_code, reachability)
+    _GLITCH_ACTIVE = false
+    if not eval_logic_bool(reachability) then
+        if ShowSequenceBreak() then
+            _GLITCH_ACTIVE = true
+            local glitch_reachable = eval_logic_bool(reachability)
+            _GLITCH_ACTIVE = false
+            if glitch_reachable then return ACCESS_YELLOW end
+        end
+        return ACCESS_RED
+    end
+
+    if SoulGateCost(gate_code) then
+        return ACCESS_GREEN
     end
 
     return ACCESS_RED
