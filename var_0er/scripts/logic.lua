@@ -224,6 +224,8 @@ function Setting(name)
         ["CostumeClip"]="setting_costume_clip",
         ["Remove IT Statue"]="setting_remove_it_statue",
         --["Non Random Ladders"]="setting_non_random_ladders",
+        -- No "Non Random Ladders" here: this variant knows the actual pairings,
+        -- so the ladder rules ask ERVanilla(<code>) instead of the seed option.
     }
     return m[name] and has(m[name]) or false
 end
@@ -281,6 +283,13 @@ function ShowSequenceBreak()
     local o = Tracker:FindObjectForCode("setting_show_sequence_break")
     if o == nil then return true end
     return o.Active
+end
+-- ERVanilla(code): is that entrance currently mapped to its vanilla partner?
+-- Resolved through the global so it picks up ERIsVanillaPair from
+-- entrance_mapping.lua, which init.lua loads after this file.
+function ERVanilla(code)
+    if ERIsVanillaPair then return ERIsVanillaPair(code) end
+    return false
 end
 function Dissonance(n) return count("dissonance") >= n or count("beherit") >= (n+1) end
 function NibiruSkullCheck() return SkullCount(RequiredSkulls()) end
@@ -611,6 +620,32 @@ local EVENT_HARDLOGIC = {
     ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftCTop) and IsDead(Fish-Valusa Re-gyo-ded)",
 }
 
+-- ============================================================
+-- Reach-free companions to EVENT_LOGIC (see CanKillHere below)
+-- ============================================================
+-- Every EVENT_LOGIC / EVENT_HARDLOGIC entry is "CanReach(Area) and <fight
+-- requirements>". EVENT_REQS holds just the fight requirements. Built BEFORE
+-- the MinimalLogic fold below, while the CanReach prefix is still leading.
+-- An entry that is nothing but CanReach(Area) has no item requirements at all,
+-- so its reach-free form is the tautology True.
+local function _strip_reach_prefix(expr)
+    local stripped = expr:gsub("^%s*CanReach%([^)]*%)%s+and%s+", "")
+    if stripped:match("^%s*CanReach%([^)]*%)%s*$") then return "True" end
+    return stripped
+end
+
+local EVENT_REQS = {}
+for _k, _expr in pairs(EVENT_LOGIC) do
+    EVENT_REQS[_k] = _strip_reach_prefix(_expr)
+end
+for _k, _hard in pairs(EVENT_HARDLOGIC) do
+    local _reqs = EVENT_REQS[_k]
+    if _reqs then
+        EVENT_REQS[_k] = "(" .. _reqs .. ") or (MinimalLogic and ("
+            .. _strip_reach_prefix(_hard) .. "))"
+    end
+end
+
 for _k, _hard in pairs(EVENT_HARDLOGIC) do
     local _base = EVENT_LOGIC[_k]
     if _base then
@@ -666,6 +701,24 @@ function CanKill(boss)
     return true
 end
 
+-- CanKillHere(boss): "can I win this fight with what I hold", with no claim
+-- about reaching the arena. Use it (never CanKill) on an edge whose own
+-- traversability is what makes the boss's area reachable, otherwise the rule is
+-- circular: IBBifrost->IBTop is gated on beating Cetus, but EVENT_LOGIC["cetus"]
+-- opens with CanReach(IBTop), and CanReach reads the in-progress reachable set
+-- during the flood fill (see CanReach below), so the fixpoint settles on "not
+-- reachable" and the edge never opens. The apworld has no such cycle: its
+-- _can_kill evaluates only the Cetus location's own logic string, which in
+-- World.json is a pure weapon check.
+function CanKillHere(boss)
+    local boss_key = string.lower(boss):gsub("%s+","_"):gsub("'","")
+    if has("boss_" .. boss_key) then return true end
+    if EVENT_REQS[boss_key] then
+        return eval_logic_bool(EVENT_REQS[boss_key])
+    end
+    return CanKill(boss)
+end
+
 -- ============================================================
 -- Guardian Ankh Check
 -- ============================================================
@@ -708,7 +761,7 @@ FORWARD_EXITS = {
     ["ACWind"] = {{"ACMain", "Has(Feather)"}, {"ACBottom", "True"}},
     ["AltarLeft"] = {{"AltarRight", "CanWarp"}},
     ["AnnwfnMain"] = {{"AnnwfnSG", "Has(Glove) or Has(Feather)"}, {"AnnwfnRight", "Has(Annwfn Right Shortcut)"},{"AnnwfnOneWay", "HorizontalAttack"}},
-    ["AnnwfnOneWay"] = {{"AnnwfnMain", "CanWarp and HorizontalAttack"}},
+    ["AnnwfnOneWay"] = {{"AnnwfnMain", "CanWarp or HorizontalAttack"}},
     ["AnnwfnPoison"] = {{"AnnwfnRight", "(CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or Has(Claydoll Suit) or CanStopTime"}},
     ["AnnwfnRight"] = {{"AnnwfnMain", "IsDead(Ixtab)"}, {"AnnwfnPoison", "True"}, {"Eden", "IsDead(Heimdall) and Has(Vessel) and CanChant(Earth) and CanChant(Sun) and CanChant(Fire) and CanChant(Wind) and CanChant(Mother) and CanChant(Child) and CanChant(Night)"}},
     ["AnnwfnSG"] = {{"AnnwfnMain", "Has(Glove) or Has(Feather) or CanWarp"}},
@@ -732,15 +785,15 @@ FORWARD_EXITS = {
     ["HoM"] = {{"HoMTop", "Has(HoM Ladder)"}, {"ACBlood", "CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}},
     ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}},
-    ["IBBifrost"] = {{"IBTop", "CanWarp"}},
+    ["IBBifrost"] = {{"IBTop", "CanWarp or (CanKillHere(Cetus) and ERVanilla(er_immortal_battlefield_cetus_up_ladder__f_1) and ERVanilla(er_annwfn_bifrost))"}},
     ["IBBoat"] = {{"SpiralHell", "CanSealCorridor and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}},
     ["IBBottom"] = {{"IBMain", "MeleeAttack or (TrickyLogic and HorizontalAttack)"}, {"IBLadder", "IsDead(Cetus)"}, {"IBLeft", "Has(IB Left Shortcut)"}},
     ["IBCetusLadder"] = {{"IBTop", "CanWarp or CanKill(Cetus) or CanReach(IBMain)"}},
-    ["IBDinosaur"] = {{"IBBattery", "Has(Grapple Claw) or (Glitch(Costume Clip) and CanWarp)"}, {"IBMoon", "Glitch(Costume Clip) and Has(Feather) and CanWarp"}},
+    ["IBDinosaur"] = {{"IBBattery", "Has(Grapple Claw) or (Glitch(Costume Clip) and (CanWarp or ERVanilla(er_immortal_battlefield_alviss_down_ladder__g_7)))"}, {"IBMoon", "Glitch(Costume Clip) and Has(Feather) and (Has(Life Sigil) or CanWarp)"}},
     ["IBLeft"] = {{"IBBottom", "CanWarp or Has(Birth Sigil)"}, {"IBLeftSG", "CanWarp or Has(Birth Sigil)"}},
     ["IBLeftSG"] = {{"IBBottom", "True"}},
     ["IBMain"] = {{"IBTopLeft", "True"}, {"IBRight", "True"}, {"IBDinosaur", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)"}, {"IBBottom", "True"}},
-    ["IBMoon"] = {{"IBDinosaur", "Has(Life Sigil) and CanWarp"}},
+    ["IBMoon"] = {{"IBDinosaur", "Has(Life Sigil) and (CanWarp or (CanReach(IBMain) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and ERVanilla(er_immortal_battlefield_alviss_down_ladder__g_7)))"}},
     ["IBRight"] = {{"IBMain", "HorizontalAttack and (Has(Feather) or Has(Grapple Claw))"}},
     ["IBTop"] = {{"IBTopLeft", "CanWarp or ((Has(Feather) or Has(Glove)) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))"}, {"IBMain", "IsDead(Cetus)"}, {"IBCetusLadder", "IsDead(Cetus)"}},
     ["IBTopLeft"] = {{"IBTop", "(Has(Feather) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))) or (Has(Glove) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))"}, {"IBMain", "Glitch(Costume Clip)"}},
@@ -1449,6 +1502,7 @@ LOGIC_FUNCS = {
     Has=Has, IsDead=IsDead, PuzzleFinished=PuzzleFinished, CanWarp=CanWarp,
     CanChant=CanChant, CanUse=CanUse, CanReach=CanReach, CanStopTime=CanStopTime,
     CanSpinCorridor=CanSpinCorridor, CanSealCorridor=CanSealCorridor, CanKill=CanKill,
+    CanKillHere=CanKillHere, ERVanilla=ERVanilla,
     MeleeAttack=MeleeAttack, HorizontalAttack=HorizontalAttack,
     OrbCount=OrbCount, SkullCount=SkullCount, GuardianKills=GuardianKills,
     SoulGateCost=SoulGateCost,

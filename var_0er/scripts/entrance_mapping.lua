@@ -628,6 +628,25 @@ local VANILLA_STRUCTURAL_PAIRS = {
     { "er_tower_of_oannes_right_entrance_gate__d_12", "er_bailey_right_gate__f_8", "dlc" },
 }
 
+-- code -> the code it connects to in an unshuffled seed.
+local VANILLA_PARTNER = {}
+for _, p in ipairs(VANILLA_STRUCTURAL_PAIRS) do
+    VANILLA_PARTNER[p[1]] = p[2]
+    VANILLA_PARTNER[p[2]] = p[1]
+end
+
+-- ERVanilla(code) in logic.lua defers here: is this entrance currently mapped
+-- to its vanilla partner? Logic rules that depend on a specific transition
+-- still leading where it does in an unshuffled seed ask this instead of reading
+-- the seed's ER options, so they work the same for a connected player (whose
+-- vanilla categories RebuildVanillaEntrances pre-fills) and an offline one
+-- (who maps the transition by hand). An unmapped entrance answers false, so a
+-- rule stays closed until the player has actually found where it goes.
+function ERIsVanillaPair(code)
+    local partner = VANILLA_PARTNER[code]
+    return partner ~= nil and ER_PAIRINGS[code] == partner
+end
+
 -- { codeA, codeB, soul_amount, is_nine }
 local VANILLA_SOUL_GATE_PAIRS = {
     { "er_roots_of_yggdrasil_bottom_soul_gate__d_6", "er_divine_fortress_soul_gate__c_5", 1, false },

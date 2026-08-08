@@ -455,6 +455,17 @@ function ShowSequenceBreak()
     if o == nil then return true end
     return o.Active
 end
+-- ERVanilla(code): does that entrance still go where it does in an unshuffled
+-- seed? These variants have no entrance tracking (only var_0er loads
+-- entrance_mapping.lua), so their region graph IS the vanilla one and the
+-- answer is always yes. Exists only so rules in the shared locations/*.json --
+-- which var_0er loads too -- can ask the question once and get the right answer
+-- in both. Note var_0er's copy defaults the other way, to false, because there
+-- an unmapped entrance means "player hasn't found where this goes yet".
+function ERVanilla(code)
+    if ERIsVanillaPair then return ERIsVanillaPair(code) end
+    return true
+end
 function Dissonance(n) return count("dissonance") >= n or count("beherit") >= (n+1) end
 function NibiruSkullCheck() return SkullCount(RequiredSkulls()) end
 local function IsCursed(code)
@@ -818,6 +829,32 @@ local EVENT_HARDLOGIC = {
     ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftCTop) and IsDead(Fish-Valusa Re-gyo-ded)",
 }
 
+-- ============================================================
+-- Reach-free companions to EVENT_LOGIC (see CanKillHere below)
+-- ============================================================
+-- Every EVENT_LOGIC / EVENT_HARDLOGIC entry is "CanReach(Area) and <fight
+-- requirements>". EVENT_REQS holds just the fight requirements. Built BEFORE
+-- the MinimalLogic fold below, while the CanReach prefix is still leading.
+-- An entry that is nothing but CanReach(Area) has no item requirements at all,
+-- so its reach-free form is the tautology True.
+local function _strip_reach_prefix(expr)
+    local stripped = expr:gsub("^%s*CanReach%([^)]*%)%s+and%s+", "")
+    if stripped:match("^%s*CanReach%([^)]*%)%s*$") then return "True" end
+    return stripped
+end
+
+local EVENT_REQS = {}
+for _k, _expr in pairs(EVENT_LOGIC) do
+    EVENT_REQS[_k] = _strip_reach_prefix(_expr)
+end
+for _k, _hard in pairs(EVENT_HARDLOGIC) do
+    local _reqs = EVENT_REQS[_k]
+    if _reqs then
+        EVENT_REQS[_k] = "(" .. _reqs .. ") or (MinimalLogic and ("
+            .. _strip_reach_prefix(_hard) .. "))"
+    end
+end
+
 for _k, _hard in pairs(EVENT_HARDLOGIC) do
     local _base = EVENT_LOGIC[_k]
     if _base then
@@ -873,6 +910,24 @@ function CanKill(boss)
     return true
 end
 
+-- CanKillHere(boss): "can I win this fight with what I hold", with no claim
+-- about reaching the arena. Use it (never CanKill) on an edge whose own
+-- traversability is what makes the boss's area reachable, otherwise the rule is
+-- circular: IBBifrost->IBTop is gated on beating Cetus, but EVENT_LOGIC["cetus"]
+-- opens with CanReach(IBTop), and CanReach reads the in-progress reachable set
+-- during the flood fill (see CanReach below), so the fixpoint settles on "not
+-- reachable" and the edge never opens. The apworld has no such cycle: its
+-- _can_kill evaluates only the Cetus location's own logic string, which in
+-- World.json is a pure weapon check.
+function CanKillHere(boss)
+    local boss_key = string.lower(boss):gsub("%s+","_"):gsub("'","")
+    if has("boss_" .. boss_key) then return true end
+    if EVENT_REQS[boss_key] then
+        return eval_logic_bool(EVENT_REQS[boss_key])
+    end
+    return CanKill(boss)
+end
+
 -- ============================================================
 -- Guardian Ankh Check
 -- ============================================================
@@ -916,7 +971,7 @@ FORWARD_EXITS = {
     ["AltarLeft"] = {{"IBMain", "False"}, {"AltarRight", "CanWarp"}},
     ["AltarRight"] = {{"IBMain", "True"}},
     ["AnnwfnMain"] = {{"RoYBottomLeft", "True"}, {"AnnwfnSG", "Has(Glove) or Has(Feather)"}, {"AnnwfnRight", "Has(Annwfn Right Shortcut)"}, {"IBBifrost", "True"}},
-    ["AnnwfnOneWay"] = {{"AnnwfnMain", "CanWarp and HorizontalAttack"}, {"IBCetusLadder", "False"}},
+    ["AnnwfnOneWay"] = {{"AnnwfnMain", "CanWarp or HorizontalAttack"}, {"IBCetusLadder", "False"}},
     ["AnnwfnPoison"] = {{"RoYTopLeft", "False"}, {"AnnwfnRight", "(CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or Has(Claydoll Suit) or CanStopTime"}},
     ["AnnwfnRight"] = {{"AnnwfnMain", "IsDead(Ixtab)"}, {"AnnwfnPoison", "True"}, {"Eden", "IsDead(Heimdall) and Has(Vessel) and CanChant(Earth) and CanChant(Sun) and CanChant(Fire) and CanChant(Wind) and CanChant(Mother) and CanChant(Child) and CanChant(Night)"}},
     ["AnnwfnSG"] = {{"AnnwfnMain", "Has(Glove) or Has(Feather) or CanWarp"}, {"SotFGMain", "SoulGateCost(er_annwfn_soul_gate__a_4) and Has(Origin Sigil)"}},
@@ -946,16 +1001,16 @@ FORWARD_EXITS = {
     ["HoM"] = {{"HoMTop", "Has(HoM Ladder)"}, {"ACBlood", "CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}, {"IBBoat", "Has(Death Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and (CanWarp or IsDead(HoM Middle Path)) and SoulGateCost(er_hall_of_malice_soul_gate__d_3)"}},
     ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}, {"HL", "False"}},
     ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}, {"ITRight", "True"}},
-    ["IBBifrost"] = {{"IBTop", "CanWarp or (CanKill(Cetus) and Setting(Non Random Ladders))"}, {"AnnwfnMain", "False"}},
+    ["IBBifrost"] = {{"IBTop", "CanWarp or CanKillHere(Cetus)"}, {"AnnwfnMain", "False"}},
     ["IBBoat"] = {{"HoM", "False"}, {"SpiralHell", "CanSealCorridor and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}},
     ["IBBottom"] = {{"IBMain", "MeleeAttack or (TrickyLogic and HorizontalAttack)"}, {"IBLadder", "IsDead(Cetus)"}, {"IBLeft", "Has(IB Left Shortcut)"}},
     ["IBCetusLadder"] = {{"AnnwfnOneWay", "True"}, {"IBTop", "CanWarp or CanKill(Cetus) or CanReach(IBMain)"}},
-    ["IBDinosaur"] = {{"IBBattery", "Has(Grapple Claw) or (Glitch(Costume Clip) and CanWarp)"}, {"IBMoon", "Glitch(Costume Clip) and Has(Feather) and CanWarp"}},
+    ["IBDinosaur"] = {{"IBBattery", "Has(Grapple Claw) or Glitch(Costume Clip)"}, {"IBMoon", "Glitch(Costume Clip) and Has(Feather) and (Has(Life Sigil) or CanWarp)"}},
     ["IBLadder"] = {{"ITLeft", "True"}},
     ["IBLeft"] = {{"RoYTopRight", "False"}, {"IBBottom", "CanWarp or Has(Birth Sigil)"}, {"IBLeftSG", "CanWarp or Has(Birth Sigil)"}},
     ["IBLeftSG"] = {{"TSEntrance", "SoulGateCost(er_immortal_battlefield_bottom_left_gate__b_7)"}, {"IBBottom", "True"}},
     ["IBMain"] = {{"IBTopLeft", "True"}, {"IBRight", "True"}, {"IBDinosaur", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)"}, {"IBBottom", "True"}, {"GotD", "SoulGateCost(er_immortal_battlefield_top_right_gate__h_2) and HorizontalAttack"}, {"AltarLeft", "Has(Dinosaur Figure)"}, {"AltarRight", "Has(Dinosaur Figure)"}},
-    ["IBMoon"] = {{"IBDinosaur", "Has(Life Sigil) and (CanWarp or (Has(Grapple Claw) and Setting(Non Random Ladders)))"}, {"ITRightLeftLadder", "False"}},
+    ["IBMoon"] = {{"IBDinosaur", "Has(Life Sigil) and (CanWarp or (CanReach(IBMain) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)) or Has(Grapple Claw) or Glitch(Costume Clip))"}, {"ITRightLeftLadder", "False"}},
     ["IBRight"] = {{"IBMain", "Has(Feather) or Has(Grapple Claw)"}, {"Cavern", "True"}},
     ["IBTop"] = {{"IBTopLeft", "CanWarp or ((Has(Feather) or Has(Glove)) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))"}, {"IBMain", "IsDead(Cetus)"}, {"IBCetusLadder", "IsDead(Cetus)"}},
     ["IBTopLeft"] = {{"IBTop", "(Has(Feather) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))) or (Has(Glove) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))"}, {"IBMain", "Glitch(Costume Clip)"}},
@@ -1106,6 +1161,7 @@ LOGIC_FUNCS = {
     Has=Has, IsDead=IsDead, PuzzleFinished=PuzzleFinished, CanWarp=CanWarp,
     CanChant=CanChant, CanUse=CanUse, CanReach=CanReach, CanStopTime=CanStopTime,
     CanSpinCorridor=CanSpinCorridor, CanSealCorridor=CanSealCorridor, CanKill=CanKill,
+    CanKillHere=CanKillHere, ERVanilla=ERVanilla,
     MeleeAttack=MeleeAttack, HorizontalAttack=HorizontalAttack,
     OrbCount=OrbCount, SkullCount=SkullCount, GuardianKills=GuardianKills,
     SoulGateCost=SoulGateCost, SpiralBoatGate=SpiralBoatGate,

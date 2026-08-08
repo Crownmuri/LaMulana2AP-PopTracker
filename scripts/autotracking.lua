@@ -896,6 +896,35 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
 
     set_toggle("setting_oannesanity",            _opts.oannesanity)
 
+    -- Starting subweapon ammo. The apworld hands the player ammo for their
+    -- starting subweapon from turn one, but it injects that straight into the
+    -- logic adapter (worlds/lamulana2/logic/player_state.py) rather than pushing
+    -- a real AP item -- only the weapon is precollected -- so it never arrives as
+    -- a received item and CanUse() would read false until the player scouted a
+    -- shop. Mark the ammo stage up front so the tracker agrees with generation
+    -- immediately. For a Pistol start the spawn shop stocks its ammo free, so the
+    -- Money Fairy -- otherwise required to grind for the normal, very high price
+    -- -- is not needed either; mark it, the same treatment SetSubweaponAmmoStage
+    -- already applies to starter-shop pistol ammo.
+    -- Keys are ItemID values as sent in slot_data.starting_weapon.
+    local STARTING_SUBWEAPON_CODE = {
+        [68] = "shuriken",  [69] = "rolling_shuriken", [70] = "earth_spear",
+        [71] = "flare_gun", [72] = "bomb",             [73] = "chakram",
+        [74] = "caltrops",  [75] = "pistol",
+    }
+    local sw_code = STARTING_SUBWEAPON_CODE[tonumber(slot_data.starting_weapon) or -1]
+    if sw_code then
+        local weapon = Tracker:FindObjectForCode(sw_code)
+        if weapon then
+            weapon.CurrentStage = 1   -- weapon + ammo
+            weapon.Active = true      -- unlike a shop scout, this one is owned
+        end
+        if sw_code == "pistol" then
+            local mf = Tracker:FindObjectForCode("boss_money_fairy")
+            if mf and not mf.Active then mf.Active = true end
+        end
+    end
+
     -- Soul gates (non-ER variants). The toggle shows/hides the gate markers, so
     -- a connected player never has to set it by hand; an offline one flips it on
     -- and clicks the costs in from the map. random_dissonance is deliberately

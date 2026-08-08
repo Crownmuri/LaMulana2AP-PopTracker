@@ -894,7 +894,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMoon) and (CanChant(Sun) and Has(Snapshot) and HorizontalAttack and Has(Life Sigil) and (CanWarp or CanReach(IBDinosaur) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and Setting(Non Random Ladders))))"
+                    "^$lm2_logic|CanReach(IBMoon) and (CanChant(Sun) and Has(Snapshot) and HorizontalAttack and Has(Life Sigil) and (CanWarp or (CanReach(IBMain) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and ERVanilla(er_immortal_battlefield_alviss_down_ladder__g_7))))"
                 ]
             },
             {
@@ -1625,7 +1625,7 @@
                         "name": "Moon Altar Coin Pot",
                         "item_count": 1,
                         "access_rules": [
-                            "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+                            "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil) and (CanWarp or (CanReach(IBMain) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and ERVanilla(er_immortal_battlefield_alviss_down_ladder__g_7))))"
                         ],
                         "visibility_rules": [
                             "setting_potsanity_high_value"
@@ -1635,7 +1635,7 @@
                         "name": "Moon Altar Item Pot",
                         "item_count": 1,
                         "access_rules": [
-                            "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+                            "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil) and (CanWarp or (CanReach(IBMain) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and ERVanilla(er_immortal_battlefield_alviss_down_ladder__g_7))))"
                         ],
                         "visibility_rules": [
                             "setting_potsanity_chakram"
@@ -1643,7 +1643,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil))"
+                    "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil) and (CanWarp or (CanReach(IBMain) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and ERVanilla(er_immortal_battlefield_alviss_down_ladder__g_7))))"
                 ]
             },
             {
