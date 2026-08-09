@@ -690,6 +690,23 @@ local function _set_soul_cost(code, stage)
     if c then c.CurrentStage = stage end
 end
 
+-- Cost of the Spiral Boat gate when it stays on its vanilla pairing.
+-- With Random Dissonance the apworld floors it to the highest gate value at or
+-- below Required Guardian Kills, so the final area is always reachable at the
+-- kill count the player asked for (entrances.py _floor_to_available_gate_value).
+-- Without Random Dissonance it keeps its vanilla [9].
+local SOUL_VALUES = { 1, 2, 3, 5, 9 }
+local function _spiral_boat_cost(opts)
+    if not _opt_on(opts, "random_dissonance") then return 9 end
+    local required = tonumber(opts.required_guardians)
+    if not required then return 9 end
+    local floored = SOUL_VALUES[1]
+    for _, v in ipairs(SOUL_VALUES) do
+        if v <= required then floored = v end
+    end
+    return floored
+end
+
 function RebuildVanillaEntrances()
     -- Driven entirely by seed data; without slot_data we leave the layout
     -- blank (player tracks manually / uses Reveal).
@@ -720,23 +737,23 @@ function RebuildVanillaEntrances()
 
     -- Soul gates: pairings are vanilla whenever soul_gate_entrances is OFF.
     -- The cost is only known when its value was not shuffled — the [1,2,3,5]
-    -- pool is shuffled by random_soul_gate_value, and the [9] gate only joins
-    -- that pool when include_nine_soul_gates is ON.
+    -- pool is reassigned by random_soul_gate_value (Shuffled = 1 keeps the
+    -- vanilla spread, Randomized = 2 rolls freely; both move the values around),
+    -- and the [9] gate only joins that pool when include_nine_soul_gates is ON —
+    -- which also forces the [1,2,3,5] values to be reshuffled.
     local sg_vanilla = not _opt_on(opts, "soul_gate_entrances")
-    local random_value = _opt_on(opts, "random_soul_gate_value")
     local include_nine = _opt_on(opts, "include_nine_soul_gates")
+    local random_value = _opt_on(opts, "random_soul_gate_value") or include_nine
+    local spiral_boat_cost = _spiral_boat_cost(opts)
     for _, p in ipairs(VANILLA_SOUL_GATE_PAIRS) do
         local a, b, amount, is_nine = p[1], p[2], p[3], p[4]
         if sg_vanilla then
             _lock_vanilla_pair(a, b)
-            -- Only stamp the cost when its value is actually known (not shuffled).
-            -- When random_soul_gate_value shuffles it, leave the cost untracked so
-            -- the player fills in the discovered value — and don't clobber that
-            -- value on later reconnects.
             local value_known = (not random_value) or (is_nine and not include_nine)
             if value_known then
-                _set_soul_cost(a, SOUL_AMOUNT_TO_STAGE[amount])
-                _set_soul_cost(b, SOUL_AMOUNT_TO_STAGE[amount])
+                local cost = is_nine and spiral_boat_cost or amount
+                _set_soul_cost(a, SOUL_AMOUNT_TO_STAGE[cost])
+                _set_soul_cost(b, SOUL_AMOUNT_TO_STAGE[cost])
             end
         else
             if ER_VANILLA[a] or ER_VANILLA[b] then
