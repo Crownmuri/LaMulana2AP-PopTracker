@@ -970,7 +970,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnRight) and IsDead(Ixtab) and (MeleeAttack or (TrickyLogic and HorizontalAttack))"
+                    "^$lm2_logic|CanReach(AnnwfnRight) and IsDead(Ixtab) and (MeleeAttack or Has(Claydoll Suit) or (TrickyLogic and HorizontalAttack))"
                 ],
                 "map_locations": [
                     {

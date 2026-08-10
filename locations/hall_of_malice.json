@@ -367,7 +367,7 @@
                     "setting_potsanity_bomb"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoM) and (HorizontalAttack and CanWarp)"
+                    "^$lm2_logic|CanReach(HoM) and ((CanWarp and (MeleeAttack or Has(Claydoll Suit) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))) or (TrickyLogic and (CanWarp and (MeleeAttack or Has(Claydoll Suit) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))))))"
                 ]
             },
             {

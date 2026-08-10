@@ -700,10 +700,8 @@ local EVENT_LOGIC = {
     -- =================================================================
 
     -- Roots of Yggdrasil
-    ["ratatoskr_1"] = "CanReach(RoY) and MeleeAttack",
-    -- Normal keeps the OrbCount(1) gate on shuriken/claydoll/chakram (AP Logic);
-    -- Tricky drops it (AP TrickyLogic); Minimal -> MeleeAttack via EVENT_HARDLOGIC.
-    ["nidhogg"] = "CanReach(RoY) and ((MeleeAttack and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (OrbCount(1) and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or Has(Claydoll Suit) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring)))))) or (TrickyLogic and (MeleeAttack and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring))))))",
+    ["ratatoskr_1"] = "CanReach(RoY) and (MeleeAttack or Has(Claydoll Suit))",
+    ["nidhogg"] = "CanReach(RoY) and (((MeleeAttack and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (OrbCount(1) and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring)))))) or (OrbCount(1) and Has(Claydoll Suit))) or (TrickyLogic and ((MeleeAttack and ((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring)))) or Has(Claydoll Suit))))",
 
     -- Annwfn
     ["kaliya"] = "CanReach(AnnwfnMain) and (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))",
@@ -1003,7 +1001,7 @@ FORWARD_EXITS = {
     ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}, {"ITRight", "True"}},
     ["IBBifrost"] = {{"IBTop", "CanWarp or CanKillHere(Cetus)"}, {"AnnwfnMain", "False"}},
     ["IBBoat"] = {{"HoM", "False"}, {"SpiralHell", "CanSealCorridor and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}},
-    ["IBBottom"] = {{"IBMain", "MeleeAttack or (TrickyLogic and HorizontalAttack)"}, {"IBLadder", "IsDead(Cetus)"}, {"IBLeft", "Has(IB Left Shortcut)"}},
+    ["IBBottom"] = {{"IBMain", "MeleeAttack or Has(Claydoll Suit) or (TrickyLogic and HorizontalAttack)"}, {"IBLadder", "IsDead(Cetus)"}, {"IBLeft", "Has(IB Left Shortcut)"}},
     ["IBCetusLadder"] = {{"AnnwfnOneWay", "True"}, {"IBTop", "CanWarp or CanKill(Cetus) or CanReach(IBMain)"}},
     ["IBDinosaur"] = {{"IBBattery", "Has(Grapple Claw) or Glitch(Costume Clip)"}, {"IBMoon", "Glitch(Costume Clip) and Has(Feather) and (Has(Life Sigil) or CanWarp)"}},
     ["IBLadder"] = {{"ITLeft", "True"}},
