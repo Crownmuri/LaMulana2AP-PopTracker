@@ -1124,7 +1124,7 @@
                     "setting_potsanity_shuriken"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or IsDead(Cetus))))"
+                    "^$lm2_logic|CanReach(IBMain) and ((Has(Feather) or (Has(Grapple Claw) and (MeleeAttack or Has(Claydoll Suit) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))) or IsDead(Cetus)) or (TrickyLogic and (MeleeAttack or Has(Claydoll Suit) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))))"
                 ]
             },
             {

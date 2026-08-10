@@ -904,7 +904,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and (CanWarp or Has(Feather)))"
                 ]
             },
             {
@@ -927,7 +927,7 @@
                     "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(DSLMMain) and (HorizontalAttack and (CanWarp or Has(Feather)))"
                 ]
             },
             {

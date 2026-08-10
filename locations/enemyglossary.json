@@ -1403,7 +1403,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(DSLMMain) and (HorizontalAttack)) or (CanReach(DSLMTop) and (HorizontalAttack)) or (CanReach(DSLMPyramid) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(DSLMMain) and (HorizontalAttack)) or (CanReach(DSLMTop) and (HorizontalAttack)))"
                 ]
             },
             {
@@ -1430,7 +1430,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(DSLMMain) and (True)) or (CanReach(DSLMTop) and (True)) or (CanReach(DSLMPyramid) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(DSLMMain) and (True)) or (CanReach(DSLMTop) and (True)))"
                 ]
             },
             {
@@ -1484,7 +1484,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(DSLMMain) and (True)) or (CanReach(DSLMTop) and (True)) or (CanReach(DSLMPyramid) and (True)))"
+                    "^$lm2_logic|((CanReach(DSLMMain) and (True)) or (CanReach(DSLMTop) and (True)))"
                 ]
             },
             {

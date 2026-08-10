@@ -666,7 +666,7 @@
                     "setting_potsanity_flare"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft)"
+                    "^$lm2_logic|CanReach(TSLeft) and (Has(Leather Whip) or Has(Katana) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))"
                 ]
             },
             {

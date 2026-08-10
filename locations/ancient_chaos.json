@@ -146,7 +146,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(ACBottom)"
+                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
                         ]
                     }
                 ],
@@ -423,7 +423,7 @@
                     "setting_potsanity_flare"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
+                    "^$lm2_logic|CanReach(ACBottom) and ((Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra))) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(2))))"
                 ]
             },
             {
@@ -446,7 +446,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
+                    "^$lm2_logic|CanReach(ACBottom) and ((Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra))) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(2))))"
                 ]
             },
             {
@@ -1059,7 +1059,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
+                    "^$lm2_logic|CanReach(ACBottom) and ((Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra))) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(2))))"
                 ],
                 "map_locations": [
                     {
