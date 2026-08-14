@@ -836,7 +836,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(SotFGMain) and (HorizontalAttack)) or (CanReach(SotFGLeft) and (HorizontalAttack)) or (CanReach(SotFGBlood) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(SotFGMain) and (Has(Origin Sigil) and HorizontalAttack)) or (CanReach(SotFGLeft) and (HorizontalAttack)) or (CanReach(SotFGBlood) and (HorizontalAttack)))"
                 ]
             },
             {
