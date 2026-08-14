@@ -1315,15 +1315,20 @@ end
 local _computing = false
 local _current_reachable = {}
 local _reach_valid = false
+local _glitch_valid = false
 -- Two cached reachable sets per evaluation cycle: the normal (intuitive) graph
 -- and the glitch graph, which additionally traverses TrickyLogic()-gated edges.
 local _reach_normal = {}
 local _reach_glitch = {}
+local _exit_cache = {}
 
 local function get_dynamic_exits(area_id)
+    local cached = _exit_cache[area_id]
+    if cached then return cached end
+
     local exits = {}
     local er_enabled = true
-    
+
     -- 1. Add static, non-shuffleable exits (intra-area movement)
     if FORWARD_EXITS[area_id] then
         for _, edge in ipairs(FORWARD_EXITS[area_id]) do
@@ -1402,7 +1407,8 @@ local function get_dynamic_exits(area_id)
             end
         end
     end
-    
+
+    _exit_cache[area_id] = exits
     return exits
 end
 
@@ -1451,16 +1457,26 @@ local function _flood_one(glitch)
     return reach
 end
 
-local function _flood_fill_reachable()
+-- Now the passes run under pcall, the flags are restored on every path, and a
+-- failed pass keeps the last good set (built into locals and swapped in only on
+-- success) rather than publishing a partial one. It is still marked valid so a
+-- failure cannot turn into a re-flood storm across the rest of the batch; the
+-- next state change invalidates and retries.
+local function _flood_pass(glitch)
     local prev = _GLITCH_ACTIVE
     _computing = true
-    _reach_normal = _flood_one(false)
-    _reach_glitch = _flood_one(true)
+    local ok, err = pcall(function()
+        local reach = _flood_one(glitch)
+        if glitch then _reach_glitch = reach else _reach_normal = reach end
+    end)
     _computing = false
     -- Restore the caller's pass; _flood_one toggled _GLITCH_ACTIVE internally.
     _GLITCH_ACTIVE = prev
-    _current_reachable = prev and _reach_glitch or _reach_normal
-    _reach_valid = true
+    _current_reachable = glitch and _reach_glitch or _reach_normal
+    if glitch then _glitch_valid = true else _reach_valid = true end
+    if not ok then
+        print("LM2 Logic: reachability pass aborted, keeping previous result: " .. tostring(err))
+    end
 end
 
 function CanReach(area_name)
@@ -1471,16 +1487,11 @@ function CanReach(area_name)
         return _current_reachable[id] == true
     end
 
-    -- Compute (both passes) once per evaluation cycle.
-    if not _reach_valid then
-        _flood_fill_reachable()
-    end
-
-    -- Outside flood-fill, pick the set matching the active pass so that an
-    -- out-of-logic (TrickyLogic) evaluation sees the glitch reachability.
     if _GLITCH_ACTIVE then
+        if not _glitch_valid then _flood_pass(true) end
         return _reach_glitch[id] == true
     end
+    if not _reach_valid then _flood_pass(false) end
     return _reach_normal[id] == true
 end
 
@@ -1490,6 +1501,8 @@ end
 -- edit so the next CanReach re-floods over the new graph.
 function InvalidateReachCache()
     _reach_valid = false
+    _glitch_valid = false
+    _exit_cache = {}
 end
 
 -- ============================================================
@@ -1514,8 +1527,9 @@ LOGIC_FUNCS = {
 -- ============================================================
 -- lm2_logic(expression) - entry point
 -- ============================================================
+
 ScriptHost:AddWatchForCode("invalidate_reach_cache", "*", function(code)
-    _reach_valid = false
+    InvalidateReachCache()
 end)
 
 function lm2_logic(expression)

@@ -120,11 +120,13 @@ ENTRANCE_SELECTED = nil
 -- which sees the (also-restored) pairing and treats it as an unpair click.
 ER_SUPPRESS_FRAMES = 0
 
--- Pairings are created inside AddWatchForCode callbacks
--- which run AFTER the logic pass that the triggering click already kicked off.
--- So a hand-made pairing doesn't trigger until some an item changes state.
--- Bumping a hidden consumable makes the edit look like a state change and
--- forces a fresh evaluation over the new graph.
+-- ER_PAIRINGS is a plain Lua table, so editing it changes what the access rules
+-- answer without PopTracker knowing anything happened: it only marks its
+-- accessibility cache stale when an ITEM changes. Bumping a hidden consumable
+-- is what turns a pairing edit into a state change the tracker will re-evaluate.
+-- (Manual pairing happens to arrive with an item change of its own -- the
+-- entrance toggle being clicked -- but the restore, spoiler and vanilla-prefill
+-- paths do not, so every mutation site goes through here.)
 function NotifyPairingsChanged()
     if InvalidateReachCache then InvalidateReachCache() end
     local nonce = Tracker:FindObjectForCode("er_logic_nonce")
@@ -150,16 +152,14 @@ end
 function OnCostChanged(code)
     -- Get the entrance code by stripping "cost_"
     local gate_code = code:gsub("cost_", "")
-    
-    -- Find the partner in our pairing table
     local partner_code = ER_PAIRINGS[gate_code]
-    
+
     -- If no partner is paired, do nothing
     if not partner_code then return end
 
     local my_cost = Tracker:FindObjectForCode(code)
     local partner_cost = Tracker:FindObjectForCode("cost_" .. partner_code)
-    
+
     -- Only update if the partner actually exists and has a different value
     -- (The check prevents an infinite loop between the two paired gates)
     if my_cost and partner_cost and partner_cost.CurrentStage ~= my_cost.CurrentStage then
@@ -565,6 +565,10 @@ function ApplySpoiler(entrance_pairs, soul_gate_pairs)
         end
     end
 
+    -- ER_PAIRINGS was rewritten to `kept` at the top of this function. If the
+    -- spoiler carried no pairs (or every pair was skipped as vanilla-locked) not
+    -- a single ApplyPairing ran, so nothing has notified that the graph moved.
+    NotifyPairingsChanged()
     if UpdateEscapeRoute then UpdateEscapeRoute() end
 end
 
@@ -682,7 +686,10 @@ local function _unlock_vanilla_pair(a, b)
     if not (ER_VANILLA[a] or ER_VANILLA[b]) then return end
     ER_VANILLA[a] = nil
     ER_VANILLA[b] = nil
-    UnlinkEntrance(a)
+    -- UnlinkEntrance bails out (without notifying) when the endpoint isn't
+    -- actually paired, but ER_VANILLA feeds ERVanilla() in the edge rules, so
+    -- clearing it has to invalidate the graph either way.
+    if ER_PAIRINGS[a] then UnlinkEntrance(a) else NotifyPairingsChanged() end
 end
 
 local function _set_soul_cost(code, stage)

@@ -14,10 +14,17 @@ ENABLE_DEBUG_LOG = DEBUG
 --
 -- AllowDeferredLogicUpdate lets PopTracker coalesce those into far fewer logic
 -- passes (evaluated fewer times than items update), which is exactly "only do
--- the reachability work once per batch instead of once per item". It auto-
--- enables for 'ap' packs only since PopTracker 0.31.0, and this pack targets
--- 0.29.0, so it must be set explicitly. The nil-guard keeps older PopTracker
--- builds (< 0.28.1, which lack the property) working unchanged.
+-- the reachability work once per batch instead of once per item". The nil-guard
+-- keeps older PopTracker builds (< 0.28.1, which lack the property) working
+-- unchanged.
+--
+-- Note this line is now redundant on current builds: every variant carries the
+-- 'ap' flag and manifest.json declares target_poptracker_version 0.31.0, so
+-- PopTracker turns it on by itself. Keep it for older builds -- but it is also
+-- the switch to flip first if reachability is ever suspected of not refreshing:
+-- PopTracker's own release notes say to disable deferred logic update if it
+-- breaks a pack, and `"allow_deferred_logic_update": false` in settings.json
+-- overrides both this line and the default.
 if Tracker.AllowDeferredLogicUpdate ~= nil then
     Tracker.AllowDeferredLogicUpdate = true
 end
