@@ -1514,8 +1514,27 @@ LOGIC_FUNCS = {
 -- ============================================================
 -- lm2_logic(expression) - entry point
 -- ============================================================
+-- PopTracker dispatches AddWatchForCode callbacks AFTER the logic pass that the
+-- triggering state change kicked off (the same ordering that makes
+-- entrance_mapping.lua's NotifyPairingsChanged necessary). So clearing the cache
+-- here is one pass too late: the rules that just ran already answered CanReach()
+-- out of the flood-fill computed BEFORE the change, and nothing schedules
+-- another pass -- the stale answer sticks on screen until some unrelated item is
+-- touched. That is what makes a soul gate whose cost was just set keep its
+-- destination red.
+--
+-- Bumping the hidden nonce turns this callback into a second state change, whose
+-- pass re-floods over the now-current items and pairings. The code guard stops
+-- the bump from re-triggering itself (the nonce's own change lands here too), so
+-- a batch costs exactly one extra logic pass.
+local function _bump_logic_nonce()
+    local nonce = Tracker:FindObjectForCode("er_logic_nonce")
+    if nonce then nonce.AcquiredCount = (nonce.AcquiredCount + 1) % 1000 end
+end
+
 ScriptHost:AddWatchForCode("invalidate_reach_cache", "*", function(code)
     _reach_valid = false
+    if code ~= "er_logic_nonce" then _bump_logic_nonce() end
 end)
 
 function lm2_logic(expression)

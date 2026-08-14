@@ -150,16 +150,22 @@ end
 function OnCostChanged(code)
     -- Get the entrance code by stripping "cost_"
     local gate_code = code:gsub("cost_", "")
-    
+
+    -- Setting a cost is what opens the gate in the region graph, so the graph has
+    -- to be re-flooded even when there is no partner to sync (or when the partner
+    -- already holds the same value and no further state change follows). Without
+    -- this the cached reachability from before the cost was set stays on screen.
+    NotifyPairingsChanged()
+
     -- Find the partner in our pairing table
     local partner_code = ER_PAIRINGS[gate_code]
-    
-    -- If no partner is paired, do nothing
+
+    -- If no partner is paired, there is nothing left to sync
     if not partner_code then return end
 
     local my_cost = Tracker:FindObjectForCode(code)
     local partner_cost = Tracker:FindObjectForCode("cost_" .. partner_code)
-    
+
     -- Only update if the partner actually exists and has a different value
     -- (The check prevents an infinite loop between the two paired gates)
     if my_cost and partner_cost and partner_cost.CurrentStage ~= my_cost.CurrentStage then
@@ -565,6 +571,10 @@ function ApplySpoiler(entrance_pairs, soul_gate_pairs)
         end
     end
 
+    -- The per-pair ApplyPairing calls above each notify, but the soul gate costs
+    -- are written after the last of them -- re-flood once more so the revealed
+    -- costs are reflected instead of the graph as it stood before them.
+    NotifyPairingsChanged()
     if UpdateEscapeRoute then UpdateEscapeRoute() end
 end
 
