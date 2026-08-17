@@ -1473,6 +1473,29 @@
                 ]
             },
             {
+                "name": "Inferno Corridor Coin Pot",
+                "map_locations": [
+                    {
+                        "map": "Immortal Battlefield",
+                        "x": 966,
+                        "y": 927,
+                        "size": 15
+                    }
+                ],
+                "sections": [
+                    {
+                        "name": "Pot",
+                        "item_count": 1
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_potsanity_high_value"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|CanReach(IBBottom) and (IsDead(Cetus) and HorizontalAttack and (CanWarp or Has(Feather)))"
+                ]
+            },
+            {
                 "name": "Time Altar Item Pot",
                 "map_locations": [
                     {
@@ -1644,29 +1667,6 @@
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(IBMoon) and (HorizontalAttack and Has(Life Sigil) and (CanWarp or (CanReach(IBMain) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and ERVanilla(er_immortal_battlefield_alviss_down_ladder__g_7))))"
-                ]
-            },
-            {
-                "name": "Inferno Corridor Coin Pot",
-                "map_locations": [
-                    {
-                        "map": "Immortal Battlefield",
-                        "x": 966,
-                        "y": 927,
-                        "size": 15
-                    }
-                ],
-                "sections": [
-                    {
-                        "name": "Pot",
-                        "item_count": 1
-                    }
-                ],
-                "visibility_rules": [
-                    "setting_potsanity_high_value"
-                ],
-                "access_rules": [
-                    "^$lm2_logic|CanReach(IBLadder) and (HorizontalAttack and (CanWarp or Has(Feather)))"
                 ]
             },
             {
