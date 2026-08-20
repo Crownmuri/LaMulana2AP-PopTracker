@@ -640,7 +640,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDMain) and (Has(Maat's Feather))"
+                    "^$lm2_logic|CanReach(EPDMain) and (Has(Maat's Feather) or Has(Claydoll Suit))"
                 ],
                 "map_locations": [
                     {
