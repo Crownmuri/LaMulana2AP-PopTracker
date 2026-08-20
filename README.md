@@ -11,19 +11,35 @@ Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [thi
 - Items Only, Map Tracker and Entrance Tracker
 - Settings: The following settings that may affect tracking are included:
   - Starting Location
-  - Normal / Hard logic
-  - Auto Scan
+  - Logic Difficulty (Normal / Tricky / Minimal)
+  - Goal (Ninth Child / DLC / Glossary Hunt)
+  - Oannesanity (DLC)
+  - DLC item logic
+  - Costume Clip logic
   - Remove Statue in IT
   - Require Life Sigil for HoM
-  - Costume Clip logic
-  - DLC item logic
-  - Guardian Specific Ankh Jewels
+  - Auto Scan
+  - Random Research
+  - Random Dissonance
+  - Costumesanity
+  - Potsanity (9 options)
+	- Specific coordinates only shown on individual maps
+  - Glossanity (4 options)
+	- Specific coordinates only shown on individual maps
+	- Enemy Glossary is not 100% map specific so it has a tab of its own
   - Required GuardianKills
   - Required Crystal Skulls for Nibiru
-- When Guardian Specific Ankh Jewels is on, the item tracking for bosses is a progressive (0 - unobtained, 1 - ankh obtained, 2 - boss beaten)
-  - When it's off, the tracking is only between state 0 and state 2
+  - Guardian Specific Ankh Jewels
+	- When Guardian Specific Ankh Jewels is on, the item tracking for bosses is a progressive (0 - unobtained, 1 - ankh obtained, 2 - boss beaten)
+	- Guardian Kills are automatically tracked through AP datapackage.
+  - [Spoiler] Reveal Entrances (Entrance Randomizer)
+  - Out-of-Logic visibility toggle
 - Go Mode icon is enabled once Ninth Child is considered reachable.
-- The Map Tracker and Entrance Tracker come with maps and a table of all the shops for tracking ammo or unbought items.
+- Additional Features:
+  - Escape Sequence calculator
+  - Reference Sheet (Mantra Combinations / Software Combinations / Eternal Prison Gates)
+- Map Tracker Features:
+  - Shop Memo table -- automatically shows which ammo are for purchase through AP datapackage.
 - Entrance Tracker Features:
   - The Full Map has all the transitions mapped. I also mapped minibosses in the individual maps but they are internally already beaten in logic.
   - You can click an entrance (A) followed by clicking an exit (B) and they will become paired.
@@ -35,10 +51,9 @@ Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [thi
 - <Manual> For the Pistol: Money Fairy needs to be manually tracked for it to be considered in CanUse logic. Key Fairy is also a manual tracked item
 
 ## Issues
-- Placeholder images regarding minibosses and settings
+- Placeholder images regarding minibosses
 - Minibosses/puzzles/fairies are considered autocollected upon becoming reachable, so they are not mapped.
 - Fairies/Minibosses are not tracked in AP so they don't auto-track.
-- Since Potsanity is WIP, this setting has not been added yet (also this is a lot of work)
 
 ## Installation / Launching guide:
 1. This will require the Poptracker software to run. The website for it can be found [here](https://poptracker.github.io/) with the most current release found [here](https://github.com/black-sliver/PopTracker/releases). <br>
