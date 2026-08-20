@@ -2188,7 +2188,7 @@
                     "setting_glossanity_enemy,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (CanReach(TowerOfOannesLeftB) and Has(Feather) and HorizontalAttack and CanUse(Flare Gun))) or (CanReach(TowerOfOannesRightA) and (Has(Feather))) or (CanReach(TowerOfOannesRightB) and (Has(Feather))))"
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (CanReach(TowerOfOannesLeftB) and Has(Feather) and HorizontalAttack and CanUse(Flare Gun))) or (CanReach(TowerOfOannesRightASlide) and (True)) or (CanReach(TowerOfOannesRightB) and (Has(Feather))))"
                 ]
             },
             {

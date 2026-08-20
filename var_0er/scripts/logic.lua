@@ -836,9 +836,9 @@ FORWARD_EXITS = {
     ["TowerOfOannesLeftC"] = {{"TowerOfOannesLeftCTop", "MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))"}},
     ["TowerOfOannesLeftCTop"] = {{"TowerOfOannesLeftC", "Has(Feather)"}},
     ["TowerOfOannesRightA"] = {{"TowerOfOannesRightASlide", "Has(Feather) and CanWarp"}, {"TowerOfOannesRightB", "Has(Feather) and CanWarp"}},
-    ["TowerOfOannesRightASlide"] = {{"TowerOfOannesRightA", "CanWarp"}},
-    ["TowerOfOannesRightB"] = {{"TowerOfOannesRightBCrystal", "CanWarp or Has(Feather)"}},
-    ["TowerOfOannesRightBCrystal"] = {{"TowerOfOannesRightB", "True"}},
+    ["TowerOfOannesRightASlide"] = {{"TowerOfOannesRightA", "Has(Feather) and CanWarp"}},
+    ["TowerOfOannesRightB"] = {{"TowerOfOannesRightA", "False"}, {"TowerOfOannesRightBCrystal", "Has(Feather)"}},
+    ["TowerOfOannesRightBCrystal"] = {{"TowerOfOannesRightB", "CanWarp or Has(Feather)"}},
     ["BaileyLevel1"] = {{"BaileyBottom", "CanWarp"}},
     ["BaileyLevel2"] = {{"BaileyLevel1", "CanWarp"}},
     ["BaileyLevel3"] = {{"BaileyLevel2", "CanWarp"}, {"BaileyRight", "Has(Gale Fibula) and CanWarp"}},
@@ -1270,7 +1270,7 @@ ER_ENTRANCES_BY_AREA = {
         { code = "er_tower_of_oannes_fish_slime_zero_escape__c_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },
     },
     ["TowerOfOannesRightA"] = {
-        { code = "er_tower_of_oannes_right_entrance_gate__d_12", logic = "Has(Feather) or CanWarp", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyRight" },
+        { code = "er_tower_of_oannes_right_entrance_gate__d_12", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyRight" },
     },
     ["TowerOfOannesRightASlide"] = {
         { code = "er_tower_of_oannes_moving_tiles_escape__d_10", logic = "HorizontalAttack", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "BaileyBottom" },

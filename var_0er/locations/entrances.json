@@ -3373,7 +3373,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TowerOfOannesRightA) and (Has(Feather) or CanWarp)"
+                    "^$lm2_logic|CanReach(TowerOfOannesRightA)"
                 ]
             },
             {
