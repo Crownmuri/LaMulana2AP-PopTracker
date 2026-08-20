@@ -1261,7 +1261,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(VoD) and (Has(Hand Scanner) and Has(Feather))"
+                    "^$lm2_logic|CanReach(VoD) and (Has(Hand Scanner) and Has(Feather) and Has(Ruins Encyclopedia))"
                 ]
             },
             {
