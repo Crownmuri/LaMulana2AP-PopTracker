@@ -1700,7 +1700,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(EPG) and (True)) or (CanReach(EPDMain) and (True)) or (CanReach(EPDTop) and (True)))"
+                    "^$lm2_logic|((CanReach(EPG) and (True)) or (CanReach(EPDMain) and (True)) or (CanReach(EPDTop) and (True)) or (CanReach(SpiralHell) and (True)))"
                 ]
             },
             {
