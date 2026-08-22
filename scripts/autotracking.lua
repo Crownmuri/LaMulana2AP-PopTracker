@@ -454,9 +454,7 @@ local BOSS_HOSTED_SECTIONS = {
     ["boss_kujata"]               = "@Annwfn/Kujata/Guardian",
     ["boss_money_fairy"]          = "@Dark Star Lords Mausoleum/Money Fairy/Fairy",
     ["boss_nidhogg"]              = "@Roots of Yggdrasil/Nidhogg/Miniboss",
-    -- ["boss_ninth_child"]          = "@Spiral Hell/Ninth Child/FinalBoss",
-    -- Go Mode reachability indicator (UpdateGoMode flips it Active when the
-    -- Ninth Child is logically reachable)
+    ["boss_ninth_child"]          = "@Spiral Hell/Ninth Child/FinalBoss",
     ["boss_raijin_and_fujin"]     = "@Takamagahara Shrine/Raijin and Fujin/Miniboss",
     ["boss_ratatoskr_1"]          = "@Roots of Yggdrasil/Ratatoskr 1/Miniboss",
     ["boss_ratatoskr_2"]          = "@Immortal Battlefield/Ratatoskr 2/Miniboss",
@@ -504,47 +502,110 @@ for boss_code, _ in pairs(BOSS_HOSTED_SECTIONS) do
 end
 
 -- ============================================================
--- Go Mode: auto-toggle boss_ninth_child when Ninth Child is
--- logically reachable.  Built natively in Lua so we can swap
--- in setting-driven boss-kill requirements (random dissonance
--- relaxes 9 -> RequiredGuardians()).
+-- Go Mode: light the standalone `go_mode` item once the seed's
+-- victory condition is logically reachable.
+--
+-- Which condition that is depends on the Goal option, so each
+-- branch mirrors the access rule of the location that ends the
+-- seed. boss_ninth_child is NOT that indicator: it is the final
+-- boss's own kill toggle, tracked like every other boss.
 -- ============================================================
 
-function UpdateGoMode()
-    local obj = Tracker:FindObjectForCode("boss_ninth_child")
-    if not obj then return end
+-- Goal stage indices match the apworld Goal option values (see the
+-- setting_goal write in the slot_data handler below).
+local GOAL_BEAT_GAME    = 0
+local GOAL_BEAT_DLC     = 1
+local GOAL_GLOSSARY     = 2
 
-    -- Random Dissonance ON: bosses don't gate maximum beherit, so the only
-    -- boss requirement is the player's chosen guardian threshold.
-    -- OFF: Anu is the only guardian whose drop is strictly required for
-    -- maximum beherit; Dissonance(6) covers the rest of the dissonance math.
-    local boss_req_ok
-    if has("setting_random_dissonance") then
-        boss_req_ok = GuardianKills(RequiredGuardians())
-    else
-        boss_req_ok = has("boss_anu")
-    end
+local function GoalStage()
+    local o = Tracker:FindObjectForCode("setting_goal")
+    if o then return o.CurrentStage end
+    return GOAL_BEAT_GAME
+end
 
-    local can_go =
-        CanReach("SpiralHell")
+-- beat_the_game: mirrors the @Spiral Hell/Ninth Child/FinalBoss access rule.
+-- The guardian gate (random_dissonance ? RequiredGuardians() : Anu) is
+-- deliberately absent: the only edge into SpiralHell is CanSealCorridor, which
+-- already carries it, so repeating it here would just risk the two drifting.
+local function CanBeatNinthChild()
+    return CanReach("SpiralHell")
         and CanChant("Heaven") and CanChant("Earth") and CanChant("Sun")
         and CanChant("Moon") and CanChant("Fire") and CanChant("Sea")
         and CanChant("Wind") and CanChant("Mother") and CanChant("Child")
         and CanChant("Night")
         and Dissonance(6)
-        and boss_req_ok
         and has("grapple_claw") and has("feather") and has("flame_torc")
-        and OrbCount(8)
-        and (has("whip3") or has("axe"))
+        and ((OrbCount(8) and (has("whip3") or has("axe")))
+             or (MinimalLogic() and MeleeAttack()))
+end
+
+-- beat_the_dlc: the DLC's final boss, which is also the whole of the
+-- @Tower of Oannes/DLC Boss Reward Chest/Chest rule. Fish-Gear mk-2 turboR has
+-- no boss item of its own, so IsDead resolves it through EVENT_LOGIC and the
+-- Tower of Oannes miniboss chain leading up to it.
+local function CanBeatDLC()
+    return IsDead("Fish-Gear mk-2 turboR")
+end
+
+-- glossary_hunt: no boss to reach, the goal is the counter itself. Returns
+-- collected/required alongside the verdict so the icon can show the progress.
+-- setting_glossary_hunt_count is 0 on any seed that isn't a glossary hunt,
+-- which would otherwise make "collected >= required" trivially true.
+local function GlossaryHuntProgress()
+    local need = Tracker:FindObjectForCode("setting_glossary_hunt_count")
+    local have = Tracker:FindObjectForCode("glossary_count")
+    if not need or not have or need.AcquiredCount <= 0 then return false, 0, 0 end
+    return have.AcquiredCount >= need.AcquiredCount, have.AcquiredCount, need.AcquiredCount
+end
+
+function UpdateGoMode()
+    local obj = Tracker:FindObjectForCode("go_mode")
+    if not obj then return end
+
+    local goal = GoalStage()
+    local can_go
+    -- Only the glossary hunt has a number worth showing: the other two goals
+    -- are a plain yes/no, so their overlay is cleared rather than left behind
+    -- from a previous connect.
+    local overlay = ""
+    if goal == GOAL_BEAT_DLC then
+        can_go = CanBeatDLC()
+    elseif goal == GOAL_GLOSSARY then
+        local done, have, need = GlossaryHuntProgress()
+        can_go = done
+        if need > 0 then overlay = string.format("%d/%d", have, need) end
+    else
+        can_go = CanBeatNinthChild()
+    end
 
     obj.Active = can_go and true or false
+    obj:SetOverlayAlign("right")
+    obj:SetOverlayFontSize(11)
+    obj:SetOverlay(overlay)
 end
+
+-- The nine vanilla soul gates. Their cost_ items feed CanReach() through
+-- SoulGateCost(), so a cost the player fills in (or that arrives with the
+-- seed) can open the route to Spiral Hell on its own.
+local SOUL_GATE_CODES = {
+    "er_roots_of_yggdrasil_bottom_soul_gate__d_6", "er_divine_fortress_soul_gate__c_5",
+    "er_annwfn_soul_gate__a_4", "er_shrine_of_the_frost_giants_main_soul_gate__e_4",
+    "er_immortal_battlefield_top_right_gate__h_2", "er_gate_of_the_dead_soul_gate__c_4",
+    "er_immortal_battlefield_bottom_left_gate__b_7", "er_takamagahara_shrine_top_main_soul_gate__d_1",
+    "er_icefire_treetop_under_ratatoskr_soul_gate__g_3", "er_heavens_labyrinth_soul_gate__e_5",
+    "er_icefire_treetop_vidofnir_soul_gate__d_6", "er_eternal_prison_gloom_soul_gate__d_2",
+    "er_shrine_of_the_frost_giants_balor_soul_gate__e_1", "er_valhalla_soul_gate__e_2",
+    "er_takamagahara_shrine_belial_soul_gate__b_1", "er_ancient_chaos_soul_gate__c_1",
+    "er_immortal_battlefield_spiral_boat_soul_gate_d_4", "er_hall_of_malice_soul_gate__d_3",
+}
 
 -- Codes whose changes can affect go mode reachability
 local GO_MODE_WATCH_CODES = {
+    -- Which goal we are even measuring
+    "setting_goal", "setting_logic",
     -- Direct Ninth Child requirements
     "grapple_claw", "feather", "flame_torc", "sacred_orb",
-    "whip3", "axe",
+    "whip3", "axe", "whip1", "knife", "rapier", "katana",
     -- Mantras + chanting
     "djed", "mantra_app",
     "mantra_heaven", "mantra_earth", "mantra_sun", "mantra_moon",
@@ -567,10 +628,27 @@ local GO_MODE_WATCH_CODES = {
     "boss_surtr", "boss_echidna", "boss_hel",
     -- Key movement items
     "glove", "claydoll_suit", "ice_cloak", "anchor",
+    -- Tower of Oannes miniboss chain (beat_the_dlc goal)
+    "rebirth_sigil", "gale_fibula", "lamp_of_time", "ring",
+    "vajra", "gauntlet", "spaulder", "boss_money_fairy",
+    "flare_gun", "flare_gun_ammo", "pistol", "pistol_ammo",
+    "bomb", "bomb_ammo",
+    "setting_oannesanity", "setting_dlc_logic", "setting_costumesanity",
+    -- Glossary hunt goal
+    "glossary_count", "setting_glossary_hunt_count",
     -- Settings
     "setting_life_for_hom", "setting_start",
     "setting_random_dissonance", "setting_req_guardians",
+    -- Entrance pairings only move a plain Lua table, so ER_PAIRINGS edits are
+    -- published as a bump of this counter (entrance_mapping.NotifyPairingsChanged).
+    -- That is also what fires after a save is restored, which is the only
+    -- chance this indicator gets to catch up with a reloaded session.
+    "er_logic_nonce",
 }
+
+for _, gate_code in ipairs(SOUL_GATE_CODES) do
+    table.insert(GO_MODE_WATCH_CODES, "cost_" .. gate_code)
+end
 
 for i, watch_code in ipairs(GO_MODE_WATCH_CODES) do
     ScriptHost:AddWatchForCode("go_mode_watch_" .. i, watch_code, function()
@@ -947,6 +1025,9 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     -- Goal stage indices match the apworld Goal option values directly:
     -- 0 = beat_the_game, 1 = beat_the_dlc, 2 = glossary_hunt.
     set_stage ("setting_goal",             tonumber(slot_data.goal))
+    -- Already clamped to the number of Glossary entries the seed actually
+    -- shuffled, and 0 on any goal other than glossary_hunt.
+    set_count ("setting_glossary_hunt_count", tonumber(slot_data.glossary_hunt_count))
 
     -- Forwarded only if the seed carries these keys (not in fill_slot_data today):
     set_stage ("setting_logic",         tonumber(slot_data.logic_difficulty))
@@ -958,6 +1039,11 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     -- (their slot_data.options.* toggle is OFF) so the player only tracks the
     -- categories that are actually shuffled. No-op on the non-ER variants.
     if RebuildVanillaEntrances then RebuildVanillaEntrances() end
+
+    -- Settings land in bulk here, and several of them (goal, required
+    -- guardians, soul gate costs) decide Go Mode without any of the watched
+    -- item codes moving. Recompute once the seed is fully applied.
+    UpdateGoMode()
 end)
 
 -- Shop mark watches disabled for performance.

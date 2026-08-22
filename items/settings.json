@@ -207,6 +207,15 @@
         "increment": 1
     },
     {
+        "name": "Glossary Hunt Count",
+        "type": "consumable",
+        "img": "images/Software/RuinsEncyclopedia.png",
+        "codes": "setting_glossary_hunt_count",
+        "max_quantity": 244,
+        "initial_quantity": 0,
+        "increment": 1
+    },
+    {
         "name": "Reveal Entrances",
         "type": "toggle",
         "img": "images/door.png",
@@ -215,7 +224,7 @@
     {
         "name": "Out-of-Logic Toggle",
         "type": "toggle",
-        "img": "images/Other/Map.png",
+        "img": "images/Settings/OOL.png",
         "codes": "setting_show_sequence_break",
         "initial_active_state": true
     },

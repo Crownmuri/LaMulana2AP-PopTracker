@@ -630,6 +630,9 @@ local VANILLA_STRUCTURAL_PAIRS = {
     { "er_tower_of_oannes_left_c_bottom_gate__c_6", "er_bailey_level_2_upper_gate__a_3", "dlc" },
     { "er_tower_of_oannes_left_c_top_gate__c_5", "er_bailey_level_3_gate__a_1", "dlc" },
     { "er_tower_of_oannes_right_entrance_gate__d_12", "er_bailey_right_gate__f_8", "dlc" },
+    { "er_tower_of_oannes_fish_slime_zero_escape__c_1", "er_bailey_left_gyonin_drop__b_1", "dlc" },
+    { "er_tower_of_oannes_moving_tiles_escape__d_10", "er_bailey_right_one_way_exit_slide__e_6", "dlc" },
+    { "er_tower_of_oannes_evil_fish_crystal_escape__e_6", "er_bailey_right_gyonin_drop__e_1", "dlc" },
 }
 
 -- code -> the code it connects to in an unshuffled seed.

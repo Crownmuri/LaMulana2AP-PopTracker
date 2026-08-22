@@ -34,7 +34,7 @@ Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [thi
 	- Guardian Kills are automatically tracked through AP datapackage.
   - [Spoiler] Reveal Entrances (Entrance Randomizer)
   - Out-of-Logic visibility toggle
-- Go Mode icon is enabled once Ninth Child is considered reachable.
+- Go Mode icon is enabled once the seed's goal is considered reachable.
 - Additional Features:
   - Escape Sequence calculator
   - Reference Sheet (Mantra Combinations / Software Combinations / Eternal Prison Gates)

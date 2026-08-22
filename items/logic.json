@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Annwfn Right Shortcut",
+        "type": "toggle",
+        "codes": "boss_annwfn_right_shortcut"
+    },
+    {
+        "name": "IB Left Shortcut",
+        "type": "toggle",
+        "codes": "boss_ib_left_shortcut"
+    },
+    {
+        "name": "Bergelmir",
+        "type": "toggle",
+        "codes": "boss_bergelmir"
+    },
+    {
+        "name": "White Pedestals",
+        "type": "toggle",
+        "codes": "boss_white_pedestals"
+    },
+    {
+        "name": "HoM Ladder",
+        "type": "toggle",
+        "codes": "boss_hom_ladder"
+    },
+    {
+        "name": "HoM Left Path",
+        "type": "toggle",
+        "codes": "boss_hom_left_path"
+    },
+    {
+        "name": "HoM Middle Path",
+        "type": "toggle",
+        "codes": "boss_hom_middle_path"
+    },
+    {
+        "name": "HoM Right Path",
+        "type": "toggle",
+        "codes": "boss_hom_right_path"
+    },
+    {
+        "name": "Garm Statue Puzzle",
+        "type": "toggle",
+        "codes": "boss_garm_statue_puzzle"
+    },
+    {
+        "name": "Sakit Puzzle",
+        "type": "toggle",
+        "codes": "boss_sakit_puzzle"
+    },
+    {
+        "name": "Guardian Kills",
+        "type": "consumable",
+        "codes": "guardian_kills",
+        "max_quantity": 9,
+        "increment": 1
+    },
+    {
+        "name": "Dissonance",
+        "type": "consumable",
+        "codes": "dissonance",
+        "max_quantity": 7,
+        "increment": 1
+    },
+    {
+        "name": "Weapon Fairy",
+        "type": "toggle",
+        "img": "images/Fairies/WeaponFairy.png",
+        "codes": "boss_weapon_fairy"
+    },
+    {
+        "name": "Money Fairy",
+        "type": "toggle",
+        "img": "images/Fairies/MoneyFairy.png",
+        "codes": "boss_money_fairy"
+    },
+    {
+        "name": "Key Fairy",
+        "type": "toggle",
+        "img": "images/Fairies/KeyFairy.png",
+        "codes": "boss_key_fairy"
+    },
+    {
+        "name": "Go Mode",
+        "type": "toggle",
+        "img": "images/gomode.png",
+        "codes": "go_mode"
+    }
+]

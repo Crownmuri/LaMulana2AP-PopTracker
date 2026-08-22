@@ -684,7 +684,8 @@ end
 
 -- ============================================================
 -- Auto-complete: IsDead / PuzzleFinished
--- Only the 9 guardians require manual tracking.
+-- Only the 9 guardians and the Ninth Child require manual tracking; every
+-- other (mini)boss and puzzle resolves through EVENT_LOGIC below.
 -- ============================================================
 
 GUARDIAN_SET = {
