@@ -14,7 +14,7 @@
                     "setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(Eden) and CanReach(Start) and CanReach(ITRight) and CanReach(ACBottom) and Has(Ice Cloak) and CanReach(ValhallaMain) and IsDead(Fafnir) and CanChant(Moon)"
+                    "^$lm2_logic|CanReach(Eden) and CanReach(Start) and CanReach(AnnwfnRight) and IsDead(Ixtab) and CanReach(ITRight) and CanReach(ACMain) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4))) and CanReach(ValhallaMain) and CanChant(Fire) and CanReach(HL) and IsDead(Fenrir) and CanChant(Moon)"
                 ],
                 "map_locations": [
                     {
