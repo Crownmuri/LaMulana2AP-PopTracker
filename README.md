@@ -18,6 +18,7 @@ Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [thi
   - Costume Clip logic
   - Remove Statue in IT
   - Require Life Sigil for HoM
+  - Require Backside Warp Items
   - Auto Scan
   - Random Research
   - Random Dissonance

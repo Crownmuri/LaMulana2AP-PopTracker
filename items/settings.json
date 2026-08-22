@@ -135,7 +135,7 @@
         "codes": "setting_dlc_logic"
     },
     {
-        "name": "Life Sigil for HoM",
+        "name": "Require Life Sigil for HoM",
         "type": "toggle",
         "img": "images/Settings/LifeSigilHoM.png",
         "codes": "setting_life_for_hom",
@@ -153,6 +153,13 @@
         "type": "toggle",
         "img": "images/Settings/CostumeClip.png",
         "codes": "setting_costume_clip"
+    },
+    {
+        "name": "Require Backside Warp Items",
+        "type": "toggle",
+        "img": "images/Software/FutureDevCompany.png",
+        "codes": "setting_require_fdc",
+        "initial_active_state": true
     },
     {
         "name": "Guardian-Specific Ankhs",

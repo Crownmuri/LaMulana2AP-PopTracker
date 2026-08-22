@@ -618,8 +618,11 @@ local GO_MODE_WATCH_CODES = {
     "secret_treasure", "death_sigil", "earth_spear_ammo", "holy_grail",
     "boss_hom_ladder", "boss_hom_middle_path",
     "cog_of_antiquity", "life_sigil",
-    -- Backside reachability
+    -- Backside reachability. With setting_require_fdc on, FDC gates every
+    -- non-internal exit into a backside area and Hand Scanner + Totem Pole
+    -- gate the Tower of Oannes checkpoint rooms (see FDCGate in logic.lua).
     "origin_sigil", "birth_sigil",
+    "setting_require_fdc", "fdc", "scanner", "totem_pole",
     -- Guardian kills (soul gates + GuardianKills). Watch the boss_*
     -- provider codes so we react both to AP-delivered guardian items
     -- and to manual guardian_* progressive toggles.
@@ -1032,6 +1035,7 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     -- Forwarded only if the seed carries these keys (not in fill_slot_data today):
     set_stage ("setting_logic",         tonumber(slot_data.logic_difficulty))
     set_toggle("setting_costume_clip",  slot_data.costume_clip)
+    set_toggle("setting_require_fdc",   _opts.require_fdc)
     set_toggle("setting_dlc_logic",     slot_data.dlc_item_logic)
     set_toggle("setting_life_for_hom", slot_data.life_sigil_to_awaken_hom)
 

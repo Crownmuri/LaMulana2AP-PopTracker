@@ -958,6 +958,82 @@ function HasAnkhFor(guardian_name)
 end
 
 -- ============================================================
+-- RequireFDC gates (AP parity: Randomiser._fix_fdc_logic)
+-- ============================================================
+-- With "Future Development Company in Logic" on, the AP world appends
+-- "and Has(Future Development Company)" to every NON-internal exit whose
+-- destination area is flagged IsBackside in World.json, and separately gates
+-- the three Tower of Oannes checkpoint rooms -- backside rooms with no Holy
+-- Grail tablet, so FDC alone cannot get you back there -- behind Hand Scanner
+-- + Totem Pole on exits of ANY type, internal ones included. That second gate
+-- is what makes Totem Pole progression on an oannesanity + RequireFDC seed.
+--
+-- _fix_fdc_logic runs from set_rules, i.e. BEFORE connect_entrances, so the
+-- requirement is stamped from an exit's VANILLA destination and then rides
+-- along when ER re-points that exit. Both tables are therefore keyed on the
+-- vanilla (source area -> destination area) pair; var_0er's copy of this file
+-- passes the vanilla target explicitly for shuffled exits.
+--
+-- Neither gate hard-blocks: OutOfLogic() relaxes both, since a player without
+-- FDC / Totem Pole can still walk in -- they just risk stranding themselves --
+-- so checks behind them render yellow (sequence break) rather than red.
+
+-- Non-internal exits into a backside area. Generated from World.json.
+-- SpringintheSky is not a World.json source for this exit (SpringintheSkyTop
+-- is); it is listed because this variant's graph merges the two regions, and
+-- it is inert in var_0er where both regions exist separately.
+FDC_BACKSIDE_ENTRIES = {
+    ["ACBlood"] = { ["DSLMTop"] = true, ["EPDEntrance"] = true, ["HoM"] = true, },
+    ["BaileyBottom"] = { ["TowerOfOannesLeftA"] = true, ["TowerOfOannesLeftCTop"] = true, ["TowerOfOannesRightASlide"] = true, ["TowerOfOannesRightBCrystal"] = true, },
+    ["BaileyLevel1"] = { ["TowerOfOannesLeftA"] = true, },
+    ["BaileyLevel2"] = { ["TowerOfOannesLeftC"] = true, },
+    ["BaileyLevel3"] = { ["TowerOfOannesLeftC"] = true, },
+    ["BaileyRight"] = { ["TowerOfOannesRightA"] = true, },
+    ["DFMain"] = { ["ValhallaMain"] = true, },
+    ["DSLMTop"] = { ["ACBlood"] = true, ["EPDEntrance"] = true, ["HoM"] = true, ["ValhallaMain"] = true, },
+    ["EPDEntrance"] = { ["ACBlood"] = true, ["HoM"] = true, },
+    ["EPDMain"] = { ["EPG"] = true, },
+    ["GotDWedjet"] = { ["DSLMMain"] = true, },
+    ["HLGate"] = { ["HoMTop"] = true, },
+    ["HoM"] = { ["ACBlood"] = true, ["EPDEntrance"] = true, },
+    ["IBBoat"] = { ["HoM"] = true, },
+    ["ITVidofnir"] = { ["EPG"] = true, },
+    ["Nibiru"] = { ["DSLMPyramid"] = true, },
+    ["SotFGBalor"] = { ["ValhallaTopRight"] = true, },
+    ["SotFGBlood"] = { ["ACBlood"] = true, ["DSLMTop"] = true, ["EPDEntrance"] = true, ["HoM"] = true, ["ValhallaMain"] = true, },
+    ["SpringintheSky"] = { ["TowerOfOannesLeftA"] = true, },
+    ["SpringintheSkyTop"] = { ["TowerOfOannesLeftA"] = true, },
+    ["TSBlood"] = { ["ACBlood"] = true, },
+    ["TSBottom"] = { ["ACBottom"] = true, },
+    ["TowerOfOannesRightA"] = { ["BaileyRight"] = true, },
+    ["ValhallaMain"] = { ["ACBlood"] = true, ["DSLMTop"] = true, ["EPDEntrance"] = true, ["HoM"] = true, },
+}
+
+-- Rooms whose every incoming exit needs Hand Scanner + Totem Pole.
+OANNES_CHECKPOINT_AREAS = {
+    ["TowerOfOannesLeftA"] = true,
+    ["TowerOfOannesLeftC"] = true,
+    ["TowerOfOannesRightB"] = true,
+}
+
+-- May the flood fill traverse this edge under the RequireFDC option?
+-- `vanilla_target` is where the exit pointed before entrance shuffle; it equals
+-- the live target everywhere except var_0er's re-pointed ER exits.
+function FDCGate(from_id, vanilla_target)
+    if not has("setting_require_fdc") then return true end
+    if OutOfLogic() then return true end
+    if OANNES_CHECKPOINT_AREAS[vanilla_target]
+        and not (Has("Hand Scanner") and Has("Totem Pole")) then
+        return false
+    end
+    local row = FDC_BACKSIDE_ENTRIES[from_id]
+    if row and row[vanilla_target] and not Has("Future Development Company") then
+        return false
+    end
+    return true
+end
+
+-- ============================================================
 -- Region Graph (forward: area -> exits)
 -- ============================================================
 
@@ -1109,7 +1185,8 @@ local function _flood_one(glitch)
                 for _, edge in ipairs(exits) do
                     local target = edge[1]
                     local logic = edge[2]
-                    if not reach[target] and eval_logic_bool(logic) then
+                    if not reach[target] and FDCGate(area_id, target)
+                        and eval_logic_bool(logic) then
                         reach[target] = true
                         changed = true
                     end
