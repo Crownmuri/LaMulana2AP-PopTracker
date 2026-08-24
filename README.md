@@ -52,7 +52,6 @@ Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [thi
 - <Manual> For the Pistol: Money Fairy needs to be manually tracked for it to be considered in CanUse logic. Key Fairy is also a manual tracked item
 
 ## Issues
-- Placeholder images regarding minibosses
 - Minibosses/puzzles/fairies are considered autocollected upon becoming reachable, so they are not mapped.
 - Fairies/Minibosses are not tracked in AP so they don't auto-track.
 

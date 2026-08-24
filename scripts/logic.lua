@@ -365,7 +365,11 @@ function HorizontalAttack()
         or CanUse("Earth Spear") or CanUse("Caltrops") or CanUse("Chakram")
         or CanUse("Bomb") or CanUse("Pistol") or has("claydoll_suit")
 end
-function CanStopTime() return has("lamp_of_time") end
+function CanStopTime()
+    if not has("lamp_of_time") then return false end
+    return CanReach("RoYBottom") or CanReach("IBMain")
+        or CanReach("ITLeft") or CanReach("DSLMMain")
+end
 function CanSpinCorridor() return count("beherit") >= 1 and Dissonance(1) end
 -- Port of AP world player_state._can_seal_corridor. The boss gate
 -- (random_dissonance ? GuardianKills(RequiredGuardians) : Anu) is the
@@ -765,8 +769,8 @@ local EVENT_LOGIC = {
     ["ratatoskr_4"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3) and (((Has(Chain Whip) or Has(Axe)) and OrbCount(7)) or ((Has(Flail Whip) or Has(Katana)) and OrbCount(6)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(5)))",
 
     -- Tower of Oannes
-    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))) and OrbCount(2)",
-    ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftCTop) and IsDead(Fish-Valusa Re-gyo-ded) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Ring)) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))) and OrbCount(2)",
+    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack",
+    ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftCTop) and IsDead(Fish-Valusa Re-gyo-ded) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(2)",
     ["evil_fish_crystal"] = "CanReach(TowerOfOannesRightBCrystal) and IsDead(Fish-Slime Zero) and CanReach(BaileyRight) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Leather Whip) or Has(Axe) or ((Has(Knife) or Has(Rapier)) and Has(Spaulder)))",
     ["fish-gear_mk-2_turbor"] = "CanReach(TowerOfOannesRightB) and IsDead(Evil Fish Crystal) and Has(Rebirth Sigil) and CanReach(TowerOfOannesLeftA) and (Has(Gale Fibula) or CanStopTime) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Grapple Claw) and Has(Feather) and CanWarp and Has(Flail Whip) and OrbCount(10)",
 
@@ -895,6 +899,16 @@ function PuzzleFinished(p)
     return true
 end
 
+-- CanKill(boss): "can I win this fight with what I hold", with no claim about
+-- reaching the arena. Mirrors the apworld's PlayerStateAdapter._can_kill, which
+-- evaluates only the boss location's own logic string (a pure item/weapon check
+-- in World.json) and never its region reach. Reading EVENT_LOGIC here instead
+-- would re-impose the CanReach(...) prefix the tracker prepends to every event
+-- rule, which is circular on any edge whose traversal is what makes the arena
+-- reachable -- TSNeck->TSMain is gated on Raijin and Fujin, whose rule opens
+-- with CanReach(TSMain), so the flood fill's fixpoint settles on "not
+-- reachable" and the edge never opens. EVENT_REQS is the same rule with that
+-- leading prefix stripped.
 function CanKill(boss)
     local boss_key = string.lower(boss):gsub("%s+","_"):gsub("'","")
     local code = "boss_" .. boss_key
@@ -903,21 +917,16 @@ function CanKill(boss)
     if GUARDIAN_SET[code] then
         return IsDead(boss) or MeleeAttack() or HorizontalAttack()
     end
-    if EVENT_LOGIC[boss_key] then
-        return eval_logic_bool(EVENT_LOGIC[boss_key])
+    if EVENT_REQS[boss_key] then
+        return eval_logic_bool(EVENT_REQS[boss_key])
     end
-    return true
+    return MeleeAttack() or HorizontalAttack()
 end
 
--- CanKillHere(boss): "can I win this fight with what I hold", with no claim
--- about reaching the arena. Use it (never CanKill) on an edge whose own
--- traversability is what makes the boss's area reachable, otherwise the rule is
--- circular: IBBifrost->IBTop is gated on beating Cetus, but EVENT_LOGIC["cetus"]
--- opens with CanReach(IBTop), and CanReach reads the in-progress reachable set
--- during the flood fill (see CanReach below), so the fixpoint settles on "not
--- reachable" and the edge never opens. The apworld has no such cycle: its
--- _can_kill evaluates only the Cetus location's own logic string, which in
--- World.json is a pure weapon check.
+-- CanKillHere(boss): CanKill without the guardian special-case, i.e. always the
+-- plain fight requirement. Kept as the explicit form for edges that must not
+-- pick up the "a guardian counts as killable once any melee weapon is held"
+-- shortcut above.
 function CanKillHere(boss)
     local boss_key = string.lower(boss):gsub("%s+","_"):gsub("'","")
     if has("boss_" .. boss_key) then return true end
@@ -964,19 +973,24 @@ end
 -- "and Has(Future Development Company)" to every NON-internal exit whose
 -- destination area is flagged IsBackside in World.json, and separately gates
 -- the three Tower of Oannes checkpoint rooms -- backside rooms with no Holy
--- Grail tablet, so FDC alone cannot get you back there -- behind Hand Scanner
--- + Totem Pole on exits of ANY type, internal ones included. That second gate
--- is what makes Totem Pole progression on an oannesanity + RequireFDC seed.
---
--- _fix_fdc_logic runs from set_rules, i.e. BEFORE connect_entrances, so the
--- requirement is stamped from an exit's VANILLA destination and then rides
--- along when ER re-points that exit. Both tables are therefore keyed on the
--- vanilla (source area -> destination area) pair; var_0er's copy of this file
--- passes the vanilla target explicitly for shuffled exits.
+-- Grail tablet behind FDC + Hand Scanner + Totem Pole.
 --
 -- Neither gate hard-blocks: OutOfLogic() relaxes both, since a player without
 -- FDC / Totem Pole can still walk in -- they just risk stranding themselves --
 -- so checks behind them render yellow (sequence break) rather than red.
+
+-- Areas flagged IsBackside in World.json. Unused in this variant (no ER edges);
+-- present so both copies of FDCGate stay identical.
+BACKSIDE_AREAS = {
+    ["ACBlood"] = true, ["ACBottom"] = true, ["BaileyRight"] = true,
+    ["DSLMMain"] = true, ["DSLMPyramid"] = true, ["DSLMTop"] = true,
+    ["EPDEntrance"] = true, ["EPG"] = true, ["HoM"] = true,
+    ["HoMTop"] = true, ["TowerOfOannesLeftA"] = true,
+    ["TowerOfOannesLeftC"] = true, ["TowerOfOannesLeftCTop"] = true,
+    ["TowerOfOannesRightA"] = true, ["TowerOfOannesRightASlide"] = true,
+    ["TowerOfOannesRightB"] = true, ["TowerOfOannesRightBCrystal"] = true,
+    ["ValhallaMain"] = true, ["ValhallaTopRight"] = true,
+}
 
 -- Non-internal exits into a backside area. Generated from World.json.
 -- SpringintheSky is not a World.json source for this exit (SpringintheSkyTop
@@ -1017,17 +1031,32 @@ OANNES_CHECKPOINT_AREAS = {
 }
 
 -- May the flood fill traverse this edge under the RequireFDC option?
--- `vanilla_target` is where the exit pointed before entrance shuffle; it equals
--- the live target everywhere except var_0er's re-pointed ER exits.
-function FDCGate(from_id, vanilla_target)
+-- `vanilla_target` is where the exit pointed before entrance shuffle;
+-- `live_target` is where it points now (they differ only for ER-shuffled
+-- exits) and defaults to `vanilla_target`. `er_edge` marks the shuffleable
+-- entrance edges, which are exactly the non-internal exits. This variant has
+-- no entrance shuffle and no per-edge kind, so it always passes the same
+-- target twice and leaves `er_edge` unset; the parameters exist to keep this
+-- function identical to var_0er's copy.
+function FDCGate(from_id, vanilla_target, live_target, er_edge)
     if not has("setting_require_fdc") then return true end
     if OutOfLogic() then return true end
-    if OANNES_CHECKPOINT_AREAS[vanilla_target]
-        and not (Has("Hand Scanner") and Has("Totem Pole")) then
+    local dest = live_target or vanilla_target
+
+    if has("setting_oannesanity") and OANNES_CHECKPOINT_AREAS[dest]
+        and not (Has("Future Development Company")
+                 and Has("Hand Scanner") and Has("Totem Pole")) then
         return false
     end
-    local row = FDC_BACKSIDE_ENTRIES[from_id]
-    if row and row[vanilla_target] and not Has("Future Development Company") then
+
+    local backside
+    if er_edge then
+        backside = BACKSIDE_AREAS[dest] == true
+    else
+        local row = FDC_BACKSIDE_ENTRIES[from_id]
+        backside = row ~= nil and row[dest] == true
+    end
+    if backside and not Has("Future Development Company") then
         return false
     end
     return true
@@ -1068,18 +1097,18 @@ FORWARD_EXITS = {
     ["GateofGuidanceLeft"] = {{"GateofIllusion", "True"}, {"GateofGuidance", "CanReach(Mausoleum of Giants)"}},
     ["GateofIllusion"] = {{"RoYMiddle", "HorizontalAttack"}, {"GateofGuidanceLeft", "True"}},
     ["GotD"] = {{"IBMain", "SoulGateCost(er_gate_of_the_dead_soul_gate__c_4)"}, {"GotDWedjet", "True"}},
-    ["GotDWedjet"] = {{"DSLMMain", "PuzzleFinished(White Pedestals)"}, {"GotD", "CanWarp or (Has(Pepper) and Has(Birth Sigil) and CanChant(Sun) and CanKill(Unicorn))"}},
-    ["HL"] = {{"HLSpun", "CanChant(Heaven)"}, {"ITRight", "SoulGateCost(er_heavens_labyrinth_soul_gate__e_5)"}},
+    ["GotDWedjet"] = {{"DSLMMain", "PuzzleFinished(White Pedestals)"}, {"GotD", "CanWarp or (Has(Pepper) and Has(Birth Sigil) and CanChant(Sun) and CanKillHere(Unicorn))"}},
+    ["HL"] = {{"HLSpun", "CanChant(Heaven)"}, {"HLCog", "CanWarp"}, {"ITRight", "SoulGateCost(er_heavens_labyrinth_soul_gate__e_5)"}},
     ["HLCog"] = {{"TSNeckEntrance", "False"}},
     ["HLGate"] = {{"HL", "CanWarp"}, {"HoMTop", "(Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla)"}},
-    ["HLSpun"] = {{"HLGate", "True"}},
+    ["HLSpun"] = {{"HLGate", "True"}, {"HLCog", "IsDead(Scylla)"}},
     ["HoM"] = {{"HoMTop", "Has(HoM Ladder)"}, {"ACBlood", "CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}, {"IBBoat", "Has(Death Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and (CanWarp or IsDead(HoM Middle Path)) and SoulGateCost(er_hall_of_malice_soul_gate__d_3)"}},
     ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}, {"HL", "False"}},
     ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}, {"ITRight", "True"}},
     ["IBBifrost"] = {{"IBTop", "CanWarp or CanKillHere(Cetus)"}, {"AnnwfnMain", "False"}},
     ["IBBoat"] = {{"HoM", "False"}, {"SpiralHell", "CanSealCorridor and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}},
     ["IBBottom"] = {{"IBMain", "MeleeAttack or Has(Claydoll Suit) or (TrickyLogic and HorizontalAttack)"}, {"IBLadder", "IsDead(Cetus)"}, {"IBLeft", "Has(IB Left Shortcut)"}},
-    ["IBCetusLadder"] = {{"AnnwfnOneWay", "True"}, {"IBTop", "CanWarp or CanKill(Cetus) or CanReach(IBMain)"}},
+    ["IBCetusLadder"] = {{"AnnwfnOneWay", "True"}, {"IBTop", "CanWarp or CanKillHere(Cetus) or CanReach(IBMain)"}},
     ["IBDinosaur"] = {{"IBBattery", "Has(Grapple Claw) or Glitch(Costume Clip)"}, {"IBMoon", "Glitch(Costume Clip) and Has(Feather) and (Has(Life Sigil) or CanWarp)"}},
     ["IBLadder"] = {{"ITLeft", "True"}},
     ["IBLeft"] = {{"RoYTopRight", "False"}, {"IBBottom", "CanWarp or Has(Birth Sigil)"}, {"IBLeftSG", "CanWarp or Has(Birth Sigil)"}},
@@ -1105,7 +1134,7 @@ FORWARD_EXITS = {
     ["RoYBottomLeft"] = {{"AnnwfnMain", "True"}},
     ["RoYMiddle"] = {{"GateofIllusion", "False"}, {"RoY", "HorizontalAttack"}},
     ["RoYTopLeft"] = {{"AnnwfnPoison", "(CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))"}},
-    ["RoYTopMiddle"] = {{"ITEntrance", "True"}, {"RoY", "CanWarp or CanKill(Nidhogg)"}},
+    ["RoYTopMiddle"] = {{"ITEntrance", "True"}, {"RoY", "CanWarp or CanKillHere(Nidhogg)"}},
     ["RoYTopRight"] = {{"IBLeft", "Has(Birth Sigil)"}, {"RoY", "CanWarp or Has(Birth Sigil)"}},
     ["SotFGBalor"] = {{"ValhallaTopRight", "Has(Claydoll Suit) and SoulGateCost(er_shrine_of_the_frost_giants_balor_soul_gate__e_1) and IsDead(Balor)"}},
     ["SotFGBlood"] = {{"SotFGBloodTez", "True"}, {"ACBlood", "CanWarp or CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"ValhallaMain", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
@@ -1120,7 +1149,7 @@ FORWARD_EXITS = {
     ["TSEntrance"] = {{"TSLeft", "Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))"}, {"TSMain", "Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and (Has(Spaulder) or Has(Vajra)))"}, {"IBLeftSG", "SoulGateCost(er_takamagahara_shrine_top_main_soul_gate__d_1)"}},
     ["TSLeft"] = {{"TSMain", "True"}},
     ["TSMain"] = {{"TSBottom", "Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Start(TSLeft)"}, {"TSNeck", "IsDead(Raijin and Fujin)"}, {"TSEntrance", "Has(Leather Whip) or (Has(Knife) and Has(Gauntlet) and Has(Vajra) and Has(Spaulder)) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack)"}},
-    ["TSNeck"] = {{"TSMain", "CanKill(Raijin and Fujin) or (CanStopTime and CanWarp)"}, {"TSNeckEntrance", "True"}},
+    ["TSNeck"] = {{"TSMain", "CanKillHere(Raijin and Fujin) or (CanStopTime and CanWarp)"}, {"TSNeckEntrance", "True"}},
     ["TSNeckEntrance"] = {{"TSNeck", "CanWarp or (CanChant(Heaven) and CanChant(Earth) and CanChant(Sea) and CanChant(Fire) and CanChant(Wind))"}, {"HLCog", "CanChant(Earth) and CanChant(Wind) and CanChant(Fire) and CanChant(Sea) and CanChant(Heaven) and CanWarp"}},
     ["ValhallaMain"] = {{"ValhallaTop", "Has(Feather) or CanChant(Heaven)"}, {"DFMain", "True"}, {"SotFGBlood", "CanWarp or CanSpinCorridor or (CanReach(SotFG Main) and CanKill(Tezcatlipoca) and Setting(Non Random Gates))"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["ValhallaTop"] = {{"ValhallaMain", "True"}},
@@ -1137,7 +1166,7 @@ FORWARD_EXITS = {
     ["TowerOfOannesLeftATopGate"] = {{"BaileyLevel1", "True"}, {"TowerOfOannesLeftA", "CanWarp or Has(Feather)"}},
     ["TowerOfOannesLeftB"] = {{"BaileyLevel1", "True"}, {"TowerOfOannesLeftBTopGate", "Has(Feather)"}},
     ["TowerOfOannesLeftBTopGate"] = {{"BaileyLevel2", "IsDead(Fish-Valusa Re-gyo-ded)"}, {"TowerOfOannesLeftB", "CanWarp or IsDead(Fish-Valusa Re-gyo-ded)"}},
-    ["TowerOfOannesLeftC"] = {{"BaileyLevel2", "True"}, {"BaileyLevel3", "IsDead(Fish-Slime Zero) and (MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder)))"}, {"TowerOfOannesLeftCTop", "MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))"}},
+    ["TowerOfOannesLeftC"] = {{"BaileyLevel2", "True"}, {"BaileyLevel3", "IsDead(Fish-Slime Zero) and (HorizontalAttack)"}, {"TowerOfOannesLeftCTop", "HorizontalAttack"}},
     ["TowerOfOannesLeftCTop"] = {{"BaileyBottom", "True"}, {"TowerOfOannesLeftC", "Has(Feather)"}},
     ["TowerOfOannesRightA"] = {{"BaileyRight", "True"}, {"TowerOfOannesRightASlide", "Has(Feather) and CanWarp"}, {"TowerOfOannesRightB", "Has(Feather) and CanWarp"}},
     ["TowerOfOannesRightASlide"] = {{"BaileyBottom", "HorizontalAttack"}, {"TowerOfOannesRightA", "Has(Feather) and CanWarp"}},
@@ -1185,7 +1214,7 @@ local function _flood_one(glitch)
                 for _, edge in ipairs(exits) do
                     local target = edge[1]
                     local logic = edge[2]
-                    if not reach[target] and FDCGate(area_id, target)
+                    if not reach[target] and FDCGate(area_id, target, target)
                         and eval_logic_bool(logic) then
                         reach[target] = true
                         changed = true
