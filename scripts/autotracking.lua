@@ -30,7 +30,22 @@ do
     end
 end
 
+-- Glossary ROM item IDs form a contiguous range (BASE_ITEM_ID + 2000..2243,
+-- all of which are glossary ROMs and nothing else). The glossary_hunt goal is
+-- state.has_group("Glossary", required) on the apworld side, i.e. it counts
+-- the ROMs the player *receives*, not the glossary locations they check --
+-- with glossanity on, the ROM behind a glossary location is shuffled like any
+-- other item. Counting checks instead would drift in both directions.
+local GLOSSARY_ITEM_ID_MIN = 422000
+local GLOSSARY_ITEM_ID_MAX = 422243
+
 function onItem(index, item_id, item_name, player)
+    if item_id >= GLOSSARY_ITEM_ID_MIN and item_id <= GLOSSARY_ITEM_ID_MAX then
+        local g = Tracker:FindObjectForCode("glossary_count")
+        if g then g.AcquiredCount = g.AcquiredCount + 1 end
+        return
+    end
+
     local item = ITEM_MAPPING[item_id]
     if not item or not item[1] then
         -- Not mapped (filler, weights, etc.) - ignore silently
@@ -159,19 +174,9 @@ local function SetSubweaponAmmoStage(stage, sm_code)
     end
 end
 
--- Glossary (glossanity) location IDs form a contiguous range. Each check
--- collected bumps the glossary_count consumable shown in the item layout.
-local GLOSSARY_ID_MIN = 432000
-local GLOSSARY_ID_MAX = 432243
-
 function onLocation(location_id, location_name)
     if seen_locations[location_id] then return end
     seen_locations[location_id] = true
-
-    if location_id >= GLOSSARY_ID_MIN and location_id <= GLOSSARY_ID_MAX then
-        local g = Tracker:FindObjectForCode("glossary_count")
-        if g then g.AcquiredCount = g.AcquiredCount + 1 end
-    end
 
     local location_array = LOCATION_MAPPING[location_id]
     if not location_array or not location_array[1] then
@@ -218,8 +223,8 @@ function onClear(slot_data)
     for _, g in ipairs(GUARDIANS) do
         _guardian_was_dead[g] = false
     end
-    -- Zero the glossary counter so the location replay below rebuilds it
-    -- from scratch rather than adding on top of a restored count.
+    -- Zero the glossary counter so the item replay rebuilds it from scratch
+    -- rather than adding on top of a restored count.
     local gloss = Tracker:FindObjectForCode("glossary_count")
     if gloss then gloss.AcquiredCount = 0 end
 end

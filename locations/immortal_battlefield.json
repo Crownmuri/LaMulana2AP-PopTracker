@@ -1308,7 +1308,7 @@
                     "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBBottom) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(IBRight) and (HorizontalAttack)"
                 ]
             },
             {

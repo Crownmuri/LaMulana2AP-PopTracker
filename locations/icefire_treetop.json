@@ -1272,7 +1272,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and (Has(Feather) or (Has(Grapple Claw) and CanReach(ITEntrance)))"
+                    "^$lm2_logic|CanReach(ITRight) and (Has(Feather) or (Has(Grapple Claw) and CanReach(ITEntrance)) or CanReach(EPDMain) or CanReach(EPG))"
                 ],
                 "map_locations": [
                     {

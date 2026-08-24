@@ -1349,7 +1349,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(ValhallaMain) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(ValhallaMain) and (True)))"
                 ]
             },
             {
@@ -2166,7 +2166,7 @@
                     "setting_glossanity_enemy,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (True)) or (CanReach(TowerOfOannesLeftCTop) and (True)))"
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (True)) or (CanReach(TowerOfOannesLeftC) and (True)) or (CanReach(TowerOfOannesLeftCTop) and (True)))"
                 ]
             },
             {
@@ -2232,7 +2232,7 @@
                     "setting_glossanity_enemy,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and ((MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))) or (CanReach(TowerOfOannesLeftC) and ((MeleeAttack and (Has(Vajra) or Has(Gauntlet) or Has(Spaulder))))))"
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftA) and (True)) or (CanReach(TowerOfOannesLeftC) and (True)))"
                 ]
             }
         ]

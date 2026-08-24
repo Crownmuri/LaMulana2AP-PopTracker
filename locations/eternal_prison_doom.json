@@ -349,7 +349,7 @@
                     "setting_potsanity_high_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDMain) and Has(Feather) and (HorizontalAttack or OrbCount(3)) and (Has(Gale Fibula) or CanStopTime or TrickyLogic or (CanReach(EPG) and (Has(Claydoll Suit) or Has(Ice Cloak))))"
+                    "^$lm2_logic|CanReach(EPDMain) and (Has(Feather) or OutOfLogic) and (HorizontalAttack or OrbCount(3)) and (Has(Gale Fibula) or CanStopTime or TrickyLogic or (CanReach(EPG) and (Has(Claydoll Suit) or Has(Ice Cloak))))"
                 ]
             },
             {
@@ -372,7 +372,7 @@
                     "setting_potsanity_bomb"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPDMain) and Has(Feather) and (HorizontalAttack or OrbCount(3)) and (Has(Gale Fibula) or CanStopTime or TrickyLogic or (CanReach(EPG) and (Has(Claydoll Suit) or Has(Ice Cloak))))"
+                    "^$lm2_logic|CanReach(EPDMain) and (Has(Feather) or OutOfLogic) and (HorizontalAttack or OrbCount(3)) and (Has(Gale Fibula) or CanStopTime or TrickyLogic or (CanReach(EPG) and (Has(Claydoll Suit) or Has(Ice Cloak))))"
                 ]
             },
             {

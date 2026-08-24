@@ -688,7 +688,7 @@
                     "setting_potsanity_high_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (((Has(Feather) and HorizontalAttack) or IsDead(Vidofnir)))"
+                    "^$lm2_logic|CanReach(EPG) and ((((Has(Feather) or Has(Grapple Claw)) and HorizontalAttack and CanWarp) or IsDead(Vidofnir)))"
                 ]
             },
             {
@@ -703,7 +703,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (((Has(Feather) and HorizontalAttack) or IsDead(Vidofnir)))"
+                    "^$lm2_logic|CanReach(EPG) and ((((Has(Feather) or Has(Grapple Claw)) and HorizontalAttack) or IsDead(Vidofnir)))"
                 ],
                 "map_locations": [
                     {
@@ -749,7 +749,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(EPG) and (Has(Feather) or OutOfLogic)"
                 ],
                 "map_locations": [
                     {
