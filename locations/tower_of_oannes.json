@@ -82,6 +82,102 @@
                         "size": 15
                     }
                 ]
+            },
+            {
+                "name": "Fish-Valusa Re-gyo-ded",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_fish-valusa_re-gyo-ded"
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_oannesanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|IsDead(Fish-Valusa Re-gyo-ded)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 263,
+                        "y": 603,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Fish-Slime Zero",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_fish-slime_zero"
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_oannesanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|IsDead(Fish-Slime Zero)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 438,
+                        "y": 38,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Evil Fish Crystal",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_evil_fish_crystal"
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_oannesanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|IsDead(Evil Fish Crystal)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1887,
+                        "y": 510,
+                        "shape": "diamond"
+                    }
+                ]
+            },
+            {
+                "name": "Fish-Gear mk-2 turboR",
+                "sections": [
+                    {
+                        "name": "Miniboss",
+                        "item_count": 1,
+                        "hosted_item": "boss_fish-gear_mk-2_turbor"
+                    }
+                ],
+                "visibility_rules": [
+                    "setting_oannesanity"
+                ],
+                "access_rules": [
+                    "^$lm2_logic|IsDead(Fish-Gear mk-2 turboR)"
+                ],
+                "map_locations": [
+                    {
+                        "map": "Tower of Oannes",
+                        "x": 1661,
+                        "y": 38,
+                        "shape": "diamond"
+                    }
+                ]
             }
         ]
     }

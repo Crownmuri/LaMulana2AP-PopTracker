@@ -346,5 +346,29 @@
         "type": "toggle",
         "img": "images/Guardians/NinthChild.png",
         "codes": "boss_ninth_child"
+    },
+    {
+        "name": "Fish-Valusa Re-gyo-ded",
+        "type": "toggle",
+        "img": "images/Guardians/GyoninKing.png",
+        "codes": "boss_fish-valusa_re-gyo-ded"
+    },
+    {
+        "name": "Fish-Slime Zero",
+        "type": "toggle",
+        "img": "images/Guardians/GyoninKing.png",
+        "codes": "boss_fish-slime_zero"
+    },
+    {
+        "name": "Evil Fish Crystal",
+        "type": "toggle",
+        "img": "images/Guardians/GyoninKing.png",
+        "codes": "boss_evil_fish_crystal"
+    },
+    {
+        "name": "Fish-Gear mk-2 turboR",
+        "type": "toggle",
+        "img": "images/Guardians/GyoninKing.png",
+        "codes": "boss_fish-gear_mk-2_turbor"
     }
 ]
