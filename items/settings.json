@@ -129,6 +129,12 @@
         "codes": "setting_oannesanity"
     },
     {
+        "name": "Gate Entrances Shuffled",
+        "type": "toggle",
+        "img": "images/door.png",
+        "codes": "setting_gate_entrances"
+    },
+    {
         "name": "DLC Item Logic",
         "type": "toggle",
         "img": "images/Settings/Fish Suit.png",

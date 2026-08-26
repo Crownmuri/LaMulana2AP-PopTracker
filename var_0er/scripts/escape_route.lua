@@ -14,6 +14,37 @@ local TARGET_FIELD = "Cliff"
 
 -- ER code -> routing field
 local ER_FIELD = {
+    -- DLC (oannesanity). Without these the pairings resolve to a nil field
+    -- and build_edges drops every DLC transition, so an oannesanity seed
+    -- routed as if the Tower of Oannes and Bailey did not exist.
+    -- Guidance
+    ["er_gate_of_guidance_right_ladder__e_2"] = "Guidance",
+    -- SpringSky
+    ["er_spring_in_the_sky_ladder_down__a_6"] = "SpringSky",
+    ["er_spring_in_the_sky_ladder_up__c_1"] = "SpringSky",
+    -- Oannes
+    ["er_tower_of_oannes_evil_fish_crystal_escape__e_6"] = "Oannes",
+    ["er_tower_of_oannes_fish_slime_zero_escape__c_1"] = "Oannes",
+    ["er_tower_of_oannes_left_a_bottom_gate__c_15"] = "Oannes",
+    ["er_tower_of_oannes_left_a_ladder_down__b_16"] = "Oannes",
+    ["er_tower_of_oannes_left_a_top_gate__c_10"] = "Oannes",
+    ["er_tower_of_oannes_left_b_bottom_gate__c_9"] = "Oannes",
+    ["er_tower_of_oannes_left_b_top_gate__c_7"] = "Oannes",
+    ["er_tower_of_oannes_left_c_bottom_gate__c_6"] = "Oannes",
+    ["er_tower_of_oannes_left_c_top_gate__c_5"] = "Oannes",
+    ["er_tower_of_oannes_moving_tiles_escape__d_10"] = "Oannes",
+    ["er_tower_of_oannes_right_entrance_gate__d_12"] = "Oannes",
+    -- Bailey
+    ["er_bailey_bottom_gate__a_11"] = "Bailey",
+    ["er_bailey_left_gyonin_drop__b_1"] = "Bailey",
+    ["er_bailey_level_1_lower_gate__a_6"] = "Bailey",
+    ["er_bailey_level_1_upper_gate__a_5"] = "Bailey",
+    ["er_bailey_level_2_lower_gate__a_3"] = "Bailey",
+    ["er_bailey_level_2_upper_gate__a_3"] = "Bailey",
+    ["er_bailey_level_3_gate__a_1"] = "Bailey",
+    ["er_bailey_right_gate__f_8"] = "Bailey",
+    ["er_bailey_right_gyonin_drop__e_1"] = "Bailey",
+    ["er_bailey_right_one_way_exit_slide__e_6"] = "Bailey",
     -- Surface
     ["er_starting_area"] = "Surface",
     ["er_village_of_departure_next_to_xelpud"] = "Surface",
@@ -122,6 +153,9 @@ local ONEWAY_EXIT = {
 
 -- Field -> friendly name for the display.
 local FIELD_NAME = {
+    ["SpringSky"] = "Spring in the Sky",
+    ["Oannes"] = "Tower of Oannes",
+    ["Bailey"] = "Bailey",
     ["Altar-Right"] = "Altar",
     ["Altar-Left"] = "Altar",
     ["Annwfn"] = "Annwfn",
@@ -163,6 +197,10 @@ local GRAIL_FIELDS = {
     "Surface", "Yggdrasil", "Annwfn", "Battlefield", "Icefire", "Divine",
     "Frost-Giants", "GOTD", "Takamagahara", "Heaven", "Valhalla", "DSLM",
     "Chaos", "Malice", "Eternal",
+    -- DLC: the grail activates in Spring in the Sky, the Tower of Oannes and
+    -- the Bailey. Eden is the one DLC area where it does not, and it has no
+    -- entrance codes, so it never appears as a routing node here.
+    "SpringSky", "Oannes", "Bailey",
 }
 local GRAIL_ACTIVATORS = { "Guidance", "Mausoleum", "Surface", "Illusion", "Nibiru" }
 

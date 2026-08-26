@@ -621,18 +621,18 @@ local VANILLA_STRUCTURAL_PAIRS = {
     { "er_roots_of_yggdrasil_ladder_down__c_5", "er_annwfn_ladder_up__c_1", "vertical" },
     { "er_village_of_departure_ladder_down__f_3", "er_inferno_cavern__b_1", "vertical" },
     -- DLC (locked vanilla unless include_dlc_entrances; category gated on oannesanity)
-    { "er_gate_of_guidance_right_ladder__e_2", "er_spring_in_the_sky_ladder_down__a_6", "dlc" },
-    { "er_spring_in_the_sky_ladder_up__c_1", "er_tower_of_oannes_left_a_ladder_down__b_16", "dlc" },
-    { "er_tower_of_oannes_left_a_bottom_gate__c_15", "er_bailey_bottom_gate__a_11", "dlc" },
-    { "er_tower_of_oannes_left_a_top_gate__c_10", "er_bailey_level_1_lower_gate__a_6", "dlc" },
-    { "er_tower_of_oannes_left_b_bottom_gate__c_9", "er_bailey_level_1_upper_gate__a_5", "dlc" },
-    { "er_tower_of_oannes_left_b_top_gate__c_7", "er_bailey_level_2_lower_gate__a_3", "dlc" },
-    { "er_tower_of_oannes_left_c_bottom_gate__c_6", "er_bailey_level_2_upper_gate__a_3", "dlc" },
-    { "er_tower_of_oannes_left_c_top_gate__c_5", "er_bailey_level_3_gate__a_1", "dlc" },
-    { "er_tower_of_oannes_right_entrance_gate__d_12", "er_bailey_right_gate__f_8", "dlc" },
-    { "er_tower_of_oannes_fish_slime_zero_escape__c_1", "er_bailey_left_gyonin_drop__b_1", "dlc" },
-    { "er_tower_of_oannes_moving_tiles_escape__d_10", "er_bailey_right_one_way_exit_slide__e_6", "dlc" },
-    { "er_tower_of_oannes_evil_fish_crystal_escape__e_6", "er_bailey_right_gyonin_drop__e_1", "dlc" },
+    { "er_gate_of_guidance_right_ladder__e_2", "er_spring_in_the_sky_ladder_down__a_6", "dlc_vertical" },
+    { "er_spring_in_the_sky_ladder_up__c_1", "er_tower_of_oannes_left_a_ladder_down__b_16", "dlc_vertical" },
+    { "er_tower_of_oannes_left_a_bottom_gate__c_15", "er_bailey_bottom_gate__a_11", "dlc_gate" },
+    { "er_tower_of_oannes_left_a_top_gate__c_10", "er_bailey_level_1_lower_gate__a_6", "dlc_gate" },
+    { "er_tower_of_oannes_left_b_bottom_gate__c_9", "er_bailey_level_1_upper_gate__a_5", "dlc_gate" },
+    { "er_tower_of_oannes_left_b_top_gate__c_7", "er_bailey_level_2_lower_gate__a_3", "dlc_gate" },
+    { "er_tower_of_oannes_left_c_bottom_gate__c_6", "er_bailey_level_2_upper_gate__a_3", "dlc_gate" },
+    { "er_tower_of_oannes_left_c_top_gate__c_5", "er_bailey_level_3_gate__a_1", "dlc_gate" },
+    { "er_tower_of_oannes_right_entrance_gate__d_12", "er_bailey_right_gate__f_8", "dlc_gate" },
+    { "er_tower_of_oannes_fish_slime_zero_escape__c_1", "er_bailey_left_gyonin_drop__b_1", "dlc_unique" },
+    { "er_tower_of_oannes_moving_tiles_escape__d_10", "er_bailey_right_one_way_exit_slide__e_6", "dlc_unique" },
+    { "er_tower_of_oannes_evil_fish_crystal_escape__e_6", "er_bailey_right_gyonin_drop__e_1", "dlc_unique" },
 }
 
 -- code -> the code it connects to in an unshuffled seed.
@@ -722,19 +722,44 @@ function RebuildVanillaEntrances()
     -- blank (player tracks manually / uses Reveal).
     local slot = _cached_slot_data
     local opts = slot and slot.options
-    if type(opts) ~= "table" then return end
+    if type(opts) ~= "table" then
+        -- Nothing to pre-fill from. Logged because the symptom (vanilla
+        -- categories never auto-filling) is otherwise silent and looks
+        -- identical to the rebuild running but choosing nothing.
+        print(string.format(
+            "LM2 ER: RebuildVanillaEntrances skipped -- slot_data=%s options=%s",
+            tostring(slot ~= nil), type(opts)))
+        return
+    end
 
     -- Active toggles below would otherwise re-enter EntranceClick.
     if SuppressClicks then SuppressClicks(SUPPRESS_RESTORE_FRAMES) end
 
-    local full_random = _opt_on(opts, "full_random_entrances")
+    -- full_random_entrances is deliberately NOT consulted here. It decides HOW
+    -- the pool is paired (one shared pool instead of per-type pools), not WHAT
+    -- enters it: the apworld builds the pool in regions.py::_shuffleable_exits
+    -- purely from the per-category toggles, so a category that is off stays
+    -- vanilla even in a full-random seed. Treating full_random as an override
+    -- left every gate unpaired on seeds with gate_entrances off + full random.
     local cat_vanilla = {
-        horizontal = (not full_random) and not _opt_on(opts, "horizontal_entrances"),
-        vertical   = (not full_random) and not _opt_on(opts, "vertical_entrances"),
-        gate       = (not full_random) and not _opt_on(opts, "gate_entrances"),
+        horizontal = not _opt_on(opts, "horizontal_entrances"),
+        vertical   = not _opt_on(opts, "vertical_entrances"),
+        gate       = not _opt_on(opts, "gate_entrances"),
         unique     = not _opt_on(opts, "unique_transitions"),
-        dlc        = _opt_on(opts, "oannesanity") and not _opt_on(opts, "include_dlc_entrances"),
     }
+
+    -- DLC transitions carry a real exit type as well as being DLC, and the
+    -- apworld requires BOTH gates to open before one is shuffled: a DLC gate
+    -- enters the pool only when gate_entrances AND include_dlc_entrances are
+    -- on. So a DLC pair is vanilla whenever its own type category is off, even
+    -- with DLC entrances shuffled -- which is why the 7 Tower of Oannes <->
+    -- Bailey gate pairs stayed unfilled on a gates-off seed. Only meaningful
+    -- with oannesanity, since without it the DLC is not tracked at all.
+    local dlc_tracked = _opt_on(opts, "oannesanity")
+    local dlc_shuffled = _opt_on(opts, "include_dlc_entrances")
+    cat_vanilla.dlc_gate     = dlc_tracked and (cat_vanilla.gate or not dlc_shuffled)
+    cat_vanilla.dlc_vertical = dlc_tracked and (cat_vanilla.vertical or not dlc_shuffled)
+    cat_vanilla.dlc_unique   = dlc_tracked and (cat_vanilla.unique or not dlc_shuffled)
 
     for _, p in ipairs(VANILLA_STRUCTURAL_PAIRS) do
         local a, b, cat = p[1], p[2], p[3]
@@ -773,6 +798,18 @@ function RebuildVanillaEntrances()
             end
         end
     end
+
+    local _locked = 0
+    for _, p in ipairs(VANILLA_STRUCTURAL_PAIRS) do
+        if ER_PAIRINGS[p[1]] == p[2] then _locked = _locked + 1 end
+    end
+    print(string.format(
+        "LM2 ER: vanilla categories horiz=%s vert=%s gate=%s uniq=%s dlcgate=%s soulgate=%s"
+        .. " -> %d/%d structural pairs locked",
+        tostring(cat_vanilla.horizontal), tostring(cat_vanilla.vertical),
+        tostring(cat_vanilla.gate), tostring(cat_vanilla.unique),
+        tostring(cat_vanilla.dlc_gate), tostring(sg_vanilla),
+        _locked, #VANILLA_STRUCTURAL_PAIRS))
 
     if UpdateEscapeRoute then UpdateEscapeRoute() end
 end

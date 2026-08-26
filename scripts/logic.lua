@@ -397,12 +397,35 @@ function Setting(name)
     if name == "Not Life for HoM" then
         return not has("setting_life_for_hom")
     end
+    -- Entrance-category settings. Several World.json gates read
+    -- "False or Setting(Random Gates)" on one side: that side is closed until
+    -- the gate is opened from the other end, and only entrance randomization
+    -- makes it traversable from the start. This variant models the VANILLA
+    -- connection graph (FORWARD_EXITS is the unshuffled layout), so from its
+    -- point of view the categories are never randomized. var_0er answers the
+    -- same questions per-entrance through ERVanilla()/SoulGateCost() instead
+    -- and has no live Setting() call of this kind.
+    if name == "Random Gates" or name == "Random Ladders"
+        or name == "Random Unique" or name == "Random Soul Gates" then
+        return false
+    end
+    if name == "Non Random Gates" or name == "Non Random Ladders"
+        or name == "Non Random Unique" or name == "Non Random Soul Gates" then
+        return true
+    end
+
     local m = {
         ["AutoScan"]="setting_autoscan",
         ["CostumeClip"]="setting_costume_clip",
         ["Remove IT Statue"]="setting_remove_it_statue",
     }
-    return m[name] and has(m[name]) or false
+    if m[name] then return has(m[name]) end
+
+    -- Unknown name. Silently returning false is how the Valhalla ->
+    -- SotFGBlood corridor escape went missing, so say so -- IsDead() already
+    -- warns the same way for an unknown boss.
+    print("LM2 Logic: unknown Setting: " .. tostring(name))
+    return false
 end
 function Glitch(name)
     if name == "Costume Clip" then
@@ -1151,7 +1174,7 @@ FORWARD_EXITS = {
     ["TSMain"] = {{"TSBottom", "Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Start(TSLeft)"}, {"TSNeck", "IsDead(Raijin and Fujin)"}, {"TSEntrance", "Has(Leather Whip) or (Has(Knife) and Has(Gauntlet) and Has(Vajra) and Has(Spaulder)) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack)"}},
     ["TSNeck"] = {{"TSMain", "CanKillHere(Raijin and Fujin) or (CanStopTime and CanWarp)"}, {"TSNeckEntrance", "True"}},
     ["TSNeckEntrance"] = {{"TSNeck", "CanWarp or (CanChant(Heaven) and CanChant(Earth) and CanChant(Sea) and CanChant(Fire) and CanChant(Wind))"}, {"HLCog", "CanChant(Earth) and CanChant(Wind) and CanChant(Fire) and CanChant(Sea) and CanChant(Heaven) and CanWarp"}},
-    ["ValhallaMain"] = {{"ValhallaTop", "Has(Feather) or CanChant(Heaven)"}, {"DFMain", "True"}, {"SotFGBlood", "CanWarp or CanSpinCorridor or (CanReach(SotFG Main) and CanKill(Tezcatlipoca) and Setting(Non Random Gates))"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
+    ["ValhallaMain"] = {{"ValhallaTop", "Has(Feather) or CanChant(Heaven)"}, {"DFMain", "True"}, {"SotFGBlood", "CanWarp or CanSpinCorridor or (CanReach(SotFGMain) and CanKill(Tezcatlipoca) and Has(Grapple Claw) and Setting(Non Random Gates))"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["ValhallaTop"] = {{"ValhallaMain", "True"}},
     ["ValhallaTopRight"] = {{"ValhallaTop", "Has(Feather)"}, {"ValhallaMain", "CanWarp or Has(Feather) or (Has(Claydoll Suit) and CanChant(Heaven))"}, {"SotFGBalor", "Has(Claydoll Suit) and SoulGateCost(er_valhalla_soul_gate__e_2)"}},
     ["VoD"] = {{"GateofGuidance", "True"}, {"Start", "True"}, {"VoDLadder", "Has(Feather)"}},

@@ -231,7 +231,28 @@ function Setting(name)
         -- No "Non Random Ladders" here: this variant knows the actual pairings,
         -- so the ladder rules ask ERVanilla(<code>) instead of the seed option.
     }
-    return m[name] and has(m[name]) or false
+    if m[name] then return has(m[name]) end
+
+    -- Gate randomization is a genuine seed-wide question, not a per-entrance
+    -- one. Five gates are ONE-WAY until opened from the far side, and
+    -- World.json gives the closed side "False or Setting(Random Gates)": it
+    -- opens only because randomization moved the gate. ERVanilla() cannot
+    -- answer this -- a shuffled gate can still land on its vanilla partner,
+    -- and it would then still be open. Defaults to closed (vanilla) when
+    -- there is no slot_data, which is the stricter reading for a manual run.
+    if name == "Random Gates" then
+        return has("setting_gate_entrances")
+    end
+    if name == "Non Random Gates" then
+        return not has("setting_gate_entrances")
+    end
+
+    -- Ladders / unique / soul gates stay per-entrance: those rules ask
+    -- ERVanilla(<code>) or SoulGateCost(<code>) instead.
+    -- Unknown name: warn rather than return false silently -- that is how the
+    -- Valhalla -> SotFGBlood corridor escape went missing in the base variant.
+    print("LM2 Logic: unknown Setting: " .. tostring(name))
+    return false
 end
 function Glitch(name)
     if name == "Costume Clip" then
@@ -444,12 +465,44 @@ local function parse_primary(tokens, pos)
     return false, pos + 1
 end
 
+-- Advance past a primary without evaluating it.
+local function skip_primary(tokens, pos)
+    if pos > #tokens then return pos end
+    local tok = tokens[pos]
+    if tok.type == "BOOL" or tok.type == "CALL" then
+        return pos + 1
+    elseif tok.type == "LPAREN" then
+        local depth = 1
+        local p = pos + 1
+        while p <= #tokens and depth > 0 do
+            local t = tokens[p].type
+            if t == "LPAREN" then depth = depth + 1
+            elseif t == "RPAREN" then depth = depth - 1 end
+            p = p + 1
+        end
+        return p
+    end
+    return pos + 1
+end
+
+-- Advance past an entire AND sequence without evaluating.
+local function skip_and(tokens, pos)
+    pos = skip_primary(tokens, pos)
+    while pos <= #tokens and tokens[pos].type == "AND" do
+        pos = skip_primary(tokens, pos + 1)
+    end
+    return pos
+end
+
 local function parse_and(tokens, pos)
     local left, npos = parse_primary(tokens, pos)
     while npos <= #tokens and tokens[npos].type == "AND" do
-        local right
-        right, npos = parse_primary(tokens, npos + 1)
-        left = left and right
+        if not left then
+            -- Short-circuit: left is false, skip remaining AND operands
+            npos = skip_primary(tokens, npos + 1)
+        else
+            left, npos = parse_primary(tokens, npos + 1)
+        end
     end
     return left, npos
 end
@@ -457,9 +510,12 @@ end
 local function parse_or(tokens, pos)
     local left, npos = parse_and(tokens, pos)
     while npos <= #tokens and tokens[npos].type == "OR" do
-        local right
-        right, npos = parse_and(tokens, npos + 1)
-        left = left or right
+        if left then
+            -- Short-circuit: left is true, skip remaining OR operands
+            npos = skip_and(tokens, npos + 1)
+        else
+            left, npos = parse_and(tokens, npos + 1)
+        end
     end
     return left, npos
 end
@@ -921,7 +977,7 @@ FORWARD_EXITS = {
     ["TSMain"] = {{"TSBottom", "Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Start(TSLeft)"}, {"TSNeck", "IsDead(Raijin and Fujin)"}, {"TSEntrance", "Has(Leather Whip) or (Has(Knife) and Has(Gauntlet) and Has(Vajra) and Has(Spaulder)) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack)"}},
     ["TSNeck"] = {{"TSMain", "CanKillHere(Raijin and Fujin) or (CanStopTime and CanWarp)"}, {"TSNeckEntrance", "True"}},
     ["TSNeckEntrance"] = {{"TSNeck", "CanWarp or (CanChant(Heaven) and CanChant(Earth) and CanChant(Sea) and CanChant(Fire) and CanChant(Wind))"}},
-    ["ValhallaMain"] = {{"ValhallaTop", "Has(Feather) or CanChant(Heaven)"}, {"SotFGBlood", "CanWarp or CanSpinCorridor"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
+    ["ValhallaMain"] = {{"ValhallaTop", "Has(Feather) or CanChant(Heaven)"}, {"SotFGBlood", "CanWarp or CanSpinCorridor or (CanReach(SotFGMain) and CanKill(Tezcatlipoca) and Has(Grapple Claw) and ERVanilla(er_shrine_of_the_frost_giants_backside_gate__b_2))"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["ValhallaTop"] = {{"ValhallaMain", "True"}},
     ["ValhallaTopRight"] = {{"ValhallaTop", "Has(Feather)"}, {"ValhallaMain", "CanWarp or Has(Feather) or (Has(Claydoll Suit) and CanChant(Heaven))"}},
     ["VoD"] = {{"VoDLadder", "Has(Feather)"}},
@@ -1191,7 +1247,7 @@ ER_ENTRANCES_BY_AREA = {
         { code = "er_cliff__a_1", logic = "False", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "Cavern" },
     },
     ["DSLMMain"] = {
-        { code = "er_dark_star_lord_s_mausoleum_gate__d_7", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "GotDWedjet" },
+        { code = "er_dark_star_lord_s_mausoleum_gate__d_7", logic = "Setting(Random Gates)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "GotDWedjet" },
     },
     ["GotDWedjet"] = {
         { code = "er_gate_of_the_dead_wedjat_gate__f_5", logic = "PuzzleFinished(White Pedestals)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "DSLMMain" },
@@ -1236,10 +1292,10 @@ ER_ENTRANCES_BY_AREA = {
         { code = "er_village_of_departure_next_to_xelpud", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "Start" },
     },
     ["RoYMiddle"] = {
-        { code = "er_roots_of_yggdrasil_main_gate__d_4", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "GateofIllusion" },
+        { code = "er_roots_of_yggdrasil_main_gate__d_4", logic = "Setting(Random Gates)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "GateofIllusion" },
     },
     ["HoMTop"] = {
-        { code = "er_hall_of_malice_gate__c_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "HLGate" },
+        { code = "er_hall_of_malice_gate__c_1", logic = "Setting(Random Gates)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "HLGate" },
     },
     ["HLGate"] = {
         { code = "er_heavens_labyrinth_gate__d_1", logic = "(Has(Feather) or Has(Grapple Claw)) and IsDead(Griffin) and IsDead(Arachne) and IsDead(Scylla)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "HoMTop" },
@@ -1270,7 +1326,7 @@ ER_ENTRANCES_BY_AREA = {
         { code = "er_immortal_battlefield_alviss_down_ladder__g_7", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "ITRight" },
     },
     ["ITEntrance"] = {
-        { code = "er_icefire_treetop_middle_gate__d_3", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "RoYTopMiddle" },
+        { code = "er_icefire_treetop_middle_gate__d_3", logic = "Setting(Random Gates)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "RoYTopMiddle" },
     },
     ["RoYTopMiddle"] = {
         { code = "er_roots_of_yggdrasil_top_middle_nidhogg_gate__d_1", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "ITEntrance" },
@@ -1291,7 +1347,7 @@ ER_ENTRANCES_BY_AREA = {
         { code = "er_shrine_of_the_frost_giants_backside_gate__b_2", logic = "Has(Grapple Claw) and IsDead(Tezcatlipoca)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "SotFGLeft" },
     },
     ["SotFGLeft"] = {
-        { code = "er_shrine_of_the_frost_giants_bergelmir_gate__b_4", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "SotFGBloodTez" },
+        { code = "er_shrine_of_the_frost_giants_bergelmir_gate__b_4", logic = "Setting(Random Gates)", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "SotFGBloodTez" },
     },
     ["Start"] = {
         { code = "er_starting_area", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "VoD" },

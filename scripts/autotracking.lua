@@ -981,6 +981,7 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     set_toggle("setting_glossanity_enemy",        _opts.glossanity_enemy)
 
     set_toggle("setting_oannesanity",            _opts.oannesanity)
+    set_toggle("setting_gate_entrances",         _opts.gate_entrances)
 
     -- Starting subweapon ammo. The apworld hands the player ammo for their
     -- starting subweapon from turn one, but it injects that straight into the
