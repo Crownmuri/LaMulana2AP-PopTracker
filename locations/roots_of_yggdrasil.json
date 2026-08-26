@@ -501,7 +501,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(RoY) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(RoY) and (Has(Origin Sigil) or HorizontalAttack)"
                 ]
             },
             {

@@ -796,7 +796,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(7)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(6))))"
+                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
                 ],
                 "map_locations": [
                     {
@@ -888,7 +888,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Hand Scanner) and Has(Feather))"
+                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Hand Scanner) and Has(Feather) and IsDead(HoM Right Path))"
                 ],
                 "map_locations": [
                     {
@@ -911,7 +911,7 @@
                     "setting_glossanity_scannable"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Hand Scanner))"
+                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Hand Scanner) and IsDead(HoM Right Path))"
                 ],
                 "map_locations": [
                     {
@@ -980,7 +980,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HoMAwoken) and (Has(Silver Shield) and ((Has(Chain Whip) and OrbCount(7)) or ((Has(Flail Whip) or Has(Axe) or Has(Katana)) and OrbCount(6))))"
+                    "^$lm2_logic|CanReach(HoMAwoken) and (IsDead(HoM Right Path))"
                 ],
                 "map_locations": [
                     {

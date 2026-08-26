@@ -88,12 +88,12 @@
                         "hosted_item": "cursed_430122",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430122|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack))"
+                            "^$lm2_cursed|430122|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (HorizontalAttack or (Has(Ice Cloak) and OrbCount(1)))))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack))"
+                    "^$lm2_logic|CanReach(ACBottom) and (Has(Leather Whip) or Has(Axe) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Katana) and Has(Vajra)) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (HorizontalAttack or (Has(Ice Cloak) and OrbCount(1)))))"
                 ]
             },
             {
@@ -122,21 +122,21 @@
                         "name": "Shop Slot 1",
                         "item_count": 1,
                         "access_rules": [
-                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)) or (Has(Ice Cloak) and OrbCount(2) and CanWarp))"
                         ]
                     },
                     {
                         "name": "Shop Slot 2",
                         "item_count": 1,
                         "access_rules": [
-                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)) or (Has(Ice Cloak) and OrbCount(2) and CanWarp))"
                         ]
                     },
                     {
                         "name": "Shop Slot 3",
                         "item_count": 1,
                         "access_rules": [
-                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)) or (Has(Ice Cloak) and OrbCount(2) and CanWarp))"
                         ]
                     },
                     {
@@ -146,7 +146,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)))"
+                            "^$lm2_logic|CanReach(ACBottom) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4)) or (Has(Ice Cloak) and OrbCount(2) and CanWarp))"
                         ]
                     }
                 ],
@@ -400,7 +400,7 @@
                     "setting_potsanity_rolling_shuriken"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(6))))"
+                    "^$lm2_logic|CanReach(ACBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and ((Has(Ice Cloak) and OrbCount(3)) or (Has(Ice Cloak) and OrbCount(1) and Has(Bracelet)))))"
                 ]
             },
             {
@@ -469,7 +469,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Ice Cloak) or OrbCount(6))))"
+                    "^$lm2_logic|CanReach(ACBottom) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and ((Has(Ice Cloak) and OrbCount(3)) or (Has(Ice Cloak) and OrbCount(1) and Has(Bracelet)))))"
                 ]
             },
             {
@@ -921,7 +921,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ACBottom) and ((Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(3))))"
+                    "^$lm2_logic|CanReach(ACBottom) and ((Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra))) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4))))"
                 ],
                 "map_locations": [
                     {

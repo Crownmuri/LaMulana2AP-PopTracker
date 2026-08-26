@@ -176,7 +176,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|(CanReach(IBTop) and CanWarp) or (CanReach(IBTopLeft) and (Has(Feather) or (Has(Glove) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))))"
+                    "^$lm2_logic|CanReach(IBTopLeft) and ((CanReach(IBTop) and CanWarp) or Has(Feather) or (Has(Glove) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
                 ],
                 "visibility_rules": [
                     "setting_random_research"
@@ -822,12 +822,12 @@
                         "hosted_item": "cursed_430004",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430004|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
+                            "^$lm2_cursed|430004|CanReach(IBBattery) and (CanReach(IBRight) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBBattery) and (IsDead(Svipdagr) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
+                    "^$lm2_logic|CanReach(IBBattery) and (CanReach(IBRight) and CanWarp and Has(Life Sigil) and Has(Feather) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or (Has(Claydoll Suit) and Glitch(Costume Clip))))"
                 ]
             },
             {
@@ -1262,7 +1262,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(IBMain)"
                 ]
             },
             {
@@ -1727,7 +1727,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBRight) and (IsDead(Svipdagr) and CanWarp and Has(Claydoll Suit) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or Glitch(Costume Clip)))"
+                    "^$lm2_logic|CanReach(IBRight) and (CanWarp and Has(Claydoll Suit) and ((CanChant(Wind) and CanChant(Sea) and CanChant(Fire) and CanChant(Earth)) or Glitch(Costume Clip)))"
                 ],
                 "map_locations": [
                     {
