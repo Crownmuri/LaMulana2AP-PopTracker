@@ -108,7 +108,7 @@
                         "hosted_item": "cursed_430035",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430035|IsDead(Vritra) and HorizontalAttack"
+                            "^$lm2_cursed|430035|CanReach(ValhallaMain) and (IsDead(Vritra) and HorizontalAttack)"
                         ]
                     }
                 ],

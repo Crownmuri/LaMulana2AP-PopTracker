@@ -43,7 +43,7 @@
                     "setting_oannesanity,setting_costumesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|IsDead(Fish-Gear mk-2 turboR)"
+                    "^$lm2_logic|CanReach(TowerOfOannesRightB) and (IsDead(Fish-Gear mk-2 turboR))"
                 ],
                 "map_locations": [
                     {
