@@ -368,10 +368,17 @@ for gate_code in pairs(SOUL_GATE_PARTNER) do
 end
 
 function MeleeAttack() return has("whip1") or has("knife") or has("rapier") or has("axe") or has("katana") end
+-- Subweapons only count when the ammo is there too. Out of logic (pass 2)
+-- the bare subweapon is enough, so the location goes yellow rather than red --
+-- same shape as the "(CanUse(X) or (OutOfLogic and Has(X)))" rule strings.
+local function _subweapon_attack(name)
+    if CanUse(name) then return true end
+    return OutOfLogic() and Has(name)
+end
 function HorizontalAttack()
-    return MeleeAttack() or CanUse("Shuriken") or CanUse("Rolling Shuriken")
-        or CanUse("Earth Spear") or CanUse("Caltrops") or CanUse("Chakram")
-        or CanUse("Bomb") or CanUse("Pistol") or has("claydoll_suit")
+    return MeleeAttack() or _subweapon_attack("Shuriken") or _subweapon_attack("Rolling Shuriken")
+        or _subweapon_attack("Earth Spear") or _subweapon_attack("Caltrops") or _subweapon_attack("Chakram")
+        or _subweapon_attack("Bomb") or _subweapon_attack("Pistol") or has("claydoll_suit")
 end
 function CanStopTime()
     if not has("lamp_of_time") then return false end
