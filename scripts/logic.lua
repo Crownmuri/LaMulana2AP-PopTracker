@@ -48,7 +48,7 @@ HAS_OVERRIDES = {
     ["Miracle Witch"]="miracle_witch", ["La-Mulana"]="la_mulana",
     ["La-Mulana 2"]="la_mulana_2", ["Book of the Dead"]="book_of_dead",
     ["Secret Treasure of Life"]="secret_treasure", ["Beo Eg-Lana"]="beo_eglana",
-    ["Fish Suit"]="claydoll_suit", ["Enga Musica"]="enga_musica",
+    ["Enga Musica"]="enga_musica",
     ["Cog of Antiquity"]="cog_of_antiquity", ["Egg of Creation"]="egg_of_creation",
     ["Giant's Flute"]="giants_flute", ["Light Scythe"]="light_scythe",
     ["Mulana Talisman"]="mulana_talisman", ["Grapple Claw"]="grapple_claw",
@@ -100,9 +100,17 @@ function Has(item_name)
         end
     end
 
-    -- DLC Item Logic: Fish Suit is owned from the start
+    -- Fish Suit mirrors the apworld's Has("Fish Suit") rule exactly
+    -- (logic/logic_tree.py):
+    --   dlc_item_logic off               -> out of logic entirely
+    --   on + oannesanity + costumesanity -> a real randomized item, must be held
+    --   on, otherwise                    -> assumed owned from the start
     if item_name == "Fish Suit" then
-        if has("setting_dlc_logic") then return true end
+        if not has("setting_dlc_logic") then return false end
+        if has("setting_oannesanity") and has("setting_costumesanity") then
+            return has("fish_suit")
+    end
+        return true
     end
 
     local code = HAS_OVERRIDES[item_name] or item_name:lower():gsub("%s+", "_")
