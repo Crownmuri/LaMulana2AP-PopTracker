@@ -316,7 +316,7 @@
                     },
                     {
                         "map": "Annwfn",
-                        "x": 1139,
+                        "x": 1159,
                         "y": 653,
                         "size": 30,
                         "shape": "diamond"
@@ -3424,8 +3424,8 @@
                     },
                     {
                         "map": "Tower of Oannes",
-                        "x": 437,
-                        "y": 72,
+                        "x": 389,
+                        "y": 71,
                         "size": 30,
                         "shape": "diamond"
                     }
@@ -3482,8 +3482,8 @@
                     },
                     {
                         "map": "Tower of Oannes",
-                        "x": 1845,
-                        "y": 499,
+                        "x": 1791,
+                        "y": 498,
                         "size": 30,
                         "shape": "diamond"
                     }

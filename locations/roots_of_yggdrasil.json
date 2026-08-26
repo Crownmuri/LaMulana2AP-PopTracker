@@ -168,7 +168,7 @@
                     {
                         "map": "Roots of Yggdrasil",
                         "x": 275,
-                        "y": 176
+                        "y": 180
                     }
                 ],
                 "sections": [
@@ -486,7 +486,7 @@
                     {
                         "map": "Roots of Yggdrasil",
                         "x": 264,
-                        "y": 159,
+                        "y": 154,
                         "size": 15,
                         "shape": "rect"
                     }
