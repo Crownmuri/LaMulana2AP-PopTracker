@@ -109,7 +109,7 @@ function Has(item_name)
         if not has("setting_dlc_logic") then return false end
         if has("setting_oannesanity") and has("setting_costumesanity") then
             return has("fish_suit")
-    end
+        end
         return true
     end
 
@@ -1113,7 +1113,7 @@ FORWARD_EXITS = {
     ["Cavern"] = {{"IBRight", "True"}, {"Cliff", "True"}},
     ["Cliff"] = {{"Cavern", "False"}},
     ["DFEntrance"] = {{"DFRight", "(CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or Has(Claydoll Suit) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))"}, {"RoYMiddle", "SoulGateCost(er_divine_fortress_soul_gate__c_5)"}},
-    ["DFMain"] = {{"DFTop", "Has(Feather) or Has(Grapple Claw)"}, {"DFRight", "(HorizontalAttack and CanWarp) or (Has(Leather Whip) or Has(Rapier) or Has(Katana) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit))"}, {"ValhallaMain", "True"}},
+    ["DFMain"] = {{"DFTop", "Has(Feather) or Has(Grapple Claw)"}, {"DFRight", "(HorizontalAttack and CanWarp) or (Has(Leather Whip) or Has(Rapier) or Has(Katana) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit))"}, {"ValhallaMain", "HorizontalAttack"}},
     ["DFRight"] = {{"DFMain", "(CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or Has(Claydoll Suit) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and Has(Ring))"}, {"DFEntrance", "True"}},
     ["DFTop"] = {{"DFMain", "True"}, {"DFRight", "True"}},
     ["DSLMMain"] = {{"DSLMTop", "Has(Feather)"}, {"DSLMPyramid", "Has(Grapple Claw) and Has(Mjolnir)"}, {"GotDWedjet", "False"}},
@@ -1144,9 +1144,9 @@ FORWARD_EXITS = {
     ["IBLadder"] = {{"ITLeft", "True"}},
     ["IBLeft"] = {{"RoYTopRight", "False"}, {"IBBottom", "CanWarp or Has(Birth Sigil)"}, {"IBLeftSG", "CanWarp or Has(Birth Sigil)"}},
     ["IBLeftSG"] = {{"TSEntrance", "SoulGateCost(er_immortal_battlefield_bottom_left_gate__b_7)"}, {"IBBottom", "True"}},
-    ["IBMain"] = {{"IBTopLeft", "True"}, {"IBRight", "True"}, {"IBDinosaur", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)"}, {"IBBottom", "True"}, {"GotD", "SoulGateCost(er_immortal_battlefield_top_right_gate__h_2) and HorizontalAttack"}, {"AltarLeft", "Has(Dinosaur Figure)"}, {"AltarRight", "Has(Dinosaur Figure)"}},
+    ["IBMain"] = {{"IBTopLeft", "True"}, {"IBRight", "True"}, {"IBDinosaur", "(Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)"}, {"IBBottom", "True"}, {"GotD", "SoulGateCost(er_immortal_battlefield_top_right_gate__h_2) and HorizontalAttack"}, {"AltarLeft", "Has(Dinosaur Figure)"}, {"AltarRight", "Has(Dinosaur Figure) and HorizontalAttack"}},
     ["IBMoon"] = {{"IBDinosaur", "Has(Life Sigil) and (CanWarp or (CanReach(IBMain) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)) or Has(Grapple Claw) or Glitch(Costume Clip))"}, {"ITRightLeftLadder", "False"}},
-    ["IBRight"] = {{"IBMain", "Has(Feather) or Has(Grapple Claw)"}, {"Cavern", "True"}},
+    ["IBRight"] = {{"IBMain", "HorizontalAttack and (Has(Feather) or Has(Grapple Claw))"}, {"Cavern", "True"}},
     ["IBTop"] = {{"IBTopLeft", "CanWarp or ((Has(Feather) or Has(Glove)) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))"}, {"IBMain", "IsDead(Cetus)"}, {"IBCetusLadder", "IsDead(Cetus)"}},
     ["IBTopLeft"] = {{"IBTop", "(Has(Feather) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))) or (Has(Glove) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))"}, {"IBMain", "Glitch(Costume Clip)"}},
     ["ITBottom"] = {{"ITSinmara", "True"}, {"ITRight", "Has(Feather) or (Has(Gale Fibula) and (Has(Leather Whip) or Has(Axe) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or ((CanUse(Chakram) or (OutOfLogic and Has(Chakram))) and Has(Ring))))"}, {"ITVidofnir", "CanChant(Moon) and CanChant(Sun) and CanWarp"}},

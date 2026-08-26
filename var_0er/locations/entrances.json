@@ -3518,7 +3518,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(False)"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -3547,7 +3547,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(False)"
+                    "^$lm2_logic|False"
                 ]
             },
             {
@@ -3576,7 +3576,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(False)"
+                    "^$lm2_logic|False"
                 ]
             }
         ]
