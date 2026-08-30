@@ -1,5 +1,5 @@
 # LaMulana2AP-PopTracker
-A basic Poptracker pack (Items Only, Map Tracker, Entrance Tracker) for La-Mulana 2.
+A basic Poptracker pack (Items Only, Map Tracker, Entrance Tracker, Offline Entrance Tracker) for La-Mulana 2.
 
 Big thanks to the La-Mulana 2 community: Coookie93 for their original [La-Mulana 2 Randomizer](https://github.com/Coookie93/LaMulana2Randomizer) of which the Archipelago port is derived, and their bundled [Item Tracker](https://github.com/Coookie93/LM2ItemTracker) has also been a huge help in designing this pack. Thank you Trishlanga for the maps. 
 
@@ -8,7 +8,7 @@ Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [thi
 **Note**: In order to play La-Mulana 2 with AP tracking, you will require [this mod](https://github.com/Crownmuri/LaMulana2Archipelago).
 
 ## Features
-- Items Only, Map Tracker and Entrance Tracker
+- Items Only, Map Tracker and Entrance Tracker, Offline Entrance Tracker
 - Settings: The following settings that may affect tracking are included:
   - Starting Location
   - Logic Difficulty (Normal / Tricky / Minimal)
@@ -63,4 +63,5 @@ Supports auto-tracking through [Archipelago](https://archipelago.gg/) using [thi
 4. Open your PopTracker application and click on the *Load Pack* button in the top left.
 5. Choose your preferred tracker mode.
 
+  - The **Map Tracker + Entrances (Offline)** variant auto-tracks over [UAT](https://github.com/black-sliver/UAT).<br> Toggle the UAT button when selecting Offline Seed on the LM2 title screen, hosts on `localhost:65399` per default, with `localhost:44444` as fallback. 
 

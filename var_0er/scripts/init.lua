@@ -30,6 +30,19 @@ if Tracker.AllowDeferredLogicUpdate ~= nil then
 end
 
 -- ============================================================
+-- Entrance-variant asset prefix
+-- ============================================================
+-- The ER assets (entrance/escape items, locations, layouts and scripts) live
+-- in var_0er/. PopTracker resolves a bare path as "<active variant>/<path>"
+-- then "<path>", so bare paths only find them while var_0er is the ACTIVE
+-- variant. var_3offline reuses this same file for the identical ER tracker on
+-- a UAT connection, and reaches those assets by setting ER_ASSET_PREFIX to
+-- "var_0er/" before loading this script -- which resolves at pack root from
+-- any variant. Shared root assets stay bare; so does layouts/settings.json,
+-- which each variant deliberately overrides with its own settings grid.
+local ER = ER_ASSET_PREFIX or ""
+
+-- ============================================================
 -- Items
 -- ============================================================
 Tracker:AddItems("items/equipment.json")
@@ -43,8 +56,8 @@ Tracker:AddItems("items/ammo.json")
 Tracker:AddItems("items/bosses.json")
 Tracker:AddItems("items/logic.json")
 Tracker:AddItems("items/settings.json")
-Tracker:AddItems("items/entrances.json")
-Tracker:AddItems("items/escape.json")
+Tracker:AddItems(ER .. "items/entrances.json")
+Tracker:AddItems(ER .. "items/escape.json")
 Tracker:AddItems("items/shop_marks.json")
 Tracker:AddItems("items/cursed.json")
 
@@ -70,7 +83,7 @@ Tracker:AddLocations("locations/eternal_prison_gloom.json")
 Tracker:AddLocations("locations/spiral_hell.json")
 Tracker:AddLocations("locations/tower_of_oannes.json")
 Tracker:AddLocations("locations/starting_shop.json")
-Tracker:AddLocations("locations/entrances.json")
+Tracker:AddLocations(ER .. "locations/entrances.json")
 Tracker:AddLocations("locations/potlegend.json")
 Tracker:AddLocations("locations/enemyglossary.json")
 Tracker:AddLocations("locations/glossarylegend.json")
@@ -89,17 +102,17 @@ Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/maps.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 Tracker:AddLayouts("layouts/settings.json")
-Tracker:AddLayouts("layouts/entrances.json")
-Tracker:AddLayouts("layouts/escape.json")
+Tracker:AddLayouts(ER .. "layouts/entrances.json")
+Tracker:AddLayouts(ER .. "layouts/escape.json")
 Tracker:AddLayouts("layouts/shops.json")
 
 
 -- ============================================================
 -- Logic
 -- ============================================================
-ScriptHost:LoadScript("scripts/logic.lua")
-ScriptHost:LoadScript("scripts/entrance_mapping.lua")
-ScriptHost:LoadScript("scripts/escape_route.lua")
+ScriptHost:LoadScript(ER .. "scripts/logic.lua")
+ScriptHost:LoadScript(ER .. "scripts/entrance_mapping.lua")
+ScriptHost:LoadScript(ER .. "scripts/escape_route.lua")
 
 -- ============================================================
 -- AP Autotracking

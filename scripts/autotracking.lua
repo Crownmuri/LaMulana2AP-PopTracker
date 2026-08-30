@@ -229,9 +229,22 @@ function onClear(slot_data)
     if gloss then gloss.AcquiredCount = 0 end
 end
 
-Archipelago:AddItemHandler("*", onItem)
-Archipelago:AddLocationHandler("*", onLocation)
-Archipelago:AddClearHandler("", onClear)
+-- PopTracker only injects the Archipelago global for variants carrying the
+-- 'ap' manifest flag. var_3offline carries only 'uat', so every registration
+-- in this file has to be conditional: without the guard the first one throws,
+-- the script aborts, and everything below it -- the item watches, Go Mode, the
+-- mantra and software labels, and ApplyMapLayouts, which is what defines the
+-- map pane's content layout -- silently never runs.
+AP_AVAILABLE = Archipelago ~= nil
+if not AP_AVAILABLE then
+    print("LM2: no Archipelago backend (UAT variant); AP handlers not registered")
+end
+
+if AP_AVAILABLE then
+    Archipelago:AddItemHandler("*", onItem)
+    Archipelago:AddLocationHandler("*", onLocation)
+    Archipelago:AddClearHandler("", onClear)
+end
 
 -- ============================================================
 -- Progressive Guardian State & Ankh Logic
@@ -303,7 +316,9 @@ end
 -- ============================================================
 
 -- LocationID enum name (as written by the C# mod) → guardian progressive code
-local GUARDIAN_KILL_DS_NAMES = {
+-- Also read by scripts/uat.lua, which learns the same kills from a
+-- `guardian_kills` variable instead of a datastorage key.
+GUARDIAN_KILL_DS_NAMES = {
     {ds_name = "Fafnir",     code = "guardian_fafnir"},
     {ds_name = "Vritra",     code = "guardian_vritra"},
     {ds_name = "Kujata",     code = "guardian_kujata"},
@@ -318,16 +333,17 @@ local GUARDIAN_KILL_DS_NAMES = {
 local _guardian_kill_key_to_code = {}
 
 local function buildGuardianKillKey(ds_name)
+    if not AP_AVAILABLE then return nil end
     local team = Archipelago.TeamNumber
     local player = Archipelago.PlayerNumber
     if team == nil or player == nil then return nil end
     return string.format("lamulana2_kill_%s_%d_%d", ds_name, team, player)
 end
 
-local function onGuardianKillUpdate(key, value, old_value)
-    local code = _guardian_kill_key_to_code[key]
-    if not code or tonumber(value) ~= 1 then return end
-
+-- Flip one guardian's progressive item to the "dead" stage. Backend-agnostic:
+-- AP reaches it through the datastorage callback below, UAT through the
+-- `guardian_kills` variable.
+function MarkGuardianDead(code)
     local obj = Tracker:FindObjectForCode(code)
     if not obj then return end
 
@@ -347,6 +363,13 @@ local function onGuardianKillUpdate(key, value, old_value)
     obj.CurrentStage = 2
 end
 
+local function onGuardianKillUpdate(key, value, old_value)
+    local code = _guardian_kill_key_to_code[key]
+    if not code or tonumber(value) ~= 1 then return end
+    MarkGuardianDead(code)
+end
+
+if AP_AVAILABLE then
 Archipelago:AddRetrievedHandler("lm2_guardian_kill_retrieved", onGuardianKillUpdate)
 Archipelago:AddSetReplyHandler("lm2_guardian_kill_setreply", onGuardianKillUpdate)
 
@@ -365,6 +388,7 @@ Archipelago:AddClearHandler("lm2_guardian_kill_subscribe", function()
         Archipelago:Get(keys)
     end
 end)
+end
 
 -- ============================================================
 -- Natural Dissonance Count (random_dissonance OFF only)
@@ -380,27 +404,39 @@ end)
 local _dissonance_random_mode = true  -- default-deny: only apply on random_dissonance==false seeds
 
 local function buildDissonanceKey()
+    if not AP_AVAILABLE then return nil end
     local team = Archipelago.TeamNumber
     local player = Archipelago.PlayerNumber
     if team == nil or player == nil then return nil end
     return string.format("lamulana2_dissonance_%d_%d", team, player)
 end
 
-local function onDissonanceCountUpdate(key, value, old_value)
+-- random_dissonance ON means AP Progressive Beherit items drive the count
+-- through onItem, and the external count must be ignored on both backends.
+function SetDissonanceMode(random_dissonance)
+    _dissonance_random_mode = (tonumber(random_dissonance) or 0) ~= 0
+end
+
+function SetDissonanceCount(n)
     if _dissonance_random_mode then return end
-    local n = tonumber(value)
+    n = tonumber(n)
     if not n or n < 0 then return end
     local obj = Tracker:FindObjectForCode("beherit")
     if obj then obj.AcquiredCount = n end
 end
 
+local function onDissonanceCountUpdate(key, value, old_value)
+    SetDissonanceCount(value)
+end
+
+if AP_AVAILABLE then
 Archipelago:AddRetrievedHandler("lm2_dissonance_retrieved", onDissonanceCountUpdate)
 Archipelago:AddSetReplyHandler("lm2_dissonance_setreply", onDissonanceCountUpdate)
 
 Archipelago:AddClearHandler("lm2_dissonance_subscribe", function(slot_data)
     -- random_dissonance ON: AP Progressive Beherit items drive the count
     -- through onItem already. Skip the datastorage path entirely.
-    _dissonance_random_mode = (slot_data and (tonumber(slot_data.random_dissonance) or 0) ~= 0)
+    SetDissonanceMode(slot_data and slot_data.random_dissonance)
     if _dissonance_random_mode then return end
 
     local key = buildDissonanceKey()
@@ -409,6 +445,7 @@ Archipelago:AddClearHandler("lm2_dissonance_subscribe", function(slot_data)
         Archipelago:Get({key})
     end
 end)
+end
 
 -- ============================================================
 -- Boss Item → Hosted Section Sync
@@ -862,7 +899,10 @@ local STARTING_SHOP_LOCATION_IDS = {
     [430252] = true,
 }
 
-function onScout(location_id, location_name, item_id, item_name, item_player)
+-- Point one shop slot's icon at the item it holds. AP learns this from a
+-- scout reply; UAT gets it straight out of the seed, which knows every shop
+-- placement up front and so needs no scouting at all.
+function ApplyShopItem(location_id, item_id)
     local stage = ITEM_TO_SHOP_STAGE[item_id]
     if not stage then return end
     LOCATION_ID_TO_SHOP_STAGE[location_id] = stage
@@ -877,11 +917,45 @@ function onScout(location_id, location_name, item_id, item_name, item_player)
     end
 end
 
+-- Undo everything a revealed shop implied: the slot icons themselves, and the
+-- subweapon ammo stages that seeing ammo on a shelf inferred. Both backends
+-- call this before the item/location replay, so anything genuinely owned is
+-- re-applied immediately afterwards -- without it a rebuild (AP reconnecting
+-- to a different slot, or UAT seeing a new save file) keeps the previous run's
+-- shop state.
+function ResetShopItems()
+    LOCATION_ID_TO_SHOP_STAGE = {}
+
+    for sm_code in pairs(SHOP_MARK_TO_SECTIONS) do
+        local mark = Tracker:FindObjectForCode(sm_code)
+        if mark then
+            mark.Active = false
+            mark.CurrentStage = 0
+        end
+    end
+
+    -- Stage 0 is the no-ammo icon. Ownership is onItem's to decide, so it is
+    -- cached across the stage write exactly as SetSubweaponAmmoStage does.
+    for _, weapon_code in pairs(SHOP_STAGE_TO_WEAPON_CODE) do
+        local weapon = Tracker:FindObjectForCode(weapon_code)
+        if weapon then
+            local was_active = weapon.Active
+            weapon.CurrentStage = 0
+            weapon.Active = was_active
+        end
+    end
+end
+
+function onScout(location_id, location_name, item_id, item_name, item_player)
+    ApplyShopItem(location_id, item_id)
+end
+
+if AP_AVAILABLE then
 Archipelago:AddScoutHandler("lm2_shop_scout", onScout)
 
 -- Trigger scouts on (re)connect. Runs alongside the main onClear handler.
 Archipelago:AddClearHandler("lm2_shop_scout_clear", function(slot_data)
-    LOCATION_ID_TO_SHOP_STAGE = {}
+    ResetShopItems()
     local starting_area = slot_data and tonumber(slot_data.starting_area)
     local ids = SHOP_LOCATION_IDS
     -- VoD start has no Starting Shop — scouting those IDs crashes the server.
@@ -895,6 +969,7 @@ Archipelago:AddClearHandler("lm2_shop_scout_clear", function(slot_data)
     end
     Archipelago:LocationScouts(ids, 0)
 end)
+end
 
 -- ============================================================
 -- Slot Data → Tracker Settings
@@ -947,7 +1022,7 @@ end
 -- onClear runs every (re)connect, so this stays current with the server.
 _cached_slot_data = nil
 
-Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
+function ApplySlotData(slot_data)
     _cached_slot_data = slot_data
     if not slot_data then return end
 
@@ -1054,7 +1129,9 @@ Archipelago:AddClearHandler("lm2_slot_data", function(slot_data)
     -- guardians, soul gate costs) decide Go Mode without any of the watched
     -- item codes moving. Recompute once the seed is fully applied.
     UpdateGoMode()
-end)
+end
+
+if AP_AVAILABLE then Archipelago:AddClearHandler("lm2_slot_data", ApplySlotData) end
 
 -- Shop mark watches disabled for performance.
 -- The onLocation handler (above) still sets shop marks to sm_item stage
@@ -1141,12 +1218,32 @@ for i, mantra_code in ipairs(MANTRA_WATCH_CODES) do
     ScriptHost:AddWatchForCode("mantra_label_watch_" .. i, mantra_code, updateMantrasLabels)
 end
 
-Archipelago:AddClearHandler("mantra_labels_clear", function()
+-- Clear every item onItem can set. onClear deliberately does not do this: on
+-- AP the replay that follows a clear only ever adds, so wiping would be
+-- pointless churn. A UAT rebuild is different -- it can be a REWIND to another
+-- save file, where the new run holds strictly fewer items and anything left
+-- from the previous one would stay lit forever. Called only from the UAT
+-- rebuild, so AP behaviour is unchanged.
+function ResetTrackedItems()
+    for _, entry in pairs(ITEM_MAPPING) do
+        local code = entry[1]
+        local o = code and Tracker:FindObjectForCode(code)
+        if o then
+            o.Active = false
+            o.CurrentStage = 0
+            o.AcquiredCount = 0
+        end
+    end
+end
+
+function ResetMantraLabels()
     for label_code in pairs(MANTRA_LABEL_REQUIREMENTS) do
         local label = Tracker:FindObjectForCode(label_code)
         if label then label.Active = false end
     end
-end)
+end
+
+if AP_AVAILABLE then Archipelago:AddClearHandler("mantra_labels_clear", ResetMantraLabels) end
 
 -- ============================================================
 -- Software Combo Auto-Enable

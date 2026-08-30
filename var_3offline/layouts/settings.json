@@ -1,0 +1,62 @@
+{
+    "settings_popup": {
+        "type": "container",
+        "background": "#000000",
+        "margin": "6, 6",
+        "content": {
+            "type": "array",
+            "orientation": "vertical",
+            "content": [
+                {
+                    "type": "group",
+                    "header": "Settings",
+                    "content": {
+                        "type": "itemgrid",
+                        "item_h_alignment": "center",
+                        "item_size": "24, 24",
+                        "item_margin": "2, 2",
+                        "rows": [
+                            [
+                                "setting_start",
+                                "setting_logic",
+                                "setting_goal",
+                                "setting_oannesanity",
+                                "setting_dlc_logic",
+                                "setting_costume_clip",
+                                "setting_require_fdc",
+                                "setting_remove_it_statue",
+                                "setting_life_for_hom",
+                                "setting_autoscan",
+                                "setting_random_research",
+                                "setting_random_dissonance",
+                                "setting_costumesanity",
+                                "setting_potsanity_low_value",
+                                "setting_potsanity_high_value",
+                                "setting_potsanity_shuriken",
+                                "setting_potsanity_rolling_shuriken",
+                                "setting_potsanity_earth_spear",
+                                "setting_potsanity_flare",
+                                "setting_potsanity_caltrops",
+                                "setting_potsanity_chakram",
+                                "setting_potsanity_bomb",
+                                "setting_glossanity_freestanding",
+                                "setting_glossanity_scannable",
+                                "setting_glossanity_npc",
+                                "setting_glossanity_enemy",
+                                "setting_req_guardians",
+                                "setting_req_skulls",
+                                "setting_guardian_ankhs",
+                                "setting_reveal_entrances",
+                                "setting_show_sequence_break"
+                            ]
+                        ]
+                    }
+                },
+                {
+                    "type": "layout",
+                    "key": "entrance_settings_tabs"
+                }
+            ]
+        }
+    }
+}

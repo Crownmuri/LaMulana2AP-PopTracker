@@ -1,0 +1,35 @@
+{
+    "entrance_settings_tabs": {
+        "type": "tabbed",
+        "tabs": [
+            {
+                "title": "Entrances",
+                "content": {
+                    "type": "layout",
+                    "key": "entrances_layout"
+                }
+            },
+            {
+                "title": "Entrances (DLC)",
+                "content": {
+                    "type": "layout",
+                    "key": "entrances_dlc_layout"
+                }
+            },
+            {
+                "title": "Escape Sequence",
+                "content": {
+                    "type": "layout",
+                    "key": "escape_sequence_layout"
+                }
+            },
+            {
+                "title": "References",
+                "content": {
+                    "type": "layout",
+                    "key": "references"
+                }
+            }
+        ]
+    }
+}
