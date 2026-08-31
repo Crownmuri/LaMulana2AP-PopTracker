@@ -44,6 +44,36 @@
 local AP_ITEM_BASE     = 420000
 local AP_LOCATION_BASE = 430000
 
+-- Game ItemIDs that AP collapses onto a different base id before it ever
+-- reaches the tracker, so ITEM_MAPPING only knows the base.
+--
+-- The apworld builds Progressive Whip / Shield / Beherit as one AP item per
+-- tier, all sharing the base id as their `code` (420061 / 420076 / 420175)
+-- and carrying the per-tier game id on `lm2_game_id`. Online the tracker sees
+-- the code and counts receptions. The seed files, however, record
+-- `lm2_game_id` -- so offline the second whip arrives as game id 62, the
+-- third as 63, and neither is in ITEM_MAPPING: progressives and beherits
+-- simply stopped moving.
+--
+-- Folding here rather than in ITEM_MAPPING keeps that table honest as pure
+-- AP-id space; this file is already the game-id -> AP-id adapter.
+--
+-- Families where AP collapses the id but ITEM_MAPPING lists every game id
+-- too (Ankh Jewels, Crystal Skulls, Sacred Orbs, Research) need no entry --
+-- both spellings already resolve to the same code.
+local GAME_ID_BASE = {
+    [62] = 61,   -- Whip2  -> Whip1  (Progressive Whip)
+    [63] = 61,   -- Whip3  -> Whip1
+    [77] = 76,   -- Shield2 -> Shield1 (Progressive Shield)
+    [78] = 76,   -- Shield3 -> Shield1
+    [176] = 175, -- ProgressiveBeherit2..7 -> ProgressiveBeherit1
+    [177] = 175,
+    [178] = 175,
+    [179] = 175,
+    [180] = 175,
+    [181] = 175,
+}
+
 local UAT_VARIABLES = {
     "slot_data", "items", "locations",
     "guardian_kills", "dissonance_count", "shop_items",
@@ -86,7 +116,11 @@ local function applyItems(list, from_index)
         if game_id then
             -- index/name/player are unused by onItem; pass the position and 0
             -- so a debug print in there still reads sensibly.
-            onItem(i, AP_ITEM_BASE + game_id, nil, 0)
+            onItem(i, AP_ITEM_BASE + (GAME_ID_BASE[game_id] or game_id), nil, 0)
+            -- Record what the server sent, NOT the folded id: isAppendOnly
+            -- compares against the raw array to decide whether the run
+            -- rewound, and folding here would make every whip look like a
+            -- mismatch and force a rebuild on every push.
             _applied_items[i] = game_id
         end
     end

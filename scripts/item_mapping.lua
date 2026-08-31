@@ -167,6 +167,7 @@ ITEM_MAPPING = {
     [420173] = {"research", "consumable"}, -- Kosugi Research FILE 09
     [420174] = {"research", "consumable"}, -- Kosugi Research FILE 10
     [420175] = {"beherit", "progressive_beherit"}, -- Progressive Beherit
+    [420004] = {"beherit", "progressive_beherit"}, -- Beherit (vanilla dissonance)
     [420182] = {"shuriken_ammo", "toggle"}, -- Shuriken Ammo
     [420183] = {"rolling_shuriken_ammo", "toggle"}, -- Rolling Shuriken Ammo
     [420184] = {"earth_spear_ammo", "toggle"}, -- Earth Spear Ammo
