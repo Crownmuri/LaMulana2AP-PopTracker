@@ -197,12 +197,12 @@ local GRAIL_FIELDS = {
     "Surface", "Yggdrasil", "Annwfn", "Battlefield", "Icefire", "Divine",
     "Frost-Giants", "GOTD", "Takamagahara", "Heaven", "Valhalla", "DSLM",
     "Chaos", "Malice", "Eternal",
-    -- DLC: the grail activates in Spring in the Sky, the Tower of Oannes and
-    -- the Bailey. Eden is the one DLC area where it does not, and it has no
-    -- entrance codes, so it never appears as a routing node here.
+}
+-- Fields that unlock the Holy Grail but are not themselves warp destinations.
+local GRAIL_ACTIVATORS = {
+    "Guidance", "Mausoleum", "Surface", "Illusion", "Nibiru",
     "SpringSky", "Oannes", "Bailey",
 }
-local GRAIL_ACTIVATORS = { "Guidance", "Mausoleum", "Surface", "Illusion", "Nibiru" }
 
 local function field_name(f)
     return FIELD_NAME[f] or f
