@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "2.0.1",
+            "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v2.0.1/LaMulana2AP-PopTracker.v2.0.1.zip",
+            "sha256": "c57fb4388938e546ae471c1f22316668fd10d8456db1bd0830bef9d69c254b2c",
+            "changelog": [
+                "Hiner Shop 4 drops glossary without the Ruins Encyclopedia"
+            ]
+        },
+        {
             "package_version": "2.0.0",
             "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v2.0.0/LaMulana2AP-PopTracker.v2.0.0.zip",
             "sha256": "57d698d84be5e0ff725b07b6e68ae3fd4ab2c8adec593b8d1754516363c22681",
