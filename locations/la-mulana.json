@@ -541,7 +541,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(GateofGuidance) and (CanReach(Gate of Illusion) and HorizontalAttack and Has(Ruins Encyclopedia))"
+                            "^$lm2_logic|CanReach(GateofGuidance) and (Has(Ruins Encyclopedia) or (CanReach(Gate of Illusion) and HorizontalAttack and GuardianKills(3)))"
                         ]
                     }
                 ],
