@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "2.0.2",
+            "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v2.0.2/LaMulana2AP-PopTracker.v2.0.2.zip",
+            "sha256": "f25412e451d29ad0b2a20c0b320c90aaff628cc9b4cff6c0b69566db373f399b",
+            "changelog": [
+                "Mirroring apworld v1.0.2 logic update"
+            ]
+        },
+        {
             "package_version": "2.0.1",
             "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v2.0.1/LaMulana2AP-PopTracker.v2.0.1.zip",
             "sha256": "c57fb4388938e546ae471c1f22316668fd10d8456db1bd0830bef9d69c254b2c",
