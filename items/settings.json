@@ -231,7 +231,7 @@
     {
         "name": "Reveal Entrances",
         "type": "toggle",
-        "img": "images/door.png",
+        "img": "images/gate.png",
         "codes": "setting_reveal_entrances"
     },
     {
