@@ -1133,7 +1133,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(IBRight) and (Has(Perfume))) or (CanReach(TSMain) and (Has(Perfume))) or (CanReach(TSEntrance) and (Has(Perfume) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and (Has(Spaulder) or Has(Vajra)))))) or (CanReach(TSLeft) and (Has(Perfume))) or (CanReach(TSBottom) and (Has(Perfume))) or (CanReach(HL) and (Has(Perfume))) or (CanReach(HLCog) and (Has(Perfume))) or (CanReach(HLSpun) and (Has(Perfume))) or (CanReach(ACBottom) and (Has(Perfume))) or (CanReach(ACTablet) and (Has(Perfume))) or (CanReach(ACWind) and (Has(Perfume))) or (CanReach(ACMain) and (Has(Perfume))) or (CanReach(ACBlood) and (Has(Perfume))))"
+                    "^$lm2_logic|((CanReach(IBRight) and (Has(Perfume))) or (CanReach(TSMain) and (Has(Perfume))) or (CanReach(TSEntrance) and (Has(Perfume) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and (Has(Spaulder) or Has(Vajra)))))) or (CanReach(TSLeft) and (Has(Perfume))) or (CanReach(TSBottom) and (Has(Perfume))) or (CanReach(HL) and (Has(Perfume))) or (CanReach(HLStatue) and (Has(Perfume))) or (CanReach(HLSpun) and (Has(Perfume))) or (CanReach(ACBottom) and (Has(Perfume))) or (CanReach(ACTablet) and (Has(Perfume))) or (CanReach(ACWind) and (Has(Perfume))) or (CanReach(ACMain) and (Has(Perfume))) or (CanReach(ACBlood) and (Has(Perfume))))"
                 ]
             },
             {
@@ -1160,7 +1160,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(HL) and (True)) or (CanReach(HLCog) and (True)) or (CanReach(HLSpun) and (True)))"
+                    "^$lm2_logic|((CanReach(HL) and (True)) or (CanReach(HLStatue) and (True)) or (CanReach(HLSpun) and (True)))"
                 ]
             },
             {
@@ -1187,7 +1187,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(HL) and (HorizontalAttack)) or (CanReach(HLCog) and (HorizontalAttack)) or (CanReach(HLSpun) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(HL) and (HorizontalAttack)) or (CanReach(HLStatue) and (HorizontalAttack)) or (CanReach(HLSpun) and (HorizontalAttack)))"
                 ]
             },
             {

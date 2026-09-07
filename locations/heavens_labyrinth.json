@@ -724,7 +724,7 @@
                             "setting_potsanity_low_value"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
+                            "^$lm2_logic|CanReach(HLStatue) and (HorizontalAttack and CanWarp)"
                         ]
                     },
                     {
@@ -734,7 +734,7 @@
                             "setting_glossanity_freestanding"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack)"
+                            "^$lm2_logic|CanReach(HLStatue) and (HorizontalAttack)"
                         ]
                     }
                 ]
@@ -759,7 +759,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
+                    "^$lm2_logic|CanReach(HLStatue) and (HorizontalAttack and CanWarp)"
                 ]
             },
             {
@@ -782,7 +782,7 @@
                     "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLCog) and (HorizontalAttack and CanWarp)"
+                    "^$lm2_logic|CanReach(HLStatue) and (HorizontalAttack and CanWarp)"
                 ]
             },
             {
@@ -948,7 +948,7 @@
             }
         ],
         "access_rules": [
-            "^$lm2_logic|CanReach(HL) or CanReach(HLCog) or CanReach(HLSpun)"
+            "^$lm2_logic|CanReach(HL) or CanReach(HLCog) or CanReach(HLSpun) or CanReach(HLStatue)"
         ]
     }
 ]
