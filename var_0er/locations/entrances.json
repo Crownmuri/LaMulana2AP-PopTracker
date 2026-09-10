@@ -215,7 +215,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSBottom)"
+                    "^$lm2_logic|CanReach(TSBottom) and (HorizontalAttack or Start(TSLeft))"
                 ]
             },
             {

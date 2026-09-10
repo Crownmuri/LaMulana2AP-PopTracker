@@ -14,7 +14,7 @@
                     "setting_costumesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(GotD)"
+                    "^$lm2_logic|CanReach(GotD) and (HorizontalAttack)"
                 ],
                 "map_locations": [
                     {

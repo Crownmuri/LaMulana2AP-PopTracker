@@ -217,7 +217,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSNeck) and (Has(Birth Sigil) and (CanStopTime or Has(Gale Fibula)) and (Has(Feather) or IsDead(Raijin and Fujin)))"
+                    "^$lm2_logic|CanReach(TSNeck) and (Has(Birth Sigil) and (((CanStopTime or (Has(Gale Fibula) and HorizontalAttack)) and (Has(Feather) or IsDead(Raijin and Fujin))) or (TrickyLogic and Has(Feather) and HorizontalAttack)))"
                 ]
             },
             {

@@ -37,7 +37,7 @@
                     "setting_costumesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or Has(Feather) or (CanReach(ITEntrance) and Has(Grapple Claw)))"
+                    "^$lm2_logic|CanReach(ITRight) and (HorizontalAttack or Has(Feather) or CanReach(EPG) or (CanReach(ITEntrance) and Has(Grapple Claw)))"
                 ],
                 "map_locations": [
                     {

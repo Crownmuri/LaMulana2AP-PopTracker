@@ -435,7 +435,7 @@
                     "setting_potsanity_bomb"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or Has(Ice Cloak) or OrbCount(6))))"
+                    "^$lm2_logic|CanReach(EPG) and (Has(Grapple Claw) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Feather) or Has(Ice Cloak) or OrbCount(6)))))"
                 ]
             },
             {
@@ -665,7 +665,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather) and Has(Glove)))"
+                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and Has(Feather) and Has(Glove)))"
                 ]
             },
             {

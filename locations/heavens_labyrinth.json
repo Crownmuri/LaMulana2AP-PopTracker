@@ -160,12 +160,12 @@
                         "hosted_item": "cursed_430110",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430110|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Glasya Labolas))"
+                            "^$lm2_cursed|430110|CanReach(HLSpun) and (((Has(Feather) or Has(Grapple Claw)) and IsDead(Glasya Labolas)) or (CanReach(HLGate) and HorizontalAttack))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and IsDead(Glasya Labolas))"
+                    "^$lm2_logic|CanReach(HLSpun) and (((Has(Feather) or Has(Grapple Claw)) and IsDead(Glasya Labolas)) or (CanReach(HLGate) and HorizontalAttack))"
                 ]
             },
             {
@@ -232,7 +232,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLSpun) and ((Has(Feather) or Has(Grapple Claw)) and Has(Glove) and IsDead(Glasya Labolas))"
+                    "^$lm2_logic|CanReach(HLSpun) and (((Has(Feather) or Has(Grapple Claw)) and Has(Glove) and IsDead(Glasya Labolas)) or (TrickyLogic and CanReach(HLGate) and Has(Feather) and Has(Glove)))"
                 ]
             },
             {
@@ -680,7 +680,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLSpun) and ((IsDead(Glasya Labolas) or CanReach(HLGate)) and (Has(Feather) or Has(Grapple Claw)))"
+                    "^$lm2_logic|CanReach(HLSpun) and ((IsDead(Glasya Labolas) and (Has(Feather) or Has(Grapple Claw))) or (TrickyLogic and CanReach(HLGate) and Has(Feather)))"
                 ]
             },
             {
@@ -935,7 +935,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HL)"
+                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
                 ],
                 "map_locations": [
                     {

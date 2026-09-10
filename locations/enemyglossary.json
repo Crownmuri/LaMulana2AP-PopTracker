@@ -1187,7 +1187,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(HL) and (HorizontalAttack)) or (CanReach(HLStatue) and (HorizontalAttack)) or (CanReach(HLSpun) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(HL) and (True)) or (CanReach(HLStatue) and (HorizontalAttack)) or (CanReach(HLSpun) and (True)))"
                 ]
             },
             {
