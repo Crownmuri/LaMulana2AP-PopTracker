@@ -1916,7 +1916,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(SpiralHell) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(SpiralHell) and (Has(Feather) and Has(Grapple Claw))"
                 ]
             },
             {
