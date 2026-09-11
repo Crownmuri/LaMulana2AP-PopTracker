@@ -807,7 +807,7 @@ local EVENT_LOGIC = {
     ["ratatoskr_4"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3) and (((Has(Chain Whip) or Has(Axe)) and OrbCount(7)) or ((Has(Flail Whip) or Has(Katana)) and OrbCount(6)) or ((CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and OrbCount(5)))",
 
     -- Tower of Oannes
-    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack",
+    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and CanReach(TowerOfOannesLeftB) and Has(Feather) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack",
     ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftCTop) and IsDead(Fish-Valusa Re-gyo-ded) and (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and OrbCount(2)",
     ["evil_fish_crystal"] = "CanReach(TowerOfOannesRightBCrystal) and IsDead(Fish-Slime Zero) and CanReach(BaileyRight) and Has(Ice Cloak) and Has(Anchor) and Has(Feather) and OrbCount(6) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Leather Whip) or Has(Axe) or ((Has(Knife) or Has(Rapier)) and Has(Spaulder)))",
     ["fish-gear_mk-2_turbor"] = "CanReach(TowerOfOannesRightB) and IsDead(Evil Fish Crystal) and Has(Rebirth Sigil) and CanReach(TowerOfOannesLeftA) and (Has(Gale Fibula) or CanStopTime) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) and Has(Grapple Claw) and Has(Feather) and CanWarp and Has(Flail Whip) and OrbCount(10)",
