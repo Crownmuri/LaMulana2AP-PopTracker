@@ -116,7 +116,7 @@
         "map_locations": [
             { "map": "Dark Star Lords Mausoleum", "x": 284, "y": 494 },
             { "map": "Full Map", "x": 2294, "y": 2129, "size": 50 },
-            { "map": "Full Map (+DLC)", "x": 2294, "y": 2129, "size": 50 }
+            { "map": "Full Map (+DLC)", "x": 2294, "y": 1994, "size": 50 }
         ],
         "sections": [
             { "name": "Shop Slot 1", "item_count": 1 },
@@ -130,7 +130,7 @@
         "map_locations": [
             { "map": "Ancient Chaos", "x": 326, "y": 422 },
             { "map": "Full Map", "x": 1161, "y": 2362, "size": 50 },
-            { "map": "Full Map (+DLC)", "x": 1161, "y": 2362, "size": 50 }
+            { "map": "Full Map (+DLC)", "x": 1161, "y": 2294, "size": 50 }
         ],
         "sections": [
             { "name": "Shop Slot 1", "item_count": 1 },
