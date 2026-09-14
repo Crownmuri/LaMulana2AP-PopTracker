@@ -206,8 +206,15 @@ function UnlinkEntrance(code)
     if UpdateEscapeRoute then UpdateEscapeRoute() end
 end
 
-function EntranceClick(code)
-    if ER_SUPPRESS_FRAMES > 0 then return end
+-- EntranceClick flips Active on other entrances (UnlinkEntrance clears both
+-- endpoints, pairing checks both), and each flip fires that entrance's click
+-- watch synchronously. Without a guard those nested calls act as real clicks:
+-- with A selected, clicking B (paired to C) unlinks C, C's watch pairs A<->C,
+-- then the outer call overwrites it with A<->B -- leaving C with a stale "A"
+-- label and B unchecked. 
+local _in_entrance_click = false
+
+local function _entrance_click(code)
     -- Vanilla-locked entrances (unshuffled category) are not manually editable.
     if ER_VANILLA[code] then return end
     local obj = Tracker:FindObjectForCode(code)
@@ -250,11 +257,30 @@ function EntranceClick(code)
     -- Sync the costs immediately on pairing
     SyncSoulGateCosts(codeA, codeB)
 
+    -- Show both endpoints as checked. The click only toggled codeB, and it
+    -- toggled it OFF when codeB was already linked elsewhere; the unlinks
+    -- above cleared both too.
+    local objA = Tracker:FindObjectForCode(codeA)
+    local objB = Tracker:FindObjectForCode(codeB)
+    if objA then objA.Active = true end
+    if objB then objB.Active = true end
+
     -- Reset selection
     ENTRANCE_SELECTED = nil
 
     NotifyPairingsChanged()
     if UpdateEscapeRoute then UpdateEscapeRoute() end
+end
+
+function EntranceClick(code)
+    if ER_SUPPRESS_FRAMES > 0 then return end
+    if _in_entrance_click then return end
+    _in_entrance_click = true
+    -- Clear the guard on error too, or every later click would be ignored
+    -- for the rest of the session.
+    local ok, err = pcall(_entrance_click, code)
+    _in_entrance_click = false
+    if not ok then error(err, 0) end
 end
 
 function InitEntranceWatchers()
