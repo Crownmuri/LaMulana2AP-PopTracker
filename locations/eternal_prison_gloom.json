@@ -550,7 +550,7 @@
                     "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(EPG) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(EPG) and ((MeleeAttack or Has(Claydoll Suit) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))) or (TrickyLogic and HorizontalAttack))"
                 ]
             },
             {

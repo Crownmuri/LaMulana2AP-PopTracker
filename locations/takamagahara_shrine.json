@@ -181,12 +181,12 @@
                         "hosted_item": "cursed_430039",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430039|CanReach(TSLeft) and ((Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) and Has(Feather) and Has(Life Sigil) and Has(Key Fairy))"
+                            "^$lm2_cursed|430039|CanReach(TSLeft) and (((Has(Leather Whip) and (Has(Vajra) or Has(Spaulder))) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Knife) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))) and Has(Feather) and Has(Life Sigil) and Has(Key Fairy))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft) and ((Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) and Has(Feather) and Has(Life Sigil) and Has(Key Fairy))"
+                    "^$lm2_logic|CanReach(TSLeft) and (((Has(Leather Whip) and (Has(Vajra) or Has(Spaulder))) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Knife) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))))) and Has(Feather) and Has(Life Sigil) and Has(Key Fairy))"
                 ]
             },
             {
@@ -597,7 +597,7 @@
                     "setting_potsanity_chakram"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(TSLeft) and (Has(Knife) or Has(Katana) or Has(Axe) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (Has(Leather Whip) and (Has(Vajra) or Has(Spaulder))))"
                 ]
             },
             {
@@ -620,7 +620,7 @@
                     "setting_potsanity_high_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra)))"
+                    "^$lm2_logic|CanReach(TSLeft) and (Has(Knife) or Has(Katana) or Has(Axe) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and (Has(Vajra) or Has(Spaulder))))"
                 ]
             },
             {
@@ -643,7 +643,7 @@
                     "setting_potsanity_bomb"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft) and ((Has(Leather Whip) and Has(Vajra)) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Knife) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
+                    "^$lm2_logic|CanReach(TSLeft) and ((Has(Leather Whip) and (Has(Vajra) or Has(Spaulder))) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Knife) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
                 ]
             },
             {
@@ -735,7 +735,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TSLeft) and (MeleeAttack or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))))"
+                    "^$lm2_logic|CanReach(TSLeft) and (Has(Knife) or Has(Katana) or Has(Axe) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (Has(Leather Whip) and (Has(Vajra) or Has(Spaulder))))"
                 ]
             },
             {

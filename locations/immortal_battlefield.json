@@ -1354,7 +1354,7 @@
                     "setting_potsanity_high_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBRight)"
+                    "^$lm2_logic|CanReach(IBRight) and ((MeleeAttack or Has(Claydoll Suit) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Has(Feather)) or TrickyLogic)"
                 ]
             },
             {
@@ -1704,7 +1704,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBBottom) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(IBBottom) and (Has(Feather) and (MeleeAttack or Has(Claydoll Suit) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol)))))"
                 ],
                 "map_locations": [
                     {
