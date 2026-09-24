@@ -816,7 +816,7 @@ local EVENT_LOGIC = {
     -- Puzzles
     -- =================================================================
     ["annwfn_right_shortcut"] = "CanReach(AnnwfnRight) and IsDead(Ixtab)",
-    ["bergelmir"] = "CanReach(SotFGLeft) and CanChant(Earth) and CanChant(Moon) and CanChant(Heaven)",
+    ["bergelmir"] = "CanReach(SotFGLeft) and (Has(Feather) or HorizontalAttack) and CanChant(Earth) and CanChant(Moon) and CanChant(Heaven)",
     ["white_pedestals"] = "CanReach(GotD) and Has(Pepper) and Has(Birth Sigil) and CanChant(Sun) and IsDead(Unicorn)",
     ["hom_ladder"] = "CanReach(HoMTop)",
     ["garm_statue_puzzle"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and CanChant(Fire) and CanChant(Earth) and CanChant(Sun)",
