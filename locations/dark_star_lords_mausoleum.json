@@ -1080,7 +1080,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Feather))"
+                    "^$lm2_logic|CanReach(DSLMMain) and (Has(Feather) or (TrickyLogic and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))))))"
                 ],
                 "map_locations": [
                     {
