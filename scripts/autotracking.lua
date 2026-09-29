@@ -448,6 +448,93 @@ end)
 end
 
 -- ============================================================
+-- AP Hint Highlights
+-- Mirrors the server's hint list (_read_hints_<team>_<slot>) onto
+-- the map sections as PopTracker highlights. Only hints for
+-- locations in this world count (finding_player == us); found
+-- hints clear. Both Retrieved and SetReply carry the full list,
+-- so every update rebuilds the highlights from scratch.
+-- ============================================================
+
+-- AP HintStatus -> PopTracker Highlight. Status is absent on older
+-- servers, which only send the found flag.
+local HINT_STATUS_HIGHLIGHT = Highlight and {
+    [0]  = Highlight.Unspecified,
+    [10] = Highlight.NoPriority,
+    [20] = Highlight.Avoid,
+    [30] = Highlight.Priority,
+    [40] = Highlight.None,
+}
+
+-- Grouped pot sections host several location ids; when more than
+-- one is hinted the section shows the most important status.
+local HINT_STATUS_RANK = { [30] = 4, [0] = 3, [10] = 2, [20] = 1 }
+
+local _hinted_sections = {}
+
+local function buildHintsKey()
+    if not AP_AVAILABLE then return nil end
+    local team = Archipelago.TeamNumber
+    local player = Archipelago.PlayerNumber
+    if team == nil or player == nil then return nil end
+    return string.format("_read_hints_%d_%d", team, player)
+end
+
+local function clearHintHighlights()
+    for code in pairs(_hinted_sections) do
+        local obj = Tracker:FindObjectForCode(code)
+        if obj then obj.Highlight = Highlight.None end
+    end
+    _hinted_sections = {}
+end
+
+local function onHintsUpdate(key, value, old_value)
+    if not HINT_STATUS_HIGHLIGHT or key ~= buildHintsKey() then return end
+    clearHintHighlights()
+    if type(value) ~= "table" then return end
+
+    local best = {}  -- section code -> hint status
+    for _, hint in ipairs(value) do
+        if hint.finding_player == Archipelago.PlayerNumber then
+            local status = hint.status
+            if status == nil then status = hint.found and 40 or 0 end
+            if not hint.found and HINT_STATUS_RANK[status] then
+                for _, code in ipairs(LOCATION_MAPPING[hint.location] or {}) do
+                    if code:sub(1, 1) == "@" then
+                        local cur = best[code]
+                        if cur == nil or HINT_STATUS_RANK[status] > HINT_STATUS_RANK[cur] then
+                            best[code] = status
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    for code, status in pairs(best) do
+        local obj = Tracker:FindObjectForCode(code)
+        if obj then
+            obj.Highlight = HINT_STATUS_HIGHLIGHT[status]
+            _hinted_sections[code] = true
+        end
+    end
+end
+
+if AP_AVAILABLE and HINT_STATUS_HIGHLIGHT then
+Archipelago:AddRetrievedHandler("lm2_hints_retrieved", onHintsUpdate)
+Archipelago:AddSetReplyHandler("lm2_hints_setreply", onHintsUpdate)
+
+Archipelago:AddClearHandler("lm2_hints_subscribe", function()
+    clearHintHighlights()
+    local key = buildHintsKey()
+    if key then
+        Archipelago:SetNotify({key})
+        Archipelago:Get({key})
+    end
+end)
+end
+
+-- ============================================================
 -- Boss Item → Hosted Section Sync
 -- PopTracker's hosted_item only fires section→item; this watch
 -- closes the loop the other way: when a boss code becomes
