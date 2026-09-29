@@ -342,7 +342,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaTop) and ((Has(Feather) or Has(Grapple Claw)) and Has(Origin Sigil) and Has(Birth Sigil) and Has(Life Sigil) and Has(Death Sigil) and Has(Claydoll Suit) and CanReach(Valhalla Top Right))"
+                    "^$lm2_logic|CanReach(ValhallaTop) and ((Has(Feather) or Has(Grapple Claw)) and Has(Origin Sigil) and Has(Birth Sigil) and Has(Life Sigil) and Has(Death Sigil) and (Has(Claydoll Suit) or (TrickyLogic and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))) and CanReach(Valhalla Top Right))"
                 ]
             },
             {

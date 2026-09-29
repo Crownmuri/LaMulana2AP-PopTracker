@@ -657,7 +657,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas))"
+                    "^$lm2_logic|CanReach(HLSpun) and (IsDead(Glasya Labolas) and (Has(Glove) or (TrickyLogic and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Glitch(Costume Clip))))"
                 ]
             },
             {
@@ -935,7 +935,7 @@
                     "setting_glossanity_npc"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack)"
+                    "^$lm2_logic|CanReach(HL) and (HorizontalAttack or CanReach(HLSpun))"
                 ],
                 "map_locations": [
                     {

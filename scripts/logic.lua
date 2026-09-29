@@ -782,7 +782,7 @@ local EVENT_LOGIC = {
     ["arachne"] = "CanReach(HLSpun) and CanWarp",
     ["scylla"] = "CanReach(HLSpun) and CanWarp",
     ["glasya_labolas"] = "CanReach(HLSpun) and CanWarp and OrbCount(1) and ((Has(Rapier) and (Has(Spaulder) or Has(Gauntlet) or Has(Vajra))) or Has(Chain Whip) or Has(Knife) or Has(Axe) or Has(Katana) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))))",
-    ["griffin"] = "CanReach(HLSpun) and (Has(Gale Fibula) or CanStopTime) and Has(Glove) and Has(Life Sigil) and IsDead(Glasya Labolas) and OrbCount(2)",
+    ["griffin"] = "CanReach(HLSpun) and (Has(Gale Fibula) or CanStopTime) and (Has(Glove) or Glitch(Costume Clip)) and Has(Life Sigil) and IsDead(Glasya Labolas) and OrbCount(2)",
 
     -- Valhalla
     ["vucub_caquix"] = "CanReach(ValhallaMain) and Has(Origin Sigil) and (((Has(Leather Whip) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken)))) and OrbCount(1)) or (Has(Chain Whip) or Has(Rapier) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))))",
@@ -852,7 +852,7 @@ local EVENT_HARDLOGIC = {
     ["daji"] = "CanReach(TSBottom) and ((Has(Chain Whip) and (Has(Gauntlet) or Has(Spaulder))) or (Has(Knife) and Has(Spaulder) and Has(Feather)) or (Has(Rapier) and Has(Gauntlet) and Has(Spaulder) and Has(Feather)) or Has(Flail Whip) or Has(Axe) or Has(Katana) or (CanUse(Pistol) and Has(Feather)) or (CanUse(Rolling Shuriken) and Has(Ring) and Has(Feather)) or (CanUse(Chakram) and (Has(Ring) or Has(Feather))) or CanUse(Bomb) or CanUse(Flare Gun) or ((CanUse(Earth Spear) or CanUse(Caltrops)) and Has(Ring)))",
     ["belial"] = "CanReach(TSBlood) and Has(Life Sigil) and Has(Cog of Antiquity) and (Has(Claydoll Suit) or Has(Ice Cloak)) and Has(Egg of Creation)",
     ["glasya_labolas"] = "CanReach(HLSpun) and CanWarp",
-    ["griffin"] = "CanReach(HLSpun) and (Has(Gale Fibula) or CanStopTime) and Has(Glove) and Has(Life Sigil) and IsDead(Glasya Labolas)",
+    ["griffin"] = "CanReach(HLSpun) and (Has(Gale Fibula) or CanStopTime) and (Has(Glove) or Glitch(Costume Clip)) and Has(Life Sigil) and IsDead(Glasya Labolas)",
     ["vucub_caquix"] = "CanReach(ValhallaMain) and Has(Origin Sigil)",
     ["jalandhara"] = "CanReach(ValhallaMain) and Has(Life Sigil) and Has(Feather)",
     ["sekhmet"] = "CanReach(DSLMMain) and CanChant(Heaven) and CanChant(Sun) and CanChant(Earth)",

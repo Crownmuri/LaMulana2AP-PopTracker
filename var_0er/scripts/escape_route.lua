@@ -149,6 +149,11 @@ local ONEWAY_EXIT = {
     ["er_immortal_battlefield_moon_altar_hallway__g_7"] = true,
     ["er_heavens_labyrinth_monster_s_jaw"] = true,
     ["er_inferno_cavern__b_1"] = true,
+    ["er_nibiru_spaceship"] = true,
+    -- DLC landing sides (apworld fEx2_Lout / fEx2_Rout / fEx2_Rout2, Logic False)
+    ["er_bailey_left_gyonin_drop__b_1"] = true,
+    ["er_bailey_right_one_way_exit_slide__e_6"] = true,
+    ["er_bailey_right_gyonin_drop__e_1"] = true,
 }
 
 -- Field -> friendly name for the display.

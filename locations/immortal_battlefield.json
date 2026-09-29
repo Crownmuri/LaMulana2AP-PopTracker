@@ -145,7 +145,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBTopLeft) and (Has(Glove) or Has(Feather) or (CanReach(IBTop) and CanWarp and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
+                    "^$lm2_logic|CanReach(IBTopLeft) and (Has(Glove) or Has(Feather) or (CanReach(IBTop) and CanWarp and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or Has(Gale Fibula))))"
                 ]
             },
             {
@@ -940,7 +940,7 @@
                     "setting_potsanity_earth_spear"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBTopLeft) and (Has(Glove) or Has(Feather) or (CanReach(IBTop) and CanWarp and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))))))"
+                    "^$lm2_logic|CanReach(IBTopLeft) and (Has(Glove) or Has(Feather) or (CanReach(IBTop) and CanWarp and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (Has(Gale Fibula) and HorizontalAttack))))"
                 ]
             },
             {

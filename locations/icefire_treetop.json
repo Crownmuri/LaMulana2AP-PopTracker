@@ -144,7 +144,7 @@
                             "setting_glossanity_npc"
                         ],
                         "access_rules": [
-                            "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip))"
+                            "^$lm2_logic|CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)"
                         ]
                     }
                 ],

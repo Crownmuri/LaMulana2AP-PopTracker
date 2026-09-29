@@ -485,7 +485,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(IBMain) and ((HorizontalAttack and CanWarp) or IsDead(Cetus))) or (CanReach(ITRight) and (HorizontalAttack)) or (CanReach(ITRightLeftLadder) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(IBMain) and ((HorizontalAttack and CanWarp) or IsDead(Cetus) or TrickyLogic)) or (CanReach(ITRight) and (HorizontalAttack)) or (CanReach(ITRightLeftLadder) and (HorizontalAttack)))"
                 ]
             },
             {
@@ -512,7 +512,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(ITLeft) and (HorizontalAttack)) or (CanReach(ITSinmara) and (True)) or (CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip))) or (CanReach(ITRight) and (True)) or (CanReach(ITRightLeftLadder) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(ITLeft) and (HorizontalAttack)) or (CanReach(ITSinmara) and (True)) or (CanReach(ITBottom) and (Has(Feather) or Glitch(Costume Clip) or TrickyLogic)) or (CanReach(ITRight) and (True)) or (CanReach(ITRightLeftLadder) and (HorizontalAttack)))"
                 ]
             },
             {
