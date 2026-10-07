@@ -7,7 +7,12 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430055",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430055|CanReach(Eden) and CanReach(Start) and CanReach(AnnwfnRight) and IsDead(Ixtab) and CanReach(ITRight) and CanReach(ACMain) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(4))) and CanReach(ValhallaMain) and CanChant(Fire) and CanReach(HL) and IsDead(Fenrir) and CanChant(Moon)"
+                        ]
                     }
                 ],
                 "visibility_rules": [
@@ -36,7 +41,12 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430061",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430061|CanReach(TowerOfOannesRightB) and (IsDead(Fish-Gear mk-2 turboR))"
+                        ]
                     }
                 ],
                 "visibility_rules": [

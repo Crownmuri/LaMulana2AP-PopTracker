@@ -1866,7 +1866,12 @@
                 "sections": [
                     {
                         "name": "Chest",
-                        "item_count": 1
+                        "item_count": 1,
+                        "hosted_item": "cursed_430058",
+                        "clear_as_group": false,
+                        "access_rules": [
+                            "^$lm2_cursed|430058|CanReach(Cavern) and (HorizontalAttack)"
+                        ]
                     }
                 ],
                 "visibility_rules": [

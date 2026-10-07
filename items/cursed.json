@@ -55,6 +55,23 @@
         ]
     },
     {
+        "name": "Cursed: [AC C-3] Eastern Europe Costume Chest",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/uncursed.png",
+                "codes": "cursed_430060"
+            },
+            {
+                "img": "images/cursed.png",
+                "codes": "cursed_430060"
+            }
+        ]
+    },
+    {
         "name": "Cursed: [AC D-1] Anu Reward",
         "type": "progressive",
         "allow_disabled": false,
@@ -174,6 +191,23 @@
         ]
     },
     {
+        "name": "Cursed: [CAVERN] Valkyrie Costume Chest",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/uncursed.png",
+                "codes": "cursed_430058"
+            },
+            {
+                "img": "images/cursed.png",
+                "codes": "cursed_430058"
+            }
+        ]
+    },
+    {
         "name": "Cursed: [DF A-4] 5 Weights Chest",
         "type": "progressive",
         "allow_disabled": false,
@@ -255,6 +289,40 @@
             {
                 "img": "images/cursed.png",
                 "codes": "cursed_430051"
+            }
+        ]
+    },
+    {
+        "name": "Cursed: [DLC D-1] DLC Boss Reward Chest",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/uncursed.png",
+                "codes": "cursed_430061"
+            },
+            {
+                "img": "images/cursed.png",
+                "codes": "cursed_430061"
+            }
+        ]
+    },
+    {
+        "name": "Cursed: [DLC] Four Trials Reward Chest",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/uncursed.png",
+                "codes": "cursed_430055"
+            },
+            {
+                "img": "images/cursed.png",
+                "codes": "cursed_430055"
             }
         ]
     },
@@ -612,6 +680,23 @@
             {
                 "img": "images/cursed.png",
                 "codes": "cursed_430117"
+            }
+        ]
+    },
+    {
+        "name": "Cursed: [GOTD D-4] Little Demon Costume Chest",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/uncursed.png",
+                "codes": "cursed_430059"
+            },
+            {
+                "img": "images/cursed.png",
+                "codes": "cursed_430059"
             }
         ]
     },
@@ -1071,6 +1156,23 @@
             {
                 "img": "images/cursed.png",
                 "codes": "cursed_430033"
+            }
+        ]
+    },
+    {
+        "name": "Cursed: [IT F-3] Kimono Cowgirl Costume Chest",
+        "type": "progressive",
+        "allow_disabled": false,
+        "loop": true,
+        "initial_stage_idx": 0,
+        "stages": [
+            {
+                "img": "images/uncursed.png",
+                "codes": "cursed_430057"
+            },
+            {
+                "img": "images/cursed.png",
+                "codes": "cursed_430057"
             }
         ]
     },
