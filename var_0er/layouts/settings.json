@@ -24,6 +24,7 @@
                                 "setting_dlc_logic",
                                 "setting_costume_clip",
                                 "setting_require_fdc",
+                                "setting_require_totem",
                                 "setting_remove_it_statue",
                                 "setting_life_for_hom",
                                 "setting_autoscan",

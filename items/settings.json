@@ -161,10 +161,17 @@
         "codes": "setting_costume_clip"
     },
     {
-        "name": "Require Backside Warp Items",
+        "name": "Require FDC for Backsides",
         "type": "toggle",
         "img": "images/Software/FutureDevCompany.png",
         "codes": "setting_require_fdc",
+        "initial_active_state": true
+    },
+    {
+        "name": "Require Totem Pole for DLC",
+        "type": "toggle",
+        "img": "images/OtherItems/TotemPole.png",
+        "codes": "setting_require_totem",
         "initial_active_state": true
     },
     {

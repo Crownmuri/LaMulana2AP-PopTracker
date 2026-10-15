@@ -748,10 +748,11 @@ local GO_MODE_WATCH_CODES = {
     "boss_hom_ladder", "boss_hom_middle_path",
     "cog_of_antiquity", "life_sigil",
     -- Backside reachability. With setting_require_fdc on, FDC gates every
-    -- non-internal exit into a backside area and Hand Scanner + Totem Pole
-    -- gate the Tower of Oannes checkpoint rooms (see FDCGate in logic.lua).
+    -- non-internal exit into a backside area; with setting_require_totem on,
+    -- Hand Scanner + Totem Pole gate the Tower of Oannes checkpoint rooms
+    -- (see FDCGate in logic.lua).
     "origin_sigil", "birth_sigil",
-    "setting_require_fdc", "fdc", "scanner", "totem_pole",
+    "setting_require_fdc", "setting_require_totem", "fdc", "scanner", "totem_pole",
     -- Guardian kills (soul gates + GuardianKills). Watch the boss_*
     -- provider codes so we react both to AP-delivered guardian items
     -- and to manual guardian_* progressive toggles.
@@ -1204,6 +1205,11 @@ function ApplySlotData(slot_data)
     set_stage ("setting_logic",         tonumber(slot_data.logic_difficulty))
     set_toggle("setting_costume_clip",  slot_data.costume_clip)
     set_toggle("setting_require_fdc",   _opts.require_fdc)
+    -- Seeds from before the option was split carried the Totem Pole gate on
+    -- require_fdc.
+    local _require_totem = _opts.require_totem
+    if _require_totem == nil then _require_totem = _opts.require_fdc end
+    set_toggle("setting_require_totem", _require_totem)
     set_toggle("setting_dlc_logic",     slot_data.dlc_item_logic)
     set_toggle("setting_life_for_hom", slot_data.life_sigil_to_awaken_hom)
 

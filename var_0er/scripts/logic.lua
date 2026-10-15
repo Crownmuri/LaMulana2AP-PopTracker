@@ -829,13 +829,14 @@ function HasAnkhFor(guardian_name)
 end
 
 -- ============================================================
--- RequireFDC gates (AP parity: Randomiser.fix_fdc_logic_post_er)
+-- RequireFDC / RequireTotem gates (AP parity: Randomiser.fix_fdc_logic_post_er)
 -- ============================================================
 -- With "Future Development Company in Logic" on, the AP world appends
 -- "and Has(Future Development Company)" to every NON-internal exit whose
--- destination area is flagged IsBackside in World.json, and separately gates
--- the three Tower of Oannes checkpoint rooms -- backside rooms with no Holy
--- Grail tablet behind FDC + Hand Scanner + Totem Pole.
+-- destination area is flagged IsBackside in World.json. Separately, "Totem
+-- Pole in Logic" (with Oannesanity) gates the three Tower of Oannes checkpoint
+-- rooms -- backside rooms with no Holy Grail tablet -- behind Hand Scanner +
+-- Totem Pole, plus FDC when that option is on as well.
 --
 -- Neither gate hard-blocks: OutOfLogic() relaxes both, since a player without
 -- FDC / Totem Pole can still walk in -- they just risk stranding themselves --
@@ -892,21 +893,26 @@ OANNES_CHECKPOINT_AREAS = {
     ["TowerOfOannesRightB"] = true,
 }
 
--- May the flood fill traverse this edge under the RequireFDC option?
+-- May the flood fill traverse this edge under the RequireFDC / RequireTotem
+-- options?
 -- `vanilla_target` is where the exit pointed before entrance shuffle;
 -- `live_target` is where it points now (they differ only for ER-shuffled
 -- exits) and defaults to `vanilla_target`. `er_edge` marks the shuffleable
 -- entrance edges, which are exactly the non-internal exits.
 function FDCGate(from_id, vanilla_target, live_target, er_edge)
-    if not has("setting_require_fdc") then return true end
+    local need_fdc = has("setting_require_fdc")
+    local need_totem = has("setting_require_totem") and has("setting_oannesanity")
+    if not (need_fdc or need_totem) then return true end
     if OutOfLogic() then return true end
     local dest = live_target or vanilla_target
-    if has("setting_oannesanity") and OANNES_CHECKPOINT_AREAS[dest]
-        and not (Has("Future Development Company")
+
+    if need_totem and OANNES_CHECKPOINT_AREAS[dest]
+        and not ((not need_fdc or Has("Future Development Company"))
                  and Has("Hand Scanner") and Has("Totem Pole")) then
         return false
     end
 
+    if not need_fdc then return true end
     local backside
     if er_edge then
         backside = BACKSIDE_AREAS[dest] == true
