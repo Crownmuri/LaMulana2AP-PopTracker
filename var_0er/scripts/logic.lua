@@ -213,16 +213,13 @@ end
 
 -- Soul gate cost check: reads the manually-toggled cost from the "cost_<gate_code>"
 -- progressive item. Stage 0 (Untracked) returns false so the gate stays blocked
--- until the player sets a real value. Stages 1-5 map to 1/2/3/5/9 souls.
+-- until the player sets a real value. Stages 1-10 map to 0-9 souls.
 function SoulGateCost(gate_code)
     local cost_obj = Tracker:FindObjectForCode("cost_" .. gate_code)
-    if not cost_obj or cost_obj.CurrentStage <= 0 then
+    if not cost_obj or cost_obj.CurrentStage <= 0 or cost_obj.CurrentStage > 10 then
         return false
     end
-    local stages = {1, 2, 3, 5, 9}
-    local cost = stages[cost_obj.CurrentStage]
-    if not cost then return false end
-    return GuardianKills(cost)
+    return GuardianKills(cost_obj.CurrentStage - 1)
 end
 
 -- Read required guardian/skull counts from settings
@@ -256,21 +253,27 @@ function CanStopTime()
         or CanReach("ITLeft") or CanReach("DSLMMain")
 end
 function CanSpinCorridor() return count("beherit") >= 1 and Dissonance(1) end
--- Port of AP world player_state._can_seal_corridor. The boss gate
--- (random_dissonance ? GuardianKills(RequiredGuardians) : Anu) is the
--- endgame trigger that opens the Spiral Hell door; without it CanReach
--- (SpiralHell) would light the Ninth Child location before the required
--- guardians are down (notably with Random Soul Gates bypassing the boat gate).
+-- Port of AP world player_state._can_seal_corridor. With random_dissonance
+-- the seal only needs the six dissonance: Required Guardian Kills moved onto
+-- the Spiral Boat soul gate and the Spiral Hell door (SpiralHellKills), so
+-- Heimdall opens before the guardians are down. Vanilla dissonance keeps the
+-- base game's Anu requirement.
 function CanSealCorridor()
     if not (count("beherit") >= 1 and Dissonance(6)) then return false end
     if not (CanReach("ValhallaMain") or CanReach("DSLMTop") or CanReach("SotFGBlood")
         or CanReach("ACBlood") or CanReach("HoM") or CanReach("EPDEntrance")) then
         return false
     end
-    if has("setting_random_dissonance") then
-        return GuardianKills(RequiredGuardians())
-    end
+    if has("setting_random_dissonance") then return true end
     return has("boss_anu")
+end
+
+-- Guardian half of the Spiral Boat -> Spiral Hell door (apworld
+-- randomizer._fix_spiral_gate_logic). Keeps the final area at Required
+-- Guardian Kills while the boat soul gate's cost is still untracked.
+function SpiralHellKills()
+    if not has("setting_random_dissonance") then return true end
+    return GuardianKills(RequiredGuardians())
 end
 function Setting(name)
     -- HardBosses / MinimalBosses: minimal combat requirements, in-logic at the
@@ -1009,7 +1012,7 @@ FORWARD_EXITS = {
     ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}},
     ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}},
     ["IBBifrost"] = {{"IBTop", "CanWarp or (CanKillHere(Cetus) and HorizontalAttack and ERVanilla(er_immortal_battlefield_cetus_up_ladder__f_1) and ERVanilla(er_annwfn_bifrost))"}},
-    ["IBBoat"] = {{"SpiralHell", "CanSealCorridor and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}},
+    ["IBBoat"] = {{"SpiralHell", "CanSealCorridor and SpiralHellKills and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}},
     ["IBBottom"] = {{"IBMain", "MeleeAttack or Has(Claydoll Suit) or (TrickyLogic and HorizontalAttack)"}, {"IBLadder", "IsDead(Cetus)"}, {"IBLeft", "Has(IB Left Shortcut)"}},
     ["IBCetusLadder"] = {{"IBTop", "CanWarp or CanKillHere(Cetus) or CanReach(IBMain)"}},
     ["IBDinosaur"] = {{"IBBattery", "Has(Grapple Claw) or (Glitch(Costume Clip) and (CanWarp or ERVanilla(er_immortal_battlefield_alviss_down_ladder__g_7)))"}, {"IBMoon", "Glitch(Costume Clip) and Has(Feather) and (Has(Life Sigil) or CanWarp)"}},
@@ -1751,7 +1754,7 @@ LOGIC_FUNCS = {
     CanKillHere=CanKillHere, ERVanilla=ERVanilla,
     MeleeAttack=MeleeAttack, HorizontalAttack=HorizontalAttack,
     OrbCount=OrbCount, SkullCount=SkullCount, GuardianKills=GuardianKills,
-    SoulGateCost=SoulGateCost,
+    SoulGateCost=SoulGateCost, SpiralHellKills=SpiralHellKills,
     Setting=Setting, Glitch=Glitch, Dissonance=Dissonance, Start=Start,
     NotVoDStart=NotVoDStart, HasAnkhFor=HasAnkhFor,
     NibiruSkullCheck=NibiruSkullCheck,

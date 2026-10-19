@@ -5,8 +5,12 @@
         "codes": "cost_er_roots_of_yggdrasil_bottom_soul_gate__d_6",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 0,
+        "initial_stage_idx": 1,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -20,8 +24,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -35,8 +55,12 @@
         "codes": "cost_er_divine_fortress_soul_gate__c_5",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 0,
+        "initial_stage_idx": 1,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -50,8 +74,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -65,8 +105,12 @@
         "codes": "cost_er_annwfn_soul_gate__a_4",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 1,
+        "initial_stage_idx": 2,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -80,8 +124,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -95,8 +155,12 @@
         "codes": "cost_er_shrine_of_the_frost_giants_main_soul_gate__e_4",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 1,
+        "initial_stage_idx": 2,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -110,8 +174,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -125,8 +205,12 @@
         "codes": "cost_er_immortal_battlefield_top_right_gate__h_2",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 1,
+        "initial_stage_idx": 2,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -140,8 +224,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -155,8 +255,12 @@
         "codes": "cost_er_gate_of_the_dead_soul_gate__c_4",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 1,
+        "initial_stage_idx": 2,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -170,8 +274,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -185,8 +305,12 @@
         "codes": "cost_er_immortal_battlefield_bottom_left_gate__b_7",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 2,
+        "initial_stage_idx": 3,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -200,8 +324,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -215,8 +355,12 @@
         "codes": "cost_er_takamagahara_shrine_top_main_soul_gate__d_1",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 2,
+        "initial_stage_idx": 3,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -230,8 +374,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -245,8 +405,12 @@
         "codes": "cost_er_icefire_treetop_under_ratatoskr_soul_gate__g_3",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 2,
+        "initial_stage_idx": 3,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -260,8 +424,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -275,8 +455,12 @@
         "codes": "cost_er_heavens_labyrinth_soul_gate__e_5",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 2,
+        "initial_stage_idx": 3,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -290,8 +474,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -305,8 +505,12 @@
         "codes": "cost_er_icefire_treetop_vidofnir_soul_gate__d_6",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 3,
+        "initial_stage_idx": 5,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -320,8 +524,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -335,8 +555,12 @@
         "codes": "cost_er_eternal_prison_gloom_soul_gate__d_2",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 3,
+        "initial_stage_idx": 5,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -350,8 +574,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -365,8 +605,12 @@
         "codes": "cost_er_shrine_of_the_frost_giants_balor_soul_gate__e_1",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 3,
+        "initial_stage_idx": 5,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -380,8 +624,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -395,8 +655,12 @@
         "codes": "cost_er_valhalla_soul_gate__e_2",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 3,
+        "initial_stage_idx": 5,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -410,8 +674,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -425,8 +705,12 @@
         "codes": "cost_er_takamagahara_shrine_belial_soul_gate__b_1",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 3,
+        "initial_stage_idx": 5,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -440,8 +724,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -455,8 +755,12 @@
         "codes": "cost_er_ancient_chaos_soul_gate__c_1",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 3,
+        "initial_stage_idx": 5,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -470,8 +774,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -485,8 +805,12 @@
         "codes": "cost_er_immortal_battlefield_spiral_boat_soul_gate_d_4",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 4,
+        "initial_stage_idx": 9,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -500,8 +824,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",
@@ -515,8 +855,12 @@
         "codes": "cost_er_hall_of_malice_soul_gate__d_3",
         "allow_disabled": false,
         "loop": true,
-        "initial_stage_idx": 4,
+        "initial_stage_idx": 9,
         "stages": [
+            {
+                "name": "0 Souls",
+                "img": "images/entrances/SG0.png"
+            },
             {
                 "name": "1 Soul",
                 "img": "images/entrances/SG1.png"
@@ -530,8 +874,24 @@
                 "img": "images/entrances/SG3.png"
             },
             {
+                "name": "4 Souls",
+                "img": "images/entrances/SG4.png"
+            },
+            {
                 "name": "5 Souls",
                 "img": "images/entrances/SG5.png"
+            },
+            {
+                "name": "6 Souls",
+                "img": "images/entrances/SG6.png"
+            },
+            {
+                "name": "7 Souls",
+                "img": "images/entrances/SG7.png"
+            },
+            {
+                "name": "8 Souls",
+                "img": "images/entrances/SG8.png"
             },
             {
                 "name": "9 Souls",

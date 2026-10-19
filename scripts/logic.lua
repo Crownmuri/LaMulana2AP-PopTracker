@@ -243,8 +243,8 @@ local VANILLA_SOUL_GATE_COSTS = {
     ["er_eternal_prison_gloom_soul_gate__d_2"] = 5,
 }
 
--- The two endpoints of the [9] HoM <-> IB Boat pair. Their vanilla cost is
--- subject to the random_dissonance floor, so with no cost item to read they
+-- The two endpoints of the [9] HoM <-> IB Boat pair. With random_dissonance
+-- their cost is Required Guardian Kills, so with no cost item to read they
 -- fall back to SpiralBoatGate() rather than a flat GuardianKills(9).
 local SOUL_GATE_NINE = {
     ["er_immortal_battlefield_spiral_boat_soul_gate_d_4"] = true,
@@ -270,14 +270,15 @@ for _, pair in ipairs({
     SOUL_GATE_PARTNER[pair[2]] = pair[1]
 end
 
--- Soul gate costs, indexed by cost_<gate_code>.CurrentStage + 1. The cost items
--- have no "off" stage: every gate always shows a concrete cost, starting at its
+-- Soul gate costs: cost_<gate_code>.CurrentStage IS the cost (stages 0-9, the
+-- range the apworld's Soul Gate Value Pool can roll). The cost items have no
+-- "off" stage: every gate always shows a concrete cost, starting at its
 -- vanilla value, so an offline player is correct from the first frame and only
 -- has to touch the gates a seed actually moved.
-local SOUL_GATE_STAGE_COST = {1, 2, 3, 5, 9}
+local SOUL_GATE_MAX_COST = 9
 local SOUL_COST_TO_STAGE = {}
-for stage, cost in ipairs(SOUL_GATE_STAGE_COST) do
-    SOUL_COST_TO_STAGE[cost] = stage - 1
+for cost = 0, SOUL_GATE_MAX_COST do
+    SOUL_COST_TO_STAGE[cost] = cost
 end
 
 -- Soul gate cost check. Reads the cost from the cost_<gate_code> progressive
@@ -286,9 +287,8 @@ end
 -- the item is missing entirely (a variant that doesn't load items/soul_gates.json).
 function SoulGateCost(gate_code)
     local cost_obj = Tracker:FindObjectForCode("cost_" .. gate_code)
-    if cost_obj then
-        local cost = SOUL_GATE_STAGE_COST[cost_obj.CurrentStage + 1]
-        if cost then return GuardianKills(cost) end
+    if cost_obj and cost_obj.CurrentStage <= SOUL_GATE_MAX_COST then
+        return GuardianKills(cost_obj.CurrentStage)
     end
     if SOUL_GATE_NINE[gate_code] then return SpiralBoatGate() end
     local vanilla = VANILLA_SOUL_GATE_COSTS[gate_code]
@@ -309,23 +309,27 @@ function RequiredSkulls()
 end
 
 -- Spiral Boat soul gate (HoM -> IBBoat) guardian requirement for the
--- non-ER graph. The AP world floors this N9 gate to the highest soul-gate
--- value in {1,2,3,5,9} that is <= required_guardians whenever
--- random_dissonance is ON (entrances.py _floor_to_available_gate_value),
--- so the player never has to kill extra guardians just to reach the final
--- area. With random_dissonance OFF it stays at vanilla 9. This is only the
+-- non-ER graph. Whenever random_dissonance is ON the AP world sets this N9
+-- gate to exactly required_guardians (entrances.py _spiral_boat_amount): it is
+-- the only way into the final area, and the corridor seal no longer counts
+-- guardians. With random_dissonance OFF it stays at vanilla 9. This is only the
 -- fallback for an untracked gate -- once slot_data has filled in the cost_
--- items, SoulGateCost reads the real (already floored) value from there.
+-- items, SoulGateCost reads the real value from there.
 function SpiralBoatGate()
     if not has("setting_random_dissonance") then
         return GuardianKills(9)
     end
-    local req = RequiredGuardians()
-    local floored = 1
-    for _, v in ipairs({1, 2, 3, 5, 9}) do
-        if v <= req then floored = v end
-    end
-    return GuardianKills(floored)
+    return GuardianKills(RequiredGuardians())
+end
+
+-- Guardian half of the Spiral Boat -> Spiral Hell door (apworld
+-- randomizer._fix_spiral_gate_logic). IBBoat is only reachable through the
+-- boat soul gate, so this normally matches it; it matters when that gate's
+-- cost was cycled by hand. Vanilla dissonance gates the door on Anu through
+-- CanSealCorridor instead.
+function SpiralHellKills()
+    if not has("setting_random_dissonance") then return true end
+    return GuardianKills(RequiredGuardians())
 end
 
 -- ============================================================
@@ -431,21 +435,18 @@ function CanStopTime()
         or CanReach("ITLeft") or CanReach("DSLMMain")
 end
 function CanSpinCorridor() return count("beherit") >= 1 and Dissonance(1) end
--- Port of AP world player_state._can_seal_corridor. The boss gate
--- (random_dissonance ? GuardianKills(RequiredGuardians) : Anu) is the
--- endgame trigger that opens the Spiral Hell door; without it CanReach
--- (SpiralHell) would light the Ninth Child location before the required
--- guardians are down (notably when a randomized/floored boat gate cost is well
--- below the required guardian count).
+-- Port of AP world player_state._can_seal_corridor. With random_dissonance
+-- the seal only needs the six dissonance: Required Guardian Kills moved onto
+-- the Spiral Boat soul gate and the Spiral Hell door (SpiralHellKills), so
+-- Heimdall opens before the guardians are down. Vanilla dissonance keeps the
+-- base game's Anu requirement.
 function CanSealCorridor()
     if not (count("beherit") >= 1 and Dissonance(6)) then return false end
     if not (CanReach("ValhallaMain") or CanReach("DSLMTop") or CanReach("SotFGBlood")
         or CanReach("ACBlood") or CanReach("HoM") or CanReach("EPDEntrance")) then
         return false
     end
-    if has("setting_random_dissonance") then
-        return GuardianKills(RequiredGuardians())
-    end
+    if has("setting_random_dissonance") then return true end
     return has("boss_anu")
 end
 function Setting(name)
@@ -1194,7 +1195,7 @@ FORWARD_EXITS = {
     ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}, {"HL", "False"}},
     ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}, {"ITRight", "True"}},
     ["IBBifrost"] = {{"IBTop", "CanWarp or (CanKillHere(Cetus) and HorizontalAttack and Setting(Non Random Ladders) and Setting(Non Random Unique))"}, {"AnnwfnMain", "False"}},
-    ["IBBoat"] = {{"HoM", "False"}, {"SpiralHell", "CanSealCorridor and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}},
+    ["IBBoat"] = {{"HoM", "False"}, {"SpiralHell", "CanSealCorridor and SpiralHellKills and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}},
     ["IBBottom"] = {{"IBMain", "MeleeAttack or Has(Claydoll Suit) or (TrickyLogic and HorizontalAttack)"}, {"IBLadder", "IsDead(Cetus)"}, {"IBLeft", "Has(IB Left Shortcut)"}},
     ["IBCetusLadder"] = {{"AnnwfnOneWay", "True"}, {"IBTop", "CanWarp or CanKillHere(Cetus) or CanReach(IBMain)"}},
     ["IBDinosaur"] = {{"IBBattery", "Has(Grapple Claw) or Glitch(Costume Clip)"}, {"IBMoon", "Glitch(Costume Clip) and Has(Feather) and (Has(Life Sigil) or CanWarp)"}},
@@ -1363,7 +1364,7 @@ LOGIC_FUNCS = {
     CanKillHere=CanKillHere, ERVanilla=ERVanilla,
     MeleeAttack=MeleeAttack, HorizontalAttack=HorizontalAttack,
     OrbCount=OrbCount, SkullCount=SkullCount, GuardianKills=GuardianKills,
-    SoulGateCost=SoulGateCost, SpiralBoatGate=SpiralBoatGate,
+    SoulGateCost=SoulGateCost, SpiralBoatGate=SpiralBoatGate, SpiralHellKills=SpiralHellKills,
     Setting=Setting, Glitch=Glitch, Dissonance=Dissonance, Start=Start,
     NotVoDStart=NotVoDStart, HasAnkhFor=HasAnkhFor,
     NibiruSkullCheck=NibiruSkullCheck,

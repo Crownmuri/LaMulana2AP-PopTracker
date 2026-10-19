@@ -506,8 +506,9 @@ EXIT_ID_TO_ER_CODE = {
 }
 
 -- cost item stage indices (items/entrances.json):
---   0=Untracked, 1=1, 2=2, 3=3, 4=5, 5=9
-local SOUL_AMOUNT_TO_STAGE = { [1] = 1, [2] = 2, [3] = 3, [5] = 4, [9] = 5 }
+--   0=Untracked, then stage n+1 = n souls for n in 0-9
+local SOUL_AMOUNT_TO_STAGE = {}
+for amount = 0, 9 do SOUL_AMOUNT_TO_STAGE[amount] = amount + 1 end
 
 function ClearSpoiler()
     -- Re-arm the click suppression window: clearing Active flips state on the
@@ -727,20 +728,15 @@ local function _set_soul_cost(code, stage)
 end
 
 -- Cost of the Spiral Boat gate when it stays on its vanilla pairing.
--- With Random Dissonance the apworld floors it to the highest gate value at or
--- below Required Guardian Kills, so the final area is always reachable at the
--- kill count the player asked for (entrances.py _floor_to_available_gate_value).
+-- With Random Dissonance the apworld sets it to exactly Required Guardian
+-- Kills (entrances.py _spiral_boat_amount): it is the only way into the final
+-- area, and the corridor seal no longer counts guardians.
 -- Without Random Dissonance it keeps its vanilla [9].
-local SOUL_VALUES = { 1, 2, 3, 5, 9 }
 local function _spiral_boat_cost(opts)
     if not _opt_on(opts, "random_dissonance") then return 9 end
     local required = tonumber(opts.required_guardians)
     if not required then return 9 end
-    local floored = SOUL_VALUES[1]
-    for _, v in ipairs(SOUL_VALUES) do
-        if v <= required then floored = v end
-    end
-    return floored
+    return required
 end
 
 function RebuildVanillaEntrances()
