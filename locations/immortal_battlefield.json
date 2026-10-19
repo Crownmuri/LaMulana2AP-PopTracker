@@ -1078,7 +1078,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and Has(Birth Sigil))"
+                    "^$lm2_logic|CanReach(IBMain) and (HorizontalAttack and (Has(Birth Sigil) or (CanReach(IBBoat) and CanSealCorridor)))"
                 ]
             },
             {
