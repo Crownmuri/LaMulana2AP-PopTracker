@@ -22,29 +22,30 @@ local ER_FIELD = {
     -- SpringSky
     ["er_spring_in_the_sky_ladder_down__a_6"] = "SpringSky",
     ["er_spring_in_the_sky_ladder_up__c_1"] = "SpringSky",
-    -- Oannes
-    ["er_tower_of_oannes_evil_fish_crystal_escape__e_6"] = "Oannes",
-    ["er_tower_of_oannes_fish_slime_zero_escape__c_1"] = "Oannes",
-    ["er_tower_of_oannes_left_a_bottom_gate__c_15"] = "Oannes",
-    ["er_tower_of_oannes_left_a_ladder_down__b_16"] = "Oannes",
-    ["er_tower_of_oannes_left_a_top_gate__c_10"] = "Oannes",
-    ["er_tower_of_oannes_left_b_bottom_gate__c_9"] = "Oannes",
-    ["er_tower_of_oannes_left_b_top_gate__c_7"] = "Oannes",
-    ["er_tower_of_oannes_left_c_bottom_gate__c_6"] = "Oannes",
-    ["er_tower_of_oannes_left_c_top_gate__c_5"] = "Oannes",
-    ["er_tower_of_oannes_moving_tiles_escape__d_10"] = "Oannes",
-    ["er_tower_of_oannes_right_entrance_gate__d_12"] = "Oannes",
-    -- Bailey
-    ["er_bailey_bottom_gate__a_11"] = "Bailey",
-    ["er_bailey_left_gyonin_drop__b_1"] = "Bailey",
-    ["er_bailey_level_1_lower_gate__a_6"] = "Bailey",
-    ["er_bailey_level_1_upper_gate__a_5"] = "Bailey",
-    ["er_bailey_level_2_lower_gate__a_3"] = "Bailey",
-    ["er_bailey_level_2_upper_gate__a_3"] = "Bailey",
-    ["er_bailey_level_3_gate__a_1"] = "Bailey",
-    ["er_bailey_right_gate__f_8"] = "Bailey",
-    ["er_bailey_right_gyonin_drop__e_1"] = "Bailey",
-    ["er_bailey_right_one_way_exit_slide__e_6"] = "Bailey",
+    -- Oannes: the Left-A/B/C towers and the right side are separate sections
+    -- (they only connect through Bailey), so each gets its own field.
+    ["er_tower_of_oannes_left_a_bottom_gate__c_15"] = "Oannes-Left-A",
+    ["er_tower_of_oannes_left_a_ladder_down__b_16"] = "Oannes-Left-A",
+    ["er_tower_of_oannes_left_a_top_gate__c_10"] = "Oannes-Left-A",
+    ["er_tower_of_oannes_left_b_bottom_gate__c_9"] = "Oannes-Left-B",
+    ["er_tower_of_oannes_left_b_top_gate__c_7"] = "Oannes-Left-B",
+    ["er_tower_of_oannes_left_c_bottom_gate__c_6"] = "Oannes-Left-C",
+    ["er_tower_of_oannes_left_c_top_gate__c_5"] = "Oannes-Left-C",
+    ["er_tower_of_oannes_fish_slime_zero_escape__c_1"] = "Oannes-Left-C",
+    ["er_tower_of_oannes_right_entrance_gate__d_12"] = "Oannes-Right-A",
+    ["er_tower_of_oannes_moving_tiles_escape__d_10"] = "Oannes-Right-A",
+    ["er_tower_of_oannes_evil_fish_crystal_escape__e_6"] = "Oannes-Right-B",
+    -- Bailey: levels only connect downward (see the fixed edges in build_edges).
+    ["er_bailey_bottom_gate__a_11"] = "Bailey-Bottom",
+    ["er_bailey_left_gyonin_drop__b_1"] = "Bailey-Bottom",
+    ["er_bailey_right_gyonin_drop__e_1"] = "Bailey-Bottom",
+    ["er_bailey_right_one_way_exit_slide__e_6"] = "Bailey-Bottom",
+    ["er_bailey_level_1_lower_gate__a_6"] = "Bailey-1",
+    ["er_bailey_level_1_upper_gate__a_5"] = "Bailey-1",
+    ["er_bailey_level_2_lower_gate__a_3"] = "Bailey-2",
+    ["er_bailey_level_2_upper_gate__a_3"] = "Bailey-2",
+    ["er_bailey_level_3_gate__a_1"] = "Bailey-3",
+    ["er_bailey_right_gate__f_8"] = "Bailey-Right",
     -- Surface
     ["er_starting_area"] = "Surface",
     ["er_village_of_departure_next_to_xelpud"] = "Surface",
@@ -159,8 +160,16 @@ local ONEWAY_EXIT = {
 -- Field -> friendly name for the display.
 local FIELD_NAME = {
     ["SpringSky"] = "Spring in the Sky",
-    ["Oannes"] = "Tower of Oannes",
-    ["Bailey"] = "Bailey",
+    ["Oannes-Left-A"] = "Tower of Oannes",
+    ["Oannes-Left-B"] = "Tower of Oannes",
+    ["Oannes-Left-C"] = "Tower of Oannes",
+    ["Oannes-Right-A"] = "Tower of Oannes",
+    ["Oannes-Right-B"] = "Tower of Oannes",
+    ["Bailey-Bottom"] = "Bailey",
+    ["Bailey-1"] = "Bailey",
+    ["Bailey-2"] = "Bailey",
+    ["Bailey-3"] = "Bailey",
+    ["Bailey-Right"] = "Bailey",
     ["Altar-Right"] = "Altar",
     ["Altar-Left"] = "Altar",
     ["Annwfn"] = "Annwfn",
@@ -206,7 +215,9 @@ local GRAIL_FIELDS = {
 -- Fields that unlock the Holy Grail but are not themselves warp destinations.
 local GRAIL_ACTIVATORS = {
     "Guidance", "Mausoleum", "Surface", "Illusion", "Nibiru",
-    "SpringSky", "Oannes", "Bailey",
+    "SpringSky",
+    "Oannes-Left-A", "Oannes-Left-B", "Oannes-Left-C", "Oannes-Right-A", "Oannes-Right-B",
+    "Bailey-Bottom", "Bailey-1", "Bailey-2", "Bailey-3", "Bailey-Right",
 }
 
 local function field_name(f)
@@ -236,6 +247,16 @@ local function build_edges()
     add("Malice-Top", "Malice", nil)
     add("Mausoleum", "Guidance", "Mausoleum Elevator (A-5)")
     add("Altar-Left", "Altar-Right", nil)
+    -- Tower of Oannes right side: Right-A (entrance/slide) can climb to
+    -- Right-B (crystal room), but not back down (RightB -> RightA is False).
+    add("Oannes-Right-A", "Oannes-Right-B", nil)
+    -- Bailey: each level only drops down (logic.lua BaileyLevel3 -> 2 -> 1 -> Bottom,
+    -- Level3 -> Right, Right -> Bottom). Nothing climbs back up.
+    add("Bailey-3", "Bailey-2", nil)
+    add("Bailey-3", "Bailey-Right", nil)
+    add("Bailey-2", "Bailey-1", nil)
+    add("Bailey-1", "Bailey-Bottom", nil)
+    add("Bailey-Right", "Bailey-Bottom", nil)
 
     -- Corridor of Blood: once the spin is available these backside areas all
     -- interconnect, so treat them as one fully-connected cluster.
@@ -362,9 +383,16 @@ function UpdateEscapeRoute()
         row = row + 1
     end
 
+    local prev_name = nil
     for _, step in ipairs(route) do
         if row > NUM_STEPS then break end
-        emit(field_name(step.field), true)
+        -- Walking between sub-areas of the same map (no door used) stays
+        -- under one header instead of repeating it.
+        local name = field_name(step.field)
+        if not (step.arrive == nil and name == prev_name) then
+            emit(name, true)
+        end
+        prev_name = name
         if step.arrive then emit("    " .. step.arrive, false) end
         if step.exit then emit("    --> " .. step.exit, false) end
     end
