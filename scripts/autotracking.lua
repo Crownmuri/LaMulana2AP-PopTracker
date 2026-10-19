@@ -1203,6 +1203,7 @@ function ApplySlotData(slot_data)
 
     -- Forwarded only if the seed carries these keys (not in fill_slot_data today):
     set_stage ("setting_logic",         tonumber(slot_data.logic_difficulty))
+    set_toggle("setting_hard_mode",     slot_data.game_difficulty)
     set_toggle("setting_costume_clip",  slot_data.costume_clip)
     set_toggle("setting_require_fdc",   _opts.require_fdc)
     -- Seeds from before the option was split carried the Totem Pole gate on

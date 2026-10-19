@@ -95,6 +95,12 @@
         ]
     },
     {
+        "name": "Hard Mode",
+        "type": "toggle",
+        "img": "images/Settings/Hard.png",
+        "codes": "setting_hard_mode"
+    },
+    {
         "name": "Goal",
         "type": "progressive",
         "loop": true,

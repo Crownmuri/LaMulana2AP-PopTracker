@@ -151,6 +151,51 @@ end
 
 function OrbCount(n) return count("sacred_orb") >= n end
 function SkullCount(n) return count("crystal_skull") >= n end
+-- WorldLevel(n): the game's world level (G_Difficulty) is at least n.
+-- Mirrors WORLD_LEVEL_* in the AP world's logic/logic_data.py.
+-- G_Difficulty starts at 0 on Normal and 3 on Hard, and rises by 1 when the
+-- storyChecker tally reaches 60 / 120 / 190. The game only applies a step
+-- once the player enters a field with a hardWatcher (RoY, IB, DF, SotFG,
+-- GotD, AC), so one of those areas must also be reachable.
+local WORLD_LEVEL_STORY_ITEMS = {
+    "djed", "mjolnir", "battery", "lamp_of_time", "pochette_key",
+    "pyramid_crystal", "vessel", "egg_of_creation", "giants_flute",
+    "cog_of_antiquity", "mulana_talisman", "glove", "dinosaur_figure",
+    "gale_fibula", "flame_torc", "power_band", "ganeshas_talisman",
+    "maats_feather", "feather", "freys_ship", "harp", "destiny_tablet",
+    "secret_treasure", "origin_sigil", "birth_sigil", "life_sigil",
+    "death_sigil", "claydoll_suit",
+}
+local WORLD_LEVEL_THRESHOLDS = {60, 120, 190}
+local WORLD_LEVEL_WATCHER_AREAS = {
+    "RoY", "RoYTopLeft", "RoYTopRight", "RoYTopMiddle", "RoYMiddle", "RoYBottom", "RoYBottomLeft",
+    "IBBifrost", "IBTop", "IBTopLeft", "IBCetusLadder", "IBMain", "IBRight", "IBBottom", "IBLeft",
+    "IBLeftSG", "IBBattery", "IBDinosaur", "IBMoon", "IBLadder", "IBBoat",
+    "DFEntrance", "DFRight", "DFMain", "DFTop",
+    "SotFGMain", "SotFGGrail", "SotFGTop", "SotFGBalor", "SotFGLeft",
+    "GotD", "GotDWedjet",
+    "ACBottom", "ACWind", "ACTablet", "ACMain",
+}
+function WorldLevelTally()
+    local tally = 4 * (count("ankh_jewel") + count("crystal_skull"))
+    for _, code in ipairs(WORLD_LEVEL_STORY_ITEMS) do
+        if has(code) then tally = tally + 4 end
+    end
+    if has("holy_grail") then tally = tally + 2 end
+    if has("grapple_claw") then tally = tally + 2 end
+    return tally
+end
+function WorldLevel(n)
+    local base = has("setting_hard_mode") and 3 or 0
+    local steps = n - base
+    if steps <= 0 then return true end
+    local required = WORLD_LEVEL_THRESHOLDS[steps]
+    if not required or WorldLevelTally() < required then return false end
+    for _, area in ipairs(WORLD_LEVEL_WATCHER_AREAS) do
+        if CanReach(area) then return true end
+    end
+    return false
+end
 local GUARDIAN_CODES = {
     "boss_fafnir", "boss_vritra", "boss_kujata", "boss_aten_ra",
     "boss_jormungand", "boss_anu", "boss_surtr", "boss_echidna", "boss_hel"
@@ -1324,6 +1369,7 @@ LOGIC_FUNCS = {
     NibiruSkullCheck=NibiruSkullCheck,
     Cursed=Cursed, TrickyLogic=TrickyLogic, MinimalLogic=MinimalLogic,
     OutOfLogic=OutOfLogic, LogicLevel=LogicLevel,
+    WorldLevel=WorldLevel,
 }
 
 -- ============================================================

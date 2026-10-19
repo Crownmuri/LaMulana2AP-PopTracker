@@ -161,7 +161,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(RoY) and (HorizontalAttack and (IsDead(Ratatoskr 1) or IsDead(Nidhogg)))))"
+                    "^$lm2_logic|((CanReach(RoY) and (HorizontalAttack and (IsDead(Ratatoskr 1) or IsDead(Nidhogg) or WorldLevel(5)))) or (CanReach(RoYBottom) and (HorizontalAttack and WorldLevel(5))) or (CanReach(DFMain) and (WorldLevel(5))))"
                 ]
             },
             {
@@ -269,7 +269,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(AnnwfnRight) and (True)) or (CanReach(IBMoon) and (Has(Life Sigil) and HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(AnnwfnRight) and (True)) or (CanReach(IBMoon) and (Has(Life Sigil) and HorizontalAttack)) or (CanReach(IBBottom) and (WorldLevel(2))) or (CanReach(TSLeft) and (HorizontalAttack and WorldLevel(2))) or (CanReach(TSMain) and (WorldLevel(2))) or (CanReach(TSEntrance) and (((Has(Leather Whip) and (Has(Vajra) or Has(Spaulder))) or Has(Knife) or Has(Rapier) or Has(Axe) or Has(Katana) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Chakram) or CanUse(Bomb) or (CanReach(TSMain) and CanUse(Flare Gun) and HorizontalAttack)) and WorldLevel(2))) or (CanReach(TSNeck) and (HorizontalAttack and WorldLevel(2))))"
                 ]
             },
             {
@@ -296,7 +296,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(AnnwfnRight) and (True)) or (CanReach(AnnwfnMain) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(AnnwfnRight) and (True)) or (CanReach(AnnwfnMain) and (HorizontalAttack)) or (CanReach(RoYBottom) and ((HorizontalAttack or Has(Origin Sigil)) and WorldLevel(2))))"
                 ]
             },
             {
@@ -404,7 +404,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(IBMain) and (True)) or (CanReach(IBRight) and (True)) or (CanReach(IBDinosaur) and (True)))"
+                    "^$lm2_logic|((CanReach(IBMain) and (True)) or (CanReach(IBRight) and (True)) or (CanReach(IBDinosaur) and (True)) or (CanReach(AltarRight) and (True)))"
                 ]
             },
             {
@@ -431,7 +431,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(IBMain) and (True)) or (CanReach(IBLeft) and (True)) or (CanReach(IBDinosaur) and (True)) or (CanReach(IBBottom) and (True)))"
+                    "^$lm2_logic|((CanReach(IBMain) and (True)) or (CanReach(IBTopLeft) and (True)) or (CanReach(IBLeft) and (True)) or (CanReach(IBDinosaur) and (True)) or (CanReach(IBBottom) and (True)) or (CanReach(RoY) and (WorldLevel(2))))"
                 ]
             },
             {
@@ -458,7 +458,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(IBMain) and (True)) or (CanReach(IBRight) and (True)) or (CanReach(IBLeft) and (True)) or (CanReach(IBDinosaur) and (True)) or (CanReach(SotFGMain) and (IsDead(Badhbh Cath) and Has(Grapple Claw) and ((Has(Feather) or Has(Life Sigil)) or CanUse(Flare Gun)))))"
+                    "^$lm2_logic|((CanReach(IBMain) and (True)) or (CanReach(IBRight) and (True)) or (CanReach(IBLeft) and (True)) or (CanReach(IBDinosaur) and (True)) or (CanReach(SotFGMain) and (IsDead(Badhbh Cath) and Has(Grapple Claw) and ((Has(Feather) or Has(Life Sigil)) or CanUse(Flare Gun)))) or (CanReach(IBTop) and (WorldLevel(2))) or (CanReach(IBMoon) and ((HorizontalAttack and Has(Life Sigil) and (CanWarp or (CanReach(IBMain) and (Has(Anchor) or Has(Fish Suit) or Has(Claydoll Suit)) and (IsDead(Cetus) or Has(Feather) or CanWarp)) or ((Has(Grapple Claw) or Glitch(Costume Clip)) and Setting(Non Random Ladders)))) and WorldLevel(2))))"
                 ]
             },
             {
@@ -485,7 +485,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(IBMain) and ((HorizontalAttack and CanWarp) or IsDead(Cetus) or TrickyLogic)) or (CanReach(ITRight) and (HorizontalAttack)) or (CanReach(ITRightLeftLadder) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(IBMain) and ((HorizontalAttack and CanWarp) or IsDead(Cetus) or TrickyLogic)) or (CanReach(ITRight) and (HorizontalAttack)) or (CanReach(ITRightLeftLadder) and (HorizontalAttack)) or (CanReach(ITBottom) and (HorizontalAttack and WorldLevel(2))) or (CanReach(AnnwfnMain) and (WorldLevel(2))))"
                 ]
             },
             {
@@ -674,7 +674,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(DFMain) and (True)) or (CanReach(DFTop) and (True)))"
+                    "^$lm2_logic|((CanReach(DFMain) and (True)) or (CanReach(DFTop) and (True)) or (CanReach(RoY) and (HorizontalAttack and WorldLevel(2))))"
                 ]
             },
             {
@@ -890,7 +890,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(GotD) and (True)))"
+                    "^$lm2_logic|((CanReach(GotD) and (True)) or (CanReach(IBMain) and (WorldLevel(5))) or (CanReach(IBRight) and (WorldLevel(5))) or (CanReach(IBDinosaur) and (WorldLevel(5))))"
                 ]
             },
             {
@@ -917,7 +917,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(GotD) and (True)))"
+                    "^$lm2_logic|((CanReach(GotD) and (True)) or (CanReach(IBMain) and (WorldLevel(5))) or (CanReach(IBRight) and (HorizontalAttack and WorldLevel(5))))"
                 ]
             },
             {
@@ -971,7 +971,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(GotD) and (True)))"
+                    "^$lm2_logic|((CanReach(GotD) and (True)) or (CanReach(IBMain) and (WorldLevel(2))))"
                 ]
             },
             {
@@ -998,7 +998,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TSMain) and (HorizontalAttack)) or (CanReach(TSLeft) and (MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb))) or (CanReach(TSBottom) and (HorizontalAttack)) or (CanReach(TSBlood) and (HorizontalAttack or OrbCount(3) or Has(Egg of Creation))))"
+                    "^$lm2_logic|((CanReach(TSMain) and (HorizontalAttack)) or (CanReach(TSLeft) and (MeleeAttack or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb))) or (CanReach(TSBottom) and (HorizontalAttack)) or (CanReach(TSBlood) and (HorizontalAttack or OrbCount(3) or Has(Egg of Creation))) or (CanReach(IBLeft) and (WorldLevel(5))) or (CanReach(IBBottom) and (WorldLevel(5))))"
                 ]
             },
             {
@@ -1025,7 +1025,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TSMain) and ((Has(Gauntlet) and (Has(Axe) or Has(Rapier) or Has(Katana))) or (Has(Vajra) and (Has(Rapier) or Has(Katana))) or (Has(Spaulder) and Has(Rapier)) or Has(Knife))))"
+                    "^$lm2_logic|((CanReach(TSMain) and ((Has(Gauntlet) and (Has(Axe) or Has(Rapier) or Has(Katana))) or (Has(Vajra) and (Has(Rapier) or Has(Katana))) or (Has(Spaulder) and Has(Rapier)) or Has(Knife))) or (CanReach(TSLeft) and ((Has(Gauntlet) and (Has(Axe) or Has(Rapier) or Has(Katana))) or (Has(Vajra) and (Has(Rapier) or Has(Katana))) or (Has(Spaulder) and Has(Rapier)) or Has(Knife))) or (CanReach(TSBottom) and (WorldLevel(2))))"
                 ]
             },
             {
@@ -1133,7 +1133,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(IBRight) and (Has(Perfume))) or (CanReach(TSMain) and (Has(Perfume))) or (CanReach(TSEntrance) and (Has(Perfume) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and (Has(Spaulder) or Has(Vajra)))))) or (CanReach(TSLeft) and (Has(Perfume))) or (CanReach(TSBottom) and (Has(Perfume))) or (CanReach(HL) and (Has(Perfume))) or (CanReach(HLStatue) and (Has(Perfume))) or (CanReach(HLSpun) and (Has(Perfume))) or (CanReach(ACBottom) and (Has(Perfume))) or (CanReach(ACTablet) and (Has(Perfume))) or (CanReach(ACWind) and (Has(Perfume))) or (CanReach(ACMain) and (Has(Perfume))) or (CanReach(ACBlood) and (Has(Perfume))))"
+                    "^$lm2_logic|((CanReach(IBRight) and (Has(Perfume))) or (CanReach(TSMain) and (Has(Perfume))) or (CanReach(TSEntrance) and (Has(Perfume) and (Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or CanUse(Rolling Shuriken) or CanUse(Earth Spear) or CanUse(Caltrops) or CanUse(Bomb) or (Has(Leather Whip) and (Has(Spaulder) or Has(Vajra)))))) or (CanReach(TSLeft) and (Has(Perfume))) or (CanReach(TSBottom) and (Has(Perfume))) or (CanReach(HL) and (Has(Perfume))) or (CanReach(HLStatue) and (Has(Perfume))) or (CanReach(HLSpun) and (Has(Perfume))) or (CanReach(ACBottom) and (Has(Perfume))) or (CanReach(ACTablet) and (Has(Perfume))) or (CanReach(ACWind) and (Has(Perfume))) or (CanReach(ACMain) and (Has(Perfume))) or (CanReach(ACBlood) and (Has(Perfume))) or (CanReach(ITLeft) and (Has(Perfume) and WorldLevel(2))) or (CanReach(ITSinmara) and (Has(Perfume) and HorizontalAttack and WorldLevel(2))) or (CanReach(ITBottom) and (Has(Perfume) and WorldLevel(2))) or (CanReach(ITRight) and (Has(Perfume) and HorizontalAttack and WorldLevel(2))) or (CanReach(DSLMTop) and (Has(Perfume) and HorizontalAttack and WorldLevel(2))) or (CanReach(DSLMMain) and (Has(Perfume) and WorldLevel(2))) or (CanReach(IBTopLeft) and ((Has(Glove) or Has(Feather) or (CanReach(IBTop) and CanWarp and (CanUse(Earth Spear) or CanUse(Chakram) or CanUse(Bomb) or CanUse(Rolling Shuriken) or CanUse(Caltrops) or (Has(Gale Fibula) and HorizontalAttack)))) and Has(Perfume) and WorldLevel(5))) or (CanReach(IBLeft) and (Has(Perfume) and WorldLevel(5))) or (CanReach(IBMain) and (Has(Perfume) and WorldLevel(5))) or (CanReach(IBBottom) and (Has(Perfume) and WorldLevel(5))))"
                 ]
             },
             {
@@ -1484,7 +1484,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(DSLMMain) and (True)) or (CanReach(DSLMTop) and (True)))"
+                    "^$lm2_logic|((CanReach(DSLMMain) and (True)) or (CanReach(DSLMTop) and (True)) or (CanReach(IBLeft) and (WorldLevel(5))) or (CanReach(IBBottom) and (WorldLevel(5))) or (CanReach(IBMain) and (WorldLevel(5))) or (CanReach(IBRight) and (WorldLevel(5))))"
                 ]
             },
             {
@@ -1511,7 +1511,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(ACBottom) and (True)) or (CanReach(ACTablet) and (True)) or (CanReach(ACWind) and (True)) or (CanReach(ACMain) and (True)))"
+                    "^$lm2_logic|((CanReach(ACBottom) and (True)) or (CanReach(ACTablet) and (True)) or (CanReach(ACWind) and (True)) or (CanReach(ACMain) and (True)) or (CanReach(TSMain) and (WorldLevel(2))) or (CanReach(TSBottom) and (WorldLevel(2))))"
                 ]
             },
             {
@@ -1943,7 +1943,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)) or (CanReach(RoY) and (HorizontalAttack and WorldLevel(5))) or (CanReach(RoYBottom) and (WorldLevel(5))) or (CanReach(RoYTopRight) and ((CanWarp or Has(Birth Sigil)) and WorldLevel(2))) or (CanReach(AnnwfnMain) and (WorldLevel(5))) or (CanReach(DFMain) and (WorldLevel(2))) or (CanReach(DFTop) and (WorldLevel(2))) or (CanReach(DFRight) and (WorldLevel(2))) or (CanReach(HLStatue) and (HorizontalAttack and WorldLevel(5))) or (CanReach(HL) and (WorldLevel(5))) or (CanReach(HLSpun) and (WorldLevel(5))) or (CanReach(ValhallaMain) and (WorldLevel(5))) or (CanReach(ValhallaTopRight) and (WorldLevel(5))) or (CanReach(EPG) and (WorldLevel(5))))"
                 ]
             },
             {
@@ -1970,7 +1970,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)) or (CanReach(RoY) and (WorldLevel(5))) or (CanReach(RoYBottom) and (WorldLevel(5))) or (CanReach(RoYMiddle) and (WorldLevel(5))) or (CanReach(DFMain) and (WorldLevel(5))) or (CanReach(DFTop) and (WorldLevel(5))) or (CanReach(DFRight) and (WorldLevel(5))) or (CanReach(GotD) and (WorldLevel(5))) or (CanReach(TSBlood) and (WorldLevel(5))) or (CanReach(TSMain) and (WorldLevel(5))) or (CanReach(TSNeck) and (WorldLevel(5))) or (CanReach(ValhallaMain) and (WorldLevel(5))) or (CanReach(ValhallaTopRight) and (WorldLevel(5))) or (CanReach(ACBottom) and (WorldLevel(5))) or (CanReach(ACMain) and (WorldLevel(5))) or (CanReach(ACWind) and (WorldLevel(5))))"
                 ]
             },
             {
@@ -1997,7 +1997,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)) or (CanReach(TSLeft) and (WorldLevel(5))) or (CanReach(TSMain) and (WorldLevel(5))) or (CanReach(TSBottom) and (WorldLevel(5))) or (CanReach(HL) and (WorldLevel(5))) or (CanReach(HLSpun) and (WorldLevel(5))) or (CanReach(HLCog) and (WorldLevel(5))) or (CanReach(HLStatue) and (CanUse(Flare Gun) and WorldLevel(5))) or (CanReach(ACTablet) and (WorldLevel(5))) or (CanReach(ACMain) and (WorldLevel(5))))"
                 ]
             },
             {
@@ -2024,7 +2024,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)) or (CanReach(SotFGMain) and (IsDead(Fenrir))) or (CanReach(GotD) and (WorldLevel(5))) or (CanReach(ValhallaMain) and (WorldLevel(5))))"
                 ]
             },
             {
@@ -2051,7 +2051,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)) or (CanReach(AnnwfnRight) and (HorizontalAttack and WorldLevel(2))) or (CanReach(AnnwfnMain) and (WorldLevel(5))) or (CanReach(GotD) and (WorldLevel(5))) or (CanReach(DSLMMain) and (WorldLevel(5))) or (CanReach(DSLMTop) and (HorizontalAttack and WorldLevel(5))) or (CanReach(EPDMain) and (WorldLevel(5))))"
                 ]
             },
             {
@@ -2078,7 +2078,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(SpiralHell) and (True)))"
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)) or (CanReach(HLStatue) and (HorizontalAttack and WorldLevel(2))) or (CanReach(IBTopLeft) and (WorldLevel(5))) or (CanReach(IBMain) and ((HorizontalAttack or Has(Feather)) and WorldLevel(5))) or (CanReach(IBRight) and (WorldLevel(5))) or (CanReach(DSLMTop) and (WorldLevel(5))) or (CanReach(DSLMMain) and (Has(Grapple Claw) and WorldLevel(5))) or (CanReach(HoM) and (WorldLevel(5))) or (CanReach(EPDTop) and (WorldLevel(5))) or (CanReach(EPDMain) and (HorizontalAttack and WorldLevel(5))))"
                 ]
             },
             {
