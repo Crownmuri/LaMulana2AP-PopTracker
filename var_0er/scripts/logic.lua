@@ -284,6 +284,11 @@ function Setting(name)
     if name == "Not Life for HoM" then
         return not has("setting_life_for_hom")
     end
+    -- AP: bool(random_soul_gate_value). Not setting_random_soul_gates, which
+    -- also turns on for include_nine_soul_gates (it only shows gate markers).
+    if name == "Random Soul Gates" then
+        return RANDOM_SOUL_GATE_VALUE == true
+    end
     local m = {
         ["AutoScan"]="setting_autoscan",
         --["Random Gates"]="setting_random_gates",
@@ -624,7 +629,7 @@ local EVENT_LOGIC = {
     ["ixtab"] = "CanReach(AnnwfnRight) and (((Has(Leather Whip) or Has(Rapier) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops)))) and OrbCount(2)) or ((Has(Chain Whip) or Has(Axe) or Has(Katana) or Has(Claydoll Suit) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb)))) and OrbCount(1)) or (CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))))",
 
     -- Immortal Battlefield
-    ["cetus"] = "CanReach(IBTop) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or Has(Claydoll Suit) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Anchor) or Has(Fish Suit))) or (((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and Has(Scalesphere)) or (Has(Axe) and (Has(Scalesphere) or (OrbCount(1) and Has(Anchor)))) or (Has(Leather Whip) and Has(Anchor) and (Has(Scalesphere) or OrbCount(2))) or ((Has(Chain Whip) or Has(Katana)) and Has(Anchor) and (Has(Scalesphere) or OrbCount(1))))",
+    ["cetus"] = "CanReach(IBTop) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or Has(Claydoll Suit) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (Has(Anchor) or Has(Fish Suit))) or (((CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram)))) and Has(Scalesphere)) or (Has(Axe) and (Has(Scalesphere) or (OrbCount(1) and (Has(Anchor) or Has(Fish Suit))))) or (Has(Leather Whip) and (Has(Anchor) or Has(Fish Suit)) and (Has(Scalesphere) or OrbCount(2))) or ((Has(Chain Whip) or Has(Katana)) and (Has(Anchor) or Has(Fish Suit)) and (Has(Scalesphere) or OrbCount(1))))",
     ["ratatoskr_2"] = "CanReach(IBMain) and IsDead(Ratatoskr 1)",
     ["svipdagr"] = "CanReach(IBRight) and OrbCount(1)",
 
@@ -738,7 +743,6 @@ local EVENT_HARDLOGIC = {
     ["hraesvelgr"] = "CanReach(EPDMain) and IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon)",
     ["ratatoskr_4"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3)",
     -- DLC
-    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and Has(Feather) and CanUse(Flare Gun)",
     ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftCTop) and IsDead(Fish-Valusa Re-gyo-ded)",
 }
 
@@ -1465,7 +1469,7 @@ ER_ENTRANCES_BY_AREA = {
         { code = "er_valhalla_soul_gate__e_2", logic = "Has(Claydoll Suit)", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "SotFGBalor" },
     },
     ["ITVidofnir"] = {
-        { code = "er_icefire_treetop_vidofnir_soul_gate__d_6", logic = "IsDead(Vidofnir) and CanWarp", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "EPG" },
+        { code = "er_icefire_treetop_vidofnir_soul_gate__d_6", logic = "IsDead(Vidofnir) and (CanWarp or Setting(Random Soul Gates))", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "EPG" },
     },
     ["EPG"] = {
         { code = "er_eternal_prison_gloom_soul_gate__d_2", logic = "True", is_soul_gate = true, vanilla_cost = 5, vanilla_target_area = "ITVidofnir" },

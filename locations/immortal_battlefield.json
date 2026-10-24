@@ -282,12 +282,12 @@
                         "hosted_item": "cursed_430032",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430032|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
+                            "^$lm2_cursed|430032|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus) or (Glitch(Costume Clip) and Has(Feather))))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus)))"
+                    "^$lm2_logic|CanReach(IBMain) and (Has(Birth Sigil) and (Has(Gale Fibula) or CanStopTime or IsDead(Cetus) or (Glitch(Costume Clip) and Has(Feather))))"
                 ]
             },
             {

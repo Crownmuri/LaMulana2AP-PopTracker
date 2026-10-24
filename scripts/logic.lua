@@ -912,7 +912,6 @@ local EVENT_HARDLOGIC = {
     ["hraesvelgr"] = "CanReach(EPDMain) and IsDead(Ratatoskr 1) and IsDead(Ratatoskr 2) and IsDead(Ratatoskr 3) and IsDead(Ratatoskr 4) and IsDead(Nidhogg) and CanChant(Moon)",
     ["ratatoskr_4"] = "CanReach(EPG) and Has(Enga Musica) and Has(Feather) and IsDead(Ratatoskr 3)",
     -- DLC
-    ["fish-valusa_re-gyo-ded"] = "CanReach(TowerOfOannesLeftA) and Has(Feather) and CanUse(Flare Gun)",
     ["fish-slime_zero"] = "CanReach(TowerOfOannesLeftCTop) and IsDead(Fish-Valusa Re-gyo-ded)",
 }
 

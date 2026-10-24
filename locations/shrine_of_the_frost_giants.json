@@ -1288,7 +1288,7 @@
             }
         ],
         "access_rules": [
-            "^$lm2_logic|CanReach(SotFGBloodTez)"
+            "^$lm2_logic|CanReach(SotFGBlood) or CanReach(SotFGBloodTez)"
         ]
     }
 ]

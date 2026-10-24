@@ -754,6 +754,13 @@ function RebuildVanillaEntrances()
         return
     end
 
+    -- Read by Setting(Random Soul Gates) (Vidofnir soul gate).
+    local rsg = _opt_on(opts, "random_soul_gate_value")
+    if RANDOM_SOUL_GATE_VALUE ~= rsg then
+        RANDOM_SOUL_GATE_VALUE = rsg
+        NotifyPairingsChanged()
+    end
+
     -- Active toggles below would otherwise re-enter EntranceClick.
     if SuppressClicks then SuppressClicks(SUPPRESS_RESTORE_FRAMES) end
 

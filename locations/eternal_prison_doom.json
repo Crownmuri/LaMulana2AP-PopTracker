@@ -653,7 +653,7 @@
             }
         ],
         "access_rules": [
-            "^$lm2_logic|CanReach(EPDEntrance) or CanReach(EPDHel) or CanReach(EPDMain) or CanReach(EPDTop)"
+            "^$lm2_logic|CanReach(EPDEntrance) or CanReach(EPDHel) or CanReach(EPDMain) or CanReach(EPDTop) or CanReach(EPG)"
         ]
     }
 ]

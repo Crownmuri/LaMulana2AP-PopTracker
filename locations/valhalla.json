@@ -526,7 +526,7 @@
                     "setting_potsanity_low_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ValhallaMain) and (((Has(Feather) or CanChant(Heaven)) and HorizontalAttack) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)))"
+                    "^$lm2_logic|CanReach(ValhallaMain) and (((Has(Feather) or CanChant(Heaven)) and HorizontalAttack) or Has(Rapier) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) and Has(Ring)))"
                 ]
             },
             {
@@ -863,7 +863,7 @@
             }
         ],
         "access_rules": [
-            "^$lm2_logic|CanReach(ValhallaMain) or CanReach(ValhallaTop)"
+            "^$lm2_logic|CanReach(ValhallaMain) or CanReach(ValhallaTop) or CanReach(ValhallaTopRight)"
         ]
     }
 ]

@@ -3489,7 +3489,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(TowerOfOannesRightB) and (CanReach(BaileyRight))"
+                    "^$lm2_logic|CanReach(TowerOfOannesRightBCrystal) and (True)"
                 ]
             },
             {

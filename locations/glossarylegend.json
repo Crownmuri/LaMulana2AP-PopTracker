@@ -3395,30 +3395,30 @@
         ]
     },
     {
-        "name": "Glossary - Spiral Hell (Scannable)",
+        "name": "Glossary - Spiral Hell (Freestanding)",
         "map_locations": [
             {
                 "map": "Full Map",
-                "x": 480,
+                "x": 440,
                 "y": 3150,
                 "size": 30
             },
             {
                 "map": "Full Map (+DLC)",
-                "x": 2780,
+                "x": 2740,
                 "y": 3550,
                 "size": 30
             }
         ],
         "sections": [
             {
-                "name": "Glossary on the Escape Route (Scan)",
+                "name": "Glossary on the Escape Route",
                 "item_count": 1,
                 "access_rules": [
-                    "@Spiral Hell/Glossary on the Escape Route (Scan)/Glossary"
+                    "@Spiral Hell/Glossary on the Escape Route/Glossary"
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_scannable"
+                    "setting_glossanity_freestanding"
                 ]
             }
         ]

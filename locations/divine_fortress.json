@@ -881,7 +881,7 @@
             }
         ],
         "access_rules": [
-            "^$lm2_logic|CanReach(DFMain) or CanReach(DFRight) or CanReach(DFTop)"
+            "^$lm2_logic|CanReach(DFEntrance) or CanReach(DFMain) or CanReach(DFRight) or CanReach(DFTop)"
         ]
     }
 ]

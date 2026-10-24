@@ -125,12 +125,12 @@
                         "hosted_item": "cursed_430141",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430141|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
+                            "^$lm2_cursed|430141|CanReach(AnnwfnMain) and (Has(Birth Sigil) and (Has(Leather Whip) or Has(Knife) or Has(Rapier) or Has(Katana) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit) or (Has(Axe) and (Has(Anchor) or Has(Fish Suit) or Has(Gauntlet)))))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and HorizontalAttack)"
+                    "^$lm2_logic|CanReach(AnnwfnMain) and (Has(Birth Sigil) and (Has(Leather Whip) or Has(Knife) or Has(Rapier) or Has(Katana) or (CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or Has(Claydoll Suit) or (Has(Axe) and (Has(Anchor) or Has(Fish Suit) or Has(Gauntlet)))))"
                 ]
             },
             {

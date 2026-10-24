@@ -36,7 +36,7 @@
                 ]
             },
             {
-                "name": "Glossary on the Escape Route (Scan)",
+                "name": "Glossary on the Escape Route",
                 "sections": [
                     {
                         "name": "Glossary",
@@ -44,7 +44,7 @@
                     }
                 ],
                 "visibility_rules": [
-                    "setting_glossanity_scannable"
+                    "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
                     "^$lm2_logic|CanReach(SpiralHell) and IsDead(Ninth Child)"
