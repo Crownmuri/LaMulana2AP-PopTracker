@@ -24,6 +24,25 @@
     "increment": 1
   },
   {
+    "name": "Guardian Souls",
+    "type": "progressive",
+    "allow_disabled": false,
+    "loop": false,
+    "codes": "guardian_souls",
+    "stages": [
+      { "img": "images/entrances/SG0.png" },
+      { "img": "images/entrances/SG1.png" },
+      { "img": "images/entrances/SG2.png" },
+      { "img": "images/entrances/SG3.png" },
+      { "img": "images/entrances/SG4.png" },
+      { "img": "images/entrances/SG5.png" },
+      { "img": "images/entrances/SG6.png" },
+      { "img": "images/entrances/SG7.png" },
+      { "img": "images/entrances/SG8.png" },
+      { "img": "images/entrances/SG9.png" }
+    ]
+  },
+  {
     "name": "Kosugi Research",
     "type": "consumable",
     "img": "images/Software/KosugiResearch.png",

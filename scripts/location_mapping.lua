@@ -593,7 +593,7 @@ LOCATION_MAPPING = {
     [432051] = {"@Icefire Treetop/Glossary in the Hot Spring (Scan)/Glossary", "@Glossary - Icefire Treetop (Scannable)/Glossary in the Hot Spring (Scan)"}, -- [IT E-2] Glossary in the Hot Spring (Scan)
     [432052] = {"@Icefire Treetop/NPC Glossary (Sinmara)/Glossary", "@Glossary - Icefire Treetop (NPC)/NPC Glossary (Sinmara)"}, -- [IT C-3] NPC Glossary (Sinmara)
     [432053] = {"@Icefire Treetop/NPC Glossary (Modgud)/Glossary", "@Glossary - Icefire Treetop (NPC)/NPC Glossary (Modgud)"}, -- [IT F-3] NPC Glossary (Modgud)
-    [432054] = {"@Icefire Treetop/NPC Glossary (Inanna)/Glossary", "@Glossary - Icefire Treetop (NPC)/NPC Glossary (Inanna)"}, -- [IT E-1] NPC Glossary (Inanna)
+    [432054] = {"@Icefire Treetop/NPC Glossary (Inanna)/Glossary", "@Glossary - Icefire Treetop (NPC)/NPC Glossary (Inanna)"}, -- [IT F-3] NPC Glossary (Inanna)
     [432055] = {"@Icefire Treetop/BTK/NPC Glossary (Porque Item Shop)", "@Glossary - Icefire Treetop (NPC)/NPC Glossary (Porque Item Shop)"}, -- [IT A-1] NPC Glossary (Porque Item Shop)
     [432056] = {"@Icefire Treetop/Mino the Bomb Guy/NPC Glossary (Mino the Bomb Guy)", "@Glossary - Icefire Treetop (NPC)/NPC Glossary (Mino the Bomb Guy)"}, -- [IT C-4] NPC Glossary (Mino the Bomb Guy)
     [432057] = {"@Icefire Treetop/NPC Glossary (Enimul)/Glossary", "@Glossary - Icefire Treetop (NPC)/NPC Glossary (Enimul)"}, -- [IT E-2] NPC Glossary (Enimul)
@@ -775,6 +775,16 @@ LOCATION_MAPPING = {
     -- DLC (oannesanity)
     [430055] = {"@Tower of Oannes/Four Trials Reward Chest/Chest"}, -- Four Trials Reward Chest (Rebirth Sigil)
     [430061] = {"@Tower of Oannes/DLC Boss Reward Chest/Chest"}, -- DLC Boss Reward Chest (Fish Suit)
+    -- Guardian Obliterated checks (shuffle_guardian_souls)
+    [430314] = {"@Roots of Yggdrasil/Fafnir/Fafnir Obliterated"}, -- [ROY F-3] Fafnir Obliterated
+    [430315] = {"@Valhalla/Vritra/Vritra Obliterated"}, -- [VAL E-2] Vritra Obliterated
+    [430316] = {"@Annwfn/Kujata/Kujata Obliterated"}, -- [ANN F-2] Kujata Obliterated
+    [430317] = {"@Dark Star Lords Mausoleum/Aten Ra/Aten-Ra Obliterated"}, -- [DSLM C-8] Aten-Ra Obliterated
+    [430318] = {"@Immortal Battlefield/Jormungand/Jormungand Obliterated"}, -- [IB E-5] Jormungand Obliterated
+    [430319] = {"@Ancient Chaos/Anu/Anu Obliterated"}, -- [AC D-1] Anu Obliterated
+    [430320] = {"@Icefire Treetop/Surtr/Surtr Obliterated"}, -- [IT C-2] Surtr Obliterated
+    [430321] = {"@Hall of Malice/Echidna/Echidna Obliterated"}, -- [HOM C-5] Echidna Obliterated
+    [430322] = {"@Eternal Prison - Doom/Hel/Hel Obliterated"}, -- [EPD A-3] Hel Obliterated
     [432232] = {"@Tower of Oannes/Glossary at the Top of the First Tower/Glossary", "@Glossary - Tower of Oannes (DLC)/Glossary at the Top of the First Tower"}, -- [DLC C-3] Glossary at the Top of the First Tower (Gyonin King)
     [432233] = {"@Annwfn/Fish Glossary (Nijimasu)/Glossary", "@Glossary - Annwfn (Freestanding)/Fish Glossary (Nijimasu)"}, -- [ANN F-2] Fish Glossary (Nijimasu)
     [432234] = {"@Icefire Treetop/Fish Glossary (Sanma)/Glossary", "@Glossary - Icefire Treetop (Freestanding)/Fish Glossary (Sanma)"}, -- [IT F-4] Fish Glossary (Sanma)

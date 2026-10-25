@@ -808,6 +808,35 @@ ScriptHost:AddWatchForCode("beherit_image", "beherit", function()
 end)
 
 -- ============================================================
+-- Guardian Souls display (SG0-SG9 stages)
+-- With shuffle_guardian_souls on, the stage is the souls received (AP items or
+-- manual clicks). With it off, souls aren't items, so the stage just mirrors
+-- the guardian kill count and a manual click snaps back to it.
+-- ============================================================
+
+local _souls_syncing = false
+local function SyncGuardianSouls()
+    if _souls_syncing or has("setting_shuffle_guardian_souls") then return end
+    local obj = Tracker:FindObjectForCode("guardian_souls")
+    if not obj then return end
+    local kills = 0
+    for _, g in ipairs(GUARDIANS) do
+        if has("boss_" .. g) then kills = kills + 1 end
+    end
+    if obj.CurrentStage ~= kills then
+        _souls_syncing = true
+        obj.CurrentStage = kills
+        _souls_syncing = false
+    end
+end
+
+ScriptHost:AddWatchForCode("guardian_souls_sync", "guardian_souls", SyncGuardianSouls)
+ScriptHost:AddWatchForCode("guardian_souls_setting", "setting_shuffle_guardian_souls", SyncGuardianSouls)
+for _, g in ipairs(GUARDIANS) do
+    ScriptHost:AddWatchForCode("guardian_souls_kill_" .. g, "guardian_" .. g, SyncGuardianSouls)
+end
+
+-- ============================================================
 -- Shop Mark → Subweapon Sync  (DISABLED — too expensive on reconnect)
 -- When a shop is marked with ammo, flip the subweapon's
 -- progressive_toggle to the ammo stage (stage 1).
@@ -1119,6 +1148,8 @@ function ApplySlotData(slot_data)
     if area then set_stage("setting_start", STARTING_AREA_TO_STAGE[area]) end
 
     set_toggle("setting_guardian_ankhs", slot_data.guardian_specific_ankhs)
+    set_toggle("setting_shuffle_guardian_souls",
+        slot_data.shuffle_guardian_souls or (slot_data.options or {}).shuffle_guardian_souls or 0)
     set_toggle("setting_remove_it_statue", slot_data.remove_it_statue)
     set_toggle("setting_autoscan",         slot_data.auto_scan_tablets)
     set_toggle("setting_random_dissonance", slot_data.random_dissonance)

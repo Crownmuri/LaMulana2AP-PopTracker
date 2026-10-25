@@ -200,7 +200,14 @@ local GUARDIAN_CODES = {
     "boss_fafnir", "boss_vritra", "boss_kujata", "boss_aten_ra",
     "boss_jormungand", "boss_anu", "boss_surtr", "boss_echidna", "boss_hel"
 }
+-- shuffle_guardian_souls: GuardianKills(N) counts the Guardian Souls held
+-- instead of kills (apworld player_state.guardian_count_names). That covers
+-- every soul gate, the Spiral Boat gate and the Spiral Hell door. IsDead() and
+-- GuardianKillCount() (the shared-ankh model) still mean actual kills.
 function GuardianKills(n)
+    if has("setting_shuffle_guardian_souls") then
+        return count("guardian_souls") >= n
+    end
     local total = 0
     for _, code in ipairs(GUARDIAN_CODES) do
         if has(code) then

@@ -19,7 +19,7 @@
             [ "whip1", "shield1", "knife", "rapier", "axe", "katana", "shield1", "sacred_orb" ],
             [ "shuriken", "rolling_shuriken", "earth_spear", "flare_gun", "bomb", "chakram", "caltrops", "pistol" ],
             [ "mantra_heaven", "mantra_earth", "mantra_sun", "mantra_moon", "mantra_sea", "mantra_fire", "mantra_wind", "mantra_mother", "mantra_child", "mantra_night" ],
-            [ "boss_fafnir", "boss_vritra", "boss_kujata", "boss_jormungand", "boss_aten_ra", "boss_anu", "boss_surtr", "boss_echidna", "boss_hel", "boss_ninth_child" ]
+            [ "boss_fafnir", "boss_vritra", "boss_kujata", "boss_jormungand", "boss_aten_ra", "boss_anu", "boss_surtr", "boss_echidna", "boss_hel", "guardian_souls" ]
         ]
       }
     ]

@@ -188,6 +188,12 @@
         "initial_active_state": true
     },
     {
+        "name": "Shuffle Guardian Souls",
+        "type": "toggle",
+        "img": "images/entrances/SG0.png",
+        "codes": "setting_shuffle_guardian_souls"
+    },
+    {
         "name": "Auto Scan",
         "type": "toggle",
         "img": "images/Settings/AutoScan.png",

@@ -220,6 +220,16 @@
                         "access_rules": [
                             "^$lm2_cursed|430012|CanReach(HoMAwoken) and (IsDead(Echidna))"
                         ]
+                    },
+                    {
+                        "name": "Echidna Obliterated",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_shuffle_guardian_souls"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(HoMAwoken) and IsDead(Echidna)"
+                        ]
                     }
                 ],
                 "access_rules": [

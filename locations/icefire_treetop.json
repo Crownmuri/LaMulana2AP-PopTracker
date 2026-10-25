@@ -232,6 +232,16 @@
                         "access_rules": [
                             "^$lm2_cursed|430022|CanReach(ITSinmara) and (IsDead(Surtr) and HorizontalAttack)"
                         ]
+                    },
+                    {
+                        "name": "Surtr Obliterated",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_shuffle_guardian_souls"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(ITSinmara) and IsDead(Surtr)"
+                        ]
                     }
                 ],
                 "access_rules": [

@@ -159,6 +159,16 @@
                         "access_rules": [
                             "^$lm2_cursed|430036|CanReach(DSLMMain) and (IsDead(Aten Ra) and HorizontalAttack)"
                         ]
+                    },
+                    {
+                        "name": "Aten-Ra Obliterated",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_shuffle_guardian_souls"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(DSLMMain) and IsDead(Aten Ra)"
+                        ]
                     }
                 ],
                 "access_rules": [

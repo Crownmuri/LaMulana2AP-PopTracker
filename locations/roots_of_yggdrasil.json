@@ -113,6 +113,16 @@
                         "access_rules": [
                             "^$lm2_cursed|430140|CanReach(RoY) and (IsDead(Fafnir) and HorizontalAttack)"
                         ]
+                    },
+                    {
+                        "name": "Fafnir Obliterated",
+                        "item_count": 1,
+                        "visibility_rules": [
+                            "setting_shuffle_guardian_souls"
+                        ],
+                        "access_rules": [
+                            "^$lm2_logic|CanReach(RoY) and IsDead(Fafnir)"
+                        ]
                     }
                 ],
                 "access_rules": [
