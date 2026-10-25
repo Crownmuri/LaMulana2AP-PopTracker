@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "2.1.1",
+            "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v2.1.1/LaMulana2AP-PopTracker.v2.1.1.zip",
+            "sha256": "67f96a0b64333cb7c8272407a2bc87d9c55cdfff08cf885c9f9b21e94af95e44",
+            "changelog": [
+                "V1.1.1 logic update with Guardian Soul implementation"
+            ]
+        },
+        {
             "package_version": "2.1.0",
             "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v2.1.0/LaMulana2AP-PopTracker.v2.1.0.zip",
             "sha256": "abdcf966de2c3dbc547e8da0cdf788186c6fd9daab7344808a11f4aceaea21b0",
