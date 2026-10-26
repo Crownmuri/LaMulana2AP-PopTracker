@@ -262,8 +262,8 @@ end
 function CanSpinCorridor() return count("beherit") >= 1 and Dissonance(1) end
 -- Port of AP world player_state._can_seal_corridor. With random_dissonance
 -- the seal only needs the six dissonance: Required Guardian Kills moved onto
--- the Spiral Boat soul gate and the Spiral Hell door (SpiralHellKills), so
--- Heimdall opens before the guardians are down. Vanilla dissonance keeps the
+-- the Spiral Boat soul gate (the only way into IBBoat, and so the Spiral Hell
+-- door), so Heimdall opens before the guardians are down. Vanilla dissonance keeps the
 -- base game's Anu requirement.
 function CanSealCorridor()
     if not (count("beherit") >= 1 and Dissonance(6)) then return false end
@@ -275,13 +275,6 @@ function CanSealCorridor()
     return has("boss_anu")
 end
 
--- Guardian half of the Spiral Boat -> Spiral Hell door (apworld
--- randomizer._fix_spiral_gate_logic). Keeps the final area at Required
--- Guardian Kills while the boat soul gate's cost is still untracked.
-function SpiralHellKills()
-    if not has("setting_random_dissonance") then return true end
-    return GuardianKills(RequiredGuardians())
-end
 function Setting(name)
     -- HardBosses / MinimalBosses: minimal combat requirements, in-logic at the
     -- Minimal tier only (AP world maps MinimalBosses -> logic_difficulty == 2).
@@ -1023,7 +1016,7 @@ FORWARD_EXITS = {
     ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}},
     ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}},
     ["IBBifrost"] = {{"IBTop", "CanWarp or (CanKillHere(Cetus) and HorizontalAttack and ERVanilla(er_immortal_battlefield_cetus_up_ladder__f_1) and ERVanilla(er_annwfn_bifrost))"}},
-    ["IBBoat"] = {{"SpiralHell", "CanSealCorridor and SpiralHellKills and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}},
+    ["IBBoat"] = {{"SpiralHell", "CanSealCorridor and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}, {"IBMain", "CanSealCorridor"}},
     ["IBBottom"] = {{"IBMain", "MeleeAttack or Has(Claydoll Suit) or (TrickyLogic and HorizontalAttack)"}, {"IBLadder", "IsDead(Cetus)"}, {"IBLeft", "Has(IB Left Shortcut)"}},
     ["IBCetusLadder"] = {{"IBTop", "CanWarp or CanKillHere(Cetus) or CanReach(IBMain)"}},
     ["IBDinosaur"] = {{"IBBattery", "Has(Grapple Claw) or (Glitch(Costume Clip) and (CanWarp or ERVanilla(er_immortal_battlefield_alviss_down_ladder__g_7)))"}, {"IBMoon", "Glitch(Costume Clip) and Has(Feather) and (Has(Life Sigil) or CanWarp)"}},
@@ -1125,7 +1118,7 @@ FORWARD_EXITS = {
 --    ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}, {"HL", "False or Setting(Random Gates)"}},
 --    ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}, {"ITRight", "True"}},
 --    ["IBBifrost"] = {{"IBTop", "CanWarp or (CanKill(Cetus) and Setting(Non Random Ladders))"}, {"AnnwfnMain", "False"}},
---    ["IBBoat"] = {{"HoM", "False"}, {"SpiralHell", "CanSealCorridor and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}},
+--    ["IBBoat"] = {{"HoM", "False"}, {"SpiralHell", "CanSealCorridor and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}, {"IBMain", "CanSealCorridor"}},
 --    ["IBBottom"] = {{"IBMain", "HorizontalAttack"}, {"IBLadder", "IsDead(Cetus)"}, {"IBLeft", "Has(IB Left Shortcut)"}},
 --    ["IBCetusLadder"] = {{"AnnwfnOneWay", "True"}, {"IBTop", "CanWarp or CanKill(Cetus) or CanReach(IBMain)"}},
 --    ["IBDinosaur"] = {{"IBBattery", "Has(Grapple Claw) or (Glitch(Costume Clip) and CanWarp)"}, {"IBMoon", "Glitch(Costume Clip) and Has(Feather) and CanWarp"}},
@@ -1765,7 +1758,7 @@ LOGIC_FUNCS = {
     CanKillHere=CanKillHere, ERVanilla=ERVanilla,
     MeleeAttack=MeleeAttack, HorizontalAttack=HorizontalAttack,
     OrbCount=OrbCount, SkullCount=SkullCount, GuardianKills=GuardianKills,
-    SoulGateCost=SoulGateCost, SpiralHellKills=SpiralHellKills,
+    SoulGateCost=SoulGateCost,
     Setting=Setting, Glitch=Glitch, Dissonance=Dissonance, Start=Start,
     NotVoDStart=NotVoDStart, HasAnkhFor=HasAnkhFor,
     NibiruSkullCheck=NibiruSkullCheck,

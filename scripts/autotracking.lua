@@ -654,9 +654,9 @@ end
 
 -- beat_the_game: mirrors the @Spiral Hell/Ninth Child/FinalBoss access rule.
 -- The guardian gate (random_dissonance ? RequiredGuardians() : Anu) is
--- deliberately absent: the only edge into SpiralHell already carries it
--- (SpiralHellKills / CanSealCorridor), so repeating it here would just risk the
--- two drifting.
+-- deliberately absent: reaching SpiralHell already implies it (the Spiral Boat
+-- soul gate costs RequiredGuardians; vanilla CanSealCorridor needs Anu), so
+-- repeating it here would just risk the two drifting.
 local function CanBeatNinthChild()
     return CanReach("SpiralHell")
         and CanChant("Heaven") and CanChant("Earth") and CanChant("Sun")
