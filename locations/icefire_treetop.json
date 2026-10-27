@@ -697,7 +697,7 @@
                     "setting_potsanity_high_value"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITBottom) and ((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Feather))"
+                    "^$lm2_logic|CanReach(ITBottom) and (((CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and (Has(Feather) or Glitch(Costume Clip))) or (Glitch(Costume Clip) and CanWarp and (Has(Knife) or Has(Katana) or Has(Rapier) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (Has(Leather Whip) and (Has(Vajra) or Has(Spaulder))))))"
                 ]
             },
             {
@@ -1172,7 +1172,7 @@
                     "setting_glossanity_freestanding"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(ITLeft) and ((Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and Has(Vajra))))"
+                    "^$lm2_logic|CanReach(ITLeft) and ((Has(Knife) or Has(Katana) or Has(Rapier) or Has(Axe) or (CanUse(Rolling Shuriken) or (OutOfLogic and Has(Rolling Shuriken))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Leather Whip) and (Has(Vajra) or Has(Spaulder)))))"
                 ],
                 "map_locations": [
                     {
