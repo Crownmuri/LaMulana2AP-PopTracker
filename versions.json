@@ -1,6 +1,14 @@
 {
     "versions": [
         {
+            "package_version": "2.1.2",
+            "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v2.1.2/LaMulana2AP-PopTracker.v2.1.2.zip",
+            "sha256": "4c8c6ec40d3afb3f715db935215aab80bc2be3380560d6974b262334f4210dd4",
+            "changelog": [
+                "V1.1.2 logic update"
+            ]
+        },
+        {
             "package_version": "2.1.1",
             "download_url": "https://github.com/Crownmuri/LaMulana2AP-PopTracker/releases/download/v2.1.1/LaMulana2AP-PopTracker.v2.1.1.zip",
             "sha256": "67f96a0b64333cb7c8272407a2bc87d9c55cdfff08cf885c9f9b21e94af95e44",
