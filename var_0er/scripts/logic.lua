@@ -268,7 +268,7 @@ function CanSpinCorridor() return count("beherit") >= 1 and Dissonance(1) end
 function CanSealCorridor()
     if not (count("beherit") >= 1 and Dissonance(6)) then return false end
     if not (CanReach("ValhallaMain") or CanReach("DSLMTop") or CanReach("SotFGBlood")
-        or CanReach("ACBlood") or CanReach("HoM") or CanReach("EPDEntrance")) then
+        or CanReach("ACBlood") or CanReach("HoMRight") or CanReach("EPDEntrance")) then
         return false
     end
     if has("setting_random_dissonance") then return true end
@@ -899,7 +899,7 @@ end
 BACKSIDE_AREAS = {
     ["ACBlood"] = true, ["ACBottom"] = true, ["BaileyRight"] = true,
     ["DSLMMain"] = true, ["DSLMPyramid"] = true, ["DSLMTop"] = true,
-    ["EPDEntrance"] = true, ["EPG"] = true, ["HoM"] = true,
+    ["EPDEntrance"] = true, ["EPG"] = true, ["HoMLeft"] = true, ["HoMRight"] = true,
     ["HoMTop"] = true, ["TowerOfOannesLeftA"] = true,
     ["TowerOfOannesLeftC"] = true, ["TowerOfOannesLeftCTop"] = true,
     ["TowerOfOannesRightA"] = true, ["TowerOfOannesRightASlide"] = true,
@@ -912,30 +912,30 @@ BACKSIDE_AREAS = {
 -- is); it is listed only so this table stays byte-identical to the one in
 -- scripts/logic.lua, whose graph merges the two regions. Inert here.
 FDC_BACKSIDE_ENTRIES = {
-    ["ACBlood"] = { ["DSLMTop"] = true, ["EPDEntrance"] = true, ["HoM"] = true, },
+    ["ACBlood"] = { ["DSLMTop"] = true, ["EPDEntrance"] = true, ["HoMRight"] = true, },
     ["BaileyBottom"] = { ["TowerOfOannesLeftA"] = true, ["TowerOfOannesLeftCTop"] = true, ["TowerOfOannesRightASlide"] = true, ["TowerOfOannesRightBCrystal"] = true, },
     ["BaileyLevel1"] = { ["TowerOfOannesLeftA"] = true, },
     ["BaileyLevel2"] = { ["TowerOfOannesLeftC"] = true, },
     ["BaileyLevel3"] = { ["TowerOfOannesLeftC"] = true, },
     ["BaileyRight"] = { ["TowerOfOannesRightA"] = true, },
     ["DFMain"] = { ["ValhallaMain"] = true, },
-    ["DSLMTop"] = { ["ACBlood"] = true, ["EPDEntrance"] = true, ["HoM"] = true, ["ValhallaMain"] = true, },
-    ["EPDEntrance"] = { ["ACBlood"] = true, ["HoM"] = true, },
+    ["DSLMTop"] = { ["ACBlood"] = true, ["EPDEntrance"] = true, ["HoMRight"] = true, ["ValhallaMain"] = true, },
+    ["EPDEntrance"] = { ["ACBlood"] = true, ["HoMRight"] = true, },
     ["EPDMain"] = { ["EPG"] = true, },
     ["GotDWedjet"] = { ["DSLMMain"] = true, },
     ["HLGate"] = { ["HoMTop"] = true, },
-    ["HoM"] = { ["ACBlood"] = true, ["EPDEntrance"] = true, },
-    ["IBBoat"] = { ["HoM"] = true, },
+    ["HoMRight"] = { ["ACBlood"] = true, ["EPDEntrance"] = true, },
+    ["IBBoat"] = { ["HoMLeft"] = true, },
     ["ITVidofnir"] = { ["EPG"] = true, },
     ["Nibiru"] = { ["DSLMPyramid"] = true, },
     ["SotFGBalor"] = { ["ValhallaTopRight"] = true, },
-    ["SotFGBlood"] = { ["ACBlood"] = true, ["DSLMTop"] = true, ["EPDEntrance"] = true, ["HoM"] = true, ["ValhallaMain"] = true, },
+    ["SotFGBlood"] = { ["ACBlood"] = true, ["DSLMTop"] = true, ["EPDEntrance"] = true, ["HoMRight"] = true, ["ValhallaMain"] = true, },
     ["SpringintheSky"] = { ["TowerOfOannesLeftA"] = true, },
     ["SpringintheSkyTop"] = { ["TowerOfOannesLeftA"] = true, },
     ["TSBlood"] = { ["ACBlood"] = true, },
     ["TSBottom"] = { ["ACBottom"] = true, },
     ["TowerOfOannesRightA"] = { ["BaileyRight"] = true, },
-    ["ValhallaMain"] = { ["ACBlood"] = true, ["DSLMTop"] = true, ["EPDEntrance"] = true, ["HoM"] = true, },
+    ["ValhallaMain"] = { ["ACBlood"] = true, ["DSLMTop"] = true, ["EPDEntrance"] = true, ["HoMRight"] = true, },
 }
 
 -- Rooms whose every incoming exit needs Hand Scanner + Totem Pole.
@@ -983,7 +983,7 @@ end
 -- ============================================================
 
 FORWARD_EXITS = {
-    ["ACBlood"] = {{"ACMain", "Glitch(Costume Clip) and CanWarp"}, {"DSLMTop", "CanSpinCorridor"}, {"HoM", "CanWarp or CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
+    ["ACBlood"] = {{"ACMain", "Glitch(Costume Clip) and CanWarp"}, {"DSLMTop", "CanSpinCorridor"}, {"HoMRight", "CanWarp or CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["ACBottom"] = {{"ACTablet", "IsDead(Ki sikil lil la ke)"}, {"ACWind", "Has(Grapple Claw)"}},
     ["ACMain"] = {{"ACTablet", "True"}, {"ACWind", "True"}, {"ACBlood", "(CanUse(Bomb) or (OutOfLogic and Has(Bomb)))"}},
     ["ACTablet"] = {{"ACMain", "True"}},
@@ -999,8 +999,8 @@ FORWARD_EXITS = {
     ["DFRight"] = {{"DFMain", "(CanUse(Shuriken) or (OutOfLogic and Has(Shuriken))) or (CanUse(Chakram) or (OutOfLogic and Has(Chakram))) or Has(Claydoll Suit) or (CanUse(Pistol) or (OutOfLogic and Has(Pistol))) or ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and Has(Ring))"}, {"DFEntrance", "True"}},
     ["DFTop"] = {{"DFMain", "True"}, {"DFRight", "True"}},
     ["DSLMMain"] = {{"DSLMTop", "Has(Feather)"}, {"DSLMPyramid", "Has(Grapple Claw) and Has(Mjolnir)"}},
-    ["DSLMTop"] = {{"DSLMMain", "Has(Feather) or CanWarp"}, {"ValhallaMain", "CanWarp or CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
-    ["EPDEntrance"] = {{"EPDMain", "True"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}},
+    ["DSLMTop"] = {{"DSLMMain", "Has(Feather) or CanWarp"}, {"ValhallaMain", "CanWarp or CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"ACBlood", "CanSpinCorridor"}, {"HoMRight", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
+    ["EPDEntrance"] = {{"EPDMain", "True"}, {"ACBlood", "CanSpinCorridor"}, {"HoMRight", "CanSpinCorridor"}},
     ["EPDMain"] = {{"EPDEntrance", "IsDead(Hraesvelgr) and Has(Feather)"}, {"EPDTop", "Has(Feather) and Has(Grapple Claw) and Has(Glove)"}, {"EPG", "Has(Grapple Claw) and (Has(Gale Fibula) or CanStopTime or TrickyLogic) and (Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1) and Has(Anchor)))"},{"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
     ["EPDTop"] = {{"EPDHel", "(IsDead(Vidofnir) and SoulGateCost(er_icefire_treetop_vidofnir_soul_gate__d_6)) and IsDead(Hraesvelgr) and PuzzleFinished(Garm Statue Puzzle) and (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) and Has(Holy Grail) and Has(Grapple Claw) and Has(Gale Fibula) and Has(Claydoll Suit) and Has(Glove) and Has(Anchor) and Has(Feather) and (Has(Hand Scanner) or Setting(AutoScan))"}},
     ["EPG"] = {{"EPDMain", "(Has(Claydoll Suit) or (Has(Ice Cloak) and OrbCount(1)) or Has(Grapple Claw)) and Has(Feather)"}, {"EPDTop", "Has(Death Sigil) and (Has(Feather) or ((Has(Hand Scanner) or Setting(AutoScan)) and Has(Future Development Company) and CanWarp))"}, {"DFTop", "True"}, {"VoD", "True"}, {"ITRight", "True"}, {"TSBottom", "True"}},
@@ -1012,8 +1012,9 @@ FORWARD_EXITS = {
     ["HLCog"] = {{"HLStatue", "CanWarp"}},
     ["HLGate"] = {{"HL", "CanWarp"}},
     ["HLSpun"] = {{"HLGate", "(Has(Feather) or Has(Grapple Claw)) and IsDead(Glasya Labolas)"}, {"HLStatue", "IsDead(Scylla)"}},
-    ["HoM"] = {{"HoMTop", "Has(HoM Ladder)"}, {"ACBlood", "CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
-    ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoM", "True"}},
+    ["HoMLeft"] = {{"HoMTop", "Has(HoM Ladder)"}, {"HoMRight", "CanWarp or HorizontalAttack"}},
+    ["HoMRight"] = {{"HoMLeft", "HorizontalAttack"}, {"ACBlood", "CanSpinCorridor"}, {"SotFGBlood", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
+    ["HoMTop"] = {{"HoMAwoken", "Has(Cog of Antiquity) and (Has(Life Sigil) or Setting(Not Life for HoM))"}, {"HoMLeft", "True"}},
     ["IBBattery"] = {{"IBDinosaur", "Has(Grapple Claw)"}},
     ["IBBifrost"] = {{"IBTop", "CanWarp or (CanKillHere(Cetus) and HorizontalAttack and ERVanilla(er_immortal_battlefield_cetus_up_ladder__f_1) and ERVanilla(er_annwfn_bifrost))"}},
     ["IBBoat"] = {{"SpiralHell", "CanSealCorridor and Has(Secret Treasure of Life) and CanChant(Mother) and CanChant(Child)"}, {"IBMain", "CanSealCorridor"}},
@@ -1039,7 +1040,7 @@ FORWARD_EXITS = {
     ["RoYMiddle"] = {{"RoY", "HorizontalAttack"}},
     ["RoYTopMiddle"] = {{"RoY", "CanWarp or CanKillHere(Nidhogg)"}},
     ["RoYTopRight"] = {{"RoY", "CanWarp or Has(Birth Sigil)"}},
-    ["SotFGBlood"] = {{"SotFGBloodTez", "True"}, {"ACBlood", "CanWarp or CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"ValhallaMain", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
+    ["SotFGBlood"] = {{"SotFGBloodTez", "True"}, {"ACBlood", "CanWarp or CanSpinCorridor"}, {"HoMRight", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"ValhallaMain", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["SotFGBloodTez"] = {{"SotFGBlood", "CanKill(Tezcatlipoca) and (CanWarp or Has(Grapple Claw))"}},
     ["SotFGGrail"] = {{"SotFGMain", "HorizontalAttack or Start(SotFGGrail)"}},
     ["SotFGLeft"] = {{"SotFGMain", "True"}, {"SotFGGrail", "CanWarp or HorizontalAttack"}},
@@ -1051,7 +1052,7 @@ FORWARD_EXITS = {
     ["TSMain"] = {{"TSBottom", "Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or Start(TSLeft)"}, {"TSNeck", "IsDead(Raijin and Fujin)"}, {"TSEntrance", "Has(Leather Whip) or (Has(Knife) and Has(Gauntlet) and Has(Vajra) and Has(Spaulder)) or Has(Axe) or Has(Katana) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and HorizontalAttack)"}},
     ["TSNeck"] = {{"TSMain", "CanKillHere(Raijin and Fujin) or (CanStopTime and CanWarp)"}, {"TSNeckEntrance", "True"}},
     ["TSNeckEntrance"] = {{"TSNeck", "CanWarp or (CanChant(Heaven) and CanChant(Earth) and CanChant(Sea) and CanChant(Fire) and CanChant(Wind))"}},
-    ["ValhallaMain"] = {{"ValhallaTop", "Has(Feather) or CanChant(Heaven)"}, {"SotFGBlood", "CanWarp or CanSpinCorridor or (CanReach(SotFGMain) and CanKill(Tezcatlipoca) and Has(Grapple Claw) and ERVanilla(er_shrine_of_the_frost_giants_backside_gate__b_2))"}, {"ACBlood", "CanSpinCorridor"}, {"HoM", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
+    ["ValhallaMain"] = {{"ValhallaTop", "Has(Feather) or CanChant(Heaven)"}, {"SotFGBlood", "CanWarp or CanSpinCorridor or (CanReach(SotFGMain) and CanKill(Tezcatlipoca) and Has(Grapple Claw) and ERVanilla(er_shrine_of_the_frost_giants_backside_gate__b_2))"}, {"ACBlood", "CanSpinCorridor"}, {"HoMRight", "CanSpinCorridor"}, {"DSLMTop", "CanSpinCorridor"}, {"EPDEntrance", "CanSpinCorridor and CanChant(Sun) and CanChant(Moon) and CanChant(Sea) and CanWarp"}},
     ["ValhallaTop"] = {{"ValhallaMain", "True"}},
     ["ValhallaTopRight"] = {{"ValhallaTop", "Has(Feather)"}, {"ValhallaMain", "CanWarp or Has(Feather) or (Has(Claydoll Suit) and CanChant(Heaven))"}},
     ["VoD"] = {{"VoDLadder", "Has(Feather)"}},
@@ -1226,7 +1227,7 @@ ER_ENTRANCE_DATA = {
     ["er_starting_area"] = { area = "Start" },
     ["er_village_of_departure_next_to_xelpud"] = { area = "VoD" },
     ["er_immortal_battlefield_spiral_boat_soul_gate_d_4"] = { area = "IBBoat" },
-    ["er_hall_of_malice_soul_gate__d_3"] = { area = "HoM" },
+    ["er_hall_of_malice_soul_gate__d_3"] = { area = "HoMLeft" },
     ["er_heavens_labyrinth_soul_gate__e_5"] = { area = "HL" },
     ["er_icefire_treetop_under_ratatoskr_soul_gate__g_3"] = { area = "ITRight" },
     ["er_takamagahara_shrine_top_main_soul_gate__d_1"] = { area = "TSEntrance" },
@@ -1427,9 +1428,9 @@ ER_ENTRANCES_BY_AREA = {
         { code = "er_starting_area", logic = "True", is_soul_gate = false, vanilla_cost = nil, vanilla_target_area = "VoD" },
     },
     ["IBBoat"] = {
-        { code = "er_immortal_battlefield_spiral_boat_soul_gate_d_4", logic = "False", is_soul_gate = true, vanilla_cost = 9, vanilla_target_area = "HoM" },
+        { code = "er_immortal_battlefield_spiral_boat_soul_gate_d_4", logic = "False", is_soul_gate = true, vanilla_cost = 9, vanilla_target_area = "HoMLeft" },
     },
-    ["HoM"] = {
+    ["HoMLeft"] = {
         { code = "er_hall_of_malice_soul_gate__d_3", logic = "Has(Death Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and (CanWarp or IsDead(HoM Middle Path))", is_soul_gate = true, vanilla_cost = 9, vanilla_target_area = "IBBoat" },
     },
     ["HL"] = {

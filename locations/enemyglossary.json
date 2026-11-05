@@ -1619,7 +1619,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(HoM) and (True)) or (CanReach(HoMAwoken) and (True)))"
+                    "^$lm2_logic|((CanReach(HoMLeft) and (True)) or (CanReach(HoMRight) and (True)) or (CanReach(HoMAwoken) and (True)))"
                 ]
             },
             {
@@ -1646,7 +1646,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(HoMTop) and (True)) or (CanReach(HoM) and (True)) or (CanReach(HoMAwoken) and (True)))"
+                    "^$lm2_logic|((CanReach(HoMTop) and (True)) or (CanReach(HoMLeft) and (True)) or (CanReach(HoMRight) and (True)) or (CanReach(HoMAwoken) and (True)))"
                 ]
             },
             {
@@ -1673,7 +1673,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(HoMTop) and (True)) or (CanReach(HoM) and (True)) or (CanReach(HoMAwoken) and (True)))"
+                    "^$lm2_logic|((CanReach(HoMTop) and (True)) or (CanReach(HoMLeft) and (True)) or (CanReach(HoMRight) and (True)) or (CanReach(HoMAwoken) and (True)))"
                 ]
             },
             {
@@ -2078,7 +2078,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(SpiralHell) and (True)) or (CanReach(HLStatue) and (HorizontalAttack and WorldLevel(2))) or (CanReach(IBTopLeft) and (WorldLevel(5))) or (CanReach(IBMain) and ((HorizontalAttack or Has(Feather)) and WorldLevel(5))) or (CanReach(IBRight) and (WorldLevel(5))) or (CanReach(DSLMTop) and (WorldLevel(5))) or (CanReach(DSLMMain) and (Has(Grapple Claw) and WorldLevel(5))) or (CanReach(HoM) and (WorldLevel(5))) or (CanReach(EPDTop) and (WorldLevel(5))) or (CanReach(EPDMain) and (HorizontalAttack and WorldLevel(5))))"
+                    "^$lm2_logic|((CanReach(SpiralHell) and (True)) or (CanReach(HLStatue) and (HorizontalAttack and WorldLevel(2))) or (CanReach(IBTopLeft) and (WorldLevel(5))) or (CanReach(IBMain) and ((HorizontalAttack or Has(Feather)) and WorldLevel(5))) or (CanReach(IBRight) and (WorldLevel(5))) or (CanReach(DSLMTop) and (WorldLevel(5))) or (CanReach(DSLMMain) and (Has(Grapple Claw) and WorldLevel(5))) or (CanReach(HoMLeft) and (WorldLevel(5))) or (CanReach(HoMRight) and (WorldLevel(5))) or (CanReach(EPDTop) and (WorldLevel(5))) or (CanReach(EPDMain) and (HorizontalAttack and WorldLevel(5))))"
                 ]
             },
             {
