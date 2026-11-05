@@ -2122,7 +2122,7 @@
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_soulgate|er_hall_of_malice_soul_gate__d_3|CanReach(HoMLeft) and Has(Death Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and (CanWarp or IsDead(HoM Middle Path))"
+                    "^$lm2_soulgate|er_hall_of_malice_soul_gate__d_3|CanReach(HoMLeft) and Has(Death Sigil) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Spaulder) and (Has(Knife) or Has(Leather Whip) or Has(Rapier) or Has(Katana)))) and Has(Feather))) and (CanWarp or IsDead(HoM Middle Path))"
                 ],
                 "children": [
                     {

@@ -868,12 +868,12 @@
                         "hosted_item": "cursed_430020",
                         "clear_as_group": false,
                         "access_rules": [
-                            "^$lm2_cursed|430020|CanReach(IBDinosaur) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Rapier))"
+                            "^$lm2_cursed|430020|CanReach(IBDinosaur) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (HorizontalAttack or (CanReach(IBMoon) and Has(Life Sigil)))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Rapier))"
                         ]
                     }
                 ],
                 "access_rules": [
-                    "^$lm2_logic|CanReach(IBDinosaur) and ((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Rapier))"
+                    "^$lm2_logic|CanReach(IBDinosaur) and (((CanUse(Flare Gun) or (OutOfLogic and Has(Flare Gun))) and (HorizontalAttack or (CanReach(IBMoon) and Has(Life Sigil)))) or (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or Has(Rapier))"
                 ]
             },
             {

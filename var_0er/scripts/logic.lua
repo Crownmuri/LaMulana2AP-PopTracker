@@ -1431,7 +1431,7 @@ ER_ENTRANCES_BY_AREA = {
         { code = "er_immortal_battlefield_spiral_boat_soul_gate_d_4", logic = "False", is_soul_gate = true, vanilla_cost = 9, vanilla_target_area = "HoMLeft" },
     },
     ["HoMLeft"] = {
-        { code = "er_hall_of_malice_soul_gate__d_3", logic = "Has(Death Sigil) and (CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) and (CanWarp or IsDead(HoM Middle Path))", is_soul_gate = true, vanilla_cost = 9, vanilla_target_area = "IBBoat" },
+        { code = "er_hall_of_malice_soul_gate__d_3", logic = "Has(Death Sigil) and ((CanUse(Earth Spear) or (OutOfLogic and Has(Earth Spear))) or (((CanUse(Caltrops) or (OutOfLogic and Has(Caltrops))) or (CanUse(Bomb) or (OutOfLogic and Has(Bomb))) or (Has(Spaulder) and (Has(Knife) or Has(Leather Whip) or Has(Rapier) or Has(Katana)))) and Has(Feather))) and (CanWarp or IsDead(HoM Middle Path))", is_soul_gate = true, vanilla_cost = 9, vanilla_target_area = "IBBoat" },
     },
     ["HL"] = {
         { code = "er_heavens_labyrinth_soul_gate__e_5", logic = "True", is_soul_gate = true, vanilla_cost = 3, vanilla_target_area = "ITRight" },

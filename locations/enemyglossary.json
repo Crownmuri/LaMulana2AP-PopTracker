@@ -836,7 +836,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(SotFGMain) and (Has(Origin Sigil) and HorizontalAttack)) or (CanReach(SotFGLeft) and (HorizontalAttack)) or (CanReach(SotFGBlood) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(SotFGGrail) and (Has(Origin Sigil) and HorizontalAttack)) or (CanReach(SotFGLeft) and (HorizontalAttack)) or (CanReach(SotFGBlood) and (HorizontalAttack)))"
                 ]
             },
             {
@@ -863,7 +863,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(SotFGMain) and (HorizontalAttack)) or (CanReach(SotFGLeft) and (HorizontalAttack)) or (CanReach(SotFGTop) and (True)) or (CanReach(SotFGBloodTez) and (IsDead(Tezcatlipoca))))"
+                    "^$lm2_logic|((CanReach(SotFGMain) and (HorizontalAttack)) or (CanReach(SotFGLeft) and (HorizontalAttack)) or (CanReach(SotFGGrail) and (True)) or (CanReach(SotFGTop) and (True)) or (CanReach(SotFGBloodTez) and (IsDead(Tezcatlipoca))))"
                 ]
             },
             {
@@ -1538,7 +1538,7 @@
                     "setting_glossanity_enemy"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(ACBottom) and (True)) or (CanReach(ACTablet) and (True)) or (CanReach(ACWind) and (CanUse(Flare Gun) or CanUse(Bomb) or CanUse(Earth Spear))) or (CanReach(ACMain) and (True)))"
+                    "^$lm2_logic|((CanReach(ACBottom) and (Has(Claydoll Suit) or OrbCount(5) or (Has(Ice Cloak) and OrbCount(1)))) or (CanReach(ACTablet) and (True)) or (CanReach(ACWind) and (CanUse(Flare Gun) or CanUse(Bomb) or CanUse(Earth Spear))) or (CanReach(ACMain) and (True)))"
                 ]
             },
             {
@@ -2122,7 +2122,7 @@
                     "setting_glossanity_enemy,setting_oannesanity"
                 ],
                 "access_rules": [
-                    "^$lm2_logic|((CanReach(TowerOfOannesLeftB) and (HorizontalAttack)) or (CanReach(TowerOfOannesRightB) and (HorizontalAttack)))"
+                    "^$lm2_logic|((CanReach(TowerOfOannesLeftB) and (HorizontalAttack or OrbCount(1))) or (CanReach(TowerOfOannesRightB) and (HorizontalAttack or OrbCount(1))))"
                 ]
             },
             {
